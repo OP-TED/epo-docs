@@ -6,7 +6,7 @@ content:
   sources:
     - url: https://github.com/OP-TED/ePO.git
       branches:
-      - master
+      - main
       tags: 
       - v*
       start_path: ascii_doc
