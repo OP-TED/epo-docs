@@ -3,7 +3,7 @@ name: EPO documentation
 on:
   push:
     branches: 
-      - master
+      - main
 env:
   SITE_DIR: 'site'
 jobs:
