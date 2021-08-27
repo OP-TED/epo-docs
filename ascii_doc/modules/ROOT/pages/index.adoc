@@ -181,11 +181,11 @@ To reach the strategic objectives stated above this version 2.0.0 of the ePO pro
 * This version 2.0.0 takes as inputs works like the http://cenbii.eu/[CEN/BII Workshops], the standard forms and notices published by the Publications Office, DG GROW’s https://github.com/ESPD[ESPD]-related developments, the eSens developments on the VCD and the ESPD (see the http://wiki.ds.unipi.gr/display/ESPDInt/ESPD+International+Knowledge+Base[ESPDint] project), as well as international standards like UN/CEFACT and OASIS UBL. Most of them used an UN/CEFACT Universal Method Modelling (UMM) approach that represent the "value-chain Use Cases" to identify the information requirements exhaustively. The "value chain Use Cases" eNotification and eAccess are described in these works and cast lists of information requirements and business rules.
 . *Use Cases around the policy area should be defined to (i) complement the identification of information requirements; and (ii) test the completeness, correctness and performance of the Ontology*;
 +
-* Use Cases defined in the ePO v1.00 are essential instruments to complete and test the information requirements elicited during the analysis of the business processes. In this version we propose to focus on the "Use Case 1: https://github.com/eprocurementontology/eprocurementontology/wiki/Use-case-1.-Transparency-and-Monitoring[Data Journalism]" and the Use "Case 4: https://github.com/eprocurementontology/eprocurementontology/wiki/Use—​ase-4.-Analyzing-eProcurement-procedures[Analysing eProcurement Procedures]", as these cases provide the largest part of the requirements necessary to implement and test the eNotification and eAccess phases which is the object of ePO version 2.0.
+* Use Cases defined in the ePO v1.00 are essential instruments to complete and test the information requirements elicited during the analysis of the business processes. In this version we propose to focus on the "Use Case 1: https://github.com/OP-TED/ePO/wiki/Use-case-1.-Transparency-and-Monitoring[Data Journalism]" and the Use "Case 4: https://github.com/OP-TED/ePO/wiki/Use—​ase-4.-Analyzing-eProcurement-procedures[Analysing eProcurement Procedures]", as these cases provide the largest part of the requirements necessary to implement and test the eNotification and eAccess phases which is the object of ePO version 2.0.
 . *Reuse of ontologies*:
 +
 * There is no point in reinventing models that already exist and are reusable. That is the case, for example, when representing entities such as natural persons, legal persons, addresses, etc. Hence, for generic ontologies, we proposed to reuse: ISA2’s https://joinup.ec.europa.eu/solution/core-criterion-and-core-evidence-vocabulary[CCEV] (Core Criterion and Evidence Vocabulary), W3C’s (https://www.w3.org/TR/vocab-org/[Organization ontology]), skos (https://www.w3.org/TR/2008/WD-skos-reference-20080829/skos.html[Simple Knowledge Organization System]) and vCard (https://www.w3.org/TR/vcard-rdf/[Virtual Contact File]; originally proposed by the https://en.wikipedia.org/wiki/Versit_Consortium[Versit Consortium]); foaf (http://www.foaf-project.org/[Friend of a Friend]).
-* Other lexical (non-ontological) resources and good practices have been taken as models to inspire the drafting of sub-vocabularies to be imported and reused by the ePO. This has been the case of the CCTS (https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/ttl/ccts.ttl[Core Component Type Specification] Identifier, Amount, Quantity and Measure ^[link:#_footnote_5[5]]^); and http://docs.oasis-open.org/ubl/UBL-2.2.html[UBL-2.2] (OASIS https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/ttl/ubl.ttl[Universal Business Language], just the Period element, for the time being).
+* Other lexical (non-ontological) resources and good practices have been taken as models to inspire the drafting of sub-vocabularies to be imported and reused by the ePO. This has been the case of the CCTS (https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/05_Implementation/ttl/ccts.ttl[Core Component Type Specification] Identifier, Amount, Quantity and Measure ^[link:#_footnote_5[5]]^); and http://docs.oasis-open.org/ubl/UBL-2.2.html[UBL-2.2] (OASIS https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/05_Implementation/ttl/ubl.ttl[Universal Business Language], just the Period element, for the time being).
 * Finally, the inputs from other ontology developments have been, and still are, appreciated and welcome. Thus the OCDS (https://www.open-contracting.org/events/ocds-ontologies-linked-data/[Open Contracting Partnership]) and PPROC (http://contsem.unizar.es/def/sector-publico/pproc.html[Public Procurement Ontology]) vocabularies have been taken into consideration.
 . *The Ontology must always be tested and perfected using a sufficiently large sample of real data*;
 +
@@ -222,9 +222,9 @@ For more details on the members of each governance body see the document https:/
 
 According to the development plan, the first task was the identification of information requirements, axioms and business rules. For this the version 2.0.0 of the ePO has taken into account the following inputs:
 
-. The "https://github.com/eprocurementontology/eprocurementontology/wiki/Use-case-1.-Transparency-and-Monitoring[Use Case 1: Data Journalism]" and the https://github.com/eprocurementontology/eprocurementontology/wiki/Use—​ase-4.-Analyzing-eProcurement-procedures[Use Case 4: Analysing eProcurement Procedures];
+. The "https://github.com/OP-TED/ePO/wiki/Use-case-1.-Transparency-and-Monitoring[Use Case 1: Data Journalism]" and the https://github.com/OP-TED/ePO/wiki/Use—​ase-4.-Analyzing-eProcurement-procedures[Use Case 4: Analysing eProcurement Procedures];
 . The _Standards, business needs and Legislation**_ studied in the previous versions, plus the most recent developments;
-. The _*EU eProcurement Glossary*_, maintained by the ePO Working group; see https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/02_IR_DED/eProcurement_glossary_and%20DED.xlsx[Glossary Management] and https://github.com/eprocurementontology/eprocurementontology/wiki/Glossary-Management[Glossary].
+. The _*EU eProcurement Glossary*_, maintained by the ePO Working group; see https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/02_IR_DED/eProcurement_glossary.xlsx[Glossary Management] and https://github.com/OP-TED/ePO/wiki/Glossary-Management[Glossary].
 
 This section covers the process applied for the elicitation of information requirements (see process "Information Requirement Elicitation" highlighted with the largest semi-transparent blue box in the Knowledge Map below (rulin scope: "eNotification" and "eAccess; inputs: "ePO Glossary", "Use Cases"; output: "DED 2.0.2". The upper blue box highlights the "ruling principles" that apply to the entire development, including the elicitation of requirements.
 
@@ -234,15 +234,15 @@ Figure 9. Information Requirements elicitation
 
 The outcome of this task are namely two artefacts:
 
-. The _*Information Requirements*_ identified in ePO v1.0 https://github.com/eprocurementontology/eprocurementontology/wiki/Information-Requirements-v1.00[Information Requirements v1.00];
-. The _*Data Element Dictionary (DED v2.0.0)*_: a https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/02_IR_DED/ePO_DED.xlsx[spread-sheet] where the Use Case information requirements are broken down into more detailed information requirements, axioms, business rules and annotations resulting from the analysis.
+. The _*Information Requirements*_ identified in ePO v1.0 https://github.com/OP-TED/ePO/wiki/Information-Requirements-v1.00[Information Requirements v1.00];
+. The _*Data Element Dictionary (DED v2.0.0)*_: a https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/02_IR_DED/ePO_DED.xlsx[spread-sheet] where the Use Case information requirements are broken down into more detailed information requirements, axioms, business rules and annotations resulting from the analysis.
 
 [[the-data-element-dictionary-ded-v2-0-0]]
 ==== link:#the-data-element-dictionary-ded-v2-0-0[The Data Element Dictionary (DED v2.0.0)]
 
 Information Analysts need to, based on each information requirement, make decisions like determining whether an element is an entity representing a _class_ of objects, an _attribute_ of the class of a basic data type e.g. a code, an identifier, a date, a time, a text, etc.), or a more complex _data object_ associated to the class (e.g. another class).
 
-One way of listing this information is using a _*Data Element Dictionary*_, a table (e.g. a https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/02_IR_DED/ePO_DED.xlsx[spread-sheet]) with the following columns and rows:
+One way of listing this information is using a _*Data Element Dictionary*_, a table (e.g. a https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/02_IR_DED/ePO_DED.xlsx[spread-sheet]) with the following columns and rows:
 
 image::ePO_DED.png[DED,width=1000]
 
@@ -287,7 +287,7 @@ image::CMDevelopmentPlan.png[CM development]
 
 Figure 11. Development of the Domain Conceptual Data Model
 
-The conceptual data model is available both as an https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/XMI/ePO-CM_v2.0.0.xml[XMI format] ^[link:#_footnote_6[6]]^ and https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/ePO-CM_v2.0.0.eap[Enterprise Architect] project file.
+The conceptual data model is available both as an https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/XMI/ePO-CM.xml[XMI format] ^[link:#_footnote_6[6]]^ and https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/ePO-CM.eap[Enterprise Architect] project file.
 
 [[cm-overview]]
 ==== link:#cm-overview[CM Overview]
@@ -296,7 +296,7 @@ General view of the Classes and relations of the ePO v2.0.0 Ontology. Keep in mi
 
 [cols=",",]
 |=========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
-|__ |Beware that this Conceptual Data Model is right now being reviewed by the Working Group (WG). This revision, is available through the GitHub wiki page and takes also into account the on-going revision of the ePO Glossary by the WG. Once reviewed, the OLW-TTL will be re-drafted, too. See all the menu entries on the right side of the https://github.com/eprocurementontology/eprocurementontology/wiki/Conceptual-Model-v2.0.1[GitHub wiki page] (marked with the version number "*v2.0.1*" and the note "(under revision)".
+|__ |Beware that this Conceptual Data Model is right now being reviewed by the Working Group (WG). This revision, is available through the GitHub wiki page and takes also into account the on-going revision of the ePO Glossary by the WG. Once reviewed, the OLW-TTL will be re-drafted, too. See all the menu entries on the right side of the https://github.com/OP-TED/ePO/wiki/Conceptual-Model-v2.0.1[GitHub wiki page] (marked with the version number "*v2.0.1*" and the note "(under revision)".
 |=========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 image::ConceptualModel_Overview.png[ePO v2.0.0 Conceptual Data Model]
@@ -615,7 +615,7 @@ Figure 33. ePO Design and Implementation
 [[epo-1-0-rdf-xml-vocabulary]]
 ==== link:#epo-1-0-rdf-xml-vocabulary[ePo 1.0 RDF-XML vocabulary]
 
-In ePO v1.0 the Working Group decided that the ontology was to be expressed as an RDF vocabulary. This vocabulary (without axioms defined therein) was expressed as an OWL-XML syntax: see file https://github.com/eprocurementontology/eprocurementontology/blob/master/eproc_v0.6.owl[eproc_v0.6.owl] located in the https://github.com/eprocurementontology/eprocurementontology[root folder] of the GitHub code repository.
+In ePO v1.0 the Working Group decided that the ontology was to be expressed as an RDF vocabulary. This vocabulary (without axioms defined therein) was expressed as an OWL-XML syntax: see file https://github.com/OP-TED/ePO/blob/v2.0.0/eproc_v0.6.owl[eproc_v0.6.owl] located in the https://github.com/OP-TED/ePO/tree/v2.0.0 [root folder] of the GitHub code repository.
 
 [[epo-v2-0-0-owl-dl-syntax]]
 ==== link:#epo-v2-0-0-owl-dl-syntax[ePO v2.0.0 OWL-DL syntax]
@@ -631,7 +631,7 @@ One way of automatising the generation of the OWL-TTL T-Box is to use the DED jo
 
 |========================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
-As commented above, for the drafting of the TTL syntax the ePO development team used the Standford’s https://protege.stanford.edu/products.php[Protégé 5.2] editor. The resulting OWL-TTL file can be accessed from the GitHub https://github.com/eprocurementontology/eprocurementontology/wiki[Wiki] page or from the https://github.com/eprocurementontology/eprocurementontology/tree/master/v2.0.0/05_Implementation/ttl[repository].
+As commented above, for the drafting of the TTL syntax the ePO development team used the Standford’s https://protege.stanford.edu/products.php[Protégé 5.2] editor. The resulting OWL-TTL file can be accessed from the GitHub https://github.com/OP-TED/ePO/wiki[Wiki] page or from the https://github.com/OP-TED/ePO/tree/v2.0.0/v2.0.0/05_Implementation/ttl[repository].
 
 image::Protege.png[Design & Implementation]
 
@@ -666,7 +666,7 @@ Hence codes are maintained in 'Code Lists' whilst identifiers are usually kept i
 
 The ePO tries to reuse as much as possible standards, specifications and practices commonly applied in the eProcurement domain. Hence one design decision, coordinated with the WG members, was to use the https://www.unece.org/cefact/codesfortrade/ccts_index.html[UN/CEFACT CCTS] (Core Component Type Specification) ^[link:#_footnote_7[7]]^ to implement the data types `Identifier`, `Amount`, `Quantity` and `Measure`.
 
-The package containing the OWL-TTL definition of these data type can be download from the ePO GitHub repository folder https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/ttl/ccts.ttl[05_Implementation/ttl/]. Beware that codes are implemented as SKOS concepts (see also next section "Codes and code lists").
+The package containing the OWL-TTL definition of these data type can be download from the ePO GitHub repository folder https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/05_Implementation/ttl/ccts.ttl[05_Implementation/ttl/]. Beware that codes are implemented as SKOS concepts (see also next section "Codes and code lists").
 
 [[codes-and-code-lists]]
 ===== link:#codes-and-code-lists[Codes and code lists]
@@ -778,7 +778,7 @@ The table below contains the definitions of each attribute (as defined in https:
 [[identifiers]]
 ===== link:#identifiers[Identifiers]
 
-As commented above, ePO defines a class Identifier in alignment to the UN/CEFACT Core Component Specification (CTTS). This https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/ttl/ccts.ttl[Class] looks like this:
+As commented above, ePO defines a class Identifier in alignment to the UN/CEFACT Core Component Specification (CTTS). This https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/05_Implementation/ttl/ccts.ttl[Class] looks like this:
 
 Definition in ePO of the CCTS-based Identifier class
 
@@ -938,22 +938,22 @@ The following subsections explain how each of the activities mentioned in the di
 |====================================================================================================================================================================================================================
 |*Activity name*: |Identify and study the Use Cases related to monitoring and transparency.
 |*Responsible team*: |OP’s contractor team.
-|*Inputs*: |ePO v1.0 https://github.com/eprocurementontology/eprocurementontology/wiki/Use-case-1.-Data-journalism[Use Case 1] and https://github.com/eprocurementontology/eprocurementontology/issues/11[Issue #11].
+|*Inputs*: |ePO v1.0 https://github.com/OP-TED/ePO/wiki/Use-case-1.-Data-journalism[Use Case 1] and https://github.com/OP-TED/ePO/issues/11[Issue #11].
 |*Outputs*: |Study of the Use Cases (slightly renaming).
 |====================================================================================================================================================================================================================
 
 The ePO v1.0 focused on three different Use Cases:
 
-* https://github.com/eprocurementontology/eprocurementontology/wiki/Use-case-1.-Data-journalism[Use Case 1]: Data Journalism
-* https://github.com/eprocurementontology/eprocurementontology/wiki/Use-case-1.-Data-journalism[Use Case 2]: Automated matchmaking of procured services and products with businesses, and
-* https://github.com/eprocurementontology/eprocurementontology/wiki/Use-case-3.-Verifying-VAT-payments-on-intracommunity-service-provision[Use Case 3]: Verifying VAT payments on intra-community service provision.
+* https://github.com/OP-TED/ePO/wiki/Use-case-1.-Data-journalism[Use Case 1]: Data Journalism
+* https://github.com/OP-TED/ePO/wiki/Use-case-1.-Data-journalism[Use Case 2]: Automated matchmaking of procured services and products with businesses, and
+* https://github.com/OP-TED/ePO/wiki/Use-case-3.-Verifying-VAT-payments-on-intracommunity-service-provision[Use Case 3]: Verifying VAT payments on intra-community service provision.
 
-During its development a fourth Use Case was identified as relevant related to Transparency and Monitoring. This use case was proposed through an "https://github.com/eprocurementontology/eprocurementontology/issues/11[Issue]", in the GitHub repository. This Use Case was accepted as as a relevant case for transparency and monitoring.
+During its development a fourth Use Case was identified as relevant related to Transparency and Monitoring. This use case was proposed through an "https://github.com/OP-TED/ePO/issues/11[Issue]", in the GitHub repository. This Use Case was accepted as as a relevant case for transparency and monitoring.
 
 Hence the ePO v2.0.0, which is focused only on transparency and monitoring, was developed taken into account two Use Cases (slightly renamed):
 
-* https://github.com/eprocurementontology/eprocurementontology/wiki/Use-case-1.-Transparency-and-Monitoring[Use Case 1]: Transparency and Monitoring; and
-* https://github.com/eprocurementontology/eprocurementontology/wiki/Use—​ase-4.-Analyzing-eProcurement-procedures[Use Case 4]: Analyzing eProcurement procedures.
+* https://github.com/OP-TED/ePO/wiki/Use-case-1.-Transparency-and-Monitoring[Use Case 1]: Transparency and Monitoring; and
+* https://github.com/OP-TED/ePO/wiki/Use—​ase-4.-Analyzing-eProcurement-procedures[Use Case 4]: Analyzing eProcurement procedures.
 
 [[activity-2-user-stories]]
 ==== link:#activity-2-user-stories[Activity 2: User Stories]
@@ -964,7 +964,7 @@ Hence the ePO v2.0.0, which is focused only on transparency and monitoring, was 
 |*Activity name*: |Prepare sample (example) User Stories.
 |*Responsible team*: |OP’s contractor team.
 |*Inputs*: |Use Cases 1 and 4.
-|*Outputs*: |Examples of https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/02_IR_DED/WayforwardCompetencyQuestions.pdf[User Stories].
+|*Outputs*: |Examples of https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/02_IR_DED/WayforwardCompetencyQuestions.pdf[User Stories].
 |==================================================================================================================================================================
 
 User Stories are a method of helping identify information requirements. The method consists in drafting very simple sentence structured around three main questions:
@@ -994,12 +994,12 @@ Figure 40. Examples of User Stories
 |*Activity name*: |Prepare sample (example) Competency Questions.
 |*Responsible team*: |OP’s contractor team.
 |*Inputs*: |Use Cases 1 and 4, and the User Stories.
-|*Outputs*: |Examples of https://github.com/eprocurementontology/eprocurementontology/wiki/Competency-Questions[Competency Questions].
+|*Outputs*: |Examples of https://github.com/OP-TED/ePO/wiki/Competency-Questions[Competency Questions].
 |=====================================================================================================================================
 
 User Stories help also draft very specific questions that need to be answered in order to meet the story. These questions will later on taken into account to draft concrete SPARQL queries.
 
-Some examples of Competency Questions were prepared. The two tables below illustrate how these Competency Questions, linked to their respective User Stories, may look like. The link https://github.com/eprocurementontology/eprocurementontology/wiki/Competency-Questions[Competency Questions], in the GitHub https://github.com/eprocurementontology/eprocurementontology/wiki[Wiki] page, supplies a longer list of concrete examples of CQ for the WG members to get inspiration.
+Some examples of Competency Questions were prepared. The two tables below illustrate how these Competency Questions, linked to their respective User Stories, may look like. The link https://github.com/OP-TED/ePO/wiki/Competency-Questions[Competency Questions], in the GitHub https://github.com/OP-TED/ePO/wiki[Wiki] page, supplies a longer list of concrete examples of CQ for the WG members to get inspiration.
 
 image::CQExample1.png[CQ example 1]
 
@@ -1021,7 +1021,7 @@ Figure 42. Examples (2/2) of User Stories
 |*Outputs*: |Comments by the WG members.
 |=========================================================
 
-The examples were made available to the Working Group members through the GitHub Wiki page. A special https://github.com/eprocurementontology/eprocurementontology/issues/new?template=new_competency_question.md&labels=new%20competency%20question&title=COMPETENCY+QUESTION+-[Add a new competency question] to add comments or create new issues related to the CQs was also made available in the https://github.com/eprocurementontology/eprocurementontology/wiki/Competency-Questions[GitHub Wiki page].
+The examples were made available to the Working Group members through the GitHub Wiki page. A special https://github.com/OP-TED/ePO/issues/new?template=new_competency_question.md&labels=new%20competency%20question&title=COMPETENCY+QUESTION+-[Add a new competency question] to add comments or create new issues related to the CQs was also made available in the https://github.com/OP-TED/ePO/wiki/Competency-Questions[GitHub Wiki page].
 
 [[activity-5-input-data-set]]
 ==== link:#activity-5-input-data-set[Activity 5: Input Data Set]
@@ -1067,21 +1067,21 @@ For this PoC we downloaded the ftp://ted.europa.eu/monthly-packages/2018/[*.tar.
 |*Activity name*: |Develop ETL process.
 |*Responsible team*: |OP’s team.
 |*Inputs*: |TED-XML schemas (on MDR) and TED notices published on the TED ftp://ted.europa.eu/[FTP] server.
-|*Outputs*: |TED to ePO Mapping (Wiring), Java code, XSL-T architecture, other resources (available on the GitHub repository and accessible via the GitHub Wiki page link https://github.com/eprocurementontology/eprocurementontology/tree/master/v2.0.0/05_Implementation/epo-etl[Data Loading development (ETL)].
+|*Outputs*: |TED to ePO Mapping (Wiring), Java code, XSL-T architecture, other resources (available on the GitHub repository and accessible via the GitHub Wiki page link https://github.com/OP-TED/ePO/tree/112fe92b8de4c681fa0d3575851e8e3886906772/v2.0.0/05_Implementation/epo-etl[Data Loading development (ETL)].
 |===================================================================================================================================================================================================================================================================================================================
 
 [[ted-to-epo-mapping]]
 ===== link:#ted-to-epo-mapping[TED to ePO Mapping]
 
-ETL stands for Extraction, Transformation and Loading. The first step (Extraction) requires to identify well where the data of origin are and how they are expressed. For this, the ePO analysts produced a https://eprocurementontology.github.io/Mapping/Mapping%20TED%20XML%20to%20ePO.html[map] putting side by side (wiring) each element of the TED-XML Schema (http://publications.europa.eu/mdr/eprocurement/ted/index.html[R2.0.9.S02.E01]) and the corresponding element in ePO.
+ETL stands for Extraction, Transformation and Loading. The first step (Extraction) requires to identify well where the data of origin are and how they are expressed. For this, the ePO analysts produced a link:{attachmentsdir}/Mapping/Mapping%20TED%20XML%20to%20ePO.html[map] putting side by side (wiring) each element of the TED-XML Schema (http://publications.europa.eu/mdr/eprocurement/ted/index.html[R2.0.9.S02.E01]) and the corresponding element in ePO.
 
 [[technical-approach]]
 ==== link:#technical-approach[Technical approach]
 
 The ETL process was developed based on two technologies:
 
-. *Java*: version JDK 1.8 was used to build a Maven project (see https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/epo-etl/pom.xml[pom.xml] configuration file). The output of the build process is a "*.war" file. The https://github.com/eprocurementontology/eprocurementontology/tree/master/v2.0.0/05_Implementation/epo-etl/src[source code] is available on the GitHub code repository. This java code is responsible for (i) organising the TED-XML files; (ii) launching the extraction + transformation and/or the loading the data into the graph store, and (iii) log all the events and generate logs for monitoring the process;
-. *XSL-T*: version XSL-T 3.0 was used to draft a set of link: https://github.com/eprocurementontology/eprocurementontology/tree/master/v2.0.0/05_Implementation/epo-etl/src/main/resources/xslt[stylesheets] the mission of which is to read the TED-XML files (Extraction) and transform that information into SPARQL INSERT patterns. Per each TED-XML a new TXT document is created with the mapped SPARQL INSERT patterns. The name of the resulting TXT takes the name of the TED XML file and appends the suffix "_output.txt". The piece of code below illustrates one of those examples (if you use the identifier of the document you should be able to find the TED-XML source in the TED Portal).
+. *Java*: version JDK 1.8 was used to build a Maven project (see https://github.com/OP-TED/ePO/tree/112fe92b8de4c681fa0d3575851e8e3886906772/v2.0.0/05_Implementation/epo-etl/pom.xml[pom.xml] configuration file). The output of the build process is a "*.war" file. The https://github.com/OP-TED/ePO/tree/112fe92b8de4c681fa0d3575851e8e3886906772/v2.0.0/05_Implementation/epo-etl/src[source code] is available on the GitHub code repository. This java code is responsible for (i) organising the TED-XML files; (ii) launching the extraction + transformation and/or the loading the data into the graph store, and (iii) log all the events and generate logs for monitoring the process;
+. *XSL-T*: version XSL-T 3.0 was used to draft a set of link: https://github.com/OP-TED/ePO/tree/112fe92b8de4c681fa0d3575851e8e3886906772/v2.0.0/05_Implementation/epo-etl/src/main/resources/xslt[stylesheets] the mission of which is to read the TED-XML files (Extraction) and transform that information into SPARQL INSERT patterns. Per each TED-XML a new TXT document is created with the mapped SPARQL INSERT patterns. The name of the resulting TXT takes the name of the TED XML file and appends the suffix "_output.txt". The piece of code below illustrates one of those examples (if you use the identifier of the document you should be able to find the TED-XML source in the TED Portal).
 
 Result of transforming the TED-XML instance "091271-2018" into ePO-v2.00 SPARQL INSERT queries
 
@@ -1123,8 +1123,8 @@ A note about the performance
 
 The Java code developed and the XSL-T approach are extremely fast:
 
-* *Transformation speed*: _1 notice x 2 ms_. One Contract Award Notice transformed into a SPARQL file with multiple INSERT operations in about 2 milliseconds. See the use of XMLStreamReader APIs (e.g. STAX) to capture the metadata about the TED-XML instances in https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/epo-etl/src/main/java/epo/common/XSLTTransformer.java[XSLTTransformer.java].
-* *Insertion speed*: _1 notice x 0,5 s_. One Contract Award Notice containing hundreds of INSERT operations inserted in the GraphDB as one single transaction in about 0,5 seconds. When the file is greater than 1MB the INSERT operations are split into individual transactions, in which case the operations can consume up to around 1 second. See java code in https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/epo-etl/src/main/java/epo/common/KBManagement.java[KBManagement.java].
+* *Transformation speed*: _1 notice x 2 ms_. One Contract Award Notice transformed into a SPARQL file with multiple INSERT operations in about 2 milliseconds. See the use of XMLStreamReader APIs (e.g. STAX) to capture the metadata about the TED-XML instances in https://github.com/OP-TED/ePO/tree/112fe92b8de4c681fa0d3575851e8e3886906772/v2.0.0/05_Implementation/epo-etl/src/main/java/epo/common/XSLTTransformer.java[XSLTTransformer.java].
+* *Insertion speed*: _1 notice x 0,5 s_. One Contract Award Notice containing hundreds of INSERT operations inserted in the GraphDB as one single transaction in about 0,5 seconds. When the file is greater than 1MB the INSERT operations are split into individual transactions, in which case the operations can consume up to around 1 second. See java code in https://github.com/OP-TED/ePO/tree/112fe92b8de4c681fa0d3575851e8e3886906772/v2.0.0/05_Implementation/epo-etl/src/main/java/epo/common/KBManagement.java[KBManagement.java].
 
 |============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
@@ -1133,7 +1133,7 @@ The Java code developed and the XSL-T approach are extremely fast:
 
 You can execute the code at least in two ways:
 
-. Either you clone the project onto your machine, import the Maven project in your preferred Java editor tool and execute the main class link: https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/epo-etl/src/main/java/epo/MainETLProcess.java[MainETLProcess].
+. Either you clone the project onto your machine, import the Maven project in your preferred Java editor tool and execute the main class link: https://github.com/OP-TED/ePO/tree/112fe92b8de4c681fa0d3575851e8e3886906772/v2.0.0/05_Implementation/epo-etl/src/main/java/epo/MainETLProcess.java[MainETLProcess].
 . Alternatively you may unzip the *.war file and execute the compiled code from a console window. The piece of code below provides a very simple script illustrating how this can be done:
 
 Launching the code, a simple bash shell script
@@ -1265,7 +1265,7 @@ Figure 45. Frequency of Notices
 |*Outputs*: |The http://34.249.1.15:7200[Graph store] is populated with triples.
 |===============================================================================
 
-The document https://eprocurementontology.github.io/Competency_questions/SPARQL_examples.html[SPARQL Query examples] provides a few examples that were provided for the Working Group (WG) members to have a glimpse at how efficiently the ePO is responding.
+The document link:{attachmentsdir}/Competency_questions/SPARQL_examples.html[SPARQL Query examples] provides a few examples that were provided for the Working Group (WG) members to have a glimpse at how efficiently the ePO is responding.
 
 [[query-examples]]
 ===== link:#query-examples[Query examples]
@@ -1323,7 +1323,7 @@ image::QueryExample3.png[Contracts per CPV]
 
 Figure 48. Number of contracts per CPV
 
-See the document https://eprocurementontology.github.io/Competency_questions/SPARQL_examples.html[SPARQL Query examples] for more contextualisation and examples.
+See the document link:{attachmentsdir}/Competency_questions/SPARQL_examples.html[SPARQL Query examples] for more contextualisation and examples.
 
 [[activity-9-test-and-debug]]
 ==== link:#activity-9-test-and-debug[Activity 9: Test and debug]
@@ -1438,12 +1438,12 @@ If prompted for a user sign in, use "guest" for both, the user name and the pass
 |*Activity name*: |Provide feedback
 |*Responsible team*: |Working Group WG) members.
 |*Inputs*: |OP’s example queries and WG’s own Competency Questions and queries
-|*Outputs*: |Feed-back via the link: https://github.com/eprocurementontology/eprocurementontology/issues[GitHub Issues] work-space.
+|*Outputs*: |Feed-back via the link: https://github.com/OP-TED/ePO/issues[GitHub Issues] work-space.
 |==================================================================================================================================
 
 OP development team will suport the WG members in case of doubts or issues related to the development or the SPARQL endpoint.
 
-Any issue related to the design or implementation of the ePO is expected to be raised in the https://github.com/eprocurementontology/eprocurementontology/issues/[GitHub Issues] workspace.
+Any issue related to the design or implementation of the ePO is expected to be raised in the https://github.com/OP-TED/ePO/issues/[GitHub Issues] workspace.
 
 [[annex-i-types-of-documents-processed]]
 === link:#annex-i-types-of-documents-processed[Annex I: Types of documents processed]
@@ -1483,7 +1483,7 @@ link:#_footnoteref_3[3]. See http://lice.licef.ca/index.php/gmot-motplus-et-mot/
 link:#_footnoteref_4[4]. https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX:32014L0024[Directive 2014/24/EU], https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AJOL_2014_094_R_0001_01[Directive 2014/23/EU], https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0025[Directive 2014/25/EU], https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32009L0081[Directive 2009/81/EC] and https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014L0055[Directive 2014/55/EU]
 
 [[_footnote_5]]
-link:#_footnoteref_5[5]. *A note about codes*: although the CCTS library defines a data type for code (CodeType), we decided to use SKOS to represent code list and taxonomy concepts. Therefore this CCTS element is not used in ePO (see the ePO Conceptual Data Map "https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/ePO-CM_v2.0.0.eap[ccts package]" and the https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/ttl/ccts.ttl[ccts.ttl] file for these definitions). There are some good reasons for this decision: (1) The OP’s MDR site already maintains and supplies the largest part of the code lists needed by ePO as a SKOS-XL syntax (named SKOS-AP-EU); and (2) SKOS, and specially SKOS-XL, cater for a rich expressivity and metadata extensibility
+link:#_footnoteref_5[5]. *A note about codes*: although the CCTS library defines a data type for code (CodeType), we decided to use SKOS to represent code list and taxonomy concepts. Therefore this CCTS element is not used in ePO (see the ePO Conceptual Data Map "https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/ePO-CM.eap[ccts package]" and the https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/05_Implementation/ttl/ccts.ttl[ccts.ttl] file for these definitions). There are some good reasons for this decision: (1) The OP’s MDR site already maintains and supplies the largest part of the code lists needed by ePO as a SKOS-XL syntax (named SKOS-AP-EU); and (2) SKOS, and specially SKOS-XL, cater for a rich expressivity and metadata extensibility
 
 [[_footnote_6]]
 link:#_footnoteref_6[6]. The version of the XMI specification used for the exportation of the Conceptual Data Model is "2.1". Please do not confound this with the version of the ePO development, currently "v2.0.0"
@@ -1492,7 +1492,7 @@ link:#_footnoteref_6[6]. The version of the XMI specification used for the expor
 link:#_footnoteref_7[7]. currently maintained by UN/CEFACT
 
 [[_footnote_8]]
-link:#_footnoteref_8[8]. these figures are produced automatically by the https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/epo-etl/src/main/java/epo/process/TedXMLProcess.java[transformation algorithm] and logged into a csv file in the directory `LOG_DATA_DIR` specified in the `/home/user/epo.properties` file.
+link:#_footnoteref_8[8]. these figures are produced automatically by the https://github.com/OP-TED/ePO/tree/112fe92b8de4c681fa0d3575851e8e3886906772/v2.0.0/05_Implementation/epo-etl/src/main/java/epo/process/TedXMLProcess.java[transformation algorithm] and logged into a csv file in the directory `LOG_DATA_DIR` specified in the `/home/user/epo.properties` file.
 
 [[footer]]
 [[footer-text]]
