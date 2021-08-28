@@ -1,0 +1,36 @@
+*Examples of competency questions*
+
+In order to prepare SPARQL queries and test the ontology the Working Group jointly with the OP development team, as experts in both the eProcurement domain and ontology development, shall work on the drafting of simple questions. 
+
+Beware that the questions are aimed to check that the objectives of the Use Cases are being reached. Therefore they have to be drafted from the perspective of the Use Cases. 
+
+In the scope of the ePO v2.0.0 we are using the link:https://github.com/eprocurementontology/eprocurementontology/wiki/Use-case-1.-Transparency-and-Monitoring[Use Case 1: transparency and monitoring] and the link:https://github.com/eprocurementontology/eprocurementontology/issues/11[Use Case 4: Analyzing procurement procedures].
+
+The list below are examples of such possible competency questions drafted taking into account the objectives of those two Use Cases (To see some examples of how to implement questions as SPARQL queries click on this https://eprocurementontology.github.io/Competency_questions/SPARQL_examples.html[SPARQL examples]).
+
+* For a given period of time, the number of SMEs awarded
+* Yearly number of procurement procedures not awarded
+* For a given period of time, the total quantity of contracts awarded, the total amount awarded, the number of SMEs awarded for that period, the total amount awarded to the SMEs
+* For a given period, percentage of procurement procedures divided into lots
+* Detect how many buyers use different Buyers ID and from which countries they are
+* For a given period of time, number of framework agreements awarded, indicating the Procuring Entity (and types, e.g. Contracting Authority, Contracting Entity, Undertaking) and the Economic Operator(s)
+* For a given period of time, percentage of contracts awarded segmented by contract nature (percentage of works, percentage of services, percentage of supplies, etc.)
+* For a given period of time, percentage of procurement procedures awarded divided into Lots, average of Lots and average of contracts
+* For a given period of time, total quantity of procurement procedures published on TED, the percentage of contracts awarded for that period and total awarded amount for this percentage
+* For a given period of time, indicate the percentages of type of procedures and techniques for the awarded procedures
+* For a given period of time, list of contracts awarded and, per each contract, the nature of the contract (Works, services, supplies, etc.) and the types of awarding criteria used
+* Economic operators that have submitted a tender for one period of time and type of procurement procedure.
+* For a given CPV, the number of contracts awarded for that CPV and the total amount awarded
+* For a given CPV, the number of contracts awarded for that CPV and and a maximum number of descendant levels (e.g. 3), get the total amount awarded. The result must include all the descendant CPVs and total amount awarded for the CPV and descendants indicated.
+  
+*Method for submission*:
+
+Create a new issue or add a comment on an existing one. After discussion these competency questions will be implemented as SPARQL queries.
+
+
+
+
+
+
+
+

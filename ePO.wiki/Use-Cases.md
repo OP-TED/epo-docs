@@ -1,0 +1,1 @@
+### If you want to submit any general issue about use cases, please create an issue by [clicking here](https://github.com/eprocurementontology/eprocurementontology/labels/General%20-%20use%20case). And then click on "New issue".
