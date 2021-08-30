@@ -5,4 +5,4 @@ Welcome to this GitHub static repository. In this space you will find the ***onl
 
 This repository contains all resources which are static, such as HTML pages, images and CSS files and other artefacts shared among other repositories of this user.
 
-[Click here for the online documentation](http://docs.ted.europa.eu/epo-docs/)
+[Click here for the online documentation](https://docs.ted.europa.eu/epo-docs/)
