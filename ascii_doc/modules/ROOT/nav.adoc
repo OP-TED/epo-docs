@@ -2,3 +2,4 @@
 * Application Profiles
 ** link:{attachmentsdir}/BDTI/index.html[BDTI]
 ** link:{attachmentsdir}/ext_reg2015/index.html[REG2015]
+* link:meetings/wgmeetings.html[Work group meetings]

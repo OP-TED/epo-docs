@@ -1,0 +1,12 @@
+
+= History
+
+link:2021-10-12-wgm.html[Work Group meeting 2021-09-21]
+
+    * eSenderRole
+    * review requester role
+
+http://2021-10-12-wgm.adoc[Work Group meeting 2021-10-01]
+
+    * some other issue
+    * some otehr review
