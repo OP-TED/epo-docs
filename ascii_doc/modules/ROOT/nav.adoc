@@ -1,5 +1,4 @@
 * <<index.adoc#, EPO documentation>>
 * Application Profiles
-** link:{attachmentsdir}/BDTI/index.html[BDTI]
-** link:{attachmentsdir}/ext_reg2015/index.html[REG2015]
-* link:meetings/index.html[Work group meetings]
+** link:{attachmentsdir}/BDTI/index.html[BDTI^]
+** link:{attachmentsdir}/ext_reg2015/index.html[REG2015^]
