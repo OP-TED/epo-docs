@@ -1,24 +1,24 @@
 = History
 
-link:notes/2021-10-28-wgm.adoc[Work Group meeting 2021-10-28]
+xref:notes/2021-10-28-wgm.adoc[Work Group meeting 2021-10-28]
 
-link:notes/2021-10-26-wgm.adoc[Work Group meeting 2021-10-26]
+xref:notes/2021-10-26-wgm.adoc[Work Group meeting 2021-10-26]
 
-link:notes/2021-10-21-wgm.adoc[Work Group meeting 2021-10-21]
+xref:notes/2021-10-21-wgm.adoc[Work Group meeting 2021-10-21]
 
-link:notes/2021-10-19-wgm.adoc[Work Group meeting 2021-10-19]
+xref:notes/2021-10-19-wgm.adoc[Work Group meeting 2021-10-19]
 
-link:notes/2021-10-14-wgm.adoc[Work Group meeting 2021-10-14]
+xref:notes/2021-10-14-wgm.adoc[Work Group meeting 2021-10-14]
 
-link:notes/2021-10-12-wgm.adoc[Work Group meeting 2021-10-12]
+xref:notes/2021-10-12-wgm.adoc[Work Group meeting 2021-10-12]
 
-link:notes/2021-10-12-wgm.adoc[Work Group meeting 2021-10-12]
+xref:notes/2021-10-12-wgm.adoc[Work Group meeting 2021-10-12]
 
-link:notes/2021-10-07-wgm.adoc[Work Group meeting 2021-10-07]
+xref:notes/2021-10-07-wgm.adoc[Work Group meeting 2021-10-07]
 
-link:notes/2021-10-05-wgm.adoc[Work Group meeting 2021-10-05]
+xref:notes/2021-10-05-wgm.adoc[Work Group meeting 2021-10-05]
 
-link:notes/2021-09-21-wgm.html[Work Group meeting 2021-09-21]
+xref:notes/2021-09-21-wgm.adoc[Work Group meeting 2021-09-21]
 
     * eSenderRole
     * review requester role
