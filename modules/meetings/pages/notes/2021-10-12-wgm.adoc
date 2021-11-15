@@ -19,18 +19,17 @@
 
 
 |===
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/bud-pay[bud-pay]|Organisation whose budget is used to pay for the contract
-
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/exec-pay[exec-pay]|Organisation executing the payment
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/group-lead[group-lead]|Group leader
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/info-prov[info-prov]|Organisation providing additional information about the procurement procedure
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/offl-acc[offl-acc]|Organisation providing offline access to the procurement documents
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/processor[processor]|Organisation processing tenders
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/recepient[recepient]|Organisation receiving tenders
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/req-proc[req-proc]|Organisation processing requests to participate
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/req-recep[req-recep]|Organisation receiving requests to participate
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/rev-info[rev-info]|Organisation providing more information on the review procedures
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/signatory[signatory]|Organisation signing the contract
+|bud-pay|Organisation whose budget is used to pay for the contract
+|exec-pay|Organisation executing the payment
+|group-lead|Group leader
+|info-prov|Organisation providing additional information about the procurement procedure
+|offl-acc|Organisation providing offline access to the procurement documents
+|hprocessor|Organisation processing tenders
+|recepient|Organisation receiving tenders
+|req-proc|Organisation processing requests to participate
+|req-recep|Organisation receiving requests to participate
+|rev-info|Organisation providing more information on the review procedures
+|signatory|Organisation signing the contract
 |===
 
 === Decision: “signatory” subrole

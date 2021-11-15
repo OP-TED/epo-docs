@@ -3,7 +3,7 @@
 *Date:* 19/10/2021  +
 *Participants:* Hilde Kjølset, Giorgia Lodi, Natalie Muric, Thor Steinar Møller, Giovanni Paolo Sellitto  +
 *Model editor:* Eugen Costezki +
-*Note editor: *Andreea Pasăre
+*Note editor:* Andreea Pasăre
 
 == Agenda:
 
@@ -19,25 +19,24 @@
 *Organisation-subrole* table definition: This table provides the list of the different sub-functions of the organisations in a procurement procedure.
 
 |===
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/bud-pay[+++<s>+++bud-pay]+++</s>+++|+++<s>+++Organisation whose budget is used to pay for the contract+++</s>+++|Permitted values for ‘hasRole’:
+|bud-pay+++</s>+++|+++<s>+++Organisation whose budget is used to pay for the contract+++</s>+++|Permitted values for ‘hasRole’:
 Context: Contract
-
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/exec-pay[+++<s>+++exec-pay]+++</s>+++|+++<s>+++Organisation executing the payment+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/group-lead[+++<s>+++group-lead]+++</s>+++|+++<s>+++Group leader+++</s>+++|Permitted values for ‘hasRole’: buyer, winner, tenderer or the service provider.
+|exec-pay+++</s>+++|+++<s>+++Organisation executing the payment+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider
+|group-lead+++</s>+++|+++<s>+++Group leader+++</s>+++|Permitted values for ‘hasRole’: buyer, winner, tenderer or the service provider.
 Context for the buyer: Procedure
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/info-prov[+++<s>+++info-prov]+++</s>+++|+++<s>+++Organisation providing additional information about the procurement procedure+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider.
+|info-prov+++</s>+++|+++<s>+++Organisation providing additional information about the procurement procedure+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider.
 Context: Procedure
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/offl-acc[+++<s>+++offl-acc]+++</s>+++|+++<s>+++Organisation providing offline access to the procurement documents+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider.
+|offl-acc+++</s>+++|+++<s>+++Organisation providing offline access to the procurement documents+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider.
 Context: Lot,
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/processor[+++<s>+++processor]+++</s>+++|+++<s>+++Organisation processing tenders+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider.
+|processor+++</s>+++|+++<s>+++Organisation processing tenders+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider.
 Context: Lot
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/recepient[+++<s>+++recepient]+++</s>+++|+++<s>+++Organisation receiving tenders+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider.
+|recepient+++</s>+++|+++<s>+++Organisation receiving tenders+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider.
 Context: Lot
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/req-proc[+++<s>+++req-proc]+++</s>+++|+++<s>+++Organisation processing requests to participate+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider.
+|req-proc+++</s>+++|+++<s>+++Organisation processing requests to participate+++</s>+++|Permitted values for ‘hasRole’: buyer or the service provider.
 Context: Lot
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/req-recep[+++<s>+++req-recep]+++</s>+++|+++<s>+++Organisation receiving requests to participate+++</s>+++|
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/rev-info[+++<s>+++rev-info]+++</s>+++|+++<s>+++Organisation providing more information on the review procedures+++</s>+++|
-|https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/organisation-subrole/signatory[+++<s>+++signatory]+++</s>+++|+++<s>+++Organisation signing the contract+++</s>+++|
+|req-recep+++</s>+++|+++<s>+++Organisation receiving requests to participate+++</s>+++|
+|rev-info+++</s>+++|+++<s>+++Organisation providing more information on the review procedures+++</s>+++|
+|signatory+++</s>+++|+++<s>+++Organisation signing the contract+++</s>+++|
 |===
 
 

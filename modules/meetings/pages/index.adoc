@@ -1,5 +1,11 @@
 = History
 
+xref:notes/2021-11-11-wgm.adoc[Work Group meeting 2021-11-11]
+
+xref:notes/2021-11-09-wgm.adoc[Work Group meeting 2021-11-09]
+
+xref:notes/2021-11-04-wgm.adoc[Work Group meeting 2021-11-04]
+
 xref:notes/2021-10-28-wgm.adoc[Work Group meeting 2021-10-28]
 
 xref:notes/2021-10-26-wgm.adoc[Work Group meeting 2021-10-26]

@@ -3,18 +3,16 @@
 *Date:* 26/10/2021  +
 *Participants:* Hilde Kjølset, Natalie Muric, Thor Steinar Møller, Giovanni Paolo Sellitto +
 *Model editor:* Eugen Costezki +
-*Note editor: *Andreea Pasăre
+*Note editor:* Andreea Pasăre
 
 == Agenda:
 
-. Announce that a request will be sent to the WG about reviewing the https://eceuropaeu.sharepoint.com/:x:/r/teams/GRP-eProcurementOntologyWorkingGroup/Shared%20Documents/General/cm%20backlog/proposed%20attribute%20definitions%202021-10-25.xlsx?d=w7e8d27a9c2a44f62a5fc191eb47b9a49&csf=1&web=1&e=kt3XNQ[proposed attribute definitions] where currently missing.
+. Announce that a request will be sent to the WG about reviewing the proposed attribute definitions where currently missing.
 ** Any comments to be discussed on the 9th of November
 . Announce that more review requests are coming as we document and propose corrections to the constraint violations.
 . Propose to record the ontology requirements, assumptions & (modelling) principles.
-** https://eceuropaeu.sharepoint.com/:x:/r/teams/GRP-eProcurementOntologyWorkingGroup/Shared%20Documents/General/artifacts/requirements-catalog.xlsx?d=w84538459972d4263b5d364e396b8adeb&csf=1&web=1&e=czsFqu[Link to file]
 . Approve with the group meeting that distilling/de-conflating the sub-role table into “derived role” and “derived function” (to which is also an “activity”/”action”) is (a) useful and (b) that what we need in ePO is the “derived function” column.
-. BDTI query returning multiple labels: how usergen is this?
-** https://github.com/OP-TED/epo-queries/issues/2[Issue link]
+. BDTI query returning multiple labels: how urgent is this?
 . *What shall be presented to the DG GROW?*
 ** Proposal to revise:
 *** Comments on the labels and definitions?

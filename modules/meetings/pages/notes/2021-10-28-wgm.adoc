@@ -3,7 +3,7 @@
 *Date:* 28/10/2021  +
 *Participants:* Natalie Muric, Giovanni Paolo Sellitto  +
 *Model editor:* Eugen Costezki +
-*Note editor: *Andreea Pasăre
+*Note editor:* Andreea Pasăre
 
 == Agenda:
 
@@ -19,8 +19,8 @@
 *** +++<s>+++Are we allowed to imagine that previously created instances can be updated / extended / modified? Or do we just refer to them mainly once they have been created? (this shall be recorded as a principle)+++</s>+++
 *** +++<s>+++Then how? +++</s>+++
 * Decide what role properties we need in the model & announce work in progress on role modeling alternatives
-** Selection from 15 role features available https://docs.google.com/spreadsheets/d/1sdvwA2Lg4ojQ4X21BpR_VJlYqMHGDkG1AMyxCwh0UIM/edit#gid=0[here]
-** Announce the work in progress on https://docs.google.com/document/d/1jtTbH0VMu0tdCGz4iAciguGVR8DVF1tAoUTPm6vWTEM/edit[approaches to role modelling]
+** Selection from 15 role features available.
+** Announce the work in progress on approaches to role modelling.
 
 
 == Discussion
