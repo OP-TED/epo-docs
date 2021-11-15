@@ -1,0 +1,39 @@
+Please find below the minutes from the 23rd of March
+
+Participants: Paloma Arillo(OP), Cécile Guasch (ISA2 - DIGIT), Veit Jahns (TC440), Giorgia Lodi (ISTC-CNR), Natalie Muric(OP), Héctor Rico (everis), Helder Santos(INCM), Giovani Paolo Sellito (ANAC), and Enric Staromiesjski Torregrosa(everis).
+
+* NM pointed out that there won’t be a meeting next 1st. The next meeting will be on the 13th.
+* NM indicated that thursday 25th presentation BDTI usage of DCAT.
+* NM informed the WG that v2.0.1 has been released. Showed the git and the release.
+
+**Topics of discussion: eCatalogue diagram**
+
+The WG proposed and agreed on separating eCatalogueReification and create a specific eCatalogue diagram to ease the maintenance.
+
+Action Point: epo:Adress should have fullAddress as a string
+
+The work done during the meeting was carried out taking as reference the diagrams from TC440:
+
+* epo-ecat:eCatalogue definition has been modified. Additional Information removed and used for the definition of epo-ecat:eCatalogueLine
+
+* The epo-ecat:eCatalogueLine was added. The class was defined based on TC 440 and the additional information from epo-ecat:Catalogue.
+
+* A new predicate was added from epo-ecat:eCatalogue epo:isComposedOf epo-ecat:eCatalogueLine. Cardinality 1..*
+
+* A new predicate was added from epo-ecat:eCatalogueLine epo:specifiesItem epo:Item. Cardinality 1
+
+* The class epo:Period was added in the diagram and linked to: epo:Contract and to epo-ecat:eCatalogue
+
+* The class epo:Price was added
+
+* The class epo:Location was added
+
+* Action point for the future: cardinalities should be harmonised – aligned with the 2.0.1 (all attributes from all classes)
+
+* The WG created an issue regarding Predicate harmonisation that concerns isComposedOf amongst other predicates in the Ontology.  Issue 281 (https://github.com/eprocurementontology/eprocurementontology/issues/281).
+
+**Topic of discussion: eOrder diagram:**
+
+* Change applied based on previous eCatalogue discussion: predicate from epo:Order epo:isComposedOf epo:OrderLine
+
+* Action Point: Separate the eOrdering and eOrdering Reification under its prefix as it is done in the case of eCatalogue (e.g. epo-eorder:)

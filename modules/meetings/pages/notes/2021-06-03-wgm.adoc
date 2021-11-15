@@ -1,0 +1,39 @@
+Please find below the minutes from 03 June 2021
+
+Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Hilde Kjolset (dfø), Giorgia Lodi (ISTC-CNR), Thor Steiner Møller (dfø), Natalie Muric (OP) and Giampaolo Sellitto (ANAC).
+
+**Topic of discussion: Check Summary from 01 June 2021 and update decisions**
+
+The Contract has no relation with Value in 2.0.2 but in 2.0.1
+
+Proposal: rename ‘Value’ to ‘MonetaryValue’ in the new version of the Ontology (this new version will incorporate updates to definitions and predicates with regard to 2.0.1 and will add certain features from 2.0.2). We have to take into consideration this change for all mappings, such as ANAC Data, Consip Data and TED Data.
+
+**Maximum and Minimum** were proposed to be used as predicates in 2.0.1 and 2.0.2.
+
+The predicate ‘hasAwardEstimatedValue’ cardinality should be changed to ‘0 .. *’
+
+We have to identify all ‘MonetaryValue’ in the model to link it to other classes.
+
+The following point was brought up: If there is an AwardedValue for the FrameworkAgreement and an AwardedValue for the Contract. Is there not a contradiction due to the fact that the FrameworkAgreement is a Contract?
+
+FrameworkAgreement: either has no value but the value is for the contracts derived of it or you consider the total value of the FrameworkAgreement or you end up with a double value.
+
+A comparison of these concepts in the model and the Business Terms in eForms and current forms need to be drawn up to check and ensure that the WG creates a model that reflects the use cases of both, current forms and eForms.
+
+**Topic of discussion: Amount**
+
+Probably we can eliminate the class Amount by inserting in the MonetaryValue an amount:numeric and currency:skos. We need to check if the same can be done for Amount and Quantity.
+
+In the TED mappings the data is mapped to ‘ccts’ and not ‘epo’ as per the OWL file.
+
+Checking notice 2020/S 243-602968 it was noted that the minimum and maximum offer is used which is different to the maximum and minimum value of the contract and should probably be associated to the tender as shown in the model created in the last meeting.
+
+**Topic of discussion: Plans for the near future**
+
+* Apply the Reification on the whole model.
+
+* Finalize eOrdering and eCatalogue
+
+* Add the ESPD to the Ontology once an ESPD UML data model is available.
+
+* Ensure there is placeholder in the Ontology conceptual model for indicating data during the contract’s life cycle.

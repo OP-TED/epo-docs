@@ -1,0 +1,70 @@
+Please find below the minutes from 4 May 2021
+
+Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Hilde Kjolset (dfø), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP), Helder Santos (INCM), Svante Schubert (TTC 440) and Giampaolo Sellitto (ANAC).
+
+**Topic of discussion: Definitions - predicates**
+
+The following relations were discussed and compared with the html conventions to see if this work will correct the inconsistencies:
+
+* **Predicate**: fulfilsRequirement
+
+Note: the OWL generates ‘hasFulfilsRequirement’ as it is an attribute of the class. All attributes need to be manually checked and ‘has’ or another verb used. Using fulfilsRequirement from three different sources is not a problem as the range is an SKOS concept.
+
+* Subject: PlannedProcurementPart
+
+**Predicate**: has
+
+Object: AccessTerm
+
+Note: predicate and relations to be discuss with the UML to OWL project team following the 3 different situations described **below** and discussed during the meeting
+
+ 1. **Current situation**
+
+Procedure isSubjectTo ContractTerm and AccessTerm, while PlannedProcurementPart isSubjectTo AccessTerm.
+
+However the way this is currently designed means that there is no possible restriction: in the OWL transformation everything in the domain (Procedure or PlannedProcurementPart) would be subject to anything in the range as we cannot differenciate what is subject of what.
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20210504-current-situation.png[]
+
+
+  2. **Proposal 1**
+
+The introduction of an abstract class ‘ProcurementTerm’ allows ContractTerm and AccessTerm to inherit from that class ‘ProcurementTerm’.
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20210504-proposal1.png[]
+
+  3. **Proposal 2**
+
+A change in the domain, ‘OWLThing’, and the introduction of the abstract class will allow that any class is subject to the abstract class ‘ProcurementTerm’.
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20210504-proposal2.png[]
+
+* Subject: Address
+
+**Predicate**: has
+
+Object: LocationCoordinate
+
+Note: predicate to be discussed when redefining Location ‘hasGeometry’ or ‘hasLocationCoordinate’
+
+* Subject: AwardDecision
+
+**Predicate**: ‘has’ replaced with ‘specifiesWinner’
+
+Object: Winner
+
+Definition: Relation indicating that the AwardDecision defines a winner
+
+Inverse: isWinnerDefinedIn
+
+Definition: Relation indicating that a winner is defined in an award decision
+
+* Subject: AwardDecision
+
+**Predicate**: has
+
+Object: Subcontract
+
+Note: this relation is discarded as BT-55 can go through TenderLot and BT-554 should probably be a calculation of the total value of all subcontracts related to a tender lot (could be provisionally put in a CAN – to be discussed)
+
+The next meeting will be held on Thursday 06 May.

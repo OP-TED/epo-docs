@@ -1,0 +1,66 @@
+Please find below the minutes from 27 May 2021
+
+Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Hilde Kjolset (dfø), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP) and Giampaolo Sellitto (ANAC).
+
+**Topic of discussion: Definitions – predicates**
+
+The following relations were discussed and compared with the html conventions to see if this work will correct the inconsistencies:
+
+* Subject: ContractModificationNotice
+
+**Predicate**: ‘modifies’ is replaced with ‘announcesModification’
+
+Object: Contract
+
+* Subject: Procedure
+
+**Predicate**: uses
+
+Object: AccessTerm
+
+Inverse: isSubjectTo
+
+* Subject: PlannedProcurementPart
+
+**Predicate**: uses
+
+Object: Channel
+
+This relation is deleted as it is not required in the mapping.
+
+* Subject: FrameworkAgreementTechnique
+
+**Predicate**: uses
+
+Object: EAuctionTechnique
+
+This relation is deleted as it is not required in the mapping. It is not clear if FrameworkAgreement or the FrameworkAgreementTechnique uses the eAuctionTechnique.
+
+* Subject: Procedure
+
+**Predicate**: uses
+
+Object: ExclusionGround
+
+The CCCEV has to be revisit as this relation needs to be changed. Lot should specify the procurement criterion which should in turn be related to the CCCEV.
+
+* Subject: LotGroup
+
+**Predicate**: uses
+
+Object: ‘FrameworkAgreementTechnique’ replaced with ‘Technique’ as FrameworkAgreementTechnique is a Technique
+
+Definition: Relation indicating that a lot or a grouplot uses a technique
+
+Inverse: is UsedBy
+
+This needs to be checked in more detail.
+
+* Subject: Lot
+
+**Predicate**: uses
+
+Object: Technique
+
+
+Some definitions have been added to the relations discussed on 18 and 25 May. The minutes have been updated.

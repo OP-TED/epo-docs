@@ -1,0 +1,178 @@
+Please find below the minutes from 18 May 2021
+
+Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Natalie Muric (OP) and Giampaolo Sellitto (ANAC).
+
+**Topic of discussion: Relation subject-object - check definitions**
+
+Before discussing the relations subject-object and the predicates, the WG redefines the following:
+
+* FrameworkAgreementTechnique
+
+Definition: Technique that establishes the terms governing contracts to be awarded during a given period, in particular with regards to price and, where appropriate, the quantity envisaged.
+
+The technique is prepared during the procedure and it becomes active when the contract is signed.
+
+* FrameworkAgreement
+
+Definition: An agreement between one or more contracting authorities and one or more economic operators.
+
+**Topic of discussion: Definitions - predicates**
+
+The following relations were discussed and compared with the html conventions to see if this work will correct the inconsistencies:
+
+* Subject: AwardDecision
+
+**Predicate**: isReferredByA
+
+Object: Contract
+
+To potentially be removed if not used in mappings 5it causes no problem in the rangedomain scope).
+
+* Subject: Lot
+
+**Predicate**: isReferredByA
+
+Object: Contract
+
+* Subject: Subcontract
+
+**Predicate**: isReferredToIn
+
+Object: AwardDecision
+
+This relation is removed. However the WG decides to look later how to redo the mapping maybe as statistical information or ‘subcontracting’
+
+* Subject: AwardDecision
+
+**Predicate**: isReferredToIn
+
+Object: Subcontract
+
+This relation is removed.
+
+* Subject: Lot
+
+**Predicate**: isReferredToIn
+
+Object: ProcurementDocument
+
+Definition: Relation indicating that the Lot is referenced in the ProcurementDocument.
+
+* Subject: Lot
+
+**Predicate**: isSpecifiedIn
+
+Object: Procedure
+
+Definition: Relation indicating that the Lot is referenced in the Procedure.
+
+* Subject: StrategicProcurement
+
+**Predicate**: isSpecifiedIn
+
+Object: ResourceElement
+
+This relation is removed.
+
+
+* Subject: Document
+
+**Predicate**: isSubmittedBy
+
+Object: Agent
+
+This relation is removed.
+
+* Subject: Tender
+
+**Predicate**: isSubmittedBy
+
+Object: Tenderer
+
+Definition: Relation indicating the economic operator that submitted a tender.
+
+Inverse: submits
+
+Definition: Relation indicating the submission of a tender by an economic operator
+
+* Subject: FrameworkAgreementTerm
+
+**Predicate**: isSubmittedBy
+
+Object: LotGroup
+
+This relation is removed.
+
+* Subject: AwardDecision
+
+**Predicate**: refersTo
+
+Object: Lot, LotGroup
+
+To be discussed with the rest of the WG members.
+
+* Subject: Contract
+
+**Predicate**: refersTo
+
+Object: Lot, Tender
+
+To be discussed with the rest of the WG members.
+
+* Subject: ContractModificationNotice
+
+**Predicate**: refersTo
+
+Object: ContractAwardNotice
+
+To be discussed with the rest of the WG members.
+
+* Subject: PlannedProcurementPart
+
+**Predicate**: refersTo
+
+Object: Document
+
+To be discussed with the rest of the WG members.
+
+* Subject: TenderLot
+
+**Predicate**: refersTo
+
+Object: Item
+
+To be discussed with the rest of the WG members. On 11 May 2021 it was decided to replaced 'TenderLot' with 'Tender'. For th etime being the change will not be applied.
+
+* Subject: Lot
+
+**Predicate**: refersTo
+
+Object: Item, PlannedProcurementPart
+
+To be discussed with the rest of the WG members.
+
+* Subject: Document
+
+**Predicate**: relatesTo
+
+Object: Procedure
+
+* Subject: TenderLot
+
+**Predicate**: ‘relatesTo’ is replaced with ‘isSubmittedFor’
+
+Object: Lot
+
+Definition: Relation indicating the TenderLot is submitted for a Lot.
+
+* Subject: Lot
+
+**Predicate**: specifies
+
+Object: SelectionCriterion
+
+* Subject: Procedure
+
+**Predicate**: isComposedOf
+
+Object: Lot

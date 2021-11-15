@@ -1,0 +1,13 @@
+Please find below the minutes from the 2nd of February.
+
+Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP), Helder Santos (INCM), Juan Carlos Segura (everis), Giampaolo Sellitto (ANAC), and Enric Staromiejski (everis).
+
+**Topic of discussion: Revision of the minutes from the 26th and 28th January**
+
+* Some small corrections were done during the meeting
+
+**Topic of discussion: Cardinalities**
+
+The WG worked on the cardinalities of the attributes of the eProcurement Ontology v2.0.1.
+
+The corresponding modification in the model can be consulted in this https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/Cardinalities.xlsx.

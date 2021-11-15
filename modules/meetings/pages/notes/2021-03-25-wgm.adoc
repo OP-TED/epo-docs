@@ -1,0 +1,20 @@
+Please find below the minutes from the 25th of March
+
+Participants: Anna Frantzen, Cécile Guasch (ISA2 - DIGIT), Hilde Kjølset (dfø), Giorgia Lodi (ISTC-CNR), Thor Møller (dfø), Natalie Muric (OP)Juan Carlos Segura Fernández-Carnicero (everis), Giampaolo Sellitto (ANAC), Enric Staromiejski (everis), Sander Van-Dooren (ISA2 - DIGIT).
+
+**Topic of discussion: Presentation of the BDTI pilot**
+
+* The BDTI team presented the wordk done on the BDTI pilot and how it uses the DCAT specification.
+
+**Topic of discussion: Definitions**
+
+The following concepts were defined in the meeting (see definitions in the EAP file and in the ePO glossary):
+
+* epo:Room
+* epo:StreetName
+* epo:TimezoneOffset
+* epo:Alias
+* epo:CurrencyID
+* epo:AmountValue
+
+The definitions can be consulted in the Glossary. See https://github.com/eprocurementontology/eprocurementontology/blob/meetings/ePO-Glossary.xlsx.

@@ -30,3 +30,64 @@ xref:notes/2021-09-21-wgm.adoc[Work Group meeting 2021-09-21]
     * review requester role
     * participant role
     * sub-role table in EU Vocabularies
+
+xref:notes/2021-06-10-wgm.adoc[Work Group meeting 2021-06-10]
+
+xref:notes/2021-06-03-wgm.adoc[Work Group meeting 2021-06-03]
+
+xref:notes/2021-06-10-wgm.adoc[Work Group meeting 2021-06-01]
+
+xref:notes/2021-05-27-wgm.adoc[Work Group meeting 2021-05-27]
+
+xref:notes/2021-05-25-wgm.adoc[Work Group meeting 2021-05-25]
+
+xref:notes/2021-05-18-wgm.adoc[Work Group meeting 2021-05-18]
+
+xref:notes/2021-05-11-wgm.adoc[Work Group meeting 2021-05-11]
+
+xref:notes/2021-05-06-wgm.adoc[Work Group meeting 2021-05-06]
+
+xref:notes/2021-05-04-wgm.adoc[Work Group meeting 2021-05-04]
+
+xref:notes/2021-04-29-wgm.adoc[Work Group meeting 2021-04-29]
+
+xref:notes/2021-04-27-wgm.adoc[Work Group meeting 2021-04-27]
+
+xref:notes/2021-04-22-wgm.adoc[Work Group meeting 2021-04-22]
+
+xref:notes/2021-04-20-wgm.adoc[Work Group meeting 2021-04-20]
+
+xref:notes/2021-04-15-wgm.adoc[Work Group meeting 2021-04-15]
+
+xref:notes/2021-04-13-wgm.adoc[Work Group meeting 2021-04-13]
+
+xref:notes/2021-03-25-wgm.adoc[Work Group meeting 2021-03-25]
+
+xref:notes/2021-03-23-wgm.adoc[Work Group meeting 2021-03-23]
+
+xref:notes/2021-03-16-wgm.adoc[Work Group meeting 2021-03-16]
+
+xref:notes/2021-03-11-wgm.adoc[Work Group meeting 2021-03-11]
+
+xref:notes/2021-03-09-wgm.adoc[Work Group meeting 2021-03-09]
+
+xref:notes/2021-03-04-wgm.adoc[Work Group meeting 2021-03-04]
+
+xref:notes/2021-03-02-wgm.adoc[Work Group meeting 2021-03-02]
+
+xref:notes/2021-02-25-wgm.adoc[Work Group meeting 2021-02-25]
+
+xref:notes/2021-02-23-wgm.adoc[Work Group meeting 2021-02-23]
+
+xref:notes/2021-02-18-wgm.adoc[Work Group meeting 2021-02-18]
+
+xref:notes/2021-02-16-wgm.adoc[Work Group meeting 2021-02-16]
+
+xref:notes/2021-02-11-wgm.adoc[Work Group meeting 2021-02-11]
+
+xref:notes/2021-02-09-wgm.adoc[Work Group meeting 2021-02-09]
+
+xref:notes/2021-02-04-wgm.adoc[Work Group meeting 2021-02-04]
+
+xref:notes/2021-02-02-wgm.adoc[Work Group meeting 2021-02-02]
+

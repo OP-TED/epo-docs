@@ -1,0 +1,196 @@
+Please find below the minutes from 6 May 2021
+
+Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Hilde Kjolset (dfø), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP), Helder Santos (INCM), Svante Schubert (TTC 440) and Giampaolo Sellitto (ANAC).
+
+**Topic of discussion: Definitions - predicates**
+
+The following relations were discussed and compared with the html conventions to see if this work will correct the inconsistencies:
+
+* Subject: Buyer
+
+**Predicate**: ‘has’ replaced with ‘hasBuyerWebsite’
+
+Object: BuyerProfile
+
+Definition: Relation indicating the website of the buyer
+
+* Subject: ContactPoint
+
+**Predicate**: ‘has’ replaced with ‘hasChannel’
+
+Object: Channel
+
+Definition: Relation indicating a concept has a communication channel
+
+Note: Not needed here. To be checked if this relation is needed in planning and any mapping
+
+* Subject: Role
+
+**Predicate**: ‘has’ could be replaced with ‘hasContactPoint’
+
+Object: ContactPoint
+
+Note: new name of predicate to be reviewed with reification
+
+* Subject: Procedure
+
+**Predicate**: ‘has’
+
+Object: DirectAwardTerm
+
+Note: to be reviewed based on discussion on 4 May 2021 if ‘has’ should be replaced with ‘isSubjectTo’. Follow patterns and possibly abstract class decision
+
+* Subject: PlannedProcurementPart
+
+**Predicate**: ‘has’
+
+Object: ContractTerm
+
+Note: to be reviewed based on discussion on 4 May 2021 if ‘has’ should be replaced with ‘isSubjectTo’
+
+* Subject: EvaluationBoard
+
+**Predicate**: ‘has’ replaced with ‘evaluates’
+
+Object: ExclusionGround
+
+Definition: Relation indicating who evaluates a criterion
+
+Inverse: isEvaluatedBy
+
+Definition: Relation indicating by whom a criterion is evaluated
+
+* Subject: Lot
+
+**Predicate**: ‘has’ replaced with ‘hasPurpose’
+
+Object: Purpose
+
+Definition: Relation indicating a contract, procedure, lot or planned procurement part has a purpose
+
+Note: need to change relationships for procedure (overall purpose).
+
+
+* Subject: Lot
+
+**Predicate**: has
+
+Object: OpeningTerm
+
+Note: to be reviewed based on discussion on 4 May 2021 if ‘has’ should be replaced with ‘isSubjectTo’
+
+* Subject: Procedure
+
+**Predicate**: has
+
+Object: ProcedureTerm
+
+Note: to be reviewed based on discussion on 4 May 2021 if ‘has’ should be replaced with ‘isSubjectTo’
+
+* Subject: Lot, GroupLot
+
+**Predicate**: hasAwardedValue
+
+Object: Value
+
+Note: to be reviewed with ‘Values’
+
+
+* Subject: Lot, GroupLot, Procedure, Subcontract
+
+**Predicate**: hasEstimatedValue
+
+Object: Value
+
+Note: to be reviewed with ‘Values’
+
+* Subject: ContactPoint
+
+**Predicate**: hasLocation
+
+Object: Location
+
+
+* Subject: Document
+
+**Predicate**: hasNonPublishedElement
+
+Object: PublicationProvision
+
+Definition: Relation indicating that part of a document is not published
+
+* Subject: PublicationProvision
+
+**Predicate**: ‘hasNonPublishedElement’ replaced with ‘isForResourceElement’
+
+Object: ResourceElement
+
+Definition: Relation indicating that the publication provision applies to a given field of a document
+
+* Subject: Tender, TenderDocument
+
+**Predicate**: hasSubmissionTerm
+
+Object: SubmissionTerm
+
+Note: to be reviewed based on discussion on 4 May 2021 if ‘hasSubmissionTerm’ should be replaced with ‘isSubjectTo’
+
+
+* Subject: ContractTerm
+
+**Predicate**: ’includes’ replaced with ‘hasSubTerm’
+
+Object: SubcontractTerm
+
+Definition: Relation indicating a term has a subterm
+
+Inverse: isSubTermOf
+
+Definition: Relation indication a term is a subterm of another term
+
+
+* Subject: Document
+
+**Predicate**: includes
+
+Object: RegulatoryFrameworkInformation
+
+Note: Element and its relations not needed in Notification
+
+
+* Subject: Tender
+
+**Predicate**: includes
+
+Object: TenderLot
+
+Definition: Relation indicating a Tender has a TenderLot
+
+Inverse: isIncludedIn
+
+Definition: Relation indicating a TenderLot is included in a Tender
+
+
+* Subject: Lot
+
+**Predicate**: isAwardedTo
+
+Object: TenderLot
+
+Note: Question as to whether Lot awarded to ‘tender’ or ‘tenderer’. WG decision: must be ‘tender’ as one tenderer may submit several tenders
+
+
+* Subject: LotGroup
+
+**Predicate**: isAwardedTo
+
+Object: TenderLot
+
+Note: If ‘Lot’ is to LotGroup then ‘TenderLot’ is to TenderLotGroup and therefore a LotGroup isAwarded to TenderLot (*,*). To be discussed in the next meeting.
+
+Actions:
+
+ - to find use case
+ -  to find old notes and ppts on this point
+
+Next meeting to be held on Tuesday 11 May 2021

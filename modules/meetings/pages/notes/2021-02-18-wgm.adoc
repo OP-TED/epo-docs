@@ -1,0 +1,43 @@
+Please find below the minutes from the 18th of February.
+
+Participants: Ana Aido, Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Veit Jahns (TC440), Hilde Kjølset (dfø), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP), Fatima Sadiq (OP), Helder Santos (INCM), Juan Carlos Segura (everis), Giampaolo Sellitto (ANAC), Jalini Srisgantharajah (dfø), and Enric Staromiejski (everis).
+
+**Topic of discussion: eCatalogue discussion TC440**
+
+The WG worked on the definitions of the following classes used in eCatalogue:
+
+* **Buyer:**
+
+A role of an agent that awards a contract and/or purchases items.
+
+Additional information:
+
+In pre-award, the buyer generally awards the contract, however future purchasers may be foreseen.
+In post-award the buyer generally refers to the purchaser of items.
+
+* **CatalogueReceiver:**
+
+A role of an agent processing a catalogue.
+
+Additional Information:
+
+The catalogue receiver may not only receive it but also validate it, process it, etc.
+The catalogue receiver role is usually played by the agent that acts as a buyer, or by another agent that acts on behalf of the buyer.
+
+* **CatalogueProvider:**
+
+A role of an agent compiling and supplying a catalogue.
+
+Additional Information
+
+The catalogue provider role is usually played by the agent that acts as a seller, or by another agent that acts on behalf of the seller.
+
+* **Seller:**
+
+A role of an agent legally responsible for providing goods and services bought by a Buyer.
+
+**Other points of discussion:**
+
+* The WG discussed whether the CatalogueReceiver and CatalogueProvider should be a code or individual classes. The final conclusion was to have both as classes.
+* The WG decided to remove the properties hasCatalogueProvider and Receiver since we have the CatalogueSituation which inherits from ProcurementSituation and it is related to Role. The CatalogueReceiver and the CatalogueProviders are roles.
+* The WG discussed whether the seller is a subclass of Winner/Tenderer/EO.

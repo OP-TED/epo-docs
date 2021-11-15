@@ -1,0 +1,65 @@
+Please find below the minutes from 22 April 2021
+Participants: Paloma Arillo Aranda (OP), Hilde Kjolset (dfø), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP), Helder Santos (INCM) and Giampaolo Sellitto (ANAC).
+
+
+**Topic of discussion: Definitions**
+
+The following concepts were defined in the meeting:
+
+* epo:TenderDocument – Document that is part of the tender.
+
+* epo:Value – postponed until discussion on lots values and amounts.
+
+* org:Site – Note: There is  a problem here. See diagram Procurement, which uses org:site for the SecurityClearanceTerm. It is generally used in the context of a defence procurement (the tenderer needs to get clearance to access documents for example). There is no need to map to the eForms, as eForms need only a date and the description. org:Site can be removed  as we have no use case for it and is is not needed in the eNotification.
+The WG has now finished the definition of all classes and attributes.
+
+**Topic of discussion: GitHub**
+
+A cleanup of the ePO GitHub is planned for a near future where the versions might be merged or a new version 2.0.3 will be published.
+
+**Topic of discussion: Inconsistencies to be addressed**
+
+Based on the document https://github.com/OP-TED/model2owl/blob/master/test/reasoning-investigation/findings.md the WG starts checking the inconsistencies that need to be address in the ePO.  These inconsistencies arise from the fact that generic predicates are used such as “RefersTo”:
+
+* ContractModificationNotice RefersTo ContractAwardNotice
+
+* Contract RefersTo Tender
+
+By using the same predicate as described above from the OWL core it can be implied that the ContractModificationNotice RefersTo Tender however this is not true.  There are several solutions to correcting this problem:
+
+1.	keep ‘refersTo’ as it is in the model now and ask the transformation script to add a reference to the class it is pointing to make it more specific ie Transform ContractModificationNotice RefersTo ContractAwardNotice toContractModificationNotice RefersToContractAwardNotice ContractAwardNotice
+
+This is not considered a good idea as it is not evident to business people reading the diagram
+
+2. Manually transform ContractModificationNotice RefersTo ContractAwardNotice toContractModificationNotice RefersToContractAwardNotice ContractAwardNotice
+
+Check all predicates to ensure they make business sense then either
+
+* alter them as described above,
+* change them to make better sense
+* keep them
+
+In each of these scenarios it has to be ensure that no cross referencing can provide false assumptions
+Note: Contract and Notice are both are subclasses of Document. The document ‘Findings of reasoning with eProcurement ontology’ states ‘Contract disjoint with Notice’ (Date 3 March 2021).
+However:
+
+a)	In the restrictions Version of 3 March 2021 the ‘disjointness’ does not seem to be indicated in the model.
+Questions:
+
+- Has a rule been implemented in the transformation that subclasses of the same class are disjoint?
+- Why dcterms in restrictions? See issue: https://github.com/OP-TED/model2owl/issues/75
+
+b)	In the restrictions Version of 17 March 2021  the ‘disjointness’ does not seem to be indicated, unless the core is imported into the restrictions. The restrictions file does not show that Contract or ContractModificationNotice are subclasses of Document and the ‘disjointness’ is not indicated.
+
+A solution to how disjointness is to be defined needs to be found.  See https://github.com/OP-TED/model2owl/issues/76
+
+The next meetings will address harmonizing the predicates.  They will be addressed alphabetically.  The working group checked the first predicates and decided in the next meeting to address:
+
+* appliesTo
+* applies
+* attaches
+* combinesLotsInto
+* isConcludedBy
+* fulfillsRequirement
+* isFundedBy
+* has

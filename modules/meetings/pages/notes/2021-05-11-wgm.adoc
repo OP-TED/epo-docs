@@ -1,0 +1,38 @@
+Please find below the minutes from 11 May 2021
+
+Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Hilde Kjolset (dfø), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP), Helder Santos (INCM), Svante Schubert (TTC 440) and Giampaolo Sellitto (ANAC).
+
+**Topic of discussion: Definitions - GroupLot**
+
+Presents an example how an economic operator can present 2 tenders for 2 lots separately or one tender for both lots together as a group of lots.
+
+* Subject: LotGroup
+
+**Predicate**: isAwardedTo
+
+Object: TenderLot
+
+_Note_: ‘Lot’  as per Directive 2014/24/EU
+
+‘TendeLot’ seems to be the minimum common denominator. The decision is to:
+
+1. mantein TenderLot,
+2. put the electronicSubmissionIndicator and all the propertiesof Tender in TenderLot
+3. remove Tender
+4. rename TenderLot to Tender.
+
+The properties appear in the model but we can replace it with just ‘Tender’ for each lot or group of lots so as not to mix the transport of data with the semantics. See also https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/20210510%20Group%20of%20lots.pptx slides from Norway 11/05/2021 where attributes of TenderLot are combined into Tender. The WG has to check the mappings.
+
+**Topic of discussion: Definitions - predicates**
+
+The following relations were discussed and compared with the html conventions to see if this work will correct the inconsistencies:
+
+* Subject: Procedure
+
+**Predicate**: ‘isConludedBy’ replaced with ‘hasBuyerWebsite’
+
+Object: Contract
+
+Definition: Relation indicating the website of the buyer
+
+The meeting on Thursday 13 May is cancelled.

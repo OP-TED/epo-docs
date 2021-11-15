@@ -1,0 +1,136 @@
+Please find below the minutes from 25 May 2021
+
+Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Hilde Kjolset (dfø), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP) and Giampaolo Sellitto (ANAC).
+
+Due to unavailability of a part of the WG members the meeting on 20 May 2021 was cancelled.
+
+
+**Topic of discussion: SPARQL Queries analysis**
+
+* Possible error detected: superfluous 'P' HTML element in the queries. This is not a real error as it was requested to be added to the text in order to separate the sentences with paragraphs.
+
+* Link: if we have the Procedure ID it should not be a problem to launch a query to map TED data with the National ID for that procedure. Queries will have to be adapted and finetuned to meet Procedure without corresponding ID.
+
+* epo:identifierValue should be epo:hasIdentifierValue
+
+* epo:isResponsiblityOf should be isResponsibilityOf
+
+* How could we detect the possible spelling mistakes in the mapping in order to correct them to run the SPARQL queries. Maybe with SHACL Shapes?
+
+**Action Points**
+
+* Look into ways of treating paragraphs in pdf
+* epo:insert verbs infront of attributes instead of using has by default
+
+
+**Topic of discussion: Definitions – predicates**
+
+The following relations were discussed and compared with the html conventions to see if this work will correct the inconsistencies:
+
+* Subject: AwardDecision
+
+**Predicate**: refersTo
+
+Object: Lot, LotGroup
+
+AwardDecision is a Document. The WG checks the reification. It is decided to keep it as it is as it will be used for version 2.0.1
+
+* Subject: Contract
+
+**Predicate**: refersTo
+
+Object: Lot
+
+Contract is a Document. The WG decides that is probably should follow the reification. To be discussed
+
+* Subject: Contract
+
+**Predicate**: refersTo
+
+Object: Tender
+
+Definition: Realtion indicating a document mentions another document.
+
+Contract is a Document. Tender is a Document.
+
+* Subject: ContractModificationNotice
+
+**Predicate**: ‘refersTo’ replaced with ‘Modifies’
+
+Object: ContractAwardNotice
+
+Definition: Realtion indicatin a ContractModificationNotice announces a modification of a contract.
+
+ContractModificationNotice is a Document. ContractAwardNotice is a Document.
+
+* Subject: PlannedProcurementPart
+
+**Predicate**: refersTo
+
+Object: Document
+
+To be checked if this relation can be deleted when doing a new mapping.
+
+* Subject: ‘TenderLot’ replaced with ‘Tender’
+
+**Predicate**: ‘refersTo’ replaced with ‘specifiesItem’ and this replaced with 'itemises'
+
+Object: Item
+
+Definition: Relation indicating a tender or a lot details an item
+
+Inverse: itemItemisedBy
+
+Definition: Relation indicating an item is detailes in a tender or lot
+
+* Subject: Lot
+
+**Predicate**: ‘refersTo’ replaced with ‘specifiesItem’ and this replaced with 'itemises'
+
+Object: Item
+
+Definition: Relation indicating a tender or lot details an item
+
+Inverse: itemItemisedBy
+
+Definition: Relation indicating an item is detailes in a tender or lot
+
+* Subject: Lot
+
+**Predicate**: ‘refersTo’ replaced with ‘isDerivedFrom’
+
+Object: PlannedProcurementPart
+
+Definition: relation indicating from where the lot stems
+
+Inverse: becomes
+
+Definition: Relation indicating a PlannedProcurementPlan becomes a lot or a procedure
+
+* Subject: Document
+
+**Predicate**: relatesTo
+
+Object: Procedure
+
+Definition: Relation indicating a document used in the context of a procedure
+
+* Subject: TenderLot
+
+**Predicate**: 'relatesTo' replaced with 'isSubmittedFor'
+
+Object: Lot
+
+Definition: Relation indicating a TenderLot is submitted for a lot
+
+* Subject: Lot
+
+**Predicate**: specifies
+
+Object: 'SelectionCriterion' replaced with 'ProcedureCriterion'
+
+* Subject: Procedure
+
+**Predicate**: isComposedOf
+
+Object: Lot

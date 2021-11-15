@@ -1,0 +1,33 @@
+Please find below the minutes from 01 June 2021
+
+Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Hilde Kjolset (dfø), Giorgia Lodi (ISTC-CNR), Thor Steiner Møller (dfø), Natalie Muric (OP) and Giampaolo Sellitto (ANAC).
+
+**Topic of discussion: Class epo:Value**
+
+The following diagram was presented for discussion:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/Diagramme-epovalue.png[]
+
+It seems weird that the contract has no value.
+
+We should consider 'hasEstimatedValue' = 1
+
+The predicate 'hasAwardedEstimatedValue' has cardinality '0..1', which is replaced with '1'.
+
+In this predicate 'hasAwarded' means the award decision has been taken.
+
+In the Italian model each lot can have more than one award decision with different contractors and different awarded value.
+
+Giorgia will check the use of property chains in OWL to be defined in case of ego for the properties Lot isAwardedTo Tender, Tender hasFinanacialOfferValue, Value and Lot hasAwardedValue Value.
+
+Cardinalities are not in scope in this case. But Giorgia will check them as well.
+
+We could also replace ‘Value’ with ‘MonetaryValue’. This will have consequences in the whole model. For example: hasAwardedValue should be replaced with hasAwardedMonetaryValue. We have to be careful and check if Amount is used in other places.
+
+**Topic of discussion: Class epo:Ammount**
+
+epo:OverallAmont could be replaced with ‘TotalAmount’ but we need to check the history of this name in the next meeting.
+
+Issue: the attributes have no definition.
+
+This discussion will continue on Thursday 03 June 2021

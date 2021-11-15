@@ -1,0 +1,37 @@
+Please find below the minutes from the 16th of March.
+
+Participants:Ana Aido, Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Hilde Kjølset (dfø), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP), Juan Carlos Segura Fernández-Carnicero (everis), and Enric Staromiejski (everis).
+
+Topic of discussions: Review of the minutes from the 9th and 11th of March
+
+No comments from the WG.
+
+**Topic of discussion: Definitions**
+
+The following concepts were defined in the meeting (see definitions in the EAP file and in the ePO glossary):
+
+* epo:Address
+* epo:Floor
+* epo:ID
+* epo:InhouseMail
+* epo:MarkAttention
+* epo:MarkCare
+* epo:PlotIdentification
+* epo:PostalZone
+* epo:Postbox
+* epo:Region
+
+The definitions can be consulted in the Glossary. See https://github.com/OP-TED/ePO/blob/2042074d3a7e21b69f2892b645511ad083c13a05/v2.0.1/01-Glossary/ePO-Glossary.xlsx.
+
+**Topic of discussion: BDTI diagram**
+
+* ReservedProcurement cardinality was changed to 0..*. The code-list from at-voc was also added.
+
+* Other code cardinalities needed in BDT where modified:
+* NUTS
+* Country code and cardinality 1
+* The CPV code was added and cardinality 1 for the main classification and for the the additional 0..*
+* The contract-nature code was added and cardinality 1 set for the contract nature
+* The permission code-list was also added associated to Lot with cardinality 0..1
+* The Lot ID cardinality was changed from 0..1 to 1
+* The cardinalities of the epo:Procedure attributes in the BDTI diagram were changed based on the ePO v2.0.1 ones
