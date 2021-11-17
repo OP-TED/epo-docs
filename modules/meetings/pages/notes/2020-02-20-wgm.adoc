@@ -1,0 +1,11 @@
+Please find below the minutes from the 20th of February:
+
+Participants: Paloma Arillo, Giorgia Lodi, Thor Møller, Natalie Muric, Claudia Ribeiro, Juan Carlos Segura, and Enric Staromiejski.
+
+*Topic of Discussion:*
+
+Agents and Organisations (https://github.com/eprocurementontology/eprocurementontology/issues/235)
+
+*Action Point:*
+
+-	@everis: Remove all those classes and properties that come from external vocabularies and are not used in ePO.

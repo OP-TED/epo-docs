@@ -1,0 +1,24 @@
+Please find below the minutes from the 19th of March:
+
+Participants: Paloma Arillo Aranda, Cécile Guasch, Vibeke Engesaeth, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Juan Carlos Segura, Giampaolo Sellitto, Jalini Srisgantharajh, and Enric Staromiejski.
+
+*Topic of Discussion:*
+
+Registered Organization
+
+OP explained that everis carried out an analysis to identify those classes that have not been used in the eNotification phase. One of these not used classes is RegisteredOrganisation. OP asked the WG if we did not use this class and the WG replied that this class was indirectly used because it is a parent class of the class which is used in Result for example. The RegisteredOrganization class appears on the Agent and Procurement Roles diagrams.
+
+*Action Points:*
+
+- @everis: Check that the classes identified as not used are not used indirectly.
+- CG to check on how the term Nationality is defined by the Anti-Money Laundering Directive
+
+**Topic of Discussion: **
+
+Mappings (https://github.com/eprocurementontology/eprocurementontology/tree/v2.0.1/v2.0.1/03-Analysis%20and%20design/Mappings)  - BT-706 Winner Owner Nationality
+
+The discussion points of the topic can be found on the mappings file in the BT-706 Winner Owner Nationality.
+
+**Action Points: **
+
+-	@everis: Create an issue in the Core Person Vocabulary asking about how the Nationality of a person is represented.

@@ -1,0 +1,32 @@
+Please find below the minutes of the 5th and 7th of May:
+
+Participants 5th of May: Ana Aido, Paloma Arillo Aranda, Vibeke Engesaeth, Cécile Guasch, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Helder Santos, Giampaolo Sellitto, Juan Carlos Segura, Jalini Srisgantharajh, and Enric Staromiejski.
+
+Participants 7th of May: Ana Aido, Paloma Arillo Aranda, Vibeke Engesaeth, Cécile Guasch, Giorgia Lodi, Natalie Muric, Helder Santos, Giampaolo Sellitto, Juan Carlos Segura, and Enric Staromiejski.
+
+
+**Topic of discussion:**
+
+Definitions (https://github.com/OP-TED/ePO/blob/2042074d3a7e21b69f2892b645511ad083c13a05/v2.0.1/01-Glossary/ePO-Glossary.xlsx)
+
+During both meetings the following concepts were defined:
+
+* epo:BuyerLegalType. The concept was renamed by "BuyerType". In addition, the WG added the following information to clarify the roles usage:
+
+"_This is the legal form of an agent when it plays the role of the buyer. The reason why this classification is associated to the buyer and not to the agent is that these categories are included in the procurement legislation and to avoid the misunderstanding that these categories define the legal nature of the organisation. This may not be necessarily the case, since the categories refer to the agent exclusively when playing the role of buyer but not to the "legal form" of the buyer._"
+
+* epo:MainActivityType. This attribute was moved to the "Organisation" class since a Buyer that is a role can be the role of an Organisation.
+* epo:ActivityDescription. It was also moved to the Organisation class by the same reasons than the "MainActivityType".
+* epo:BuyerLegalTypeDescription. The WG decided to remove this attribute from the Buyer class since eForms does not use this term for other types of Buyer.
+* epo:Channel
+* epo:endPoint
+* epo:FunctionType
+
+*Action Points:*
+
+* @everis to propose definitions for common concepts (Additional Information, Description, endpoint, name, title (see DC terms also for ID))
+
+* @everis to change in the eForms mappings that endpoint is not anymore URI, it is now text
+
+* @everis to update mappings for buyer role and main activity
+

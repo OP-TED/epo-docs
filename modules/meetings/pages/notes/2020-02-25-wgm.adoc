@@ -1,0 +1,13 @@
+Please find below the minutes from the 25th of February:
+
+Participants: Paloma Arillo Aranda, Vibeke Engesaeth, Cécile Guasch, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Juan Carlos Segura, Giampaolo Sellitto, Jalini Srisgantharajah, and Enric Staromiejski.
+
+*Topic of Discussion:*
+
+Mappings (https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.1/v2.0.1/03-Analysis%20and%20design/Mappings/Ontology_eForms_Mapping_New%20Regulation.xlsx)
+
+The following Business Terms were discussed: BT-67, BT-747, BT-748, BT-749, BT-750, BT-40
+
+*Action Points:*
+
+•	@everis, @OP, @WG: Extra session to discuss how to map the selection criterion.

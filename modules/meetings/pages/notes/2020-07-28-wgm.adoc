@@ -1,0 +1,45 @@
+Please find below the minutes of the 28th of July.
+
+**Participants 28th:** Ana Aido, Paloma Arillo Aranda, Cécile Guash, Giorgia Lodi, Thor Møller, Helder Santos, Giampaolo Sellitto, Roberto Reale, Héctor Rico, Ioannis Rousochatzakis and Enric Staromiejski.
+
+
+**Topic of discussion:**
+
+#242 TenderReceivedPerLot
+
+Only acceptable tenders are countable and this is mapped within the "StatisticalInformation". To ensure that the complete information needed is provided, the WG revisited the class and its attributes.
+Before modifying the attributes the WG agreed that there was no need to add the AcceptableTenderLots as it can be inferred from the operation: TenderReceived - InadmissibleTenders.
+
+Related to "StatisticalInformation" the attributes were renamed to ensure the proper scope. Also definitions were updated according to the changes done to the attributes.
+The final result for the StatisticalInformation (Attributes rename and definitions) is below:
+
+* epo:AbnormallyLowTendersLot
+* epo:CleanVehicles
+* epo:EEAReceivedTenderLots
+* epo:ElectronicTenderLots
+* epo:HighestReceivedTenderLotValue
+* epo:InadmissibleTenderLots
+* epo:LowestReceivedTenderLotValue
+* epo:ReceivedMediumTenderLots
+* epo:ReceivedMicroTenderLots
+* epo:ReceivedNONEEATenderLots
+* epo:ReceivedParticipationRequests
+* epo:ReceivedReviewRequests
+* epo:ReceivedSmallTenderLots
+* epo:ReceivedSMETenderLots
+* epo:ReceivedTenderLots
+* epo:TotalVehicles
+* epo:UnverifiedTenderLots
+* epo:ZeroEmissionVehicles
+
+It was agreed:
+
+ - to delete both TotalEstimatedSubcontractedShare and TotalEstimatedSubcontractedShare from Statistical Information and
+ - to add definitions for data properties from Subcontract to TenderLot to represent the information.
+
+In the context of “Value”, it was already agreed that CurrencyType is not needed as it is specified by Amount.
+
+**Action Point:**
+
+- The mapping of the changes made will be taken into account on eForms mapping to be aligned.
+- To check what has happened with the values and if we are using the correct version of the model (frozen or ongoing) during the WG meetings.

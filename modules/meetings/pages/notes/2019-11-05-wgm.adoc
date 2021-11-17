@@ -1,0 +1,9 @@
+Meeting 05/11/2019
+
+Participants: Paloma Arillo Aranda, Ana-Maria Babaligea, Vibeke Engesaeth, Cécile Guasch, Thor Moeller, Natalie Muric, Juan Carlos Segura, Enric Staromiejski.
+
+The meeting on 5th November was focused on to work on the pending definitions of some concepts(classes and attributes).
+
+The concepts worked were the following ones:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20191105.JPG[Concepts]

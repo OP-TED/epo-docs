@@ -1,0 +1,9 @@
+Please find below the minutes of the 02nd of July:
+
+Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Helder Santos, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, Jalini Srisgantharajah, and Enric Staromiejski.
+
+**Topic of discussion**: Roles and Subroles
+
+Everis presented, as an action point assigned to them, another solution on how to map the roles and subroles without having the subroles as properties and also an example to check whether the model based on properties for the subroles works or not. Everis explained that the current solution works and showed to the WG a query example to confirm it. However, this solution needs more works around and everis is proposing to have a reification as a better solution.
+
+The WG also discussed whether the different subroles should be linked to the Agent and not to the Role. The WG also said that if the different subroles are linked to the Agent, we will not know if the subroles is executed by a Buyer or an Economic Operator, for example. The WG said that this always will happen and maybe the best solution will be to have a reification with a taxonomy for the subroles, but rules will need to be defined to control the relationships. The WG still need to discuss further on the different solutions proposed. The WG agreed that the current solution solves the problems for the TED mappings, but the solution difficult to maintain the coherence between the roles and subroles.

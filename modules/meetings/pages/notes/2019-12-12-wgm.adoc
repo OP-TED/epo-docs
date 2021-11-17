@@ -1,0 +1,14 @@
+Please find below the minutes of 12th December:
+
+Participants: Paloma Arillo Aranda, Vibeke Engesaeth, Thor Møller, Natalie Muric, Giampaolo Sellitto, Juan Carlos Segura, Jalini Srisgantharajah and Enric Staromiejski.
+
+The meeting of the 12th December was focused on the mapping of the CAN in the “Result” stage. Natalie Muric explained that this morning Juan Carlos and herself were working on all the BTs with data type value in order to see how they should be mapped.
+
+The following table shows the BTs mapped as well as how it is represented in the ePO EA file. All the mappings can be consulted in the “Result” diagram:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20191212.JPG[Result]
+
+*Action points:*
+
+* Everis: Disjoint between hasAwardedValue and hasAwardedMaximumValue, as well as, a disjoint between hasAwardedValue and hasAwardedEstimatedValue is needed.
+* Everis: Suggest solutions for the division of inadmissible tenders, abnormally low tenders and the SMEs as there are some incoherencies.

@@ -1,0 +1,15 @@
+Please find below the minutes from the 03rd of March:
+
+Participants: Ana Aido, Paloma Arillo Aranda, Sofia Berenguer, Vibeke Engesaeth, Cécile Guasch, Giorgia Lodi, Thor Møller, Natalie Muric, Juan Carlos Segura, Giampaolo Sellitto, Jalini Srisgantharajah and Enric Staromiejski.
+
+**Topic of Discussion: **
+
+Mappings (https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.1/v2.0.1/03-Analysis%20and%20design/Mappings/Ontology_eForms_Mapping_New%20Regulation.xlsx)
+
+The following BTs were discussed: BT-541, BT-5421, BT-5422, BT-5423, BT-543, BT-752, BT-7531 and BT-7532
+
+*Action Points:*
+
+•	@everis - change the mapping according to new agreements on selection criterion and that affects to the award criterion: "The WG discussed about the attributes of the "criterion" class. The WG decided to remove those attributes that are not used in ePO (e.g. Objective attribute). Since the CCCEV is not finalised  the WG analysed the attributes of the Criterion class and it was decided to move them to Procurement Criterion, Selection Criterion, Award Criterion, they can be moved to the CCEV later if necessary.
+
+•	@WG - Pay visit to the UBL communication channel

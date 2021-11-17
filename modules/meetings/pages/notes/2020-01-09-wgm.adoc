@@ -1,0 +1,9 @@
+Please find below the minutes from the 09th of January:
+
+Participants: Paloma Arillo-Aranda, Giorgia Lodi, Vibeke Engesaeth, Thor Møller, Natalie Muric, Roberto Reale, Giampaolo Sellitto, Juan Carlos Segura, Jalini Srisgantharajah and Enric Staromiejski.
+
+The meeting on the 09th of January was focused on the mapping of the CAN in the “Result” stage.
+
+The following table shows the BTs mapped as well as how it is represented in the ePO EA file. All the mappings can be consulted in the “Result” diagram:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20200109.JPG[]

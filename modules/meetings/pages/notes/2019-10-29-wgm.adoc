@@ -1,0 +1,18 @@
+Meeting 29/10/2019
+
+Participants: Paloma Arillo Aranda, Ana-Maria Babaligea, Cécile Guasch, Thor Moller, Natalie Muric, Giampaolo Sellitto, Juan Carlos Segura and Enric Staromiejski.
+
+
+The meeting of 29th October was focused on an Everis solution about how to map the Competition phase for PINs and CNs.
+
+The Everis proposal was based on the PIN CFC general and CN general and check that every term was mapped within the CN diagram. Only PIN CFC general CN general were mapped in order to show to the WG an example of how to do the mapping.
+
+It was proposed to rename the Contract Notice diagram as Competition since the mapping is for the CNs and PINs of the Competition phase. Likewise, per each phase a diagram is needed.
+
+Everis explained that during the mapping 3 different cases were detected: (1) There are not too many differences between the CNs mapped previously and the PINs, at least in the Competition phase; (2) Some business rules are needed. For instance, when the terms are only used in CN and not in PIN; (3) Some cases where the term is used in the PIN and not in the CN, it needs to be mapped within the diagram (Everis made a proposal on how to map the detected ones).
+
+After some comments from the WG attendees some action points were defined:
+
+1. Everis: Update our solution to the latest version of the NM excel file (new eForms regulation);
+2. Everis: Mapping of the rest of PINs and CNs for Thursday;
+3. Everis: Proposal on how to model the notice type.

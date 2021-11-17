@@ -1,0 +1,28 @@
+Please find below the minutes of the 28th of May:
+
+Participants: Paloma Arillo Aranda, Vibeke Engesaeth, Cécile Guasch, Giorgia Lodi, Natalie Muric, Thor Møller, Roberto Reale, Helder Santos, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto.
+
+**Topic of discussion:**
+
+Definitions (https://github.com/OP-TED/ePO/blob/2042074d3a7e21b69f2892b645511ad083c13a05/v2.0.1/01-Glossary/ePO-Glossary.xlsx)
+
+During the meeting the following concepts were defined:
+
+* epo:AwardCriterionType
+* epo:FixedValue
+* epo:Size
+* epo:JustificationType
+
+Other modelling actions:
+
+* epo:EOSizeType was moved from EconomicOperator to Business.
+* epo:CountryIdentification class was removed.
+
+*Action Points:*
+
+* @OP: To find a definition for the AwardDimension
+* @everis: Use the common definition for the NonAwardJustification
+* @everis: To check some attributes if they are used in TED
+* @everis-ESPD: Definitions for CriterionPropertyGroup
+* @OP:DesignContestRegimeTerm to check definition in TED
+* @OP: To check EOGroupType

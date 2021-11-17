@@ -1,0 +1,21 @@
+Please find  below the minutes of the 15th September:
+
+Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Hilde Kjølset, Giorgia Lodi,  Helder Santos, Giampaolo Sellitto, Juan Carlos Segura Fernández-Carnicero, Jalini Srisgantharajah, and Enric Staromiejski.
+
+**Topic of discussion: Review of the summary conference call of the 8th and 10th of September**
+
+* Everis explained briefly the summary of the WG meeting on the 10th September.
+
+* No comments from the WG
+
+**Topic of discussion: Definitions**
+
+* The WG decided to move the SelectionCriterionType  to Criterion with a generic name "Type". Therefore the AwardCriterionType was also removed from the AwardCriterion. The codelists AwardCriterionType and SelectionCriterionType are kept in the SelectionCriterion class and also in the AwardCriterion class since the Type attribute is inherited from the Criterion class.
+
+* The WG asked why we have the name and description in the Procurement class and not in the Criterion class. Everis confimed that criterion has both attributes, therefore the WG decided to move name and description into the criterion class.
+
+The terms defined and the actions can be consulted at https://github.com/eprocurementontology/eprocurementontology/blob/meetings/ePO_definitions.xlsx
+
+**Action Point:**
+
+- To check that all the description classes are using the same definitions

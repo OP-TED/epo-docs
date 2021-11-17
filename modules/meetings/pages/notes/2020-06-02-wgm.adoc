@@ -1,0 +1,27 @@
+Please find below the minutes of the 02nd of June
+
+Participants: Ana Aido, Paloma Arillo Aranda, Vibeke Engesaeth, Maria Font, Cécile Guasch, Giorgia Lodi, Natalie Muric, Helder Santos, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, and Jalini Srisgantharajh.
+
+**Topic of discussion:**
+
+Definitions (https://github.com/OP-TED/ePO/blob/2042074d3a7e21b69f2892b645511ad083c13a05/v2.0.1/01-Glossary/ePO-Glossary.xlsx)
+
+During the meeting the following concepts were defined:
+
+* epo:Name
+* epo:AdditionalInformation
+* epo:Description
+* epo:Title
+* epo:Justification
+* epo:AbnormallyLowJustification
+
+Concepts and instances were removed from these definitions because concepts and instances are inferred by the semantic world.
+
+The exclusion criterion was removed from Exclusion ground type.
+
+Identifier and classification were removed from the item class and are to be dealt with when dealing with eCatalogue.
+
+Action points:
+
+* @OP, to relook the AwardCriteria and the AwardDimensionType
+* @WG to check item when dealing with eCatalogue

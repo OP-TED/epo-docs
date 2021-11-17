@@ -1,0 +1,39 @@
+Please find below the minutes of the 22nd of September
+
+Participants: Ana Aido, Paloma Arillo Aranda, Sofia Berenguer, Didac Cabus, Maria Font, Cécile Guasch, Hilde Kjølset, Giorgia Lodi, Natalie Muric, Hector Rico, Juan Carlos Segura Fernández-Carnicero, Giampaolo
+Sellitto, Helder Sousa Santos, Jalini Srisgantharajah, and Enric Staromiejski.
+
+**Topic of discussion: Review of the minutes from the last week**
+
+Some mistakes were detected:
+
+* Instead of Public Procurement Documents, should be Public Procurement Directives
+* Instead of the Financial Offer class, should be Financial Offer Value class.
+* There was a typo in the AwardCriterion (minutes from the 15th September)
+
+**Topics of discussion: Roles and Subroles discussion**
+
+* Everis prepared a presentation (https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/RolesTaxonomy_and_ProcurementEvents(WorkinProgress).pptx) for the discussion of the new approach roles and subroles.
+* Everis explained how the roles and subroles are currently modelled (https://eprocurementontology.github.io/CDM_Report/HTML/EARoot/EA1/EA45.htm). The current model of roles and subroles represents them as classes.
+* Everis explained that as an alternative to the current model design of roles and subroles was to remove all the roles and subroles simplifying the ontology. The alternative solution is to use the reification taxonomy to represent the roles and subroles.
+* Everis explained that eu vocabularies have different codelists related to the role: "role", "organisation-subrole", "buyer-legal-type", "role nature" and "role qualifier".
+* Another activity that everis did for the preparation of the new approach on how to model the roles and subroles was to review the "Organisations, Roles and Activities as per the Directives" model using a model created in previous analysis by OP
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/roles%20and%20subroles.png[Roles and Subroles]
+
+* Based on the above model which depicts the different main activities of the contracting entity and the contracting authority, everis created a sample model on how to model the different activities performed by the tenderer, the winner, and the subcontractor:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/ativities%20tenderer.JPG[Activities and Tenderer]
+
+* Everis explained and said that the model includes the main roles which are the Buyer, the Economic Operator, and the Procurement Manager (this is a temporary name until a new one will be agreed). Everis also indicated that the concept scheme of the model, which is representing a taxonomy, is the Role.
+* Following the everis proposal about the activities, everis explained that the different activities will be taxonomies associated with the different top concepts (e.g. Economic Operator, Buer, Procurement Manager). However, everis explained that with this solution is difficult to query, and does not solve all the situations unless the activities are involved separately in the reification, which entails specific rules for the association between role and subrole-activity.
+* One of the exercises that everis performed is to try to model all the roles and subroles in taxonomy with the inclusion of the alignment to the Directives. The problem identified was that some elements will be repeated in taxonomy since for example the contracting authority and the contracting entity authority have the same types but they need to be represented separated in the taxonomy. Nonetheless, they will have different tags for their representation.
+* Regarding the "Procurement Manager" role, everis identified two types: "Procurement Service Provider" and "Central Purchasing Body". The WG indicates that the Central Purchasing Body was decided that it is a Buyer. Everis indicated that it is also modeled in the taxonomy as a buyer. The Central Purchasing Body plays the role of awarding and the role of managers.
+* Moving on the presentation, everis introduced to the WG the reification proposal. The reification is a class that connects everything amongst itself. This reification connects the agent with the role and with a thing that is being affected by an activity performed by a role. The reification approach includes a "RoleTaxonomy" with all the roles and their activities:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/reification.JPG[Reification]
+
+* The WG discussed then what to do with the attributes that are right now in the different role classes that will be removed if the reification approach is implemented. The WG asked why not to add the attributes in the reification. Everis indicated that then we will null the effect of the reification. The WG will discuss it later.
+* The WG also discussed the name of the reification, the WG is not convinced at all with the name "ProcurementEvent".
+* Concerning the "RoleTaxonomy", the WG said that the taxonomy is mixing the roles, subroles, activities, and functions in one single element. The WG proposed that maybe another possible solution is to have another taxonomy for the activities associated with the reification. Everis indicated that if we do that, we will need rules to ensure the association between role and subrole-activity.
+* Everis presented to the WG different examples to show how the current model with roles and subroles as classes work and examples to show how the reification solution would work.

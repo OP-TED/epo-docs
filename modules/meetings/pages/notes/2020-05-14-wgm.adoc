@@ -1,0 +1,13 @@
+Please find below the minutes of the 14th of May:
+
+Participants: Paloma Arillo Aranda Maria Font, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Helder Santos, Juan Carlos Segura, and Jalini Srisgantharajh.
+
+**Topic of discussion:**
+
+Definitions (https://github.com/OP-TED/ePO/blob/2042074d3a7e21b69f2892b645511ad083c13a05/v2.0.1/01-Glossary/ePO-Glossary.xlsx)
+
+The WG started the meeting with the discussion of the epo:RectrictedCommunicationJustification which is an attribute of the class Document. The WG analysed where this restriction is used in other classes. For that purpose, the eForms mapping was checked and the epo:RestrictedCommunicationJustification was also used in the AccessTerms.
+The WG discussed which is the meaning of the AccessTerms and whether these terms should be linked to the Documents since they refer to conditions and stipulations about where and how to access the procurement documents. The only association in the ontology between the AccessTerms and the Documents is through the class Channel. The WG said that through the AccessTerms the only Documents that can be consulted are the restricted ones, but they asked how the full Documents that not restricted can be consulted. For that purpose, the WG made an exercise, through a real case, to see how the model should be. After this exercise the following modelling actions took place:
+
+* In the AccessTerm class SomeProcurementDocumentsRestrictedJustification the datatype was changed from Text to Code.
+* In the AccesTerms class a new attribute was created ProcurementDocumentLandignPage. This attribute means the internet address for accessing unrestricted procurement documents and replaces the property epo:hasDownloadURL that linked AccessTerms and Channel.

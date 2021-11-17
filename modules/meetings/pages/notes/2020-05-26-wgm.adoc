@@ -1,0 +1,16 @@
+Please find below the minutes of the 19th and 26th of May:
+
+Participants 19th May: Paloma Arillo Aranda, Vibeke Engesaeth, Maria Font, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Helder Santos, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, and Jalini Srisgantharajh.
+
+Participants 26th May: Ana Aido, Paloma Arillo Aranda, Maria Font, Cécile Guasch, Giorgia Lodi, Natalie Muric, Roberto Reale, Helder Santos, Juan Carlos Segura Fernández-Carnicero, and Giampaolo Sellitto.
+
+**Topic of discussion:** Procurement Documents Access
+
+During both meetings the WG discussed whether there was a need to have the class Access Terms to indicate the  access to some parts of the restricted procurement documents. The WG discussed creating a new class named DocumentCollection whereby all the procurement documents could belong to a collection. This class would have two properties that link the Document collection to the Channel. One of the two would be the property for the restricted access of the Procurement Documents.
+
+The WG discussed the sense to have the Document Collection class or not. The WG also noted that the goal of this class was to remove the relations from an individual document. For that purpose, the WG worked on an example in order to see the differences between a Document and a Document Collection, and if this last one is really necessary. See here the example (https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/DocumentCollection.pptx). After the discussing example the WG saw that the DocumentCollection class creates complexity and  is not needed.
+
+Moreover, and to detail the discussions that took place in both meetings, the following points were discussed:
+
+* The WG discussed whether the Access Term and landing page are needed. The WG said that it is needed however some of its attributes should be moved to Procedure (e.g. Additional information deadline should go to Procedure).
+* Landing page is a webpage to indicate where you can find all the documents, and inside you have all documents URLs. This landing page can be always applied to a procurement document.

@@ -1,0 +1,9 @@
+Please find below the minutes from 19th of December:
+
+Participants: Paloma Arillo Arranda, Ana-Maria Babaligea, Cécile Guasch, Thor Møller, Natalie Muric, Roberto Reale, Giampaolo Sellitto, Juan Carlos Segura and Enric Staromiejski.
+
+The meeting from 19th of December was focused on the mapping of the CAN in the “Result” stage.
+
+The following table shows the BTs mapped as well as how it is represented in the ePO EA file. All the mappings can be consulted in the “Result” diagram:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20191219.JPG[Result]

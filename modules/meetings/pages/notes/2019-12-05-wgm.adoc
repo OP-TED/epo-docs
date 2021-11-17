@@ -1,0 +1,70 @@
+Please find below a summary of the meeting from 05/12/2019:
+
+Participants: Cécile Guasch, Giorgia Lodi, Thor Møller, Natalie Muric, Giampaolo Sellitto, Roberto Reale, Juan Carlos Segura, Jalini Srisgantharajah and Enric Staromiejski
+
+The meeting of the 5th December was focused on the mapping of the CAN in the “Result” stage.  Everis presented an analysis performed regarding the Procurement Values. The purpose of this analysis was to identify whether the properties that link different classes to the class “Procurement Value” are used or not, and in which phase there are used. This analysis was required due to the same properties are used to link different classes to the class “Procurement Value”. The results of the everis’ analysis are the following ones:
+
+* Lot hasAwardedValue ProcurementValue
+   * BT eForms: Not used
+   * Stage: Not used
+* Lot hasFrameworkMaximumValue ProcurementValue
+   * BT eForms: Not used
+   * Stage: Not used
+* Lot hasEstimatedUserConcessionRevenue ProcurementValue
+   * BT eForms: BT-162 (Pending)
+   * Stage: Result
+* Lot hasEstimatedBuyerConcessionRevenue ProcurementValue
+   * BT eForms: BT-160 (Pending)
+   * Stage: Result
+* Lot hasEstimatedValue ProcurementValue
+   * BT eForms: BT-27
+   * Stage: Competition
+* FrameworkAgreement hasAwardedValue ProcurementValue
+   * BT eForms: Not used
+   * Stage: Not used
+* Procedure hasCeilValue ProcurementValue
+   * BT eForms: Not used
+   * Stage: Not used
+* Procedure hasGlobalEstimatedValue ProcurementValue
+   * BT eForms: BT-27
+   * Stage: Competition
+* GroupLot hasEstimatedValue ProcurementValue
+   * BT eForms:
+      * BT-27
+      * BT-157
+   * Stage: Competition
+* GroupLot hasFrameworkMaximumValue ProcurementValue
+   * BT eForms: Not used
+   * Stage: Not used
+* ProcurementValue hasOverallAmount Value
+   * BT eForms: Not used
+   * Stage: Not used
+* ProcurementValue hasMinimumAmount Value
+   * BT eForms: Not used
+   * Stage: Not used
+* ProcurementValue hasMaximumAmount Value
+   * BT eForms: BT-157
+   * Stage: Competition
+* ContractAwardNotice hasTotalFrameworkValue ProcurementValue
+   * BT eForms: BT-118
+   * Stage: Result
+* ContractAwardNotice hasTotalValue ProcurementValue
+   * BT eForms: BT-161
+   * Stage: Result
+
+During the meeting, the WG discussed the difference between Maximum Value and Estimated Value and whether the Maximum Value was needed or not. This discussion came up because according to the new eForms regulation, the maximum and estimated value are used as equals. Before, eForms used the two terms differently. After the discussion, the WG decided to remove the properties “hasFrameworkMaximumValue” and a new definition for the property “hasEstimatedValue” was created:
+
+_A forecast of the value of the procurement before competition._
+
+_Additional Information_
+_Different cases of estimated values may refer to a lot, the global value of the procedure, or of a combinatorial value of a group of lots._
+_The forecast is calculated by the buyer and covers all revenues whether coming from the buyer or third parties._
+_See for example recital (19), Article 5 of Directive 2014/24/EU and other articles from the rest of Directives about procurement._
+
+_In the case of framework agreements and dynamic purchasing systems, this refers to the maximum estimated value._
+
+*Action point:*
+
+* Everis to add references to other Articles.
+
+Finally, the WG decided to have 2 extra-sessions (09th and 10th December) in order to check all the BTs that are data type value and see how they should be mapped.

@@ -1,0 +1,17 @@
+Please find below the minutes from the 7th of April:
+
+Participants: Paloma Arillo Aranda, Vibeke Engesaeth, Maria Font, Hilde Kjølset, Giorgia Lodi, Thor Møller, Natalie Muric, Timo Rantanen, Roberto Reale, Hector Rico, Marc Christopher Schmidt, Juan Carlos Segura, Giampaolo Sellitto, Jalini Srisgantharajh and Enric Staromiejski.
+
+*Topic of Discussion:*
+
+Organisation Roles and Subroles (https://github.com/eprocurementontology/eprocurementontology/issues/240)
+
+*Action Point:*
+
+- @everis to check the relationship between Location and Channel.
+
+*Topic of Discussion: Evaluation Method Type*
+
+The WG discussed the need of whether it is correct to have a code list with pass, fail, weighted. OP explained that the other day there was a discussion where the PASS-FAIL topic was discussed. In this meeting it was suggested contrary to some participants understanding that a tenderer does not have to pass all selection criterion first, a weighting was used to see who passed or fail otherwise there would always need to be  a minimal value for the criterion.  During the aforementioned meeting it was decided to ask implementers in the ontology group of their thoughts. The opinion in the WG was that a criterion needed to pass the selection criterion first, and the second step in a multi-stage procedure was to apply the weightings to see which economic operators could proceed to the award phase.
+
+As a conclusion of the discussion the WG decided that, for the time being, it does not affect the ontology at this point in time and that the discussion should be passed back for discussion in the ESPD.  Marc Christopher agreed to seek a legal opinion on the situation.

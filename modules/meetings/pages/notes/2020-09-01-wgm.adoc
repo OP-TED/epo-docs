@@ -1,0 +1,24 @@
+Please find below the minutes of the 01st of September.
+
+Participants: Paloma Arillo Aranda, Hilde Kjølset, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Ioannis Rousochatzakis, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, Jalini Srisgantharajah and Enric Staromiejski.
+
+**Topic of discussion: Values of the subcontract parts**
+
+OP commented that in the lasts working group meetings there were some discussions about the value of every subcontract part of the TenderLot and how to represent the total value subcontracted. In one of the discussions, the decision was to add the total value subcontracted as an attribute of the Statistical Information class. However, in the other discussion, the decision was to remove the attribute from the StatisticalInformation and to add a new definition in the property “hasEstimatedValue” which links subcontract and value. OP, indicates that this second solution does not solve the problem because then with that definition is not possible to know the estimated value of a single subcontract.
+
+The WG agreed on the OP statement and the decision was to add the attribute “TotalValueSubcontracted” in the StatisticalInformation class. Now, the statistical information subcontract value is the aggregation of the different values subcontracted. Moreover, the WG indicates that a business is needed to verify that the total value subcontracted is exactly the sum of the different subcontracted parts. As a matter of fact, all the data in the statistical information needs to be verified against the particular data held by the model.
+
+**Topic of discussion: Mappings TED forms - Standard Form 17 (Defence), section III.2 Conditions for participation**
+
+OP asked the business people, whether this is Exclusion, Selection criteria, both or what and whether this should go to the ESPD or in the Procurement Documents.
+The WG decided to use the “ProcurementCriterion” to instantiate these type of criteria, instead of using the Exclusion or Selection criteria classes. In this way, it is possible to map the current Forms to the Ontology.
+
+**Topic of discussion: Definitions**
+
+The terms defined and the actions can be consulted at https://github.com/eprocurementontology/eprocurementontology/blob/meetings/ePO_definitions.xlsx
+
+**Action Points:**
+
+•	To replace all the definitions of "name" by the one from name of organisation
+
+•	To check how the review deadline and the reviewprocedure are used as the deadline  for requesting a review or the deadline within which a  review should be carried out and the procedure for the review.

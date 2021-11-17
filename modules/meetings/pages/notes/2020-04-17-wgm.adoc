@@ -1,0 +1,20 @@
+Please find below the minutes of the 14th, 15th, 16th and 17th of April:
+
+**Participants 14th of April:**  PAna Aido, Paloma Arillo Aranda, Vibeke Engesaeth, Cécile Guasch, Thor Møller, Natalie Muric, Roberto Reale, Helder Santos, Juan Carlos Segura, Giampaolo Sellitto, Jalini Srisgantharajh, and Enric Staromiejski.
+
+**Participants 15th of April:** Ana Aido, Paloma Arillo Aranda, Vibeke Engesaeth, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Helder Santos, Juan Carlos Segura, Giampaolo Sellitto, Jalini Srisgantharajh, and Enric Staromiejski.
+
+**Participants 16th of April:** Paloma Arillo Aranda, Vibeke Engesaeth, Cécile Guasch, Giorgia Lodi, Thor Møller, Natalie Muric, Helder Santos, Juan Carlos Segura, and Enric Staromiejski.
+
+**Participants 17th of April:** Paloma Arillo Aranda, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Juan Carlos Segura, Giampaolo Sellitto, Jalini Srisgantharajh, and Enric Staromiejski.
+
+
+**Topic of Discussion:**
+
+Organisation Roles and Subroles (https://github.com/eprocurementontology/eprocurementontology/issues/240)
+
+**Action Points:**
+
+* @everis to finalise the mappings of the BT-08 Organisation Roles for Planning, Competition, Direct Award Prenotification, Result and Contract Modification phases.
+
+* @everis to complete the functions taxonomy

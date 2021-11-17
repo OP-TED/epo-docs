@@ -1,0 +1,38 @@
+Please find below the minutes of the 07th, 09th, 14th and 16th July:
+
+Participants 07th of July: Paloma Arillo Aranda, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, Jalini Srisgantharajah, and Enric Staromiejski.
+
+Participants 09th of July: Ana Aido, Paloma Arillo Aranda, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, Jalini Srisgantharajah, and Enric Staromiejski.
+
+Participants 14th of July: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Giorgia Lodi, Natalie Muric, Juan Carlos Segura Fernández-Carnicero, Helder Santos, Giampaolo Sellitto, and Enric Staromiejski.
+
+Participants 16th of July: Paloma Arillo Aranda, Cécile Guasch, Giorgia Lodi, Natalie Muric, Juan Carlos Segura Fernández-Carnicero, Helder Santos, Giampaolo Sellitto, and Enric Staromiejski.
+
+
+**Topic of discussion**: Pending Actions from the mappings of the current TED forms
+
+The approach of 4 meetings was focused in the different actions points came up from the mappings of the current TED forms to the ePO Ontology. The pending actions and the discussions were the following ones:
+
+1. Values with VAT or without VAT
+
+* According to the current TED forms all the values are without VAT. However in the ontology that differentiation is not properly modelled.
+* Currently the ontology has three different types of values "Financial Offer Value", "Procurement Value" and "Value". According to latest discussions the WG asked why these three classes are needed.
+* Everis presented a new version of the diagram which only includes the class Value.
+* Everis proposed to create a new codelist which will list different type of taxes.
+* The WG reviewed the attributes of value, they considered a description attribute for the "OtherCharges".
+* The WG decided to do the financial Offer value as a property that links the "TenderLot" with "Value".
+
+2. To discuss with the WG if epo:hasEstimatedTenderInvitationDate Date should be at the Lot Level. Also the DPS termination (in Procedure we have “CompetitionTermination” and according to its definition it is the same as the “DPSTermination”).
+
+* The WG decided whether the EstimatedTender… should be at lot level and not procedure level. The WG agreed and then in the ontology we have to include it in the Extension
+* Concerning the DPS (in Procedure we have “CompetitionTermination” and according to its definition it is the same as the “DPSTermination”), we have changed the definition of the CompetitionTermination attribute: No further contracts will be awarded in this procedure.
+Additional Information: PIN for Competition needs to be signaled. This field can be used even if no contracts are awarded in the contract award notice.
+
+** The WG decided to remove the note in the DPS termination class.
+** For the mappings the decision was to use the DPS termination.
+
+3. Winner and how to know its relation with contract
+
+* Giorgia explained her proposal as resolution of how to know the relation of the winner with the contrat. The proposal is to have a Consortium class in order to be aligned with the W3C Organization ontology. In the W3C ontology Consortium is equal to CollaborationOrganization. However, we can extend the class with our own name that could be "Consortium". The WG agreed.
+* Eo-group type has been linked to the OrganisationGroup (new class).
+* The skos concepts sole contractor lead entity, lead entity, group member and sole contractor , where removed from the eo-role-type code list.

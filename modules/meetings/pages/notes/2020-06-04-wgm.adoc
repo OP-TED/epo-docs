@@ -1,0 +1,21 @@
+Please find below the minutes of the 04th of June
+
+Participants: Ana Aido, Paloma Arillo Aranda, Maria Font, Cécile Guasch, Giorgia Lodi, Natalie Muric, Roberto Reale, Helder Santos, Juan Carlos Segura Fernández-Carnicero, and Giampaolo Sellitto.
+
+**Topic of discussion:** Roles and Functions
+
+The WG discussed a new way on how to model the different roles. Currently, the way to do it is through the class “Function” which is linked to the Agent. This class has a dependency on a codelist named “function-taxonomy” which indicates the function that for example, an organization is executing. The problem identified was that different functions are grouped in the same list and it is very difficult to distinguish which one is executed by an Organisation or by a Buyer for instance. Moreover, some functions can only be executed by one specific role.
+
+In order to propose a new way of modelling the roles and functions, a presentation with a new proposal was created and discussed. The WG agreed on the new way and it will be implemented in the model. This presentation (https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/Roles%20subroles%20and%20Regulatory%20Framework%20Providers.pptx) gathers the final decision, excluding the Evaluator that also needs to be added as a role.  The Evaluation board is composed of evaluators.
+
+**Topic of discussion:**
+
+Definitions (https://github.com/OP-TED/ePO/blob/2042074d3a7e21b69f2892b645511ad083c13a05/v2.0.1/01-Glossary/ePO-Glossary.xlsx)
+
+During the meeting the following concepts were defined:
+
+* AdditionalActivityType
+
+*Action Point:*
+
+* @WG to discuss on the national/international law to be used for the crossborder law.  The Core Public Service Vocabulary and the Legal Framework in the CCCEV could perhaps be reused or be sources of inspiration.

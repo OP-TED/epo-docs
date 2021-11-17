@@ -1,0 +1,21 @@
+Please find below the minutes from the 05th of March:
+
+Participants: Paloma Arillo Aranda, Giorgia Lodi, Natalie Muric, Juan Carlos Segura, Giampaolo Sellitto, Jalini Srisgantharajh, and Enric Staromiejski.
+
+**Topic of Discussion: **
+
+eForms issue 329 (https://github.com/eForms/eForms/issues/329)
+
+The working group checked that the eForms issue 329 was correctly implemented in the eProcurement Ontology it was concluded that the implementation met the requirements.
+
+*Topic of Discussion:*
+
+eForms issue 330 (https://github.com/eForms/eForms/issues/330)
+
+The WG checked the reply from eForms and according to it. The WG said that the mapping was performed properly so no further actions were needed concerning the mapping in ePO. However, from this discussion the following modeling actions took place:
+
+* The attributes of the StatisticalInformation class refer to the TenderLot. This is concluded from the fact that the eForms statistical information is aggregated from the + Notice Result; ++ BG-137 Procedure Lot Result; +++ BG-712 Received Submissions; ++ BG-320 Tender. Therefore the attributes have been renamed in order to clarify that they refer to TenderLot.
+
+**Action Points: **
+
+•	@everis - Add TenderLot in the attributes of the Statistical information class.

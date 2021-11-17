@@ -1,0 +1,25 @@
+Meeting 22/10/2019
+
+Participants: Ana-Maria Babaligea, Cécile Guasch, Thor Moeller, Natalie Muric, Juan Carlos Segura and Enric Staromiejski.
+
+The meeting on 22/10/2019 was focused on the analysis of the IFLA’s FRBR model and how it can be reused in the ePO Ontology. This analysis and presentation was carried out by Enric Staromiejski based on the Enrico Francesconi’s  presentation that took place in the last F2F meeting in Luxemburg with all Working Group Members.
+
+The FRBR defines 4 levels of abstraction:
+
+1. Work
+2. Expression
+3. Manifestation
+4. Item.
+
+These 4 levels are aspects of the Bibliographic Resource element defined in the IFLA  model.
+
+Taking into account the IFLA’s model, Enric proposed to have different classes/entities that can be mapped to FRBR. These ones are:
+
+* eProcurement Information Resource (ePIR)
+* eProcurement Document
+
+The ePIR could be described by Metadata organized into FRBR model. However, a distinction between the taxonomy of ePIRs and the relation of each ePIR to classes of the FRBR model is needed.
+
+In ePO, the ePIR would represent the Bibliographic Resource element that is used in the FRBR model. Therefore in ePO we will have ePIR= Work+Expression+Manifestation+Item. We keep the 4 levels of abstraction and there are also aspects of the ePIR. The reutilization of the FRBR in ePO could be as follows:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20191022.JPG[]

@@ -1,0 +1,27 @@
+Please find below the minutes of the 9th and 11th of June
+
+Participants 9th of June: Ana Aido, Paloma Arillo Aranda, Vibeke Engesaeth, Maria Font, Cécile Guasch, Giorgia Lodi, Thor Møller, Natalie Muric, Helder Santos, Juan Carlos Segura Fernández-Carnicero, and Giampaolo Sellitto.
+
+Participants 11th of June: Paloma Arillo Aranda, Vibeke Engesaeth, Maria Font, Cécile Guasch, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Helder Santos, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, and Jalini Srisgantharajh.
+
+**Topic of discussion:**
+
+Definitions (https://github.com/OP-TED/ePO/blob/2042074d3a7e21b69f2892b645511ad083c13a05/v2.0.1/01-Glossary/ePO-Glossary.xlsx)
+
+During the meeting the following concepts were defined:
+
+* EstimatedContractNoticeublicatinoDate
+* AcceleratedProcedureJustification
+* ProcedureType
+* AdditionalInformationDeadline
+* CurrencyType
+* AvailabilityDate
+* NonpublicationJustification
+* MainClassification
+* AdditionalCategory
+* ContractNatureType
+* AdditionalContractNature
+
+Submission terms are to apply to lots because all procedures have at least one lot and the terms can be different per lot.
+
+Tender receipt deadline was removed from ProcedureTerm because it is covered by SubmissionDocumentType and SubmissionDeadline in the class SubmissionTerm.

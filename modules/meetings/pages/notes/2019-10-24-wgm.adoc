@@ -1,0 +1,13 @@
+Meeting 24/10/2019
+
+Participants: Ana-Maria Babaligea, Enrico Francesconi, Cécile Guash, Natalie Muric, Juan Carlos Segura and Enric Staromiejski.
+
+The meeting of 24th October was focused on the analysis of the Legal Resource class which is being used in the ePO Ontology. The meeting started discussing the problems that could have using the class Legal Resource which is reused from the European Legislation Identifier (ELI). According to the participants, there is not a legal obligation for the creation ELI in Member States and therefore there is no obligation to use it. The working group was advised against using the ELI ontology class as it is outside the domain of eProcurement and therefore not the responsibility of the eProcurement ontology, however using an URI that could contain the ELI identifier was considered a good option.  The WG  decided to remove the class and add an attribute Legal Resource URI  in the classes Procedure and Planned Procurement Part. This attribute will catter for triples like:
+
+* epo:Procedure epo:hasLegalBasis xsd:URI
+* epo:PlannedProcurementPart epo:hasLegalBasis xsd:URI
+
+OR
+
+* Procedure eli:local_id URI (which can be AnyURI or a String, ELI Strongly recommended when existing in the MS)
+* PlannedProcurementPart eli:local_id URI

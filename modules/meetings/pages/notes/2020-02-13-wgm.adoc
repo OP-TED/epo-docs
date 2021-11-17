@@ -1,0 +1,9 @@
+Please find below the minutes from the 13th of February:
+
+Participants: Vibeke Engesaeth, Cécile Guash, Giorgia Lodi, Jade Maana, Thor Møller, Natalie Muric, Roberto Reale, Giampaolo Sellitto and Enric Staromiejski.
+
+**Topic of Discussion: **
+
+Mappings (https://github.com/eprocurementontology/eprocurementontology/tree/v2.0.1/v2.0.1/03-Analysis%20and%20design/Mappings)
+
+The approach of the meeting on the 13th of February was focused on the pending mappings of the Result Phase. The following Business Terms were discussed:757, 165, 706, 746, 151, 774, 775, 776, 715, 725, 716, 712, 635, 636, 634, 756, 195, 197, 196, 198

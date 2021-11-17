@@ -1,0 +1,16 @@
+Please find below the minutes from the 31st of March and the 02nd of April:
+
+Participants 31st of March: Paloma Arillo Aranda, Sofia Berenguer, Cécile Guasch, Laszlo Ketszeri, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Juan Carlos Segura, Giampaolo Sellitto, Jalini Srisgantharajh, Enric Staromiejski and Arleta Wlodarcyk.
+
+Participants 02nd of April: Paloma Arillo Aranda, Giorgia Lodi, Natalie Muric, Roberto Reale, Juan Carlos Segura, Giampaolo Sellitto, Jalini Srisgantharajh, and Enric Staromiejski.
+
+**Topic of Discussion: **
+
+Organisation Roles and Subroles (https://github.com/eprocurementontology/eprocurementontology/issues/240)
+
+*Action Points:*
+
+- @everis check code legal-form-type. This code is not in euvocabularies. It comes from a directive. To take in the future.
+- @everis apply similar mapping of the BT-165to BT-706 and BT-746.
+- @everis completation of the mediation body and review body.
+- @everis change the porperties that link Procedure Terms and Organization.

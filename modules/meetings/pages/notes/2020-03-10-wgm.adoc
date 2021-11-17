@@ -1,0 +1,56 @@
+Please find below the minutes from the 10th of March:
+
+Participants: Paloma Arillo Aranda, Vibeke Engesaeth, Cécile Guasch, Giorgia Lodi, Thor Møller, Natalie Muric, Roberto Reale, Helder Santos, Juan Carlos Segura, Jalini Srisgantharajah, and Enric Staromiejski.
+
+**Topic of Discussion:**
+
+Mappings (https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.1/v2.0.1/03-Analysis%20and%20design/Mappings/Ontology_eForms_Mapping_New%20Regulation.xlsx)
+
+The following BTs were discussed:BT-768 Contract Framework Agreement
+
+**Topic of Discussion:**
+
+Strategic procurement (https://github.com/eprocurementontology/eprocurementontology/issues/227)
+
+**Old definition**
+
+Condition that aims to reduce the environmental impacts of the procurement, fulfil social objectives and/or buy an innovative work, supply or service.
+
+Additional Information:
+The conditions must be achieved via either technical specifications, selection criteria, award criteria and contract terms.
+
+**New definition**
+
+Public procurement that contributes to achieving pressing policy goals.
+
+Additional Information:
+Specific strategic goals could be, for example, environmental protection, innovation, job creation and the development of small and medium enterprises.
+
+Based on https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411 (see paragraph on "background information".
+
+WG Approval 10/03/2020
+
+**Topic of Discussion:**
+
+Green procurement (https://github.com/eprocurementontology/eprocurementontology/issues/230)
+
+**Old definition:**
+
+Approach whereby public authorities seek to procure goods, services and works with a reduced environmental impact throughout their life cycle when compared to goods, services and works with the same primary function that would otherwise be procured.
+
+Additional Information:
+Tightly related are article 68 - Life-cycle costing and article 67 - most economically advantageous tender (see GPP handbook) https://ec.europa.eu/environment/gpp/pdf/Buying-Green-Handbook-3rd-Edition.pdf
+An instance of the class GreenProcurement is represented in eForms with the code "env-imp" defined in the codelist strategic-procurement.
+
+
+**New definition:**
+
+Approach whereby buyers seek to procure with a reduced environmental impact.
+
+Additional Information:
+
+The approach may apply to the complete life cycle. The reduced environmental impact is in comparison to goods, services and works with the same primary function that would otherwise be procured.
+
+Tightly related are article 68 - Life-cycle costing and article 67 - most economically advantageous tender (see GPP handbook) https://ec.europa.eu/environment/gpp/pdf/Buying-Green-Handbook-3rd-Edition.pdf
+
+An instance of the class GreenProcurement is represented in eForms with the code "env-imp" defined in the codelist strategic-procurement.paragraphs, https://ec.europa.eu/environment/gpp/pdf/Buying-Green-Handbook-3rd-Edition.pdf

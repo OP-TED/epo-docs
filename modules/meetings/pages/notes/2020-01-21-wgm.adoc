@@ -1,0 +1,37 @@
+Please find below the minutes from 21st of January:
+
+Participants: Ana-Maria Babaligea, Cécile Guasch, Giorgia Lodi, Vibeke Engesaeth, Natalie Muric, Roberto Reale, Juan Carlos Segura, Jalini Srisgantharajah and Enric Staromiejski.
+
+During the meeting on the 21st January the following discussions took place:
+
+* Everis presented its proposals on the Qualification System and how it should be mapped:
+  ** After a discussion about the QS and how it should be understood, the WG decided to put in on hold and not to go on the mapping of the QS until an explanation on how a QS works is addressed to and answered by DG GROW:
+    Action Point: for OP and everis: forward an email to Isabel da Rosa asking regarding QS:
+    *** Definition
+    *** The data flow
+* The WG checked that the approach followed by everis for the mapping of the eForms and ePO on DAP (Direct award pre-notification) seems correct and agreed that everis can go on with the mapping.
+  ** The WG worked on the definition of the Voluntary Ex-ante Transparency Notice:
+     Voluntary Ex-ante Transparency Notice: A notice informing of the intention to award  a contract without prior publication of a contract notice.
+     Additional Information:
+     For European notices above the threshold
+     "A means of advertising the intention to award the contract without opening it up to formal competition. A contracting authority may decide that a contract does not require prior publication through a contract notice in the O.J.E.U. A reason for this decision may be that the contract meets the exceptional conditions described in Article 31 of Directive 2004/18/EC. In a recent V.E.A.T notice the reason was listed as “extreme urgency brought about by events unforeseeable by the contracting entity and in accordance with the strict conditions stated in the Directive” .
+     "Voluntary Ex-Ante Transparency Notice" (VEAT) where a contracting authority deems that a contract does not require prior publication of a contract notice in the European Journal (OJEU). This may apply, for example, if the contract meets the exceptional conditions justifying direct award of contracts.
+
+This definition is still to be worked on.
+
+* The WG reviewed the definitions provided by everis related to strategic procurement:
+
+* The WG came up with the definition on Green Procurement, based on the one coming from the COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS (https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52008DC0400&from=EN): “Approach whereby public authorities seek to procure goods, services and works with a reduced environmental impact throughout their life cycle when compared to goods, services and works with the same primary function that would otherwise be procured.”
+
+*Action Point:*
+
+* share the definitions on the rest of the definitions by means of GH issues:
+
+    ** https://github.com/eprocurementontology/eprocurementontology/issues/227 - Strategic Procurement Definition
+    ** https://github.com/eprocurementontology/eprocurementontology/issues/228 - Innovative Procurement Definition
+    ** https://github.com/eprocurementontology/eprocurementontology/issues/229 - Social Procurement Definition
+    ** https://github.com/eprocurementontology/eprocurementontology/issues/230 - Green Procurement Definition
+
+**Action Point: **
+
+* for WG review the above mentioned issues in preparation for next Tuesday’s 28th meeting.
