@@ -6,4 +6,4 @@ The meeting on 5th November was focused on to work on the pending definitions of
 
 The concepts worked were the following ones:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20191105.JPG[Concepts]
+image::20191105.jpeg[Concepts]
