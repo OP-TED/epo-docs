@@ -1,0 +1,11 @@
+Please find below the minutes from the 19th of November 2020
+
+Participants: Paloma Arillo Aranda, Cécile Guasch, Hilde Kjølset, Giorgia Lodi, Natalie Muric, Juan Carlos Segura, Giampaolo Sellitto, and Enric Staromiejski.
+
+The dicussions focused on solving the somme pressing issues. The conclusions can be found in each issue:
+
+* **Topic of discussion: [issue #265](https://github.com/eprocurementontology/eprocurementontology/issues/265)**
+
+* **Topic of discussion: [issue #260](https://github.com/eprocurementontology/eprocurementontology/issues/260)**
+
+* **Topic of discussion: [issue #264](https://github.com/eprocurementontology/eprocurementontology/issues/264)**

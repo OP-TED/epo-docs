@@ -1,0 +1,36 @@
+Please find below the minutes from the 15th of December 2020
+
+Participants: Paloma Arillo Arand, Cécile Guasch, Giorgia Lodi, Natalie Muric, Helder Santos, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, and Enric Staromiejski.
+
+**Topic of discussion: LocationCoordinate**
+
+Giorgia Lodi explained an issue in the BDTI pilot when querying addresses. The queries get very complicated because there are many indirections between classes and properties, as well as redundancies between properties (like, for example, longitude and latitude degrees and Measure unitCodes, etc.
+
+One simplification proposed by Giorgia for the location of a specific spot in geometry/geography would be:
+
+* epo:LocationCoordinate epo:Latitude rdfs:Literal
+* epo:LocationCoordinate epo:Longitude rdfs:Literal
+* epo:LocationCoordinate epo:Altitude rdfs:Literal
+
+The WG agreed on having the attributes epo:Altitude, epo:Latitude, epo:Longitude as epo:Text.
+
+The WG decided to change the cardinality of the attributes to reflect what is in the predicate.
+
+The WG agreed that we need to define the cardinalities of the attributes. 0..* by default. Indicators 0..1, the rest of attributes we need to check them one by one.
+
+**Topic of discussion: Roles and Subroles**
+
+* TC440 eCatalogue convenor attends the meeting to contribute with Postaward Roles and Subroles.
+* The WG explained the current situation and approach using the reification class for the roles and subroles.
+* TC440 eCatalogue convenor contributed saying that the Organisation that provides a catalogue, and the organisations that receives and process the catalogue. The rest (originator, etc. would be there):
+    * Catalogue Provider
+    * Catalogue Receiver
+* TC440 eCatalogue convenor asks "what does procurement situation refers to? to specific processes/transactions, or what?. The WG replied that the ePO ontology does not model proceses, but relationships between concepts.
+
+**Topic of discussion: Modelling activities**
+
+The Wg discussed on how to model the different roles activities in the ontology. The following discussion took place:
+
+* The WG proposes to be flexible and open so linking as many different code lists to the generic reification.
+* The decision about certain roles like the organisation providing tax information, and similar, had been that these should go linked to the Agent (as in the ePO version 2.0.1).
+* In general the rule would be: if the agent is not directly involved in a procurement situation, but the procurement situation needs to use that agent or any other participants needs to be aware of their existence and activity, then these agents should not be linked to the reification as a role. In ePO 2.0.1 this works like this: the Agent is linked to another [range] class via a particular "predicate" (property) that explains/describes the activity developed by the Agent. In any case these properties MUST be attached to the Agent, not the role classes.

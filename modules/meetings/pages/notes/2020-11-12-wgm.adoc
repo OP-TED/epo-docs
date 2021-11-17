@@ -1,0 +1,19 @@
+Please find below the minutes from the 12th of November.
+
+Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Hilde Kjølset, Giorgia Lodi, Thor Møller, Natalie Muric, Helder Santos, Juan Carlos Segura, Giampaolo Sellitto, and Enric Staromiejski.
+
+**Topic of discussion: Award Decision-related reification**
+
+The WG continued discussing on the reification class and its use in the award phase. The main discussions and modeling actions were:
+
+* The name of the Class AwardDecisionDetails has been changed to AwardDecisionAssignation, since the semantics of this class is rather about the assignation of the Award to the role Winner (and the agent behind this role).
+* Also the predicates related to the AwardDecision reification class, as well as the predicates used by the generic ProcurementSituation have been revised and defined.
+* While working with the naming of these predicate, the following action point was raised: Create two Issues asking (1) how the transformation artefact could be able to generate object properties when the domains are multiple and different (and possible disjoint); and (2), are object subproperties being automatically and inherit from the appropriate parent object property?
+* The WG has relinked Subcontract to the reification AwardDecisionAssignation instead of to the AwardDecision class.
+* The WG defined the class cav:AwardDecisionAssignation as: "The attribution of something that is assigned to something else "The situation where one Lot is awarded (or not) to a Winner's TenderLot and its subcontracted part(s)."
+
+The corresponding Conceptual Model file can be consulted at https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/ePO-CM-roles-as-classes.eap.
+
+**Action Points:**
+
+* Create an Issue with this inference about whether a property affects multiple domains and one range it is also created, and also to introduce the possibility of subclassing them (the properties).

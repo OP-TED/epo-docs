@@ -1,0 +1,18 @@
+Please find below the minutes from the 12th January 2021:
+
+Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Veit Jahns, Hilde Kjølset, Thor Moller, Natalie Muric, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, Jalini Srisgantharajah, and Enric Staromiejski.
+
+**Topic of discussion: eCatalogue discussion**
+
+* TC440 eCatalogue convenor attends the meeting to contribute to the discussion of eCatalogue.
+* TC440 eCatalogue convenor explained briefly the eCatalogue process.
+* TC 440 eCatalogue convenor showed the terms and definitions of the different roles participating in the eCatalogue process. For their definitions, they reused/based the definitions defined by the ePO Ontology. They also based their definitions from Peppol (e.g. customer), UBL (e.g. seller).
+* TC 440 eCatalogue convenor also explained the analysis that they performed for the correspondence of the classes used in the ePO ontology. For example the class Agent they saw the correspondence to the UBL class "Party".
+* TC 440 eCatalogue convenor explained that they created different UML diagrams where they reused classes from the ePO Ontology, but also created other classes to model the Catalogue Provider, Catalogue Receiver and Seller.
+* TC 440 eCatalogue convenor and the WG discussed the differentiation that Peppol did between Business Role and Business Partner (however TC 440 is considering the deprecation of this "Business Partner" term).
+* The WG worked in a testing eCatalogue diagram. For that purpose, a new module (https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-taxonomy/ePO-CM.eap) in the set of ePO diagrams was created named "eCatalogue" (see the eAP file), also here the picture:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/doc/img/eCatalogueReification.png[]
+
+* The WG started working on the role of CatalogueProvider to understand how to model it in the ePO Ontology.
+* A reification CatalogueSituation was created to link the Agent to the roles.

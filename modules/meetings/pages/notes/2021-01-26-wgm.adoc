@@ -1,0 +1,22 @@
+Please find below the minutes from the 26th of January.
+
+Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Hilde Kjølset (dfø), Giorgia Lodi (ISTC-CNR), Thor Møller (dfø), Natalie Muric (OP), Helder Santos (INCM), Juan Carlos Segura (everis), Giampaolo Sellitto (Anticorruzione), and Enric Staromiejski (everis).
+
+**Topic of discussion: Revision of the minutes from the 19th and 21st of January**
+
+* New participants were added to the 19th January minutes;
+* The rationale of why we talk about abstract classes was added to the 19th's minutes
+* Related to the previous point, the stereotype of all abstract classes in the UML were removed, since the WG considered that in purity the concept of 'abstract' cannot be applied to ontologies, and in certain situations it could be necessary to instantiate one of these base class that until now were considered kind of 'abstract', e.g. 'Notice', amongst other.
+* Typo in the name of a participant corrected;
+* Some other typos in the minutes of the 21st January also corrected;
+* Issue https://github.com/eprocurementontology/eprocurementontology/issues/267 was updated;
+* Decision of adding the organisation to which each member of the WG belongs to next to her/his name, in the list of attendants.
+
+**Topic of discussion: Roles and Subroles reifications**
+
+* Proposed that each specific situation (i.e. reification) should have its own codelist. Identified two new situations where this could make sense: eNotification and ESPD-related situations. For the first one, proposed the inclusion of a new diagram representing the situation reified as 'ProcurementTermsNotificationSituation'.
+* The WG analysed in detail this proposal and challenges the idea that the activities that everis considers exclusively of the Notification could not be applied to other phases and different roles.
+
+Finally, the WG concludes that a better solution would consist in having a single code list with all these activities associated to the generic reification, the Procurement Situation, instead of to particular reifications (apply these changes to the UML mode. This action point was applied on the 28th of January).
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/Procurement%20Terms%20Notification%20Reification(2).png[]

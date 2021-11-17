@@ -1,0 +1,39 @@
+Please find below the minutes from the 28th of January.
+
+Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Veit Jahns (TC440), Giorgia Lodi (ISTC-CNR), Thor Møller (dfø), Natalie Muric (OP), Hector Rico (everis), Helder Santos (INCM), Giampaolo Sellitto (ANAC), and Enric Staromiejski (everis).
+
+**Topic of discussion: eCatalogue discussion TC440**
+
+The meeting was focused on the definition of classes within eCatalogueReification Diagram (CatalogueReceiver and CatalogueProvider).
+The discussion went through the possibility of exploring if CatalogueReceiver and CatalogueProvider are better handled as roles (defining them as classes) or as activities defined within the organisation-subrole code list. Both possibilities were depicted:
+
+#### OPTION 1
+Inclusion of the Catalogue Provider and Catalogue Receiver as subclasses of Role (in which case, the code-list 'organisation-subrole' does not contain codes related to these two roles):
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/eCatalogueReification-proposal-1.png[]
+
+Both roles were defined as follows:
+
+ * epo-ecat:CatalogueReceiver: A role of an agent processing a catalogue. Additional information: The catalogue receiver role is usually played by the agent that acts as a buyer, or by another agent that acts on behalf of the buyer.
+
+ * epo-ecat:CatalogueProvider: A role of an agent compiling and supplying a catalogue. Additional information: the catalogue provider role is usually played by the agent that acts as a seller, or by another agent that acts on behalf of the seller.
+
+#### OPTION 2
+Removal of Catalogue Provider and Catalogue Receiver classes and inclusion of two new codes in the codelist 'organisation-subrole': 'cat-prov' and 'cat-receiv':
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/eCatalogueReification-proposal-2.png[]
+
+The WG considers that this latter case is more elegant and more flexible, since it allows any Agent to perform activities of catalogue provision and reception (e.g., Buyers and Service Providers). It also allows for further addition of other activities that can be performed by other Agents related to catalogues such as catalogue validation, catalogue dissemination, etc.
+
+* **Action point**: move the definitions of Catalogue Provider and Catalogue Receiver from inside the classes into the codelist 'organisation-subroles'.
+
+**WRAP-UP**
+
+Instead of having the roles CatalogueProvider and the CatalogueReceiver, the WG decided:
+
+ * To create a new class named ServiceProvider and where the ProcurementServiceProvider inherits from. So now the model indicates that ServiceProvider is a Role, and the ProcurementServiceProvider is a Service Provider.
+ * The WG also added to new codes - CatalogueReceiver and CatalogueProvider - into the codelist 'organisation-subroles'.
+
+These two decisions allow solving that a CatalogueReceiver could be a ServiceProvider, but also a Buyer.
+
+Note that the CatalogueProvider and the CatalogueReceiver have been hidden in the eCatalogue diagram, but not in the UML model. This is still under discussion, but if the discussed proposal is accepted, the definitions will be moved into the codelist and the classes will be removed from the model.

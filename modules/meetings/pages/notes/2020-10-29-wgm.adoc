@@ -1,0 +1,23 @@
+Please find below the minutes from the 29th October:
+
+Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Giorgia Lodi, Helder Santos, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, and Enric Staromiejski.
+
+**Topic of discussion: eOrdering**
+
+* The WG discussed what are the objectives of the RoleAssignment class and how to use it. The WG indicated that the RoleAssignment links an Agent to a Role for a given planned action or rule that will need to be executed. Also, the assignments are expected to become situational facts during the fulfillment of the planned actions. From this discussion the following points were also discussed:
+** The WG discussed which is the rule that says that an organization is a deliveree.
+** The WG indicated that there missing elements in the model to describe the workflow that happens in the execution of some ordering activities.
+** The WG saw and discussed the need to model all the rules related to the Ordering. First of all, the WG asked what is a rule. The WG discussed the meaning of rule and indicates that it is an ordering term. Then they clarified what is a term defining it as a very particular rule or a collection of rules. Therefore the difference between Term and Assignment is that a term is a collection of rules while the assignment plan from role to an agent is capture between properties that link the term to this Procurement situation. From this discussion, the WG decided the Ordering situation is the reification allows us to connect the ordering rules to the different roles.
+** The WG added predicates to the properties that link OrderingSituation class to the different roles that already exist, like Seller and Buyer. The deliveree and the deliverer and the originator are not planned, the predicates contain the Planned concept.
+** The WG indicates that the OrderingSituation does not describe facts, but intentions.
+** The delivery term was associated with Period and the class location to define the delivery location.
+
+After discussions, the resulting model is as follows:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/eOrderingReification.jpg[]
+
+
+**Action Point:**
+
+* Ask Peter Borrensen and any else in the post-award committee to provide real invoice and ordering examples.
+* To have examples of eOrdering to test for next Thursday

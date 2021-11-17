@@ -1,0 +1,23 @@
+Please find below the minutes from the 5th November:
+
+Participants: Paloma Arillo Aranda, Cécile Guasch, Natalie Muric, Helder Santos, Juan Carlos Segura, and Enric Staromiejski
+
+**Topic of discussion: Roles and Subroles**
+
+* A quick recap was done explaining that in the last meeting the WG worked on the eOrdering and the reification classes, putting together the agent, the roles, and the order. The WG during such meeting came up with a final decision indicating that the ontology is reusing the class participation from the cpsv and making the epo:ProcurementSituation as an extension of it.
+
+* Taking into account the same above approach, prepared a diagram with the same point for the AwardDecision situation. Everis also created a set of examples to test the model. So the purpose of the meeting was to test the model.
+
+* Explanation of the turtle file created for the testing purpose. Doing this test, everis saw important things to be commented on with the WG. For example, the namespace of the cpsv goes to the core vocabularies landing page. The WG tried to get the owl file but the system retrieves the html page and not the cpsv-ap turtle fie.
+
+* Another thing discovered was the epo:Agent inherits from foaf:agent, but was decided to inherit it from cpsv:Agent and the WG said that the cpsv:Agent inherit from foaf, but that is not true, they inherit from dct:Agent. The WG indicated that CPSV is changing this, so for the time being the WG agreed to come back and to inherit the epo:Agent from the foaf:Agent.
+
+* The WG went through the Abox example created to see how the model would be represented in RDF. Everis confirmed that the current model works if. From the discussion, the WG proposed why not to rename the AwardDecisionSitutation as AwardDecisionDetail since it provides the details of the AwardDecision of the Procedure:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/Award-Reification.jpg[]
+
+* The WG after the example explanation continued analysing other situations where the reification could be needed. They worked on the Buyer and Organisation diagram. We added to the diagram the ProcurementSitutation reification class, since it is the link between agent and role:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/Buyer%20and%20Organisation.jpg[]
+
+* The meeting ended with the discussion about the skos:Concept buyer-legal-type.

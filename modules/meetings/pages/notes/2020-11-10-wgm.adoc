@@ -1,0 +1,26 @@
+Please find below the minutes from the 10th of November.
+
+Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Hilde Kjølset, Giorgia Lodi, Thor Møller, Natalie Muric, Helder Santos, Juan Carlos Segura, Giampaolo Sellitto, and Enric Staromiejski.
+
+**Topic of discussion: Review of the minutes from the 3rd and 5th November**
+
+* Relationship between AwardDecisionDetails and AwardDecision an arrow is missing. To be added
+* The WG discussed whether the AwardDecisionDetails is needed or not. The Award step is who produces the AwardDecision, we do not need to provide more details they could be in the AwardDecision class. The WG did not see the AwardDecisionDetail is a Situation.
+* The WG discussed on the name of the reification AwardDecisionDetails and the decision came when analysing the ordering.
+* The WG saw that we have a problem with the naming. To be solved in the future.
+* The WG discussed why we need reification. For that purpose indicated that with the example produced the need to have the reification was confirmed. Everis showed the example to WG due to some members were not attending the last meeting.
+
+**Topic of discussion: Award reification**
+
+* Through the example prepared for the last meeting prepared a set of SPARQL queries.
+* The WG continued discussing the example to understand properly the data to be retrieved through the queries.
+* The WG modify the example together and fixed some errors discovered.
+* The WG discussed what exactly refers to the AwardDecision. The conclusion was that it refers to a lot.
+* The WG points the importance to discuss the naming of the concepts.
+* To conclude the discussion, the WG said that the reification and the model as it is, works, but the names and properties need to be reviewed.
+*  The final decision  about the reification name was:
+ 	**   The WG agreed to change AwardDecisionDetails by AwardDecisionAsignation
+
+ActionPoint:
+
+- To add in Github the examples and the queries (it is already in the GH repository: Reification example and sample SPARQL Query(ies) (https://github.com/eprocurementontology/eprocurementontology/tree/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes)

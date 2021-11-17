@@ -1,0 +1,31 @@
+Please find below the minutes of the 06th of October
+
+Participants: Ana Aido, Paloma Arillo Aranda, Cécile,Hilde Kjølset, Natalie Muric, Robert, Helder Santos, Juan Carlos Segura Fernández-Carnicero, Giovanni Paolo Sellitto, and Enric Staromiejski
+
+**Topic of discussion: Review of the minutes from 29th September and 1st October**
+
+* To rephrase the minutes with the mention of the maximum score and the minimum score and the  cccev
+
+
+**Topic of discussion: roles and subroles**
+
+The WG started listing the topics inside the roles and subroles to be discussed:
+
+* Which classes are to be removed and how these concepts end up in the model (e.g. Winner, Buyer are to be removed because we would have them as role codes in the role-taxonomy);
+* What shall we do with the attributes in those classes? E.g. WinnerRank, or the attributes of the class buyer;
+* Do we need a reification class, or is the class “AwardDecission”?
+* Redundant properties between the classes representing Roles (v2.0.2)
+
+The WG started with the discussion of the first bullet. The WG analyses the conceptual model and saw that the AwardDecision refers to Lot and also the EvaluationResult is connected to the AwardDecision, and then AwardDecision is referredBy a Contrac and the AwardDecision has a Winner. Moreover, the Buyer is connected to the AwardDecision who makes decisions in the AwardDecision:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/doc/img/Award-Reification.jpg[]
+
+According to this discussion, the WG identified examples of situations for the usage of the reification class. One first observation is that the action performed by the role is frequently (but not always) connected to a relevant entity of the ontology.
+
+For example (1)the AwardDecision is connected to the AwardResult and is ‘made by the role Buyer’; (2)The Tender is connected to the agent that submits it, which in eProcurement we know it as ‘eSubmission’; (3)The contract, which is resulting from a situation involving the signatory parts; (4) Other situations that do not connect the agents to a result. For all these cases, the WG proposes to have a Generic Pattern Structure that can be specialized per situation.
+
+The topic of whether the ontology should model processes was raised once again because the reifications of the type ProcurementInvolvement (e.g. eSubmission) look very much like processes. The WG checked that this is not the case for at least the only reification we have for the time being (AwardDecision).
+
+The WG continued discussing what to do with the AwardDecision. For that purpose, it was presented and explained a diagram that contains a new reification class named “AwardInvolvement”, it is the class that connects the Agent, with the roles, with other classes. In this model, it is not possible to know who is the Agent that is performing something until we state what is the role and the type of Organization.
+
+From this discussion, the WG concluded that we need to find a good term for the reification(s), neither ‘ProcurementEvent’ nor ‘ProcurementInvolvement’ is good enough. In the case of AwardDecision, the involvement entails active participation (and the Winner does not participate in the decision-making). Moreover, in the generic case, the Event concept does cover many more aspects that were never intended to be represented in the ePO (processes, for example, and events in general).

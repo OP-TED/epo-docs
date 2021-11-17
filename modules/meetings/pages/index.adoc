@@ -91,3 +91,60 @@ xref:notes/2021-02-04-wgm.adoc[Work Group meeting 2021-02-04]
 
 xref:notes/2021-02-02-wgm.adoc[Work Group meeting 2021-02-02]
 
+xref:notes/2021-01-28-wgm.adoc[Work Group meeting 2021-01-28]
+
+xref:notes/2021-01-26-wgm.adoc[Work Group meeting 2021-01-26]
+
+xref:notes/2021-01-21-wgm.adoc[Work Group meeting 2021-01-21]
+
+xref:notes/2021-01-19-wgm.adoc[Work Group meeting 2021-01-19]
+
+xref:notes/2021-01-14-wgm.adoc[Work Group meeting 2021-01-14]
+
+xref:notes/2021-01-12-wgm.adoc[Work Group meeting 2021-01-12]
+
+xref:notes/2021-01-07-wgm.adoc[Work Group meeting 2021-01-07]
+
+xref:notes/2020-12-17-wgm.adoc[Work Group meeting 2020-12-17]
+
+xref:notes/2020-12-15-wgm.adoc[Work Group meeting 2020-12-15]
+
+xref:notes/2020-12-10-wgm.adoc[Work Group meeting 2020-12-10]
+
+xref:notes/2020-12-03-wgm.adoc[Work Group meeting 2020-12-03]
+
+xref:notes/2020-12-01-wgm.adoc[Work Group meeting 2020-12-01]
+
+xref:notes/2020-11-26-wgm.adoc[Work Group meeting 2020-11-26]
+
+xref:notes/2020-11-24-wgm.adoc[Work Group meeting 2020-11-24]
+
+xref:notes/2020-11-19-wgm.adoc[Work Group meeting 2020-11-19]
+
+xref:notes/2020-11-17-wgm.adoc[Work Group meeting 2020-11-17]
+
+xref:notes/2020-11-12-wgm.adoc[Work Group meeting 2020-11-12]
+
+xref:notes/2020-11-10-wgm.adoc[Work Group meeting 2020-11-10]
+
+xref:notes/2020-11-05-wgm.adoc[Work Group meeting 2020-11-05]
+
+xref:notes/2020-11-03-wgm.adoc[Work Group meeting 2020-11-03]
+
+xref:notes/2020-10-29-wgm.adoc[Work Group meeting 2020-10-29]
+
+xref:notes/2020-10-27-wgm.adoc[Work Group meeting 2020-10-27]
+
+xref:notes/2020-10-22-wgm.adoc[Work Group meeting 2020-10-22]
+
+xref:notes/2020-10-20-wgm.adoc[Work Group meeting 2020-10-20]
+
+xref:notes/2020-10-15-wgm.adoc[Work Group meeting 2020-10-15]
+
+xref:notes/2020-10-13-wgm.adoc[Work Group meeting 2020-10-13]
+
+xref:notes/2020-10-08-wgm.adoc[Work Group meeting 2020-10-08]
+
+xref:notes/2020-10-06-wgm.adoc[Work Group meeting 2020-10-06]
+
+xref:notes/2020-10-01-wgm.adoc[Work Group meeting 2020-10-01]

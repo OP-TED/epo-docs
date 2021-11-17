@@ -1,0 +1,29 @@
+Please find below the minutes from the 19th January 2021:
+
+Participants: Paloma Arillo Aranda, Giorgia Lodi, Natalie Muric, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, and Enric Staromiejski.
+
+**Topic of discussion: Address class**
+
+* The WG discussed the meaning of the attribute "epo:Department" in the epo:Address class;
+
+**Topic of discussion: Review of the minutes from the 12th and 17th of January**
+
+* To add the diagram of eCatalogue in the minutes from the 12th of January;
+* Some modifications were done during the meeting;
+* To add Giampaolo into the participants from the 12th January.
+
+**Topic of discussion: Roles and Subroles reifications**
+
+* Created a presentation (https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/Agent-Role-CONCLUSIONS.pptx) explaining the conclusion on where other reification classes are needed for the rest of roles and subroles activities;
+* Created a new diagram named Procurement Terms Notification where they defined a new ProcurementTermsNotificationSituation and the roles involved in this situation;
+* The WG discussed this new diagram created to understand the different classes dropped on it:
+
+image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/doc/img/Procurement%20Terms%20Notification%20Reification.png[]
+
+* The WG also discussed about the BuyerProfile and if it should be linked to the Agent class. The answer is yes, but in v2.0.1 and v.2.02 it is modelled differently due to no reifications are used in previous versions.
+
+**Topic of discussion: Abstract classes**
+
+* Discussion about the meaning of abstract classes. In UML an abstract class is never implemented.
+
+For instance, it is not possible to implement an individual of the class notice since it is a document itself, same happens with technique, but you can implement the types of notices "Contract Notice" "Contract Award Notices", etc.
