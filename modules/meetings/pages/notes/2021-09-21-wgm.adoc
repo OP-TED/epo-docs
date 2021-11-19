@@ -61,6 +61,7 @@ Not to implement as a role but the DG-Grow shall be asked if there is justificat
 
 * _What does this table cover? Currently, the sub-roles are modelled as relations between (e.g. Buyer, ProcurementServiceProvider) and Lot, and other ones._
 * _DG-Grow(ESDP) proposes a sub-roles table and there is another table proposed by GD-Grow (eForms)._
+
 ==== Discussion
 
 Alignment attempt between EPO and ESPD and eForms.  +

@@ -1,4 +1,4 @@
-Meeting: 26/11/2019
+== Meeting: 26/11/2019
 
 Participants: Ana-Maria Babaligea, Giorgia Lodi, Natalie Muric, Giampaolo Sellitto, Roberto Reale, Juan Carlos Segura and Enric Staromiejski.
 

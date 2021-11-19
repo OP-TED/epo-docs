@@ -1,4 +1,4 @@
-Meeting: 03/12/2019
+== Meeting: 03/12/2019
 
 Participants: Ana-Maria Babaligea, Cécile Guasch, Thor Møller, Natalie Muric, Giampaolo Sellitto, Roberto Reale, Juan Carlos Segura, Jalini Srisgantharajah and Enric Staromiejski.
 

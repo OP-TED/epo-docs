@@ -1,4 +1,4 @@
-Please find below the minutes from the 29th October:
+== Please find below the minutes from the 29th October:
 
 Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Giorgia Lodi, Helder Santos, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, and Enric Staromiejski.
 
@@ -14,8 +14,7 @@ Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Giorgia Lodi, Held
 
 After discussions, the resulting model is as follows:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/eOrderingReification.jpg[]
-
+image::eOrderingReification.jpg[]
 
 **Action Point:**
 
