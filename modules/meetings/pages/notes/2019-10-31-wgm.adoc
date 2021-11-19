@@ -28,7 +28,7 @@ The second proposal was about how to determine the exact content provided by the
 
 After the proposal on how to model the “notice-type”, Everis presented to the WG the updated solution presented in the last WGM. (29th October) of an updated mapping of the competition phase for PINs and CNs. An example of the mapping:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20191031.JPG[Mapping example]
+image::20191031.jpeg[Mapping example]
 
 The WG accepted the proposal and Everis will continue working in the Planning phase.
 

@@ -6,7 +6,7 @@ The meeting of the 12th December was focused on the mapping of the CAN in the �
 
 The following table shows the BTs mapped as well as how it is represented in the ePO EA file. All the mappings can be consulted in the “Result” diagram:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20191212.JPG[Result]
+image::20191212.jpeg[Result]
 
 *Action points:*
 

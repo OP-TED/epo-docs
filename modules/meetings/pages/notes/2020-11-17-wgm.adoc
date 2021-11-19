@@ -19,11 +19,8 @@ After that, the work on analysis for testing the reification approach(for which 
 * The diagram on Buyer and Organisation was re-discussed and the question of whether this diagram is needed or not was raised, since in the Agent diagram most of the classes related to Organisations are already covered there. The decision was to keep it, since the Agent diagram does not refer to Buyer nor BuyerProfile (and these are relevant from the Buyer perspective).
 * The object property “ownedBy” from Channel to Agent was removed. It seemed not necessary.
 * The cardinality of the object property "hasRole" between the ProcurementSituation and the Role was modified. Now it is: “*” situation has just “1” role, meaning that one instance of situation involves/affects just 1 Role and, in the opposite sense, one Role may be involved in more than one Procurement Situation
-
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/Role_ProcurementSitutation.JPG[]
-
 * The relationship between Buyer and Procedure has been also removed, since what is important is getting to the Agent playing the role of Buyer (see figure below). Roles are not connected directly to the Agent anymore (they do indirectly through the Procurement Situations). Therefore, a solution needs to be found to connect the Agent playing the role of Buyer to the Procedure.
 
-image::https://user-images.githubusercontent.com/16134316/100096445-500f9700-2e5c-11eb-9296-093c7f1a76c0.png[]
+image::100096445-500f9700-2e5c-11eb-9296-093c7f1a76c0.png[]
 
 The corresponding Conceptual Model file can be consulted at https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/ePO-CM-roles-as-classes.eap.

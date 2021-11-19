@@ -14,11 +14,11 @@ After the reflection, the WG decided to create the new class “Role” which is
 
 The picture below shows an example created for the reflection analysis whether to create or not a role class:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/30012020(1).jpg[Role class diagram]
+image::30012020(1).jpg[Role class diagram]
 
 And here the new diagram created for the discussion of the procurement roles:
 
-image::(https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/30012020(2).jpg[Procurement roles diagram]
+image::30012020(2).jpg[Procurement roles diagram]
 
 *Action Points:*
 

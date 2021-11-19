@@ -15,4 +15,4 @@ From this discussion the following modeling actions took place:
 
 The final version of the datatypes diagram is the following one:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/epo%20datatypes.png[]
+image::epo datatypes.png[]

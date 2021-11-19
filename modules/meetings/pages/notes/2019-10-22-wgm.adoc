@@ -22,4 +22,4 @@ The ePIR could be described by Metadata organized into FRBR model. However, a di
 
 In ePO, the ePIR would represent the Bibliographic Resource element that is used in the FRBR model. Therefore in ePO we will have ePIR= Work+Expression+Manifestation+Item. We keep the 4 levels of abstraction and there are also aspects of the ePIR. The reutilization of the FRBR in ePO could be as follows:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20191022.JPG[]
+image::20191022.jpeg[]

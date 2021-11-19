@@ -4,6 +4,6 @@ Participants: Ana-Maria Babaligea, Cécile Guasch, Thor Møller, Natalie Muric, 
 
 The meeting of the 3rd December was focused on the mapping on the CAN in the “Result” stage. The following table shows the BTs mapped as well as how it is represented in the ePO EA file. All the mappings can be consulted in the “Result” diagram:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20191202.JPG[Result]
+image::20191202.jpeg[Result]
 
 Discussions continued on the other value data types in the result forms. There was some confusion about the eForms business terms BT-660 Framework estimated value, BT-27 Estimated value and BT-660 Framework Estimated Value.  To this end it was decided to create a github issue: https://github.com/eForms/eForms/issues/329 and Everis was asked to check the different properties associated with the procurement value for the next meeting.

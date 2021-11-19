@@ -24,20 +24,20 @@ Procedure isSubjectTo ContractTerm and AccessTerm, while PlannedProcurementPart 
 
 However the way this is currently designed means that there is no possible restriction: in the OWL transformation everything in the domain (Procedure or PlannedProcurementPart) would be subject to anything in the range as we cannot differenciate what is subject of what.
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20210504-current-situation.png[]
+image::20210504-current-situation.png[]
 
 
   2. **Proposal 1**
 
 The introduction of an abstract class ‘ProcurementTerm’ allows ContractTerm and AccessTerm to inherit from that class ‘ProcurementTerm’.
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20210504-proposal1.png[]
+image::20210504-proposal1.png[]
 
   3. **Proposal 2**
 
 A change in the domain, ‘OWLThing’, and the introduction of the abstract class will allow that any class is subject to the abstract class ‘ProcurementTerm’.
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20210504-proposal2.png[]
+image::20210504-proposal2.png[]
 
 * Subject: Address
 

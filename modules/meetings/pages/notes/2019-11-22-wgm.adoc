@@ -5,4 +5,4 @@ Participants: Paloma Arillo Aranda, Vibeke Engesaeth, Thor Møller, Natalie Muri
 
 The meeting of the 22nd November was focused on the mapping on the CAN in the “Result” stage. The following table shows the BTs mapped as well as how it is represented in the ePO EA file. All the mappings can be consult in the “Result” diagram:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/22112019.JPg[Result]
+image::22112019.jpeg[Result]

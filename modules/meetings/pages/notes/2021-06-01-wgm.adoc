@@ -6,7 +6,7 @@ Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Hilde Kj
 
 The following diagram was presented for discussion:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/Diagramme-epovalue.png[]
+image::Diagramme-epovalue.png[]
 
 It seems weird that the contract has no value.
 
@@ -24,9 +24,9 @@ Cardinalities are not in scope in this case. But Giorgia will check them as well
 
 We could also replace ‘Value’ with ‘MonetaryValue’. This will have consequences in the whole model. For example: hasAwardedValue should be replaced with hasAwardedMonetaryValue. We have to be careful and check if Amount is used in other places.
 
-**Topic of discussion: Class epo:Ammount**
+**Topic of discussion: Class epo:Amount**
 
-epo:OverallAmont could be replaced with ‘TotalAmount’ but we need to check the history of this name in the next meeting.
+epo:OverallAmount could be replaced with ‘TotalAmount’ but we need to check the history of this name in the next meeting.
 
 Issue: the attributes have no definition.
 

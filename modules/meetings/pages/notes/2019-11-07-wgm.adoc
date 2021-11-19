@@ -36,7 +36,7 @@ Enric explained that in order to reuse the IFLA model new concepts have to be in
 After the creation of the new definitions, and due to not enough remaining time available, Enric explained briefly the rest of the presentation.
 Enric showed to the WG how the ePO “Information Resource” is implemented:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/20191107.png[Information Resource]
+image::20191107.png[Information Resource]
 
 The WG said that this way to represent the concepts is difficult to understand and representing the same concepts and model using our methodology would be better. Everis agreed to do so.
 

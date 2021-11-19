@@ -6,7 +6,7 @@ Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Hilde Kjølset, Gi
 
 * The WG created a new diagram named "eOrdering" for discussion of the phase. The following picture shows the classes added into the diagram:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Conference%20Calls%20Images/eOrdering.jpg[eOrdering]
+image::eOrdering.jpg[eOrdering]
 
 * Regarding the AdditionalDocument, the WG raised the need to discuss it because eOrdering is also a ProcurementDocument. The doubt is if the AdditionalDocument can be used also for Order. According to the ProcurementDocument definition, these documents are created for the Procedure by the Buyer (it is defined by the directive). Therefore an order cannot be considered as a Procurement Document as defined in the ontology and the Public Procurement Directives.
 * The WG also said the eOrdering does not always start at the procedure level, they used quotation to define the tender. The WG said that this quotation could be the FinancialOfferValue class that already exists in the model. The definition of the FinancialOfferValue class has been changed: "Monetary amount for which the economic operators commits to fulfil a given request". The WG saw the need to have another class that aggregates financial offer values. Due to the different discussions, the WG proposed why not to start modelling Order.
