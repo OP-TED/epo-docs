@@ -1,7 +1,0 @@
-== Meeting: 28/11/2019
-
-Participants: Paloma Arillo Aranda, Ana-Maria Babaligea, Cécile Guasch, Natalie Muric, Roberto Reale, Giampaolo Sellito, Juan Carlos Segura and Enric Staromiejski.
-
-The meeting of the 28th November was focused on the mapping on the CAN in the “Result” stage. The following table shows the BTs mapped as well as how it is represented in the ePO EA file. All the mappings can be consult in the “Result” diagram:
-
-image::28112019.jpeg[Result]

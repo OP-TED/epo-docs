@@ -1,9 +1,0 @@
-== Please find below the minutes from the 17th of December 2020
-
-Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Giorgia Lodi, Natalie Muric, Juan Carlos Segura Fernández-Carnicero, Giampaolo Sellitto, and Enric Staromiejski.
-
-**Topic of discussion: Issues of the v2.0.1 and next steps**
-
-* The WG discussed some issues discovered from the latest version of the OWL;
-* As next steps of the Ontology, the WG indicated that the Norwegians want to explain DCAT and facilitate discusion. The WG started discussing topics related to DCAT and the new release that is still under development from W3C.
-* Some members of the WG saw the need to take into account dcat and we recommend to use DCAT for the datasets generated.

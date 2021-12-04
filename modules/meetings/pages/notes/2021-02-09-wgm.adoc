@@ -1,9 +1,0 @@
-== Please find below the minutes from the 9th of February.
-
-Participants 9th February: Ana Aido, Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Hilde Kjølset (dfø), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP), Hector Rico (everis), Helder Santos (INCM), Giampaolo Sellitto (ANAC), and Jalini Srisgantharajah (dfø).
-
-**Topic of discussion: Cardinalities**
-
-The WG worked on the cardinalities of the attributes of the eProcurement Ontology v2.0.1.
-
-The corresponding modification in the model can be consulted in this https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/Cardinalities.xlsx.
