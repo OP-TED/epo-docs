@@ -1,3 +1,0 @@
-xref:history.adoc[History of all Work Group Meetings]
-
-xref:wgm-2021.adoc[Cumulated content of Work Group Meeting from 2021]
