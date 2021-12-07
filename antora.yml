@@ -1,6 +1,6 @@
-name: WGM
+name: epo-wgm
 version: master
-title: Work group meetings
+title: ePO Working Group
 start_page: ROOT:index.adoc
 nav:
 - modules/ROOT/nav.adoc
