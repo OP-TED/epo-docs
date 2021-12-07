@@ -40,7 +40,7 @@
 * Discuss the principles on specifying the cardinality constraints (in the model and in AP)
 == Discussion
 
-==== Discuss comments on attributes with missing definitions
+=== Discuss comments on attributes with missing definitions
 
 
 Definitions adopted:
@@ -85,7 +85,7 @@ WG Approval 09/11/2021"
 epo:EPayment - "Electronic means must be used for paying. +
 WG Approval 09/11/2021"
 
-==== Present roles as adjunct instances
+=== Present roles as adjunct instances
 
 _Role as n-ary relation:_
 

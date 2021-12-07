@@ -2,7 +2,7 @@
 
 Participants: Ana-Maria Babaligea, Cécile Guasch, Thor Moeller, Natalie Muric, Juan Carlos Segura and Enric Staromiejski.
 
-The meeting on 22/10/2019 was focused on the analysis of the IFLA’s FRBR model and how it can be reused in the ePO Ontology. This analysis and presentation was carried out by Enric Staromiejski based on the Enrico Francesconi’s  presentation that took place in the last F2F meeting in Luxemburg with all Working Group Members.
+The meeting on 22/10/2019 was focused on the analysis of the IFLA’s FRBR model and how it can be reused in the ePO Ontology. This analysis and presentation was carried out by Enric Staromiejski based on the Enrico Francesconi’s  presentation that took place in the last F2F meeting in Luxembourg with all Working Group Members.
 
 The FRBR defines 4 levels of abstraction:
 

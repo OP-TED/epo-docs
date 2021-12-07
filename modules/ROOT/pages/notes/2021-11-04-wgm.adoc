@@ -58,7 +58,7 @@ Business groups are sets of attributes used to describe entities of business typ
 
 * Presenting the WG meeting notes link to the group.
 
-==== How to reduce redundancy on code lists?
+=== How to reduce redundancy on code lists?
 
 In the model itself we can leave it as an attribute. When we do the actual mapping to eForms we should include the relationships.
 

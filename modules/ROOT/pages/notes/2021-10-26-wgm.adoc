@@ -29,7 +29,7 @@
 
 == Discussion
 
-==== Subroles:
+=== Subroles:
 
 Subroles can be carried out by the organisations and roles list. +
 In Norway, in the current notices, the subroles are not used. They might be used in the future eForms.
@@ -56,7 +56,7 @@ Adding comments for EU Vocabulary List:
 * rev-info → providing more information on the review procedures.
 * signatory → signing the contract. Note: signing on the side of the buyer is right?
 
-==== Roles:
+=== Roles:
 
 Revising Roles list in order to make sure we have covered each role and provided pertinent comments to DG GROW.
 
@@ -81,7 +81,7 @@ Winner → changed definition to “A role of an agent to whom a *lot* is awarde
 
 
 
-==== Questions DG GROW:
+=== Questions DG GROW:
 
 * Do we find the distinction between roles and their function useful?
 ** We should bring this to DG GROW’s attention.

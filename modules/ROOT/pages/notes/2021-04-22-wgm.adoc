@@ -28,7 +28,7 @@ Based on the document https://github.com/OP-TED/model2owl/blob/master/test/reaso
 By using the same predicate as described above from the OWL core it can be implied that the ContractModificationNotice RefersTo Tender however this is not true.  There are several solutions to correcting this problem:
 
 1.	keep ‘refersTo’ as it is in the model now and ask the transformation script to add a reference to the class it is pointing to make it more specific ie Transform ContractModificationNotice RefersTo ContractAwardNotice toContractModificationNotice RefersToContractAwardNotice ContractAwardNotice
-
++
 This is not considered a good idea as it is not evident to business people reading the diagram
 
 2. Manually transform ContractModificationNotice RefersTo ContractAwardNotice toContractModificationNotice RefersToContractAwardNotice ContractAwardNotice

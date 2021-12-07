@@ -25,7 +25,7 @@
 
 == Discussion
 
-==== Inter-role dependency:
+=== Inter-role dependency:
 
 
 Winner is not a more specific type of Tenderer. It’s a dependency on the outcome of a different phase. +
@@ -94,7 +94,7 @@ Principles presented:
 * Instance immutability - once published, an instance shall not be conceptualised as changeable.
 * Non-redundancy - properties of an entity must be instantiated only once.
 
-==== Role features
+=== Role features
 
 The following Features are relevant to ePO:
 

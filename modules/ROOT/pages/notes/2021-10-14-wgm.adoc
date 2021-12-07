@@ -47,7 +47,7 @@ It is possible to infer from th eURI of the ‘rev-info’ which is his main rol
 After checking the Excel file eForms business terms it seems obvious that role and subrole and flat lists so there is no need to link the role to the sub-role. An organisation plays a role and *could* play a subrole. +
 The reification does not necessarily imply a hierarchy role to subrole.
 
-==== Chosen solution:
+=== Chosen solution:
 
 _Diagram_
 
@@ -91,7 +91,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlcAAAGDCAYAAAAGfDUgAACAAEl
 
 
 
-==== Rationale
+=== Rationale
 
 The function is about who can provide information about the procedures concerning review requests. +
 Only 4 roles can play the subrole rev-info but there is no need to link the subrole to the role in the examples. So there is no need for creating an instance example (choice 3).
@@ -103,7 +103,7 @@ Refers to the function of receiving the requests to participate in a tender. We 
 However, BT-770 clearly refers to the Procedure and not to the Lot. +
 *Discussion to be continued on 19 October 2021*
 
-==== Chosen solution
+=== Chosen solution
 
 _Diagram:_
 

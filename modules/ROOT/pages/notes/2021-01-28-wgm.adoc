@@ -7,7 +7,7 @@ Participants: Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Veit Jah
 The meeting was focused on the definition of classes within eCatalogueReification Diagram (CatalogueReceiver and CatalogueProvider).
 The discussion went through the possibility of exploring if CatalogueReceiver and CatalogueProvider are better handled as roles (defining them as classes) or as activities defined within the organisation-subrole code list. Both possibilities were depicted:
 
-#### OPTION 1
+### OPTION 1
 Inclusion of the Catalogue Provider and Catalogue Receiver as subclasses of Role (in which case, the code-list 'organisation-subrole' does not contain codes related to these two roles):
 
 image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/eCatalogueReification-proposal-1.png[]
@@ -18,7 +18,7 @@ Both roles were defined as follows:
 
  * epo-ecat:CatalogueProvider: A role of an agent compiling and supplying a catalogue. Additional information: the catalogue provider role is usually played by the agent that acts as a seller, or by another agent that acts on behalf of the seller.
 
-#### OPTION 2
+### OPTION 2
 Removal of Catalogue Provider and Catalogue Receiver classes and inclusion of two new codes in the codelist 'organisation-subrole': 'cat-prov' and 'cat-receiv':
 
 image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/eCatalogueReification-proposal-2.png[]
