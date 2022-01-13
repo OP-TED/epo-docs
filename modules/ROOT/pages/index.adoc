@@ -1,15 +1,14 @@
 [[header]]
-== *ePO - eProcurement Ontology Development Documentation [Report]
+= ePO - eProcurement Ontology Development Documentation [Report]
 
-**Html version of ePO model from master branch
+== Html version of ePO model from master branch
 
-link:{attachmentsdir}/html_reports/master/ePO/index.html[ePO^]
-link:{attachmentsdir}/html_reports/master/eCatalogue/index.html[eCatalogue^]
-link:{attachmentsdir}/html_reports/master/ePO-BDTI-AP/index.html[ePO-BDTI-AP^]
-link:{attachmentsdir}/html_reports/master/ePO-Reg2015-AP/index.html[ePO-Reg2015-AP^]
+* link:{attachmentsdir}/html_reports/master/ePO/index.html[ePO^]
+* link:{attachmentsdir}/html_reports/master/eCatalogue/index.html[eCatalogue^]
+* link:{attachmentsdir}/html_reports/master/ePO-BDTI-AP/index.html[ePO-BDTI-AP^]
+* link:{attachmentsdir}/html_reports/master/ePO-Reg2015-AP/index.html[ePO-Reg2015-AP^]
 
-**Html version of ePO model from model-refactoring branch
-link:{attachmentsdir}/html_reports/model-refactoring/ePO/index.html[ePO^]
-link:{attachmentsdir}/html_reports/model-refactoring/notices/index.html[notices^]
+== Html version of ePO model from model-refactoring branch
 
-
+* link:{attachmentsdir}/html_reports/model-refactoring/ePO/index.html[ePO^]
+* link:{attachmentsdir}/html_reports/model-refactoring/notices/index.html[notices^]
