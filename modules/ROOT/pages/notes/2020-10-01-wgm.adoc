@@ -9,8 +9,8 @@ The following concepts were defined during the meeting:
 * SelectionCriterionType. Now the type of the criteria is in the class Criterion and the definition for the type is there.
 * ThresholdValue. The WG discussed the need to rename this as "Threshold" and to remove the ThresholdValueType. Same actions should be replied in the AwardCriterion class. For this discussion, the WG check within the eForms mappings, how the ThresholdValue was used. The BT-7532 Selection Criteria Second Stage Invite Number Threshold was the concept used for the mapping to the ThresholdValue. The definition of this BT was also took into account by the WG for the creation of a new definition for the concept "Threshold". The WG created a document to understand what is a threshold, based also in the definition of the eForms BT-7532.
 
-** This document can be consulted https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/MultistagedProcedureTermAndCriteria.pptx.
-** The terms defined and the actions can be consulted https://github.com/eprocurementontology/eprocurementontology/blob/meetings/ePO_definitions.xlsx
+** This document can be consulted link:{attachmentsdir}/presentations/MultistagedProcedureTermAndCriteria.pptx[Multistaged Procedure Term And Criteria].
+** The terms defined and the actions can be consulted https://github.com/OP-TED/ePO/blob/2042074d3a7e21b69f2892b645511ad083c13a05/v2.0.1/01-Glossary/ePO-Glossary.xlsx
 
 Pending tasks related to this work, which will need to be tackled when resuming the work on definitions, are:
 

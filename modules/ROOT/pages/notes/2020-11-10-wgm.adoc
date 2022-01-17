@@ -23,4 +23,4 @@ Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Hilde Kjølset, Gi
 
 ActionPoint:
 
-- To add in Github the examples and the queries (it is already in the GH repository: Reification example and sample SPARQL Query(ies) (https://github.com/eprocurementontology/eprocurementontology/tree/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes)
+- To add in Github the examples and the queries (it is already in the GH repository: Reification example and sample SPARQL Query(ies) (https://github.com/OP-TED/ePO/tree/feature/frozen-2.0.2/implementation/test/roles-as-classes[Roles as classes)

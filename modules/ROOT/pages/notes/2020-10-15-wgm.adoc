@@ -10,7 +10,7 @@ The WG continues with the review of the generic diagram and worked on it:
 
 See the Award Reification diagram:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/ePO-CM-roles-as-classes.eap[]
+link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-classes/ePO-CM-roles-as-classes.eap[ePO CM roles as classes]
 
 From the discussion of the diagram the following decisions were made:
 

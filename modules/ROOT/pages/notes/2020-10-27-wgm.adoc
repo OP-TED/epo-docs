@@ -18,4 +18,4 @@ This participation class from the CPSV vocabulary was analysed to see how it is 
 
 Also the WG indicates that we are inheriting Agent and ProcurementSituation from the cpsv:Agent and cpsv:Participation by two reasons/benefits: (1)for the benefits of allignment ontologies (e.g. SDG), (2) doing this alignment we also solve other problems like how agent is being modeled through the reuse of the cpsv agent. The WG indicates that we need to test this asap to see if it works:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/cpsv_participation.jpg[]
+link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-classes/img/cpsv_participation.jpg[CPSV Pasrticipation]

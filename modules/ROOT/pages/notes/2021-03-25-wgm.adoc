@@ -17,4 +17,4 @@ The following concepts were defined in the meeting (see definitions in the EAP f
 * epo:CurrencyID
 * epo:AmountValue
 
-The definitions can be consulted in the Glossary. See https://github.com/eprocurementontology/eprocurementontology/blob/meetings/ePO-Glossary.xlsx.
+The definitions can be consulted in the Glossary. See https://github.com/OP-TED/ePO/blob/2042074d3a7e21b69f2892b645511ad083c13a05/v2.0.1/01-Glossary/ePO-Glossary.xlsx.

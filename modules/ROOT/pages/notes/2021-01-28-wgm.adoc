@@ -10,7 +10,7 @@ The discussion went through the possibility of exploring if CatalogueReceiver an
 ### OPTION 1
 Inclusion of the Catalogue Provider and Catalogue Receiver as subclasses of Role (in which case, the code-list 'organisation-subrole' does not contain codes related to these two roles):
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/eCatalogueReification-proposal-1.png[]
+link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-classes/img/eCatalogueReification-proposal-1.png[eCatalogue Reification proposal 1]
 
 Both roles were defined as follows:
 
@@ -21,7 +21,7 @@ Both roles were defined as follows:
 ### OPTION 2
 Removal of Catalogue Provider and Catalogue Receiver classes and inclusion of two new codes in the codelist 'organisation-subrole': 'cat-prov' and 'cat-receiv':
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/eCatalogueReification-proposal-2.png[]
+link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-classes/img/eCatalogueReification-proposal-2.png[eCatalogue Reification proposal 2]
 
 The WG considers that this latter case is more elegant and more flexible, since it allows any Agent to perform activities of catalogue provision and reception (e.g., Buyers and Service Providers). It also allows for further addition of other activities that can be performed by other Agents related to catalogues such as catalogue validation, catalogue dissemination, etc.
 

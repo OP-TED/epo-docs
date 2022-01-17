@@ -23,4 +23,4 @@ After that, the work on analysis for testing the reification approach(for which 
 
 image::100096445-500f9700-2e5c-11eb-9296-093c7f1a76c0.png[]
 
-The corresponding Conceptual Model file can be consulted at https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/ePO-CM-roles-as-classes.eap.
+The corresponding Conceptual Model file can be consulted at link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-classes/ePO-CM-roles-as-classes.eap[ePO CM roles as classes]

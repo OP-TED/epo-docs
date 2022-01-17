@@ -12,7 +12,7 @@ Once reviewed the minutes of the last week, the WG continued with the discussion
 
 * The WG saw that the properties from OrderingSituration to the different roles are not needed because the OrderingSituation which a ProcurementSituation already involves roles:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/OrderingSituation%20and%20roles.JPG[]
+link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-classes/img/OrderingSituation%20and%20roles.JPG[Ordering Situation and Roles]
 
 * The inclusion of the role and the agent in the generic reification class "ProcurementSituation" makes unnecessary the axioms that we have in versions 2.0.1 and 2.0.2 "epo:Agent epo:playsRole epo:Role and the inverse epo:Role epo:isPlayedBy epo:Agent". The inclusion of the epo:involvesRole in the reification, subclasses now the CPSV-AP property "cps-av:role" (we are reusing the cpsv-ap:Participation class and its attibute "role", which points to a "skos:Concept" (see the UML diagram for more details). Therefore, if we end up implementing the reifications as represented in the UML diagram above, the relation between roles and agents would have to be removed.
 * The WG asked why we are inheriting Agent and ProcurementSituation from the CPSV and the conclusion was that we are inheriting Agent and ProcurementSituation from the cpsv:Agent and cpsv:Participation for two reasons/benefits: (1)for the benefits of alignment ontologies (e.g. SDG), (2) doing this alignment we also solve other problems like how the agent is being modeled through the reuse of the cpsv agent.

@@ -10,7 +10,7 @@ image::roles and subroles.png[Roles and Subroles]
 
 Everis expressed its concerns with the temporary solution. Everis indicated that with this solution the same properties have been created for the different roles which complicates the model. Moreover, some disjointness needs to be included in order to say when to use one property or the other one. The WG agrees that the many properties  complicates the understand-ability of the model. However, as there is an urgency with the TED mappings for the pilot project the WG agreed to go with this approach, but to make clear that this is a temporary solution. The WG also asked if the temporary solution works. One action point was assigned to everis to provide to the WG an rdf example to see if the model works.
 
-Everis proposed another possible solution which is gathered in this presentation: https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/Everis_Roles%26Subroles.pptx (see slide 4).
+Everis proposed another possible solution which is gathered in this presentation: link:{attachmentsdir}/presentations/Everis_Roles&Subroles.pptx[Roles and Subroles] (see slide 4).
 
 Action Point:
 

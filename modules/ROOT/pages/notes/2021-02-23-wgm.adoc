@@ -6,4 +6,4 @@ Participants: Ana Aido, Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT)
 
 The WG worked on the cardinalities of the attributes of the eProcurement Ontology v2.0.1.
 
-The corresponding modification in the model can be consulted in this https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/Cardinalities.xlsx.
+The corresponding modification in the model can be consulted in this link:{attachmentsdir}/presentations/Cardinalities.xlsx[Cardinalities].

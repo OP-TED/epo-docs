@@ -10,9 +10,9 @@ Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Veit Jahns, Hilde 
 * TC 440 eCatalogue convenor also explained the analysis that they performed for the correspondence of the classes used in the ePO ontology. For example the class Agent they saw the correspondence to the UBL class "Party".
 * TC 440 eCatalogue convenor explained that they created different UML diagrams where they reused classes from the ePO Ontology, but also created other classes to model the Catalogue Provider, Catalogue Receiver and Seller.
 * TC 440 eCatalogue convenor and the WG discussed the differentiation that Peppol did between Business Role and Business Partner (however TC 440 is considering the deprecation of this "Business Partner" term).
-* The WG worked in a testing eCatalogue diagram. For that purpose, a new module (https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-taxonomy/ePO-CM.eap) in the set of ePO diagrams was created named "eCatalogue" (see the eAP file), also here the picture:
+* The WG worked in a testing eCatalogue diagram. For that purpose, a new module (link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-taxonomy/ePO-CM.eap[ePO Conceptual Model]) in the set of ePO diagrams was created named "eCatalogue" (see the eAP file), also here the picture:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/doc/img/eCatalogueReification.png[]
+link:https://github.com/OP-TED/ePO/tree/feature/frozen-2.0.2/implementation/test/doc/img/eCatalogueReification.png[eCatalogue Reification]
 
 * The WG started working on the role of CatalogueProvider to understand how to model it in the ePO Ontology.
 * A reification CatalogueSituation was created to link the Agent to the roles.

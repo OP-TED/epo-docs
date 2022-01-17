@@ -6,7 +6,7 @@ Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Veit Jahns (TC440)
 
 * The WG started summarising the last meeting on eCatalogue. Here the diagram produced on 12th January:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/doc/img/eCatalogueReification.png[]
+link:https://github.com/OP-TED/ePO/tree/feature/frozen-2.0.2/implementation/test/doc/img/eCatalogueReification.png[eCatalogue Reification]
 
 * The WG discussed on not to have in this diagram the ProcurementSituation class and to have just the specialisation of this class named ProcurementSituation. The problem is that hiding the ProcurementSituation class some properties will be also hidden. The WG analysed if the class linked exclusively to ProcurementSituation are also needed for the CatalogueSituation.
 * The WG simplified the eCatalogue diagram just leaving on it those classes that are needed for eCatalogue.
@@ -23,7 +23,7 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/
 * The WG decided that the ContactPoint will be reviewed and discussed later. The WG does not have a clear idea of whether Contact Points are actually needed in the context of eCatalogue transactions. TBD.
 * The discussion ends with the following version of the eCatalogue diagram:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/doc/img/eCatalogueReification(2).png[]
+link:https://github.com/OP-TED/ePO/tree/feature/frozen-2.0.2/implementation/test/doc/img/eCatalogueReification(2).png[eCatalogue Reification (2)]
 
 **Topic of discussion: Definition of Catalogue Provider**
 * The WG worked on the definitions of the following terms based on the definitions provided by TC440 (taken from TC440, UBL, and PEPPOL):

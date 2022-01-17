@@ -13,8 +13,10 @@ Some mistakes were detected:
 
 **Topics of discussion: Roles and Subroles discussion**
 
-* Everis prepared a presentation (https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/RolesTaxonomy_and_ProcurementEvents(WorkinProgress).pptx) for the discussion of the new approach roles and subroles.
-* Everis explained how the roles and subroles are currently modelled (https://eprocurementontology.github.io/CDM_Report/HTML/EARoot/EA1/EA45.htm). The current model of roles and subroles represents them as classes.
+* Everis prepared a presentation for the discussion of the new approach roles and subroles.
+(link:{attachmentsdir}/presentations/RolesTaxonomy_and_ProcurementEvents(WorkinProgress).pptx[Roles Taxonomy and Procurement Events])
+
+* Everis explained how the roles and subroles are currently modelled. The current model of roles and subroles represents them as classes.
 * Everis explained that as an alternative to the current model design of roles and subroles was to remove all the roles and subroles simplifying the ontology. The alternative solution is to use the reification taxonomy to represent the roles and subroles.
 * Everis explained that eu vocabularies have different codelists related to the role: "role", "organisation-subrole", "buyer-legal-type", "role nature" and "role qualifier".
 * Another activity that everis did for the preparation of the new approach on how to model the roles and subroles was to review the "Organisations, Roles and Activities as per the Directives" model using a model created in previous analysis by OP

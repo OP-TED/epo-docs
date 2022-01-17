@@ -14,11 +14,11 @@ Participants: Paloma Arillo Aranda, Giorgia Lodi, Natalie Muric, Juan Carlos Seg
 
 **Topic of discussion: Roles and Subroles reifications**
 
-* Created a presentation (https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/Agent-Role-CONCLUSIONS.pptx) explaining the conclusion on where other reification classes are needed for the rest of roles and subroles activities;
+* Created a presentation link:{attachmentsdir}/presentations/Agent-Role-CONCLUSIONS.pptx[Agent Role Conclusions] explaining the conclusion on where other reification classes are needed for the rest of roles and subroles activities;
 * Created a new diagram named Procurement Terms Notification where they defined a new ProcurementTermsNotificationSituation and the roles involved in this situation;
 * The WG discussed this new diagram created to understand the different classes dropped on it:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/doc/img/Procurement%20Terms%20Notification%20Reification.png[]
+link:https://github.com/OP-TED/ePO/tree/feature/frozen-2.0.2/implementation/test/doc/img/Procurement%20Terms%20Notification%20Reification.png[Procurement Terms Notification Reification]
 
 * The WG also discussed about the BuyerProfile and if it should be linked to the Agent class. The answer is yes, but in v2.0.1 and v.2.02 it is modelled differently due to no reifications are used in previous versions.
 

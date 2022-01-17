@@ -13,11 +13,11 @@ Participants: Ana Aido, Paloma Arillo Aranda, Giorgia Lodi, Natalie Muric, Helde
 
 The WG continued discussing the new approach on how to model the roles and subroles. From the last WG meeting, the group proposed to everis to create a diagram that clearly shows the Involvements:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/doc/img/Award-Reification.jpg[]
+link:https://github.com/OP-TED/ePO/tree/feature/frozen-2.0.2/implementation/test/doc/img/Award-Reification.jpg[Award Reification]
 
 Also created a simplified version of the above diagram:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/doc/img/awardecisioninvolvement_simplified.png[]
+link:https://github.com/OP-TED/ePO/tree/feature/frozen-2.0.2/implementation/test/doc/img/awardecisioninvolvement_simplified.png[Award Decision Involvement Simplified]
 
 The WG making use of the diagrams created, continue the discussion on the usage of the reification class. The following decisions raised from the discussion were:
 

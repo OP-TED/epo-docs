@@ -14,7 +14,7 @@ Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Hilde Kjølset, Gi
 
 * The WG asked why we have the name and description in the Procurement class and not in the Criterion class. Everis confirmed that criterion has both attributes, therefore the WG decided to move name and description into the criterion class.
 
-The terms defined and the actions can be consulted at https://github.com/eprocurementontology/eprocurementontology/blob/meetings/ePO_definitions.xlsx
+The terms defined and the actions can be consulted at https://github.com/OP-TED/ePO/blob/2042074d3a7e21b69f2892b645511ad083c13a05/v2.0.1/01-Glossary/ePO-Glossary.xlsx
 
 **Action Point:**
 

@@ -14,8 +14,6 @@ Participants: Ana Aido, Paloma Arillo Aranda, Cécile Guasch, Giorgia Lodi, Held
 
 After discussions, the resulting model is as follows:
 
-image::eOrderingReification.jpg[]
-
 **Action Point:**
 
 * Ask Peter Borrensen and any else in the post-award committee to provide real invoice and ordering examples.

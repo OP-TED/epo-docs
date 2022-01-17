@@ -13,11 +13,11 @@ Participants: Ana Aido Cécile Guasch, Giorgia Lodi, Roberto Reale, Helder Santo
 
 The WG continued working on the creation of the eOrdering diagram. The WG merged the Model were there was the eOrdering with the model where the work about roles and activites (subroles) is also being developed.
 
-The EAP file can be found at https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/ePO-CM-roles-as-classes.eap.
+The EAP file can be found at link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-classes/ePO-CM-roles-as-classes.eap[ePO CM roles as classes]
 
 In this EAP file the WG created a new diagram named 'eOrdering'. A png of this diagram is
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/eOrderingReification.png[]
+link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-classes/img/eOrderingReification.jpg[eOrdering Reification]
 
 In the above mentioned diagram it is possible to observe that WG was focused on the development of the eOrdering from the Roles perspective. Hence WG has added classes such as Deliveree, Deliverer, Originator, etc. When adding these classes the WG has reflected about the facts that:
 

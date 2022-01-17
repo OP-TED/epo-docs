@@ -4,7 +4,7 @@ Participants: Paloma Arillo Aranda, Sofia Berenguer,  Giorgia Lodi, Natalie Muri
 
 *Topic of Discussion:*
 
-Discussion Procurement Criteria (https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/DiscussionProcurementCriteria.pptx)
+Discussion Procurement Criteria link:{attachmentsdir}/presentations/DiscussionProcurementCriteria.pptx[Discussion Procurement Criteria]
 
 In order to finalise the mapping, an extra meeting was needed with the OP and some WG members to discuss the Selection Criteria. During this meeting a way on how to model and map the Selection Criterion, whether using CodeLists or representing the subcriterion as subclasses of the Selection Criterion class.
 

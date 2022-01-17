@@ -30,6 +30,6 @@ An item can be an atomic thing or a composition of things that together are seen
 
 The latest diagram on the eCatalogue is the following one:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/eCatalogueReification_04032021.png[]
+link:https://github.com/OP-TED/ePO/tree/feature/frozen-2.0.2/implementation/test/roles-as-classes/img/eCatalogueReification_04032021.png[eCatalogue Reification]
 
 This diagram will evolve with the results from further discussion on how to go on in the structuring of the eCatalogue (to be addressed in forthcoming sessions).

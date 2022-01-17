@@ -18,7 +18,7 @@ The WG started listing the topics inside the roles and subroles to be discussed:
 
 The WG started with the discussion of the first bullet. The WG analyses the conceptual model and saw that the AwardDecision refers to Lot and also the EvaluationResult is connected to the AwardDecision, and then AwardDecision is referredBy a Contrac and the AwardDecision has a Winner. Moreover, the Buyer is connected to the AwardDecision who makes decisions in the AwardDecision:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/doc/img/Award-Reification.jpg[]
+link:https://github.com/OP-TED/ePO/tree/feature/frozen-2.0.2/implementation/test/doc/img/Award-Reification.jpg[Award Reification]
 
 According to this discussion, the WG identified examples of situations for the usage of the reification class. One first observation is that the action performed by the role is frequently (but not always) connected to a relevant entity of the ontology.
 

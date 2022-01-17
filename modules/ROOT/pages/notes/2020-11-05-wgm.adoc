@@ -14,10 +14,10 @@ Participants: Paloma Arillo Aranda, Cécile Guasch, Natalie Muric, Helder Santos
 
 * The WG went through the Abox example created to see how the model would be represented in RDF. Everis confirmed that the current model works if. From the discussion, the WG proposed why not to rename the AwardDecisionSitutation as AwardDecisionDetail since it provides the details of the AwardDecision of the Procedure:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/Award-Reification.jpg[]
+link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-classes/img/Award-Reification.jpg[Award Reification]]
 
 * The WG after the example explanation continued analysing other situations where the reification could be needed. They worked on the Buyer and Organisation diagram. We added to the diagram the ProcurementSitutation reification class, since it is the link between agent and role:
 
-image::https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.2/v2.0.2/05-Implementation/test/roles-as-classes/img/Buyer%20and%20Organisation.jpg[]
+link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-classes/img/Buyer%20and%20Organisation.jpg[Buyer and Organisation]
 
 * The meeting ended with the discussion about the skos:Concept buyer-legal-type.

@@ -21,7 +21,7 @@ _Note_: ‘Lot’  as per Directive 2014/24/EU
 3. remove Tender
 4. rename TenderLot to Tender.
 
-The properties appear in the model but we can replace it with just ‘Tender’ for each lot or group of lots so as not to mix the transport of data with the semantics. See also https://github.com/eprocurementontology/eprocurementontology/blob/meetings/Presentations/20210510%20Group%20of%20lots.pptx slides from Norway 11/05/2021 where attributes of TenderLot are combined into Tender. The WG has to check the mappings.
+The properties appear in the model but we can replace it with just ‘Tender’ for each lot or group of lots so as not to mix the transport of data with the semantics. See also link:{attachmentsdir}/presentations/20210510-Group-of-lots.pptx[Group of Lots] slides from Norway 11/05/2021 where attributes of TenderLot are combined into Tender. The WG has to check the mappings.
 
 **Topic of discussion: Definitions - predicates**
 
