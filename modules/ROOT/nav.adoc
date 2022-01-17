@@ -1,1 +1,1 @@
-* xref:meetings:index.adoc[Work group meetings]
+* xref:meetings:index.adoc[Working Group meetings]
