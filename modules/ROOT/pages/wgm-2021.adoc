@@ -1,3 +1,13 @@
+include::notes/2021-12-16-wgm.adoc[]
+
+include::notes/2021-12-14-wgm.adoc[]
+
+include::notes/2021-12-07-wgm.adoc[]
+
+include::notes/2021-11-18-wgm.adoc[]
+
+include::notes/2021-11-16-wgm.adoc[]
+
 include::notes/2021-11-11-wgm.adoc[]
 
 include::notes/2021-11-09-wgm.adoc[]
