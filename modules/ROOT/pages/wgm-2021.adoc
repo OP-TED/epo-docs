@@ -32,6 +32,8 @@ include::notes/2021-10-07-wgm.adoc[]
 
 include::notes/2021-10-05-wgm.adoc[]
 
+include::notes/2021-09-30-wgm.adoc[]
+
 include::notes/2021-09-21-wgm.adoc[]
 
 include::notes/2021-06-10-wgm.adoc[]

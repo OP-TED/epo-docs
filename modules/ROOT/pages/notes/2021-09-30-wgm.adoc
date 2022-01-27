@@ -1,0 +1,33 @@
+== Workgroup meeting
+
+
+*Date:* 30/09/2021 +
+*Participants:* Giorgia Lodi, Natalie Muric +
+*Model editor:* - +
+*Note editor:* Andreea Pasăre
+
+=== Discussion
+
+* Discussed a possible approach on Role reification
+* The https://scholar.google.ro/scholar_url?url=https://www.sciencedirect.com/science/article/pii/S1877050914013726/pdf%3Fmd5%3De06aed2361d96f275278bcbbf882df51%26pid%3D1-s2.0-S1877050914013726-main.pdf%26_valck%3D1&hl=ro&sa=X&ei=R5PyYYWMN7mTy9YPqcyayA0&scisig=AAGBfm28HluiSgBqu-PvLKc38ZKJPV5pyg&oi=scholarr[Political Roles Ontology (PRoles)] paper was discussed.
+* The following RDF Turtle example was provided:
+
+[source]
+----
+<http://data.europa.eu/a4g/resource/2019/s-001-001368#ContractAwardNotice99f7aaf2-13cb-46b4-830c-552e4467ef0c> a epo:ContractAwardNotice ;
+epo:summarises <http://data.europa.eu/a4g/resource/2019/s-001-001368#Procedureae76cf46-d8e0-4caa-9ad8-6c9fa83ff0af> .
+
+<http://data.europa.eu/a4g/resource/2019/s-001-001368#Procedureae76cf46-d8e0-4caa-9ad8-6c9fa83ff0af> a epo:Procedure ;
+epo:hasProcurementSituation <http://data.europa.eu/a4g/resource/2019/proc-situation-1> , <http://data.europa.eu/a4g/resource/2019/proc-situation-2> .
+
+<http://data.europa.eu/a4g/resource/2019/proc-situation-1> a epo:ProcurementSituation ;
+epo:hasRole <http://data.europa.eu/a4g/resource/buyer> ;
+epo:withFunctions <http://data.europa.eu/a4g/resource/execute-payment> , <http://data.europa.eu/a4g/resource/providesDocument> ;
+epo:includesAgent <http://data.europa.eu/a4g/resource/2019/s-001-001368#Organisationbd6a5210-e7b0-4afb-b76f-c593bc50c92d> ;
+epo:hasContext <http://data.europa.eu/a4g/resource/2019/s-001-001368#Procedureae76cf46-d8e0-4caa-9ad8-6c9fa83ff0af> .
+
+<http://data.europa.eu/a4g/resource/2019/proc-situation-2> a epo:ProcurementSituation ;
+epo:hasRole <http://data.europa.eu/a4g/resource/economic-operator> ;
+epo:includesAgent <http://data.europa.eu/a4g/resource/OrganisationEO1> ;
+epo:hasContext <http://data.europa.eu/a4g/resource/2019/s-001-001368#Procedureae76cf46-d8e0-4caa-9ad8-6c9fa83ff0af> .
+----

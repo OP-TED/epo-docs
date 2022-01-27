@@ -1,5 +1,7 @@
 = History
 
+xref:notes/2022-01-25-wgm.adoc[Working Group meeting 2022-01-25]
+
 xref:notes/2022-01-18-wgm.adoc[Working Group meeting 2022-01-18]
 
 xref:notes/2022-01-11-wgm.adoc[Working Group meeting 2022-01-11]
@@ -37,6 +39,8 @@ xref:notes/2021-10-12-wgm.adoc[Working Group meeting 2021-10-12]
 xref:notes/2021-10-07-wgm.adoc[Working Group meeting 2021-10-07]
 
 xref:notes/2021-10-05-wgm.adoc[Working Group meeting 2021-10-05]
+
+xref:notes/2021-09-30-wgm.adoc[Working Group meeting 2021-09-30]
 
 xref:notes/2021-09-21-wgm.adoc[Working Group meeting 2021-09-21]
 
