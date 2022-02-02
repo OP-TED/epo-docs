@@ -1,5 +1,7 @@
 = History
 
+xref:notes/2022-02-01-wgm.adoc[Working Group meeting 2022-02-01]
+
 xref:notes/2022-01-25-wgm.adoc[Working Group meeting 2022-01-25]
 
 xref:notes/2022-01-18-wgm.adoc[Working Group meeting 2022-01-18]
