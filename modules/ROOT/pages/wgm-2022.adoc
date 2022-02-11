@@ -1,3 +1,5 @@
+include::notes/2022-02-08-wgm.adoc[]
+
 include::notes/2022-02-01-wgm.adoc[]
 
 include::notes/2022-01-25-wgm.adoc[]
