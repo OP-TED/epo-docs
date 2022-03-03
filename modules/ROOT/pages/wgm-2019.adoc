@@ -1,3 +1,5 @@
+== Cumulated content of Working Group Meeting from 2019
+
 include::notes/2019-12-19-wgm.adoc[]
 
 include::notes/2019-12-17-wgm.adoc[]

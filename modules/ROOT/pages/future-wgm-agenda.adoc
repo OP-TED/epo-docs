@@ -1,12 +1,10 @@
 == Future Working Group Meeting agenda
 
-*Date:* 25 Feb 2022
+*Date:* 08/03/2022
 
 === Agenda
 
 * Continue discussing current issues and old decisions related to Amount and related classes.
-** What is the proper way to represent Lots & LotGroup and Tender/TenderLot & TenderLot group? Continue modelling the Tender/TenderLot example in the sandbox.
-** In deciding the above how do awarding, selection and exclusion criteria interplay in the case of Lots and LotGroups. This is important to understand how the TenderLots (and eventually TenderLotGroups) relate to the Lots.
 ** What is the proper way to assign +++<u>+++phase dependent information to Lot+++</u>+++ / TenderLot and other Rigid (OntoClean meaning) classes? This brings us back to the value assignments as estimates, awardings.
 This relates to a large extent to the idea of situations and the reason they were evoked in the first place.
 ** List of values: https://docs.google.com/spreadsheets/d/1siAHrX4ueK5GexJ0N3zMg4oHA4ygYlW0d96ainJw9bQ/edit?usp=sharing[https://docs.google.com/spreadsheets/d/1siAHrX4ueK5GexJ0N3zMg4oHA4ygYlW0d96ainJw9bQ/edit?usp=sharing]
