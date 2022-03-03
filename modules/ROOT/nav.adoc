@@ -1,4 +1,4 @@
-* **xref:meetings:index.adoc[Working Group meetings]**
+* **xref:index.adoc[Working Group meetings]**
 
 ** xref:wgm-2022.adoc[WGM 2022]
 
@@ -322,6 +322,6 @@
 
 *** xref:notes/2019-10-22-wgm.adoc[Working Group meeting 2019-10-22]
 
-
+* **xref:future-wgm-agenda.adoc[Future WGM agenda]**
 
 
