@@ -1,0 +1,32 @@
+=== Conceptual Model Diagrams
+
+* link:{attachmentsdir}/v2.0.1/HTML/index.html[Consult here the HTML version which includes all the diagrams]
+
+==== Relevant Information
+
+The figure below provides a general view of the Classes and relations of the ePO v2.0.1 Ontology. As well as the previous version, this version focuses on e-Notification and e-Access.   
+
+The conceptual data model is available as an link:https://github.com/eprocurementontology/eprocurementontology/blob/v2.0.1/v2.0.1/03-Analysis%20and%20design/EA-Conceptual%20Model/ePO_CM.eap[Enterprise Architect] project file (version 2.0.1) under revision by the Working Group and in link:https://eprocurementontology.github.io/v2.0.1/HTML/index.html[HTML] version.
+
+.Legend
+image::Legend.PNG[Legend, align="center"]
+
+* Boxes in colour beige are Classes, i.e. main entities of the ontology, like "Procurement Procedure", "Procuring Entity", "Economic Operator", etc.;
+
+* Boxes in colour green are "Code Lists", i.e. enumerations of disjoint concepts represented with a code);
+
+** Classes may contain codes. In this representation, the ePO codes are not included inside the Class but are represented as associations of the Class to a specific enumeration element. The name of the code is built upon the verb "uses" and the name of the enumeration. Thus the triple used to say that a _Procurement Procedure is of type Open_ is expressed like this in the OWL-TTL:
+
+*** _:ProcurementProcedure :usesProcurementProcedureType epo-rd:ProcurementProcedureType_, where : is the default prefix representing the ePO ontology and epo-rd: is the prefix reserved for the namespace representing all the codes defined in ePO (eProcurement-specific, to be located in the OP Metadata Registry (https://publications.europa.eu/en/web/eu-vocabularies[MDR])).
+
+* Classes associate other classes via "object properties", i.e. directed association arrows ("predicates", from the ontology perspective) that have a class at the origin (the subject of a triple, in the ontology) and another class at the end of the link (the "object" of the triple).
+
+* "Data properties", i.e. links between the Class and more primitive/basic elements, are represented as attributes of the Classes, e.g. Text, Indicator, Date, etc.;
+
+** Data properties define what kind of value the attributes of the classes should have. For example, the class "Procurement Project" has three attributes: Description, ID and Title. Each attribute has one type of data assigned. The descriptions and titles should be expressed as a Text, and the ID should be an Identifier.
+
+* Associations between Classes are represented as unidirectional arrows to keep the diagrams simple. However, when the association is bi-directional it is indicated with two predicates and the second one is enclosed with parenthesis "()". In the OWL-TTL these are declared as "inverse" properties. Examples: "_Procurement Procedure includes lots (belongs to) Lots_", in the diagram, is to be read as:
+
+** "_Procurement Procedure includes one or more Lots_", and
+
+** "_One Lot belongs to one Procurement Procedure_".

@@ -1,5 +1,18 @@
-[[header]]
-== *ePO - eProcurement Ontology 2.0.0* [Report]
+== *ePO - eProcurement Ontology 2.0.1* [Conceptual Model]
+
+include::Conceptual-Model-v2.0.1.asciidoc[]
+
+== *ePO - eProcurement Ontology BDTI* [Conceptual Model]
+
+* link:{attachmentsdir}/BDTI/index.html[Consult here the HTML version of BDTI which includes all the diagrams]
+
+== *ePO - eProcurement Ontology Reg2015* [Conceptual Model]
+
+* link:{attachmentsdir}/ext_reg2015/index.html[Consult here the HTML version of Reg2015 which includes all the diagrams]
+
+== *ePO - eProcurement Ontology 2.0.1* [Report]
+
+To be revised accordingly.
 
 [[toc]]
 [[toctitle]]
