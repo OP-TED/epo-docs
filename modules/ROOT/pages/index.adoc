@@ -1,4 +1,7 @@
-[[header]]
+== *ePO - eProcurement Ontology 2.0.0* [Conceptual Model]
+
+include::Conceptual-Model-v2.0.0.adoc[]
+
 == *ePO - eProcurement Ontology 2.0.0* [Report]
 
 [[toc]]
