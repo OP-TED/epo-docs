@@ -1,4 +1,4 @@
-= CM Properties
+== CM Properties
 
 === Properties in the conceptual data model for the three use cases selected:
 ==== Buyer

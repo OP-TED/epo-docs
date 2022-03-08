@@ -1,4 +1,4 @@
-= CM Classes
+== CM Classes
 
 === Classes in the conceptual data model for the three use cases selected:
 ==== General classes

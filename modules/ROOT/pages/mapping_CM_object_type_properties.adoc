@@ -1,4 +1,4 @@
-= Mapping CM Object type properties
+== Mapping CM Object type properties
 
 === Mapping of the object type properties in the conceptual data model for the three use cases selected:  
 
