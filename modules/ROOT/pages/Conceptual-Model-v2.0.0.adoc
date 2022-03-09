@@ -1,3 +1,4 @@
+[[conceptual-model-diagrams]]
 == Conceptual Model Diagrams
 
 * link:#overview-[Overview]
@@ -27,7 +28,7 @@ The conceptual data model is available both as an link:https://github.com/eprocu
 The subsections below provide further details on key Classes of the ePO and about how these Classes relate to other Ontologies. Furthermore, a brief description for each model is provided in order to make it more understandable.
 
 .Legend
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Legend.PNG[Legend, align="center"]
+image::v2.0.0/Legend.png[align="center"]
 
 * Boxes in colour beige are Classes, i.e. main entities of the ontology, like "Procurement Procedure", "Procuring Entity", "Economic Operator", etc.;
 
@@ -44,7 +45,7 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 ** Data properties define what kind of value the attributes of the classes should have. For example, the class "Procurement Project" has three attributes: Description, ID and Title. Each attribute has one type of data assigned. The descriptions and titles should be expressed as a “Text”, and the ID should be an “Identifier”.
 
 .Procurement Project Attributes
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Procurement%20Project%20Attributes.jpg[Legend, align="center"]
+image::v2.0.0/Procurement Project Attributes.jpg[align="center"]
 
 * Associations between Classes are represented as unidirectional arrows to keep the diagrams simple. However, when the association is bi-directional it is indicated with two predicates and the second one is enclosed with parenthesis "()". In the OWL-TTL these are declared as "inverse" properties. Examples: "_Procurement Procedure includes lots (belongs to) Lots_", in the diagram, is to be read as:
 
@@ -52,20 +53,21 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 ** "_One Lot belongs to one Procurement Procedure_".
 
-== Overview link:#conceptual-model-diagrams[↑]
-
+[[overview-]]
+== link:#overview-[Overview] link:#conceptual-model-diagrams[↑]
 
 General view of the Classes and relations of the ePO v2.0.0 Ontology. Keep in mind that for this version the focus was put on e-Notification and e-Access.
 
 .ePO v.2.0.0 - Conceptual Data Model, overview
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/ConceptualModel_Overview.png[Overview, align="center"]
+image::v2.0.0/ConceptualModel_Overview.png[align="center"]
 
 == Classes and properties
 
-=== Procurement Project link:#conceptual-model-diagrams[↑]
+[[procurement-project-]]
+=== link:#procurement-project-[Procurement Project] link:#conceptual-model-diagrams[↑]
 
 .Procurement Project
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Procurement Project.jpg[Procurement Project, align="center"]
+image::v2.0.0/Procurement Project.jpg[align="center"]
 
 1. Procurement is the acquisition by means of a public contract of works, supplies or services by one or more contracting authorities from economic operators chosen by those contracting authorities, whether or not the works, supplies or services are intended for a public purpose. (Directive 2014/24/EU, Article 1(2)).
 
@@ -81,11 +83,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 7. The Procurement Project may use Funds provided by the European Union.
 
-
-=== Procurement Procedure link:#conceptual-model-diagrams[↑]
+[[procurement-procedure-]]
+=== link:#procurement-procedure-[Procurement Procedure] link:#conceptual-model-diagrams[↑]
 
 .Procurement Procedure
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Procurement Procedure.jpg[Procurement Procedure, align="center"]
+image::v2.0.0/Procurement Procedure.jpg[align="center"]
 
 1. Procurement Procedures is a series of activities leading to the conclusion of a public contract.
 
@@ -105,11 +107,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 9. In some types of Procurement Procedures (e.g. restricted, competitive with negotiation, other), Procuring Entities may limit the number of candidates accessing the award criteria phase. When this is the case, certain information must be notified by the Procuring Entity, e.g. expected maximum and minimum number of candidates, justification / description of the limitation, etc. (Tender Short List).
 
-
-=== Accelerated Procedure link:#conceptual-model-diagrams[↑]
+[[accelerated-procedure-]]
+=== link:#accelerated-procedure-[Accelerated Procedure] link:#conceptual-model-diagrams[↑]
 
 .Accelerated Procedure
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Accelerated Procedure.jpg[Accelerated Procedure, align="center"]
+image::v2.0.0/Accelerated Procedure.jpg[align="center"]
 
 1. An accelerated procedure takes place when the time limits within the procedure are reduced.
 
@@ -119,11 +121,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 4. For example see Directive 2014/24/EU Article 27(3) and 28(6).
 
-
-=== Procurement Terms link:#conceptual-model-diagrams[↑]
+[[procurement-terms-]]
+=== link:#procurement-terms-[Procurement Terms] link:#conceptual-model-diagrams[↑]
 
 .Procurement Terms
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Procurement Terms.jpg[Procurement Terms, align="center"]
+image::v2.0.0/Procurement Terms.jpg[align="center"]
 
 1. The Procurement Terms are "conditions or stipulations established by the Procuring  Entity:
 
@@ -139,11 +141,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 .. Award Terms: conditions and stipulations to determine how the procurement procedure is awarded.
 
-
-=== Lots link:#conceptual-model-diagrams[↑]
+[[lots-]]
+=== link:#lots-[Lots] link:#conceptual-model-diagrams[↑]
 
 .Lots
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Lots.jpg[Lots, align="center"]
+image::v2.0.0/Lots.jpg[align="center"]
 
 1. A Lot is one of the parts into which a Procurement Procedure is divided.
 
@@ -155,21 +157,21 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 5. The Procuring Entity apply Selection and Award Criteria to one or more Lots or Group of Lots.
 
-
-=== Technique link:#conceptual-model-diagrams[↑]
+[[technique-]]
+=== link:#technique-[Technique] link:#conceptual-model-diagrams[↑]
 
 .Technique
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Technique.jpg[Technique, align="center"]
+image::v2.0.0/Technique.jpg[align="center"]
 
 1. Techniques are specific methods of carrying out a purchase. E.g. Framework Agreement, e-Auction or Dynamic Purchase System.
 
 2. Each Technique has its own properties, thus Framework Agreement can be typified, has a duration, its own values, etc.
 
-
-=== Procuring Entity link:#conceptual-model-diagrams[↑]
+[[procuring-entity-]]
+=== link:#procuring-entity-[Procuring Entity] link:#conceptual-model-diagrams[↑]
 
 .Procuring Entity
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Procuring Entity.jpg[Procuring Entity, align="center"]
+image::v2.0.0/Procuring Entity.jpg[align="center"]
 
 1. In any Procurement Procedure, there is at least one Procuring Entity;
 
@@ -183,11 +185,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 6. Procuring Entities are in general responsible for the both the management of the procurement procedure and the purchase.  However in some cases procuring entities may buy on behalf of other procuring entities or through other procuring entities ("Procuring Entity Role Type").
 
-
-=== Economic Operator link:#conceptual-model-diagrams[↑]
+[[economic-operator-]]
+=== link:#economic-operator-[Economic Operator] link:#conceptual-model-diagrams[↑]
 
 .Economic Operator
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Economic Operator.jpg[Economic Operator, align="center"]
+image::v2.0.0/Economic Operator.jpg[align="center"]
 
 1. An Economic Operator is an organisation.
 
@@ -201,11 +203,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 6. When guarantees are required by the Procuring Entity, Economic Operators may have to provide Financial Account details (e.g. a bank account data).
 
-
-=== Tender link:#conceptual-model-diagrams[↑]
+[[tender-]]
+=== link:#tender-[Tender] link:#conceptual-model-diagrams[↑]
 
 .Tender
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Tender.jpg[Tender, align="center"]
+image::v2.0.0/Tender.jpg[align="center"]
 
 1. Tenders are submitted by Tenderers, who are Economic Operators.
 
@@ -215,11 +217,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 4. Procurement Procedures are always considered to have at least one lot.
 
-
-=== Evaluation Result link:#conceptual-model-diagrams[↑]
+[[evaluation-result-]]
+=== link:#evaluation-result-[Evaluation Result] link:#conceptual-model-diagrams[↑]
 
 .Evaluation Result
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Evaluation Result.jpg[Evaluation Result, align="center"]
+image::v2.0.0/Evaluation Result.jpg[align="center"]
 
 1. The Evaluation Result is presented in the form of a report showing the assessment of the tenders by the evaluation board.
 
@@ -229,11 +231,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 4. In the case of contest design competitions, the board is formed by a Jury, whose decision may be binding for the Procuring Entity (see Evaluation Board Type).
 
-
-=== Contract link:#conceptual-model-diagrams[↑]
+[[contract-]]
+=== link:#contract-[Contract] link:#conceptual-model-diagrams[↑]
 
 .Contract
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Contract.jpg[Contract, align="center"]
+image::v2.0.0/Contract.jpg[align="center"]
 
 1. One of the activities that takes place in the Procurement Procedure life-cycle is the evaluation of Tenderers and Tenders, and the awarding of a contract to one or more Tenderer. The awarded Tenderer(s) are the "Winner(s)".
 
@@ -247,11 +249,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 6. In case the Procurement Procedure uses Framework Agreement as Technique, the contract refers to it.
 
-
-=== Criterion link:#conceptual-model-diagrams[↑]
+[[criterion-]]
+=== link:#criterion-[Criterion] link:#conceptual-model-diagrams[↑]
 
 .Criterion
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Criterion.jpg[Criterion, align="center"]
+image::v2.0.0/Criterion.jpg[align="center"]
 
 1. Criterion is a generic business-agnostic class. This eProcurement ontology (ePO) uses this as a base class to extend Award Criterion, Exclusion Grounds and Selection Criterion (see the rest of diagrams about criteria for details).
 
@@ -275,11 +277,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 11. In the domain of public procurement, exclusion grounds, selection criteria and award criteria are normally based on a specific legal framework (see class Legislation).
 
-
-=== Award Criterion link:#conceptual-model-diagrams[↑]
+[[award-criterion-]]
+=== link:#award-criterion-[Award Criterion] link:#conceptual-model-diagrams[↑]
 
 .Award Criterion
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Award Criterion.jpg[Award Criterion, align="center"]
+image::v2.0.0/Award Criterion.jpg[align="center"]
 
 1. Award Criteria are used to evaluate Tenders. They may include the best price-quality ratio, including qualitative, environmental and/or social aspects, linked to the subject-matter of the public contract in question.
 
@@ -293,11 +295,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 6. This is why the class Award Criterion needs to provide specialised sub-classes for the Criterion Property Group and Criterion Property, as well as the properties linking them.
 
-
-=== Exclusion Grounds link:#conceptual-model-diagrams[↑]
+[[exclusion-grounds-]]
+=== link:#exclusion-grounds-[Exclusion Grounds] link:#conceptual-model-diagrams[↑]
 
 .Exclusion Grounds
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Exclusion Grounds.jpg[Exclusion Grounds, align="center"]
+image::v2.0.0/Exclusion Grounds.jpg[align="center"]
 
 1. Tenderers may be excluded from participate in a Procurement Procedure, in case they bridge any of the legal criteria established in the Directives. This criteria are named Exclusion Grounds.
 
@@ -305,11 +307,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 3. The ePO allows to determine the exact Exclusion Grounds were not met by the Tenderer for specific Procurement Procedure. To see how the Tenderer related to Procurement Procedure, please see the diagram "Evaluation Result".
 
-
-=== Selection Criterion link:#conceptual-model-diagrams[↑]
+[[selection-criterion-]]
+=== link:#selection-criterion-[Selection Criterion] link:#conceptual-model-diagrams[↑]
 
 .Selection Criterion
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Selection Criterion.jpg[Selection Criterion, align="center"]
+image::v2.0.0/Selection Criterion.jpg[align="center"]
 
 1. Selection Criteria aim at ensuring that a candidate or tenderer has the legal and financial capacities and the technical and professional abilities to perform the contract to be awarded (see ePO Glossary for the difference between Candidate and Tenderer).
 
@@ -321,11 +323,11 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 5. This is why the class Selection Criterion needs to provide specialised sub-classes for the Criterion Property Group and Criterion Property, as well as the properties linking them.
 
-
-=== Documents link:#conceptual-model-diagrams[↑]
+[[documents-]]
+=== link:#documents-[Documents] link:#conceptual-model-diagrams[↑]
 
 .Documents
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Documents.jpg[Documents, align="center"]
+image::v2.0.0/Documents.jpg[align="center"]
 
 1. The ePO sees Documents as aggregators of the business domain data. In other words, the content of a Document are individuals that exist in the data graphs. A such (aggregators of individuals) they are ideal artifacts for the interoperability.
 
@@ -349,20 +351,18 @@ image::https://github.com/eprocurementontology/eprocurementontology/blob/master/
 
 11. Contracts can experience minor modifications (Contract Modification), otherwise they may carry out new Procurement Procedures. Each modification has to be duly identified (see Contract Modification Type) and justified. These Modifications are to be published via Contract Modification Notices.
 
-
-=== Contract Award Notice link:#conceptual-model-diagrams[↑]
+[[contract-award-notice-]]
+=== link:#contract-award-notice-[Contract Award Notice] link:#conceptual-model-diagrams[↑]
 
 .Contract Award Notice
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Contract Award Notice.jpg[Contract Award Notice, align="center"]
+image::v2.0.0/Contract Award Notice.jpg[align="center"]
 
 1. Procuring Entities shall publish the award of a contract by means of Contract Award Notices.
 
 2. In the case of negotiated procedures without prior publication of a call for competition or for concession, a justification must be provided (Negotiated Procedure Justification Type)
 
-
-
-=== Data Types link:#conceptual-model-diagrams[↑]
+[[data-types-]]
+=== link:#data-types-[Data Types] link:#conceptual-model-diagrams[↑]
 
 .Data Types
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/03_Analysis%20and%20design/EA-Conceptual%20Model/img/Data Types.jpg[Data Types, align="center"]
-
+image::v2.0.0/Data Types.jpg[align="center"]
