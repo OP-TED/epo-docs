@@ -1,9 +1,9 @@
 [[header]]
-= ePO - v1.00
+= ePO - eProcurement Ontology 1.0.0
 
 * *Information required*
 ** xref:information_required.adoc[Information Requirements]
-** xref:add_new_info_req.adoc[]
+** xref:add_new_info_req.adoc[Add new information requirements]
 
 * *Conceptual Model*
 ** xref:CM_visualization.adoc[CM - Visualisation]
