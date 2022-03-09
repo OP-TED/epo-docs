@@ -1,5 +1,6 @@
 = Conceptual data model diagram:
 
-Please click link:https://joinup.ec.europa.eu/sites/default/files/uml_v1.00.jpg[here] to look at the Conceptual Model.
+Please click link:https://github.com/OP-TED/ePO/blob/v1.0.0/v1.0.0/02_Analysis%20and%20design/EA-Conceptual%20Model/img/ePO%20v1.00%20-%20Overall.jpg[here] to look at the Conceptual Model.
 
-link:https://joinup.ec.europa.eu/sites/default/files/uml_v1.00.jpg[Conceptual data model diagram]
+.Conceptual Model ePO v1.0.0
+image:ePO v1.00 - Overall.jpg[]
