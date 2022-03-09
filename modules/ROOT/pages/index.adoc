@@ -1,5 +1,4 @@
-[[header]]
-= ePO - eProcurement Ontology 1.0.0
+== *ePO - eProcurement Ontology 1.0.0*
 
 * *Information required*
 ** xref:information_required.adoc[Information Requirements]
