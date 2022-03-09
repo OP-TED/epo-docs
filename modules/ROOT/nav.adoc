@@ -1,9 +1,6 @@
 * <<index.adoc#, ePO documentation>>
-
 * xref:epo-wgm::index.adoc[Working Group Meetings]
-
-//* xref:2.0.2@EPO::index.adoc[ePO 2.0.2 documentation]
-* xref:2.0.1@EPO::index.adoc[ePO 2.0.1 documentation]
+//* xref:2.0.1@EPO::index.adoc[ePO 2.0.1 documentation]
 * xref:2.0.0@EPO::index.adoc[ePO 2.0.0 documentation]
 * xref:1.0.0@EPO::index.adoc[ePO 1.0.0 documentation]
 
