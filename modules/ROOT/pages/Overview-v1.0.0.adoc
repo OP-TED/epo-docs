@@ -1,0 +1,74 @@
+== *ePO - eProcurement Ontology 1.0.0* [Overview]
+
+=== Abstract
+
+_In 2016 the https://publications.europa.eu/en/home[Publications Office of the European Union] (Publications Office or OP) started a project funded by the https://ec.europa.eu/isa2/home_en[ISA Programme] to organise and support the development of a Public Procurement Ontology (ePO)._
+
+_The ultimate objective of the ontology is to put forth a commonly agreed OWL ontology that will conceptualise, formally encode and make available in an open, structured and machine-readable format data about public procurement, covering it from end to end, i.e. from notification, through tendering to awarding, ordering, invoicing and payment. With this goal in mind the OP engaged a Working Group (WG) of experts with the mission of building consensus on the analysis results and deliverables developed by the OP’s teams._
+
+_By mid-2017 a version 1.00 of the Ontology was delivered and submitted to the Working group for discussion. All the materials related to this version were made public and are accessible through the ISA2 https://joinup.ec.europa.eu/solution/eprocurement-ontology[Joinup] platform; including the discussions held in the Working Group (WG)._
+
+
+=== Context
+
+Given the increasing importance of data standards for e-Procurement, a number of initiatives driven by the public sector, the industry and academia have been launched in the recent years. Some have grown organically, while others are the result of standardisation work. The vocabularies and the semantics that they are introducing, the phases of public procurement they are covering, and the technologies they are using vary greatly amongst themselves. These differences hamper data interoperability and their reuse.
+
+This situation creates the need for a common representation of the knowledge about the eProcurement domain as it is understood and practiced in the European Union. For this to happen a common vocabulary, axioms and rules are needed.
+
+This document describes the work carried out by the Publications Office and the working group to develop the "eProcurement Ontology" (henceforth referred to as the ePO).
+
+
+==== About ePO v1.0.0
+
+One fundamental document for the development of the eOP is its https://joinup.ec.europa.eu/sites/default/files/document/2017-08/d02.02_project_charter_proposal_v1.00_0.pdf[Project Charter]. This document defines the principles, scope and the foreseen time-line and resources needed to develop the Ontology.
+
+In this document the ultimate objective was stated as "_to put forth a commonly agreed OWL Ontology that will conceptualise, formally encode and make available in an open, structured and machine-readable format data about public procurement, covering it from end to end, i.e. from notification, through tendering to awarding, ordering, invoicing and payment_".
+
+The figure below represents the eProcurement Value-Chain as commonly envisaged in Europe (source: OP).
+
+image::eProcurement_Value_Chain.png[EU eProcurement Value-Chain,width=1000]
+
+Figure 1. eProcurement Value-Chain, an EU vision
+
+The scope of the Charter was set to cover the specification showing the conceptual model and its representation in OWL, and the deployment of the ontology and related code lists and classifications on the http://publications.europa.eu/mdr/[Metadata Registry], which is being moved to EU Vocabularies.
+
+The original aim was to produce the final Ontology within twelve months including a public review of at least two months; and a set of three deliverables was identified as the main outcome of the project:
+
+image::Main_Deliverables.png[ePO Main Deliverables]
+
+Figure 2. ePO v1.0 main deliverables
+
+For the development of these objectives the OP team proposed a methodological approach based on the recommendations and good practices ^[link:#_footnote_1[1]][link:#_footnote_2[2]]^.
+
+image::v1.00_Development_Approach.png[ePO v1.00 - Development methodological approach,width=900]
+
+Figure 3. ePO v1.0 - development methodological approach (source https://joinup.ec.europa.eu/sites/default/files/document/2017-08/d02.01_specification_of_the_process_and_methodology_v1.00.pdf[D02.01 Specification and Methodology])
+
+Following the work of the Working Group (WG) and the Publications Office version 1.0 of the eProcurement Ontology (ePO) was delivered in the planned period of 12 months.
+
+
+==== ePO governance
+
+In order to develop these global deliverables the following Governance Structure, the following roles and responsibilities were established in ePO v1.00 and are still valid for the governance of the ePO v2.0.0:
+
+image::Governance_Structure.png[ePO Governance Structure,width=600]
+
+Figure 7. ePO Project - Governance Structure
+
+With the following *roles and responsibilites*:
+
+image::Roles_Responsibilities.png[ePO - Roles and responsibilities,width=900]
+
+Figure 8. ePO Project - Roles and responsibilites
+
+For more details on the members of each governance body see the document https://joinup.ec.europa.eu/document/report-policy-support-e-procurement[D04.07 Report on policy support for eProcurement, eProcurement ontology]; e.g. "_Editors: are responsible for the operational work of defining and documenting the ePO_".
+
+[[footnotes]]
+
+'''''
+
+[[_footnote_1]]
+link:#_footnoteref_1[1]. Cfr. http://protege.stanford.edu/publications/ontology_development/ontology101.pdf["Ontology Development 101: A Guide to Creating Your First Ontology"], by Natalya F. Noy and Deborah L. McGuinness.
+
+[[_footnote_2]]
+link:#_footnoteref_2[2]. Cfr. https://joinup.ec.europa.eu/site/core_vocabularies/Core_Vocabularies_user_handbook/ISA%20Hanbook%20for%20using%20Core%20Vocabularies.pdf["e-Government Core Vocabularies handbook", by ISA2 Programme]

@@ -1,21 +1,6 @@
-= ePO - The European eProcurement Ontology
+== *Release Notes*
 
-== Release Notes
-
-=== Version 2.0.0 (2018)
-
-* Adds an _eProcurement Glossary_
-* Extends the methodological approach adopted in v1.00
-* Focuses on eNotification and eAccess
-* Main Deliverables: 
-** Elicitates new Information Requirements based on the Business Domain knowledge (and taking into account the Use Cases defined in v1.0)
-** New _Data Entry Dictionary_
-** Evolves the _Conceptual Data Model_ (UML Enterprise Architect Project)
-** Evolution of the OWL syntax (Turtle)
-** PoC focused on Use Case 1: "Data Journalism"
-** Enhances the on-line documentation
-
-=== Version 1.00 (2017)
+=== Version 1.0.0
 
 * Defines of three Use Cases:
 ** Use Case 1: "Data Journalism"
@@ -25,5 +10,4 @@
 * Defines a _Conceptual Data Model_ 
 * Maps the Conceptual Data Model entities to OWL
 * Implements the Conceptual Data Model in OWL 
-
-
+* Release year: 2017
