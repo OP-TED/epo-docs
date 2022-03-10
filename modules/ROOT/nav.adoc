@@ -1,5 +1,5 @@
 * *Information required*
-** xref:information_required.adoc[Information Requirements]
+** xref:information_requirements.adoc[Information Requirements]
 ** xref:add_new_info_req.adoc[Add new information requirements]
 
 * *Conceptual Model*
