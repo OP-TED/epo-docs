@@ -1,25 +1,4 @@
-[[conceptual-model-diagrams]]
 == Conceptual Model Diagrams
-
-* link:#overview-[Overview]
-* link:#procurement-project-[Procurement Project]
-* link:#procurement-procedure-[Procurement Procedure]
-* link:#accelerated-procedure-[Accelerated Procedure]
-* link:#procurement-terms-[Procurement Terms]
-* link:#lots-[Lots]
-* link:#technique-[Technique]
-* link:#procuring-entity-[Procuring Entity]
-* link:#economic-operator-[Economic Operator]
-* link:#tender-[Tender]
-* link:#evaluation-result-[Evaluation Result]
-* link:#contract-[Contract]
-* link:#criterion-[Criterion]
-* link:#award-criterion-[Award Criterion]
-* link:#exclusion-grounds-[Exclusion Grounds]
-* link:#selection-criterion-[Selection Criterion]
-* link:#documents-[Documents]
-* link:#contract-award-notice-[Contract Award Notice]
-* link:#data-types-[Data Types]
 
 The figure below provides a general view of the Classes and relations of the ePO v2.0.0 Ontology. Keep in mind that for this version the focus was put on e-Notification and e-Access.
 
@@ -53,8 +32,8 @@ image::v2.0.0/Procurement Project Attributes.jpg[align="center"]
 
 ** "_One Lot belongs to one Procurement Procedure_".
 
-[[overview-]]
-== link:#overview-[Overview] link:#conceptual-model-diagrams[↑]
+
+== Overview
 
 General view of the Classes and relations of the ePO v2.0.0 Ontology. Keep in mind that for this version the focus was put on e-Notification and e-Access.
 
@@ -63,8 +42,7 @@ image::v2.0.0/ConceptualModel_Overview.png[align="center"]
 
 == Classes and properties
 
-[[procurement-project-]]
-=== link:#procurement-project-[Procurement Project] link:#conceptual-model-diagrams[↑]
+=== Procurement Project
 
 .Procurement Project
 image::v2.0.0/Procurement Project.jpg[align="center"]
@@ -83,8 +61,8 @@ image::v2.0.0/Procurement Project.jpg[align="center"]
 
 7. The Procurement Project may use Funds provided by the European Union.
 
-[[procurement-procedure-]]
-=== link:#procurement-procedure-[Procurement Procedure] link:#conceptual-model-diagrams[↑]
+
+=== Procurement Procedure
 
 .Procurement Procedure
 image::v2.0.0/Procurement Procedure.jpg[align="center"]
@@ -107,8 +85,8 @@ image::v2.0.0/Procurement Procedure.jpg[align="center"]
 
 9. In some types of Procurement Procedures (e.g. restricted, competitive with negotiation, other), Procuring Entities may limit the number of candidates accessing the award criteria phase. When this is the case, certain information must be notified by the Procuring Entity, e.g. expected maximum and minimum number of candidates, justification / description of the limitation, etc. (Tender Short List).
 
-[[accelerated-procedure-]]
-=== link:#accelerated-procedure-[Accelerated Procedure] link:#conceptual-model-diagrams[↑]
+
+=== Accelerated Procedure
 
 .Accelerated Procedure
 image::v2.0.0/Accelerated Procedure.jpg[align="center"]
@@ -121,8 +99,8 @@ image::v2.0.0/Accelerated Procedure.jpg[align="center"]
 
 4. For example see Directive 2014/24/EU Article 27(3) and 28(6).
 
-[[procurement-terms-]]
-=== link:#procurement-terms-[Procurement Terms] link:#conceptual-model-diagrams[↑]
+
+=== Procurement Terms
 
 .Procurement Terms
 image::v2.0.0/Procurement Terms.jpg[align="center"]
@@ -141,8 +119,8 @@ image::v2.0.0/Procurement Terms.jpg[align="center"]
 
 .. Award Terms: conditions and stipulations to determine how the procurement procedure is awarded.
 
-[[lots-]]
-=== link:#lots-[Lots] link:#conceptual-model-diagrams[↑]
+
+=== Lots
 
 .Lots
 image::v2.0.0/Lots.jpg[align="center"]
@@ -157,8 +135,8 @@ image::v2.0.0/Lots.jpg[align="center"]
 
 5. The Procuring Entity apply Selection and Award Criteria to one or more Lots or Group of Lots.
 
-[[technique-]]
-=== link:#technique-[Technique] link:#conceptual-model-diagrams[↑]
+
+=== Technique
 
 .Technique
 image::v2.0.0/Technique.jpg[align="center"]
@@ -167,8 +145,8 @@ image::v2.0.0/Technique.jpg[align="center"]
 
 2. Each Technique has its own properties, thus Framework Agreement can be typified, has a duration, its own values, etc.
 
-[[procuring-entity-]]
-=== link:#procuring-entity-[Procuring Entity] link:#conceptual-model-diagrams[↑]
+
+=== Procuring Entity
 
 .Procuring Entity
 image::v2.0.0/Procuring Entity.jpg[align="center"]
@@ -185,8 +163,8 @@ image::v2.0.0/Procuring Entity.jpg[align="center"]
 
 6. Procuring Entities are in general responsible for the both the management of the procurement procedure and the purchase.  However in some cases procuring entities may buy on behalf of other procuring entities or through other procuring entities ("Procuring Entity Role Type").
 
-[[economic-operator-]]
-=== link:#economic-operator-[Economic Operator] link:#conceptual-model-diagrams[↑]
+
+=== Economic Operator
 
 .Economic Operator
 image::v2.0.0/Economic Operator.jpg[align="center"]
@@ -203,8 +181,8 @@ image::v2.0.0/Economic Operator.jpg[align="center"]
 
 6. When guarantees are required by the Procuring Entity, Economic Operators may have to provide Financial Account details (e.g. a bank account data).
 
-[[tender-]]
-=== link:#tender-[Tender] link:#conceptual-model-diagrams[↑]
+
+=== Tender
 
 .Tender
 image::v2.0.0/Tender.jpg[align="center"]
@@ -217,8 +195,8 @@ image::v2.0.0/Tender.jpg[align="center"]
 
 4. Procurement Procedures are always considered to have at least one lot.
 
-[[evaluation-result-]]
-=== link:#evaluation-result-[Evaluation Result] link:#conceptual-model-diagrams[↑]
+
+=== Evaluation Result
 
 .Evaluation Result
 image::v2.0.0/Evaluation Result.jpg[align="center"]
@@ -231,8 +209,8 @@ image::v2.0.0/Evaluation Result.jpg[align="center"]
 
 4. In the case of contest design competitions, the board is formed by a Jury, whose decision may be binding for the Procuring Entity (see Evaluation Board Type).
 
-[[contract-]]
-=== link:#contract-[Contract] link:#conceptual-model-diagrams[↑]
+
+=== Contract
 
 .Contract
 image::v2.0.0/Contract.jpg[align="center"]
@@ -249,8 +227,8 @@ image::v2.0.0/Contract.jpg[align="center"]
 
 6. In case the Procurement Procedure uses Framework Agreement as Technique, the contract refers to it.
 
-[[criterion-]]
-=== link:#criterion-[Criterion] link:#conceptual-model-diagrams[↑]
+
+=== Criterion
 
 .Criterion
 image::v2.0.0/Criterion.jpg[align="center"]
@@ -277,8 +255,8 @@ image::v2.0.0/Criterion.jpg[align="center"]
 
 11. In the domain of public procurement, exclusion grounds, selection criteria and award criteria are normally based on a specific legal framework (see class Legislation).
 
-[[award-criterion-]]
-=== link:#award-criterion-[Award Criterion] link:#conceptual-model-diagrams[↑]
+
+=== Award Criterion
 
 .Award Criterion
 image::v2.0.0/Award Criterion.jpg[align="center"]
@@ -295,8 +273,8 @@ image::v2.0.0/Award Criterion.jpg[align="center"]
 
 6. This is why the class Award Criterion needs to provide specialised sub-classes for the Criterion Property Group and Criterion Property, as well as the properties linking them.
 
-[[exclusion-grounds-]]
-=== link:#exclusion-grounds-[Exclusion Grounds] link:#conceptual-model-diagrams[↑]
+
+=== Exclusion Grounds
 
 .Exclusion Grounds
 image::v2.0.0/Exclusion Grounds.jpg[align="center"]
@@ -307,8 +285,8 @@ image::v2.0.0/Exclusion Grounds.jpg[align="center"]
 
 3. The ePO allows to determine the exact Exclusion Grounds were not met by the Tenderer for specific Procurement Procedure. To see how the Tenderer related to Procurement Procedure, please see the diagram "Evaluation Result".
 
-[[selection-criterion-]]
-=== link:#selection-criterion-[Selection Criterion] link:#conceptual-model-diagrams[↑]
+
+=== Selection Criterion
 
 .Selection Criterion
 image::v2.0.0/Selection Criterion.jpg[align="center"]
@@ -323,8 +301,8 @@ image::v2.0.0/Selection Criterion.jpg[align="center"]
 
 5. This is why the class Selection Criterion needs to provide specialised sub-classes for the Criterion Property Group and Criterion Property, as well as the properties linking them.
 
-[[documents-]]
-=== link:#documents-[Documents] link:#conceptual-model-diagrams[↑]
+
+=== Documents
 
 .Documents
 image::v2.0.0/Documents.jpg[align="center"]
@@ -351,8 +329,8 @@ image::v2.0.0/Documents.jpg[align="center"]
 
 11. Contracts can experience minor modifications (Contract Modification), otherwise they may carry out new Procurement Procedures. Each modification has to be duly identified (see Contract Modification Type) and justified. These Modifications are to be published via Contract Modification Notices.
 
-[[contract-award-notice-]]
-=== link:#contract-award-notice-[Contract Award Notice] link:#conceptual-model-diagrams[↑]
+
+=== Contract Award Notice
 
 .Contract Award Notice
 image::v2.0.0/Contract Award Notice.jpg[align="center"]
@@ -361,8 +339,8 @@ image::v2.0.0/Contract Award Notice.jpg[align="center"]
 
 2. In the case of negotiated procedures without prior publication of a call for competition or for concession, a justification must be provided (Negotiated Procedure Justification Type)
 
-[[data-types-]]
-=== link:#data-types-[Data Types] link:#conceptual-model-diagrams[↑]
+
+=== Data Types
 
 .Data Types
 image::v2.0.0/Data Types.jpg[align="center"]
