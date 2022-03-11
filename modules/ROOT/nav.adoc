@@ -61,3 +61,14 @@
 *** xref:Report-v2.0.0.adoc#activity-10-validate-results[Activity 10: Validate results]
 *** xref:Report-v2.0.0.adoc#activity-11-provide-feedback[Activity 11: Provide feedback]
 ** xref:Report-v2.0.0.adoc#annex-i-types-of-documents-processed[Annex I: Types of documents processed]
+
+* OWL
+** OWL-TTL
+** SPARQL End-point
+
+* Proof of Concept
+** Workflow
+** Competency Questions Methodology
+** Competency questions
+** SPARQL query examples
+** Add a new competency question

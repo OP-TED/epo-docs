@@ -1,4 +1,4 @@
-== *ePO - eProcurement Ontology 2.0.0* [Report]
+== *ePO - eProcurement Ontology 2.0.0 Report*
 
 [[abstract]]
 === link:#abstract[Abstract]
