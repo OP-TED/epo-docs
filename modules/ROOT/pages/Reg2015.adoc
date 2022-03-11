@@ -1,0 +1,5 @@
+== *ePO - eProcurement Ontology Reg2015*
+
+* link:{attachmentsdir}/ext_reg2015/index.html[HTML view of Reg2015 Conceptual Model]
+
+The Reg2015 conceptual model was created as an “extension” of the ontology when mapping the current forms to the ontology.  Since the ontology is more granular than the current forms and shows concepts at lot level rather than procedure level (as per eForms) therefore this “extension” was created.  It was considered that transferring content from the procedure level to the lot levels in any transformation could falsify data at lot level.
