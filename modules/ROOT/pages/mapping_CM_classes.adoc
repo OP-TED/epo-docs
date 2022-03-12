@@ -3,101 +3,133 @@
 === Mapping of the classes in the conceptual data model for the three use cases selected:  
 |============================================================
 |*Label*|*URI*
-|Address|http://www.w3.org/ns/locn#Address
-|Agent|http://xmlns.com/foaf/spec/#term_Agent
-|Award Criterion|http://data.europa.eu/eproc/ontology#AwardCriterion Considering to reuse:
+|Address|_http://www.w3.org/ns/locn#Address_
+|Agent|_http://xmlns.com/foaf/spec/#term_Agent_
+|Award Criterion| _\http://data.europa.eu/eproc/ontology#AwardCriterion_
 
-* http://data.europa.eu/m8g/Criterion
+Considering to reuse:
 
-* http://purl.org/procurement/public-contracts#AwardCriteriaCombination
+_\http://data.europa.eu/m8g/Criterion_
 
-* http://contsem.unizar.es/def/sector-publico/pproc#TenderRequirements
+_http://purl.org/procurement/public-contracts#AwardCriteriaCombination_
 
-|Buyer|http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/ProductsAndServices/Buyer Alternative to reuse:
+_http://contsem.unizar.es/def/sector-publico/pproc#TenderRequirements_
 
-* http://data.europa.eu/m8g/PublicOrganisation
+|Buyer|_\http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/ProductsAndServices/Buyer_
 
-|Call For Tender|http://data.europa.eu/eproc/ontology#CallForTender
-|Classification|http://data.europa.eu/eproc/ontology#Classification Alternative to reuse:
+Alternative to reuse:
 
-* http://www.eurocris.org/ontologies/cerif/1.3#Classification
+_\http://data.europa.eu/m8g/PublicOrganisation_
 
-|Concept|http://www.w3.org/2004/02/skos/core#Concept
-|Contract|http://www.omg.org/spec/EDMC-FIBO/FND/Agreements/Contracts/Contract Alternative to reuse:
+|Call For Tender|_\http://data.europa.eu/eproc/ontology#CallForTender_
+|Classification|_\http://data.europa.eu/eproc/ontology#Classification_
 
-* http://purl.org/procurement/public-contracts#Contract
+Alternative to reuse:
 
-|Contract Award Notice|http://contsem.unizar.es/def/sector-publico/pproc#ContractAwardNotice
-|Contracting Authority|http://data.europa.eu/eproc/ontology#ContractingAuthority
-|Country|http://data.europa.eu/eproc/ontology#Country Alternative to reuse:
+_\http://www.eurocris.org/ontologies/cerif/1.3#Classification_
 
-* http://d-nb.info/standards/elementset/gnd#Country
+|Concept|_http://www.w3.org/2004/02/skos/core#Concept_
+|Contract|_\http://www.omg.org/spec/EDMC-FIBO/FND/Agreements/Contracts/Contract_
 
-* http://rdf.geospecies.org/ont/geospecies#Country
+Alternative to reuse:
 
-|Currency|http://data.europa.eu/eproc/ontology#Currency Alternative to reuse:
+_http://purl.org/procurement/public-contracts#Contract_
 
-* https://w3id.org/saref#Currency
+|Contract Award Notice|_http://contsem.unizar.es/def/sector-publico/pproc#ContractAwardNotice_
+|Contracting Authority|_\http://data.europa.eu/eproc/ontology#ContractingAuthority_
+|Country|_\http://data.europa.eu/eproc/ontology#Country_
 
-* http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Currency
+Alternative to reuse:
 
-|Document|http://data.europa.eu/eproc/ontology#Document Alternative to reuse:
+_http://d-nb.info/standards/elementset/gnd#Country_
 
-* http://www.omg.org/spec/EDMC-FIBO/FND/Arrangements/Documents/Document
+_\http://rdf.geospecies.org/ont/geospecies#Country_
 
-|Economic Operator|http://data.europa.eu/eproc/ontology#EconomicOperator Alternative to reuse:
+|Currency|_\http://data.europa.eu/eproc/ontology#Currency_
 
-* http://www.w3.org/ns/org#Organization
+Alternative to reuse:
 
-|Evidence|http://data.europa.eu/m8g/Evidence 
-|Exclusion Criterion|http://data.europa.eu/eproc/ontology#ExclusionCriterion Alternative to reuse:
+_https://w3id.org/saref#Currency_
 
-* http://semanticscience.org/resource/SIO_000143
+_\http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Currency_
 
-* http://purl.obolibrary.org/obo/OBI_0500028
+|Document|_\http://data.europa.eu/eproc/ontology#Document_
 
-|Invoice|http://schema.org/Invoice Alternative to reuse:
+Alternative to reuse:
 
-* http://purl.org/cerif/frapo/Invoice
+_http://www.omg.org/spec/EDMC-FIBO/FND/Arrangements/Documents/Document_
 
-|Location|http://purl.org/dc/terms/Location
-|Monetary Value|http://schema.org/MonetaryAmount
-|Organisation|https://www.w3.org/TR/vocab-org/#class-organization Alternative to reuse:
+|Economic Operator|_\http://data.europa.eu/eproc/ontology#EconomicOperator_
 
-* http://standard.open-contracting.org/latest/en/schema/reference/#organization
+Alternative to reuse:
 
-|Other Contracting Entity|http://data.europa.eu/eproc/ontology#OtherContractingEntities
-|Payment|http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/PaymentsAndSchedules/Payment Alternative to reuse:
+_http://www.w3.org/ns/org#Organization_
 
-* http://purl.org/cerif/frapo/Payment
+|Evidence|_\http://data.europa.eu/m8g/Evidence_
+|Exclusion Criterion|_\http://data.europa.eu/eproc/ontology#ExclusionCriterion_
 
-* http://reference.data.gov.uk/def/payment#Payment
+Alternative to reuse:
 
-|Call For Tender|http://data.europa.eu/eproc/ontology#CallForTender Considering to reuse:
+_http://semanticscience.org/resource/SIO_000143_
 
-* http://data.europa.eu/m8g/FormalFramework
+_http://purl.obolibrary.org/obo/OBI_0500028_
 
-|Procurement Criterion|http://data.europa.eu/m8g/Criterion
-|Procuring Entity|http://standard.open-contracting.org/latest/en/schema/reference/#procuringEntity
-|Product Or Service Or Work|http://data.europa.eu/eproc/ontology#ProductOrServiceOrWork Alternative to reuse:
+|Invoice|_http://schema.org/Invoice_
 
-* http://purl.org/goodrelations/v1#ProductOrService
+Alternative to reuse:
 
-* http://data.europa.eu/m8g/PublicService
+_http://purl.org/cerif/frapo/Invoice_
 
-|Public Undertaking|http://data.europa.eu/eproc/ontology#PublicUndertaking
-|Selection Criterion|http://data.europa.eu/eproc/ontology#SelectionCriterion Considering to reuse:
+|Location|_http://purl.org/dc/terms/Location_
+|Monetary Value|_http://schema.org/MonetaryAmount_
+|Organisation|_https://www.w3.org/TR/vocab-org/#class-organization_
 
-* http://data.europa.eu/m8g/Criterion
+Alternative to reuse:
 
-* http://contsem.unizar.es/def/sector-publico/pproc#TenderersRequirements
+_http://standard.open-contracting.org/latest/en/schema/reference/#organization_
 
-|Specification|http://semanticscience.org/resource/SIO_000090
-|Tender|http://data.europa.eu/eproc/ontology#Tender Alternative to reuse:
+|Other Contracting Entity|_\http://data.europa.eu/eproc/ontology#OtherContractingEntities_
+|Payment|_\http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/PaymentsAndSchedules/Payment_
 
-* http://standard.open-contracting.org/latest/en/schema/definitions/Tender
+Alternative to reuse:
 
-* http://purl.org/procurement/public-contracts#Tender
+_http://purl.org/cerif/frapo/Payment_
+
+_\http://reference.data.gov.uk/def/payment#Payment_
+
+|Call For Tender|_\http://data.europa.eu/eproc/ontology#CallForTender_
+
+Considering to reuse:
+
+_\http://data.europa.eu/m8g/FormalFramework_
+
+|Procurement Criterion|_\http://data.europa.eu/m8g/Criterion_
+|Procuring Entity|_http://standard.open-contracting.org/latest/en/schema/reference/#procuringEntity_
+|Product Or Service Or Work|_\http://data.europa.eu/eproc/ontology#ProductOrServiceOrWork_
+
+Alternative to reuse:
+
+_http://purl.org/goodrelations/v1#ProductOrService_
+
+_\http://data.europa.eu/m8g/PublicService_
+
+|Public Undertaking|_\http://data.europa.eu/eproc/ontology#PublicUndertaking_
+|Selection Criterion|_\http://data.europa.eu/eproc/ontology#SelectionCriterion_
+
+Considering to reuse:
+
+_\http://data.europa.eu/m8g/Criterion_
+
+_http://contsem.unizar.es/def/sector-publico/pproc#TenderersRequirements_
+
+|Specification|_http://semanticscience.org/resource/SIO_000090_
+|Tender|_\http://data.europa.eu/eproc/ontology#Tender_
+
+Alternative to reuse:
+
+_\http://standard.open-contracting.org/latest/en/schema/definitions/Tender_
+
+_\http://purl.org/procurement/public-contracts#Tender_
 
 |============================================================
 

@@ -4,8 +4,8 @@
 
 |============================================================
 |*Label*|*Data type*|*URI*
-|has Amount|xsd:decimal|http://www.omg.org/spec/EDMC-FIBO/FND/Accounting/CurrencyAmount/hasAmount
-|has Name|string|http://xmlns.com/foaf/spec/20140114.html#term_name|  
+|has Amount|xsd:decimal|_\http://www.omg.org/spec/EDMC-FIBO/FND/Accounting/CurrencyAmount/hasAmount_
+|has Name|string|_http://xmlns.com/foaf/spec/20140114.html#term_name_|
 |============================================================ 
 
 === Submit an issue:  

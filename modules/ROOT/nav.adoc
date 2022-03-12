@@ -1,17 +1,17 @@
-* *xref:Overview-v1.0.0.adoc[Overview]*
+* xref:Overview-v1.0.0.adoc[Overview]
 
-* *Information requirements*
+* Information requirements
 ** xref:information_requirements.adoc[Information requirements]
 ** xref:add_new_info_req.adoc[Add new information requirements]
 
-* *Conceptual Model*
+* Conceptual Model
 ** xref:CM_visualization.adoc[CM - Visualisation]
 ** xref:CM_classes.adoc[CM - Classes]
 ** xref:CM_properties.adoc[CM - Properties]
 ** xref:CM_relationships.adoc[CM - Relationships]
 ** xref:additional_concepts.adoc[Additional concepts from external ontologies and list of vocabularies identified]
 
-* *Mapping of the conceptual data entities to OWL*
+* Mapping of the conceptual data entities to OWL
 ** xref:mapping_CM_classes.adoc[Mapping CM Classes]
 ** xref:mapping_CM_data_type_properties.adoc[Mapping CM Data type properties]
-** xref:mapping_CM_object_type_properties.adoc[Mapping CM Data type properties]
+** xref:mapping_CM_object_type_properties.adoc[Mapping CM Object type properties]

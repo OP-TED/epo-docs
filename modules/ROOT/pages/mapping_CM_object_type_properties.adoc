@@ -4,62 +4,86 @@
 
 |============================================================ 
 |*Label*|*URI*
-|awards|http://data.europa.eu/eproc/ontology#awards Alternative to reuse:
+|awards|_\http://data.europa.eu/eproc/ontology#awards_
 
-* http://purl.org/cerif/frapo/awards</li><li>http://schema.org/awards
+Alternative to reuse:
 
-|charges For|http://data.europa.eu/eproc/ontology#chargesFor
-|has Currency|http://data.europa.eu/eproc/ontology#hasCurrency Alternative to reuse:
+_http://purl.org/cerif/frapo/awards_
 
-* http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasCurrency
+_http://schema.org/awards_
 
-|has Net Value|http://data.europa.eu/eproc/ontology#hasNetValue Alternative to reuse:
+|charges For|_\http://data.europa.eu/eproc/ontology#chargesFor_
+|has Currency|_\http://data.europa.eu/eproc/ontology#hasCurrency_
 
-* http://data.europa.eu/m8g/value
+Alternative to reuse:
 
-|has VAT|http://data.europa.eu/eproc/ontology#hasVAT
-|is Award For|http://data.europa.eu/eproc/ontology#isAwardFor Alternative to reuse:
+_\http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasCurrency_
 
-* http://purl.org/procurement/public-contracts#agreement
+|has Net Value|_\http://data.europa.eu/eproc/ontology#hasNetValue_
 
-|is Classified By|http://data.europa.eu/eproc/ontology#isClassifiedBy
-|is Contract For|http://data.europa.eu/eproc/ontology#isContractFor
-|is Contracted By|http://data.europa.eu/eproc/ontology#isContractedBy
-|is Evidenced By|http://data.europa.eu/eproc/ontology#isEvidencedBy Alternative to reuse:
+Alternative to reuse:
 
-* http://www.omg.org/spec/EDMC-FIBO/FND/Agreements/Contracts/isEvidencedBy
+_http://data.europa.eu/m8g/value_
 
-|is Invoiced Under|http://data.europa.eu/eproc/ontology#isInvoicedUnder 
-|is Issued By|http://data.europa.eu/eproc/ontology#isIssuedBy Alternative to reuse:
+|has VAT|_\http://data.europa.eu/eproc/ontology#hasVAT_
+|is Award For|_\http://data.europa.eu/eproc/ontology#isAwardFor_
 
-* http://purl.org/dc/terms/issued
+Alternative to reuse:
 
-|is Issued To|http://data.europa.eu/eproc/ontology#isIssuedTo
-|is Paid By|http://data.europa.eu/eproc/ontology#isPaidBy
-|is Paid To|http://data.europa.eu/eproc/ontology#isPaidTo
-|is Payment For|http://data.europa.eu/eproc/ontology#isPaymentFor Alternative to reuse:
+_http://purl.org/procurement/public-contracts#agreement_
 
-* http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/PaymentsAndSchedules/fulfillsObligation
+|is Classified By|_\http://data.europa.eu/eproc/ontology#isClassifiedBy_
+|is Contract For|_\http://data.europa.eu/eproc/ontology#isContractFor_
+|is Contracted By|_\http://data.europa.eu/eproc/ontology#isContractedBy_
+|is Evidenced By|_\http://data.europa.eu/eproc/ontology#isEvidencedBy_
 
-|is Published By|http://data.europa.eu/eproc/ontology#isPublishedBy 
-|is Specified By|http://data.europa.eu/eproc/ontology#isSpecifiedBy 
-|is Submitted By|http://data.europa.eu/eproc/ontology#isSubmittedBy Alternative to reuse:
+Alternative to reuse:
 
-* http://purl.org/cerif/frapo/isSubmittedBy
+_\http://www.omg.org/spec/EDMC-FIBO/FND/Agreements/Contracts/isEvidencedBy_
 
-* http://purl.org/procurement/public-contracts#tender
+|is Invoiced Under|_\http://data.europa.eu/eproc/ontology#isInvoicedUnder_
+|is Issued By|_\http://data.europa.eu/eproc/ontology#isIssuedBy_
 
-|offers|http://data.europa.eu/eproc/ontology#offers
-|operates In|http://data.europa.eu/eproc/ontology#operatesIn Alternative to reuse:
+Alternative to reuse:
 
-* http://schema.org/location</li><li>http://purl.org/procurement/public-contracts#location
+_http://purl.org/dc/terms/issued_
 
-|procures|http://data.europa.eu/eproc/ontology#procures Alternative to reuse:
+|is Issued To|_\http://data.europa.eu/eproc/ontology#isIssuedTo_
+|is Paid By|_\http://data.europa.eu/eproc/ontology#isPaidBy_
+|is Paid To|_\http://data.europa.eu/eproc/ontology#isPaidTo_
+|is Payment For|_\http://data.europa.eu/eproc/ontology#isPaymentFor_
 
-* http://purl.org/procurement/public-contracts#item
+Alternative to reuse:
 
-|requires|http://data.europa.eu/eproc/ontology#requires
-|responds To|http://data.europa.eu/eproc/ontology#respondsTo
+_http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/PaymentsAndSchedules/fulfillsObligation_
+
+|is Published By|_\http://data.europa.eu/eproc/ontology#isPublishedBy_
+|is Specified By|_\http://data.europa.eu/eproc/ontology#isSpecifiedBy_
+|is Submitted By|_\http://data.europa.eu/eproc/ontology#isSubmittedBy_
+
+Alternative to reuse:
+
+_http://purl.org/cerif/frapo/isSubmittedBy_
+
+_http://purl.org/procurement/public-contracts#tender_
+
+|offers|_\http://data.europa.eu/eproc/ontology#offers_
+|operates In|_\http://data.europa.eu/eproc/ontology#operatesIn_
+
+Alternative to reuse:
+
+_http://schema.org/location_
+
+_http://purl.org/procurement/public-contracts#location_
+
+|procures|_\http://data.europa.eu/eproc/ontology#procures_
+
+Alternative to reuse:
+
+_http://purl.org/procurement/public-contracts#item_
+
+|requires|_\http://data.europa.eu/eproc/ontology#requires_
+|responds To|_\http://data.europa.eu/eproc/ontology#respondsTo_
 |============================================================
 
 === Submit an issue:  
