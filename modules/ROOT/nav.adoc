@@ -63,12 +63,12 @@
 ** xref:Report-v2.0.0.adoc#annex-i-types-of-documents-processed[Annex I: Types of documents processed]
 
 * OWL
-** OWL-TTL
-** SPARQL End-point
+** link:https://github.com/OP-TED/ePO/tree/v2.0.0/v2.0.0/05_Implementation/ttl[OWL-TTL]
+** xref:sparql-endpoint.adoc[SPARQL End-point]
 
 * Proof of Concept
-** Workflow
-** Competency Questions Methodology
-** Competency questions
-** SPARQL query examples
-** Add a new competency question
+** link:https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/01_Resources/art/ePO_PoC.png[Workflow]
+** link:https://github.com/OP-TED/ePO/blob/v2.0.0/v2.0.0/02_IR_DED/WayforwardCompetencyQuestions.pdf[Competency Questions Methodology]
+** xref:competency-questions.adoc[Competency questions]
+** link:https://eprocurementontology.github.io/Competency_questions/SPARQL_examples.html[SPARQL query examples]
+** link:https://github.com/OP-TED/ePO/issues/new?template=new_competency_question.md&labels=new%20competency%20question&title=COMPETENCY+QUESTION+-[Add a new competency question]
