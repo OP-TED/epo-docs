@@ -2,6 +2,8 @@
 
 ** xref:wgm-2022.adoc[WGM 2022]
 
+*** xref:notes/2022-03-08-wgm.adoc[2022-03-08]
+
 *** xref:notes/2022-03-01-wgm.adoc[2022-03-01]
 
 *** xref:notes/2022-02-22-wgm.adoc[2022-02-22]

@@ -1,33 +1,11 @@
 == Future Working Group Meeting agenda
 
-*Date:* 08/03/2022
+*Date:* 15/03/2022
 
 === Agenda
 
 * Continue discussing current issues and old decisions related to Amount and related classes.
 ** What is the proper way to assign +++<u>+++phase dependent information to Lot+++</u>+++ / TenderLot and other Rigid (OntoClean meaning) classes? This brings us back to the value assignments as estimates, awardings.
 This relates to a large extent to the idea of situations and the reason they were evoked in the first place.
-** List of values: https://docs.google.com/spreadsheets/d/1siAHrX4ueK5GexJ0N3zMg4oHA4ygYlW0d96ainJw9bQ/edit?usp=sharing[https://docs.google.com/spreadsheets/d/1siAHrX4ueK5GexJ0N3zMg4oHA4ygYlW0d96ainJw9bQ/edit?usp=sharing]
+** List of values.
 * Discuss Roles and Situations.
-
-=== Discussion
-
-==== Business terms that indicate values
-
-* List of values: https://docs.google.com/spreadsheets/d/1siAHrX4ueK5GexJ0N3zMg4oHA4ygYlW0d96ainJw9bQ/edit?usp=sharing[https://docs.google.com/spreadsheets/d/1siAHrX4ueK5GexJ0N3zMg4oHA4ygYlW0d96ainJw9bQ/edit?usp=sharing]
-* What is the proper way to assign phase dependent information to Lot / TenderLot and other Rigid (OntoClean meaning) classes? This brings us back to the value assignments as estimates, awardings.
-
-==== FrameworkAgreement & Contracts
-
-* What are the possible “contractual objects” of a Framework Agreement?  (announced in the Result phase)?
-* Does the FrameworkAgreement point to the LOT or to the TenderLOT?  (or both?)
-* Currently:
-** Contract 		refersTo 			Lot & Tender
-** Contract 		mentions 			LotGroup
-** Procedure 		leadsTo & isConcludedBy 	Contract
-
-==== Monetary values and VAT
-
-* Shall we include the VAT specification into the MonetaryValue OR
-* Shall we use another class that deals with the responsibility of modelling tax related concepts (e.g. VAT) embedded into a “Price” (which is a more complex concept that sinly states an amount of money) ?
-
