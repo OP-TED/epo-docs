@@ -1,6 +1,6 @@
 name: EPO
 version: 2.0.0
-title: eProcurement Ontology 2.0.0
+title: eProcurement Ontology
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc
