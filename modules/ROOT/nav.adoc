@@ -1,4 +1,7 @@
-* xref:index.adoc[ePO development work]
+* xref:epo-dev-work.adoc[ePO development work]
+** xref:master-branch.adoc[master]
+** xref:model-refactoring-branch.adoc[model-refactoring]
+** xref:frozen-2.0.2-branch.adoc[frozen-2.0.2]
 * xref:epo-guidelines.adoc[ePO guidelines]
 * xref:epo-wgm::index.adoc[Working Group Meetings]
 * xref:2.0.1@EPO::index.adoc[ePO 2.0.1 documentation]

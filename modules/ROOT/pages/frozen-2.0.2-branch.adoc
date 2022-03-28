@@ -1,0 +1,5 @@
+== Html version of ePO model from frozen-2.0.2 branch
+
+This version was not released as an official version. The current refactoring of the model will incorporate appropriate parts of version 2.0.1 and 2.0.2.
+
+* link:https://eprocurementontology.github.io/v2.0.2/index.html[Conceptual model]
