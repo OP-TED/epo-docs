@@ -1,7 +1,5 @@
 == Future Working Group Meeting agenda
 
-*Date:* 15/03/2022
-
 === Agenda
 
 * Continue discussing current issues and old decisions related to Amount and related classes.
