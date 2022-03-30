@@ -1,6 +1,6 @@
 name: epo-wgm
 version: master
-title: ePO Working Group
+title: ePO Working Documents
 start_page: ROOT:index.adoc
 nav:
 - modules/ROOT/nav.adoc
