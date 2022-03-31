@@ -2,8 +2,12 @@
 
 === Agenda
 
-* Continue discussing current issues and old decisions related to Amount and related classes.
-** What is the proper way to assign +++<u>+++phase dependent information to Lot+++</u>+++ / TenderLot and other Rigid (OntoClean meaning) classes? This brings us back to the value assignments as estimates, awardings.
-This relates to a large extent to the idea of situations and the reason they were evoked in the first place.
-** List of values.
-* Discuss Roles and Situations.
+* Show WG how the Diagrams Values are currently transposed from the sandbox into the ePO model:
+** Show the Information classes
+** Show the AwardResult situation
+* In eForms  (Rethink Tender/TenderLot, Tender as something englobing a group of lots):
+** Tender is perLot or group of lot, which is not necessarily the same as a LotGroup;
+** A contract is per Tender
+* Show proposed Review model.
+* We can look into Roles.
+* Situations shall still be revised first.

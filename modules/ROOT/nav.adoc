@@ -2,6 +2,8 @@
 
 ** xref:wgm-2022.adoc[WGM 2022]
 
+*** xref:notes/2022-03-22-wgm.adoc[2022-03-22]
+
 *** xref:notes/2022-03-15-wgm.adoc[2022-03-15]
 
 *** xref:notes/2022-03-08-wgm.adoc[2022-03-08]
@@ -327,6 +329,13 @@
 *** xref:notes/2019-10-22-wgm.adoc[2019-10-22]
 
 * xref:future-wgm-agenda.adoc[Future WGM agenda]
+
+* xref:eCatalogueMeetings.adoc[eCatalogue Meetings]
+
+** xref:notes/2022-03-10-ecat.adoc[2022-03-10]
+** xref:notes/2022-02-24-ecat.adoc[2022-02-24]
+** xref:notes/2022-01-27-ecat.adoc[2022-01-27]
+** xref:notes/2022-01-20-ecat.adoc[2022-01-20]
 
 * Face2Face meetings
 

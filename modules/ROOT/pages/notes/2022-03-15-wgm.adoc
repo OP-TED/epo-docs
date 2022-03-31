@@ -26,8 +26,6 @@
 This relates to a large extent to the idea of situations and the reason they were evoked in the first place._
 * Discuss Roles and Situations.
 
-
-
 === Discussion
 
 ==== Decide LotGroup model
