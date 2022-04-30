@@ -1,4 +1,4 @@
-= Change notes
+== Change notes
 
 |===
 |*Metadata*|*Value*
@@ -8,6 +8,7 @@
 |Authors|Andreea Pasare, Eugeniu Costetchi
 |Date|2022-04-30
 |===
+
 == General changes
 
 * Attributes were consistently added with the “has”/“is” prefix in order to conform to the convention that attribute and relation names must start with a lowercase letter. Previously all attributes started with the capital letter.

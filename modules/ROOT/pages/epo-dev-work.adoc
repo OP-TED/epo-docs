@@ -18,3 +18,5 @@ The ontology documentation is published on the unified **https://docs.ted.europa
 == Change notes _EPO 3.0.0.alpha_
 
 We are working towards a new release publication of the ontology. Judging by the nature of changes we suggest that it is marked as a major release: _3.0.0_. Below is provided detailed account of changes between the _2.0.1_ (https://github.com/OP-TED/ePO/releases/tag/v2.0.1[tag]) and _3.0.0.alpha_ (https://github.com/OP-TED/ePO/releases/tag/3.0.0.alpha[tag]).
+
+include::changenotes-2.0.1-3.0.0.alpha.adoc[]
