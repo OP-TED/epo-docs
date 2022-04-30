@@ -1,5 +1,5 @@
 [[header]]
-= ePO - eProcurement Ontology Development Documentation
+= eProcurement Ontology Development Documentation
 
 The ultimate objective of the e-procurement ontology (ePO) is to put forth a commonly agreed OWL ontology that will conceptualise, formally encode and make available in an open, structured and machine-readable format data about public procurement, covering it from end to end, i.e. from notification, through tendering to awarding, ordering, invoicing and payment. It is the intention of the e-procurement ontology to unify existing practices, thus facilitating seamless exchange, access and reuse of data.
 

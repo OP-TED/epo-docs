@@ -1,5 +1,20 @@
 [[header]]
-= ePO - eProcurement Ontology Development Documentation [Report]
+= eProcurement Ontology Development Documentation
 
-The development section of the eProcurement ontology documentation provides access to versions of the conceptual model that are either in development or have been worked on currently or previously.
+This page provides documentation useful for the ontology developers and the domain experts from the working group. This development section of the eProcurement ontology documentation provides access to versions of the conceptual model that are either in development or have been worked on currently or previously.
 
+The ontology is hosted in GitHub repository **https://github.com/OP-TED/ePO[OP-TED/ePO^]**. The latest development is available in the _master_ branch.
+The ontology documentation is published on the unified **https://docs.ted.europa.eu/[TED Developers Docs^]** website. The source of that ontology documentation is hosted in GitHub repository **https://github.com/OP-TED/epo-docs[OP-TED/epo-docs^]**.
+
+== Important artefacts
+ * Enterprise Architect model (EA model)
+ ** Source: https://github.com/OP-TED/ePO/blob/master/analysis_and_design/conceptual_model/ePO_CM.eap[EAP model]
+ ** Documentation link:{attachmentsdir}/html_reports/master/ePO/index.html[HTML representation^]
+ *  RDF representation of the eProcurement ontology
+ ** https://raw.githubusercontent.com/OP-TED/ePO/master/analysis_and_design/transformation_output/owl_ontology/ePO_owl_core.rdf[OWL-core^]
+ ** https://raw.githubusercontent.com/OP-TED/ePO/master/analysis_and_design/transformation_output/owl_ontology/ePO_restrictions.rdf[OWL-restrictions^]
+ ** https://raw.githubusercontent.com/OP-TED/ePO/master/analysis_and_design/transformation_output/owl_ontology/ePO_shacl_shapes.rdf[SHACL-shapes^]
+
+== Change notes _EPO 3.0.0.alpha_
+
+We are working towards a new release publication of the ontology. Judging by the nature of changes we suggest that it is marked as a major release: _3.0.0_. Below is provided detailed account of changes between the _2.0.1_ (https://github.com/OP-TED/ePO/releases/tag/v2.0.1[tag]) and _3.0.0.alpha_ (https://github.com/OP-TED/ePO/releases/tag/3.0.0.alpha[tag]).
