@@ -1,0 +1,547 @@
+= Change notes
+
+|===
+|*Metadata*|*Value*
+
+|Reference EPO version|2.0.1
+|Target EPO version|3.0.0.alpha
+|Authors|Andreea Pasare, Eugeniu Costetchi
+|Date|2022-04-30
+|===
+== General changes
+
+* Attributes were consistently added with the “has”/“is” prefix in order to conform to the convention that attribute and relation names must start with a lowercase letter. Previously all attributes started with the capital letter.
+* Attribute types were migrated from _UML_ and _epo_ datatypes into XSD/RDFS datatypes. The inventory of used data types is provided in the _datatype_ package of the model.
+* Packages have been reorganised as presented below.
+* New modules (as EA _root nodes_) have been created. Some classes from the _epo_ module were moved into other modules for future modelling, as will be mentioned in this document as deleted.
+=== New package organisation
+
+The conceptual model of the ontology has been sectioned into packages for better content management. Within each package are found classes and one or several diagrams that best depicts the specific aspects of the ontology.  +
+The list of content packages is as follows:
+
+* _procurement object_
+* _term _
+* _agent _
+* _role_
+* _location _
+* _contract _
+* _document _
+* _strategic procurement_
+* _technique_
+* _criteria_
+* _contextual description_
+* _notice description_
+* _dimension_
+* _controlled vocabularies_
+In addition we provide a package, called _epo diagrams_, with diagrams that provide selected views of the ontology.
+
+=== New classes
+
+* epo:ProcurementObject
+* epo:ProcurementPart
+* epo:TenderGroup
+* epo:AcquiringCentralPurchasingBody
+* epo:AgentInRole
+* epo:Awarder
+* epo:AwardingCentralPurchasingBody
+* epo:BudgetProvider
+* epo:BuyerSideSignatory
+* epo:CatalogueProvider
+* epo:CatalogueReceiver
+* epo:ContractSignatory
+* epo:ContractorSideSignatory
+* epo:EmploymentInformationProvider
+* epo:EnviromentalProtectionInformationProvider
+* epo:GroupLeader
+* epo:InformationProvider
+* epo:OfflineAccessProvider
+* epo:ParticipationRequestProcessor
+* epo:ParticipationRequestReceiver
+* epo:PaymentExecutor
+* epo:ProcurementProcedureInformationProvider
+* epo:ReviewProcedureInformationProvider
+* epo:ReviewRequester
+* epo:SecondaryRole
+* epo:TaxInformationProvider
+* epo:TenderProcessor
+* epo:TenderReceiver
+* epo:TertiaryRole
+* locn:Address
+* locn:Geometry
+* epo:AwardEvaluationTerm
+* epo:SelectionEvaluationTerm
+* epo:ParticipationRequestTerm
+* epo:LotSpecificTerm
+* epo:ProcedureSpecificTerm
+* epo:Term
+=== Deleted classes
+
+* epo:BuyerProfileNotice
+* epo:BuyerProfile
+* epo:CallForCompetition
+* epo:CallForExpressionOfInterest
+* epo:ContractAwardNotice
+* epo:ContractModificationNotice
+* epo:ContractNotice
+* epo:Item
+* epo:Location
+* epo:PriorInformationNotice
+* epo:ProjectProcurement
+* epo:ResourceElement
+* epo:Subcontract
+* epo:TenderDocument
+* epo:TenderLot
+* epo:VoluntaryEx-anteTransparencyNotice
+* epo:epo:LocationCoordinate
+=== Deleted enumerations
+
+* epo:cpb-type
+== Changed classes
+
+=== Agent package modifications
+
+|===
+|*class*|*added attributes*|*deleted attributes*
+
+|epo:Agent||epo:ID
+|epo:Agent|epo:hasName|
+|epo:Organisation|epo:hasLegalName|
+|epo:Organisation|epo:hasOrganisationUnit|
+|===
+
+|===
+|*class*|*added property*|*deleted property*
+
+|epo:Agent|epo:hasID -> epo:Identifier|
+|epo:Organisation|epo:hasRegisteredAddress -> locn:Address|
+|epo:Organisation|epo:hasAddress -> locn:Address|epo:hasLocation -> epo:Location
+|epo:Organisation|epo:hasDeliveryGateway -> epo:Channel|
+|epo:Organisation|epo:hasPrimaryContactPoint -> epo:ContactPoint|epo:hasDefaultContactPoint -> epo:ContactPoint
+|epo:Person|epo:hasLegalLocation -> epo:Location|epo:hasRegisteredAddress -> locn:Address
+|epo:Person|epo:hasCountryOfBirth -> at-voc:country|
+|===
+
+=== Procurement objects package modifications
+
+epo:Lot class was duplicated in ePO 2.0.1.
+|===
+|*class*|*added attributes*|*deleted attributes*
+
+|epo:LotGroup||epo:Description
+|epo:LotGroup||epo:ID
+|epo:LotGroup||epo:Title
+|epo:Lot||epo:ID
+|epo:Lot||epo:PerformingStafQualificationInformation
+|epo:Lot||epo:ReservedProcurement
+|epo:Lot||epo:SMESuitable
+|epo:Lot||epo:Title
+|epo:Lot||epo:VariantsPermission
+|epo:Lot||epo:Description
+|epo:Lot||epo:AdditionalInformation
+|epo:PlannedProcurementPart|epo:hasEstimatedContractNoticePublicationDate|
+|epo:PlannedProcurementPart||epo:AdditionalInformation
+|epo:PlannedProcurementPart||epo:Description
+|epo:PlannedProcurementPart||epo:ID
+|epo:PlannedProcurementPart||epo:LegalBasisID
+|epo:PlannedProcurementPart||epo:SMESuitable
+|epo:PlannedProcurementPart||epo:Title
+|epo:Procedure||epo:ChoiceJustification
+|epo:Procedure||epo:Description
+|epo:Procedure||epo:ID
+|epo:Procedure||epo:LegalBasisID
+|epo:Procedure||epo:LegalBasis
+|epo:Procedure||epo:LegalRegime
+|epo:Procedure||epo:ProcedureType
+|epo:Procedure||epo:Title
+|epo:ProcurementObject|epo:hasDescription|
+|epo:ProcurementObject|epo:hasTitle|
+|epo:ProcurementPart|epo:hasAdditionalInformation|
+|epo:ProcurementPart|epo:isSMESuitable|
+|epo:ProcurementPart|epo:isUsingEUFunds|
+|epo:Purpose|epo:hasRecurrenceDescription|
+|epo:Purpose|epo:hasRecurrence|
+|epo:Purpose|epo:hasOptions|
+|epo:Purpose||epo:AdditionalClassification
+|epo:Purpose||epo:AdditionalContractNature
+|epo:Purpose||epo:ContractNatureType
+|epo:Purpose||epo:MainClassification
+|epo:Purpose||epo:OptionsPermission
+|epo:Purpose||epo:hasTotalMagnitudeQuantity
+|epo:Tender|epo:hasCalculationMethod|
+|(merged with epo:TenderLot)|epo:hasVariant|
+|(merged with epo:TenderLot)||epo:ID
+|===
+
+|===
+|*class*|*added property*|*deleted property*
+
+|epo:LotGroup|epo:hasID -> epo:Identifier|
+|epo:LotGroup|epo:setsGroupingContextFor -> epo:Lot|
+|epo:LotGroup|epo:specifiesProcurementCriteria -> epo:ProcurementCriterion|
+|epo:LotGroup||epo:isAwardedTo -> epo:Tender
+|epo:LotGroup||epo:hasAwardedValue -> epo:Value
+|epo:LotGroup|epo:hasEstimatedValue -> epo:MonetaryValue|epo:hasEstimatedValue -> epo:Value
+|epo:Lot|generalization -> epo:ProcurementPart|
+|epo:Lot||epo:isGroupedIn epo:LotGroup
+|epo:Lot||epo:hasAwardedEstimatedValue -> epo:Value
+|epo:Lot||epo:providesAdditionalInformation -> epo:StatisticalInformation
+|epo:Lot||epo:requires -> epo:SecurityClearanceTerm
+|epo:Lot|epo:hasEstimatedValue -> epo:MonetaryValue|epo:hasEstimatedValue -> epo:Value
+|epo:Lot||epo:contributesToImplement -> epo:ProjectProcurement
+|epo:Lot|epo:hasPurpose -> epo:Purpose|epo:has -> epo:Purpose
+|epo:Lot||epo:isAwardedToTenderLot -> epo:TenderLot
+|epo:Lot||epo:has -> epo:OpeningTerm
+|epo:Lot||epo:involvesOverallStrategicProcurement -> epo:strategicProcurement
+|epo:Lot|epo:hasPerformingStaffQualificationInformation -> at-voc:requirement-stage|epo:isProvidedWithin -> at-voc:requirement-stage
+|epo:Lot||epo:hasEstimatedUserConcessionRevenue -> epo:Value
+|epo:Lot||epo:applies -> epo:MultipleStageProcedureTerm
+|epo:Lot||epo:applies -> epo:ContractTerm
+|epo:Lot||epo:hasTenderEvaluationTerm -> epo:EvaluationTerm
+|epo:Lot||epo:hasContractDuration -> epo:Period
+|epo:Lot||epo:hasEstimatedBuyerConcessionRevenue -> epo:Value
+|epo:Lot|epo:refersToPlannedPart -> epo:PlannedProcurementPart|epo:refersTo -> epo:PlannedProcurementPart
+|epo:Lot||epo:isReferredToIn -> epo:ProcurementDocument
+|epo:Lot||epo:hasAwardedValue -> epo:Value
+|epo:Lot||epo:refersTo -> epo:Item
+|epo:Lot||epo:isFundedBy -> epo:Fund
+|epo:Lot|epo:isSubjectToLotTerm -> epo:LotSpecificTerm|
+|epo:Lot|epo:usesTechnique -> epo:Technique|epo:uses -> epo:Technique
+|epo:Lot|epo:specifiesProcurementCriteria -> epo:ProcurementCriterion|
+|epo:PlannedProcurementPart|generalization -> epo:ProcurementPart|
+|epo:PlannedProcurementPart|epo:hasLegalBasis -> at-voc:legal-basis|epo:hasLegalBasisID -> at-voc:legal-basis
+|epo:PlannedProcurementPart|epo:usesChannel -> epo:Channel|epo:uses -> epo:Channel
+|epo:PlannedProcurementPart|epo:hasPlannedDuration -> epo:Duration|
+|epo:PlannedProcurementPart||epo:has -> epo:AccessTerm
+|epo:PlannedProcurementPart||epo:has -> epo:ContractTerm
+|epo:PlannedProcurementPart||epo:involvesOverallStrategicProcurement -> epo:StrategicProcurement
+|epo:PlannedProcurementPart||epo:refersTo -> epo:Document
+|epo:PlannedProcurementPart||epo:isFundedWith -> epo:Fund
+|epo:Procedure|epo:isSubjectToProcedureSpecificTerm -> epo:ProcedureSpecificTerm|epo:has -> epo:ProcedureTerm
+|epo:Procedure|epo:refersToPlannedPart -> epo:PlannedProcurementPart|
+|epo:Procedure|epo:hasEstimatedValue -> epo:MonetaryValue|epo:hasEstimatedValue -> epo:Value
+|epo:Procedure|generalization -> epo:ProcurementObject|
+|epo:Procedure|epo:hasProcurementScopeDividedIntoLot -> epo:Lot|epo:specifies -> epo:Lot
+|epo:Procedure|epo:specifiesExclusionGround -> epo:ExclusionGround|epo:uses -> epo:ExclusionGround
+|epo:Procedure||epo:involvesOverallStrategicProcurement -> epo:StrategicProcurement
+|epo:Procedure||epo:leadsTo -> epo:Contract
+|epo:Procedure||epo:isResponsabilityOf -> epo:Buyer
+|epo:Procedure||epo:isConcludedBy -> epo:Contract
+|epo:Procedure||epo:uses -> epo:AccessTerm
+|epo:Procedure||epo:has -> epo:DirectAwardTerm
+|epo:Procedure||epo:hasTotalValue -> epo:Value
+|epo:ProcurementObject|epo:isSubjectToTerm -> epo:Term|
+|epo:ProcurementObject|epo:fulfillStrategicProcurement -> epo:StrategicProcurement|
+|epo:ProcurementObject|epo:hasID -> epo:Identifier|
+|epo:ProcurementPart|generalization -> epo:ProcurementObject|
+|epo:ProcurementPart|epo:isFundedBy -> epo:Fund|
+|epo:Purpose|epo:hasTotalQuantity -> epo:Quantity|
+|epo:TenderGroup|epo:comprisesTender -> epo:Tender|
+|epo:TenderGroup|epo:hasTotalValue -> epo:MonetaryValue|
+|epo:TenderGroup|epo:isSubmittedForLotGroup -> epo:LotGroup|
+|epo:Tender (merged with epo:TenderLot)|epo:isSupportedBy -> epo:TechnicalOffer|
+|epo:Tender (merged with epo:TenderLot)|epo:isSubmittedForLot -> epo:Lot|
+|epo:Tender (merged with epo:TenderLot)|epo:hasItemCountryOfOrigin -> at-voc:country|
+|epo:Tender (merged with epo:TenderLot)|epo:subjectToGrouping -> epo:LotGroup|
+|epo:Tender (merged with epo:TenderLot)|epo:forseesSubcontractingEstimate -> epo:SubcontractingEstimate|
+|epo:Tender (merged with epo:TenderLot)|epo:hasEstimatedUserConcessionRevenue -> epo:MonetaryValue|
+|epo:Tender (merged with epo:TenderLot)|generalization -> epo:ProcurementObject|
+|epo:Tender (merged with epo:TenderLot)|epo:hasEstimatedBuyerConcessionRevenue -> epo:MonetaryValue|
+|epo:Tender (merged with epo:TenderLot)|epo:hasFinancialOfferValuer -> epo:MonetaryValue|
+|epo:Tender (merged with epo:TenderLot)|epo:isSupportedBy -> epo:ESPDResponse|
+|epo:Tender (merged with epo:TenderLot)|epo:isSupportedBy -> epo:FinancialOffer|
+|epo:Tender (merged with epo:TenderLot)||epo:attaches -> epo:TenderDocument
+|epo:Tender (merged with epo:TenderLot)||epo:includes -> epo:TenderLot
+|epo:Tender (merged with epo:TenderLot)||epo:hasSubmissionTerm -> epo:SubmissionTerm
+|===
+
+=== Roles package modifications
+
+|===
+|*class*|*added attributes*|*deleted attributes*
+
+|epo:AgentInRole|epo:hasDescription|
+|epo:AgentInRole|epo:hasTitle|
+|epo:Buyer|epo:hasBuyerTypeDescription|epo:BuyerLegalTypeDescription
+|epo:Buyer|epo:hasBuyerProfile|
+|epo:Buyer||epo:hasBuyerLegalType
+|epo:Buyer||epo:MainActivityType
+|epo:CentralPurchasingBody||epo:CPBType
+|epo:EconomicOperator||epo:EORoleType
+|===
+
+|===
+|*class*|*added property*|*deleted property*
+
+|epo:AcquiringCentralPurchasingBody|generalization -> epo:CentralPurchasingBody|
+|epo:AgentInRole|epo:playedBy -> epo:Agent|
+|epo:AgentInRole|epo:dependsOnRole -> epo:AgentInRole|
+|epo:AgentInRole|epo:hasContactPointInRole -> epo:ContactPoint|
+|epo:Awarder|epo:dependsOnBuyer -> epo:Buyer|
+|epo:Awarder|generalization -> epo:PrimaryRole|
+|epo:AwardingCentralPurchasingBody|generalization -> epo:CentralPurchasingBody|
+|epo:BudgetProvider|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider|
+|epo:BudgetProvider|generalization -> epo:SecondaryRole|
+|epo:BudgetProvider|epo:dependsOnBuyer -> epo:Buyer|
+|epo:BuyerSideSignatory|epo:dependsOnBuyer -> epo:Buyer|
+|epo:BuyerSideSignatory|generalization -> epo:ContractSignatory|
+|epo:Buyer|epo:hasBuyerType -> at-voc:buyer-legal-type|epo:hasBuyerLegalType -> at-voc:buyer-legal-type
+|epo:Buyer|epo:delegatesAncillaryActivitiesTo -> epo:ProcurementServiceProvider|
+|epo:Buyer||epo:executesPayment -> epo:Lot
+|epo:Buyer||epo:processesTenders -> epo:Lot
+|epo:Buyer||epo:has -> epo:BuyerProfile
+|epo:Buyer||epo:processesRequestsToParticipate -> epo:Lot
+|epo:Buyer||generalization -> epo:Role
+|epo:Buyer||epo:providesMoreInformationOnTimeLimitsForReviewProcedures -> epo:Lot
+|epo:Buyer||epo:receivesRequestsToParticipate -> epo:Lot
+|epo:Buyer||epo:isGroupLeader -> epo:Lot
+|epo:Buyer||epo:appoints -> epo:EvaluationBoard
+|epo:Buyer||epo:makesDecision -> epo:AwardDecision
+|epo:Buyer||epo:providesAdditionalInformationAboutProcurementProcedure -> epo:Lot
+|epo:Buyer||epo:usesBudgetToPayContract -> epo:Lot
+|epo:Buyer||epo:receivesTenders -> epo:Lot
+|epo:Buyer||epo:providesOfflineAccessToProcurementDocuments -> epo:Lot
+|epo:Buyer||epo:plans -> epo:PlannedProcurementPart
+|epo:Buyer||epo:signsContract -> epo:Lot
+|epo:CatalogueProvider|generalization -> epo:EconomicOperator|
+|epo:CatalogueReceiver|generalization -> epo:PrimaryRole|
+|epo:CentralPurchasingBody|epo:hasCentralPurchasingBody -> epo:cpb-type|
+|epo:ContractSignatory|generalization -> epo:SecondaryRole|
+|epo:ContractorSideSignatory|generalization -> epo:ContractSignatory|
+|epo:ContractorSideSignatory|epo:dependsOnWinner -> epo:Winner|
+|epo:Contractor|generalization -> epo:EconomicOperator|generalization -> epo:Winner
+|epo:Contractor|epo:dependsOnContractorSideSignatory -> epo:ContractorSideSignatory|
+|epo:EconomicOperator|epo:playedByBusiness epo:Business|
+|epo:EmploymentInformationProvider|generalization -> epo:TertiaryRole|
+|epo:EnviromentalProtectionInformationProvider|generalization -> epo:TertiaryRole|
+|epo:GroupLeader|generalization -> epo:SecondaryRole|
+|epo:InformationProvider|generalization -> epo:SecondaryRole|
+|epo:InformationProvider|epo:dependsOnBuyer -> epo:Buyer|
+|epo:InformationProvider|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider|
+|epo:OfflineAccessProvider|generalization -> epo:InformationProvider|
+|epo:ParticipationRequestProcessor|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider|
+|epo:ParticipationRequestProcessor|epo:dependsOnBuyer -> epo:Buyer|
+|epo:ParticipationRequestProcessor|generalization -> epo:SecondaryRole|
+|epo:ParticipationRequestReceiver|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider|
+|epo:ParticipationRequestReceiver|epo:dependsOnBuyer -> epo:Buyer|
+|epo:ParticipationRequestReceiver|generalization -> epo:SecondaryRole|
+|epo:PaymentExecutor|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider|
+|epo:PaymentExecutor|epo:dependsOnBuyer -> epo:Buyer|
+|epo:PaymentExecutor|generalization -> epo:SecondaryRole|
+|epo:ProcurementProcedureInformationProvider|generalization -> epo:InformationProvider|
+|epo:ProcurementServiceProvider|epo:actsOnBehalfOf -> epo:Buyer|
+|epo:ProcurementServiceProvider||epo:receivesRequestsToParticipate -> epo:Lot
+|epo:ProcurementServiceProvider||epo:providesAdditionalInformationAboutProcurementProcedure -> epo:Lot
+|epo:ProcurementServiceProvider||epo:isGroupLeader -> epo:Lot
+|epo:ProcurementServiceProvider||epo:executesPayment -> epo:Lot
+|epo:ProcurementServiceProvider||epo:manages -> epo:BuyerProfile
+|epo:ProcurementServiceProvider||epo:processesTenders -> epo:Lot
+|epo:ProcurementServiceProvider||epo:processesRequestsToParticipate -> epo:Lot
+|epo:ProcurementServiceProvider||epo:providesMoreInformationOnTimeLimitsForReviewProcedures -> epo:Lot
+|epo:ProcurementServiceProvider||epo:usesBudgetToPayContract -> epo:Lot
+|epo:ProcurementServiceProvider||epo:receivesTenders -> epo:Lot
+|epo:ProcurementServiceProvider||epo:providesOfflineAccessToProcurementDocuments -> epo:Lot
+|epo:ProcurementServiceProvider||epo:signsContract -> epo:Lot
+|epo:ReviewProcedureInformationProvider|epo:dependsOnReviewer -> epo:Reviewer|
+|epo:ReviewProcedureInformationProvider|generalization -> epo:InformationProvider|
+|epo:ReviewRequester|generalization -> epo:PrimaryRole|
+|epo:Reviewer||epo:providesMoreInformationOnTimeLimitsForReviewProcedures -> epo:Lot
+|epo:PrimaryRole (renamed from epo:Role)|epo:playedByOrganisation -> epo:Organisation|
+|epo:PrimaryRole (renamed from epo:Role)|generalization -> epo:AgentInRole|
+|epo:PrimaryRole (renamed from epo:Role)||epo:has -> epo:ContactPoint
+|epo:SecondaryRole|generalization -> epo:AgentInRole|
+|epo:TaxInformationProvider|generalization -> epo:TertiaryRole|
+|epo:TenderProcessor|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider|
+|epo:TenderProcessor|epo:dependsOnBuyer -> epo:Buyer|
+|epo:TenderProcessor|generalization -> epo:SecondaryRole|
+|epo:TenderReceiver|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider|
+|epo:TenderReceiver|epo:dependsOnBuyer -> epo:Buyer|
+|epo:TenderReceiver|generalization -> epo:SecondaryRole|
+|epo:Tenderer|epo:substantiatesExclusionGround -> epo:ExclusionGround|epo:substantiates -> epo:ExclusionGround
+|epo:Tenderer||epo:withdraws -> epo:Tender
+|epo:Tenderer||epo:submits -> epo:Tender
+|epo:TertiaryRole|generalization -> epo:InformationProvider|
+|epo:TertiaryRole|epo:providesRegulatoryInformation -> epo:RegulatoryFrameworkInformation|
+|epo:Winner|epo:dependsOnTenderer -> epo:Tenderer|
+|epo:Winner|generalization -> epo:EconomicOperator|generalization -> epo:Tenderer
+|===
+
+=== Location package modifications
+
+|===
+|*class*|*added attributes*|*deleted attributes*
+
+|locn:Address (renamed from epo:Address)|locn:postName|epo:CityName
+|locn:Address (renamed from epo:Address)|locn:postCode|epo:PostalZone
+|locn:Address (renamed from epo:Address)|locn:thoroughfare|epo:StreetName
+|locn:Address (renamed from epo:Address)|locn:adressArea|
+|locn:Address (renamed from epo:Address)|locn:FullAddress|
+|locn:Address (renamed from epo:Address)|locn:locatorDesignator|
+|locn:Address (renamed from epo:Address)|locn:locatorName|
+|locn:Address (renamed from epo:Address)||epo:AdditionalStreetName
+|locn:Address (renamed from epo:Address)||epo:BlockName
+|locn:Address (renamed from epo:Address)||epo:BuildingName
+|locn:Address (renamed from epo:Address)||epo:BuildingNumber
+|locn:Address (renamed from epo:Address)||epo:CitySubdivisionName
+|locn:Address (renamed from epo:Address)||epo:CountryCode
+|locn:Address (renamed from epo:Address)||epo:CountrySubentityCode
+|locn:Address (renamed from epo:Address)||epo:CountrySubentity
+|locn:Address (renamed from epo:Address)||epo:District
+|locn:Address (renamed from epo:Address)||epo:Floor
+|locn:Address (renamed from epo:Address)||epo:ID
+|locn:Address (renamed from epo:Address)||epo:InhouseMail
+|locn:Address (renamed from epo:Address)||epo:MarkAttention
+|locn:Address (renamed from epo:Address)||epo:PlotIdentification
+|locn:Address (renamed from epo:Address)||epo:PostBox
+|locn:Address (renamed from epo:Address)||epo:Region
+|locn:Address (renamed from epo:Address)||epo:Room
+|locn:Address (renamed from epo:Address)||epo:TimezoneOffset
+|epo:ContactPoint|epo:hasContactName|
+|dct:Location|locn:geographicName|
+|locn:Geometry|locn:latitude|
+|locn:Geometry|locn:longitude|
+|locn:Geometry|locn:coordinates|
+|===
+
+
+|===
+|*class*|*added property*|*deleted property*
+
+|locn:Address (renamed from epo:Address)|locn:adminUnitL2 -> at-voc:nuts|epo:hasCountrySubentityCode -> at-voc:nuts
+|locn:Address (renamed from epo:Address)|locn:addressID -> epo:Identifier|
+|locn:Address (renamed from epo:Address)|locn:adminUnitL1 -> at-voc:country|epo:hasCountryCode -> at-voc:country
+|locn:Address (renamed from epo:Address)||epo:has -> epo:LocationCoordinate
+|epo:ContactPoint|epo:hasAddress -> locn:Address|epo:hasLocation -> epo:Location
+|epo:ContactPoint|generalization -> epo:CommunicationMeans|
+|epo:ContactPoint||epo:has -> epo:Channel
+|epo:ContactPoint||epo:hasContactPersonRole -> epo:Role
+|dct:Location (renamed from epo:Location)|epo:hasCountryCode -> at-voc:country|
+|dct:Location (renamed from epo:Location)|epo:hasNutsCode -> at-voc:nuts|
+|dct:Location (renamed from epo:Location)|locn:geographicIdentifier -> epo:Identifier|
+|dct:Location (renamed from epo:Location)|locn:geometry -> locn:Geometry|
+|dct:Location (renamed from epo:Location)|locn:address -> locn:Address|
+|dct:Location (renamed from epo:Location)||epo:hasPostalAddress -> epo:Address
+|===
+
+=== Contract package modifications
+
+|===
+|*class*|*added attributes*|*deleted attributes*
+
+|epo:Contract|epo:hasAccessAddress|
+|epo:Contract|epo:hasWinnerDecisionDate|
+|epo:Contract|epo:ID|
+|epo:Contract|epo:Title|
+|epo:Fund||epo:ID
+|epo:PurchaseContract|epo:isWithinFrameworkAgreement|
+|===
+
+|===
+|*class*|*added property*|*deleted property*
+
+|epo:Contract|epo:includesLot -> epo:Lot|
+|epo:Contract|epo:signedBySignatory -> epo:ContractSignatory|
+|epo:Contract|epo:includesLotAwardOutcome -> epo:LotAwardOutcome|
+|epo:Contract|epo:hasEstimatedDuration -> epo:Duration|epo:hasEstimatedDuration -> epo:Period
+|epo:Contract|epo:includesTender -> epo:Tender|
+|epo:Contract|generalization -> epo:ProcurementObject|
+|epo:Contract||epo:refersTo -> epo:Lot (epo:isReferredByA -> epo:Contract)
+|epo:Contract||epo:attaches -> epo:Document
+|epo:Contract||epo:isSignedBy -> epo:Agent (epo:isSignatoryPartyOf -> epo:Contract)
+|epo:Contract||epo:refersToSignatory -> epo:Winner
+|epo:Contract||epo:hasDuration -> epo:Period
+|epo:Contract||epo:mentions -> epo:LotGroup
+|epo:Contract||epo:refersTo -> epo:Tender
+|epo:Contract||generalization -> epo:Document
+|epo:Contract||epo:hasProcurementValue -> epo:Value
+|epo:Contract||epo:hasDurationEvaluationPeriod -> epo:Period
+|epo:Contract||epo:hasContractPurpose -> epo:Purpose
+|epo:Fund|epo:hasID -> epo:Identifier|
+|epo:PurchaseContract|epo:followsRulesSetBy -> epo:FrameworkAgreement|epo:hasRulesSetBy -> epo:FrameworkAgreement (epo:setsRulesOf -> epo:PurchaseContract)
+|===
+=== Term package modifications
+
+|===
+|*class*|*added attributes*|*deleted attributes*
+
+|epo:AccessTerm|epo:isProcurementDocumentRestricted|epo:SomeProcurementDocumentRestricted
+|epo:AccessTerm|epo:hasRestrictedAccessURL|
+|epo:AccessTerm||epo:ProcurementDocumentLandingPage
+|epo:AccessTerm||epo:SomeProcurementDocumentRestrictedJustification
+|epo:Channel|epo:isAtypical|
+|epo:ContractTerm||epo:BroadPlaceOfPerformance
+|epo:ContractTerm||epo:ReservedExecution
+|epo:FrameworkAgreementTerm||epo:FrameworkAgreementType
+|epo:MultipleStageProcedureTerm||epo:MaximumCandidates
+|epo:Prize||epo:PrizeValue
+|epo:SubcontractTerm||epo:hasSubcontractingObligation
+|epo:AwardEvaluationTerm|epo:hasAwardEvaluationFormula (from epo:EvaluationTerm)|
+|epo:AwardEvaluationTerm|epo:hasOverallCostAwardCriteriaPonderation (from epo:EvaluationTerm)|
+|epo:AwardEvaluationTerm|epo:hasOverallPriceAwardCriteriaPonderation (from epo:EvaluationTerm)|
+|epo:AwardEvaluationTerm|epo:hasOverallQualityAwardCriteriaPonderation (from epo:EvaluationTerm)|
+|epo:AwardEvaluationTerm|epo:hasAwardCriteriaOrderJustification|
+|epo:DirectAwardTerm||epo:JustificationType
+|epo:ProcedureTerm||epo:AdditionalInformationDeadline
+|epo:SubmissionTerm||epo:ECataloguePersmission
+|epo:SubmissionTerm||epo:ESubmissionPermission
+|epo:SubmissionTerm||epo:Language
+|epo:SubmissionTerm||epo:LateSubmissionPermission
+|epo:SubmissionTerm||epo:NonElectronicSubmissionJustification
+|epo:SubmissionTerm||epo:TenderSubcontractingInformation
+|===
+
+
+|===
+|*class*|*added property*|*deleted property*
+
+|epo:AccessTerm|epo:involvesInformationProvider -> epo:ProcurementProcedureInformationProvider|
+|epo:AccessTerm|epo:hasProcurementDocumentLandingPage -> epo:Channel|
+|epo:AccessTerm|epo:involvesProcurementDocument -> epo:ProcurementDocument|
+|epo:AccessTerm|epo:involvesInformationProvider -> epo:OfflineAccessProvider|
+|epo:AccessTerm|generalization -> epo:LotSpecificTerm|
+|epo:AccessTerm|epo:refersToPlannedPart -> epo:PlannedProcurementPart|
+|epo:AccessTerm|epo:hasDocumentRestrictionJustification -> at-voc:communication-justification|
+|epo:Channel|generalization -> epo:CommunicationMeans|
+|epo:OpeningTerm|generalization -> epo:LotSpecificTerm|
+|epo:SecurityClearanceTerm|generalization -> epo:LotSpecificTerm|
+|epo:SecurityClearanceTerm||epo:appliesTo -> org:Site
+|epo:SecurityClearanceTerm||epo:appliesTo -> epo:Winner
+|epo:SecurityClearanceTerm||epo:appliesTo -> epo:Document
+|epo:ContractTerm|epo:involvesPaymentExecutor -> epo:PaymentExecutor|
+|epo:ContractTerm|epo:involvesBudgetProvider -> epo:BudgetProvider|
+|epo:ContractTerm|epo:hasSpecificPlaceOfPerformance -> dct:Location|epo:hasSpecificPlaceOfPerformance -> epo:Address
+|epo:ContractTerm|generalization -> epo:LotSpecificTerm|
+|epo:ContractTerm|epo:hasSubcontractingTerm -> epo:SubcontractTerm|epo:includes -> epo:SubcontractTerm
+|epo:DesignContestRegimeTerm|generalization -> epo:LotSpecificTerm|
+|epo:DesignContestRegimeTerm||epo:appliesTo -> epo:Lot
+|epo:FrameworkAgreementTerm|generalization -> epo:ProcedureSpecificTerm|
+|epo:FrameworkAgreementTerm|generalization -> epo:LotSpecificTerm|
+|epo:FrameworkAgreementTerm||epo:appliesTo -> epo:Lot
+|epo:FrameworkAgreementTerm||epo:isUsedBy -> epo:LotGroup
+|epo:MultipleStageProcedureTerm|generalization -> epo:LotSpecificTerm|
+|epo:Prize|epo:hasPrizeValue -> epo:MonetaryValue|
+|epo:SubcontractTerm|generalization -> epo:LotSpecificTerm|
+|epo:AwardEvaluationTerm|generalization -> epo:EvaluationTerm|
+|epo:SelectionEvaluationTerm|generalization -> epo:EvaluationTerm|
+|epo:EvaluationTerm|generalization -> epo:LotSpecificTerm|
+|epo:ParticipationRequestTerm|epo:involvesParticipationRequestReceiver -> epo:ParticipationRequestReceiver|
+|epo:ParticipationRequestTerm|generalization -> epo:LotSpecificTerm|
+|epo:ParticipationRequestTerm|epo:involvesParticipationRequestProcessor -> epo:ParticipationRequestProcessor|
+|epo:DirectAwardTerm|generalization -> epo:ProcedureSpecificTerm|
+|epo:ProcedureTerm|epo:involvesReviewer -> epo:Reviewer|
+|epo:ProcedureTerm|epo:involvesMediator -> epo:Mediator|
+|epo:ProcedureTerm|epo:involvesPRocurementServiceProvider -> epo:ProcurementServiceProvider|
+|epo:ProcedureTerm|epo:definesLotGroup -> epo:LotGroup|epo:combinesLotsInto -> epo:LotGroup
+|epo:ProcedureTerm|generalization -> epo:ProcedureSpecificTerm|
+|epo:ProcedureTerm|epo:involvesBuyer -> epo:Buyer|
+|epo:ReviewTerm|epo:involvesReviewProcedureInformationProvider -> epo:ReviewProcedureInformationProvider|
+|epo:ReviewTerm|generalization -> epo:LotSpecificTerm|
+|epo:ReviewTerm||epo:isAppliedBy -> epo:Lot
+|epo:SubmissionTerm|epo:involvesTenderReceiver -> epo:TenderReceiver|
+|epo:SubmissionTerm|generalization -> epo:LotSpecificTerm|
+|epo:SubmissionTerm|epo:involvesTenderProcessor -> epo:TenderProcessor|
+|epo:SubmissionTerm||epo:isAppliedBy -> epo:Lot
+|epo:LotSpecificTerm|generalization -> epo:Term|
+|epo:ProcedureSpecificTerm|generalization -> epo:Term|
+|===
+=== Document package modifications
+
