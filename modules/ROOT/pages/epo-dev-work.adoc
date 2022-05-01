@@ -15,7 +15,7 @@ The ontology documentation is published on the unified **https://docs.ted.europa
  ** https://raw.githubusercontent.com/OP-TED/ePO/master/analysis_and_design/transformation_output/owl_ontology/ePO_restrictions.rdf[OWL-restrictions^]
  ** https://raw.githubusercontent.com/OP-TED/ePO/master/analysis_and_design/transformation_output/owl_ontology/ePO_shacl_shapes.rdf[SHACL-shapes^]
 
-== Change notes _EPO 3.0.0.alpha_
+== Change notes _ePO 3.0.0.alpha_
 
 We are working towards a new release publication of the ontology. Judging by the nature of changes we suggest that it is marked as a major release: _3.0.0_. Below is provided detailed account of changes between the _2.0.1_ (https://github.com/OP-TED/ePO/releases/tag/v2.0.1[tag]) and _3.0.0.alpha_ (https://github.com/OP-TED/ePO/releases/tag/3.0.0.alpha[tag]).
 
