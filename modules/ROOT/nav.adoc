@@ -2,6 +2,10 @@
 
 ** xref:wgm-2022.adoc[WGM 2022]
 
+*** xref:notes/2022-04-12-wgm.adoc[2022-04-12]
+
+*** xref:notes/2022-04-05-wgm.adoc[2022-04-05]
+
 *** xref:notes/2022-03-22-wgm.adoc[2022-03-22]
 
 *** xref:notes/2022-03-15-wgm.adoc[2022-03-15]
@@ -332,6 +336,8 @@
 
 * xref:eCatalogueMeetings.adoc[eCatalogue Meetings]
 
+** xref:notes/2022-05-05-ecat.adoc[2022-05-05]
+** xref:notes/2022-04-07-ecat.adoc[2022-04-07]
 ** xref:notes/2022-03-10-ecat.adoc[2022-03-10]
 ** xref:notes/2022-02-24-ecat.adoc[2022-02-24]
 ** xref:notes/2022-01-27-ecat.adoc[2022-01-27]

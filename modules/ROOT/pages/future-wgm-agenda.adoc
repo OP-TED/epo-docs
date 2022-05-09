@@ -2,12 +2,4 @@
 
 === Agenda
 
-* Show WG how the Diagrams Values are currently transposed from the sandbox into the ePO model:
-** Show the Information classes
-** Show the AwardResult situation
-* In eForms  (Rethink Tender/TenderLot, Tender as something englobing a group of lots):
-** Tender is perLot or group of lot, which is not necessarily the same as a LotGroup;
-** A contract is per Tender
-* Show proposed Review model.
-* We can look into Roles.
-* Situations shall still be revised first.
+* Discuss refactored ePO model.
