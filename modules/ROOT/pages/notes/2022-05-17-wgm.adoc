@@ -1,0 +1,73 @@
+== Working Group meeting
+
+*Date:* 17/05/2022  +
+*Participants:* Cecile Guasch, Natalie Muric, Georgia Lodi +
+*Model editor:* Eugeniu Costetchi +
+*Note editor:* Andreea Pasăre
+
+=== Agenda
+
+* Collect feedback on the refactored model
+=== Discussion
+
+
+* Presenting the document from CPSV: comparison between the CPSV-AP approach and the ePO approach.
+** A Concession Contract is a new specific type of Contract.
+** Adding this as a new class in the ePO model, epo:ConcessionContract.
+** The definition can be taken from the Directive 2014/23/EU
+==== Overview diagrams for the ePO model
+
+* Overview
+* Phase views
+* Monetary values
+* Aspect views for:
+** Procurement objects
+** Techniques
+** Strategic procurement
+** Criterion
+** Terms
+** Agents
+** Location
+** Roles
+** Documents
+** Contextual information
+** Notice description
+** Data types
+* The Glossary is under development and will be available in the HTML format.
+* Planning to publish 3.0.0 beta by July 2022
+* Revise, collect and implement the feedback
+* Publish 3.0.0 by mid-July 2022
+* We might not have all the definitions in place yet.
+* Proposing to put all epo classes in a flat list when publishing the model.
+* The Lot is not subject to the Contract Term; it foresees the Contract Term.
+* Contract terms are foreseen in the Lot and in the Contract they are used.
+
+=== Decisions
+
+==== On extending the core vocabularies
+
+* If we are sure that the concepts in the Core Vocab cover everything that we have in the ePO model we can use it directly.
+* If we need additional things typical to the domain we should extend the model.
+
+=== Action points
+
+. The Glossary is under development and will be available in the HTML format.
+. We might not have all the definitions in place yet.
+.. Propose definitions and review them in a future working group meeting.
+.. Propose definitions for new classes
+.. Propose definitions for new attributes
+.. Propose definitions for relations
+.. Prepare an inventory worksheet for the WG to easily discuss
+. The ePO model should be able to directly use CCCEV.
+.. Revise the model with Natalie
+. Check alignment to Core (namespace, definitions)
+.. Follow the rule of thumb: reuse if identical meaning and extend if the meaning is  slightly changed (i.e. new attributes or relations)
+.. Check:
+... Location
+... Person
+... Organisation
+... CCCEV
+... …
+. Create a new epo:Term subclass, epo:ContractSpecificTerm which is a generalisation for epo:ContractTerm.
+. Create a new epo:ConcessionContract.
+.. Copy from CPSV-AP V3.0
