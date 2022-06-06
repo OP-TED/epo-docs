@@ -8,7 +8,8 @@
 |Authors|Andreea Pasare, Eugeniu Costetchi
 |Date|2022-06-04
 |===
-=== New classes
+
+== New classes
 
 * epo:ConcessionContract
 * foaf:Person
@@ -23,6 +24,7 @@
 * epo:ContextualProjection
 * epo:Estimate
 * epo:StatisticalInformation
+
 == Changed classes
 
 === Procurement object package
