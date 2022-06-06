@@ -1,4 +1,0 @@
-== Html version of ePO model from model-refactoring branch
-
-* link:{attachmentsdir}/html_reports/model-refactoring/ePO/index.html[Conceptual model]
-* link:{attachmentsdir}/html_reports/model-refactoring/notices/index.html[notices]
