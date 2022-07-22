@@ -1,0 +1,32 @@
+== Working Group meeting
+
+*Date:* 24/05/2022  +
+*Participants:* Cecile Guasch, Natalie Muric, Georgia Lodi +
+*Model editor:* Eugeniu Costetchi +
+*Note editor:* Andreea Pasăre
+
+=== Agenda
+
+* Collect feedback on the refactored model
+* Present the Glossary
+* ConcessionContract added
+* Discuss the new definitions
+=== Discussion
+
+* Checking alignment to Core Vocabularies (namespaces and definitions)
+* Check for Business class in Core Organisation (?)
+* Discussion on CoreCriterion and ESPD: https://github.com/OP-TED/ESPD-EDM/tree/v3.0.1/conceptual-model[https://github.com/OP-TED/ESPD-EDM/tree/v3.0.1/conceptual-model]
+=== Action points
+
+. Publish html Glossary for review
+. Check alignment to Core Vocabularies (namespaces and definitions)
+.. Update attributes names to any core classes, including cpv:Person
+. Revise the Criterion module
+.. Check according to eForms
+.. Check CCCEV
+.. epo:hasPersonalSituationCondition attribute is an instance of cccev:InformationRequirement (it may be removed ???) but it has to be mapped from StandardForms
+.. Separate threshold and weight : weight is in criterion and threshold is on constraint
+. Import Core vocabularies into ePO ontology
+.. CPV
+.. CPOV
+.. Create a configurable import specifications for model2owl (Dragos)

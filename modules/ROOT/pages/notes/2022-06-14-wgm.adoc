@@ -1,0 +1,21 @@
+== Working Group meeting
+
+*Date:* 14/06/2022  +
+*Participants:* Georgia Lodi, Natalie Muric, Giovanni Paolo Sellitto +
+*Model editor:* Eugeniu Costetchi +
+*Note editor:* Andreea Pasăre
+
+=== Agenda
+
+* Discuss ePO 3.0.0 beta release
+=== Discussion
+
+* Buyer responsibilities
+* TED-SWS notices transformation pipeline:
+** Present the conceptual mappings
+** RML mappings
+** SHACL validation report
+
+=== Action Points
+
+* Develop competency questions and sparql queries based on ePO 3.0.0

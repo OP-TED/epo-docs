@@ -1,0 +1,24 @@
+== Working Group meeting
+
+*Date:* 21/06/2022  +
+*Participants:* Georgia Lodi, Natalie Muric, Giovanni Paolo Sellitto +
+*Model editor:* Eugeniu Costetchi +
+*Note editor:* Andreea Pasăre
+
+=== Agenda
+
+* Work on eCatalogue Github issues
+* Discuss VAT Ontology
+=== Discussion
+
+* The work needed for eCatalogue module development is in the Github issue https://github.com/OP-TED/ePO/issues/339[339].
+==== VAT Ontology
+
+* Start from the written Law and provide the conceptual mapping
+* To serve as a conceptual map for judges and lawyers
+* Lightweight ontology, no axiomatic underpinning
+* Instance texts:
+** judgement cases to be annotated ( ~ few thousands cases),
+** identify concepts in the texts
+** Core Legal Ontology is something to look into
+
