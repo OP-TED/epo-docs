@@ -1,0 +1,94 @@
+== Working Group meeting
+
+*Date:* 26/07/2022  +
+*Participants:* Paloma Arillo, Cecile Guasch, Giorgia Lodi +
+*Model editor:* Eugeniu Costetchi +
+*Note editor:* Andreea Pasăre
+
+=== Agenda
+
+* Add missing definitions for eCatalogue
+
+=== Discussion
+
+==== eCatalogue missing definitions
+
+Added new definitions for the following:
+
+* epo-cat:Certifier
+_“A role of an agent that assesses the conformance of an Item to a set of requirements and grants the certificate as a proof of conformance._
+
+_WG approval 26/07/2022”_
+
+* epo-cat:CertificationLabel
+_“Concept that stands for a set of norms, expectations, standards and policies._
+
+_Additional Information:_ +
+_Such standards may relate to social, ethical and quality etc._
+
+_WG approval 26/07/2022”_
+
+* epo-cat:ItemDescription
+_“Construct meant to represent the association between an attribute defined in an external classification scheme and the value ascribed to it._
+
+_WG approval 26/07/2022”_
+
+* epo-cat:ItemCertificate
+	“”
+
+* epo-cat:hasPricePercentage
+_“The factor relative to the price charged in addition._
+
+_WG approval 26/07/2022”_
+
+* epo-cat:hasCertificationNumber
+_“The unique identifier of the certificate._
+
+_WG approval 26/07/2022”_
+
+* epo-cat:hasAttributeType
+_“Construct meant to represent the association between an attribute defined in an external classification scheme and the value ascribed to it._
+
+_WG approval 26/07/2022”_
+
+* epo-cat:hasFixedAmount
+_“The predetermined monetary value charged in addition to the price._
+
+_WG approval 26/07/2022”_
+
+* Added epo-cat:hasReferenceURI attribute on the class epo-cat:CertificationLabel with the following definition:
+_“A reference to where the label specification (norms, expectations, standards and policies) can be found._
+
+_WG approval 26/07/2022”_
+
+* epo:hasValidityPeriod
+_“The property indicating when the ItemCertificate is in force._
+
+_WG approval 26/07/2022”_
+
+* epo-cat:issuedByCertifier
+_“Relation indicating the Certifier responsible for providing the ItemCertificate._
+
+_Additional Information:_ +
+_Certifier is a role played by an organisation._
+
+_WG approval 26/07/2022”_
+
+* epo-cat:attestedByLabel
+_“Relation indicating the conformance subject represented by a CertificationLabel._
+
+_WG approval 26/07/2022”_
+
+* epo-cat:hasCertification
+_“The property providing the proof of conformance._
+
+_WG approval 26/07/2022”_
+
+* epo-cat:hasBaseQuantity should be mandatory, so the cardinality was set to 1.
+
+* epo-cat: hasLeadTime changed to epo-cat:hasExpectedDeliveryTime with the following definition:
+_“The expected amount of time between the order and delivery of an item. _
+
+_WG approval 26/07/2022”_
+
+

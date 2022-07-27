@@ -1,7 +1,7 @@
 == Working Group meeting
 
 *Date:* 19/07/2022  +
-*Participants:* Cecile Guasch, Natalie Muric +
+*Participants:* Paloma Arillo, Cecile Guasch +
 *Model editor:* Eugeniu Costetchi +
 *Note editor:* Andreea Pasăre
 
