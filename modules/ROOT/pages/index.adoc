@@ -6,6 +6,7 @@ In the framework of this project, we will identify and give examples of each ste
 
 The release of version 3.0.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v3.0.0[here].
 
+RDF representation of the eProcurement ontology can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.0.0/analysis_and_design/transformation_output/ePO/owl_ontology[here].
 
 == Release notes
 
