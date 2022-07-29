@@ -1,5 +1,9 @@
-* xref:Conceptual-Model-v2.0.1.adoc[Conceptual Model]
-** xref:BDTI.adoc[BDTI Application Profile]
-** xref:Reg2015.adoc[Reg2015 Application Profile]
+* Conceptual Model
+** xref:ePO-core-Conceptual-Model-v3.0.0.adoc[ePO core]
+** xref:eCatalogue-Conceptual-Model-v3.0.0.adoc[eCatalogue]
 
-* xref:eProcurement-Glossary-v2.0.1.adoc[Glossary]
+* Glossary
+** xref:ePO-core-Glossary-v3.0.0.adoc[ePO core]
+** xref:eCatalogue-Glossary-v3.0.0.adoc[eCatalogue]
+
+* xref:Report-v3.0.0.adoc[Report]

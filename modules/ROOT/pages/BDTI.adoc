@@ -1,5 +1,0 @@
-== *ePO - eProcurement Ontology BDTI*
-
-* link:{attachmentsdir}/BDTI/index.html[HTML view of BDTI Conceptual Model]
-
-The BDTI (Big Data Test Infrastructure) conceptual model for eProcurement was created for the BDTI pilot project and provides a view of the ontology concepts used in the pilot with the appropriate cardinalities required by the pilot.  The conclusion drawn from the pilot is that in the future application profiles should be created from the ontology for specific use cases and artifacts requiring more restrictive cardinalities.  The ontology should remain as open as possible as far as cardinalities are concerned to fit different use cases.
