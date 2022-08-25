@@ -1,5 +1,5 @@
 name: EPO
-version: dev
+version: main
 title: eProcurement Ontology
 start_page: ROOT:index.adoc
 nav:

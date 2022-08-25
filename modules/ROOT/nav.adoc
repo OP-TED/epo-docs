@@ -1,16 +1,10 @@
-* xref:epo-dev-work.adoc[Development]
-** xref:master-branch.adoc[master]
-//** xref:release-3.0.0-branch.adoc[release-3.0.0]
-** xref:frozen-2.0.2-branch.adoc[frozen-2.0.2]
-
+* ePO Versions
+** xref:dev@EPO::index.adoc[Development]
+** xref:3.0.0@EPO::index.adoc[ePO 3.0.0]
+** xref:2.0.1@EPO::index.adoc[ePO 2.0.1]
+** xref:2.0.0@EPO::index.adoc[ePO 2.0.0]
+** xref:1.0.0@EPO::index.adoc[ePO 1.0.0]
 * xref:epo-guidelines.adoc[Guidelines]
 * xref:epo-wgm::index.adoc[Working Group Documents]
-
-* xref:releases.adoc[Releases]
-** xref:3.0.0@EPO::index.adoc[ePO 3.0.0 documentation]
-** xref:2.0.1@EPO::index.adoc[ePO 2.0.1 documentation]
-** xref:2.0.0@EPO::index.adoc[ePO 2.0.0 documentation]
-** xref:1.0.0@EPO::index.adoc[ePO 1.0.0 documentation]
-
 
 
