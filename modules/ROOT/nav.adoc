@@ -1,6 +1,6 @@
 * Conceptual Model
-** development branch
-** frozen-2.0.2
+** development-branch
+** xref:frozen-2.0.2-branch.adoc[frozen 2.0.2]
 * xref:epo-guidelines.adoc[Guidelines]
 * xref:epo-wgm::index.adoc[Working Group Documents]
 
