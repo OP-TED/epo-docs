@@ -1,9 +1,6 @@
-* ePO Versions
-** xref:dev@EPO::index.adoc[Development]
-** xref:3.0.0@EPO::index.adoc[ePO 3.0.0]
-** xref:2.0.1@EPO::index.adoc[ePO 2.0.1]
-** xref:2.0.0@EPO::index.adoc[ePO 2.0.0]
-** xref:1.0.0@EPO::index.adoc[ePO 1.0.0]
+* Conceptual Model
+** development branch
+** frozen-2.0.2
 * xref:epo-guidelines.adoc[Guidelines]
 * xref:epo-wgm::index.adoc[Working Group Documents]
 
