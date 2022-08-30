@@ -1,0 +1,3 @@
+== *eProcurement Glossary 2.0.0*
+
+=== link:https://github.com/OP-TED/ePO/blob/6a4eaf77727dc0b8ad3463484b44aef9d4de5694/v2.0.0/02_IR_DED/eProcurement_glossary.xlsx[Download here the ePO Glossary]
