@@ -7,3 +7,5 @@
 ** xref:eCatalogue-Glossary-v3.0.0.adoc[eCatalogue]
 
 * xref:Report-v3.0.0.adoc[Report]
+
+* xref:dev@EPO::epo-guidelines.adoc[Guidelines]
