@@ -15,3 +15,5 @@
 ** xref:mapping_CM_classes.adoc[Mapping CM Classes]
 ** xref:mapping_CM_data_type_properties.adoc[Mapping CM Data type properties]
 ** xref:mapping_CM_object_type_properties.adoc[Mapping CM Object type properties]
+
+* xref:2.0.0@EPO::epo-guidelines.adoc[Guidelines]
