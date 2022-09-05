@@ -3,3 +3,5 @@
 ** xref:Reg2015.adoc[Reg2015 Application Profile]
 
 * xref:eProcurement-Glossary-v2.0.1.adoc[Glossary]
+
+* xref:epo-guidelines.adoc[Guidelines]
