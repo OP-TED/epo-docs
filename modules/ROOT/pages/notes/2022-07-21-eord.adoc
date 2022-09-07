@@ -1,0 +1,24 @@
+== eOrdering meeting
+
+*Date:* 21/07/2022 +
+*Participants:* Pietro Palermo +
+*Model editor:* Eugeniu Costetchi  +
+*Note editor:* Andreea Pasăre
+
+=== Agenda
+
+* What is the scope of the eOrdering module? Which concepts and relations between them are covered here?
+* What sort of competency questions shall be answered? What shall be answered by the ontology?
+* What use cases, instance data examples, and application scenarios shall be considered?
+
+=== Discussion
+
+* PEPPOL presentation
+* There are two sections, “order only” and “ordering”, which contain the response
+* When describing business term, it is bound to UBL syntax in
+* Main references:
+** https://store.uni.com/en/p/UNI1608382_OEN/uni-cen-ts-16931-3-2-2020[European electronic invoice] European Norm is another reference material (paid standard)
+
+=== Decisions
+
+* Meetings on Thursday from 14:30-16:30 EET

@@ -1,0 +1,3 @@
+== Cumulated content of eFulfilment meetings
+
+include::notes/2022-08-11-eful.adoc[]

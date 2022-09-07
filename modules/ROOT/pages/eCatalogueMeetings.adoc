@@ -1,5 +1,6 @@
 == Cumulated content of eCatalogue meetings
 
+include::notes/2022-07-28-ecat.adoc[]
 include::notes/2022-07-14-ecat.adoc[]
 include::notes/2022-06-30-ecat.adoc[]
 include::notes/2022-06-16-ecat.adoc[]

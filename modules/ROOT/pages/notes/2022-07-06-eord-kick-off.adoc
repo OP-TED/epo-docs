@@ -1,0 +1,70 @@
+== eOrdering kick-off meeting and scope definition
+
+*Date:* 06/07/2022 +
+*Participants:* Giorgia Lodi, Natalie Muric, Pietro Palermo +
+*Model editor:* Eugeniu Costetchi  +
+*Note editor:* Andreea Pasăre
+
+=== Agenda
+
+* What is the scope of the eOrdering module? Which concepts and relations between them are covered here?
+* What sort of competency questions shall be answered? What shall be answered by the ontology?
+* What use cases, instance data examples, and application scenarios shall be considered?
+* What are the key experts to be consulted in this work?
+* What are the main materials to be consulted/considered?
+* What is the definition of done?
+=== Discussion
+
+* TC440 work is going on and can be aligned to efforts in eProcurement ontology
+* Need:
+** to develop a data model that can be used in the transactions.
+** not a big data model, but something that works for the market
+** start with a core data model (that can be enlarged next year)
+* What is the definition of done?
+** All data information is necessary for their (TC440) transaction definitions.
+* What are the key experts to be consulted in this work?
+** Pietro /!\
+* What are the main materials to be consulted/considered?
+** In TC440 there are already specifications
+* *What is the scope of the eOrdering module? Which concepts and relations between them are covered here?*
+** Order is mostly about quantities of items (goods and services) and is linked to a catalogue.
+** Item identifier leads to a catalogue, and eOrdering will use that
+** Orders and Deliveries (request of delivery, not the actual delivery) are covered by the model
+** Time, place, price of delivery/order
+** Packaging is an important aspect of the eCatalogue
+** eCatalogue and eOrdering modules will be reused in the eInvoice module
+** Checking the performance in the supply chain
+*** e.g. on delivery: order date vs delivery date
+** If there is a product that must be stored at a low temperature, then this kind of information must be specified in the order.
+** Some information about the item is critical for the transportation and preservation of the item (this info is possibly in the core or the extension)
+** The properties (relevant in the logistics) are specified in the Item (i.e in the eCatalogue)
+** The order MUST support the basic logistic process; Basic, not everything, of the logistics.
+** For example, insurance aspects can be covered in the eOrdering but only the basic, not the details.
+** For example, hazardous items need to be described and delivery information specified.
+** The contract is “something”, and the “order” is something else.
+** Main concepts:
+*** Order
+*** Parties
+*** Expected delivery (time, place, receiver)
+*** Accounting properties (price, tax, additional charges, )
+*** Quantity totals (certain/final)
+**** Amount is estimated (and may differ from what is delivered in the end)
+**** “an ordered quantity” vs “delivered quantity” vs “invoiced quantity”
+*** Monetary totals (estimated monetary values and the actual total will be put in the invoice)
+**** Price (is not estimated, is fixed)
+**** Additional costs related to the packaging, delivery, dispatch
+*** Items (with IDs in some schema) and their classification
+*** Additional properties of an Item (catalogue related) useful for people to +++<u>+++Package+++</u>+++, +++<u>+++Deliver+++</u>+++, +++<u>+++Dispatch+++</u>+++
+*** We can try to profile properly the information that shall be in the catalogue, and in order.
+* What sort of competency questions shall be answered? What shall be answered by the ontology?
+** When, where and for what price was an item ordered? (not delivered, because the delivery is in the eFulfillment)
+** Which group of items have been ordered by a “buyer” from a “seller”?
+** What is the expected delivery date and place (not the actual one)?
+** Who will receive the order (i.e. the consignee)?
+* The work methodology:
+** https://github.com/OP-TED/ePO/issues[GitHub Issues]
+** Regular meetings (x2 Wednesdays and then every 2nd Thursday)
+* What are the main materials to be consulted/considered?
+** https://docs.peppol.eu/poacc/upgrade-3/syntax/Order/tree/[PEPPOL specifications]
+** https://docs.oasis-open.org/ubl/UBL-2.3.html[UBL-2.3]
+* /!\ Warning: We shall try and keep it as small as possible. eOrder may be one of the largest areas in the post-award.
