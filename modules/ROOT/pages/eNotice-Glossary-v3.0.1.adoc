@@ -1,0 +1,5 @@
+== *eNotice Glossary*
+
+In the link below the different concepts that compose the eNotice module can be consulted. Note that the definitions of each class can be consulted clicking over each class:
+
+link:{attachmentsdir}/html_reports/v3.0.1/glossary/eNotice_glossary.html[Click here to see the eNotice Glossary]

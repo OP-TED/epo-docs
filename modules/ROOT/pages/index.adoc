@@ -10,6 +10,9 @@ RDF representation of the eProcurement ontology can be downloaded link:https://g
 
 RDF representation of the eCatalogue module can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.0.1/implementation/eCatalogue/owl_ontology[here].
 
+RDF representation of the eNotice module can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.0.1/implementation/eNotice/owl_ontology[here].
+
+
 == Release notes
 
 === General changes
@@ -20,23 +23,18 @@ RDF representation of the eCatalogue module can be downloaded link:https://githu
 |Reference ePO version|3.0.0
 |Target ePO version|3.0.1
 |Authors|Andreea Pasăre, Eugeniu Costetchi
-|Date|2022-09-21
+|Date|2022-09-23
 |===
+
+* All subclasses of epo:Notice have been moved to a separate module, eNotice.
+* The prefix used for the eNotice module is _“epo-not:”_.
+* The prefix used for the eCatalogue module is _“epo-cat”_.
 
 === New classes
 
 * epo:ConcessionEstimate
 * epo:IndefiniteDuration
 * epo:SpecificDuration
-
-=== Deleted classes
-
-* epo:CompetitionNotice (moved to eNotification module)
-* epo:CompletionNotice (moved to eNotification module)
-* epo:ContractModificationNotice (moved to eNotification module)
-* epo:DirectAwardPrenotificationNotice (moved to eNotification module)
-* epo:PlanningNotice (moved to eNotification module)
-* epo:ResultNotice (moved to eNotification module)
 
 === Changed classes
 
@@ -176,5 +174,31 @@ RDF representation of the eCatalogue module can be downloaded link:https://githu
 |epo-cat:Catalogue|comprisesCatalogueLine -> epo-cat:CatalogueLine|
 |epo-cat:ChargeInformation|epo-cat:isSubordinatedToContract -> epo:Contract|epo-cat:isSubordinatedTo -> epo:Contract
 |epo-cat:ChargeInformation||epo-cat:hasFixedAmount -> epo:MonetaryValue
+|===
+
+==== eNotice module
+
+|===
+|*class*|*added property*|*deleted property*
+
+|epo-not:CompetitionNotice (from epo:CompetitionNotice)|epo-not:announcesLot -> epo:Lot|epo:announcesLot -> epo:Lot
+|epo-not:CompetitionNotice (from epo:CompetitionNotice)|epo-not:announcesLotGroup -> epo:LotGroup|epo:announcesLotGroup -> epo:LotGroup
+|epo-not:CompetitionNotice (from epo:CompetitionNotice)|epo-not:announcesRole -> epo:AgentInRole|epo:announcesRole -> epo:AgentInRole
+|epo-not:CompetitionNotice (from epo:CompetitionNotice)|epo-not:announcesProcedure -> epo:Procedure|epo:announcesProcedure -> epo:Procedure
+|epo-not:ContractModificationNotice (from epo:ContractModificationNotice)|epo-not:refersToContractToBeModified -> epo:Contract|epo:refersToContractToBeModified -> epo:Contract
+|epo-not:DirectAwardPrenotificationNotice (from epo:DirectAwardPrenotificationNotice)|epo-not:announcesProcedure -> epo:Procedure|epo:announcesProcedure -> epo:Procedure
+|epo-not:PlanningNotice (from epo:PlanningNotice)|epo-not:announcesPlannedProcurementPart -> epo:PlannedProcurementPart|epo:announcesPlannedProcurementPart -> epo:PlannedProcurementPart
+|epo-not:ResultNotice|epo-not:announcesNonPublishedElement -> epo:PublicationProvision|epo:announcesNonPublishedElement -> epo:PublicationProvision
+|epo-not:ResultNotice|epo-not:refersToRole -> epo:AgentInRole|epo:refersToRole -> epo:AgentInRole
+|epo-not:ResultNotice|epo-not:announcesLotAwardOutcome -> epo:LotAwardOutcome|epo:announcesLotAwardOutcome -> epo:LotAwardOutcome
+|epo-not:ResultNotice|epo-not:refersToProcedureTerm -> epo:ProcedureTerm|epo:refersToProcedureTerm -> epo:ProcedureTerm
+|epo-not:ResultNotice|epo-not:refersToLot -> epo:Lot|epo:refersToLot -> epo:Lot
+|epo-not:ResultNotice|epo-not:announcesRole -> epo:AgentInRole|epo:announcesRole -> epo:AgentInRole
+|epo-not:ResultNotice|epo-not:refersToReviewTerm -> epo:ReviewTerm|epo:refersToReviewTerm -> epo:ReviewTerm
+|epo-not:ResultNotice|epo-not:announcesTender -> epo:Tender|epo:announcesTender -> epo:Tender
+|epo-not:ResultNotice|epo-not:refersToLotGroup -> epo:LotGroup|epo:refersToLotGroup -> epo:LotGroup
+|epo-not:ResultNotice|epo-not:announcesContract -> epo:Contract|epo:announcesContract -> epo:Contract
+|epo-not:ResultNotice|epo-not:announcesNoticeAwardInformation -> epo:NoticeAwardInformation|epo-not:announcesNoticeAwardInformation -> epo:NoticeAwardInformation
+|epo-not:ResultNotice|epo-not:announcesLotGroupAwardInformation -> epo:LotGroupAwardInformation|epo:announcesLotGroupAwardInformation -> epo:LotGroupAwardInformation
 |===
 

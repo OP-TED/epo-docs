@@ -1,10 +1,12 @@
 * Conceptual Model
 ** xref:ePO-core-Conceptual-Model-v3.0.1.adoc[ePO core]
 ** xref:eCatalogue-Conceptual-Model-v3.0.1.adoc[eCatalogue]
+** xref:eNotice-Conceptual-Model-v3.0.1.adoc[eNotice]
 
 * Glossary
 ** xref:ePO-core-Glossary-v3.0.1.adoc[ePO core]
 ** xref:eCatalogue-Glossary-v3.0.1.adoc[eCatalogue]
+** xref:eNotice-Glossary-v3.0.1.adoc[eNotice]
 
 //* xref:Report-v3.0.0.adoc[Report]
 
