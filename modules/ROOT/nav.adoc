@@ -8,6 +8,6 @@
 ** xref:eCatalogue-Glossary-v3.0.1.adoc[eCatalogue]
 ** xref:eNotice-Glossary-v3.0.1.adoc[eNotice]
 
-//* xref:Report-v3.0.0.adoc[Report]
+* xref:Report-v3.0.0.adoc[Report]
 
 * xref:dev@EPO::epo-guidelines.adoc[Guidelines]
