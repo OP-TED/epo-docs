@@ -15,6 +15,8 @@ RDF representation of the eNotice module can be downloaded link:https://github.c
 
 == Release notes
 
+This release was meant to clean up the model.
+
 === General changes
 
 |===
@@ -29,6 +31,7 @@ RDF representation of the eNotice module can be downloaded link:https://github.c
 * All subclasses of epo:Notice have been moved to a separate module, eNotice.
 * The prefix used for the eNotice module is _“epo-not:”_.
 * The prefix used for the eCatalogue module is _“epo-cat”_.
+* Diagrams were cleaned up to provide a better user readability.
 
 === New classes
 
@@ -53,7 +56,7 @@ RDF representation of the eNotice module can be downloaded link:https://github.c
 |*class*|*added property*|*deleted property*
 
 |epo:Lot|time:unitType -> time:TemporalUnit|
-|epo:Procedure|epo:hasRestatedEstimatedValue -> epo:MonetaryValue|
+|epo:Lot|epo:hasRestatedEstimatedValue -> epo:MonetaryValue|
 |epo:Tender|epo:foreseesContractSpecificTerm -> epo:ContractSpecificTerm|
 |epo:Tender|epo:foreseesConcession -> epo:ConcessionEstimate|
 |epo:Tender||epo:hasEstimatedUserConcessionRevenue -> epo:MonetaryValue
