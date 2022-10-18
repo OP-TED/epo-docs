@@ -1,0 +1,33 @@
+== Working Group meeting
+
+*Date:* 27/09/2022  +
+*Participants:* Natalie Muric, Csongor Nyulas, Garcia Merino, Mauro +
+*Model editor:* Andreea Pasăre +
+*Note editor:* Andreea Pasăre
+
+=== Agenda
+
+* Discuss GH issues for F03 standard form mappings
+** 187
+
+=== Discuss
+
+==== Github 187
+
+* We need a consistent way of mapping for section 5 whether we have the lot number or the contract number.
+* It was agreed that if the lot was not mentioned and there was only one lot, the lot was taken from section II.
+* How to approach the mappings if we have multiple lots, but without the lot numbers specified.
+* if there is no award there is no contract and therefore there is no instantiation
+* If the contract is awarded you can infer from the ontology that the contract exists.
+* I'm not sure therefore that we have to create a link that can be inferred.
+* The title could be for the lot if it is a non-award.
+* If awarded then the title will be the contract title.
+* If non-award then the title will be the lot title.
+* If we have a contract number, the RDF should have one as well.
+* If we have a lot number, the RDF should have one as well.
+
+==== Github 126
+
+* The excel maps correctly to the authority table economic-operator-size however the rdf shows a boolean see 348503-2021
+* The authority table is not listed in the resources
+* This needs to be documented in the mappings: although in xml we say it does not exist we need to explain that.

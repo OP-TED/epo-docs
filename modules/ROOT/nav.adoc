@@ -1,6 +1,10 @@
 * Working Group meetings
 
 ** xref:wgm-2022.adoc[WGM 2022]
+*** xref:notes/2022-10-11-wgm.adoc[2022-10-11]
+*** xref:notes/2022-10-04-wgm.adoc[2022-10-04]
+*** xref:notes/2022-09-27-wgm.adoc[2022-09-27]
+*** xref:notes/2022-09-13-wgm.adoc[2022-09-13]
 *** xref:notes/2022-09-06-wgm.adoc[2022-09-06]
 *** xref:notes/2022-08-30-wgm.adoc[2022-08-30]
 *** xref:notes/2022-08-23-wgm.adoc[2022-08-23]

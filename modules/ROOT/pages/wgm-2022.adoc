@@ -1,5 +1,10 @@
 == Cumulated content of Working Group Meeting from 2022
 
+
+include::notes/2022-10-11-wgm.adoc[]
+include::notes/2022-10-04-wgm.adoc[]
+include::notes/2022-09-27-wgm.adoc[]
+include::notes/2022-09-13-wgm.adoc[]
 include::notes/2022-09-06-wgm.adoc[]
 include::notes/2022-08-30-wgm.adoc[]
 include::notes/2022-08-23-wgm.adoc[]
