@@ -210,6 +210,8 @@
 
 * xref:eOrderingMeetings.adoc[eOrdering Meetings]
 
+** xref:notes/2022-10-06-eord.adoc[2022-10-06]
+** xref:notes/2022-09-08-eord.adoc[2022-09-08]
 ** xref:notes/2022-08-25-eord.adoc[2022-08-25]
 ** xref:notes/2022-07-21-eord.adoc[2022-07-21]
 ** xref:notes/2022-07-06-eord-kick-off.adoc[2022-07-06-kick-off]
