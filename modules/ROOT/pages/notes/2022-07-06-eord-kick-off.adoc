@@ -13,6 +13,7 @@
 * What are the key experts to be consulted in this work?
 * What are the main materials to be consulted/considered?
 * What is the definition of done?
+
 === Discussion
 
 * TC440 work is going on and can be aligned to efforts in eProcurement ontology
