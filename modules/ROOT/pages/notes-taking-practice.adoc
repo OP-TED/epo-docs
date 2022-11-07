@@ -24,7 +24,7 @@ This document proposes a methodology on how to capture in a structured manner th
 == Requirements
 This section captures the set of requirements for documenting the workgroup sessions.
 
-* The workgroup meeting discussions need to be recorded so that on a latter occasion the reader know what were the topics addressed and teh decision on each of the topics.
+* The workgroup meeting discussions need to be recorded so that on a latter occasion the reader know what were the topics addressed and the decision on each of the topics.
 * The workgroup decisions must be accessible on a public space, preferably next to the model.
 * The notes should, where possible, contain visual representation or diagrams for better conveying the intended meaning.
 * to be continued ...
@@ -43,11 +43,11 @@ The final goals and main responsibilities of the model editor are:
 
 *Model editor*
 
-The session has at its center a view (or screen) of the model at work shared by the _model editor_. All the participants see the model view and discuss a given issue, its representation in the model or information from reference materials that need to be considered. The _model editor_ shows on the screen teh discussed model parts and if needed performs the necessary model editing actions to reflect what participants are discussing.
+The session has at its center a view (or screen) of the model at work shared by the _model editor_. All the participants see the model view and discuss a given issue, its representation in the model or information from reference materials that need to be considered. The _model editor_ shows on the screen the discussed model parts and if needed performs the necessary model editing actions to reflect what participants are discussing.
 
 The final goals and main responsibilities of the model editor are:
 
-* ensure teh model part under revision is consistent with the decision of the group
+* ensure the model part under revision is consistent with the decision of the group
 * ensure that the editing is complete (online or offline by the next session). If the editing is incomplete, the editor will either ask questions or require time to complete the model part editing, or take note of what shall be done after the session.
 * implement all the previous session tasks before the next session (provided that the tasks were well specified and did not require domain expert validation)
 * ask competency questions to the working group in order to elicit modeling aspects and implement them on the spot or record implementation tasks.
@@ -58,7 +58,7 @@ The session discussion is documented by the _session secretary_, who is responsi
 
 The final goals and main responsibilities of the session secretary are:
 
-* be clear what issue is discussed (most of the time). If teh discussion is out of the scope of the issue, then the course is gently turned back in.
+* be clear what issue is discussed (most of the time). If the discussion is out of the scope of the issue, then the course is gently turned back in.
 * document as clearly as possible (in a structured manner) the basic aspects of each discussed issue. The preferred decision structure shall be compatible with _model anamnesis_ approach described in Section <<_model_anamnesis>>. If the documentation is incomplete, then the additional questions are asked in order to register a complete picture of the issue.
 * record competency questions for each issue discussed that characterise on element of a part of the model.
 * records model editing tasks that shall be executed after the session is complete and before the next session. This means that the tasks are not complex and are either model agnostic or very well specified so that no presence of no domain expert is necessary.
@@ -101,7 +101,7 @@ The "model anamnesis" approach proposes a specialised template that captures a m
 |_The reason that leads the architect to choose the speciﬁc decision among the alternatives. A rationale answers the “why” question for each decision. The information of this ﬁeld should provide some added value to the overall decision of the information._
 
 |*Notes*
-|_Here are recorded general and additional information that help tehr eader to better understand the issue_
+|_Here are recorded general and additional information that help the reader to better understand the issue_
 |===
 
 == Versioning system
