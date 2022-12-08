@@ -1,5 +1,9 @@
 = Cumulated content of eOrdering meetings
 
+include::notes/2022-12-01-eord.adoc[]
+
+include::notes/2022-11-17-eord.adoc[]
+
 include::notes/2022-11-03-eord.adoc[]
 
 include::notes/2022-10-20-eord.adoc[]

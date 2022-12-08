@@ -1,0 +1,71 @@
+== eOrdering meeting
+
+*Date:* 17/11/2022 +
+*Participants:* Veit Jahns, Natalie Muric, Peitro Palermo, Thomas Petterson, Ivan Wiler +
+*Model editor:* Eugeniu Costetchi  +
+*Note editor:* Andreea Pasăre
+
+=== Agenda
+
+* *Order-delivery-invoice relationship*
+
+In Sweden we have had e-business up and running in the public sector since the 1990’s. The first standard was in EDIFACT-format and was based on GS1 EANCOM. It was named SFTI/ESAP 6. +
+Later we have been adopting to Peppol. The complexity regarding the *order-delivery-invoice* is about the same. Of course we are using the standard Peppol BIS Billing 3 as the recommended invoice format.
+
+In the order *head level* you find the “Delivery location” and the “Internal party to whom the goods are delivered (beneficiary)”. And also the expected delivery date. +
+On the *line level* you can *NOT* define a different Delivery location and the Internal party. You may have different delivery dates though. +
+This way it’s not too complex. +
+In Peppol (and as it’s implemented in Sweden), if you need to place an order to different  “Delivery location” and “Internal party to whom the goods are delivered”, you just place another order. +
+It’s very straight forward.
+
+In the ePO-meetings the designed structure seems to me to be *much too complex* as “Delivery location” and “Internal party to whom the goods are delivered” is also on the order line.
+
+NOTE that the invoice only refers to ONE order and ONE “Delivery location” and ONE “Internal party to whom the goods are delivered” and ONE delivery. +
+This means that the proposed complexity will also have implications to the way invoices must be implemented.
+
+Hi Thomas, as in the invoice we have the same reasoning to do: if we forsee a multiple relationship between order and delivery location 1:n in case one country decide not to have it, it will issue an usage specification to reduce cardinality to 1:1 remaining still compliant to the semantic model.
+
+Putting in the model a 1:1 relationship, instead, will mean that countries with more complex environment (like Italy) have to use extensions to reach the desired result.
+
+=== Discussion
+
+==== Order-delivery-invoice relationship
+
+Questions
+
+* How many invoices can correspond to an order?
+** Many (in Italy)
+** One (in Sweden)
+** One (PEPPOL)
+* How many orders can be covered by an invoice?
+** …
+* How many deliveries/dispatches can be done from an order?
+** …
+* How many orders can be covered by a delivery/dispatch?
+** …
+
+Issues
+
+* Same relationship at the header and line levels leads to the problem of possibly conflicting information
+** In ordering
+*** Delivery information
+*** Discount information
+*** Charge Information
+** In despatch
+*** Shipment information
+* In despatch some information is mirroring order, how can this be reduced?
+** For example, item is described in the DespatchLine, isn’t it enough to make a reference to the order line?
+
+==== Notes
+
+In Sweden the delivery address is only at the header level. +
+If an italian order is sent to a sweden supplier there will be problems.
+
+An order may specify some information at the Header Level or at Line Level, but NOT both at the same time.  +
+A solution may be to create two subclasses: SimpleOrder and AdvancedOrder.
+
+If delivery information is present at both line and header level, you choose whatever we want. But this solution might lead to multiple interpretations.
+
+An Order will contain a Lot ID.
+
+An invoice has a project reference and contract reference at the header level. In the line level there are no references to contract, project, order, despatch advice because an invoice to be as simple as possible in order to be accepted in every environment.

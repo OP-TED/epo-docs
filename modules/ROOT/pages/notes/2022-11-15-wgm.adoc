@@ -1,0 +1,141 @@
+== Working Group meeting
+
+*Date:* 15/11/2022  +
+*Participants:* Thor Steinar Møller, Natalie Muric, Giovanni Paolo Sellito +
+*Model editor:* Eugeniu Costetchi +
+*Note editor:* Andreea Pasăre
+
+=== Agenda
+
+* Dynamic Purchasing System
+
+=== Discussion
+
+==== Open procedure with framework agreement
+
+Single-stage and multi-stage procedure -  +
+Tenderers may be limited or pre-set -   +
+Buyer can the same (as in FA) or different (for using the FA to establish a contract) -
+
+==== Stages
+
+* In a single stage procedure there is
+** a single process start-to-end
+** Only one tender deadline
+** Allowed procedure types
+*** Open
+*** Restricted
+*** Other single stage procedure
+** Disallowed
+*** Negotiated
+*** Competitive dialogues
+*** Competitive tendering (perhaps)
+*** Innovation partnership
+*** Negotiated with prior publication of a call for competition / competitive with negotiation
+*** Negotiated without prior call for competition
+*** Other multiple stage procedure
+* In a multi stage procedure there is
+** +++<u>+++Multiple+++</u>+++ tender deadlines
+*** +++<u>+++ONLY+++</u>+++ One call for competition that is +++<u>+++published+++</u>+++
+**** +++<u>+++Possibly everyone is invited or possibly a restricted set+++</u>+++
+*** When the competition is reopened (the subsequent stage, not the first one), it is “limited” (no notice published)
+**** Always a restricted set of participants
+**** Reopen always only with “award” criteria and no “exclusion” or “selection” criteria.
+** DPS - introduces ONE subsequent stage
+*** New economic operators may join based on “requests to join” , but no new publication of CN. The requests to join are based on the initial CN.
+*** DPS can be open +++<s>+++or closed (in Italy).+++</s>+++
+** Negotiated procedure can have “infinite” number of stages
+** Allowed procedure types
+*** Negotiated
+*** Competitive dialogues
+*** Competitive tendering (perhaps)
+*** Innovation partnership
+*** Negotiated with prior publication of a call for competition / competitive with negotiation
+*** Negotiated without prior call for competition
+*** Other multiple stage procedure
+** Disallowed procedure types
+*** Open
+*** Restricted
+*** Other single stage procedure
+
+==== Dynamic Purchasing System (DPS)
+
+Procedure types allowed with DPS
+
+* Restricted
+Procedure types Disallowed
+
+* +++<u>+++_All the rest_+++</u>+++
+
+A DPS never really completes. One can keep adding participants.
+
+==== DPS flow
+
+* +++<u>+++[Establishing the DPS - stage]+++</u>+++
+** Purpose:
+*** Announce the call for competition
+*** Attract requests for participation
+*** Choose candidates
+* Can publish a *Prior Information Notice (PIN)* if you want
+* Publish a *Call for Competition (CN)*
+** Optionally including Award Criteria
+* ESPD Request has to be published at the same time as CN (elsewhere)
+* Specifications can be published (elsewhere)
+* The request to participate is submitted by the Tenderer
+** Including the ESPD Response
+** (optionally) Including the evidence for selection criteria and exclusion grounds
+* Request to participate is evaluated
+** Not sooner than 30 days after the CN publication
+** Not later (for each request to participate) than 10 days after the submission
+* Tenders that pass the Exclusion grounds and Selection criteria are admitted to the DPS
+* +++<u>+++[Opening of the competition under the DPS - stage]+++</u>+++
+** Purpose:
+*** Conduct competition based on award criteria
+
+* The Buyer triggers the +++<s>+++(RE-)+++</s>+++opening of the competition, when needed,
+** There may be multiple openings of “competition” among the chosen candidates
+** _Also known as _
+*** (in Italy) mini-competition
+*** sub-procedure
+** The Buyer is (sometimes) a different organisation in this stage
+** The Buyer triggers the +++<s>+++(re-)+++</s>+++opening of competition, +++<u>+++when needed,+++</u>+++ by sending an _invitation to tender_ including the specifications and award criteria to the Candidates.
+
+* Tenderers submit tenders
+
+* The Evaluation Committee (set-up by the Awarding-Buyer) evaluates and creates an evaluation report
+* Based on the evaluation report, an Award Decision (based on award criteria only) is created (by the Awarding-Buyer)
+
+* Selecting-Buyer requests to the (nearly) awarded Tenderers (wanna-be Winners) the evidence for selection criteria and exclusion grounds
+* Tenderers provide the evidence to the Selecting-Buyer
+* Selecting-Buyer evaluates the provided evidence and
+** If it is conformant(good) the contract is awarded to the Tenderer, making them Winners
+** Otherwise the Tenderer is not awarded
+
+* All Tenderers are then told of the Award Decision (who was awarded and not + reasons on why and why not)
+* The contract is signed by the Awarding-Buyer and the Winners
+* *Contract Award Notice (CAN)* is published
+** for each award decision (within 1 month) OR
+** Collect all award decisions (once every 1 month or 6 months for example) and a bulk is published (usually for the contracts below the threshold)
+
+*Critical note:*
+
+* In the case of DPS, the CAN is an Award Notice for the Contract, while in the case of normal (non-DPS) procedures the CAN is an Award Notice for Lots. [THIS IS DEBATABLE]
+
+*Critical note:*
+
+* The opening of the competition under the DPS may be opened as a sub-procedure having its OWL Identified, yet linked to the “parent-DPS-procedure”. [THIS IS DEBATABLE]
+* In the DPS CAN, most likely, the contract number will be provided rather than a reference to the Lot number (in the Procedure).
+
+*Note*
+
+* DPS is open during the whole duration of the procedure. If a DPS is a setup to last for 2 years, then eC can register and apply under this DPS. DPS is a kind of FA where the procedure is open for a long period.
+* And when needed, a CA can launch a mini-competition, like the FA, whereas the EC that has the capability to submit a tender can submit its tender in that specific sub-competition.
+
+*Note*
+
+* In Italy, DPS is like a digital market internal to public institutions.
+* There is always a system that supports the DPS.
+* Is the procedure ID of the CAN the same as the one for CN?
+* The discussion on DPS should continue on Thursday, 24th Nov.
+* In  a CAN for DPS it will be a Contract Number, not a Lot Number.
+
