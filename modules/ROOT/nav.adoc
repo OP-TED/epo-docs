@@ -1,7 +1,8 @@
-* *xref:Conceptual-Model-v2.0.0.adoc[Conceptual Model]*
+* xref:index.adoc[Overview]
+* xref:Conceptual-Model-v2.0.0.adoc[Conceptual Model]
 * xref:eProcurement-Glossary-v2.0.0.adoc[Glossary]
-* *xref:Report-v2.0.0.adoc[Report]*
-** xref:Report-v2.0.0.adoc#abstract[Abstract]
+* xref:release_notes.adoc[Release notes]
+* xref:Report-v2.0.0.adoc[Report]
 ** xref:Report-v2.0.0.adoc#i-context[I. Context]
 *** xref:Report-v2.0.0.adoc#about-epo-v1-00[About ePO v1.0.0]
 *** xref:Report-v2.0.0.adoc#epo-v-20-0-objectives[ePO v.2.0.0. objectives]
