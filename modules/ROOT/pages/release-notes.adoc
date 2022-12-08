@@ -1,0 +1,5 @@
+== *ePO - eProcurement Ontology 2.0.1*
+
+The release of version 2.0.1 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v2.0.1/v2.0.1[here].
+
+The release notes of this release can be consulted link:https://github.com/OP-TED/ePO/blob/v2.0.1/eProcurement-2.0.1-release-notes.md[here].
