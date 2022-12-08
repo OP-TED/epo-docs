@@ -1,3 +1,12 @@
+== *ePO - eProcurement Ontology 1.0.0*
+
+The D02.01 Specification of the process and methodology can be downloaded from link:https://joinup.ec.europa.eu/asset/eprocurementontology/document/d0201-specification-process-and-methodology-develop-eprocurement[here].
+The D02.02 Project Charter proposal can be read link:https://joinup.ec.europa.eu/asset/eprocurementontology/document/d0202-project-charter-proposal-v100[here].
+
+The landscaping report on policy support for e-Procurement is available link:https://joinup.ec.europa.eu/asset/eprocurementontology/document/report-policy-support-e-procurement[here].
+
+The OWL file created from the current data model is available link:https://github.com/OP-TED/ePO/blob/v1.0.0/v1.0.0/03_Implementation/ttl/eproc_v0.6.owl[here].
+
 == *Release Notes*
 
 === Version 1.0.0

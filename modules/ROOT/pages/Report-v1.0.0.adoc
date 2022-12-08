@@ -1,4 +1,4 @@
-== *ePO - eProcurement Ontology 1.0.0* [Overview]
+== *ePO - eProcurement Ontology 1.0.0* [Report]
 
 === Abstract
 
