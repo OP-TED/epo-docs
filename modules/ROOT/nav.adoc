@@ -1,3 +1,5 @@
+* xref:index.adoc[Overview]
+
 * Conceptual Model
 ** xref:ePO-core-Conceptual-Model-v3.0.1.adoc[ePO core]
 ** xref:eCatalogue-Conceptual-Model-v3.0.1.adoc[eCatalogue]
@@ -7,6 +9,8 @@
 ** xref:ePO-core-Glossary-v3.0.1.adoc[ePO core]
 ** xref:eCatalogue-Glossary-v3.0.1.adoc[eCatalogue]
 ** xref:eNotice-Glossary-v3.0.1.adoc[eNotice]
+
+* xref:release-notes.adoc[Release Notes]
 
 * xref:Report-v3.0.0.adoc[Report]
 
