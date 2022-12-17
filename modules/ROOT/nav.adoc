@@ -1,17 +1,20 @@
 * xref:index.adoc[Overview]
 
 * Conceptual Model
-** xref:ePO-core-Conceptual-Model-v3.0.1.adoc[ePO core]
-** xref:eCatalogue-Conceptual-Model-v3.0.1.adoc[eCatalogue]
-** xref:eNotice-Conceptual-Model-v3.0.1.adoc[eNotice]
+** xref:ePO-core-Conceptual-Model.adoc[ePO core]
+** xref:eCatalogue-Conceptual-Model.adoc[eCatalogue]
+** xref:eNotice-Conceptual-Model.adoc[eNotice]
+** xref:eOrdering-Conceptual-Model.adoc[eOrdering]
 
 * Glossary
-** xref:ePO-core-Glossary-v3.0.1.adoc[ePO core]
-** xref:eCatalogue-Glossary-v3.0.1.adoc[eCatalogue]
-** xref:eNotice-Glossary-v3.0.1.adoc[eNotice]
+** xref:ePO-core-Glossary.adoc[ePO core]
+** xref:eCatalogue-Glossary.adoc[eCatalogue]
+** xref:eNotice-Glossary.adoc[eNotice]
+** xref:eOrdering-Glossary.adoc[eOrdering]
+** xref:ePO-combined-Glossary.adoc[ePO combined Glossary]
 
 * xref:release-notes.adoc[Release Notes]
 
-* xref:Report-v3.0.0.adoc[Report]
+//* xref:Report-v3.0.0.adoc[Report]
 
 * xref:dev@EPO::epo-guidelines.adoc[Guidelines]
