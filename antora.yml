@@ -1,6 +1,6 @@
 name: EPO
 title: eProcurement Ontology
-version: 3.1.0
+version: 3.1.1
 prerelease: ~dev
 start_page: ROOT:index.adoc
 nav:
