@@ -1,7 +1,11 @@
 * Working Group meetings
 
+** xref:wgm-2023.adoc[WGM 2023]
+*** xref:notes/2023-01-17-wgm.adoc[2023-01-17]
+*** xref:notes/2023-01-10-wgm.adoc[2023-01-10]
+
 ** xref:wgm-2022.adoc[WGM 2022]
-*** xref:notes/2022-12-10-wgm.adoc[2022-12-10]
+*** xref:notes/2022-12-13-wgm.adoc[2022-12-13]
 *** xref:notes/2022-11-29-wgm.adoc[2022-11-29]
 *** xref:notes/2022-11-22-wgm.adoc[2022-11-22]
 *** xref:notes/2022-11-15-wgm.adoc[2022-11-15]
@@ -216,6 +220,9 @@
 
 * xref:eOrderingMeetings.adoc[eOrdering Meetings]
 
+** xref:notes/2023-01-12-eord.adoc[2023-01-12]
+** xref:notes/2022-12-15-eord.adoc[2022-12-15]
+** xref:notes/2022-12-01-eord.adoc[2022-12-01]
 ** xref:notes/2022-11-03-eord.adoc[2022-11-29]
 ** xref:notes/2022-11-03-eord.adoc[2022-11-22]
 ** xref:notes/2022-11-03-eord.adoc[2022-11-15]
