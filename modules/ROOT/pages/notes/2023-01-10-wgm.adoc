@@ -116,7 +116,4 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtEAAAFWCAYAAACvlMH6AACAAEl
 * In PEPPOL, an endpoint is an identifier.
 * The cv:Channel class was deleted.
 
-=== Future agenda:
-
 * We need to further discuss the difference between epo:Business and cv:LegalEntity.
-

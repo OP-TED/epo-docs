@@ -289,3 +289,5 @@
 //* Presentations
 
 //*** link:{attachmentsdir}/presentations/
+
+* xref:future-wgm-agenda.adoc[Future agenda]

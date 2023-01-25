@@ -1,5 +1,5 @@
 == Future Working Group Meeting agenda
 
-=== Agenda
+=== 26th January 2023 - eOrdering meeting
 
-* Discuss refactored ePO model.
+* Create a table that contains all the properties for all the concepts in the Order phase.
