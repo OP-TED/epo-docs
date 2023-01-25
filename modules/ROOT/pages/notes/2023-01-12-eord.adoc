@@ -1,0 +1,106 @@
+== Working Group meeting
+
+*Date:* 12/01/2023  +
+*Participants:* Jana Ahmad, Natalie Muric, Giampaolo Sellito, Peter, Thomas +
+*Model editor:* Eugeniu Costetchi +
+*Note editor:* Andreea Pasăre
+
+=== Agenda
+
+* Ask for volunteers on eContract (planned for March 2023)
+** What are the good sources of reference?
+* Remind of the publication in December of eOrder and invite people to send feedback as GitHub issues.
+* Revise eFulfillment
+** https://github.com/OP-TED/ePO/issues/391[https://github.com/OP-TED/ePO/issues/391]
+** https://docs.peppol.eu/poacc/upgrade-3/profiles/30-despatchadvice/#typical-use-cases[https://docs.peppol.eu/poacc/upgrade-3/profiles/30-despatchadvice/#typical-use-cases]
+
+* Continue with Ordering and response
+** https://docs.peppol.eu/poacc/upgrade-3/profiles/28-ordering/[https://docs.peppol.eu/poacc/upgrade-3/profiles/28-ordering/]
+
+=== Discussion
+
+==== eContract
+
+* General contract condition data model  (standard model)
+* Specific contract conditions data model
+** names, parties
+* Why not limit to simply what is specified in eForms rather than a fully fledged contract model.
+** Because the main purpose is to cover the needs of eForms.
+*  proposal to align with OCD
+** https://www.open-contracting.org/data-standard/#why[https://www.open-contracting.org/data-standard/#why]
+* We will not talk about Contract Performance till March 2023, but mainly what is necessary to represent Contract Modifications covered by the eForms
+** General conditions
+** Specific conditions
+** Contractor
+** …
+* Procurement with the Contract in the Center is a valid frame of reference / modelling perspective.
+* What about the Contract Performance data?
+** It is hard to standardise. Only generic properties and concepts can be modelled.
+** For example think of Service Level Agreement (SLA), which is an attachment to a contract.
+** We don’t want standardise service level agreement
+==== eOdering order only
+
+*  The response is part of the order model and shall be included in order to support the data exchange processes and choreography.
+* So Order Only and Ordering (with Response) are artificial separations in PEPPOL like diagrams in EPO provide views on the same (whole) model.
+* Order response : information what is the response
+* Order and order response are almost the same
+* Create an issue in github about data models
+** https://github.com/OP-TED/ePO/issues[https://github.com/OP-TED/ePO/issues]
+
+* We should develop the core but developing modulus is not  a major release.
+* Are there still some concepts that can be related to both order or order line?.
+
+==== eOrdering and response
+
+* Resource: https://docs.peppol.eu/poacc/upgrade-3/profiles/28-ordering/[https://docs.peppol.eu/poacc/upgrade-3/profiles/28-ordering/]
+* Update the eOrdering old version
+
+==== Revise eFulfillment
+
+==== Despatch advice concepts
+
+
+* All information is in line level
+* Shipment is a company to delivery
+* eCMR  and Dispatch advice should have relation
+* eCMR should link to order
+* eCMR might refer to the dispatch advice (as a barcode and URI) as the DESADV might refer to the eCMR.
+* Shipment during the delivery or despatch of the goods is accompanied by an eCMR document as it had been ratified by the majorities of the MS.
+* Consignment consists of TransportHandlingUint (THU)
+* THU is not the Package, but it is also the Package
+** THU is the container
+** Package is the Pallet or the box
+* OP does not need to take everything on despatch from PEPPOL.
+* To be modelled
+** http://bis.beast.se/peppol-logistics/main/syntax/AdvancedDespatchAdvice/tree/[http://bis.beast.se/peppol-logistics/main/syntax/AdvancedDespatchAdvice/tree/]
+** 2 diagrams are still to be received from the meeting depicting “that”
+** Advanced despatch is based on UBL 3.1 and aims at including the simpel despatch.
+** The main differences:
+*** Uses of transport event (seems similar to SHipmentInformation within EPO)
+*** Consignment uses are more narrow
+** It is okay to have differences
+
+==== Feedback
+
+==== Bullet points extracted from an Email  on 02/11/2022
+
+* Item Property. Add “ValueQualifier”, Standardized and predefined classification of *items properties*
+* Shipment. Addition in TransportHandlingUnit
+** “Handling unit type”, The type of packaging that represents the handling unit, such as box, pallet, container etc.
+** “Handling unit shipping marks”, Free-form description of the marks and numbers on a transport unit or package.
+** “Measurement dimensions”, (?)
+*** “Attribute identifier”, Code to indicate if the measure is gross weight or gross volume. And maybe length, height, width (?)
+*** “Measure”, incl unitcode
+* “Package” within this handling unit
+** “Package identifier”
+** “Packaging type code”, The type of packaging used, such as box, pallet, container etc.
+
+
+=== Action point:
+
+* Update html version of eOrdering (ordering and response) and send for revision.
+* Model the Advanced despatch from PEPPOL[http://bis.beast.se/peppol-logistics/main/syntax/AdvancedDespatchAdvice/tree/[here]] + using diagrams from the meeting for guidance
+* Harmonise across modules (order/catalogue/despatch and their lines + the information hubs that may associate with some or all of them)
+
+
+
