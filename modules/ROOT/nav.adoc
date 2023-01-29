@@ -220,7 +220,7 @@
 ** xref:notes/2022-01-20-ecat.adoc[2022-01-20]
 
 * xref:eOrderingMeetings.adoc[eOrdering Meetings]
-
+** xref:notes/2023-01-26-eord.adoc[2023-01-26]
 ** xref:notes/2023-01-12-eord.adoc[2023-01-12]
 ** xref:notes/2022-12-15-eord.adoc[2022-12-15]
 ** xref:notes/2022-12-01-eord.adoc[2022-12-01]
