@@ -1,7 +1,7 @@
 == Working Group meeting
 
 *Date:* 31/01/2023  +
-*Participants:* Jana Ahmad, Laszlo Ketszeri, Natalie Muric, Csongor Nyulas, Giampaolo Sellito, MC ? +
+*Participants:* Jana Ahmad, Laszlo Ketszeri, Natalie Muric, Csongor Nyulas, Giampaolo Sellito, Marc Christopher +
 *Model editor:* Eugeniu Costetchi +
 *Note editor:* Andreea Pasăre
 
