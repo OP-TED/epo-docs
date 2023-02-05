@@ -16,13 +16,13 @@
 
 ===== cpv:Person
 
-* Changed data type from rdfs:Literal to rdf:langString:
+* data type is Changed from rdfs:Literal to rdf:langString in the following properties :
 ** foaf:name
 ** foaf:familyname
 ** foaf:givenName
 ** person:patronymicName
 ** dct:alternative
-* Removed cv:deathDate from cpv:Person.
+*  cv:deathDate Removed from cpv:Person.
 
 ===== cpov:ContactPoint
 
@@ -55,7 +55,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABHoAAAFoCAIAAACniwsVAACAAEl
 
 ===== epo:Identifier
 
-* Discussing on whether to use dct:identifier instead of epo:hasID.
+* WG discussed whether to use dct:identifier instead of epo:hasID.
 * But dct:identifier has a range of rdfs:Literal and can not be used.
 * We need to decide on whether to change to adms:identifier (old github issue: https://github.com/OP-TED/ePO/issues/258[https://github.com/OP-TED/ePO/issues/258])
 * If we need more properties for ePO we should add a ticket to adms.
@@ -73,7 +73,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAX4AAAFICAYAAABX+ZVMAACAAEl
 
 ===== dct:Location
 
-* Changed locn:geographicName data type from rdfs:Literal to rdf:langString.
+* locn:geographicName data type is Changed from rdfs:Literal to rdf:langString.
 
 ===== locn:Address
 
@@ -86,7 +86,7 @@ On cccev:Requirement:
 * cccev:description changed to dct:description (rdf:PlainLiteral).
 * cccev:identifier changed to dct:identifier.
 * We need to use an identifier for requirements.
-* To stay consistent to how identification is realised in ePO, we switch to using adms:identifier instead of dct:identifier as per CCCEV requirement.
+* To stay consistent to how identification is realised in ePO, we switched to using adms:identifier instead of dct:identifier as per CCCEV requirement.
 * Instead of cccev:name we will use skos:prefLabel (rdf:PlainLiteral).
 * There should be only one description and we added as additional information that we can have multiple languages for the same description. (see https://www.w3.org/TR/skos-reference/#L1567[https://www.w3.org/TR/skos-reference/#L1567])
 
@@ -95,7 +95,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnIAAAFrCAYAAABVH2RbAACAAEl
 * On cccev:type changed to dct:type
 * On cccev:InformationConcept, hasDescription and hasTitle are changed to dct:description and skos:prefLabel.
 
-==== Discussing the Channel
+==== WG disscussed the Channel
 
 * In standard form we have the following section for communication:
 

@@ -21,34 +21,29 @@
 
 ==== eContract
 
-* General contract condition data model  (standard model)
-* Specific contract conditions data model
-** names, parties
-* Why not limit to simply what is specified in eForms rather than a fully fledged contract model.
+* WG discussed the General and Specific contract condition data model.
+* Question: Why not limit to simply what is specified in eForms rather than a fully fledged contract model?.
 ** Because the main purpose is to cover the needs of eForms.
 *  proposal to align with OCD
 ** https://www.open-contracting.org/data-standard/#why[https://www.open-contracting.org/data-standard/#why]
-* We will not talk about Contract Performance till March 2023, but mainly what is necessary to represent Contract Modifications covered by the eForms
+* WG will not discuss Contract Performance till March 2023, but they will discuss mainly what is necessary to represent Contract Modifications covered by the eForms
 ** General conditions
 ** Specific conditions
 ** Contractor
-** …
 * Procurement with the Contract in the Center is a valid frame of reference / modelling perspective.
-* What about the Contract Performance data?
-** It is hard to standardise. Only generic properties and concepts can be modelled.
-** For example think of Service Level Agreement (SLA), which is an attachment to a contract.
-** We don’t want standardise service level agreement
+* Question: What about the Contract Performance data?
+** It is hard to standardise. Only generic properties and concepts can be modelled. For example think of Service Level Agreement (SLA), which is an attachment to a contract.
+** There is no need to standardise service level agreement
+
 ==== eOdering order only
 
 *  The response is part of the order model and shall be included in order to support the data exchange processes and choreography.
-* So Order Only and Ordering (with Response) are artificial separations in PEPPOL like diagrams in EPO provide views on the same (whole) model.
-* Order response : information what is the response
+* Order Only and Ordering (with Response) are artificial separations in PEPPOL like diagrams in EPO provide views on the same (whole) model.
+* Order response : information about what is the response
 * Order and order response are almost the same
 * Create an issue in github about data models
 ** https://github.com/OP-TED/ePO/issues[https://github.com/OP-TED/ePO/issues]
-
-* We should develop the core but developing modulus is not  a major release.
-* Are there still some concepts that can be related to both order or order line?.
+* There is a need to develop the core but developing modulus is not  a major release.
 
 ==== eOrdering and response
 
@@ -61,24 +56,22 @@
 
 
 * All information is in line level
-* Shipment is a company to delivery
 * eCMR  and Dispatch advice should have relation
 * eCMR should link to order
 * eCMR might refer to the dispatch advice (as a barcode and URI) as the DESADV might refer to the eCMR.
 * Shipment during the delivery or despatch of the goods is accompanied by an eCMR document as it had been ratified by the majorities of the MS.
 * Consignment consists of TransportHandlingUint (THU)
-* THU is not the Package, but it is also the Package
+* THU is not the Package
 ** THU is the container
 ** Package is the Pallet or the box
 * OP does not need to take everything on despatch from PEPPOL.
 * To be modelled
 ** http://bis.beast.se/peppol-logistics/main/syntax/AdvancedDespatchAdvice/tree/[http://bis.beast.se/peppol-logistics/main/syntax/AdvancedDespatchAdvice/tree/]
-** 2 diagrams are still to be received from the meeting depicting “that”
+** two diagrams are still to be received from the meeting depicting “that”
 ** Advanced despatch is based on UBL 3.1 and aims at including the simpel despatch.
-** The main differences:
-*** Uses of transport event (seems similar to SHipmentInformation within EPO)
-*** Consignment uses are more narrow
-** It is okay to have differences
+// ** The main differences:
+// *** Uses of transport event (seems similar to SHipmentInformation within EPO)
+// *** Consignment uses are more narrow
 
 ==== Feedback
 
@@ -88,8 +81,8 @@
 * Shipment. Addition in TransportHandlingUnit
 ** “Handling unit type”, The type of packaging that represents the handling unit, such as box, pallet, container etc.
 ** “Handling unit shipping marks”, Free-form description of the marks and numbers on a transport unit or package.
-** “Measurement dimensions”, (?)
-*** “Attribute identifier”, Code to indicate if the measure is gross weight or gross volume. And maybe length, height, width (?)
+** “Measurement dimensions”,
+*** “Attribute identifier”, Code to indicate if the measure is gross weight or gross volume.
 *** “Measure”, incl unitcode
 * “Package” within this handling unit
 ** “Package identifier”
