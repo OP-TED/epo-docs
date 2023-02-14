@@ -65,11 +65,4 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAHrCAYAAACQOBjkAAB2I0l
 * We need to discuss urgently access term and channel [OP and Meaningfy]
 * In order to align with Core Voc, it means we need to add cv:LegalEntity and org:FormalOrganization between org:Organization and epo:Business.
 
-=== Future agenda:
 
-* Continue from
-(https://docs.peppol.eu/poacc/upgrade-3/2022-Q4/syntax/Order/tree/[https://docs.peppol.eu/poacc/upgrade-3/2022-Q4/syntax/Order/tree/])
-
-* Continue from cac:PartyTaxScheme [in WGM]
-* Complete discussing Party [in WGM]
-* Discuss all eOprdering roles [in WGM]
