@@ -6,7 +6,7 @@
 
 === 14th February 2023 - eOrdering meeting
 
-* CContinue from cac:SellerSupplierParty [in WGM]
+* Continue from cac:SellerSupplierParty [in WGM]
 (https://docs.peppol.eu/poacc/upgrade-3/2022-Q4/syntax/Order/tree/[https://docs.peppol.eu/poacc/upgrade-3/2022-Q4/syntax/Order/tree/])
 * Complete discussing Party [in WGM]
 * Discuss all eOrdering roles [in WGM]
