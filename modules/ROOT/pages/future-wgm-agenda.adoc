@@ -1,6 +1,12 @@
 == Future Working Group Meeting agenda
 
-=== 23th February 2023 - eOrdering meeting
+=== 26th January 2023 - eOrdering meeting
 
-* Continue discussing eOrdering from cac:Delivery
-https://docs.peppol.eu/poacc/upgrade-3/2022-Q4/syntax/Order/tree/[https://docs.peppol.eu/poacc/upgrade-3/2022-Q4/syntax/Order/tree/]
+* Create a table that contains all the properties for all the concepts in the Order phase.
+
+=== 14th February 2023 - eOrdering meeting
+
+* Continue from cac:SellerSupplierParty [in WGM]
+(https://docs.peppol.eu/poacc/upgrade-3/2022-Q4/syntax/Order/tree/[https://docs.peppol.eu/poacc/upgrade-3/2022-Q4/syntax/Order/tree/])
+* Complete discussing Party [in WGM]
+* Discuss all eOrdering roles [in WGM]
