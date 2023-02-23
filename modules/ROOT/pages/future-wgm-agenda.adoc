@@ -1,6 +1,5 @@
 == Future Working Group Meeting agenda
 
-=== 23th February 2023 - eOrdering meeting
+=== 28th February 2023 - eOrdering meeting
 
-* Continue discussing eOrdering from cac:Delivery [in WGM]
-https://docs.peppol.eu/poacc/upgrade-3/2022-Q4/syntax/Order/tree/[https://docs.peppol.eu/poacc/upgrade-3/2022-Q4/syntax/Order/tree/]
+* Discuss Github issues
