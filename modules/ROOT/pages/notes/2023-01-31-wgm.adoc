@@ -16,9 +16,10 @@
 ** ePO https://github.com/OP-TED/ePO/issues/408[GH 408]
 ** Mapping https://github.com/OP-TED/ted-rdf-mapping/issues/331[GH 331]
 ** Mapping https://github.com/OP-TED/ted-rdf-mapping/issues/332[GH 332]
-=== Discussion
 
-==== The WG discussed:
+
+=== Discussion
+ The WG discussed:
 Candidate role: This role exists in ePO version 2.0.2 as epo:CandidateShortList have the following definition: “The tenderers that have been selected in a two stage procedure.
 
 Additional information: the types of procedures that this shortlist applies to are restricted procedures, competitive procedures with negotiation, competitive dialogue procedures and innovation partnerships. The WG approved the previous definition and additional information on (WG 27/07/2018).
