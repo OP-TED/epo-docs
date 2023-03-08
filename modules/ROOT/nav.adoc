@@ -244,6 +244,7 @@
 
 * xref:eFulfilmentMeetings.adoc[eFulfilment Meetings]
 
+** xref:notes/2023-03-07-eful.adoc[2023-03-07]
 ** xref:notes/2022-08-11-eful.adoc[2022-08-11]
 
 * Face2Face meetings
