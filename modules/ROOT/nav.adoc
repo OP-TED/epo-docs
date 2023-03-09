@@ -250,7 +250,7 @@
 * Face2Face meetings
 
 ** 2022-06-28
-*** xref:attachment$work_group_meetings_reports/11th_WGM/ePO_11th_WGM_report.adoc[11th WGM Report]
+*** xref:ePO_11th_WGM_report.adoc[11th WGM Report]
 *** link:{attachmentsdir}/work_group_meetings_reports/11th_WGM/eProcurement_Ontology_3.0.0.pptx[11th WGM Presentation]
 
 ** 2019-10-10
