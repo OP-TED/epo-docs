@@ -251,6 +251,11 @@
 
 * Face2Face meetings
 
+** 2022-12-08
+*** xref:ePO_12th_WGM_report.adoc[12th WGM Report]
+*** link:{attachmentsdir}/work_group_meetings_reports/12th_WGM/eProcurement-Ontology_3.1.0.pptx[12th WGM Presentation]
+
+
 ** 2022-06-28
 *** xref:ePO_11th_WGM_report.adoc[11th WGM Report]
 *** link:{attachmentsdir}/work_group_meetings_reports/11th_WGM/eProcurement_Ontology_3.0.0.pptx[11th WGM Presentation]
