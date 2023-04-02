@@ -27,7 +27,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwEAAAEdCAYAAABUlGvcAACAAEl
 The term procedure has been conflated.  +
 Question: What is a procedure?  +
 Answer: A description of steps taken by someone, a plan. +
-This plan acts as a general plan for multiple Lots. There are specific plans per each Lot, but the general plan should be fine tuned in order to cover all the Lots.
+This plan acts as a general plan for multiple Lots. There are specific plans per each Lot, but the general plan should be fine-tuned in order to cover all the Lots.
 
 Within a procurement project we can have a procedure type. Each lot should be executed once or multiple times according to the procedure type.
 
