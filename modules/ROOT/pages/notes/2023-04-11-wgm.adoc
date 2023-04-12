@@ -13,6 +13,7 @@ Continue discussing 1st draft of eContract Model with respect to the initial con
 
 === Discussion
 WG continued to discuss eContract with respect to the initial contract information requirement.
+The methodology is to check if the following requirements are covered by epo. If they are covered, the working group will map them to epo. If they are not covered, then they will be implemented as follows.
 
 Award of the contract
 
