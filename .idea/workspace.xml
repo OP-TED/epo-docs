@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="21540aad-1817-4e9c-bf80-e2c95c6f7409" name="Changes" comment="update fulfilment html version" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Empty" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="v3.1.0" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GoHDxZF4sj7SenxkhKYFCaX5pj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;Empty&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/andreea/work/epo-docs/modules/ROOT/pages&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/ROOT/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/ROOT/pages" />
+      <recent name="$PROJECT_DIR$/modules/ROOT/attachments/html_reports" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21540aad-1817-4e9c-bf80-e2c95c6f7409" name="Changes" comment="" />
+      <created>1667047901089</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667047901089</updated>
+    </task>
+    <task id="LOCAL-00001" summary="updated HTML reports">
+      <created>1668346884970</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668346884970</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added WGM minutes">
+      <created>1668347797445</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668347797445</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added 11th WGM report">
+      <created>1669639477427</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669639477428</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added 11th WGM report">
+      <created>1670235552497</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670235552497</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added 11th WGM report">
+      <created>1670332019282</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670332019282</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated html reports">
+      <created>1670430847331</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670430847331</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added overview page">
+      <created>1670431050867</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670431050867</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added overview page">
+      <created>1670484964541</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670484964541</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added overview page">
+      <created>1670485536597</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670485536597</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added overview page">
+      <created>1670485845823</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670485845823</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fixed typo">
+      <created>1670486698274</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670486698274</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added overview page">
+      <created>1670487132796</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670487132796</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added overview page">
+      <created>1670487485977</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670487485977</updated>
+    </task>
+    <task id="LOCAL-00014" summary="updated WGM minutes">
+      <created>1670501958622</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670501958622</updated>
+    </task>
+    <task id="LOCAL-00015" summary="created new documentation branch for release ePO 3.1.0">
+      <created>1671260490210</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671260490210</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added release notes">
+      <created>1671262127046</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671262127046</updated>
+    </task>
+    <task id="LOCAL-00017" summary="updated antora.yml">
+      <created>1671442752187</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1671442752188</updated>
+    </task>
+    <task id="LOCAL-00018" summary="updated antora.yml">
+      <created>1674118313583</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1674118313583</updated>
+    </task>
+    <task id="LOCAL-00019" summary="updated minutes">
+      <created>1674398882077</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674398882077</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updated html version">
+      <created>1674467489488</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1674467489488</updated>
+    </task>
+    <task id="LOCAL-00021" summary="updated wgm minutes">
+      <created>1674651182959</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1674651182959</updated>
+    </task>
+    <task id="LOCAL-00022" summary="updated wgm minutes">
+      <created>1674651834646</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1674651834646</updated>
+    </task>
+    <task id="LOCAL-00023" summary="updated html version">
+      <created>1674716974142</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1674716974142</updated>
+    </task>
+    <task id="LOCAL-00024" summary="updated html version">
+      <created>1676631573762</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1676631573762</updated>
+    </task>
+    <task id="LOCAL-00025" summary="updated future agenda">
+      <created>1676631776097</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1676631776097</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fixed typo">
+      <created>1678178713285</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1678178713285</updated>
+    </task>
+    <task id="LOCAL-00027" summary="minor update">
+      <created>1678352615119</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1678352615119</updated>
+    </task>
+    <task id="LOCAL-00028" summary="minor update">
+      <created>1678354979286</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1678354979286</updated>
+    </task>
+    <task id="LOCAL-00029" summary="minor update">
+      <created>1678357779238</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1678357779238</updated>
+    </task>
+    <task id="LOCAL-00030" summary="update fulfilment html version">
+      <created>1680264786381</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1680264786381</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated HTML reports" />
+    <MESSAGE value="added WGM minutes" />
+    <MESSAGE value="added 11th WGM report" />
+    <MESSAGE value="updated html reports" />
+    <MESSAGE value="added overview page" />
+    <MESSAGE value="updated WGM minutes" />
+    <MESSAGE value="created new documentation branch for release ePO 3.1.0" />
+    <MESSAGE value="added release notes" />
+    <MESSAGE value="updated antora.yml" />
+    <MESSAGE value="updated minutes" />
+    <MESSAGE value="updated wgm minutes" />
+    <MESSAGE value="updated html version" />
+    <MESSAGE value="updated future agenda" />
+    <MESSAGE value="fixed typo" />
+    <MESSAGE value="minor update" />
+    <MESSAGE value="update fulfilment html version" />
+    <option name="LAST_COMMIT_MESSAGE" value="update fulfilment html version" />
+  </component>
+</project>
