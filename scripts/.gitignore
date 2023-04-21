@@ -1,9 +1,8 @@
-target
 antora-playbook-local.yml
 build
+.vscode/settings.json
 node_modules
-.vscode
 .node
 .yarn
-yarn.lock
-branches
+.pnp.cjs
+.pnp.loader.mjs
