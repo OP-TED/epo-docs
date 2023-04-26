@@ -14,8 +14,7 @@
 The WG discussed the Order diagram with respect to  Peppol Order transaction 3.2 (T01) to be sure that they are compatible.
 
 ==== Methodology:
-The current method of checking and depicting if the ePO model is complete regarding PEPPOL requirements is by having diagrams which clearly depict the necessary elements, as following:
-
+The current approach to assessing the completeness of the ePO model with respect to PEPPOL requirements involves determining whether the following requirements are already covered by ePO. If they are, the WG will map them to ePO. If they are not covered, they will be implemented as follows. The bullet points represent the PEPPOL requirements, while the sub-bullets indicate their mapping to ePO.
 * cac:QuotationDocumentReference
 ** Quotation considered to be an offer
 ** In offer class: relations between to be renamed between epo:TechnicalOffer, epo:FinancialOffer and procurement-object epo:Tender

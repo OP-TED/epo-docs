@@ -1,0 +1,45 @@
+== Working Group meeting
+
+*Date:* 20/04/2023  +
+*Participants:* Natalie Muric, Thomas Pattersson +
+*Model editor:* Andreea Pasăre +
+*Note editor:*  Jana Ahmad
+
+=== Agenda
+
+Discuss eOrdring module.
+
+=== Discussion:
+The working group discussed and defined the following eOrdering concepts:
+
+*epo-ord:AllowanceChargeInformation:* Information about discounts and fees imposed.
+
+*epo-ord:DocumentAllowanceInformation:* Information about the discounts imposed at the Document level. Additional Information: Document level refers to the complete document, such as: Order, Despatch Advice, Invoice.
+
+*epo-ord:LineChargeInformation:* Information about the fees imposed at the Document Line level. Additional Information: Document Line level refers to each line in a document, such as: Order Line, Despatch Advice Line, Invoice Line.
+
+*epo-ord:PriceDiscountInformation*: Information about the allowances imposed on the Price.
+
+*epo-ord:ContractInformation:* Information about the Contract.
+
+*epo-ord:DeliveryTerm:* Conditions and stipulations applying to the delivery of goods, services and works. Additional Information: Delivery terms identifier can normally be Incoterms accompanied by the description of specific conditions related to the delivery.
+
+*epo-ord:DocumentChargeInformation:* Information about the fees imposed at the Document level. Additional Information: Document level refers to the complete document, such as: Order, Despatch Advice, Invoice.
+
+*epo-ord:LineAllowanceInformation:* Information about the discounts imposed at the Document Line level. Additional Information: Document Line level refers to each line in a document, such as: Order Line, Despatch Advice Line, Invoice Line.
+
+*epo-ord:LineChargeInformation:*  Information about the fees imposed at the Document Line level. Additional Information: Document Line level refers to each line in a document, such as: Order Line, Despatch Advice Line, Invoice Line.
+
+*epo-ord:OrderLine:* Details concerning a given unit of goods, services or works requested in the Order. Additional information: In general, an Order Line contains the Quantity and Price of the goods, services and goods requested in the Order. However, in certain cases, the Price may not be known, as the Price may fluctuate from one day to the other.
+
+*epo-ord:Order:* A formal request of the Buyer to the Seller specifying the goods, services or works to be delivered. Additional Information: A Buyer submits an Order for delivery of goods, services or works to a Seller.
+
+*epo-ord:Originator:* A Role of an Agent that expresses the needs to trigger the Procurement. Additional Information: The Originator is often the end-user or the Beneficiary.
+
+*epo-ord:OriginatorInformation:* Information about the Originator of the Order.
+
+*epo-ord:TaxInformation:* Information about the duty imposed (this definition needs to be discussed further)
+
+*epo-ord:TaxInformationSchema:* Information about the type of duty.
+
+

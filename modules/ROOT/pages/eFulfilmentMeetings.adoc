@@ -1,8 +1,14 @@
 == Cumulated content of eFulfilment meetings
 
 
+include::notes/2023-03-30-eful.adoc[]
+
+include::notes/2023-03-24-eful.adoc[]
+
 include::notes/2023-03-14-eful.adoc[]
 
 include::notes/2023-03-07-eful.adoc[]
+
+include::notes/2023-03-02-eful.adoc[]
 
 include::notes/2022-08-11-eful.adoc[]

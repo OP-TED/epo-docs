@@ -25,6 +25,8 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZkAAAFuCAYAAABTMmVvAAAuRUl
 
 The WG continued to discuss the Order diagram with respect to  https://docs.peppol.eu/poacc/upgrade-3/syntax/Order/tree/[Peppol Order transaction 3.2 (T01)] to be sure that they are compatible.
 
+The current approach to assessing the completeness of the ePO model with respect to PEPPOL requirements involves determining whether the following requirements are already covered by ePO. If they are, the WG will map them to ePO. If they are not covered, they will be implemented as follows. The bullet points represent the PEPPOL requirements, while the sub-bullets indicate their mapping to ePO.
+
 * ac:BuyerCustomerParty
 ** Order specifies a Buyer
 ** We have Buyer party electronic address (cbc:EndpointID)

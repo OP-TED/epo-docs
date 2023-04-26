@@ -1,6 +1,7 @@
 * Working Group meetings
 
 ** xref:wgm-2023.adoc[WGM 2023]
+*** xref:notes/2023-04-25-wgm.adoc[2023-04-25]
 *** xref:notes/2023-04-11-wgm.adoc[2023-04-11]
 *** xref:notes/2023-04-04-wgm.adoc[2023-04-04]
 *** xref:notes/2023-03-21-wgm.adoc[2023-03-21]
@@ -226,7 +227,7 @@
 ** xref:notes/2022-01-20-ecat.adoc[2022-01-20]
 
 * xref:eOrderingMeetings.adoc[eOrdering Meetings]
-
+** xref:notes/2023-04-20-eord.adoc[2023-04-20]
 ** xref:notes/2023-03-28-eord.adoc[2023-03-28]
 ** xref:notes/2023-03-23-eord.adoc[2023-03-23]
 ** xref:notes/2023-02-23-eord.adoc[2023-02-23]
@@ -250,8 +251,11 @@
 
 * xref:eFulfilmentMeetings.adoc[eFulfilment Meetings]
 
+** xref:notes/2023-03-30-eful.adoc[2023-03-30]
+** xref:notes/2023-03-24-eful.adoc[2023-03-24]
 ** xref:notes/2023-03-14-eful.adoc[2023-03-14]
 ** xref:notes/2023-03-07-eful.adoc[2023-03-07]
+** xref:notes/2023-03-02-eful.adoc[2023-03-02]
 ** xref:notes/2022-08-11-eful.adoc[2022-08-11]
 
 * Face2Face meetings

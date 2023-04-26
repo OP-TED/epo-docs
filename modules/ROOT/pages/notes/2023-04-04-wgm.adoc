@@ -11,10 +11,11 @@ Present 1st draft of eContract Model
 
 === Discussion
 
-WG revised the order, catalogue, fulfilment modules from the document level perspective.  +
-WG continued to discuss eContract with respect to the initial contract information requirement.
+The WG revised the order, catalogue, fulfilment modules from the document level perspective.  +
+The WG continued to discuss and model the eContract module, specifically in relation to the requirements for initial contract information. Our methodology involves assessing whether the following requirements are already covered by ePO. If they are, the working group will map them to ePO. If they are not covered, they will be implemented as follows. The bullet points represent the initial contract information requirements, while the sub-bullets indicate their mapping to ePO.
 
-* WG decided to consider Contract  as a Document
+The WG decided to consider Contract  as a Document
+
 * Legal references:
 ** epo:haslegalBasis
 ** epo:hasLegalReferenceDescription is added
