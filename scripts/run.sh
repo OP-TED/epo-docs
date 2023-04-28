@@ -18,11 +18,6 @@ pushd "${SCRIPT_DIR}" 1>/dev/null
 
 yarn install
 
-mkdir -p "${BRANCHES_DIR}"
-for branch in $(git branch -la --format='%(refname:short)'|grep origin|grep -v HEAD|grep -v main|sed 's|origin/||g'); do
-  git worktree add "${BRANCHES_DIR}/${branch}" ${branch}
-done
-
 SITE_DIR="${BUILD_DIR}/site/EPO/latest" yarn run "${@}"
 
 popd 1>/dev/null

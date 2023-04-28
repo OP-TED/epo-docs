@@ -12,9 +12,8 @@ content:
 
   ### Local content
   - url: ..
-    start_path: .   
+    start_path: /
     branches: HEAD, v*, wg-meetings
-    worktrees: true
 
 urls:
   redirect_facility: static
