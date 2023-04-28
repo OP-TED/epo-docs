@@ -1,4 +1,4 @@
-:this-version: 2.0.0
+:this-version: 3.1.0
 :this-version-tag: v{this-version}
 :git-repo-url: https://github.com/OP-TED/ePO
 :path-to-dist: /ascii_doc/modules/ROOT

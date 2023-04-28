@@ -24,9 +24,9 @@ RDF representation of the eOrdering module can be downloaded link:https://github
 * Development of a new module, eOrdering
 * The prefix used for the eOrdering module is “epo-ord”
 * Included notice systematisation in eNotice module
-* Procurement Objects (Procedure, PlannedProcurementPart, Lot)
+* Changes to Procurement Object classes and attributes (Procedure, PlannedProcurementPart, Lot)
 * Roles hierarchy restructure
-* model2owl updates:
+* model2owl (uml2owl) updates:
 ** Combined glossary
 ** Providing Turtle output files
 ** Implemented metadata management mechanism
@@ -65,7 +65,7 @@ RDF representation of the eOrdering module can be downloaded link:https://github
 
 * at-voc:cpvsuppl
 * at-voc:review-decision-type (renamed from at-voc:decision-type)
-* at-voc:remedy-type (renamed from )at-voc:review-remedy-type)
+* at-voc:remedy-type (renamed from at-voc:review-remedy-type)
 * at-voc-new:evaluation-group-type (changed prefix from epo:)
 * at-voc-new:legal-regime (changed prefix from epo:)
 * at-voc-new:notification-phases-content-types (changed prefix from epo:)
@@ -224,3 +224,6 @@ RDF representation of the eOrdering module can be downloaded link:https://github
 |epo-cat:ProductSpecification|epo-cat:hasDocumentType -> at-voc-new:document-type|
 |epo-cat:Item|epo:hasBuyerItemID -> epo:Identifier|
 |===
+
+
+include::partial$feedback.adoc[]

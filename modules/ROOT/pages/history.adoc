@@ -1,0 +1,40 @@
+== *History of the ePO Ontology Project and Archived Versions*
+
+=== *eProcurement Ontology overview*
+Several initiatives around eProcurement In the EU had been launched prior to 2016, driven by the public sector, industry, and academia. Some had grown organically, while others were the result of standardisation work. 
+
+The vocabularies and the semantics that they introduced, the phases of public procurement that they covered, and the technologies they used differed greatly. These differences hampered data interoperability and reuse.
+
+The situation created a need for a common representation of the knowledge around eProcurement as it is practiced in the European Union. This meant that a common vocabulary, axioms, and rules were needed. 
+
+In 2016 the Publications Office of the European Union (Publications Office or OP) initiated  a project to manage and support the development the creation of an electronic Procurement Ontology (ePO), funded by the link:https://ec.europa.eu/isa2/home_en/[ISA^2^ Programme]. The aim of the project was to develop, and make available to EU member states, an eProcurement Ontology based on the open-source link:https://www.w3.org/OWL/[OWL] (Web Ontology Language) standard.
+
+This project was in conjunction with a parallel project to develop the associated eForms.
+
+The ultimate objective of the ePO was (and still is) to conceptualise, to formally encode eProcurement data, and to make it available in an open, structured, and machine-readable format. This data covers the process from end -to-end, i.e., from notification, through tendering to awarding, ordering, invoicing, and finally payment. 
+
+//#Insert process graphic#
+
+To achieve this, the EU Publications Office (OP) engaged a working group of experts (WG) with the mission of building consensus on the analysis, results, and deliverables developed by the OP teams. The working group continues to work with the OP on the ePO.
+
+'''
+== *Timeline*
+In mid-2017 ePO version 1.00 of the Ontology was delivered and submitted to the working group for discussion. All the materials related to this version were made public and were accessible through the ISA2 Joinup platform; including the discussions held in the Working Group.
+
+ePO version 2.0.0, was initiated in January 2018. The goal of this version was to improve and extend the previous version. Version 2.0.1, last 2.x.x version, was released later that year.
+
+Version 3.0.0 was released in August 2022, with the current and latest 3.x version being 3.1.0. Version 3.1.1 is currently in development. The ePO project is now funded by the link:https://digital-strategy.ec.europa.eu/en/activities/digital-programme[Digital Europe Project] (DEP).
+
+'''
+== *Version in Development:*
+xref:3.1.1@EPO::index.adoc[Version 3.1.1 (in development) can be found here.]
+
+'''
+== *Archived versions can be found here:*
+
+* xref:1.0.0@EPO::index.adoc[Version 1.0.0]
+* xref:2.0.0@EPO::index.adoc[Version 2.0.0]
+* xref:2.0.1@EPO::index.adoc[Version 2.0.1]
+* xref:3.0.1@EPO::index.adoc[Version 3.0.1]
+
+include::partial$feedback.adoc[]
