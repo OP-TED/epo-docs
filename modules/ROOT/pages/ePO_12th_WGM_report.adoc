@@ -1,5 +1,7 @@
 = 12th WGM Meeting Report
 
+**Online meeting: 08/12/2022**
+
 == Meeting Agenda
 
 * Welcome

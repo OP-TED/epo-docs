@@ -1,6 +1,8 @@
 * Working Group meetings
 
 ** xref:wgm-2023.adoc[WGM 2023]
+
+*** xref:notes/2023-04-27-wgm.adoc[2023-04-27]
 *** xref:notes/2023-04-25-wgm.adoc[2023-04-25]
 *** xref:notes/2023-04-11-wgm.adoc[2023-04-11]
 *** xref:notes/2023-04-04-wgm.adoc[2023-04-04]
