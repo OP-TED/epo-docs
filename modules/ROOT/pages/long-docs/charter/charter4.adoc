@@ -1,0 +1,65 @@
+= *4 APPROACH*
+
+The project will be based on the ISA Process and Methodology for the development of semantic agreements12 as described in section 2 of the Report on policy support for e-procurement.
+
+== *4.1 Process*
+An important part of the process as described in the ISA Process and Methodology for the development of semantic agreements, and in particular the establishment of the Working Group, has already taken place in the preparatory phase. Therefore, the process to be followed by the Working Group in this Project consists of the following six elements:
+
+.Table 8: Process overview
+[cols="1"]
+|===
+|*Process*
+_Reaching consensus_
+|. Publish Working Drafts (Chair(s) and Editor(s))
+. Review Working Drafts (Working Group)
+. Publish last call Working Draft (Chair(s) and Editor(s))
+. Review last call Working Draft (the Public)
+. Gather evidence of acceptance (Chair(s) and Editor(s))
+. Submit for endorsement (The Publications Office)
+|===
+
+4.2 Methodology
+The methodology takes into account the step-by-step approach agreed in the preliminary phase. Building on the initial draft published at the end of the preliminary phase, the methodology involves the following five steps:
+.Table 9: Methodology overview
+[cols="1"]
+|===
+|*Methodology*
+_Developing the ontology_
+|Follow the step-by-step development process from requirements to OWL ontology (Editor(s), Working Group) which involves:
+Step 1. Define use cases
+Step 2. Define requirements from the use cases
+Step 3. Develop a conceptual data model
+Step 4. Consider reusing existing ontologies
+Step 5. Define and implement an OWL ontology
+|===
+
+Drafts of the specification are published on Joinup; working group members provide comments on GitHub, referencing the relevant section in the document. 
+
+4.3 Change Management
+The change management of the e-procurement ontology is defined on the basis of the approach described in the document “Description of a change management release and publication process for structural metadata specifications developed by the ISA Programme”.
+
+The main characteristics are:
+
+* Openness: In order for public administrations to rely on specifications, the openness of the change management is a key – openness is also a key assessment criterion in the Common Assessment Method of Standards and Specifications
+(CAMSS)14. Openness means that requests for changes can be submitted by any stakeholder and that the analysis and decisions taken are logged in a transparent manner. An open change management process improves the quality of the 
+specification.
+* Controlled change: Public administrations that use structural metadata or implement specifications must not be negatively impacted by unexpected changes to these specifications. A release schedule must be established, allowing changes to take place in a stepwise and traceable manner. New releases should also be versioned consistently.
+The approach includes work flows for several types of changes: editorial changes, minor semantic changes and major semantic changes.
+
+As part of the approach, a version numbering scheme and time table is defined:
+
+* Editorial changes and bug fixes
+Once per year, the submitted requests for this type of change are collected and
+processed.
+The resulting release is numbered X.Y.(Z+1), e.g. 1.0.1, 1.0.2 etc.
+
+* Minor semantic changes
+Once per year, the submitted requests for this type of change are collected and
+processed. At this time, also editorial changes and bug fixes are processed.
+The resulting release is numbered X.(Y+1).0, e.g. 1.1.0, 1.2.0 etc.
+
+* Major semantic changes
+Every second year, the submitted requests for this type of change are collected and
+processed. At that time, also editorial changes and bug fixes as well as minor 
+semantic changes are processed.
+The resulting release is numbered (X+1).0.0, e.g. 2.0.0, 3.0.0 etc.

@@ -1,0 +1,350 @@
+= *2 PROCESS AND METHODOLOGY*
+The approach towards the development of the e-procurement Ontology is based on the ISA process and methodology for developing Core Vocabularies9, which provides guidance in two domains. First, the process describes how consensus is reached among stakeholders and domain experts so that the ontology meets its goals. Second, the methodology describes how the ontology is specified following best practices for selecting, reusing, developing and presenting concepts. In case amendments to the ontology are requested after its publication, the change management, release and publication process for structural metadata specifications developed by the ISA Programme10 should be followed.
+An earlier version of the process and methodology in the work to develop the e-procurement ontology methodology was presented in the landscaping report11.
+== *2.1 Process*
+The process of developing the initial ontology involves several steps that lead to the establishment of a Working Group that will be responsible for the development of the complete ontology. Table 1 lists the steps from inception of the work until the publication of the initial specification.
+
+.Table 1: Process overview
+[cols="1"]
+|===
+|*Process* 
+_Reaching consensus_
+
+|1. Identify stakeholders (Publications Office and PwC) 
+2. Identify chair(s) (Publications Office) 
+3. Identify editor(s) (Publications Office) 
+4. Form working group (Publications Office) Identify review group (Publications Office) 
+5. Verify and secure IPR12 (Intellectual property rights): coordinate the signing of the ISA contributor agreement (PwC) 
+6. Establish working environment and culture (PwC) 
+7. Develop first draft of the specification with an initial ontology and a draft Project Charter (PwC) 
+8. Present the draft specification and Project Charter in a Working Group meeting (PwC) 
+9. Further develop draft specification and Project Charter (PwC in collaboration with Working Group)
+10. Finalise draft specification and Project Charter (PwC)
+|===
+
+The process to be used by the Working Group in the development of the complete ontology is described in the Project Charter13, an accompanying document to this report.
+In this report, the following meanings are attributed to the terms in bold, as described in the e-Government Core Vocabularies Handbook14:
+
+--
+An *element* is a class, a property, or an association. Classes are instantiated into *instances* (individuals) representing a real-world physical or conceptual thing. *Classes* are used to express facts about the generic characteristics of an individual instance. For example, the fact that an individual 'Gotlobb Frege is a (instance of the class) Person'. *Properties* or associations are used to construct facts about individuals. The property 'Family name' can be used in the fact 'Frege is the family name of Gotlobb Frege'.
+--
+
+== *2.2 Methodology*
+The methodology for the development of the e-procurement ontology is based on the methodology described in the article *Ontology Development 101: A Guide to Creating Your First Ontology, by Natalya F. Noy and Deborah L. McGuinness15.*
+The methodology proposed includes three steps. These are shown in Figure 1 with the tasks that constitute each of the steps.
+
+image::{imagesdir}modules\ROOT\images\uml2owl\ontdescproc.png
+.Figure 1: e-procurement ontology development process
+
+=== *2.2.1 Step 1: Define use cases*
+
+A use case is a description of actions and event steps that explain the interaction between actors and a system. In light of the e-procurement ontology, the use cases describe situations that the ontology should be able to support. The working group will use the use cases for two purposes:
+
+.To understand how the ontology will be used in the future; and
+.As inspiration to identify key concepts and relationships, based on which a conceptual data model will be built.
+
+The step consists of 2 sub-steps:
+
+[cols="1,4"]
+|===
+
+|Step 1.1 
+|*_Select and update use cases from the landscaping study_*
+
+The landscaping study introduced 12 use cases for the e-procurement ontology. The working group should review these use cases, select the ones that should be in scope and propose updates to the use cases if they deem it necessary. Selected use cases should be described following the template in Annex I. Further use cases may be added.
+
+|Step 1.2 
+|*_Define additional use cases that the e-procurement ontology should cover_*
+
+The working group members should propose and agree on new use cases where they feel a need is not covered by the selected use cases or from the sum of more than one use case. New use cases should be described by following the template in Annex I.
+|===
+
+=== *2.2.2 Step 2: Derive information requirements from the use cases*
+
+In order to develop a conceptual data model, which defines the domain and scope of the ontology, information requirements first need to be elicited. Information requirements describe the concepts and relationships that need to be defined in the conceptual data model in order to support the use cases.
+
+This step is split into three tasks:
+
+[cols="1,4"]
+|===
+
+|Step 2.1
+|*_Highlight the elements that are mentioned in the use case_*
+
+This can be done by marking the important nouns (documents, agents, criteria, item descriptions, places, time periods, etc.) and verbs in the description of the flow (for the flow of a use case see for example 3.2 Use case 2) of the use cases. There will be nouns that are clearly not relevant, but all other nouns should be marked for using in the next step. Particular attention should be paid to underline only elements which are related to the public procurement process.
+
+--
+_Example:_
+_In partnership with CustomSteel, Bob prepares the tender and sends it to the contracting authority, awaiting a positive outcome and looking forward to reading his company’s name in the contract award notice._
+--
+
+In this example, elements such as Bob were not underlined since they do not relate to the public procurement process which represents the scope of this ontology.
+
+|Step 2.2
+|*_Generalise the elements from individuals to concepts_*
+
+Many of the elements identified in the previous step will be specific, e.g. a company name or a specific item that is procured. As such, they are examples of a more general class of elements or concepts. Some of the elements will map unto the same general concept class, some others will be clearly separate. It is important to generalise to the appropriate level, taking into account the role that an entity plays in the procurement process. For example, both contracting authorities and economic operators could be generalised to a general class Organisation, but as they play different roles, the generalisation should distinguish the classes Contracting Authority and Economic Operator.
+
+--
+_Example:_
+
+_CustomSteel  economic operator
+_prepares / sends -> submits_
+_tender -> tender_
+_contracting authority -> contracting authority_
+_reading -> is informed (data whether or not a contract is being read and by whom, is not needed to support the use case)_
+_company's name -> economic operator name_
+_contract award notice -> contract award notice_
+--
+
+|Step 2.3
+|*_Enter the concepts in the requirement template_*
+
+For each of the concepts identified in the previous step, the information indicated in the information requirements template is provided. Each of the information requirements should be clearly linked to one or more use cases. Moreover, the information requirements should indicate the priority of the requirement, e.g. by indication whether a requirement must or could be included in the ontology, or whether it would simply be nice to have. “Nice to have” does not mean that the requirement will be neglected, but that it will not be given priority when creating the conceptual data model.
+
+--
+_Example:_
+
+[col="1,3,1"]
+|===
+|Information requirement|Description|Related Use Case
+
+|IR01
+|The concept of economic operator SHOULD be defined.
+|UC1, UC2, UC3
+
+|IR02
+|The concept of contract award notice SHOULD be defined.
+|UC2
+
+|...
+|...
+|...
+
+|===
+--
+
+The outcome of step 2 is documented for the three use cases defined as part of this work in section 3.4.
+
+=== *2.2.3 Step 3: Develop a conceptual data model*
+
+Starting from the information requirements defined in step 2, a conceptual data model will be defined and agreed upon with the working group. The conceptual data model will serve as input for the creation of the ontology. This step aims to identify and describe the elements with their attributes and relationships.
+
+The conceptual data model is the key tool to reach semantic agreements between Working Group members, regardless of whether their background is business or IT. The development of the conceptual data model of the e-procurement ontology will consist of several sub-steps:
+
+[cols="1,4"]
+|===
+
+|Step 3.1
+|*_Enumerate important concepts based on information requirements_*
+As a first step towards creating a conceptual data model, the concepts that are directly resulting from the information requirements should be enumerated in a list of the classes and properties or in a UML diagram.
+
+--
+_Example:_
+.Figure 2: example - important classes, properties and relationships
+image::{imagesdir}modules\ROOT\images\classproprel.png
+--
+
+|Step 3.2
+|*_Identify missing classes, properties and relationships_*
+
+The list of classes, properties and relationships directly resulting from information requirements, identified in step 2.1, will most probably not be complete. Classes might be “floating”, meaning that a relationship between this class and other classes seem to be missing at first sight, or some classes might be missing. Since use cases are often written with a focus on the business processes or specific activities, the UML or list of classes, properties and relationships resulting from the previous step will probably not represent all those that are needed for a comprehensive ontology. In order to close the gaps and refine the classes, properties and relationships, members of the working group need to identify missing elements based on their domain expertise. At this stage, the working group might consider looking into existing conceptual data models in order to identify potential solutions for gaps in the conceptual model.
+Based on the classes, properties and relationships identified, two methods may be employed to define a class hierarchy: either top-down, starting with definition of the most general concepts and then specialising as necessary, or bottom-up, starting with definition of the most specific classes and then generalising, or a combination of the two, starting with a small number of main classes and properties. In the case of the e-procurement ontology, the combination approach will be used.
+
+--
+_Example:_
+.Figure 3: example - missing elements
+image::{imagesdir}modules\ROOT\images\misselem.png
+--
+
+|Step 3.3
+|*_Define the Class_*
+
+The Working Group has to propose and agree on definitions for each of the classes. A template for documenting final definitions is proposed in Annex I section I.3. The editor will first draw up a list of equivalent terms including the definition from each source and propose a term to the working group to discuss and agree on.In the e-procurement ontology, definitions should to the extent possible come from legislation, such as the e-procurement and e-invoicing directives16. If legislation does not provide suitable definitions, definitions from established business vocabularies such as UBL or XBRL should be used.
+In the issue 32 raised on GitHub, an approach was proposed towards describing the classes, properties and relationships in the ontology. The issue was resolved in the third working group meeting of 24/05/2017.https://github.com/eprocurementontology/eprocurement ontology/issues/32 which involves a merge of this step with step 4 whereby already at this stage the ruse of existing ontologies will be taken into consideration.
+
+--
+_Example of how the label and definition will be displayed. It should be noted the labels and definitions shown in the example are yet to be discussed and agreed upon with the working group._
+
+
+[col="1,3"]
+|===
+|Label|Definition
+
+|Contracting Authority
+|State, regional or local authorities, bodies governed by public law or associations formed by one or more such authorities or one or more such bodies governed by public law17
+
+|Economic Operator
+|An Agent, in the context of the e-procurement ontology, a natural or legal person, or public entity, or a group of such persons or elements, including temporary associations of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market18
+
+|...
+|...
+|===
+--
+
+|Step 3.4
+|Define the properties of classes
+
+Several types of properties are considered: attributes that describe characteristics of the classes and relationships between classes. Both can be described in the same table and are ideally described per class. Properties should be defined on the class where they are the most easily managed.
+
+--
+_Example_
+Property (from 3.3 Use Case 3)
+
+image::{imagesdir}modules\ROOT\images\label.png
+
+Relationship (from 3.2 Use Case 2)
+
+image::{imagesdir}modules\ROOT\images\labelsub.png
+--
+
+|Step 3.5
+|Define the facets of the properties
+
+The following facets should be defined:
+* The data type describes the type of value in which a property can be expressed, for example “number”, “string” or “value from a controlled vocabulary19”.
+* The domain: the type of entity that the property describes or which is the subject of the relationship e.g. the relationship “publishes” has domain “Contracting Authority” and range “call for tender”.
+* The range: the type of elements that can be used as object of the relationship, e.g. the relationship “publishes” has domain “Contracting Authority” and range “call for tender”.
+* The cardinality is how the relationship between two elements in a data model, e.g. one-to-one (1..1), one-to-many (1..n), etc.
+As specified in the resolution of the issue 1420, the domains and ranges in this document were made as general as possible.
+
+--
+_Example_
+
+Property
+
+image::{imagesdir}modules\ROOT\images\property.png
+
+Relationship
+
+image::{imagesdir}modules\ROOT\images\relationship.png
+--
+
+While new classes and properties are added and defined, others might be eliminated, as their semantic meaning might be the same.
+The outcome of step 2 is documented in section 5.
+
+=== *2.2.4 Step 4: Consider reusing existing ontologies*
+
+In this step, knowledge about existing work in the same or related areas is considered as a basis for the development of the ontology. Reuse of existing ontologies may help in interoperability with existing systems and applications.
+
+For the e-procurement ontology, the analysis of related ontologies, vocabularies and projects in section 4 of D04.07 Report on policy support for e-procurement - e-procurement ontology will serve as a basis for the selection and integration of existing ontologies.
+
+This step can be then split into two tasks:
+
+[cols="1,5"]
+
+|4.1
+|*_Analyse related ontologies and vocabularies for similar classes, properties and relationships_*
+The descriptions of the various classes and properties in the conceptual data model serve to compare the ones derived from the information requirements and use cases to the ones defined in external specifications such as XML schemas, RDF vocabularies and ontologies. Determining similarity between classes and properties requires a bit of flexibility as the ones that were defined in a slightly different context might use a different terminology.
+Online tools such as Linked Open Vocabularies (LOV21) can help in order to identify and analyse existing ontologies and to identify elements that could be reused.
+
+|4.2
+|*_Choose relevant classes or properties from other ontologies and vocabularies_*
+If an external class or property is sufficiently similar to one in the conceptual data model, some of its relevant characteristics can be reused following the reusability levels defined in Table 2 later on. In some cases, there may be a need to adapt the description in the conceptual data model to align with the external class or property. Even if external ones are not directly reusable, for example because their context is very different, they can still be used as inspiration for the ontology.
+The working group has to select and validate the reuse of relevant elements from other ontologies and map them to the concepts in the conceptual data model. When several elements from other ontologies are considered, the working group members have to reach consensus on which ontology to reuse. When considering whether a class or property is reusable, the working group should always check whether the domain and range of the reused class or property are compatible with the domain and range needed in the e-procurement ontology.
+Concretely, by mapping the other ontologies to the classes and properties of the conceptual data model, the working group will define which classes and properties from other ontologies are "broader" or "narrower" than the related elements from the conceptual data model. A class or property from the conceptual data model will always comply with the definition of a broader class or property from another ontology while it will need to be redefined to comply with a narrower class or property from another ontology. In the case where no classes and properties from other ontologies, related to a specific class or property from the conceptual data model exist or none of the existing classes and properties are accepted by the working group, the working group should define the class or property as described in the conceptual data model.
+
+--
+_Example_
+
+For Economic Operator, the working group might consider to reuse either
+
+* http://www.w3.org/ns/org#Organization; or
+* http://www.w3.org/ns/regorg#RegisteredOrganization.
+
+The ORG ontology defines Organization as an Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a Corporation, Charity, Government or Church. Note that this is a super class of `gr:BusinessEntity` and it is recommended to use the GoodRelations vocabulary to denote Business classifications such as DUNS or NAICS.
+The Regorg Vocabulary defines Registered Organization as an organization that is legally registered. In many countries there is a single registry although in others, such as Spain and Germany, multiple registries exist. A Registered Organization is able to trade, is legally liable for its actions, accounts, tax affairs etc. Legal entity status is conferred by the act of registration cf. org:FormalOrganization that applies to any legal entity, including those created by other legal means. This makes registered organizations distinct from the broader concept of organizations, groups or, in some jurisdictions, sole traders. Many organizations exist that are not legal elements yet to the outside world they have staff, hierarchies, locations etc. Other organizations exist that are an umbrella for several legal elements universities are often good examples of this). This vocabulary is concerned solely with registered organizations. In RDF, Registered Organization is a sub class of the Organization Ontology's org:FormalOrganization which is itself a sub class of the more general 'Agent' class found in FOAF and Dublin Core that does encompass organizations, natural persons, groups etc. - i.e. an Agent is any entity that is able to carry out actions.
+In this example, neither of the definitions from the ontologies exactly matches the definition used for the class economic operator. Therefore, the working group should decide if it is preferable to keep this definition or to adapt it to comply with one of the two definitions from other ontologies. When a definition of a reusable class or property is more general than the definition the working group has in mind, the external one can be reused and the definition can be narrowed in the e-procurement ontology by defining the e-procurement class or property as a subclass or subproperty of the reused element.
+
+The final agreed list of reusable classes and properties should be documented according to the templates in Annex I.
+--
+
+--
+_Example_
+
+.Classes:
+image::{imagesdir}modules\ROOT\images\4.2-1.png
+
+.Data Type Properties:
+image::{imagesdir}modules\ROOT\images\4.2-2.png
+
+.Object Type Properties:
+image::{imagesdir}modules\ROOT\images\4.2-3.png
+
+In the case of reusing an external ontology, the methodology will consider three levels of reusability accordingly to section 4.1.2 of A Contextual Approach to Ontology Reuse: Methodology, Methods and Tools for the Semantic Web22.
+
+.Table 2: Reuse levels
+
+[cols="1,1,2,3"]
+|===
+s|Level|Sub-level|Name|Description
+
+|1
+|
+|Reusing the vocabulary
+|Reuse of labels to identify ontological primitives (classes, instances, properties)
+
+|2
+|
+|Reusing the vocabulary and the semantics
+|Reusing labels with their meaning within the original domain
+
+|
+|A
+|Reusing the classification
+|Specialisation/generalisation hierarchy is reused
+
+|
+|B
+|Reusing properties
+|Reusing properties connecting ontological concepts
+
+|
+|C
+|Reusing axioms
+|Reusing the complete original conceptualisation of the domain of interest.
+
+|3
+|
+|Reusing instance data
+|Reusing a whole instance of a concept described in the ontology
+
+|===
+
+The outcome of step 4 is documented for the three use cases in section 6.
+
+=== *2.2.5 Step 5: define and implement and OWL ontology*
+
+As a last step, the agreed ontology should be described in the OWL DL23 format (see https://github.com/eprocurementontology/eprocurementontology/blob/master/eproc_v0.6.owl[] for the current conceptual model in OWL) and published on the Metadata Registry (MDR) of the Publications Office of the EU.
+
+== *2.3 Roles and responsibilities*
+
+The following roles are distinguished:
+
+*Working Group Chair*: This person is responsible for the leadership of the group, guiding the work towards consensus, making sure that opinions and requirements of the working group members and of public comments are taken into account, and overseeing the logistics of the meetings (scheduling, agenda, reporting) and the work of the Editor.
+-> The assigned chair for the Working Group is the Publications Office of the European Union.
+
+*Editor*: This person is responsible for creating and maintaining the drafts of the specification that reflect the emerging consensus of the working group, as well as supporting the chair in the logistics of the working group.
+-> The assigned editor for this preliminary phase is Makx Dekkers. The editor for the development of the complete ontology will be assigned later.
+
+*Working Group Members*: The persons that make up the Working Group contribute to the work in a good spirit of collaboration and willingness to compromise by bringing forward opinions and suggestions based on their specific views and expertise on behalf of the organisation they represent.
+-> The members of the Working Group are listed in section 9.
+
+*Public Review*: All the persons interested in reviewing the work done by the Working Group will have the opportunity to do so during specific periods defined by the Publications Office of the European Union and specifically dedicated to the public review.
+
+== *2.4 Working environment*: 
+
+The work is conducted with the following tools to facilitate the development and consensus process:
+
+Ontology development tool: Protégé, http://protege.stanford.edu/[]
+* Conference call facility: Adobe Connect, http://ec-wacs.adobeconnect.com/op2598/[]
+* Mailing list: eprocurementontology@joinup.ec.europa.eu
+* Issue tracker: Github https://github.com/eprocurement[]
+* Publication channel: https://joinup.ec.europa.eu/asset/eprocurementontology/description[]
+
+The working group members, and any stakeholder during the public review, will be able to share their inputs, raise an issue or propose solutions through the different ways mentioned above. In the case where a person would like to share:
+
+* Input of general interest for the working group members, the mailing list should be used;
+* A new issue or a comment on an existing issue about documents uploaded on the publication channel by the Publications Office of the European Union, the issue tracker (Github) should be used. The editor and the chair of the working group will assure that the issues raised and their related solutions will be maintained periodically, e.g. they will be appropriately linked to the documentation published on Joinup, issues will be categorised and correctly referred, etc.
+
+Any type of input could be shared during the conference calls organised by the Publications Office or the editor.

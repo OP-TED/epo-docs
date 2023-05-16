@@ -1,0 +1,699 @@
+= *4 RELATED ONTOLOGIES/VOCABULARIES AND PROJECTS*
+
+== *4.1 Data models and ontologies*
+
+=== * 4.1.1 CEN WS/BII business term vocabulary and semantic models
+
+The CEN Workshop on business interoperability interfaces for public procurement in Europe (CEN WS/BII), established in March 2007, had the objective of providing a basic framework for technical interoperability in pan-European electronic transactions. It delivered a complete set of profiles covering both the pre-award and the post-award phases of the public procurement. The existence of these profiles and their associated semantic data models has been key in allowing disparate solutions to interoperate.  
+
+These profiles describe aspects throughout the whole procurement process such as notifications, the call for tenders, awarding and contracting. 
+These profiles were implemented in several projects in Europe: the European Commission used them to build e-Prior, their open source solution for electronic invoicing and ordering, now also covering the pre-award phases; the PEPPOL  community has also used them to create their own BIS specifications, resulting in a national-wide deployment of electronic invoicing in countries such as Norway, Denmark and Sweden, and other public administrations in Europe are currently basing their IT infrastructure and electronic procurement policies on deploying these standards e.g.,the National Health Service of the United Kingdom.
+
+These profiles were updated in 2015 and examples of some profiles are listed below in Table 6 Examples of CEN BII Profiles.
+
+.Table 6 Examples of CEN BII Profiles
+
+[cols="1,1,1,1"]
+|===
+|CWA|BII Profile|Transaction Information|UBL Syntax Binding
+
+|CWA3456-119
+|BII54 Tendering
+|Submit Tender
+|CWA3456-218
+
+|
+|
+|Tender Receipt Notification
+|CWA3456-205
+
+|CWA3456-112
+|BII47 Call for Tenders
+|Call for Tenders
+|CWA3456-212
+
+|CWA5678-104
+|BII06 Procurement
+|Order
+|CWA5678-301
+
+|
+|
+|Invoice
+|CWA5678-305
+
+|CWA2345-101
+|BII10 Contract Notice
+|Contract Notice
+|CWA2345-201
+|===
+
+These semantic models and their mappings to XML document exchange syntaxes, such as UBL and UN/CEFACT, should now be converted into knowledge to enable them to go a step further, by promoting a whole set of new functionalities such as searching for opportunities by sellers, comparing offers by buyers, getting statistical data, or improving the control and transparency in the electronic procurement procedures in the European Union.
+
+In 2015, CEN established a new technical committee (TC) whose purpose is to develope standards to support and facilitate the electronic exchange of information in public procurement [8]: CEN/TC 440. The technical committee will develop semantic data models, based on CEN/BII. TC/440 will closely collaborate with CEN/TC 434, a technical committee for the development of standards supporting European Electronic Invoicing [9]. The work of CEN/TC 440 and TC 434 is closely related to the development of the ePO. Therefore synergies between CEN TC/440, TC 434 and the ePO should be developed as far as possible.
+
+=== *4.1.2.	Open Contracting Data Standard*
+
+The Open Contracting Data Standard (OCDS)  was developed for the Open Contracting Partnership (OCP) by the World Wide Web Foundation . The OCDS enables disclosure of data and documents at all stages of the contracting process by defining a common data model. It was created to support organizations to increase contracting transparency, and allow deeper analysis of contracting data by a wide range of users [10].
+
+The Open Contracting Data Standard (OCDS) is maintained using JSON Schema. Table 7 displays the main sections and common objects used in the schema.
+
+.Table 7 Main sections and objects in OCDS [11]
+
+[cols="1,1,1"]
+|===
+
+|Section
+|Object
+|Description
+
+|*Planning:*
+Information from the planning phase of the contracting process.
+|Budget
+|The budget object has the following sub-elements:
+Source, id, description, amount, project, project ID and URI. 
+
+|
+|Rationale
+|The rationale for the procurement provided in free text
+
+|
+|Documents
+|A list of documents related to the planning process
+
+|*Tender:*
+The activities undertaken in order to enter into a contract.
+|ID
+|An identifier for this tender process
+
+|
+|Title
+|Tender title
+
+|
+|Description
+|Tender description
+
+|
+|Status
+|Current status on of the tender (value from codelist)
+
+|
+|Items
+|The goods and services to be purchased, broken into line items wherever possible.
+
+|
+|minValue
+|The minimum estimated value of the procurement
+
+|
+|Value
+|The total upper estimated value of the procurement
+
+|
+|procurementMethod
+|Specify tendering method (value from codelist)
+
+|
+|ProcurementMethodRationale
+|Rationale of procurement method
+
+|
+|awardCriteria
+|Specifies the award criteria for the procurement (values from codelist)
+
+|
+|awardCriteriaDetails
+|Any detailed or further information on the award or selection criteria
+
+|
+|submissionMethod
+|Specify the method by which bids must be submitted (value from codelist)
+
+|
+|submissionMethodDetails
+|Any detailed or further information on the submission method
+
+|
+|tenderPeriod
+|The period when the tender is open for submissions
+
+|
+|enquiryPeriod
+|The period during which enquiries may be made and answered
+
+|
+|hasEnquiries
+|A Yes/No field to indicate whether enquiries were part of tender process
+
+|
+|eligibilityCriteria
+|A description of any eligibility criteria for potential suppliers
+
+|
+|awardPeriod
+|The date or period on which an award is anticipated to be made
+
+|
+|numberOfTenderers
+|The amount (integer) of tenderers
+
+|
+|tenderers
+|All entities who submit a tender
+
+|
+|procuringEntity
+|The entity managing the procurement, which may be different from the buyer who is paying/using the items being procured.
+
+|
+|Documents
+|All documents and attachments related to the tender, including any notices
+
+|
+|Amendment
+|Amendment information
+
+|
+|Milestones
+|A list of milestones associated with the tender
+
+|*Buyer:*
+The buyer is the entity whose budget will be used to purchase the goods
+|additionalIdentifiers
+|Alternative identifiers of the buyer
+
+|
+|Name
+|Name of the buyer
+
+|
+|Address
+|Address of the buyer
+
+|
+|contactPoint
+|Contact point within the buyer entity, such as an E-mail address or a person
+
+|*Awards:*
+An award for the given procurement. There may be more than one award per contracting process
+
+|Id
+|The unique identifier for this award
+
+|
+|Title
+|Award title
+
+|
+|Description
+|Award description
+
+|
+|Status
+|The current status of the award (value from codelist)
+
+|
+|Date
+|The date on which a decision to award was taken
+
+|
+|Value
+|The total value of this award
+
+|
+|Suppliers
+|The suppliers awarded this award
+
+|
+|Items
+|The goods and services awarded in this award, broken into line items where possible
+
+|
+|contractPeriod
+|The period for which the contract has been awarded 
+
+|
+|Documents
+|All documents related to the award
+
+|
+|amendment
+|Amendment Information
+
+|*Contracts:*
+Information regarding the signed contract between the buyer and supplier(s)
+
+|Id
+|The unique identifier for this contract
+
+|
+|awardID
+|The award ID against which this contract is being issued
+
+|
+|Title
+|Contract title
+
+|
+|Description
+|Contract description
+
+|
+|Status
+|Current status of the contract (value from codelist)
+
+|
+|Period
+|The start and end date of the contract
+
+|
+|Value
+|The total value of the contract
+
+|
+|Items
+|The goods, services, and any intangible outcomes in this contract
+
+|
+|dateSigned
+|The date the contract was signed
+
+|
+|Documents
+|All documents and attachments related to the contract
+
+|
+|Implementation
+|Implementation	Information related to the implementation of the contract in accordance with the obligations laid out therein.
+
+|
+|Amendment
+|Amendment information
+
+|*Language:*
+Specifies the default language of the data 
+|
+|
+|===
+
+The Open Contracting Data Standard cannot be directly reused in the ePO, because it is not an RDF vocabulary. It can however be used as an insight into all things that need considering during the modelling process as it is neatly structured and quite extensive. How it has developed its buyer URI could be analysed more in-depth.
+
+=== *4.1.3	Universal Business Language*
+
+Universal Business Language (UBL) has been designated by the European Commission as one of the first consortium standards officially eligible for referencing in tenders from Public Administrations and is freely available to everyone without legal encumbrance or licensing fees.
+
+UBL is the result of an international effort to define a royalty-free library of standard electronic XML business documents, such as purchase orders and invoices.It is designed to plug into existing legal, business, auditing, and records management practices, eliminating the re-keying of data in existing fax and paper-based supply chains and being an entry point into e-commerce for SMEs [12]. It is also used by nations around the world for implementing cross-border transactions related to sourcing (e.g. tendering), procurement (e.g. electronic invoicing), replenishment (e.g. managed inventory) and transportation (e.g. waybills and status).
+
+The standard is the foundation for several European Public Procurement frameworks, including EHF (Norway) , Svefaktura (Sweden) , OIOUBL (Denmark) , e-Prior (European Commission DIGIT) , and PEPPOL  [13].
+
+Universal Business Language provides a list of business objects expressed as reusable data components (e.g. address and payment) and common business documents (e.g. order and invoice), schemas for reusable data components and schemas for reusable business documents. Business objects from UBL that relate to the procurement field, include Invitation for Tender, Submission of Qualification Information and Awarding of Tenders. UBL Document Schemas related to e-Procurement include, for example, Call for Tenders. An example of these objects and how the relate, is described below.
+
+--
+*Example*
+
+*Business Object:* _Invitation to Tender_
+
+.Figure 1: UBL "Invitation to Tender" process
+
+image::modules\ROOT\images\UBL-Inv-Tender.png[]
+
+In this Business Object, i.e. the Invitation to Tender process, the Document Schema Call for Tenders is used. The Call for Tenders Document Schema is described as follows:
+
+*Document Schema*
+_Call for Tenders_
+
+Description: A document used by a Contracting Party to define a procurement project to buy goods, services, or works during a specified period.
+
+.Table 8: UBL "Call for Tenders" Document Schema
+[colls="1,2"]
+|===
+|Processes involved|Tendering
+
+|Submitter role
+|Contracting Authority
+
+|Receiver role
+|Tenderer
+
+|Normative schema
+|http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-CallForTenders-2.1.xsd[xsd Schema]
+
+|Runtime schema
+|http://docs.oasis-open.org/ubl/os-UBL-2.1/xsdrt/maindoc/UBL-CallForTenders-2.1.xsd[xsdrt Schema]
+
+|RELAX NG schema
+|link:modules\ROOT\attachments\UBL-CallForTenders-2.1.rnc[]
+
+|Document model (ODF)
+|link:modules\ROOT\attachments\UBL-CallForTenders-2.1.ods[]
+
+|Document model (Excel)
+|link:modules\ROOT\attachments\UBL-CallForTenders-2.1.xls[]
+
+|Document model (UML)
+|#link no longer valid#
+
+|Summary report
+|http://docs.oasis-open.org/ubl/os-UBL-2.1/mod/summary/reports/UBL-CallForTenders-2.1.html[html report]
+
+|===
+--
+
+Since the UBL is the basis for many e-Procurement systems, as described above, it is considered a well-established standard. Therefore, it cannot be neglected when developing the ePO. Especially the UBL concepts related to procurement, such as invitation for tenders, call for tenders, etc. should be carefully looked into.
+
+=== *4.1.4	The European Single Procurement Document*
+
+In January 2016, the European Commission adopted the European Single Procurement Document (ESPD) , a document that aims to considerably reduce the administrative burden for companies, in particular SMEs who want to have a fair chance at winning a public contract.
+
+To achieve this the ESPD maps out and replaces equivalent certificates issued by local public authorities or third parties involved in the procurement process, which can differ drastically between Member States.
+
+While some countries have already introduced some form of “self-declaration” of suitability, others require all interested parties to provide full documentary evidence of their suitability, financial status and abilities. The ESPD will allow businesses to electronically self-declare that they meet the necessary regulatory criteria or commercial capability requirements, and only the winning company will need to submit all the documentation proving that it qualifies for the contract [14].
+
+To make full use of the ESPD concept, the European Commission will establish a service available for both suppliers and buyers, developing and providing the ESPD service free of charge to Member States and European Institutions. It will be provided as open source, so it can be implemented by service providers for their own use and to provide added value to buyers and suppliers [15].
+
+With regard to technical requirements, the transmission will be done through e-Tendering solutions. As the service works in conjunction with e-Certis, business registers and e-Tendering solutions, great care will be taken to harmonise the semantic data model. Development will be linked to e-SENS, the standardisation initiatives of CEN, the ISA Core Business Vocabulary, and solution providers.
+
+In conclusion, the main objective of the ESPD is to reduce the administrative burden for buyers and suppliers participating in public procurement procedures. The ESPD service will reduce that burden by removing the need to produce a substantial number of certificates and documentation related to exclusion and selection criteria #during the initial submission phase?#.
+
+.Figure 2: ESPD Data Model [16]
+image::modules\ROOT\images\espdatamodel.png[]
+
+The ESPD initiative is worth examining carefully. As it maps all the certificates and evidence needed for procurement in the different Member States, it does the ePO a great service, as this is a task that will be necessary during the creation of the ePO.
+
+=== *4.1.5	CEN Core Invoice*
+
+Directive 2014/55/EU on electronic invoicing in public procurement states that Member States should ensure that contracting authorities and contracting entities receive and process invoices electronically.
+The European Commission tasked CEN, the European Committee for Standardisation, with developing a standard semantic data model, including business terms and rules, representing the core content of an e-invoice. The development in CEN is based on the CENBII Core Invoice data model and takes other international standards into account [17]. Member States shall adopt, publish and apply the laws, regulations and administrative provisions necessary to comply with this Directive at the latest by 27 November 2018.
+
+Table 9 below contains examples of elements described in the Cen Core Invoice data model.
+
+[cols="1,1"]
+|===
+|Element Name|Rationale and use
+
+|Seller Name
+|A Core Invoice must contain the name of the seller.
+
+|Seller address line1
+|A Core Invoice must contain the seller’s street name and number or P.O.box.
+
+|Delivery date
+|A Core Invoice may contain the actual delivery date on which goods or consignments are delivered from the seller. Also applicable for service completion date.
+
+|Paid amounts
+|A Core Invoice may contain the sum of all prepaid amounts that must be deducted from the payment of this invoice. For fully paid invoices (cash or card) this amount equals the invoice total.
+
+The CEN Core Invoice model could be invaluable to the ePO as a source of complete and accurate invoice data.
+|===
+
+=== *4.1.6	e-Certis data model*
+
+e-Certis  is a free online source of information to help companies and contracting authorities deal with the different forms of documentary evidence required in cross-border tenders for public contracts. e-Certis presents the different certificates frequently requested in procurement procedures across the EU [18]. In particular, e-Certis can help companies to find out which certificates issued in their country they need to include in tender files submitted to an authority in any partner country, or contracting authorities to establish which documents issued by a partner country to confirm the eligibility of a tender are equivalent to the certificates they themselves require.
+
+e-Certis is a reference tool and not a service of legal advice. The information contained in the database is provided by the national authorities and updated on a regular basis [19].
+
+e-Certis describes the documents using the following metadata:
+
+* Document type set, e.g. “Certificate required to participate in public procurements”;
+* Document type, e.g. “Proof of tender’s identity”, “Invoices from the service provider”;
+* Country; and
+* Available language.
+
+e-Certis has a high reusability potential for our project as it could be a valuable reference when creating the classes and properties describing the certificates that are needed in the procurement process.
+
+=== *4.1.7	ISA Core Vocabularies*
+
+The ISA Core Vocabularies were created in collaboration with and by international working groups facilitated by the Interoperability Solutions for European Public Administrations (ISA) Programme of the European Union . Their aim is to facilitate the exchange of information in the context of European Public Services and address interoperability problems such as the lack of commonly agreed data models and universal reference data.
+
+Core Vocabularies are simplified, re-usable and extensible data models that capture the fundamental characteristics of an entity in a context-neutral fashion. Public administrations can use and extend the Core Vocabularies in the following contexts [20]:
+
+* Development of new systems: the Core Vocabularies can be used as a default starting point for designing the conceptual and logical data models in newly developed information systems.
+* Information exchange between systems: the Core Vocabularies can become the basis of a context-specific data model used to exchange data among existing information systems.
+* Data integration: the Core Vocabularies can be used to integrate data that comes from disparate data sources and create a data mesh-up.
+* Open data publishing: the Core Vocabularies can be used as the foundation of a common export format for data in base registries like cadastres, business registers, and public service portals.
+
+Currently available vocabularies are:
+
+* Core Person vocabulary: captures the fundamental characteristics of a person, e.g. the name, the gender, the date of birth, the location.
+* Core Public Service vocabulary: captures the fundamental characteristics of a service offered by public administration.
+* Core Business vocabulary: captures the fundamental characteristics of a legal entity (e.g. its identifier, activities) which is created through a formal registration process, typically in a national or regional register.
+* *Core Public Organization vocabulary: captures the fundamental characteristics of public organizations in the European Union.
+* Core Location vocabulary: captures the fundamental characteristics of a location, represented as an address, a geographic name or a geometry.
+* Core Criterion & Core Evidence vocabulary: describes the principles and means that a private entity must fulfil in order to be qualified to perform public services.
+
+Of the above vocabularies, the Core Criterion & Core Evidence, Core Business, Core Public Organization, and Core Person vocabularies can be especially useful for the eProcurement ontology as they describe fundamental parties and elements of public procurement contracts. Also, The Core Location vocabulary can provide a solution for describing any location data needed.
+
+.Table 10 Example Classes form the ISA Core vocabularies
+
+[cols="2,1,2"]
+|===
+|Vocabulary|Class|Description
+
+|Core Criterion & Core Evidence
+|Criterion
+|A rule or principle that is used to judge, evaluate or test something.
+
+|Core Criterion & Core Evidence
+|Evidence
+|The Evidence class contains information that proves that a criterion requirement exists or is true, in particular an evidence is used to prove that a specific criterion is met.
+
+|Core Public Organization
+|Public Organization
+|The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units.
+
+|Core Business	
+|Legal Entity
+|Represents a business that is legally registered.
+
+|Core Business	
+|Identifier
+|The Identifier class represents any identifier issued by any authority, whether a government agency or not.
+|===
+
+=== *4.1.8.	The Public Procurement Ontology*
+
+The PPROC ontology has been developed under the Public Procurement Optimization through Semantic Technologies Project (CONTSEM). This project is jointly undertaken by iASoft, the University of Zaragoza, ARAID (Government Agency of Aragon), the Government of Aragón, the Provincial Council of Huesca, and the town halls of Huesca and Zaragoza. The main purpose of the project is to add semantic technologies to the software used by public authorities for procurement procedures to publish data about public contracts. More specifically, one of the core objectives is to describe, semantically, the information published in official procurement bulletins [21].
+CONTSEM participants developed the PPROC ontology in accordance with Spanish laws and European laws in general.
+
+The PPROC ontology defines the necessary concepts needed to describe the public procurement process and its contracts by effectively extending the Public Contracts Ontology. The main Class of the PPROC ontology is the pproc:Contract class, as the contract is considered to be the core concept of every procurement, as represented in Figure 3.
+
+.Figure 3: Contract Class and subclasses [21]
+image::modules\ROOT\images\contractclasssubclass.png[]
+
+The other core Classes of the ontology which describe different aspects of procurement are the following represented in Figure 4: core classes of PPROC [21].
+
+.Figure 4: core classes of PPROC [21]
+image::modules\ROOT\images\coreclassespproc.png[]
+
+To describe all other concepts relevant to procurement contracts, the ontology reuses various ontologies and schemes. For example, the following solutions are reused: the Organization Ontology, the Schema.org scheme, the Simple Knowledge Organization System (SKOS) ontology, the Good Relations Ontology, and the Dublin Core Metadata terms scheme.
+
+The PPROC ontology examined as a possibility for reuse in the ePO as it is extensive in its coverage, compatible with European procurement processes, well documented, and already extensively reuses existing established vocabularies.
+
+=== *4.1.9	LOTED2*
+
+LOTED  (Linked Open Tenders Electronic Daily) is an ontology for the representation of European public procurement notices developed by the Knowledge Media Institute  of the Open University.
+
+It was created following the initiatives around the creation of linked data-compliant representations of information regarding tender notices in Europe, with the aim of addressing a specific problem plaguing previous efforts.
+Until now projects developing legal ontologies have attempted to represent the legal concepts and the case-based reasoning behind them in linked data simply by mapping them in OWL. However, due to the high level of detail and the nuances of legal reasoning, this approach resulted in extremely complex vocabularies. Complexity is unwanted in semantic applications because for intelligence to arise from linking heterogeneous data, the datasets in question must be flexible enough to integrate effectively.
+
+The LOTED2 model seeks to find a balance between accurately representing the complex legal concepts and the reasoning behind them, and retaining the usability required for semantic applications. [22]
+
+Specifically LOTED2 has been designed for the following purposes: 
+
+* to express the main legal concepts of the domain of public contracts notices as defined in legal sources (e.g. European Directives on public contracts);
+* to support rich semantic annotation, indexing, search and retrieval of tenders documents, such as contract notices;
+* to enable the integration with other ontologies and vocabularies about related domains; and
+* to make the reuse of semi structured data extracted from the TED system possible, as shown in Figure 5 Semi-Structured data extracted from TED.
+
+.Figure 5 Semi-Structured data extracted from TED
+image::modules\ROOT\images\coreclassespproc.png[]
+
+LOTED2 is organized into the following 10 independent and reusable core modules which collectively represent 180 Classes:
+
+* *Loted2-core module:* acts as the framework for the other modules;
+* *Procurements Subjective Scope module:* describes the classes of legal persons who are empowered to issue a tender notice (e.g. contracting authorities, contracting entities);
+* *Tender Documents module:* this module provides a full description of tender documents (e.g. The majority of tender documents available on the TED system are described following this structure);
+* *Procurement Regulation module:* this module describes the legislative sources regulating public procurement domain;
+* *Procurement Competitive Process module:* this module describes the competitive process of the procurement (e.g. type of competition, qualification process, award procedure);
+* *Subjective Legal Situations module:* this module describes the roles played by agents in the procurement process (e.g. role of the tenderer, role of the awarding legal entity);
+* *Proposed Contract module:* this module describes the details of the contract to be awarded;
+* *Tender Bid module:* this module describes the tender bid;
+* *Business Entity module:* this module describes the entities to whom the invitation to submit an offer for a proposed public contract is addressed; and
+* *Top module:* this module contains abstract classes used to integrate LOTED2 with other core legal ontologies.
+
+In the case of ePO, the LOTED2 vocabulary could be useful as a means of enriching the data represented by the ePO with legal context. Also helpful is the fact that it is already designed with compatibility with TED data in mind.
+
+=== *4.1.10	The Linked Open Economy ontology*
+
+The Linked Open Economy (LOE) ontology was developed for the purposes of the EU funded project YourDataStories.eu. It was created to address the problem of the poor quality of open economic data becoming available as more governments around the world open their data to the public.
+
+The Linked Open Economy ontology is a top-level, generic conceptualization that aims to enrich and interlink the publicly available economic open data by modelling the flows incorporated in public procurement along with the market process to address complex policy issues.
+
+The Linked Open Economy approach is a simple scalable model designed to describe data ranging from public procurement, budgets and spending to market prices. As such it can be easily tailored to a multitude of individual project needs. It also extensively uses existing vocabularies to make integration of heterogeneous data easier.
+
+Table 11 in annex 7.1 summarizes Classes of the LOE ontology as used in the YourDataStories project .
+
+The Linked Open Economy model is an interesting case to look into for reuse as it is quite generic could prove useful, depending on whether it can be tailored to the needs of the ePO.  
+
+=== *4.1.11	Payments ontology*
+
+The Payments ontology was created in 2010 by the Local eGovernment Standards Body and the Local Government Group as a part of the UK government's transparency drive, which requested that all UK local authorities publish detailed information on their spending.
+The Payments ontology is a general purpose vocabulary for publishing organizational spending data. It is built on the Data Cube vocabulary and represents payment data, which is typically described as a multi-dimensional table. 
+The main concept of the ontology is that of a Payment, which is associated with a Payer, a Payee and a Date. The ontology then provides a number of optional properties to further describe the payment, such as the specific government department responsible or related expenditure line, and to structure the data Cube according to needs.
+
+The following is an example of a payment:Payment instance:
+
+image::modules\ROOT\images\egpaymentinstance.png[]
+
+The Payments Ontology can be considered for reuse in the post award stage of the procurement process to model the spending. Its suitability should be discussed however, as it is based on the Data Cube vocabulary, which although suitable for specific kinds of analysis, may prove less than ideal for integration with the rest of the data, as it may be modelled in a different format.
+
+=== *4.1.12	Paraguayan procurement ontology*
+
+The DNCP  (National Public Procurement Portal) of open data, set up by the government, was created to provide access to data of public procurement in Paraguay and promote the development of creative tools that were attractiveof  and service citizens.
+This initiative aimed to promote transparency, efficiency, citizen participation, and economic development by exposing the work done in various institutions, showing how they are managed and how they invest public resources.
+Table 12 in annex 7.2 lists all Classes used in the Paraguayan Procurement Ontology.
+Although the Paraguayan Procurement ontology aims to serve a similar purpose as the ePO, two problems with regards to its reuse were identified. First, the Paraguayan Procurement ontology is modelled completely in Spanish, which limits its reusability in the multilingual EU context. Secondly, the ontology is tailored to the local process.  However the ideas behind the ontology could provide an interesting insight.
+
+=== *4.1.13 SEDIA*
+
+The Single Electronic Data Interchange Area (SEDIA) is a major strategic initiative that aims to create a master data repository of external stakeholders making business with the European Commission, whether business means grants or tenders. 
+
+The goal of the SEDIA project to create a fully automated and integrated process for handling procurement and grants information, strictly limiting the manual input of data to a minimum, and promoting the alignment and reuse of such data along the whole process. This requires the implementation of solutions based on interoperability of the different systems.
+
+This is a process where the actors would not have to submit recurrent information over and over again, but would allow reuse of information previously submitted. Each piece of data that needs to be dealt with should be encoded only once, and then reused or updated according to the needs.
+
+In order to achieve the envisaged interoperability a basic common understanding of the data dealt with is required. Therefore a common data model is to be created.
+
+The SEDIA vocabulary is currently a work in progress. It started by mapping all relevant existing vocabularies and standards to ensure that it achieves its envisioned interoperability, and is in the process of creating a vocabulary.
+
+In this vocabulary we describe all concepts that are part of the procurement process, and whose attributes are relatively static over time, as this is a vocabulary aiming to underpin a repository of stakeholders. Examples of such information are business and organization addresses, names, formal IDs, banking details etc. 
+
+The SEDIA vocabulary could be reused in the ePO to represent details about all kinds of stakeholders of the procurement process.
+
+=== *4.1.14 Common Data Model (CDM) of the Publications Office*
+The Common Data Model (CDM) is the metadata model of the resources published by the Publications Office of the EU. The model is based on the FRBR  model, being able to represent the relationships between the resource types managed by the Publications Office. Initially the focus was on metadata related to legal resources and general publications. in a later phase metadata for TED and CORDIS were added. The CDM includes different classes and properties that relate to e-Procurement . The CDM wiki  explains which classes and properties are defined in the CDM and how they relate to each other. For example, the CDM defines a Public Procurement class as any of the works related to public procurement (Ted). The model also defines a Prior Information Notice class as a subclass of Public Procurement. The Public Procurement has, among others, the following properties:
+
+* Submission date;
+* NUTS original reference;
+* CPV original title;
+* eTendering URL;
+* Document number in the Official Journal;
+* Directive name;
+
+Besides defining classes and properties, the CDM also defines relationships between concepts, such as:
+
+* Public procurement has original CPV concept;
+* Public procurement has current CPV concept;
+* Public procurement value expressed in a given currency;
+* Public procurement notice published in official journal;
+
+The CDM can help us understand how different metadata concepts of e-Procurement relate to each other. The ePO will respect the naming and design rules of the CDM. Moreover, as the CDM is available in OWL, its elements can be reused by the e-Procurement Ontology wherever possible.
+
+=== *4.1.15	Standard forms for public procurement (TED)*
+Following the adoption of the revised e-Procurement Directives, a new set of standard forms for public procurement was introduced. With the new directives, the forms are meant to be used in an electronic format only, which allows for automatic checking of mandatory fields. Moreover, the clear structure of electronic notices ensure consistency with the European Directives and minimize the risk of encoding errors. The forms, which are available via SIMAP, impose a structure for submitting the following information:
+
+* Prior information notice;
+* Contract notice;
+* Contract award notice;
+* Periodic indicative notice - utilities;
+* Contract notice - utilities;
+* Contract award notice - utilities;
+* Qualification system - utilities;
+* Notice on a buyer profile;
+* Design contest notice;
+* Results of design contest;
+* Notice for changes or additional information;
+* Voluntary ex ante transparency notice;
+* Modification notice;
+* Social and other specific services - public contracts;
+* Social and other specific services - utilities; and
+* Social and other specific services - concessions.
+
+The standard forms for public procurement are very important for the development of the ePO as they describe how public procurement data should be submitted for publication in order to comply with the public procurement directives. Since the ePO has to be compliant with the same directives, it should take into account the concepts, data structure and controlled vocabularies of the standard forms for public procurement. Moreover, in 2015, the Publications Office and the ISA Programme of the EU conducted a study to elicit information and functional requirements from TED reusers [23]. The requirements identified by this study could be considered when developing the ePO.
+
+=== *4.1.16 Other generic vocabularies that should be taken into consideration*
+
+[cols="1,3"]
+|===
+|Vocabulary|Descriptions
+
+s|FOAF
+|*FOAF* (Friend Of A Friend) is a vocabulary defining a dictionary of people-related terms that can be used in structured data
+
+s|*Dublin Core Terms*
+|The Dublin Core Terms is a set of vocabulary terms that can be used to describe web resources (video, images, web pages, etc.), as well as physical resources such as books or CDs, and objects like artworks.
+
+s|SKOS Core
+|*SKOS Core* is a model and an RDF vocabulary for expressing the basic structure and content of concept schemes such as thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', other types of controlled vocabulary, and also concept schemes embedded in glossaries and terminologies.
+|===
+
+== *4.2 Reference data and codelists*
+
+=== *4.2.1	The Common Procurement Vocabulary*
+
+The Common Procurement Vocabulary (CPV)  was created by the European Commission in order to facilitate the processing of invitations to tenders published in the Official Journal of the EU by means of a single classification system to describe the subject matter of public contracts. This classification endeavours to cover all requirements for supplies, works and services [24].
+
+The CPV consists of a main vocabulary for defining the subject of a contract, and a supplementary vocabulary for adding further qualitative information. The main vocabulary is based on a tree structure comprising of codes of up to nine digits associated with a wording that describes the supplies, works, or services forming the subject of the contract.
+
+For example, if a contracting entity wants to obtain a road transport service for a fragile high-tech device, it may be interested in looking into the following codes:
+
+* 60100000-9 Road transport services 
+* 60110000-6 Public road transport services
+
+Another example could be if an entity is interested in buying general-purpose rolling machines and parts for them. In order to find the most suitable codes, it could look into the following codes:
+
+* 42000000-6 Industrial machinery
+* 42930000-4 Centrifuges, calendering or vending machines
+
+The supplementary vocabulary may be used to expand the description of the subject of a contract. The items are made up of an alphanumeric code with a corresponding wording allowing further details to be added regarding the specific nature or destination of the goods to be purchased.
+
+For example, specific metals may be designated with the supplementary vocabulary codes: AA08-2 (Tin) or AA09-5 (Zinc).
+
+The use of the CPV is mandatory for all public procurement procedures in the European Union as from 1 February 2006 [25].
+
+The CPV should be used in the case of the ePO as it is obligatory by directive. Furthermore as it is a wide spread and well established standard, its inclusion will facilitate integration and reuse of published data. An update of these CPVs are also foreseen within the ISA action: European Public Procurement Interoperability Initiative which also covers the ePO.
+
+=== *4.2.2.	The Named Authority Lists of the Publications Office* 
+The Named Authority Lists (NALs) are harmonised code lists with multilingual labels used to facilitate data exchange. They are maintained by the Publications Office of the European Union in the Metadata Registry under the governance of the EU's Interinstitutional Metadata Maintenance Committee (IMMC).
+
+The use of common, high-quality reference data in information reuse can significantly reduce semantic interoperability conflicts. Available in different machine-readable formats and maintained by a trusted authority, the NALs can be reused in many different information exchange contexts.
+
+Some examples of NALs that could be used in the domain of e-Procurement are those on countries, currencies, documentation types, EU programmes and EU corporate bodies [26].
+
+=== *4.2.3.	Nomenclature of Territorial Units for Statistics*
+The Nomenclature of Territorial Units for Statistics (NUTS), is a geographical nomenclature subdividing the economic territory of the European Union into regions at three different levels: NUTS 1, 2 and 3 respectively, moving from larger to smaller territorial units, as it is shown in Figure 6. 
+
+.Figure 6: The three different levels of NUTS [27]
+image::modules\ROOT\images\nuts.png[]
+
+The NUTS classification is a hierarchical system for dividing up the economic territory of the EU for the purpose of [27]:
+* The collection, development and harmonisation of European regional statistics;
+* Socio-economic analyses of the regions; and
+** NUTS 1: major socio-economic regions
+** NUTS 2: basic regions for the application of regional policies
+** NUTS 3: small regions for specific diagnoses
+* Framing of EU regional policies.
+** Regions eligible for support from cohesion policy have been defined at NUTS 2 level.
+** The Cohesion report has so far mainly been prepared at NUTS 2 level. Despite the aim of ensuring that regions of comparable size all appear at the same NUTS level, each level still contains regions which differ greatly in terms of population. Further details can be found the NUTS publication 2013/EU-28 .
+
+The NUTS classification should be used for the purposes of the ePO when describing localities as it is obligatory in the public procurement directives .
+
+== *4.3 Identification of reusable concepts*
+In projects such as the creation of the ePO, it is important to reuse and combine existing concepts to the greatest extent possible. During  preliminary research into existing relevant works, a number of possible candidates for reuse have been identified.
+
+RDF vocabularies are the easiest to reuse in the ePO as they are already in the required format. This means that providing classes and properties expressing elements which need to be described by the ePO can be reused directly with little or no modification needed.
+
+The Payments ontology can be reused specifically for the description of elements relating to payments as it already contains properties describing all basic parts of a transaction: the payer, the payee, the amount, the date.
+
+In the case of contracts, the Public Procurement Ontology provides a ready model for describing a contract and connecting it to relevant elements.  It offers a detailed breakdown of all types of contracts and of their parts, such as requirements and evidences.
+
+The ISA Core vocabularies are perfect for describing the main parties of the procurement process. The Core Business vocabulary can be used to describe businesses competing for the contracts. The Core Public Organizations vocabulary can be used to describe the contracting authorities. The Core Evidence and Core Criterion vocabularies can be used to represent the criteria of the contracts and the evidences proving compliance with them. Finally the Core Location vocabulary can be used to describe any location data.
+
+The LOTED2 vocabulary can be used to provide all elements and parties of the procurement process with the legal depth required, such as legal contract details and awarding implications.
+
+The Linked Open Economy vocabulary, which is a rather generic model, could be used to tie together the rest of the vocabularies which are targeted to specific parts of the procurement process.
+
+Codelists and named authority lists are also easy to and should be reused. Especially if they are widely used, their inclusion in the ePO will facilitate interoperability and reuse of the data described by it. Specifically, the Common Procurement Vocabulary, as it stands now or an evolutions of it, can be used to identify the subject matter of contracts, and the Nomenclature of Territorial Units for Statistics classification can be used to encode locations. The Named Authority lists of the Publications Office can be used to define multiple things ranging from administrative entities, to currencies and to languages.
+
+Other existing works, which are merely standards or non-RDF models, can be reused in the sense that they can provide useful information for the modelling of the ePO and inform on important things to consider during its creation.

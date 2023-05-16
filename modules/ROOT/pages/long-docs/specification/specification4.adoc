@@ -1,0 +1,30 @@
+= *4 NAMING AND IDENTIFIER CONVENTIONS*
+
+== *4.1 Classes and properties*
+
+As described in section 2.2, the development process of the e-procurement ontology is based on the document Ontology Development 101: A Guide to Creating Your First Ontology28. In section 6 of that document, there are suggestions for naming conventions. These are complemented with those proposed In the Open Semantic Framework's Ontology Best Practices29.In the rules described below, the label is differentiated from the name of properties and classes. The names refer to the machine-readable denomination of the classes and properties and are used in the URI while the labels refer to the same denomination but without the rules applying to the names to ease the comprehension by human-readers. As this document is written for human-readers, labels are used in most of the cases.
+
+The following rules are applied to the e-procurement ontology:
+
+* Express labels and descriptions for classes and properties in British English;
+* Use singular nouns or phrases for names of classes in their URI in UpperCamelCase (e.g. ContractingAuthority, EconomicOperator);
+* Use verbs or verb phrases in lowerCamelCase (e.g. hasName, offers) for names of properties in their URI such that triples may actually be read, e.g. <ProcuredItem> <hasName> “Provision of IT Services”, <EconomicOperator> <offers> <ProcuredItem>;
+* Use common and descriptive prefixes and suffixes for related properties or classes; while they are just labels and their names have no inherent semantic meaning, it is still a useful way for humans to cluster and understand the vocabulary. For example, properties about languages or tools might contain suffixes such as 'Language' (e.g. <displayLanguage>) or 'Tool' (e.g. <validationTool>) for all related properties;
+* Provide inverse properties where it makes sense, and adjust the verb phrases in the predicates as appropriate. For example, <EconomicOperator> <offers> <ProcuredItem> would be expressed inversely as <ProcuredItem> <isOfferedBy> <EconomicOperator>;
+* Allow spaces in labels for classes and properties (e.g. Economic Operator); in the case of the e-procurement ontology, labels will use “rdfs:label”. Allow labels for properties to be written in lower camel case;
+* Provide a definition for all classes and properties; in the case of e-procurement ontology definitions will use “rdfs:comment”;
+* Enable multi-lingual capabilities in all definitions and labels using the ‘lang’ attribute for “rdfs:label” and “rdfs:comment”.
+
+== *4.2 Ontology and namespace*
+
+The e-procurement ontology will be described through:
+
+The *URI* (e.g. http://data.europa.eu/xyz/ontology#); the string xyz represents the namespace to be assigned by the URI Committee
+The *namespace* and its preferred prefix (e.g. eproc);
+A *label* to annotate the title of the ontology (e.g. “e-procurement ontology”);
+A *comment*, to describe the ontology;
+The indication of the *creator* and *publisher*;
+*Editorial note* (e.g. if the ontology reuses terms from other ontologies);
+*History note*, to indicate the changes over time of the ontology;
+The current *version* of the ontology;
+*Reference links*; in the case of the e-procurement ontology this will link to the Joinup page https://joinup.ec.europa.eu/asset/eprocurementontology/.

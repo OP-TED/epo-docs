@@ -1,0 +1,31 @@
+= *List of Tables*
+
+Table 1: Process overview 
+Table 2: Reuse levels 
+Table 3: Data journalism - use case description
+Table 4: Automated matchmaking of procured services and products with businesses - use case description
+Table 5: Verifying VAT payments on intracommunity service provision - use case description
+Table 6: Information requirements
+Table 7: General classes
+Table 8: Classes in the conceptual data model
+Table 10: Mapping of the conceptual model to OWL classes
+Table 11: Mapping to OWL data type properties
+Table 12: Mapping to OWL object type properties
+Table 13: Project team
+Table 14: working group
+Table 15: Use case template
+Table 16: Requirements template
+Table 17: class template
+Table 18: Properties template
+Table 19: relationships template
+Table 20: Class template
+Table 21: Data type property template
+Table 22: Object property template
+Table 23: additional concepts
+
+= *List of Figures*
+
+Figure 1: e-procurement ontology development process
+Figure 2: example - important classes, properties and relationships
+Figure 3: example - missing elements
+Figure 4: Conceptual data model

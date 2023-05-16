@@ -1,0 +1,395 @@
+= *5 CONCEPTUAL MODEL*
+
+The classes, properties and relationships in the conceptual data model for the e-procurement ontology are explained in the following sections and displayed in Figure 4.
+An online version of the conceptual data model is available with the following link: https://github.com/eprocurementontology/eprocurementontology/wiki/CM---Visualisation[].
+
+.Figure 4: Conceptual data model
+#Insert fig 4 pg 28#
+
+== *5.1 Classes*
+General classes are the most generic classes used in the conceptual model but not specifically related to the use cases. Classes derived from the use cases may be classified as sub-classes of the general classes wherever appropriate. These subclass are specified in the definition of the more specific classes in Table 8.
+
+.Table 7: General classes
+(The definitions are still to be agreed upon by the working group, these are possible examples)
+
+[cols="1,5"]
+|===
+|Label|Definition
+
+|Address
+|A set of descriptors of a physical or digital location that provides information on how to reach the resource, e.g. the street address of an Agent https://www.w3.org/ns/locn#locn:Address
+
+|Agent
+|A resource that acts or has the power to act. Examples of Agent include person, organization, and software agent. http://dublincore.org/documents/dcmi-terms/#terms-Agent
+
+|Concept
+|An idea, a notion or unit of thought. https://www.w3.org/TR/skos-reference/#concepts
+
+|Document
+|A writing conveying information https://www.merriam-webster.com/dictionary/document (2a)
+
+|Location
+|A spatial region or named place. http://dublincore.org/documents/dcmi-terms/#terms-Location
+
+|Organisation
+|Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. https://www.w3.org/TR/vocab-org/#class-organization Subclass of Agent.
+
+|===
+
+.Table 8: Classes in the conceptual data model
+(The labels and definitions are still to be agreed upon by the working group, these are possible examples)
+
+[cols="1,5"]
+|===
+|Label|Definition
+
+|Buyer
+|The definition of the Buyer class and its subclasses are under discussion in several issues on GitHub30. Subclass of Organisation, which is a subclass of Agent. Note that this class could be further detailed. Depending on further use cases, it may be necessary to define subclasses for specific types of Buyers. Three such subclasses are below: Contracting Authority and Public Undertaking and Other Contracting Entity.
+
+|Call For Tender
+|A Document that specifies the object of the procurement and any procurement criteria, the publication of which is the initiating step of a competitive tendering process in which qualified suppliers or contractors are invited to submit sealed bids for construction or for supply of specific and clearly defined goods or services during a specified timeframe. 
+Subclass of Document. 
+As described by the issue 731 on GitHub, the class Call For Tender could be further detailed. Depending on further use cases, it may be necessary to distinguish between Framework Agreements and Specific Contracts. This could be done by including a 'type' property in the description of the Call For Tender or by defining subclasses. 
+The issue 2432 on GitHub proposes the introduction of the class Lot. From the discussion during the next phases, the relationship between Call For Tender and Lot may need to be further detailed.
+
+|Classification
+|A Concept that indicates a type of something within a particular classification scheme. As expressed in the issue 3133, the use of a controlled vocabulary is recommended as the classification system for public procurement (CPV) which standardises the references used elementsbuyers to describe the subject of procurement contracts. 
+Subclass of Concept.
+
+|Contract
+|A voluntary, deliberate, and legally binding agreement between two or more competent parties. Subclass of Document.
+
+|Contract Award Notice
+|A Document that announces the selection of a Tender that was submitted in response to a Call For Tender. As mentioned in the issue 2934, the Contract Award Notice is not a standalone class. The working group will have to decide in the next phases whether a superclass Notice would be required or not. 
+Subclass of Document.
+
+|Contracting Authority
+|State, regional or local authorities, bodies governed by public law or associations formed by one or more such authorities or one or more such bodies governed by public law. (Source: Directive 2014/25/EU, art. 3.1) 
+Subclass of Buyer. 
+As for Buyer, the modelling of the class Contracting Authority is under discussion on GitHub35. And the issue 2736 specified that groups of 'Contracting Authority' should be expressed in the model.
+
+|Country
+|A political state or nation or its territory. The use of a controlled vocabulary is recommended. This will be further discussed in the next phases by the working group. The issue 3137 is open for comments regarding the code lists and controlled vocabularies which should be used. 
+Subclass of Location.
+
+|Currency
+|A kind of money, e.g. Euros, The use of a controlled vocabulary is recommended. 
+This will be further discussed in the next phases by the working group. The issue 3138 is open for comments regarding the code lists and controlled vocabularies which should be used. 
+Subclass of Concept.
+
+|Economic Operator
+|An Agent, in the context of the e-procurement ontology, a natural or legal person, or public entity, or a group of such persons or elements, including temporary associations of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.39 
+Subclass of Agent.
+
+|Evidence
+|A proof of existence of an event, a characteristic or a transaction. The relevance of the class Evidence will be commented on the existing issue 2840 and further discussed in the next phases.
+
+|Invoice
+|A Document that demands Payment. Subclass of Document. Note: it may be necessary to define smaller parts of Invoices in cases where an invoice contains 'invoice lines' related to specific items, as discussed in the issue 2541 on GitHub.
+
+|Monetary Value
+|An amount of money. There will be a detailed discussion concerning this class during the dedicated meeting in the next phase which will most probably be the fourth working group meeting, as described by the table 6 of the Project Charter. The issue 2542 on GitHub is open to gather all the comments regarding this class.
+
+|Other Contracting Entity
+|Entity other than Contracting Authority and Public Undertaking, but which operates on the basis of special or exclusive rights, granted for the exercise of one of the activities referred to in Annex II of Directive 2014/24/EU. (Source Directive 2014/23/EU, art. 7.1) Subclass of buyer As for Buyer, the modelling of the class Other Contracting Entity is under discussion on GitHub43.
+
+|Payment
+|A transfer of money between Agents.
+
+|Procurement Criterion
+|A rule or principle used to judge, evaluate or assess something. http://joinup.ec.europa.eu/site/core_vocabularies/registry/corevoc/Criterion/. In the context of the e-procurement vocabulary, a requirement defined by a Buyer that needs to be satisfied in order for a Tender to be taken into consideration. As specified in the issue 3044, Procurement Criterion may also include different types of criteria which will be discussed in the next phases of the e-procurement ontology. During the next phases, the working group should also decide if the class Catalogue Request will be integrated in the data model as a generalisation of tendering terms. This is discussed under issue 4645.
+
+|Procuring Entity
+|The entity managing the procurement, which may be different from the buyer who is paying / using the items being procured. http://standard.open-contracting.org/latest/en/schema/release Subclass of Organisation, which is a subclass of Agent. The class was distinguished from Buyer, following the issue on GitHub46. The definition and the modelling of the class will be further discussed in the next phases.
+
+|Product Or Service Or Work
+|An object of procurement, being either a product that is supplied, a service that is provided or a work that is executed.
+
+|Public Undertaking
+|Any undertaking over which the contracting authorities may exercise, directly or indirectly, a dominant influence by virtue of their ownership thereof, their financial participation therein, or the rules which govern it. Subclass of Buyer. As for Buyer, the modelling of the class Public Undertaking is under discussion on GitHub47.
+
+|Specification
+|A Document that describes the characteristics of something. Subclass of Document.
+
+|Tender
+|A Document whereby an Economic Operator (the tenderer) makes a formal offer (the Tender) to a Buyer to execute an order for the supply or purchase of goods, or for the execution of work, according to the terms of a proposed contract, in response to a Call For Tender. (Definition based on UBL48 with changes to align with the terminology in the context of the e-procurement ontology). Subclass of Document.
+|===
+
+== *5.2 Properties and relationships*
+
+While the properties and relationships defined in the tables below specify on which Classes they are used, this does not necessarily mean that their use is restricted to just those Classes as specified in the issue 1449. For example, the relationship ‘is published by’ is shown to be used on the Classes Call For Tender and Contract Award Notice, but it should be possible to use the same relationship on Classes, such as corrections, contracts or modifications, that may be defined in further versions of the Conceptual Model.
+
+=== *5.2.1 Call For Tender*
+
+As raised by the issue 40 and 27, the relationship between the classes Call For Tender and Buyer (issue 4050) will be further discussed in the next phases of the project as well as the relationship between Call For Tender and Procuring Entity (issue 2751).
+The issue 752 highlighted that, depending on further use cases, it may be necessary to distinguish between Framework Agreements and Specific Contracts. This will be decided by the working group in the next phases.
+(The labels and definitions are still to be agreed upon by the working group, these are possible examples)
+
+[cols="1,3,2,1"]
+|===
+|Label|Definition|Range/ Data type|Card
+
+|is published by
+|An Agent that is responsible for making a Document available.
+|Agent (Procuring Entity)
+|1..1
+
+|procures
+|A Product Or Service Or Work of which the supply, provision or execution is requested.
+|Product Or Service Or Work
+|1..n
+
+|requires
+|A required characteristic.
+|Procurement Criterion
+|1..n
+|===
+
+--
+*Labels and Definitions still to be defined*
+5.2.2 Procurement Criterion
+--
+
+=== *5.2.3 Tender*
+(The labels and definitions are still to be agreed upon by the working group, these are possible examples)
+
+[cols="1,3,2,1"]
+|===
+|Label|Definition|Range/ Data type|Card
+
+|is submitted by
+|An Agent that is responsible for sending a Document
+|Agent (Economic Operator)
+|1..1
+
+|offers
+|A Product Or Service Or Work that is proposed.
+|Product Or Service Or Work
+|1..n
+
+|responds to
+|A Call For Tender in response to which a Tender is submitted
+|Document (Call For Tender)
+|1..1
+|===
+
+=== *5.2.4 Contract Award Notice*
+
+As specified in the issue 39 and 4153, the relationships coming from Contract Award Notice need to be further discussed by the working group in the next phases. For example, a Contract Award Notice does not award a tender but announces the award of a contract.
+
+The issue 3954 was raised more specifically for the relationship between Contract Award Notice and Buyer.
+(The labels and definitions are still to be agreed upon by the working group, these are possible examples)
+
+[cols="1,3,2,1"]
+|===
+|Label|Definition|Range/ Data type|Card
+
+|is award notice for
+|A Call for Tender for which a selection has been made.
+|Document (Call For Tender)
+|1..1
+
+|is published by
+|An Agent that is responsible for making a Contract Award Notice known.
+|Agent (Procuring Entity)
+|1..1
+|===
+
+=== *5.2.5 Contract*
+(The labels and definitions are still to be agreed upon by the working group, these are possible examples)
+
+[cols="1,3,2,1"]
+|===
+|Label|Definition|Range/ Data type|Card
+
+|is announced by
+|A Contract Award Notice that has been awarded.
+|Contract Award Notice
+|1..1
+
+|is signed by
+|An Agent that issues and signs a Contract.
+|Agent(Buyer)
+|1..1
+
+|is signed by
+|An Agent that issues and signs a Contract.
+|Agent (Economic Operator)
+|1..1
+
+|has net value
+|An amount of money, exclusive of VAT.
+|Monetary Value
+|1..1
+
+|procures
+|A Product Or Service Or Work of which the supply, provision or execution is requested.
+|Product Or Service Or Work
+|1..n
+|===
+
+=== *5.2.6 Product Or Service Or Work*
+(The labels and definitions are still to be agreed upon by the working group, these are possible examples)
+
+[cols="1,3,2,1"]
+|===
+|Label|Definition|Range/ Data type|Card
+
+|is classified by
+|A term in a classification scheme that indicates the type of something.
+|Concept (Classification)
+|1..n
+
+|is specified by
+|A Document that describes the characteristics of something.
+|Document (Specification)
+|1..1
+|===
+
+--
+*Labels and Definitions still to be defined*
+
+* 5.2.7 Specification
+* 5.2.8 Classification
+* 5.2.9 Procuring Entity
+* 5.2.10 Buyer
+* 5.2.11 Contracting Authority
+* 5.2.12 Public undertaking
+* 5.2.13 Other Contracting Entity
+--
+
+=== *5.2.14 Economic Operator*
+
+An issue was opened on GitHub to discuss further a potential relationship between Economic Operator and Contract Award Notice55.
+(The labels and definitions are still to be agreed upon by the working group, these are possible examples)
+
+[cols="1,3,2,1"]
+|===
+|Label|Definition|Range/ Data type|Card
+
+|has name
+|The appellation of the organisation.
+|Literal, datatype xsd:string
+|1..n
+
+|operates in
+|A Location in which an Agent is active.
+|Location (Country)
+|1..n
+|===
+
+--
+*Labels and Definitions still to be defined*
+5.2.15 Country
+--
+
+=== *5.2.16 Invoice*
+(The labels and definitions are still to be agreed upon by the working group, these are possible examples)
+
+[cols="1,3,2,1"]
+|===
+|Label|Definition|Range/ Data type|Card
+
+|is invoiced under
+|A Contract under which an Invoice is issued.
+|Document (Contract)
+|1..1
+
+|is issued by
+|An Agent that sends an Invoice.
+|Agent (Economic Operator)
+|1..1
+
+|is issued to
+|An Agent that receives an Invoice.
+|Agent (Buyer)
+|1..1
+
+|has net value
+|An amount of money, exclusive of VAT.
+|Monetary Value
+|1..1
+
+|has VAT
+|An amount of money that is the Value Added Tax. The cardinality was adapted as proposed by the issue 1456.
+|Monetary Value
+|0..1
+
+|charges for
+|A Product Or Service Or Work for which an Invoice is issued
+|Product Or Service Or Work
+|1..n
+|===
+
+--
+*Labels and Definitions still to be defined*
+5.2.17 Evidence
+--
+
+=== *5.2.18 Monetary Value*
+
+There will be a detailed discussion concerning this class during the dedicated meeting in the next phase which will most probably be the fourth working group meeting, as described by the table 6 of the Project Charter. The issue 2557 on GitHub is open to gather all the comments regarding this class.
+(The labels and definitions are still to be agreed upon by the working group, these are possible examples)
+
+[cols="1,3,2,1"]
+|===
+|Label|Definition|Range/ Data type|Card
+
+|has amount
+|A number that specifies the quantity of a Monetary Value.
+|Literal, data type xsd:decimal
+|1..1
+
+|has currency
+|A kind of money. Use of values from the MDR Currency NAL is mandatory.
+|Concept (Currency)
+|1..1
+|===
+
+--
+*Labels and Definitions still to be defined*
+5.2.19 Currency
+--
+
+=== *5.2.20 Payment*
+
+As explained in the issue 4758 and during the third working group meeting, a Payment can be made to other parties than Economic Operator. Consequently, the working group will have to decide to which classes the class Payment is related to except for the existing relations with Buyer, Economic Operator, Evidence and Monetary Value. This issue is related to issue 2859 for which the latest version of the conceptual data model included a relationship between Evidence and Payment.
+(The labels and definitions are still to be agreed upon by the working group, these are possible examples)
+
+[cols="1,3,2,1"]
+|===
+|Label|Definition|Range/ Data type|Card
+
+|is evidenced by
+|An Evidence that proves a transaction.
+|Evidence
+|1..n
+
+|is paid by
+|An Agent that makes a Payment.
+|Agent (Buyer)
+|1..1
+
+|is paid to
+|An Agent that receives a Payment.
+|Agent (Economic Operator)
+|1..1
+
+|is payment for
+|An Invoice against which a Payment is made. This relationship is based on the issue 560 on GitHub for which further discussions will take place in the next phases.
+|Document (Invoice)
+|1..1
+
+|has net value
+|An amount of money, exclusive of VAT. The cardinality was adapted as proposed by the issue 1461.
+|Monetary Value
+|1..1
+
+|has VAT
+|An amount of money that is the Value Added Tax.
+|Monetary Value
+|0..1
+|===
+
+== *5.3 Additional classes, properties and definitions*
+In order to identify which classes, properties and relationships could support the information requirements, existing ontologies were analysed during the production of this specification. A number of definitions of classes and properties were identified that could be considered by the working group. A list of those classes, properties and definitions is available under Annex II.

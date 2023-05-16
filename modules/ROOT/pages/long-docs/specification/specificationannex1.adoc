@@ -1,0 +1,191 @@
+= *Annex I TEMPLATES*
+
+== *I.1 Use cases*
+
+The description of the selected use cases should clearly describe the need and the flow or usage scenario, in such a way that the information requirements can be derived.
+
+For the description of the use cases, the following template is used.
+.Table 14: Use case template
+
+[cols="1,4"]
+|===
+|Element|Description
+
+|Title
+|A short phrase that can be used to refer to the use case
+
+|Category
+|The type of use case; one of 
+ Transparency and monitoring 
+ Innovation & value added services 
+ Interconnection of public procurement systems
+
+|Description
+|Concise text that provides basic information about the actors, the goal and the intended results of the use case
+
+|Actors
+|Further details on the agents (persons, organisations or software programs) involved in the use case
+
+|Final recipients
+|The actors that receive the results or benefits from the use case
+
+|Preconditions
+|Anything that can be said about the situation before the use case begins
+
+|Flow
+|A step-by-step description of the actions taken and responses received by the user
+
+|Comments
+|Any other observation related to the use case
+
+|===
+
+These Use Cases are at the heart of the development of the Domain Model and Data Elements so they should be quite specific about what it is that the model will enable users to do that they currently cannot do. In other words, the Use Cases should set out the problem, or problems, that the model is expected to solve.62
+
+== *I.2 Requirements*
+
+Once the Use Cases have been written and agreed, these should be reduced to a set of Requirements that the ontology must meet. In complex cases, it may be appropriate to assign a priority to each requirement using the familiar RFC211963 keywords of MUST, SHOULD and COULD64.
+
+It will be useful to assign an identifier to each of the requirements, possible linking to an issue in an issue tracker so that the requirement can be cross-referenced to the relevant elements (elements, attributes, relationships) in the ontology that fulfils it.
+
+.Table 15 contains the template for the description of requirements.
+
+[cols="1,4"]
+|===
+|Element|Description
+
+|ID
+|Identifier, short string to be used as reference to the requirement, for example R1, R2.
+
+|Description
+|Description of the requirement, using keywords such as MUST, COULD and SHOULD.
+
+|Related Use Case
+|In the context of the e-procurement ontology, requirements are directly linked to use cases. Therefore, it is useful to indicate to which use case(s) the requirement is related, e.g. “UC1”.
+|===
+
+== *I.3 Conceptual data model template*
+
+Classes:
+
+.Table 16: class template
+
+[cols="1,4"]
+|===
+|Element|Description
+
+|Label
+|A short title of the class, e.g. “Contract”
+
+|Definition
+|A clear and concise description of the characteristics and the function of the class.
+|===
+
+Properties:
+
+.Table 17: Data type property template
+
+[cols="1,4"]
+|===
+|Element|Description
+
+|Label
+|A short title of the property, e.g. “has amount”
+
+|Definition
+|A clear and concise description of the characteristics and the function of the property.
+
+|Class
+|The class to which the property belongs.
+
+|Data type
+|The data type describes the type of value in which a property can be expressed, for example “number”, “string” or “value from a controlled vocabulary”. The issue 31 is open for comments regarding the code lists and controlled vocabularies which should be used. This will be further discussed in the next phases by the working group. https://github.com/eprocurementontology/eprocurementontology/issues/31
+
+|Cardinality
+|The cardinality is a way to define the relationship between two elements in a data model, e.g. one-to-one (1..1), one-to-many (1..n), etc.
+|===
+
+Relationships:
+
+.Table 18: Relationships or object type property template
+
+[cols="1,4"]
+|===
+|Element|Description
+
+|Label
+|A short title of the relationship, e.g. “is published by”
+
+|Definition
+|A definition of the concept that is accepted by the working group members within the context of the e-procurement ontology.
+
+|Domain
+|The type of element that the relationship describes or which is the subject of the relationship E.g. the relationship “is published by” has domain “Call For Tender” and range “Procuring Entity”.
+
+|Range
+|The type of elements that can be used as object of the relationship, e.g. the relationship “is published by” has domain “Call For Tender” and range “Procuring Entity”. The domain and range can be extended if the relationship is used to connect other classes as well.
+
+|Cardinality
+|The cardinality is way to define the relationship between two elements in a data model, e.g. one-to-one (1..1), one-to-many (1..n), etc.
+|===
+
+The “relationships” and “properties” templates can be merged if this benefits the structure of the data modelling, e.g. when properties are listed per class.
+
+== *I.4 Mapping of the conceptual data elements to OWL*
+
+Classes:
+
+.Table 19: Class template
+
+[cols="1,4"]
+|===
+|Element|Description
+
+|Label
+|A short title of the class
+
+|Definition
+|A string of characters used to identify a resource
+|===
+
+Data type properties:
+
+.Table 20: Data type property template
+
+[cols="1,4"]
+|===
+|Element|Description
+
+|Label
+|A short title of the property, e.g. “has amount”
+
+|Class
+|The class to which the property belongs
+
+|Data Type
+|The data type describes the type of value in which a property can be expressed, for example “number”, “string” or “value from a controlled vocabulary”. The issue 31 is open for comments regarding the codelists and controlled vocabularies which should be used. This will be further discussed in the next phases by the working group. https://github.com/eprocurementontology/eprocurement ontology/issues/31
+
+|URI
+|A string of characters used to identify a resource
+|===
+
+Relationships:
+
+.Table 21: Relationship or object property template
+
+[cols="1,4"]
+|===
+|Element|Description
+
+|Label
+|A short title of the relationship, e.g. “is published by”
+
+|Domain
+|The type of element that the relationship describes or which is the subject of the relationship E.g. the relationship “is published by” has domain “Call For Tender” and range “Procuring Entity”.
+
+|Range
+|The type of elements that can be used as object of the relationship, e.g. the relationship “is published by” has domain “Call For Tender” and range “Procuring Entity”. The domain and range can be extended if the relationship is used to connect other classes as well.
+
+|URI
+|A string of characters used to identify a resource
+|===

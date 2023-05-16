@@ -1,0 +1,65 @@
+= *Bibliography: Reference documents for the UML to OWL Transformations:*
+
+[1] C. Atkinson and K. Kiko. A detailed comparison of uml and owl, June 2005.
+URL https://madoc.bib.uni-mannheim.de/1898/.
+[2] D. Beckett. RDF/xml syntax specification (revised). W3C recommendation,
+W3C, Feb. 2004. http://www.w3.org/TR/2004/REC-rdf-syntax-grammar-
+20040210/.
+[3] G. Booch, J. Rumbaugh, and I. Jacobson. Unified Modeling Language User
+Guide, The (2nd Edition) (Addison-Wesley Object Technology Series) . Addison-
+Wesley Professional, 2005. ISBN 0321267974.
+[4] G. Carothers and E. Prud'hommeaux. RDF 1.1 turtle. W3C recommendation,
+W3C, Feb. 2014. http://www.w3.org/TR/2014/REC-turtle-20140225/.
+[5] S. Cook, C. Bock, P. Rivett, T. Rutt, E. Seidewitz, B. Selic, and D. Tolbert.
+Unified modeling language (UML) version 2.5.1. Standard formal/2017-12-05,
+Object Management Group (OMG), Dec. 2017. URL https://www.omg.org/
+spec/UML/2.5.1.
+[6] E. Costetchi. eProcurement ontology architecture and formalisation specifi-
+cations. Recommendation, Publications Offce of the European Union, April
+2020.
+[7] E. Costetchi. eProcurement uml conceptual model conventions. Recommenda-
+tion, Publications Offce of the European Union, April 2020.
+[8] O. El Hajjamy, K. Alaoui, L. Alaoui, and M. Bahaj. Mapping uml to owl2
+ontology. Journal of Theoretical and Applied Information Technology, 90(1):
+126, 2016.
+[9] R. Falco, A. Gangemi, S. Peroni, D. Shotton, and F. Vitali. Modelling owl
+ontologies with graffoo. In European Semantic Web Conference, pages 320-325.
+Springer, 2014.
+[10] A. H. Khan and I. Porres. Consistency of uml class, object and statechart
+diagrams using ontology reasoners. Journal of Visual Languages & Computing,
+26:42-65, 2015.
+[11] A. H. Khan, I. Rauf, and I. Porres. Consistency of uml class and statechart
+diagrams with state invariants. In MODELSWARD, pages 14-24, 2013.
+[12] N. Loutas, N. Loutas, S. Kotoglou, and D. Hytiroglou. D04.07 - report on policy
+support for eprocurement. Deliverable SC245DI07171, ISA programme of the
+European Commission, 2016.
+[13] A. Miles and S. Bechhofer. SKOS simple knowledge organiza-
+tion system reference. W3C recommendation, W3C, Aug. 2009.
+http://www.w3.org/TR/2009/REC-skos-reference-20090818/.
+[14] H.-S. Na, O.-H. Choi, and J.-E. Lim. A method for building domain ontologies
+based on the transformation of uml models. In Fourth International Conference
+on Software Engineering Research, Management and Applications (SERA'06),
+pages 332-338. IEEE, 2006.
+[15] B. Parsia, P. Patel-Schneider, and B. Motik. OWL 2 web ontology language
+structural specification and functional-style syntax (second edition). W3C
+recommendation, W3C, Dec. 2012. http://www.w3.org/TR/2012/REC-owl2-
+syntax-20121211/.
+[16] M. Sadowska and Z. Huzar. Representation of uml class diagrams in owl 2 on
+the background of domain ontologies. e-Informatica, 13(1):63-103, 2019.
+[17] G. Schreiber and F. Gandon. RDF 1.1 XML syntax. W3C recommendation,
+W3C, Feb. 2014. http://www.w3.org/TR/2014/REC-rdf-syntax-grammar-
+20140225/.
+[18] D. Wood, R. Cyganiak, and M. Lanthaler. RDF 1.1 concepts
+and abstract syntax. W3C recommendation, W3C, Feb. 2014.
+http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/.
+[19] Z. Xu, Y. Ni, L. Lin, and H. Gu. A semantics-preserving approach for extract-
+ing owl ontologies from uml class diagrams. In International Conference on
+Database Theory and Application, pages 122-136. Springer, 2009.
+[20] Z. Xu, Y. Ni, W. He, L. Lin, and Q. Yan. Automatic extraction of owl ontologies
+from uml class diagrams: a semantics-preserving approach. World Wide Web,
+15(5-6):517-545, 2012.
+[21] J. Zedlitz and N. Luttenberger. Transforming between uml conceptual models
+and owl 2 ontologies. In Terra Cognita ISWC, pages 15-26, 2012.
+[22] J. Zedlitz and N. Luttenberger. Conceptual modelling in uml and owl-2. Inter-
+national Journal on Advances in Software, 7(1):182-196, 2014.
+

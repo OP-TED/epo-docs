@@ -1,0 +1,199 @@
+= *3 COST, TIMING AND RESOURCES*
+
+== *3.1 Cost*
+
+The project cost in financial terms is not estimated, however the human resources required is estimated.
+
+Table 4 contains estimates of the time required for the different roles of the involved experts. These estimates are based on previous experiences with the development of other interoperability specification in the ISA/ISA2 programmes.
+
+.Table 4: Resource estimates (person days)
+[cols="1,3,3"]
+|===
+|ID |Role |Time requirement
+
+|R1 
+|Working Group Chair 
+|6 days per month
+
+|R2 
+|Editor 
+|1-2 editors full time
+
+|R3 
+|Working Group Member 
+|0,5-2 days per month, depending on the level of activity that the member wishes to invest
+|===
+
+== *3.2 Timing and Milestones*
+The overall time plan for the work is shown in Table 5. The table includes the calendar months that would result from a possible start of the project right after the summer holiday of 2017.
+
+.Table 5: Overall time plan
+[cols="1,4,3"]
+|===
+|ID|Milestone Description|Target Delivery Date
+
+|M1 
+|Start of the project 
+|Month 0 - September 2017
+
+|M2 
+|Publication of the draft deliverable for public review 
+|Month 9 - June 2018
+
+|M3 
+|Publication of final deliverable 
+|Month 11 - September 2018
+|===
+
+Given this overall time plan, a meeting plan for the Working Group and delivery of intermediate draft could look as shown in Table 6. The actual plan should be decided in the first meeting of the Working Group in Month 0. Depending on the size of the working group, the number of entities in the ontology and the occurrence of contentious issues, 
+the plan may be revised to include more or fewer meetings and drafts, as time passes.
+
+The mention of "meetings" in Table 6 does not imply that face-to-face meeting must be held in all cases. For most meetings, teleconference facilities will be sufficient. However, it is advisable to plan for some face-to-face meetings at crucial points in time, for example at the start of the work (E1/M1) and before issuing the draft for public review (E16/M2).
+
+Table 6 includes the proposed activities to be carried out by the Working Group. The work preparing the items listed with the meetings two, three and four will be undertaken by the Editors between meetings.
+
+.Table 6: Provisional meeting and publication plan
+[cols="1,4,2,3"]
+|===
+|ID |Event |Event date |Indicative activities
+
+|E1 
+|First WG meeting 
+|Month 0 - September |2017 (M1)
+Prioritisation of use cases Grouping them to be treated in consecutive meetings
+Provision of updated conceptual model and its specification
+Discussion on the conceptual model and its specifications
+
+|E2 
+|First draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting 
+and incorporating the results from the discussions of the previous meeting
+|Month 1 - |October 2017
+| Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting 
+
+|E3 
+|Second WG meeting 
+|Month 2 - November 2017
+|Discussion/consensus on E2 document
+
+|E4 
+|Second draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting 
+and incorporating the results from the discussions of the previous meeting 
+|Month 2 - November 2017
+|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting
+
+|E5 
+|Third WG meeting 
+|Month 4 - January 2018
+|Discussion/consensus on E4 document
+
+E6 
+|Third draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting 
+and incorporating the results from the discussions of the previous meeting
+|Month 4 - January 2018
+|Prepared by the editors based on discussions from the previous meeting and all corresponding input for the following meeting
+
+|E7 
+|Fourth WG meeting 
+|Month 5 - February 2018
+|Discussion/consensus on E6 document
+
+|E8 
+|Fourth draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting
+and incorporating the results from the |discussions of the previous meeting.
+||Month 5 - February 2018 
+|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting
+
+|E9 
+|Fifth WG meeting 
+|Month 6 - March 2018
+|Discussion/consensus on E8 document
+
+|E10 
+|Fifth draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting and incorporating the results from the discussions of the previous meeting.
+|Month 6 - March 2018
+|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting
+
+|E11 
+|Sixth WG meeting 
+|Month 7 - April 2018
+|Discussion/consensus on E10 document
+
+|E12 
+|Sixth draft of the conceptual model and its specification corresponding to all the discussions within the working group.
+|Month 7 - April 2018
+|Prepared by the editors based on discussions from the previous meeting and all corresponding input for the following meeting
+
+|E13 
+|Seventh WG meeting 
+|Month 8 - May 2018
+|Discussion/consensus on E12 document
+
+|E14 
+|Finalisation of conceptual model and its specification and the ontology in OWL
+|Month 9 - June 2018
+|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting
+
+|E15 
+|Eighth WG meeting 
+|Month 9 - June 2018
+|Discussion/consensus on E14 document
+
+|E16 
+|Publication of ontology for public review 
+|Month 10 - July 2018 (M2)
+
+|E17 
+|Proposed resolution of issues raised in public review
+|Month 12 - September 2018 (M3)
+|Prepared by editors
+
+|E18 
+|Ninth WG meeting 
+|Month 12 - September 2018
+|Discussion/consensus on E17
+
+|E19 
+|Publication of Ontology 
+|Month 12 - September
+|===
+
+In Table 6, one of the activities for the first meeting is to set priorities for the use cases that were decided in the inception phase. A list of the use cases is included in Annex I. 
+For each of those use cases, the Editor will further develop the use case according to the methodology presented in the inception phase. In the meetings two to six, the use cases will be presented by the Editor, and the working group will come to a consensus to any changes that need to be made to the use case.
+
+For the development of the conceptual data model Editors will derive the concepts from the use cases as described in D02.01: “Specification of the process and methodology to develop the eProcurement ontology with initial draft of the eProcurement Ontology for 3 use case”. The Editor will document this alongside the use cases and the concepts roughly one month ahead of each working group meeting. The documentation will also include the definition of concepts, identification of subclasses or subtypes, relevant properties and relationships.
+
+The working group will review the documentation mentioned above ahead of the meetings. Working Group members may at any time propose additional concepts to be added to the conceptual model. Such proposals will be discussed by the Working Group; the proposed concept will be added if the Working Group decides that the proposed concept is relevant and necessary.
+
+== *3.3 Planned Resources*
+
+The technical tools available for this project are listed in Table 7.
+
+.Table 7: Technical infrastructure
+[cols="1,2,3"]
+|===
+|ID|Resource Requirement|Description
+
+|RR1 
+|Ontology development tool 
+|Protégé, http://protege.stanford.edu/ or VocBench 3
+
+|RR2 
+|Model visualisation tool 
+|TBD
+
+|RR3 
+|Conference call facility 
+|WebEx, https://ecwacs.webex.com/ecwacs/
+
+|RR4 
+|Mailing list 
+|eprocurementontology@joinup.ec.europa.eu
+
+|RR5 
+|Issue tracker 
+|GitHub https://github.com/eprocurementontology 
+
+|RR6 
+|Publication channel 
+|https://joinup.ec.europa.eu/asset/eprocurementontology/
+|===

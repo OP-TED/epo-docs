@@ -1,0 +1,98 @@
+= *2. PROCESS, METHODOLOGY AND TECHNOLOGY*
+
+The ePO will be developed following the ISA process and methodology for developing semantic 
+agreements [7], which is an open consensus building process that engages a working group of experts. 
+The process outlines the roles that the different actors in the process play, as 
+summarised in Table 1, and the steps that need to be taken to set up the working group environment. Table 2 outlines the consensus building process that deliver the ePO.
+
+.Table 1: Actors & roles
+--
+*Actors & Roles*
+_Reaching consensus_
+
+*Working Group*
+The Working Group for building consensus on the eProcurement ontology is made up of the following actors: 
+* Chair(s): the Publications Office will appoint one or several, usually not more than two, chairs who are responsible for leading the meetings of the working group, for ensuring that the process and methodology specifications are followed and that consensus is reached within the working group.
+* Editor(s): one or several, usually not more than two, editors will be appointed, who are responsible for the operational work of defining and documenting the ePO.
+* Working group experts: besides the chairs and editors, the working group will mainly consist of experts who are contributing knowledge and expertise required for the specification of the ePO. Members of the following groups and communities will be invited to join the working group as experts: 
+** Members of the multi-stakeholder expert group on eProcurement of DG GROW;
+** Staff working on eProcurement from national, regional and local administrations in the EU Member States;
+** Staff working on eProcurement from the EU institutions, including representatives of CEF Telecom and the Open Data Portal; 
+** Members of the CEN TC 440  (Technical Committee on Electronic Public Procurement) and the CEN TC 434  (Technical Committee on Electronic Invoicing); 
+* Members of the Core Vocabularies working groups; 
+* Members of the OpenSpending network, publicspending.net, the Open Contracting Partnership and related initiatives; 
+* Research and academia working on related initiatives (refer to Chapter 4 for an overview of related activities).
+
+*Review Group*
+A Review Group should be invited to provide an independent external review on the first full draft of the ePO. This will be done as part of the public comment period. The members of the Review Group will come from the same groups and communities as the members of the Working Group. Ideally, a member of the Working Group should not also be a member of the Review Group. 
+--
+
+.Process Overview
+--
+*Process*
+_Reaching consensus_
+
+. Identify stakeholders (The Publications Office and a contractor)
+. Form the working group (The contractor in agreement with the Publications Office)
+. Identify chair(s) (The Publications Office with input from a contractor)
+. Identify editor(s) (The Publications Office). 
+. Identify review group (Chair(s) and Editor(s))
+. Verify and secure IPR  (Intellectual property rights) (The Publications Office and the contractor as necessary)
+. Establish working environment and culture (Chair(s) and Editor(s))
+. Publish drafts (Chair(s) and Editor(s))
+. Review drafts (Working Group experts)
+. Publish last call working draft (Chair(s) and Editor(s))
+. Review last call working draft (Review Group)
+. Gather evidence of acceptance (Chair(s) and Editor(s))
+. Submit for endorsement (The Publications Office)
+--
+
+Once steps 1 to 7 of the process listed above have been conducted, the Working Group can start its operational activities. Steps 8 and 9 in the process above – creating and reviewing drafts – are repeated to create the ePO specification iteratively. The technical methodology, describing the steps that must be undertaken in the development of a specification, is described in Table 3 below. Steps 5 and 6 in the methodology below, the creation of a conceptual data model, might require several iterations and drafts before consensus in the Working Group is reached.  For the Chairs, editors and Working group to have a starting point (for points 1-3 below) the contractor will present a project charter, a more detailed analysis based on the report of the methodology to be used. This will include: 
+. how to reach the formal OWL ontology,
+. the production of the conceptual model and information requirements from the suggested use cases via the reuse of existing data and services, 
+. suggesting synergies with other working groups in the domain of open data and/or public procurement.  
+
+The working group will agree on the methodology to produce the deliverables, adding and removing use cases as necessary, whilst adapting the methodology as it seess fit.
+
+.Table 3: Methodology overview
+--
+*Methodology*
+_Developing a specification_
+
+. Review analysis of existing solutions (based on Chapter 4 of this report and analysis mentioned in paragraph above) (Editor(s) and Working Group)
+. Review analysis of existing data and services (Editor(s) and Working Group)
+. Define and agree on use cases (based on Chapter 3 and analysis mentioned in paragraph above) (Editor(s) and Working Group)
+. Define methodology to be used (see analysis mentioned  in paragraph above)
+. Identify information requirements (Editor(s) and Working Group)
+. Identify a meaningful set of Core Concepts (Editor(s) and Working Group)
+. Define and agree on terminology and create a conceptual data model (Editor(s) and Working Group)
+. Define naming conventions (Editor(s) and Working Group)
+. Define identifier conventions (Editor(s) and Working Group)
+. Draft the namespace document (Editor(s))
+. Specify conformance criteria (Chair(s) and Editor(s)) 
+. Perform quality assurance (Chair(s))
+--
+
+There will be a number of technologies and tools used to create and underpin the ePO, the main of which are listed in Table 4: Overview of technology to be used below:
+
+.Table 4 Overview of technology to be used
+--
+*Technology & Tools*
+_Creating a model_
+
+*OWL DL*
+The OWL language is built upon the RDF standard. It is an ontology modelling language for describing RDF data. It allows for the strict definition of concepts and the complex relationships between them . The eProcurement Ontology should be expressed in OWL since the Common Data Model of the #CELLAR# - in which the ePO will be implemented - is expressed in OWL.
+
+*SPARQL*
+SPARQL is a semantic query language. It is used to retrieve and manipulate data stored in RDF format.
+
+*PROTÉGÉ*
+Protégé is an open source ontology editor developed and maintained by Stanford University.
+--
+
+
+
+
+
+
+

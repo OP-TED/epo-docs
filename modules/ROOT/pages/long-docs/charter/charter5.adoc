@@ -1,0 +1,29 @@
+= *5 GOVERNANCE AND STAKEHOLDERS*
+
+== *5.1 Structure*
+
+The diagram in Figure 3 depicts the governance structure of the project. The roles and 
+relationships are further detailed in section 5.2.
+
+image::{imagesdir}modules\ROOT\images\charter3.png[Figure 3: Governance structure] 
+
+5.2 Roles and Responsibilities
+The roles and responsibilities of each of the groups depicted in Figure 3 are outlined in 
+Table 10.
+.Table 10: Roles and responsibilities
+[cols="1,2,1"]
+|===
+|Who|What|When
+
+|The Publications Office 
+|Owns the project, provides oversight and supplies WG chair; endorses the final result at the end of the project
+|Continuously
+
+|Working Group 
+|Provides input, reviews and validate the ontology in synergy with the active developmental propositions of editors
+|Continuously
+
+|Community 
+|Participates in public review 
+|At publication of draft for public review
+|===
