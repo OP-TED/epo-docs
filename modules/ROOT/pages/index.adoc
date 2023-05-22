@@ -1,67 +1,37 @@
-== *eProcurement Ontology Version 3.1.0 (latest)* 
-== *Release Overview*
+= eProcurement Ontology Documentation
 
-== *Version 3.1.0 Changes*
-* a new module, eOrdering, was introduced
-* the inclusion of notice systematisation in the eNotice module
-* changes to Procurement Object: classes and attributes (Procedure, PlannedProcurementPart, Lot)
-* a restructure of the Roles Hierarchy
-* updates to model2owl (uml2owl):
-** a combined glossary
-** the provision of turtle output files
-** the implementation of a metadata management mechanism
-* a revision and labelling of GitHub issues 
-* GitHub issue fixes for the Q4 2022 milestone
-* Updates for standard forms mappings - TED-RDF-mapping
+[.tile-container]
+--
 
-'''
-== *Version 3.1.0 Release Notes*
+[.tile]
+.ePo V3.1.0: Latest Production Release
+****
+The eProcurement Ontology V3.1.0 was released on the 16 December 2022 introducing a new module, eOrdering,a combined glossary, updates, and various fixes as planned for the 2022 Q4 milestone.
 
-The xref:release-notes.adoc[Version 3.1.0 Release Notes (detailed)] can be found xref:release-notes.adoc[here].
+link:index_epo_3.1.0.adoc[Click here to read the version 3.1.0 details]
 
-'''
-== *Version 3.1.0 Technical Files*
+****
 
-link:https://github.com/OP-TED/ePO/tree/v3.1.0[Version 3.1.0 technical build files] can be downloaded from GitHub link:https://github.com/OP-TED/ePO/tree/v3.1.0[here]
+[.tile]
+.ePo V3.1.1: In Development
+****
+The eProcurement Ontology V3.1.1 is currently in development and is scheduled to be released in July 2023. New features will include... Get info
 
-'''
-== *Version 3.1.0 Ontology*
+xref:3.1.1@EPO::index.adoc[Version 3.1.1 (in development) can be found here.]
+****
 
-link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/ePO[The RDF representation of the eProcurement ontology] can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/ePO[here]
+[.tile]
+.Model to Owl Documentation
+****
+The Model to Owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
 
-link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eCatalogue[The RDF representation of the eCatalogue module] can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eCatalogue[here].
+xref:3.1.1@EPO::index.adoc[#update when ready#]
+****
+[.tile]
+.Working Group Documents
+****
+THis section contains minutes and reports of the Working Group activities and meetings listed by interest/ category.
 
-link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eNotice[The RDF representation of the eNotice module] can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eNotice[here].
-
-link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eOrdering[The RDF representation of the eOrdering module] can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eOrdering[here].
-
-'''
-*Version 3.1.0 Conceptual Models can be viewed via the following links*
-
-* The  eCore Conceptual Module: link:{attachmentsdir}/html_reports/ePO/index.html[HTML] and 
-link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eCatalogue Conceptual Module: link:{attachmentsdir}/html_reports/eCatalogue/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eNotice Conceptual Module: link:{attachmentsdir}/html_reports/eNotice/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eOrdering Module: link:{attachmentsdir}/html_reports/eOrdering/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-
-'''
-*The 3.1.0 Glossaries for the following entities can be downloaded via the following links:*
-
-* link:{attachmentsdir}/html_reports/glossary/ePO_glossary.html[The eCore Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO_glossary.html[here]
-* link:{attachmentsdir}/html_reports/glossary/eCatalogue_glossary.html[The eCatalogue Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eCatalogue_glossary.html[here] 
-* link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[The eNotice Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[here]
-* link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[The eOrdering Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[here]
-* link:{attachmentsdir}/html_reports/glossary/ePo_combined_glossary.html[The ePO Combined Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePo_combined_glossary.html[here]
-
-'''
-=== *The eProcurement UML Conceptual Model Conventions*
-
-link:https://github.com/meaningfy-ws/model2owl/blob/master/doc/uml-conventions/uml-conventions.pdf[The UML Model Conventions]
-
-'''
-=== *The Transformation of the eProcurement UML Model into a Formal OWL Ontology*
-
-link:https://github.com/meaningfy-ws/model2owl/blob/master/doc/uml2owl-transformation/uml2owl-transformation.pdf[The UML to OWL Transformation Rules]
-
-
-include::partial$feedback.adoc[]
+link:index_epo_3.1.1.adoc[Click here to read the Working Group documents]
+****
+--
