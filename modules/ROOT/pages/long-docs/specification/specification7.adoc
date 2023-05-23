@@ -1,7 +1,0 @@
-= *7 CONFORMANCE STATEMENT*
-
-To be in conformance with the e-procurement Ontology, instance metadata SHOULD:
-Use the classes and properties defined in the ontology as far as they are relevant
-Respect the domains and ranges specified for the properties in the ontology
-And SHOULD NOT:
-Use classes and properties from other ontologies or vocabularies that are semantically equivalent to classes and properties defined in the ontology, unless there is a sub-class or sub-property relationship between classes and properties in the ontology and these external classes or properties.

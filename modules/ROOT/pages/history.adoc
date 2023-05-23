@@ -1,4 +1,4 @@
-== *History of the ePO Ontology Project and Archived Versions*
+= *History of the ePO Ontology Project and Archived Versions*
 
 === *eProcurement Ontology overview*
 Several initiatives around eProcurement In the EU had been launched prior to 2016, driven by the public sector, industry, and academia. Some had grown organically, while others were the result of standardisation work. 
@@ -11,7 +11,7 @@ In 2016 the Publications Office of the European Union (Publications Office or OP
 
 This project was in conjunction with a parallel project to develop the associated eForms.
 
-The ultimate objective of the ePO was (and still is) to conceptualise, to formally encode eProcurement data, and to make it available in an open, structured, and machine-readable format. This data covers the process from end -to-end, i.e., from notification, through tendering to awarding, ordering, invoicing, and finally payment. 
+The ultimate objective of the ePO was (and still is) to conceptualise and formally encode eProcurement data, and to make it available in an open, structured, and machine-readable format. This data covers the process from end-to-end, i.e., from notification, through tendering, awarding, ordering, invoicing, and finally to payment.
 
 //#Insert process graphic#
 
