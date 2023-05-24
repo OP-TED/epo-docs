@@ -1,5 +1,7 @@
 == Cumulated content of Working Group Meeting from 2023
 
+include::notes/2023-05-16-wgm.adoc[]
+
 include::notes/2023-05-04-wgm.adoc[]
 
 include::notes/2023-05-02-wgm.adoc[]
