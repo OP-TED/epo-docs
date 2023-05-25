@@ -1,0 +1,1563 @@
+= Transformation of the eProcurement UML model into a formal OWL ontologyPWC EU Services/ AMI Consulting
+Version 1.0
+:sectnums:
+:toc:
+:toclevels: 4
+:toc-title: Contents
+
+Adapted from the document, link:https://github.com/meaningfy-ws/model2owl/blob/master/doc/uml2owl-transformation/uml2owl-transformation.pdf[Transformation of the eProcurement UML model into a formal OWL ontology, 20 May 2020.]
+
+== Introduction
+
+Following the format of information presentation in the document, this reference consists of four sections covering the following general UML topics:
+
+* Classes and attributes
+* Main connector types: associations, dependencies, and generalisations
+* How the data types and enumerations should be transformed
+* Transformation rules applicable to all UML elements regarding comments, labels, and notes.
+
+Each section provides a table with overview of the transformation rule set it describes. The table is displayed in three columns, one for each layer of the ontology architecture:
+
+* the in-core ontology layer,
+* the in-data shape layer, and
+* the in-reasoning layer.
+
+Transformation rules are specified in normative language and are aided by proto-typical UML diagram fragments, usually preceding the rule, along with representation of the corresponding OWL fragment depicted in Graffoo visual notation.
+
+The diagrams are provided side to side to assist understanding, with the UML fragment on the left constituting the source of the transformation, and the OWL fragment on the right representing the result of the transformation.
+
+Each transformation rule is accompanied by the formal OWL representation, in link:https://www.w3.org/TeamSubmission/turtle/[Turtle, Terse RDF Triple Language] and RDF/XML syntaxes, corresponding to the UML fragment depicted in the preceding figure. RDF/XML is a syntax to express RDF graphs as an XML document. Turtle is a compact textual syntax for RDF [18] that resembles a natural text form with abbreviations for common usage patterns and datatypes.
+
+
+=== UML Visual Notation
+
+// ([3] G. Booch, J. Rumbaugh, and I. Jacobson. Uni_ed Modeling Language User
+//Guide, The (2nd Edition) (Addison-Wesley Object Technology Series) . Addison-
+//Wesley Professional, 2005. ISBN 0321267974.
+//[5] S. Cook, C. Bock, P. Rivett, T. Rutt, E. Seidewitz, B. Selic, and D. Tolbert.
+//Uni_ed modeling language (UML) version 2.5.1. Standard formal/2017-12-05,
+//Object Management Group (OMG), Dec. 2017. URL https://www.omg.org/
+//spec/UML/2.5.1.)//
+
+
+==== Classes and Attributes:
+
+image::{imagesdir}\uml2owl\P7F1.png[UML visual notation for classes and attributes]
+.Figure 1: UML visual notation for classes and attributes
+
+
+Figure 1 depicts simple, abstract and regular classes with and without attribute specifications. Note that no class methods are ever employed as this document as the transformations aim at data structures only.
+
+==== Data types and enumerations:
+
+image::{imagesdir}\uml2owl\P7F2.png[UML visual notation for datatypes and enumerations]
+.Figure 2: UML visual notation for datatypes and enumerations
+
+Figure 2 depicts a primitive datatype and an enumeration. No complex data types are depicted as they are treated in the same manner as classes are.
+
+==== Association, generalisation, and dependency:
+
+image::{imagesdir}\uml2owl\P7F3.png[UML visual notation for association, generalisation, and dependency]
+.Figure 3: UML visual notation for association, generalisation, and dependency
+
+Figure 3 depicts association, generalisation and dependency connectors as the only
+ones necessary to model the eProcurement conceptual model.
+
+
+=== Graffoo visual notation
+
+This section provides the main Graffoo elements employed in this document. A detailed description can be consulted in the OWL standard specfications [15] and in the Graffoo user guide [9].
+
+//Links:
+//([15] B. Parsia, P. Patel-Schneider, and B. Motik. OWL 2 web ontology language
+//structural speci_cation and functional-style syntax (second edition). W3C
+//recommendation, W3C, Dec. 2012. http://www.w3.org/TR/2012/REC-owl2-
+//syntax-20121211/.
+//[9] R. Falco, A. Gangemi, S. Peroni, D. Shotton, and F. Vitali. Modelling owl
+//ontologies with grffoo. In European Semantic Web Conference, pages 320_325.
+//Springer, 2014.
+
+==== Graffoo elements:
+
+Graffoo visual notation for classes, instances and datatypes Notation:
+
+image::{imagesdir}\uml2owl\P8F4.png[Graffoo visual notation for classes, instances and datatypes]
+.Figure 4: Graffoo visual notation for classes, instances and datatypes
+
+Graffoo visual notation for object and data properties and generic links
+
+• A yellow rectangle with solid black border is used to declare classes. Solid black and labelled arrows are used to declare class axioms.
+•	A green rhomboid with solid black border is used to declare datatypes. Solid black and labelled arrows are used to declare class axioms.
+•	A pink circle with solid black border is used to declare individuals. Solid black and labelled arrows are used to declare axioms and assertions among individuals.
+•	A green solid line is used to declare data properties, where the empty circle at the
+beginning identifies the property domain while the empty arrow at the end indicates the property range.
+•	A blue solid line is used to declare object properties, where the solid circle at the beginning identifies the property domain while the solid arrow at the end indicates the property range.
+
+image::{imagesdir}\uml2owl\P8F5.png[Graffoo visual notation for classes, instances and datatypes]
+.Figure 5: Graffoo visual notation for object and data properties and generic links
+
+== Rules for the transformation of UML Classes and Attributes:
+
+The rules covered on this page are listed in the table below:
+
+.Overview of transformation rules for UML classes and attributes
+[cols="1,1,1,1"]
+|===
+s|UML element Rules in reasoning layer|Rules in core ontology layer|Rules in data shape layer|Rules in reasoning layer
+
+s|Class
+^|Rule 1
+^|Rule 2
+^|
+
+s|Abstract class
+^|
+^|Rule 3
+^|
+
+s|Attribute
+^|Rule 4
+^|
+^|Rule 5
+
+s|Attribute type
+^|
+^|Rule 7
+^|Rule 6
+
+s|Attribute multiplicity
+^|
+^|Rule 8
+^|Rule 9, Rule 10
+|===
+
+=== Class
+In UML, a Class is used to specify a classification of objects.
+
+UML represents atomic classes as named elements of type Class without further features. In OWL, the atomic class, owl:Class, has no intension. It can only be interpreted by its name that has a meaning in the world outside the ontology. The atomic class is a class description that is simultaneously a class axiom.
+
+image::{imagesdir}\uml2owl\P10F6.png[Visual representation of a class in UML (on the left) and OWL (on the right)]
+.Figure 6: Visual representation of a class in UML (on the left) and OWL (on the right)
+
+*Rule 1* (Class - in core ontology layer).
+Specify declaration axiom for UML Class as OWL Class where the URI and a label are deterministically generated from the class name. The label and, if available, the description are ascribed to the class.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a owl:Class ;
+    rdfs:label "Class name"@en ;
+.
+a|
+[source,rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <rdfs:label xml:lang="en">Class name</rdfs:label>
+</owl:Class>
+
+|Listing 1: Class declaration in Turtle syntax
+|Listing 2: Class declaration in RDF/XML syntax
+|===
+
+'''
+*Rule 2* (Class - in data shape layer). Specify declaration axiom for UML Class as SHACL Node Shape where the URI and a label are deterministically generated from the class name.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape .
+a|
+[source,rdf]
+<rdf:Description rdf:about="http://base.uri/ClassName">
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape">
+<rdf:Description>
+
+|Listing 1: Class declaration in Turtle syntax
+|Listing 2: Class declaration in RDF/XML syntax
+|===
+
+
+=== Abstract class
+
+In UML, an abstract Class [5] cannot have any instances and only its subclasses can be instantiated. The abstract classes are declared just like the regular ones (Rule 1 and 2) and in addition a constraint validation rule is generated to ensure that no instance of this class is permitted.
+
+OWL follows the Open World Assumption [15], therefore, even if the ontology does not contain any instances for a specific class, it is unknown whether the class has any instances. We cannot conirm that the UML abstract class is correctly defined with respect to the OWL domain ontology, but we can detect if it is not using SHACL constraints.
+
+image::{imagesdir}\uml2owl\P11F7.png[Visual representation of an abstract class in UML (on the left) and OWL (on the right)]
+.Figure 5: Visual representation of an abstract class in UML (on the left) and OWL (on the right)
+
+*Rule 3* (Class - in data shape layer). Specify declaration axiom for UML Class as SHACL Node Shape with a SPARQL constraint that selects all instances of this class.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName
+    rdf:type sh:NodeShape ;
+    sh:sparql [
+        sh:select """SELECT $this
+            WHERE {
+                $this a :ClassName .
+            }
+            """ ;
+    ] ;
+.
+a|
+[source,rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+    <sh:sparql rdf:parseType="Resource">
+        <sh:select>SELECT $this
+        WHERE {
+            $this a :ClassName .
+        }
+        </sh:select>
+    </sh:sparql>
+</sh:NodeShape>
+
+s|Listing 5: Instance checking constraint in Turtle syntax
+s|Listing 6: Instance checking constraint in RDF/XML syntax
+|===
+
+'''
+=== Attributes
+
+The UML attributes [5] are properties that are owned by a Classifier, e.g. Class. Both UML attributes and associations are represented by one meta-model element - Property. OWL also allows one to define properties. A transformation of UML attribute to OWL data property or OWL object property bases on its type. If the type of the attribute is a primitive type it should be  ransformed into OWL datatype property. However, if the type of the attribute is a structured datatype, class of enumeration , it should be transformed into an OWL object property.
+
+image::{imagesdir}\uml2owl\P12F8.png[Figure 8: Visual representation of class attributes in UML (on the left) and OWL properties (on the right)]
+.Figure 8: Visual representation of class attributes in UML (on the left) and OWL properties (on the right)
+
+*Rule 4* (Attribute - in core ontology layer). Specify declaration axiom(s) for attribute(s) as OWL data or object properties deciding based on their types. The attributes with primary types should be treated as data properties, whereas those typed with classes or enumerations should be treated as object properties.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:attribute1 a owl:DatatypeProperty ;
+    rdfs:label "attribute 1"@en;
+    skos:definition "Description of the attribute meaning"@en;
+.
+:attribute2 a owl:ObjectProperty ;
+    rdfs:label "attribute 2"@en;
+    skos:definition "Description of the attribute meaning"@en;
+.
+a|
+[source,rdf]
+<owl:DatatypeProperty rdf:about="http://base.uri/attribute1">
+    <rdfs:label xml:lang="en">attribute 1</rdfs:label>
+    <skos:definition xml:lang="en">Description of the attribute meaning</skos:definition>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:about="http://base.uri/ attribute2">
+    <rdfs:label xml:lang="en">attribute 1</rdfs:label>
+    <skos:definition xml:lang="en">Description of the attribute meaning</skos:definition>
+</owl:ObjectProperty>
+
+|Listing 7: Property declaration in Turtle syntax
+|Listing 8: Property declaration in RDF/XML syntax
+|===
+
+
+=== Attribute owner
+
+*Rule 5* (Attribute domain - in reasoning layer). Specify data (or object) property domains for attribute(s).
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:attribute1 a owl:DatatypeProperty ;
+    rdfs:domain :ClassName ;
+.
+:attribute2 a owl:ObjectProperty ;
+    rdfs:domain :ClassName ;
+a|
+[source,rdf]
+<owl:DatatypeProperty rdf:about="http://base.uri/attribute1">
+    <rdfs:domain rdf:resource="http://base.uri/ClassName"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:about="http://base.uri/attribute2">
+    <rdfs:domain rdf:resource="http://base.uri/ClassName"/>
+</owl:ObjectProperty>
+
+s|Listing 9: Domain specification in Turtle syntax
+s|Listing 10: Domain specification in RDF/XML syntax
+|===
+
+
+=== Attribute type
+
+*Rule 6* (Attribute type - in reasnoning layer). Specify data (or object) property range for attribute(s).
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:attribute1 a owl:DatatypeProperty;
+    rdfs:range xsd:string;
+.
+:attribute2 a owl:ObjectProperty;
+    rdfs:range :OtehrClass;
+.
+a|
+[source,rdf]
+<owl:DatatypeProperty rdf:about="http://base.uri/attribute1">
+    <rdfs:range rdf:resource="http://www.w3c.org...#string"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty rdf:about="http://base.uri/attribute2">
+    <rdfs:range rdf:resource="http://base.uri/OtherClass"/>
+</owl:ObjectProperty>
+
+|Listing 11: Range specification in Turtle syntax
+|Listing 12: Range specification in RDF/XML syntax
+|===
+
+*Rule 7* (Attribute range shape  in data shape layer). Within the SHACL Node Shape corresponding to the UML class, specify property constraints, for each UML attribute, indicating the range class or datatype.
+
+[cols="1,1"]
+|===
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        a sh:PropertyShape ;
+        sh:path :attribute1 ;
+        sh:datatype xsd:string ;
+        sh:name "attribute 1" ;
+    ];
+    sh:property [
+        a sh:PropertyShape ;
+        sh:path :attribute2 ;
+        sh:class :OtherClass ;
+        sh:name "attribute 2" ;
+    ];
+.
+a|
+[source,rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+<sh:property>
+    <sh:PropertyShape>
+        <sh:path rdf:resource="http://base.uri/attribute1"/>
+        <sh:name>attribute 1</sh:name>
+        <sh:datatype rdf:resource="http://www.w3c.org...#string"/>
+    </sh:PropertyShape>
+</sh:property>
+<sh:property>
+    <sh:PropertyShape>
+        <sh:path rdf:resource="http://base.uri/attribute2"/>
+        <sh:name>attribute 2</sh:name>
+        <sh:class rdf:resource="http://base.uri/OtherClass"/>
+    </sh:PropertyShape>
+</sh:property>
+</sh:NodeShape>
+
+|Listing 13: Property class and datatype constraint in Turtle syntax
+|Listing 14: Property class and datatype constraint in RDF/XML syntax
+|===
+
+'''
+=== Attribute multiplicity
+
+In [5], multiplicity bounds of multiplicity element are specified in the form of [<lowerbound>... <upper-bound>]. The lower-bound, also referred here as minimum cardinality or min is of a non-negative Integer type and the upper-bound, also referred here as maximum cardinality or max, is of an UnlimitedNatural type (see Section 4.1).
+
+The strictly compliant specification of UML in version 2.5 defines only a single value range for MultiplicityElement. not limit oneself to a single interval. Therefore, the below UML to OWL mapping covers a wider case - a possibility of specifying more value ranges for a multiplicity element. Nevertheless, if the reader would like to strictly follow the current UML specification, the particular single lower..upper bound interval is therein also comprised.
+
+image::{imagesdir}\uml2owl\P15F9.png[Figure 8: Figure 9: Visual representation of class attributes with multiplicity in UML (on the left) and OWL class specialising an anonymous restriction of properties (on the right)]
+.Figure 9: Visual representation of class attributes with multiplicity in UML (on the left) and OWL class specialising an anonymous restriction of properties (on the right)
+
+*Rule 8* (Attribute multiplicity - in data shape layer). Within the SHACL Node Shape corresponding to the UML class, specify property constraints, corresponding to each attribute, indicating the minimum and maximum cardinality, only where min and max are different from "*"" (any) and multiplicity is not [1..1]. The expressions are formulated according to the following cases.
+
+A. exact cardinality, e.g. [2..2]
+B. minimum cardinality only, e.g. [1..*]
+C. maximum cardinality only, e.g. [*..2]
+D. minimum and maximum cardinality , e.g. [1..2]
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        sh:path :attribute1;
+        sh:minCount 2 ;
+        sh:maxCount 2 ;
+        sh:name "attribute 1" ;
+    ] ;
+.
+a|
+[source, rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+    <sh:property>
+        <sh:PropertyShape>
+            <sh:path rdf:resource="http://base.uri/attribute1"/>
+            <sh:name>attribute 1</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org...#integer">2</sh:minCount>
+            <sh:maxCount rdf:datatype="http://www.w3.org...#integer">2</sh:maxCount>
+        </sh:PropertyShape>
+    </sh:property>
+</sh:NodeShape>
+
+|Listing 15: Exact cardinality constraint in Turtle syntax
+|Listing 16: Exact cardinality constraint in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        sh:path :attribute2;
+        sh:minCount 1 ;
+        sh:name "attribute 2" ;
+    ] ;
+.
+a|
+[source, rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+    <sh:property>
+        <sh:PropertyShape>
+            <sh:path rdf:resource="http://base.uri/attribute2"/>
+            <sh:name>attribute 2</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org...#integer">1</sh:minCount>
+        </sh:PropertyShape>
+    </sh:property>
+</sh:NodeShape>
+
+|Listing 17: Min cardinality constraint in Turtle syntax
+|Listing 18: Min cardinality constraint in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        sh:path :attribute3;
+        sh:maxCount 2 ;
+        sh:name "attribute 3" ;
+    ] ;
+.
+a|
+[source, rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+    <sh:property>
+        <sh:PropertyShape>
+            <sh:path rdf:resource="http://base.uri/attribute3"/>
+            <sh:name>attribute 3</sh:name>
+            <sh:maxCount rdf:datatype="http://www.w3.org...#integer">2</sh:maxCount>
+        </sh:PropertyShape>
+    </sh:property>
+</sh:NodeShape>
+
+|Listing 19: Max cardinality constraint in Turtle syntax
+|Listing 20: Max cardinality constraint in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        sh:path :attribute4;
+        sh:minCount 1 ;
+        sh:maxCount 2 ;
+        sh:name "attribute 4" ;
+    ] ;
+.
+a|
+[source, rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+    <sh:property>
+        <sh:PropertyShape>
+            <sh:path rdf:resource="http://base.uri/attribute4"/>
+            <sh:name>attribute 4</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org...#integer">1</sh:minCount>
+            <sh:maxCount rdf:datatype="http://www.w3.org...#integer">2</sh:maxCount>
+        </sh:PropertyShape>
+    </sh:property>
+</sh:NodeShape>
+
+|Listing 21: Min and max cardinality constraint in Turtle syntax
+|Listing 22: Min and max cardinality constraint in RDF/XML syntax
+|===
+
+It should be noted that upper-bound of UML MultiplicityElement can be specified as unlimited: "*"". In OWL, cardinality expressions serve to restrict the number of individuals that are connected by an object property expression to a given number of instances of a specified class expression [15]. Therefore, UML unlimited upper-bound does not add any information to OWL ontology, hence it is not transformed.
+
+*Rule 9* (Attribute multiplicity - in reasnoning layer). For each attribute multi-plicity of the form ( min .. max ), where min and max are different than "*"" (any), specify a subclass axiom where the OWL class, corresponding to the UML class, specialises an anonymous restriction of properties formulated according to the following cases.
+
+A. exact cardinality, e.g. [2..2]
+B. minimum cardinality only, e.g. [1..*]
+C. maximum cardinality only, e.g. [*..2]
+D. maximum and maximum cardinality , e.g. [1..2]
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a owl:Class ;
+    rdfs:subClassOf [ a
+        owl:Restriction ;
+        owl:cardinality"2"^^xsd:integer;
+        owl:onProperty :attribute1 ;
+    ] ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://base.uri/attribute1"/>
+            <owl:cardinality rdf:datatype="http://www.w3.org...#integer">2</owl:cardinality>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
+
+|Listing 23: Cardinality restriction in Turtle syntax
+|Listing 24: Cardinality restriction in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a owl:Class ;
+    rdfs:subClassOf [ a
+        owl:Restriction ;
+        owl:minCardinality "1"^^xsd:integer;
+        owl:onProperty :attribute2 ;
+    ] ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://base.uri/attribute2"/>
+            <owl:minCardinality rdf:datatype="http://www.w3.org...#integer">1</owl:cardinality>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
+
+|Listing 25: Min cardinality restriction in Turtle syntax
+|Listing 26: Min cardinality restriction in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a owl:Class ;
+    rdfs:subClassOf [ a
+        owl:Restriction ;
+        owl:maxCardinality"2"^^xsd:integer;
+        owl:onProperty :attribute3 ;
+    ] ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://base.uri/attribute3"/>
+            <owl:maxCardinality rdf:datatype="http://www.w3.org...#integer">2</owl:cardinality>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
+
+|Listing 27: Max cardinality restriction in Turtle syntax
+|Listing 28: Max cardinality restriction in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a owl:Class ;
+    rdfs:subClassOf [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            [ a owl:Restriction ;
+                owl:minCardinality"1"^^xsd:integer;
+                owl:onProperty:attribute4; ]
+            [ a owl:Restriction ;
+                owl:maxCardinality"2"^^xsd:integer;
+                owl:onProperty:attribute4; ]
+        ) ;
+    ] ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <rdfs:subClassOf>
+        <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://base.uri/attribute4"/>
+                    <owl:minCardinality rdf:datatype="...#integer">1</owl:minCardinality>
+                </owl:Restriction>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://base.uri/attribute4"/>
+                    <owl:maxCardinality rdf:datatype="...#integer">2</owl:maxCardinality>
+                </owl:Restriction>
+            </owl:intersectionOf>
+        </owl:Class>
+    </rdfs:subClassOf>
+</owl:Class>
+
+
+|Listing 29: Min and max cardinality restriction in Turtle syntax
+|Listing 30: Min and max cardinality restriction in RDF/XML syntax
+|===
+
+Attributes with multiplicity exactly one correspond to functional object or data properties in OWL. If we apply the previous rule specifying min and max cardinality will lead to inconsistent ontology. To avoid that it is important that min and max cardinality are not generated from [1..1] multiplicity but only functional property axiom.
+
+*Rule 10* (Attribute multiplicity "one" - in reasnoning layer). For each attribute that has multiplicity exactly one, i.e. [1.. ], specify functional property axiom.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:attribute5 a
+    owl:FunctionalProperty
+.
+a|
+[source, rdf]
+<rdf:Description rdf:about="http://base.uri/attribute5">
+    <rdf:type rdf:resource="http://...owl#FunctionalProperty"/>
+</rdf:Description>
+
+|Listing 31: Declaring a functional property in Turtle syntax
+|Listing 32: Declaring a functional property in RDF/XML syntax
+|===
+
+include::partial$feedback.adoc[]
+
+== Transformation of UML connectors
+
+In this section are specified transformation rules for UML association, generalisation and dependency connectors. Table 2 provides an overview of the section coverage.
+
+=== Unidirectional association
+
+A binary Association specifies a semantic relationship between two member ends represented by properties. Please note that in accordance with specification [5], the association end names are not obligatory. However, we adhere to the UML conventions [7], where specification of at one member ends, for unidirectional associ-ation, and two member ends, for bidirectional association, is mandatory. Moreover, provision of a connector (general) name is discouraged.
+
+.Transformation rules overview for UML connectors
+
+[cols="1,1,1,1"]
+|===
+s|UML element|Rules in core ontology layer|Rules in data shape layer|Rules in reasoning layer
+
+s|Association
+|Rule 11
+|
+|
+
+s|Association domain
+|
+|
+|Rule 12
+
+s|Association range
+|
+|Rule 14
+|Rule 13
+
+s|Association multiplicity
+|
+|Rule 15
+|Rule 16,17
+
+s|Association asymmetry
+|
+|Rule 18
+|Rule 19
+
+s|Association inverse
+|
+|
+|Rule 20
+
+s|Dependency
+|Rule 11
+|
+|
+
+s|Dependency domain
+|
+|
+|Rule 12
+
+s|Dependency range
+|
+|Rule 34
+|Rule 33
+
+s|Dependency multiplicity
+|
+|Rule 15
+|Rule 16
+
+s|Class generalisation
+|Rule 21
+|
+|
+
+s|Property generalisation
+|Rule 22
+|
+|
+
+s|Class equivalence
+|
+|
+|Rule 23
+
+s|Property equivalence
+|
+|
+|Rule 24
+|===
+
+*Rule 11* (Unidirectional association - in core ontology layer). Specify object prop-erty declaration axiom for the target end of the association.
+
+image::{imagesdir}\uml2owl\P21F10.png[Figure 10: Visual representation of an UML unidirectional association (on the left) and an OWL property with cardinality restriction on domain class (on the right)]
+.Figure 10: Visual representation of an UML unidirectional association (on the left), and an OWL property with cardinality restriction on domain class (on the right)
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:relatesTo a owl:ObjectProperty ;
+    rdfs:label "relates oo"@en;
+    skos:definition "Description of the relationship meaning"@en;
+.
+a|
+[source, rdf]
+<owl:ObjectProperty rdf:about="http://base.uri/relatesTo">
+    <rdfs:label xml:lang="en">relates to</rdfs:label>
+    <skos:definition xml:lang="en">Description of the relationship meaning</skos:definition>
+</owl:ObjectProperty>
+
+|Listing 33: Property declaration in Turtle syntax
+|Listing 34: Property declaration in RDF/XML syntax
+|===
+
+=== Association Source
+
+*Rule 12* (Association source - in reasoning layer). Specify object property domain for the target end of the association.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:relatesTo a owl:ObjectProperty ;
+    rdfs:domain :ClassName ;
+.
+a|
+[source, rdf]
+<owl:ObjectProperty rdf:about="http://base.uri/relatesTo">
+    <rdfs:domain rdf:resource="http://base.uri/ClassName"/>
+</owl:ObjectProperty>
+
+|Listing 35: Domain specification in Turtle syntax
+|Listing 36: Domain specification in RDF/XML syntax
+|===
+
+=== Association Target:
+
+*Rule 13* (Association target - in reasoning layer). Specify object property range for the target end of the association.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:relatesTo a owl:ObjectProperty ;
+    rdfs:range :ClassName ;
+.
+
+a|
+[source, rdf]
+<owl:ObjectProperty rdf:about="http://base.uri/relatesTo">
+    <rdfs:range rdf:resource="http://base.uri/ClassName"/>
+</owl:ObjectProperty>
+
+|Listing 37: Range specification in Turtle syntax
+|Listing 38: Range specification in RDF/XML syntax
+|===
+
+*Rule 14* (Association range shape - in data shape layer). Within the SHACL Node Shape corresponding to the source UML class, specify property constraints indicating the range class.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        a sh:PropertyShape ;
+        sh:path :relatesTo ;
+        sh:class :OtherClass ;
+        sh:name "relates to" ;
+    ];
+.
+a|
+[source, rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+    <sh:property>
+        <sh:PropertyShape>
+            <sh:path rdf:resource="http://base.uri/relatesTo"/>
+            <sh:name>relates to</sh:name>
+            <sh:class rdf:resource="http://base.uri/OtherClass"/>
+        </sh:PropertyShape>
+    </sh:property>
+</sh:NodeShape>
+
+|Listing 39: Property class constraint in Turtle syntax
+|Listing 40: Property class constraint in RDF/XML syntax
+|===
+
+=== Association multiplicity
+
+*Rule 15* (Association multiplicity - in data shape layer). Within the SHACL Node Shape corresponding to the source UML class, specify property constraints indicating minimum and maximum cardinality according to cases provided by Rule 8.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        sh:path :relatesTo;
+        sh:minCount 1 ;
+        sh:name "relates to" ;
+    ] ;
+.
+a|
+[source, rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+    <sh:property>
+        <sh:PropertyShape>
+<           sh:path rdf:resource="http://base.uri/relatesTo"/>
+            <sh:name>relates to</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org...#integer">1</sh:minCount>
+        </sh:PropertyShape>
+    </sh:property>
+</sh:NodeShape>
+
+|Listing 41: Min cardinality constraint in Turtle syntax
+|Listing 42: Min cardinality constraint in RDF/XML syntax
+|===
+
+*Rule 16* (Association multiplicity - in reasnoning layer). For the association target multiplicity, where min and max are different than "*"" (any) and multiplicity is not [1..1], specify a subclass axiom where the source class specialises an anonymous restriction of properties formulated according to cases provided by Rule 9.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a owl:Class ;
+    rdfs:subClassOf [ a
+        owl:Restriction ;
+        owl:minCardinality"1"^^xsd:integer;
+        owl:onProperty :relatesTo ;
+    ] ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://base.uri/relatesTo"/>
+            <owl:minCardinality rdf:datatype="http://www.w3.org...#integer" >1</owl:cardinality>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
+
+|Listing 43: Min cardinality restriction in Turtle syntax
+|Listing 44: Min cardinality restriction in RDF/XML syntax
+|===
+
+*Rule 17* (Association multiplicity "one" - in reasnoning layer). If the association multiplicity is exactly one, i.e. [1..1], specify functional property axiom like in Rule 10.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:relatesTo a owl:FunctionalProperty .
+a|
+[source, rdf]
+<rdf:Description rdf:about="http://base.uri/relatesTo">
+    <rdf:type rdf:resource="http://...owl#FunctionalProperty"/>
+</rdf:Description>
+
+s|Listing 45: Declaring a functional property in Turtle syntax
+s|Listing 46: Declaring a functional property in RDF/XML syntax
+|===
+
+=== Recursive association
+
+In case of recursive associations, that are from one class to itself, the transformation rules must be applied as in the case of regular unidirectional association, which are from Rule 11 to Rule 17. In addition the association must be marked as asymmetric expressed in Rule 19.
+
+*Rule 18* (Association asymmetry - in data shape layer). Within the SHACL Node Shape corresponding to the UML class, specify SPARQL constraint selecting instances connected by the object property in a reciprocal manner.
+
+image::{imagesdir}\uml2owl\P25F11.png[Figure 11: Visual representation of an UML recursive association (on the left) and OWL recursive properties with cardinality restrictions on domain class (on the right)]
+.Figure 11: Visual representation of an UML recursive association (on the left) and OWL recursive properties with cardinality restrictions on domain class (on the right)
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:sparql [
+        sh:select """
+            SELECT ?this ?that
+            WHERE {
+            ?this :relatesTo ?that .
+            ?that :relatesTo this .
+            }""" ; ] ;
+.
+a|
+[source, rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+    <sh:sparql rdf:parseType="Resource">
+        <sh:select>
+            SELECT ?this ?that
+            WHERE {
+            ?this :relatesTo ?that .
+            ?that :relatesTo ?this .}
+        </sh:select>
+    </sh:sparql>
+</sh:NodeShape>
+
+|Listing 47: Declaring an asymmetric property in Turtle syntax
+|Listing 48: Declaring an asymmetric property in RDF/XML syntax
+|===
+
+*Rule 19* (Association asymmetry - in reasoning layer). Specify the asymmetry object property axiom for each end of a recursive association.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:relatesTo a
+    owl:AsymmetricProperty .
+a|
+[source, rdf]
+<rdf:Description rdf:about="http://base.uri/relatesTo">
+    <rdf:type rdf:resource="http://...owl#AsymmetricProperty"/>
+</rdf:Description>
+
+|Listing 49: Declaring an asymmetric property in Turtle syntax
+|Listing 50: Declaring an asymmetric property in RDF/XML syntax
+|===
+
+image::{imagesdir}\uml2owl\P26F12.png[Figure 12: Visual representation of an UML bidirectional association (on the left) and OWL properties with cardinality restrictions on domain class (on the right)]
+.Figure 12: Visual representation of an UML bidirectional association (on the left) and OWL properties with cardinality restrictions on domain class (on the right)
+
+=== Bidirectional association
+
+The bidirectional associations should be treated, both on source and target ends, like two unidirectional associations. The transformation rules from Rule 11 to Rule 17 must be applied to both ends. In addition these rule the inverse relation axiom must be specified.
+
+*Rule 20* (Association inverse - in reasoning layer). Specify inverse object property between the source and target ends of the association.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:relatesTo owl:inverseOf
+    :isRelatedTo .
+a|
+[source, rdf]
+<owl:ObjectProperty rdf:about="http://base.uri/relatesTo">
+    <owl:inverseOf rdf:resource="http://base.uri/isRelatedTo"/>
+</owl:ObjectProperty>
+
+|Listing 51: Declaring an inverse property in Turtle syntax
+|Listing 52: Declaring an inverse property in RDF/XML syntax
+|===
+
+
+=== Unidirectional dependency
+The UML dependency connectors should be transformed by the rules specified for UML association connectors.
+
+'''
+=== Class generalisation
+
+Generalisation [5] defines specialization relationship between Classifiers. In case of UML classes it relates a more specific Class to a more general Class. UML generalisation set [5] groups generalizations; incomplete and disjoint constraints indicate that the set is not complete and its specific Classes have no common instances. The UML conventions [7] specify that all sibling classes are by default disjoint, therefore even if no generalisation set is provided it is assumed to be implicit.
+
+image::{imagesdir}\uml2owl\P27F13.png[Figure 13: Visual representation of UML generalisation (on the left) and OWL subclass relation (on the right)]
+.Figure 13: Visual representation of UML generalisation (on the left) and OWL subclass relation (on the right)
+
+*Rule 21* (Class generalisation - in core ontology layer). Specify subclass axiom for the generalisation between UML classes. Sibling classes must be disjoint with one another.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName rdfs:subClassOf
+        :SuperClass.
+:OtherClass rdfs:subClassOf
+        :SuperClass;
+    owl:disjointWith :ClassName ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <rdfs:subClassOf rdf:resource="http://base.uri/SuperClass"/>
+</owl:Class>
+<owl:Class rdf:about="http://base.uri/OtherClass">
+    <rdfs:subClassOf rdf:resource="http://base.uri/SuperClass"/>
+    <owl:disjointWith rdf:resource="http://base.uri/ClassName"/>
+</owl:Class>
+
+|Listing 53: Sub-classification in Turtle syntax
+|Listing 54: Sub-classification in RDF/XML syntax
+|===
+
+=== Property generalisation
+
+Generalization [5] defines specialization relationship between Classifiers. In case of the UML associations it relates a more specific Association to more general Association.
+
+image::{imagesdir}modules\ROOT\images\uml2owl\P28F14.png[Figure 14: Visual representation of UML property generalisation (on the left) and OWL sub-property relation (on the right)]
+.Figure 14: Visual representation of UML property generalisation (on the left) and OWL sub-property relation (on the right)
+
+*Rule 22* (Property generalisation - in core ontology layer). Specify sub-property axiom for the generalisation between UML associations and dependencies.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:hasSister rdfs:subPropertyOf
+    :relatesTo .
+:isSisterOf rdfs:subPropertyOf
+    :isRelatedTo .
+a|
+[source, rdf]
+<owl:ObjectProperty rdf:about="http://base.uri/hasSister">
+    <rdfs:subPropertyOf rdf:resource="http://base.uri/relatesTo"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://base.uri/isSisterOf">
+    <rdfs:subPropertyOf rdf:resource="http://base.uri/isRelatedTo"/>
+</owl:ObjectProperty>
+
+|Listing 55: Property specialisation in Turtle syntax
+|Listing 56: Listing 56: Property specialisation in RDF/XML syntax
+|===
+
+=== Class equivalence
+
+*Rule 23* (Equivalent classes - in reasnoning layer). Specify equivalent class axiom for the generalisation with equivalent or complete stereotype between UML classes.
+
+image::{imagesdir}\uml2owl\P29F15.png[Figure 15: Visual representation of UML class equivalence (on the left) and OWL class equivalence (on the right)]
+.Figure 15: Visual representation of UML class equivalence (on the left) and OWL class equivalence (on the right)
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName owl:equivalentClass
+:SuperClass.
+
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <owl:equivalentClass rdf:resource="http://base.uri/SuperClass"/>
+</owl:Class>
+
+|Listing 57: Class equivalence in Turtle syntax
+|Listing 58: Class equivalence in RDF/XML syntax
+|===
+
+=== Property equivalence
+
+*Rule 24* (Equivalent properties - in reasoning layer). Specify equivalent property axiom for the generalisation with equivalent or complete stereotype between UML properties.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:hasSister owl:equivalentProperty
+    :relatesTo .
+:isSisterOf
+    owl:equivalentProperty
+    :isRelatedTo .
+a|
+[source, rdf]
+<owl:ObjectProperty
+        rdf:about="http://base.uri/hasSister">
+    <owl:equivalentProperty
+        rdf:resource="http://base.uri/relatesTo"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://base.uri/isSisterOf">
+    <owl:equivalentProperty rdf:resource="http://base.uri/isRelatedTo"/>
+</owl:ObjectProperty>
+
+|Listing 59: Property equivalence in Turtle syntax
+|Listing 60: Property equivalence in RDF/XML syntax
+|===
+
+== Transformation of UML data types
+
+In this section are specified transformation rules for UML datatypes and enumerations. Table 3 provides an overview of the section coverage.
+
+[cols="1,1,1,1"]
+|===
+|UML element|Rules in core ontology layer|Rules in data shape layer|Rules in reasoning layer
+
+|Primitive datatype
+|Rule 25
+|
+|
+
+|Structured datatype
+|Rule 26
+|
+|
+
+|Enumeration
+|Rule 27
+|
+|Rule 29
+
+|Enumeration item
+|Rule 28
+|
+|
+|===
+
+=== Primitive datatype
+
+The UML primitive type defines a predefined datatype without any substructure. The UML specification [5] predefines five primitive types: String, Integer, Boolean, Unlimited, Natural and Real. Here we extended those to the list provided in Table 4.
+
+image::{imagesdir}\uml2owl\P30F16.png[Figure 16: Visual representation of an UML Datatype (on the left) and an OWL Datatype (on the right)]
+.Figure 16: Visual representation of an UML Datatype (on the left) and an OWL Datatype (on the right)
+
+*Rule 25* (Datatype - in core ontology layer). Specify datatype declaration axiom for UML datatype as follows:
+* UML primitive datatypes are declared as the mapped XSD datatype in Table 4.
+* XSD and RDF(S) datatypes are declared as such.
+* Model specific datatypes are declared as such.
+
+Table 4: Mapping of UML primitive types to XSD datatypes
+
+[cols="1,1"]
+|===
+s|UML datatype|XSD datatype
+
+|Boolean
+|xsd:boolean
+
+|Float
+|xsd:float
+
+|Integer
+|xsd:integer
+
+|Char
+|xsd:string
+
+|String
+|xsd:string
+
+|Short
+|xsd:short
+
+|Long
+|xsd:long
+
+|Decimal
+|xsd:decimal
+
+|Real
+|xsd:float
+
+|Date
+|xsd:date
+
+|Numeric
+|xsd:integer
+
+|Text
+|xsd:string
+|===
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+xsd:string a rdfs:Datatype ;
+    rdfs:label "String"@en ;
+    skos:definition "Description of the datatype meaning"@en ;
+.
+xsd:boolean a rdfs:Datatype ;
+    rdfs:label "Boolean"@en ;
+    skos:definition "Description of the datatype meaning"@en ;
+.
+:DatatypeName a rdfs:Datatype ;
+    rdfs:label "Datatype name"@en ;
+    skos:definition "Description of the datatype meaning"@en ;
+.
+a|
+[source, rdf]
+<rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string">
+    <rdfs:label xml:lang="en">String</rdfs:label>
+    <skos:definition xml:lang="en">Description of the datatype meaning</skos:definition>
+</rdfs:Datatype>
+<rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
+    <rdfs:label xml:lang="en">Boolean</rdfs:label>
+    <skos:definition xml:lang="en">Description of the datatype meaning</skos:definition>
+</rdfs:Datatype>
+<rdfs:Datatype rdf:about="http://base.uri/DatatypeName">
+    <rdfs:label xml:lang="en">Datatype name</rdfs:label>
+    <skos:definition xml:lang="en">Description of the datatype meaning</skos:definition>
+</rdfs:Datatype>
+
+|Listing 61: Datatype declaration in Turtle syntax
+|Listing 62: Datatype declaration in RDF/XML syntax
+|===
+
+=== Structured data types
+The UML structured datatype [5] has attributes and is used to define complex data types. The structured datatypes should be treated as classes.
+*Rule 26* (Structured Datatype - in core ontology layer). Specify OWL class declaration axiom for UML structured datatype.
+
+=== Enumeration
+//sort out image lables!
+UML Enumerations [5] are kinds of datatypes, whose values correspond to one of user-defined literals. They should be transformed into SKOS [13] concept schemes comprising the concepts corresponding to enumerated items.
+
+image::{imagesdir}\uml2owl\P32F17.png[Figure 17: Visual representation of an UML Enumeration]
+
+#.Figure 17: Visual representation of an UML Enumeration#
+
+image::{imagesdir}\uml2owl\P32F18.png[Figure 18: Visual representation of a SKOS concept scheme with concepts]
+.Figure 18: Visual representation of a SKOS concept scheme with concepts
+
+*Rule 27* (Enumeration - in core ontology layer). Specify SKOS concept scheme instantiation axiom for an UML enumeration.
+
+[cols="1,1"]
+|===
+a|
+[source,turtle]
+:ControlledList a skos:ConceptScheme ;
+    rdfs:label "Controlled list" ;
+    skos:prefLabel "Controlled list"@en ;
+    skos:definition "Definition of the concept scheme meaning"@en ;
+.
+a|
+[source, rdf]
+<skos:ConceptScheme rdf:about="http://base.uri/ControlledList">
+    <rdfs:label>Controlled list</rdfs:label>
+    <skos:prefLabel xml:lang="en">Controlled list</skos:prefLabel>
+    <skos:definition xml:lang="en">Definition of the concept scheme meaning</skos:definition>
+</skos:ConceptScheme>
+
+s|Listing 63: Concept scheme instantiation in Turtle syntax
+s|Listing 64: Concept scheme instantiation in RDF/XML syntax
+|===
+
+*Rule 28* (Enumeration items - in core ontology layer). Specify SKOS concept
+instantiation axiom for an UML enumeration item.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:itemA a skos:Concept ;
+    skos:inScheme :ControlledList ;
+    rdfs:label "Item A" ;
+    skos:prefLabel "Item A"@en ;
+    skos:definition "Description for the concept meaning"@en ;
+.
+:itemB a skos:Concept ;
+    skos:inScheme :ControlledList ;
+    rdfs:label "Item B" ;
+    skos:prefLabel "Item B"@en ;
+    skos:definition "Description for the concept meaning"@en ;
+.
+a|
+[source, rdf]
+<skos:Concept rdf:about="http://base.uri/itemA">
+    <skos:inScheme rdf:resource="http://base.uri/ControlledList"/>
+    <rdfs:label>Item A</rdfs:label>
+    <skos:prefLabel xml:lang="en">Item A</skos:prefLabel>
+    <skos:definition xml:lang="en">Description for the concept meaning</skos:definition>
+</skos:Concept>
+    <skos:Concept rdf:about="http://base.uri/itemB">
+    <skos:inScheme rdf:resource="http://base.uri/ControlledList"/>
+    <rdfs:label>Item B</rdfs:label>
+    <skos:prefLabel xml:lang="en">Item B</skos:prefLabel>
+    <skos:definition xml:lang="en">Description for the concept meaning</skos:definition>
+</skos:Concept>
+
+|Listing 65: Concept instantiation in Turtle syntax
+|Listing 66: Concept instantiation in RDF/XML syntax
+|===
+
+*Rule 29* (Enumeration - in reasoning layer). For an UML enumeration, specify an equivalent class restriction covering the set of individuals that are skos:inScheme of this enumeration.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ControlledList a owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Restriction ;
+        owl:allValuesFrom :ControlledList ;
+        owl:onProperty skos:inScheme ;
+    ] ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ControlledList">
+    <owl:equivalentClass>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource=".../02/skos/core#inScheme"/>
+        <owl:hasValue
+rdf:resource="http://base.uri/ControlledList"/>
+        </owl:Restriction>
+    </owl:equivalentClass>
+</owl:Class>
+
+|Listing 67: In-scheme equivalent class in Turtle syntax
+|Listing 68: In-scheme equivalent class in RDF/XML syntax
+|===
+
+== 5 Transformation of UML descriptors
+
+In this section are specified transformation rules for UML descriptive elements.
+Table 5 provides an overview of the section coverage.
+
+[cols="1,1,1,1"]
+|===
+|UML element|Rules in core ontology layer|Rules in data shape layer|Rules in reasoning layer
+
+|Name
+|Rule 30
+|Rule 31
+|Rule 32
+
+|Note
+|Rule 30
+|Rule 31
+|Rule 32
+
+|Comment
+|Rule 30
+|Rule 31
+|Rule 32
+|===
+.Overview of transformation rules for UML datatypes
+
+=== Name
+Most of the UML elements are named. The UML conventions [7] dedicate an ex-
+tensive section to the naming conventions and how deterministically to generate an
+URI and a label from the UML element name. The label should be associated to
+the resource URI by rdfs:label and, even if redundant, also as skos:prefLabel.
+
+*Rule 30* (Label). Specify a label for UML element.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ResourceName rdfs:label "Resource name" ;
+    skos:prefLabel "Resource name"@en ;
+.
+a|
+[source, rdf]
+<rdf:Description rdf:about="http://base.uri/ResourceName">
+    <rdfs:label>Resource name</rdfs:label>
+    <skos:prefLabel xml:lang="en">Resource name</skos:prefLabel>
+</rdf:Description>
+
+s|Listing 69: Labels in Turtle syntax
+s|Listing 70: Labels in RDF/XML syntax
+|===
+
+=== Note
+Most of the UML element foresee provisions of descriptions and notes. They should
+be transformed into rdfs:comment and skos:definition.
+
+*Rule 31* (Description). Specify a description for UML element.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ResourceName rdfs:comment "Description of the resource meaning" ;
+    skos:definition "Resource name"@en ;
+.
+a|
+[source, rdf]
+<rdf:Description rdf:about="http://base.uri/ResourceName">
+ <rdfs:comment>Description of the resource meaning</rdfs:comment>
+    <skos:definition xml:lang="en">Description of the resource meaning</skos:definition>
+</rdf:Description>
+
+|Listing 71: Description in Turtle syntax
+|Listing 72: Description in RDF/XML syntax
+|===
+
+=== Comment
+In accordance with [5], every kind of UML Element may own Comments (see Figure
+19). They add no semantics but may represent information useful to the reader. In
+OWL it is possible to define the annotation axiom for OWL Class, Datatype, Object-
+Property, DataProperty, AnnotationProperty and NamedIndividual. The textual
+explanation added to UML Class is identified as useful for conceptual modelling [3],
+therefore the Comments that are connected to UML Classes are taken into consid-
+eration in the transformation.
+As UML Comments add no semantics, they are not used in any method of semantic
+validation. In OWL the AnnotationAssertion [15] axiom does not add any semantics
+either, and it only improves readability.
+
+image::{imagesdir}modules\ROOT\images\uml2owl\P36F19.png[Figure 19: Visual representation of an UML comment (on the left) and an OWL comment (on the right)]
+.Figure 19: Visual representation of an UML comment (on the left) and an OWL comment (on the right)
+
+*Rule 32* (Comment). Specify annotation axiom for UML Comment associated to an UML element.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+ClassName rdfs:comment "This is an additional comment on ClassName" ;
+    skos:editorialNote "This is an additional comment on ClassName"@en ;
+.
+a|
+[source, rdf]
+<rdf:Description rdf:about="http://base.uri/ClassName">
+    <rdfs:comment>This is an additional comment on ClassName</rdfs:comment>
+    <skos:editorialNote xml:lang="en">This is an additional comment on ClassName</skos:definition>
+</rdf:Description>
+
+|Listing 73: Comment in Turtle syntax
+|Listing 74: Comment in RDF/XML syntax
+|===
+
+== Additional rules
+
+In this section are specified new transformation rules that were implemented after
+the UML model refactoring.
+
+*Rule 33* (Dependency target - in reasnoning layer). Specify object property range
+for the target end of the dependency.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:relatesTo a owl:ObjectProperty ;
+    rdfs:range skos:Concept ;
+.
+a|
+[source, rdf]
+<owl:ObjectProperty rdf:about="http://base.uri/relatesTo">
+    <rdfs:range rdf:resource="skos:Concept"/>
+</owl:ObjectProperty>
+
+|Listing 75: Range specification in Turtle syntax
+|Listing 76: Range specification in RDF/XML syntax
+|===
+
+Rule 34 (Dependency range shape - in data shape layer). Within the SHACL
+Node Shape corresponding to the source UML class, specify property constraints indicating the range class.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:relatesTo a sh:NodeShape ;
+    sh:property [
+    a sh:PropertyShape ;
+    sh:path skos:inScheme ;
+    sh:hasValue :OtherClass ;
+];
+a|
+[source, rdf]
+<sh:NodeShape
+    rdf:about="http://base.uri/relatesTo">
+    <sh:property>
+        <sh:PropertyShape>
+            <sh:path rdf:resource="skos:inScheme"/>
+            <sh:hasValue rdf:resource="http://base.uri/OtherClass"/>
+        </sh:PropertyShape>
+    </sh:property>
+</sh:NodeShape>
+
+|Listing 77: Property class constraint in Turtle syntax
+|Listing 78: Property class constraint in RDF/XML syntax
+|===
+
+== Bibliography: Reference documents for the UML to OWL Transformations:
+
+. C. Atkinson and K. Kiko. A detailed comparison of uml and owl, June 2005.
+URL https://madoc.bib.uni-mannheim.de/1898/.
+.  D. Beckett. RDF/xml syntax specification (revised). W3C recommendation,
+W3C, Feb. 2004. http://www.w3.org/TR/2004/REC-rdf-syntax-grammar-
+20040210/.
+.  G. Booch, J. Rumbaugh, and I. Jacobson. Unified Modeling Language User
+Guide, The (2nd Edition) (Addison-Wesley Object Technology Series) . Addison-
+Wesley Professional, 2005. ISBN 0321267974.
+.  G. Carothers and E. Prud'hommeaux. RDF 1.1 turtle. W3C recommendation,
+W3C, Feb. 2014. http://www.w3.org/TR/2014/REC-turtle-20140225/.
+.  S. Cook, C. Bock, P. Rivett, T. Rutt, E. Seidewitz, B. Selic, and D. Tolbert.
+Unified modeling language (UML) version 2.5.1. Standard formal/2017-12-05,
+Object Management Group (OMG), Dec. 2017. URL https://www.omg.org/
+spec/UML/2.5.1.
+.  E. Costetchi. eProcurement ontology architecture and formalisation specifi-
+cations. Recommendation, Publications Offce of the European Union, April
+2020.
+[7] E. Costetchi. eProcurement uml conceptual model conventions. Recommenda-
+tion, Publications Offce of the European Union, April 2020.
+.  O. El Hajjamy, K. Alaoui, L. Alaoui, and M. Bahaj. Mapping uml to owl2
+ontology. Journal of Theoretical and Applied Information Technology, 90(1):
+126, 2016.
+[.  R. Falco, A. Gangemi, S. Peroni, D. Shotton, and F. Vitali. Modelling owl
+ontologies with graffoo. In European Semantic Web Conference, pages 320-325.
+Springer, 2014.
+. A. H. Khan and I. Porres. Consistency of uml class, object and statechart
+diagrams using ontology reasoners. Journal of Visual Languages & Computing,
+26:42-65, 2015.
+. A. H. Khan, I. Rauf, and I. Porres. Consistency of uml class and statechart
+diagrams with state invariants. In MODELSWARD, pages 14-24, 2013.
+. N. Loutas, N. Loutas, S. Kotoglou, and D. Hytiroglou. D04.07 - report on policy
+support for eprocurement. Deliverable SC245DI07171, ISA programme of the
+European Commission, 2016.
+. A. Miles and S. Bechhofer. SKOS simple knowledge organiza-
+tion system reference. W3C recommendation, W3C, Aug. 2009.
+http://www.w3.org/TR/2009/REC-skos-reference-20090818/.
+. H.-S. Na, O.-H. Choi, and J.-E. Lim. A method for building domain ontologies
+based on the transformation of uml models. In Fourth International Conference
+on Software Engineering Research, Management and Applications (SERA'06),
+pages 332-338. IEEE, 2006.
+. B. Parsia, P. Patel-Schneider, and B. Motik. OWL 2 web ontology language
+structural specification and functional-style syntax (second edition). W3C
+recommendation, W3C, Dec. 2012. http://www.w3.org/TR/2012/REC-owl2-
+syntax-20121211/.
+. M. Sadowska and Z. Huzar. Representation of uml class diagrams in owl 2 on
+the background of domain ontologies. e-Informatica, 13(1):63-103, 2019.
+. G. Schreiber and F. Gandon. RDF 1.1 XML syntax. W3C recommendation,
+W3C, Feb. 2014. http://www.w3.org/TR/2014/REC-rdf-syntax-grammar-
+20140225/.
+. D. Wood, R. Cyganiak, and M. Lanthaler. RDF 1.1 concepts
+and abstract syntax. W3C recommendation, W3C, Feb. 2014.
+http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/.
+. Z. Xu, Y. Ni, L. Lin, and H. Gu. A semantics-preserving approach for extract-
+ing owl ontologies from uml class diagrams. In International Conference on
+Database Theory and Application, pages 122-136. Springer, 2009.
+. Z. Xu, Y. Ni, W. He, L. Lin, and Q. Yan. Automatic extraction of owl ontologies
+from uml class diagrams: a semantics-preserving approach. World Wide Web,
+15(5-6):517-545, 2012.
+. J. Zedlitz and N. Luttenberger. Transforming between uml conceptual models
+and owl 2 ontologies. In Terra Cognita ISWC, pages 15-26, 2012.
+. J. Zedlitz and N. Luttenberger. Conceptual modelling in uml and owl-2. Inter-
+national Journal on Advances in Software, 7(1):182-196, 2014.
+

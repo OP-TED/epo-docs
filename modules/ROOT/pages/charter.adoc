@@ -101,7 +101,7 @@ ontology after its publication.
 
 In Figure 2, the various stakeholders are depicted.
 
-image::../images/charter2.png[Figure 2: Stakeholder and User Needs]
+image::{imagesdir}/charter2.png[Figure 2: Stakeholder and User Needs]
 
 The main stakeholders of the e-procurement ontology are the contracting authorities
 who request the items procured, and the economic operators who deliver the items.
