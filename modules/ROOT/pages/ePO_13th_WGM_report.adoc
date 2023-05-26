@@ -1,9 +1,8 @@
 = eProcurement Ontology
 
+=== Q1 meeting
 
-= Q1 meeting
-
-= Online meeting: 9/03/2023
+=== Online meeting: 9/03/2023
 
 == Agenda
 
