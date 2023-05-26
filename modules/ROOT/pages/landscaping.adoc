@@ -1020,7 +1020,7 @@ image::./espdatamodel.png[]
 
 The ESPD initiative is worth examining carefully. As it maps all the certificates and evidence needed for procurement in the different Member States, it does the ePO a great service, as this is a task that will be necessary during the creation of the ePO.
 
-=== *4.1.5	CEN Core Invoice*
+=== CEN Core Invoice
 
 Directive 2014/55/EU on electronic invoicing in public procurement states that Member States should ensure that contracting authorities and contracting entities receive and process invoices electronically.
 The European Commission tasked CEN, the European Committee for Standardisation, with developing a standard semantic data model, including business terms and rules, representing the core content of an e-invoice. The development in CEN is based on the CENBII Core Invoice data model and takes other international standards into account [17]. Member States shall adopt, publish and apply the laws, regulations and administrative provisions necessary to comply with this Directive at the latest by 27 November 2018.
@@ -1165,7 +1165,7 @@ LOTED2 is organized into the following 10 independent and reusable core modules 
 
 In the case of ePO, the LOTED2 vocabulary could be useful as a means of enriching the data represented by the ePO with legal context. Also helpful is the fact that it is already designed with compatibility with TED data in mind.
 
-=== *4.1.10	The Linked Open Economy ontology*
+=== The Linked Open Economy ontology
 
 The Linked Open Economy (LOE) ontology was developed for the purposes of the EU funded project YourDataStories.eu. It was created to address the problem of the poor quality of open economic data becoming available as more governments around the world open their data to the public.
 
@@ -1177,7 +1177,7 @@ Table 11 in annex 7.1 summarizes Classes of the LOE ontology as used in the Your
 
 The Linked Open Economy model is an interesting case to look into for reuse as it is quite generic could prove useful, depending on whether it can be tailored to the needs of the ePO.
 
-=== *4.1.11	Payments ontology*
+=== Payments ontology
 
 The Payments ontology was created in 2010 by the Local eGovernment Standards Body and the Local Government Group as a part of the UK government's transparency drive, which requested that all UK local authorities publish detailed information on their spending.
 The Payments ontology is a general purpose vocabulary for publishing organizational spending data. It is built on the Data Cube vocabulary and represents payment data, which is typically described as a multi-dimensional table.

@@ -24,7 +24,7 @@ xref:umlconv.adoc[The UML Model Conventions]
 '''
 === *20 May 2020: Transformation of the eProcurement UML Model into a Formal OWL Ontology*
 
-xref:uml2owl.adoc.adoc[The UML to OWL Transformation Rules]
+xref:uml2owl.adoc[The UML to OWL Transformation Rules]
 
 
 include::partial$feedback.adoc[]

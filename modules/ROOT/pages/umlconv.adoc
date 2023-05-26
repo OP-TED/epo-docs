@@ -337,7 +337,7 @@ No empty packages shall be present in the model. A package is empty if it contai
 
 Package names shall be short lowercase normalised strings representing an acronym or a short name. They may serve as proxies for the namespace prefixes and be used to resolve the name of any comprised elements when the prefix is not provided. This, however, should not be used as a primary naming method, but rather for suggesting corrections in the element name.
 
-=== *uml:Class*
+=== uml:Class
 
 uml:Class is transformed into an owl:Class. Each uml:Class must have a name and should have a description representing the "human-readable" class definition in the domain context.
 
@@ -436,7 +436,7 @@ OWL 2 compliant XSD and RDF standard data types may be useful in indicating a sp
 
 For model consistency, it is recommended that proxy data types be defined in the model for the XSD2 and RDF data types3 used in the model. The proxies must follow the standard namespace convention using the “rdf” and “xsd” prefixes.
 
-=== *uml:Association*
+=== uml:Association
 
 The uml:Association connectors represent relations between source and target classes. The association connector cannot be used between other kinds of UML elements.
 
@@ -476,7 +476,7 @@ In this specification, the subclasses are assumed disjoint by default unless oth
 
 Where two classes are equivalent, the << equivalent >> or << complete >> stereotype should be used as a marker.
 
-== *Bibliography*
+== Bibliography
 
 . Xml metadata interchange (xmi) specification: Version 2.5.1. Standard formal/2015-06-07, Object Management Group (OMG), 2015. URL http: //www.omg.org/spec/XMI/2.5.1.
 . T. Berners-Lee, R. T. Fielding, and L. M. Masinter. Uniform Resource Identifier (URI): Generic Syntax. RFC 3986, Jan. 2005. URL https://rfc-editor.org/rfc/rfc3986.txt.

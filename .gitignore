@@ -8,3 +8,4 @@ yarn.lock
 branches
 scripts
 
+/modules/ROOT/pages/archive/
