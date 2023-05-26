@@ -1,5 +1,0 @@
-* xref:uml2owl0.adoc[uml2owl0]
-* xref:uml2owl1.adoc[uml2owl1]
-* xref:uml2owl2.adoc[uml2owl2]
-* xref:uml2owl3.adoc[uml2owl3]
-* xref:uml2owl4.adoc[uml2owl4]

@@ -9,7 +9,7 @@ The initial stage of the project covered the following tasks:
 * Setting up a working group composed of stakeholders from multiple interested groups (WGS or wider working group) . This working group decides by consensus how the ontology should be developed at all stages. 
 
 '''
-=== *Methodology:*
+=== *Methodology*
 ==== *Competency Questions*
 The Working Group and the Publications Office worked together to draft competency questions which were then used to create SPARQL (database) queries for testing.
 The methodology was used as illustrated below to develop competency questions:

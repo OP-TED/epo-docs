@@ -1,10 +1,10 @@
 * xref:release-notes.adoc[Version 3.1.0 Release Notes (detailed)]
 * xref:Report-v3.0.0.adoc[Version 3.1.0 Report]
-* xref:wip-reference.adoc[Reference Documents]
+* xref:references.adoc[Reference Documents]
 * xref:methodology.adoc[Ontology Methodology]
 * xref:history.adoc[Version History]
 * xref:epo-wgm::index.adoc[Working Group Documents]
-* xref:wip.adoc[WIP preview]
+
 
 
 
