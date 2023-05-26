@@ -263,6 +263,10 @@
 ** xref:notes/2022-08-11-eful.adoc[2022-08-11]
 
 * Face2Face meetings
+** 2023-03-09
+*** xref:ePO_13th_WGM_report.adoc[13th WGM Report]
+*** link:{attachmentsdir}/work_group_meetings_reports/12th_WGM/eProcurement-Ontology_3.1.0.pptx[13th WGM Presentation]
+
 
 ** 2022-12-08
 *** xref:ePO_12th_WGM_report.adoc[12th WGM Report]
