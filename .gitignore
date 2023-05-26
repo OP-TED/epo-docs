@@ -1,5 +1,4 @@
 target
-antora-playbook-local.yml
 build
 node_modules
 .vscode
@@ -7,4 +6,4 @@ node_modules
 .yarn
 yarn.lock
 branches
-
+scripts
