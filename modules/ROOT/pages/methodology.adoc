@@ -14,7 +14,7 @@ The initial stage of the project covered the following tasks:
 The Working Group and the Publications Office worked together to draft competency questions which were then used to create SPARQL (database) queries for testing.
 The methodology was used as illustrated below to develop competency questions:
 
-image::{imagesdir}/TransMonit.png[Use Cases: Transparency and Monitoring]
+image::TransMonit.png[Use Cases: Transparency and Monitoring]
 
 Use cases are then developed to create user stories. 
 User stories are a method of helping identify information requirements. The method consists in drafting very simple sentences structured around three main questions:
@@ -30,7 +30,7 @@ The structure of the sentence is always as follows:
 .Example
 As a contracting authority <role of the user> I need to know the number of tenderers that have submitted a tender <something> so that I can add it to the award notice <the benefit>.
 
-image::{imagesdir}/UserStoriesExamplesTable.png[More examples of user stories]
+image::UserStoriesExamplesTable.png[More examples of user stories]
 
 
 include::partial$feedback.adoc[]

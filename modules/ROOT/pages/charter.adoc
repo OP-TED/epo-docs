@@ -68,7 +68,7 @@ The project will develop the e-procurement ontology in a collaborative effort am
 
 The ontology will support the whole of the e-procurement process, from e-notification until and including e-payment as depicted in Figure 1.
 
-image::../images/charter1.png[Figure 1: e-procurement phases]
+image::charter1.png[Figure 1: e-procurement phases]
 
 ==== Excludes ("OUT" Scope)
 
@@ -101,7 +101,7 @@ ontology after its publication.
 
 In Figure 2, the various stakeholders are depicted.
 
-image::{imagesdir}/charter2.png[Figure 2: Stakeholder and User Needs]
+image::charter2.png[Figure 2: Stakeholder and User Needs]
 
 The main stakeholders of the e-procurement ontology are the contracting authorities
 who request the items procured, and the economic operators who deliver the items.
@@ -500,7 +500,7 @@ The resulting release is numbered (X+1).0.0, e.g. 2.0.0, 3.0.0 etc.
 The diagram in Figure 3 depicts the governance structure of the project. The roles and
 relationships are further detailed in section 5.2.
 
-image::../images/charter3.png[Figure 3: Governance structure]
+image::charter3.png[Figure 3: Governance structure]
 
 === Roles and Responsibilities
 The roles and responsibilities of each of the groups depicted in Figure 3 are outlined in Table 10.

@@ -42,7 +42,7 @@ Each transformation rule is accompanied by the formal OWL representation, in lin
 
 ==== Classes and Attributes:
 
-image::{imagesdir}\uml2owl\P7F1.png[UML visual notation for classes and attributes]
+image::P7F1.png[UML visual notation for classes and attributes]
 .Figure 1: UML visual notation for classes and attributes
 
 
@@ -50,14 +50,14 @@ Figure 1 depicts simple, abstract and regular classes with and without attribute
 
 ==== Data types and enumerations:
 
-image::{imagesdir}\uml2owl\P7F2.png[UML visual notation for datatypes and enumerations]
+image::P7F2.png[UML visual notation for datatypes and enumerations]
 .Figure 2: UML visual notation for datatypes and enumerations
 
 Figure 2 depicts a primitive datatype and an enumeration. No complex data types are depicted as they are treated in the same manner as classes are.
 
 ==== Association, generalisation, and dependency:
 
-image::{imagesdir}\uml2owl\P7F3.png[UML visual notation for association, generalisation, and dependency]
+image::P7F3.png[UML visual notation for association, generalisation, and dependency]
 .Figure 3: UML visual notation for association, generalisation, and dependency
 
 Figure 3 depicts association, generalisation and dependency connectors as the only
@@ -81,7 +81,7 @@ This section provides the main Graffoo elements employed in this document. A det
 
 Graffoo visual notation for classes, instances and datatypes Notation:
 
-image::{imagesdir}\uml2owl\P8F4.png[Graffoo visual notation for classes, instances and datatypes]
+image::P8F4.png[Graffoo visual notation for classes, instances and datatypes]
 .Figure 4: Graffoo visual notation for classes, instances and datatypes
 
 Graffoo visual notation for object and data properties and generic links
@@ -93,7 +93,7 @@ Graffoo visual notation for object and data properties and generic links
 beginning identifies the property domain while the empty arrow at the end indicates the property range.
 •	A blue solid line is used to declare object properties, where the solid circle at the beginning identifies the property domain while the solid arrow at the end indicates the property range.
 
-image::{imagesdir}\uml2owl\P8F5.png[Graffoo visual notation for classes, instances and datatypes]
+image::P8F5.png[Graffoo visual notation for classes, instances and datatypes]
 .Figure 5: Graffoo visual notation for object and data properties and generic links
 
 == Rules for the transformation of UML Classes and Attributes:
@@ -136,7 +136,7 @@ In UML, a Class is used to specify a classification of objects.
 
 UML represents atomic classes as named elements of type Class without further features. In OWL, the atomic class, owl:Class, has no intension. It can only be interpreted by its name that has a meaning in the world outside the ontology. The atomic class is a class description that is simultaneously a class axiom.
 
-image::{imagesdir}\uml2owl\P10F6.png[Visual representation of a class in UML (on the left) and OWL (on the right)]
+image::P10F6.png[Visual representation of a class in UML (on the left) and OWL (on the right)]
 .Figure 6: Visual representation of a class in UML (on the left) and OWL (on the right)
 
 *Rule 1* (Class - in core ontology layer).
@@ -186,7 +186,7 @@ In UML, an abstract Class [5] cannot have any instances and only its subclasses 
 
 OWL follows the Open World Assumption [15], therefore, even if the ontology does not contain any instances for a specific class, it is unknown whether the class has any instances. We cannot conirm that the UML abstract class is correctly defined with respect to the OWL domain ontology, but we can detect if it is not using SHACL constraints.
 
-image::{imagesdir}\uml2owl\P11F7.png[Visual representation of an abstract class in UML (on the left) and OWL (on the right)]
+image::P11F7.png[Visual representation of an abstract class in UML (on the left) and OWL (on the right)]
 .Figure 5: Visual representation of an abstract class in UML (on the left) and OWL (on the right)
 
 *Rule 3* (Class - in data shape layer). Specify declaration axiom for UML Class as SHACL Node Shape with a SPARQL constraint that selects all instances of this class.
@@ -227,7 +227,7 @@ s|Listing 6: Instance checking constraint in RDF/XML syntax
 
 The UML attributes [5] are properties that are owned by a Classifier, e.g. Class. Both UML attributes and associations are represented by one meta-model element - Property. OWL also allows one to define properties. A transformation of UML attribute to OWL data property or OWL object property bases on its type. If the type of the attribute is a primitive type it should be  ransformed into OWL datatype property. However, if the type of the attribute is a structured datatype, class of enumeration , it should be transformed into an OWL object property.
 
-image::{imagesdir}\uml2owl\P12F8.png[Figure 8: Visual representation of class attributes in UML (on the left) and OWL properties (on the right)]
+image::P12F8.png[Figure 8: Visual representation of class attributes in UML (on the left) and OWL properties (on the right)]
 .Figure 8: Visual representation of class attributes in UML (on the left) and OWL properties (on the right)
 
 *Rule 4* (Attribute - in core ontology layer). Specify declaration axiom(s) for attribute(s) as OWL data or object properties deciding based on their types. The attributes with primary types should be treated as data properties, whereas those typed with classes or enumerations should be treated as object properties.
@@ -367,7 +367,7 @@ In [5], multiplicity bounds of multiplicity element are specified in the form of
 
 The strictly compliant specification of UML in version 2.5 defines only a single value range for MultiplicityElement. not limit oneself to a single interval. Therefore, the below UML to OWL mapping covers a wider case - a possibility of specifying more value ranges for a multiplicity element. Nevertheless, if the reader would like to strictly follow the current UML specification, the particular single lower..upper bound interval is therein also comprised.
 
-image::{imagesdir}\uml2owl\P15F9.png[Figure 8: Figure 9: Visual representation of class attributes with multiplicity in UML (on the left) and OWL class specialising an anonymous restriction of properties (on the right)]
+image::P15F9.png[Figure 9: Visual representation of class attributes with multiplicity in UML (on the left) and OWL class specialising an anonymous restriction of properties (on the right)]
 .Figure 9: Visual representation of class attributes with multiplicity in UML (on the left) and OWL class specialising an anonymous restriction of properties (on the right)
 
 *Rule 8* (Attribute multiplicity - in data shape layer). Within the SHACL Node Shape corresponding to the UML class, specify property constraints, corresponding to each attribute, indicating the minimum and maximum cardinality, only where min and max are different from "*"" (any) and multiplicity is not [1..1]. The expressions are formulated according to the following cases.
@@ -623,8 +623,6 @@ a|
 |Listing 32: Declaring a functional property in RDF/XML syntax
 |===
 
-include::partial$feedback.adoc[]
-
 == Transformation of UML connectors
 
 In this section are specified transformation rules for UML association, generalisation and dependency connectors. Table 2 provides an overview of the section coverage.
@@ -712,7 +710,7 @@ s|Property equivalence
 
 *Rule 11* (Unidirectional association - in core ontology layer). Specify object prop-erty declaration axiom for the target end of the association.
 
-image::{imagesdir}\uml2owl\P21F10.png[Figure 10: Visual representation of an UML unidirectional association (on the left) and an OWL property with cardinality restriction on domain class (on the right)]
+image::P21F10.png[Figure 10: Visual representation of an UML unidirectional association (on the left) and an OWL property with cardinality restriction on domain class (on the right)]
 .Figure 10: Visual representation of an UML unidirectional association (on the left), and an OWL property with cardinality restriction on domain class (on the right)
 
 [cols="1,1"]
@@ -896,7 +894,7 @@ In case of recursive associations, that are from one class to itself, the transf
 
 *Rule 18* (Association asymmetry - in data shape layer). Within the SHACL Node Shape corresponding to the UML class, specify SPARQL constraint selecting instances connected by the object property in a reciprocal manner.
 
-image::{imagesdir}\uml2owl\P25F11.png[Figure 11: Visual representation of an UML recursive association (on the left) and OWL recursive properties with cardinality restrictions on domain class (on the right)]
+image::P25F11.png[Figure 11: Visual representation of an UML recursive association (on the left) and OWL recursive properties with cardinality restrictions on domain class (on the right)]
 .Figure 11: Visual representation of an UML recursive association (on the left) and OWL recursive properties with cardinality restrictions on domain class (on the right)
 
 [cols="1,1"]
@@ -949,7 +947,7 @@ a|
 |Listing 50: Declaring an asymmetric property in RDF/XML syntax
 |===
 
-image::{imagesdir}\uml2owl\P26F12.png[Figure 12: Visual representation of an UML bidirectional association (on the left) and OWL properties with cardinality restrictions on domain class (on the right)]
+image::P26F12.png[Figure 12: Visual representation of an UML bidirectional association (on the left) and OWL properties with cardinality restrictions on domain class (on the right)]
 .Figure 12: Visual representation of an UML bidirectional association (on the left) and OWL properties with cardinality restrictions on domain class (on the right)
 
 === Bidirectional association
@@ -984,7 +982,7 @@ The UML dependency connectors should be transformed by the rules specified for U
 
 Generalisation [5] defines specialization relationship between Classifiers. In case of UML classes it relates a more specific Class to a more general Class. UML generalisation set [5] groups generalizations; incomplete and disjoint constraints indicate that the set is not complete and its specific Classes have no common instances. The UML conventions [7] specify that all sibling classes are by default disjoint, therefore even if no generalisation set is provided it is assumed to be implicit.
 
-image::{imagesdir}\uml2owl\P27F13.png[Figure 13: Visual representation of UML generalisation (on the left) and OWL subclass relation (on the right)]
+image::P27F13.png[Figure 13: Visual representation of UML generalisation (on the left) and OWL subclass relation (on the right)]
 .Figure 13: Visual representation of UML generalisation (on the left) and OWL subclass relation (on the right)
 
 *Rule 21* (Class generalisation - in core ontology layer). Specify subclass axiom for the generalisation between UML classes. Sibling classes must be disjoint with one another.
@@ -1018,7 +1016,7 @@ a|
 
 Generalization [5] defines specialization relationship between Classifiers. In case of the UML associations it relates a more specific Association to more general Association.
 
-image::{imagesdir}modules\ROOT\images\uml2owl\P28F14.png[Figure 14: Visual representation of UML property generalisation (on the left) and OWL sub-property relation (on the right)]
+image::P28F14.png[Figure 14: Visual representation of UML property generalisation (on the left) and OWL sub-property relation (on the right)]
 .Figure 14: Visual representation of UML property generalisation (on the left) and OWL sub-property relation (on the right)
 
 *Rule 22* (Property generalisation - in core ontology layer). Specify sub-property axiom for the generalisation between UML associations and dependencies.
@@ -1049,7 +1047,7 @@ a|
 
 *Rule 23* (Equivalent classes - in reasnoning layer). Specify equivalent class axiom for the generalisation with equivalent or complete stereotype between UML classes.
 
-image::{imagesdir}\uml2owl\P29F15.png[Figure 15: Visual representation of UML class equivalence (on the left) and OWL class equivalence (on the right)]
+image::P29F15.png[Figure 15: Visual representation of UML class equivalence (on the left) and OWL class equivalence (on the right)]
 .Figure 15: Visual representation of UML class equivalence (on the left) and OWL class equivalence (on the right)
 
 [cols="1,1"]
@@ -1132,7 +1130,7 @@ In this section are specified transformation rules for UML datatypes and enumera
 
 The UML primitive type defines a predefined datatype without any substructure. The UML specification [5] predefines five primitive types: String, Integer, Boolean, Unlimited, Natural and Real. Here we extended those to the list provided in Table 4.
 
-image::{imagesdir}\uml2owl\P30F16.png[Figure 16: Visual representation of an UML Datatype (on the left) and an OWL Datatype (on the right)]
+image::P30F16.png[Figure 16: Visual representation of an UML Datatype (on the left) and an OWL Datatype (on the right)]
 .Figure 16: Visual representation of an UML Datatype (on the left) and an OWL Datatype (on the right)
 
 *Rule 25* (Datatype - in core ontology layer). Specify datatype declaration axiom for UML datatype as follows:
@@ -1227,11 +1225,11 @@ The UML structured datatype [5] has attributes and is used to define complex dat
 //sort out image lables!
 UML Enumerations [5] are kinds of datatypes, whose values correspond to one of user-defined literals. They should be transformed into SKOS [13] concept schemes comprising the concepts corresponding to enumerated items.
 
-image::{imagesdir}\uml2owl\P32F17.png[Figure 17: Visual representation of an UML Enumeration]
+image::P32F17.png[Figure 17: Visual representation of an UML Enumeration]
 
 #.Figure 17: Visual representation of an UML Enumeration#
 
-image::{imagesdir}\uml2owl\P32F18.png[Figure 18: Visual representation of a SKOS concept scheme with concepts]
+image::P32F18.png[Figure 18: Visual representation of a SKOS concept scheme with concepts]
 .Figure 18: Visual representation of a SKOS concept scheme with concepts
 
 *Rule 27* (Enumeration - in core ontology layer). Specify SKOS concept scheme instantiation axiom for an UML enumeration.
@@ -1416,7 +1414,7 @@ As UML Comments add no semantics, they are not used in any method of semantic
 validation. In OWL the AnnotationAssertion [15] axiom does not add any semantics
 either, and it only improves readability.
 
-image::{imagesdir}modules\ROOT\images\uml2owl\P36F19.png[Figure 19: Visual representation of an UML comment (on the left) and an OWL comment (on the right)]
+image::P36F19.png[Figure 19: Visual representation of an UML comment (on the left) and an OWL comment (on the right)]
 .Figure 19: Visual representation of an UML comment (on the left) and an OWL comment (on the right)
 
 *Rule 32* (Comment). Specify annotation axiom for UML Comment associated to an UML element.
