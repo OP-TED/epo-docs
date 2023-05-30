@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/epo-docs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/scripts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/scripts/content" vcs="Git" />
   </component>
 </project>
