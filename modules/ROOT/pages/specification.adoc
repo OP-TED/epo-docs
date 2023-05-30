@@ -1,5 +1,4 @@
-= Specification of the process and methodology to develop the eProcurement ontology with initial draft of the eProcurement Ontology for 3 use cases
-PWC EU Services/ AMI Consulting
+= Specification of the process and methodology to develop the eProcurement Ontology
 Version 1.0
 :sectnums:
 :toc:

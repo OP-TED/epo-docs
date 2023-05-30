@@ -31,7 +31,7 @@ RDF representation of the eOrdering module can be downloaded link:https://github
 ** Providing Turtle output files
 ** Implemented metadata management mechanism
 * https://github.com/OP-TED/ePO/issues[GitHub issues] revision and labelling
-* GitHub issue fixes for https://github.com/OP-TED/ePO/milestone/1[Q4 2022 milestone]
+* GitHub issue fixes for the https://github.com/OP-TED/ePO/milestone/1[Q4 2022 milestone]
 * Updates for standard forms mappings - TED-RDF-mapping
 
 
