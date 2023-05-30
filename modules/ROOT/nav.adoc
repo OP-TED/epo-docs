@@ -319,4 +319,4 @@
 
 * xref:future-wgm-agenda.adoc[Future agenda]
 
-* xref:@EPO::index.adoc[Back to EOP Homepage]
+* xref:EPO::index.adoc[Back to EOP Homepage]
