@@ -53,9 +53,8 @@ Public procurement represents around 20% of GDP in Europe. This big buying volum
 Directive 2014/24/EU on public procurement, Directive 2014/25/EU on procurement by entities operating in the water, energy, transport and postal services sectors, and Directive 2014/23/EU on the award of concession contracts establish rules on the procedures for procurement by contracting authorities with respect to public contracts, design contests and concessions, requiring contracting authorities in the EU to publish notices above certain thresholds. Directive 2014/55/EU on electronic invoicing in public procurement5 defines the requirement for a European standard for electronic invoices, while the Commission Implementing Regulation (EU) 2015/19866 specifies standard forms for the publication of notices in the Official Journal of the European Union.Article 6 of the Regulation states that either the eNotices online application or the TED eSender systems should be used to electronically transmit notices to the Publications Office of the European Union. From a different angle, the implementation of the revised PSI directive7 across the EU is calling for open, unobstructed access to public data in order to improve transparency and to boost innovation via the reuse of public data. 
 
 Procurement data has been identified as data with a high-reuse potential. Therefore, making this data available in machine-readable formats, following the data as a service paradigm, is required in order to maximise its reuse. 
-Given the increasing importance of data standards for e-procurement, a number of initiatives driven by the public sector, the industry and academia have been kick started in the recent years. Some have grown organically, while others are the result of standardisation work. The vocabularies and the semantics that they are introducing, the 
-phases of public procurement that they are covering, and the technologies that they are using all differ. These differences hamper data interoperability and thus its reuse by them or by the wider public. This creates the need for a common data standard for publishing public procurement data, hence allowing data from different sources to be 
-easily accessed and linked, and consequently reused. 
+Given the increasing importance of data standards for e-procurement, a number of initiatives driven by the public sector, the industry and academia have been kick-started in the recent years. Some have grown organically, while others are the result of standardisation work. The vocabularies and the semantics that they are introducing, the
+phases of public procurement that they are covering, and the technologies that they are using all differ. These differences hamper data interoperability and thus its reuse by them or by the wider public. This creates the need for a common data standard for publishing public procurement data, hence allowing data from different sources to be easily accessed and linked, and consequently reused.
 
 In this context, the Publications Office of the EU aims to develop an e-procurement ontology. The objective of the e-procurement ontology is to act as this common standard on the conceptual level, based on consensus of the main stakeholders and designed to encompass the major requirements of the e-procurement process in conformance with the Directives and Regulation mentioned above.
 
@@ -70,7 +69,7 @@ The ontology will support the whole of the e-procurement process, from e-notific
 
 image::charter1.png[Figure 1: e-procurement phases]
 
-==== Excludes ("OUT" Scope)
+==== Excludes ("OUT of" Scope)
 
 The project described here does not include:
 
@@ -81,8 +80,7 @@ will be taken into consideration when developing the ontology.
 
 ==== Scope Statement
 
-The ultimate objective of the e-procurement ontology is to put forth a commonly agreed OWL ontology that will conceptualise, formally encode and make available in an open, structured and machine-readable format data about public procurement, covering end-to-end procurement, i.e. from notification, through tendering to awarding, ordering,
-invoicing and payment.
+The ultimate objective of the e-procurement ontology is to put forth a commonly agreed OWL ontology that will conceptualise, formally encode and make available in an open, structured and machine-readable format data about public procurement, covering end-to-end procurement, i.e. from notification, through tendering to awarding, ordering, invoicing and payment.
 
 The aim of the project is to produce the final ontology within twelve months including a public review of at least two months. Comments received in the public review period will be resolved and integrated in the deliverable, which will then be published.
 
@@ -103,22 +101,15 @@ In Figure 2, the various stakeholders are depicted.
 
 image::charter2.png[Figure 2: Stakeholder and User Needs]
 
-The main stakeholders of the e-procurement ontology are the contracting authorities
-who request the items procured, and the economic operators who deliver the items.
-The stakeholders in these two categories provide the data for the elements in the
-ontology, while the other stakeholders use the data provided to meet their specific
-needs.
+The main stakeholders of the e-procurement ontology are the contracting authorities who request the items procured, and the economic operators who deliver the items.
+The stakeholders in these two categories provide the data for the elements in the ontology, while the other stakeholders use the data provided to meet their specific needs.
 
 These needs are related to three categories of use cases:
 
-* Transparency and monitoring: to enable verification that public procurement is
-conducted according to the rules set by the Directives and Regulation.
-* Innovation & value added services: to allow the emergence of new applications and
-services on the basis of the availability of procurement data.
-* Interconnection of public procurement systems: to support increased
-interoperability across procurement systems.
-The ontology needs to be able to satisfy the needs of various stakeholder categories as
-shown in Table 1.
+* Transparency and monitoring: to enable verification that public procurement is conducted according to the rules set by the Directives and Regulation.
+* Innovation & value added services: to allow the emergence of new applications and services on the basis of the availability of procurement data.
+* Interconnection of public procurement systems: to support increased interoperability across procurement systems.
+The ontology needs to be able to satisfy the needs of various stakeholder categories as shown in Table 1.
 
 .: Stakeholder areas of interest and types of use cases
 [cols="1,1"]
@@ -156,7 +147,6 @@ Transparency and monitoring
 
 |NGOs
 |Transparency and monitoring
-
 
 |Citizens
 |Transparency and monitoring
@@ -304,10 +294,9 @@ Discussion on the conceptual model and its specifications
 |Discussion/consensus on E2 document
 
 |E4
-|Second draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting
-and incorporating the results from the discussions of the previous meeting
+|Second draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting and incorporating the results from the discussions of the previous meeting.
 |Month 2 - November 2017
-|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting
+|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting.
 
 |E5
 |Third WG meeting
@@ -315,10 +304,9 @@ and incorporating the results from the discussions of the previous meeting
 |Discussion/consensus on E4 document
 
 |E6
-|Third draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting
-and incorporating the results from the discussions of the previous meeting
+|Third draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting and incorporating the results from the discussions of the previous meeting.
 |Month 4 - January 2018
-|Prepared by the editors based on discussions from the previous meeting and all corresponding input for the following meeting
+|Prepared by the editors based on discussions from the previous meeting and all corresponding input for the following meeting.
 
 |E7
 |Fourth WG meeting
@@ -328,7 +316,7 @@ and incorporating the results from the discussions of the previous meeting
 |E8
 |Fourth draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting and incorporating the results from the discussions of the previous meeting.
 |Month 5 - February 2018
-|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting
+|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting.
 
 |E9
 |Fifth WG meeting
@@ -338,7 +326,7 @@ and incorporating the results from the discussions of the previous meeting
 |E10
 |Fifth draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting and incorporating the results from the discussions of the previous meeting.
 |Month 6 - March 2018
-|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting
+|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting.
 
 |E11
 |Sixth WG meeting
@@ -348,7 +336,7 @@ and incorporating the results from the discussions of the previous meeting
 |E12
 |Sixth draft of the conceptual model and its specification corresponding to all the discussions within the working group.
 |Month 7 - April 2018
-|Prepared by the editors based on discussions from the previous meeting and all corresponding input for the following meeting
+|Prepared by the editors based on discussions from the previous meeting and all corresponding input for the following meeting.
 
 |E13
 |Seventh WG meeting
@@ -358,7 +346,7 @@ and incorporating the results from the discussions of the previous meeting
 |E14
 |Finalisation of conceptual model and its specification and the ontology in OWL
 |Month 9 - June 2018
-|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting
+|Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting.
 
 |E15
 |Eighth WG meeting

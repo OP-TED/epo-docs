@@ -13,12 +13,11 @@ This project was in conjunction with a parallel project to develop the associate
 
 The ultimate objective of the ePO was (and still is) to conceptualise and formally encode eProcurement data, and to make it available in an open, structured, and machine-readable format. This data covers the process from end-to-end, i.e., from notification, through tendering, awarding, ordering, invoicing, and finally to payment.
 
-//#Insert process graphic#
 
 To achieve this, the EU Publications Office (OP) engaged a working group of experts (WG) with the mission of building consensus on the analysis, results, and deliverables developed by the OP teams. The working group continues to work with the OP on the ePO.
 
 == *Timeline*
-In mid-2017 ePO version 1.00 of the Ontology was delivered and submitted to the working group for discussion. All the materials related to this version were made public and were accessible through the ISA2 Joinup platform; including the discussions held in the Working Group.
+In mid-2017 ePO version 1.00 of the Ontology was delivered and submitted to the working group for discussion. All the materials related to this version were made public and were accessible through the ISA^2^ Joinup platform; including the discussions held in the Working Group.
 
 ePO version 2.0.0, was initiated in January 2018. The goal of this version was to improve and extend the previous version. Version 2.0.1, last 2.x.x version, was released later that year.
 

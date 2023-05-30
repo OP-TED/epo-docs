@@ -15,23 +15,26 @@ xref:index_epo_3.1.0.adoc[Click here to read the version 3.1.0 details]
 [.tile]
 .ePo V3.1.1: In Development
 ****
-The eProcurement Ontology V3.1.1 is currently in development and is scheduled to be released in July 2023. New features will include... Get info
+The eProcurement Ontology V3.1.1 is currently in development and is scheduled to be released in July 2023. New features will include... #Get info#. Click on the link below for the details in upcoming release.
 
 xref:3.1.1@EPO::index.adoc[Version 3.1.1 (in development) can be found here.]
 ****
 
-//[.tile]
-//.Model to Owl Documentation
-//****
-//The Model to Owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
 
-//xref:xxx@EPO::index.adoc[#update when ready#]
-//****
 [.tile]
 .Working Group Documents
 ****
 This section contains minutes and reports of the Working Group activities and meetings listed by interest/ category.
 
 xref:master@epo-wgm::index.adoc[Click here to read the Working Group documents]
+****
+
+[.tile]
+.Model to Owl Documentation
+****
+The Model to Owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
+
+//xref:xxx@EPO::index.adoc[update when ready]
+*update when ready*
 ****
 --

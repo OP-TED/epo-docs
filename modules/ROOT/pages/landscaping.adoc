@@ -67,7 +67,7 @@ With e-Procurement, public spending should become more transparent, evidence-ori
 
 To deliver the aforementioned benefits, e-Procurement relies heavily on the exchange of data between the different systems supporting the procurement processes i.e., achieving end-to-end interoperability of public procurement processes and underlying systems, and on the availability and dissemination of procurement data to the wider public i.e., improving transparency and stimulating innovation and new business opportunities.
 
-As stated in the Commission Regulation 2015/1986 (EU), contracting authorities in the EU are legally required to publish notices above certain capital thresholds. Article 6 of that Regulation states that either the online eNotices application or the TED eSender systems should be used for electronic transmition of notices to the Publications Office of the European Union. From a different angle, the implementation of the/ a revised PSI directive across the EU is calling for open, unobstructed access to public data to improve transparency, and to boost innovation, via the reuse of public data. Procurement data has been identified as data with a high-reuse potential. Making this data available in machine-readable formats, #following the data as a service paradigm, #(what does this mean?)# is required in order to maximise its reuse.
+As stated in the Commission Regulation 2015/1986 (EU), contracting authorities in the EU are legally required to publish notices above certain capital thresholds. Article 6 of that Regulation states that either the online eNotices application or the TED eSender systems should be used for electronic transmition of notices to the Publications Office of the European Union. From a different angle, the implementation of the/ a revised PSI directive across the EU is calling for open, unobstructed access to public data to improve transparency, and to boost innovation, via the reuse of public data. Procurement data has been identified as data with a high-reuse potential. Making this data available in machine-readable formats, following on from the "data as a service" paradigm, is required to maximise its reuse.
 
 Data exchange, access, and reuse are key requirements for efficient and transparent end-to-end public procurement. Because of this, we observe a shift in focus from the definition of procurement process standards for system-to-system exchange, to the development of data standards for publishing e-Procurement data in open, machine-readable formats (see Chapter 4 Related Ontologies/Vocabularies and Projects).
 
@@ -274,7 +274,7 @@ The ePO is designed to meet specific needs of the aforementioned stakeholders. T
 |1.1
 |Public Understandability
 
-_In order to facilitate the understandability of the public procurement process, the parties involved in procurement processes, as well as citizens, journalists, and regulators, should be able to access procurement data easily in a structured and machine-readable format. Many stakeholders aim at gaining a quick understanding of the  information provided rather than performing an in-depth analysis of the published documentation. Currently, two main challenges exists. Firstly, data coming from different e-Procurement systems are often fragmented, reflecting the #silos - not mutually intelligable?# between the source systems. Second, the data is available in different formats and representations, which are not always consistent and interoperable, and are therefore hard to connect and interlink. By providing a common view over e-Procurement data, the ePO will allow providers of procurement data to link their data and make it available in ways which will be easier for the non-technical consumer to interpret and reuse, in order to create a complete view of the public procurement process._
+_In order to facilitate the understandability of the public procurement process, the parties involved in procurement processes, as well as citizens, journalists, and regulators, should be able to access procurement data easily in a structured and machine-readable format. Many stakeholders aim at gaining a quick understanding of the  information provided rather than performing an in-depth analysis of the published documentation. Currently, two main challenges exists. Firstly, data coming from different e-Procurement systems are often fragmented, reflecting the compatibility challenges between  source systems. Second, the data is available in different formats and representations, which are not always consistent and interoperable, and are therefore hard to connect and interlink. By providing a common view over e-Procurement data, the ePO will allow providers of procurement data to link their data and make it available in ways which will be easier for the non-technical consumer to interpret and reuse, in order to create a complete view of the public procurement process._
 
 *Example:*
 
@@ -405,17 +405,19 @@ In this case it would be required that:
 |2.1
 |*Automated validation of procurement criteria*
 
-_Economic operators that submit a tender are required to fulfil several criteria. In order for a contracting authority to automatically validate whether the criteria are met by an economic operator, data, both from the contracting authority's side as well as from the economic operator’s side, should be cross-checked. In order to automate this process, both the data and the evaluation criteria should be made available in machine-readable formats._
+_Economic operators that submit a tender are required to fulfil several criteria. In order for a contracting authority to automatically validate whether the criteria are met by an economic operator, data, both from the contracting authority's and the economic operator’s side, should be cross-checked. In order to automate this process, both the data and the evaluation criteria should be made available in machine-readable formats._
 
 *Example:*
 
-An economic operator submits a tender to DG Informatics of the European Commission. The offer is written based on the criteria defined by the contracting authority in the tender specifications. #Through the semi-automated validation of the tender, the economic operator is notified whether the tender meets the procurement requirements in terms of evidence required to check against financial and other exclusion criteria#. if not, the tenderer is provided with a list of further evidence required to fulfil said criteria, and only after this submission does the process move on to the manual evaluation of technical requirements. Such preliminary automation allows for gains in speed and efficiency.
+An economic operator submits a tender to DG Informatics of the European Commission. The offer is written based on the criteria defined by the contracting authority in the tender specifications. Through the semi-automated validation of the tender, the economic operator is notified whether the tender meets the procurement requirements in terms of evidence required to check against financial and other exclusion criteria. if not, the tenderer is provided with a list of further evidence required to fulfil said criteria, and only after this submission does the process move on to the manual evaluation of technical requirements. Such preliminary automation allows for gains in speed and efficiency.
 
 *Information requirements:*
 
 In this example it would be required that:
-* the ePO can model tenders, notices, offers by tenderers, procurement criteria, evidences;
-*the ePO can model the relationship between offers and procurement criteria.
+
+* the ePO can model tenders, notices, offers by tenderers, procurement criteria, evidence;
+
+* the ePO can model the relationship between offers and procurement criteria.
 
 |2.3
 |*Alerting services*
