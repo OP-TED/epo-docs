@@ -1,4 +1,4 @@
-= Transformation of the eProcurement UML model into a formal OWL ontologyPWC EU Services/ AMI Consulting
+= Transformation of the eProcurement UML model into a formal OWL ontology
 Version 1.0
 :sectnums:
 :toc:
@@ -6,6 +6,8 @@ Version 1.0
 :toc-title: Contents
 
 Adapted from the document, link:https://github.com/meaningfy-ws/model2owl/blob/master/doc/uml2owl-transformation/uml2owl-transformation.pdf[Transformation of the eProcurement UML model into a formal OWL ontology, 20 May 2020.]
+
+PWC EU Services/ AMI Consulting
 
 == Introduction
 

@@ -1,14 +1,17 @@
 = *eProcurement UML conceptual model conventions*
-PWC EU Services/ AMI Consulting
 Version 1.0
 :sectnums:
 :toc:
 :toclevels: 4
 :toc-title: Contents
 
+
+
 Adapted from the document:
 
 link:https://github.com/OP-TED/model2owl/blob/master/doc/uml-conventions/uml-conventions.pdf[eProcurement UML conceptual model conventions]
+
+PWC EU Services/ AMI Consulting
 
 == Introduction
 
