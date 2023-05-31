@@ -14,7 +14,7 @@ The Project Charter Proposal can be accessed xref:charter.adoc[here].
 
 '''
 === *17 April 2020: eProcurement Ontology Architecture and Formalisation Specifications*
-InfEurope completed a report for the EU Publications Office on the xref:specification.adoc[eProcurement ontology architecture and formalisation specifications] on the 17 April 2020, which describes the architecture at a technical level, including technologies, process and methodology, and conceptual models. The report can be accessed xref:specification.adoc[here]
+InfEurope completed a report for the EU Publications Office on the xref:ePO_Arch_Design.adoc[eProcurement ontology architecture and formalisation specifications] on the 17 April 2020, which describes the architecture at a technical level, including technologies, process and methodology, and conceptual models. The report can be accessed xref:ePO_Arch_Design.adoc[here]
 
 '''
 === *17 April 2020: The eProcurement UML Conceptual Model Conventions*
