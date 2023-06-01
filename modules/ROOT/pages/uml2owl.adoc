@@ -1047,7 +1047,7 @@ a|
 
 === Class equivalence
 
-*Rule 23* (Equivalent classes - in reasnoning layer). Specify equivalent class axiom for the generalisation with equivalent or complete stereotype between UML classes.
+*Rule 23* (Equivalent classes - in reasoning layer). Specify equivalent class axiom for the generalisation with equivalent or complete stereotype between UML classes.
 
 image::P29F15.png[Figure 15: Visual representation of UML class equivalence (on the left) and OWL class equivalence (on the right)]
 .Figure 15: Visual representation of UML class equivalence (on the left) and OWL class equivalence (on the right)

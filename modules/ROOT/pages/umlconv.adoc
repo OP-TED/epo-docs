@@ -508,7 +508,7 @@ recommendation, W3C, Dec. 2012. http://www.w3.org/TR/2012/REC-owl2-syntax-201212
 W3C, Oct. 2009. http://www.w3.org/TR/2009/REC-owl2-syntax-20091027/.
 . D. Peterson, A. Malhotra, S. Gao, M. Sperberg-McQueen, P. V. Biron, and H. Thompson. W3C xml schema definition language (XSD) 1.1 part 2: Datatypes. W3C recommendation, W3C, Apr. 2012. http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/.
 . PwC EU Services. D3.1 - process and methodology for core vocabularies. Deliverable, ISA programme of the European Commission, 2011.
-. PwC EU Services. e-government core vocabularies handbook. Report, ISA programme of the European Commission, 2015. URL https://ec.europa.
+. PwC EU Services. e-government core vocabularies handbook. Report, ISA^2^ programme of the European Commission, 2015. URL https://ec.europa.
 eu/isa2/library/e-government-core-vocabularies-handbook_en.
 . E. Rescorla, R. Barnes, and S. Kent. Further Key Words for Use in RFCs to Indicate Requirement Levels. RFC 6919, Apr. 2013. URL https://rfc-editor.
 org/rfc/rfc6919.txt.

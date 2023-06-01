@@ -6,9 +6,9 @@ A subset of the rules that were followed while progressing the development of th
 
 * A source management methodology was adopted so that the development team can track advancements and inform others, who are not as closely involved, on a weekly basis.
 * The development of the Ontology was based on a set of rules:
-** The concepts are modelled considering the #timeline/ chronology/ order of steps in?# (was "temporal aspect") of the procurement process (the process, itself, is not in scope).
+** The concepts are modelled considering the temporal aspect of the procurement process (the process, itself, is not in scope).
 ** A high-level ontology was used as an anchor and to facilitate decisions as to the appropriate underpinning, ontological commitment and level of abstraction (the high-level model did not go on to form part of the of the resulting ontology).
-** Some modelling principles were set in place and applied consistently (#wrt naming#, relation directions, design patterns applied, etc.).
+** Some modelling principles were set in place and applied consistently (wrt naming, relation directions, design patterns applied, etc.).
 * The scope was set to include the concepts in the current TED standard forms, and those from the eForms.
 * A modular structure for the ePO was adopted to enable an easier way of maintaining the model.
 
