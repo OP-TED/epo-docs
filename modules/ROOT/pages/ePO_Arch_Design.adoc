@@ -4,7 +4,7 @@ Version 1.0
 :toc:
 :toclevels: 4
 :toc-title: Contents
-
+:imagesdir: /images
 
 *Disclaimer*
 
@@ -166,10 +166,10 @@ Goal: to allow the emergence of new applications and services on the basis of th
 * Data analytics on public procurement data
 
 ==== Interconnection of public procurement systems:
-Goal: to support increased interoperability across procurement systems.
+Goal: to support increased interoperability across procurement systems.
 
 * Increase cross-domain interoperability among Member States
-* Introduce automated classification systems in public procurement systems
+* Introduce automated classification systems in public procurement systems
 
 === Non-functional requirements
 This section provides the characteristics, qualities and general aspects that the eProcurement ontology should satisfy.
@@ -202,7 +202,7 @@ This section expands and addresses the process of defining and implementing an O
 
 In addition to producing the ontology as an artefact, it is also necessary to validate its fitness to represent existing data and to test whether the functional and non-functional requirements are respected. Figure 1 depicts the sequence f steps as a BPMN process diagram [65].
 
-image:archFig1.png[]
+image:{imagesdir}\archFig1.png[]
 
 .Figure 1: The main steps to implementing and validating the formal eProcurement ontology
 
@@ -217,7 +217,7 @@ The process starts with authoring two documents laying the foundations of the en
 
 The main purpose of the ontology architecture specifications (this document) is to describe why the ontology is being built, what its intended uses are, who the end-users are, and which requirements the ontology should fulfil. Moreover, it states how the ontology should be structured in order to facilitate maintenance and usage patterns.
 
-image:archFig2.png[]
+image:{imagesdir}\archFig2.png[]
 .Figure 2: Creation of the specifications documents and the UML transformation scripts
 
 The conceptual model must comply with a set of UML modelling conventions making it suitable input for the transformation scripts that implement the same conventions. The two parallel actions starting the process are depicted in Figure 2.
@@ -233,7 +233,7 @@ The current project runs under the assumption that the conceptual model is organ
 
 Having this assumption violated is a risk with critical impact. Therefore, an auxiliary process was developed (see Figure 3) to continuously improve and correct the model in case it is non-conforming.
 
-image:archFig3.png[]
+image:{imagesdir}\archFig3.png[]
 .Figure 3: Adjustment of the UML conceptual model guided by the validation script
 
 Revision of the conceptual model is an iterative process. A validation script is developed in a preceding step (see Section 3.1). This script it is executed on the current conceptual model outputting a report. This report consists of errors and warnings with detailed descriptions of what the deviation from the UML conventions is. It also provides hints for the conceptual model designer of the necessary actions to resolve issues.
@@ -241,7 +241,7 @@ Revision of the conceptual model is an iterative process. A validation script is
 === Formal ontology generation
 The UML conceptual model constitutes the sole main input for three transformation scripts. Therefore, it is very important to ensure that the conceptual model conforms to the set of UML conventions [14]. The conventions ensure that the conceptual model represents an adequate input for the transformations script as they are developed based on the same set of conventions and assumptions.
 
-image:archFig4.png[]
+image:{imagesdir}\archFig4.png[]
 .Figure 4: Generation of the formal ontology from the UML conceptual model
 
 The transformation scripts, developed in a preceding step described in Section 3.1, are:
@@ -268,7 +268,7 @@ These reports must be used during the transformation script development as addit
 * Implementation of the XML transformations script based on the mappings from XSD schemas onto the conceptual model
 * Transformation of the existent eProcurement XML data into RDF representation and validating the end result conformance
 
-image:archFig5.png[]
+image:{imagesdir}\archFig5.png[]
 .Figure 5: XML to RDF data transformation
 
 === Ontology evaluation
@@ -281,7 +281,7 @@ from the existent XML datasets,
 * the core ontology and
 * the formal ontology restrictions. These three components correspond to a complete ontology where the model and the data, i.e. ABox and TBox (see Section 5.1), are brought together into a whole.
 
-image:archFig6.png[]
+image:{imagesdir}\archFig6.png[]
 .Figure 6: Loading the data into the triple store
 
 The triple-store organisation, whether it acts as an eProcurement data dissemination service, URI de-referencing, or other publications related issue, is not in scope of the current architecture specification. Nevertheless, the data organisation and dissemination should be treated elsewhere in detail considering the best practices for publishing linked data [7].
@@ -295,7 +295,7 @@ on available data to evaluate the speed of reasoning  against the expressivity o
 
 In principle, it is possible to engage with the ontology evaluation process directly after the data loading steps, skipping the inferencing step, but the range of potential answers will be limited to an extent which is not possible to evaluate currently.
 
-image:archFig7.png[]
+image:{imagesdir}\archFig7.png[]
 .Figure 7: Conceptual validation of the eProcurement ontology against selected use cases
 
 Once the triple store is enriched with inferred information, it can be used to address the use case related information needs. The process is depicted in Figure 7.
@@ -331,7 +331,7 @@ The _formal ontology restrictions_ cover intentional class and property definiti
 The architecture distinguishes the following layers: the _conceptual layer_, _core definition layer, validation layer_ and _reasoning_ layer. These layers can be thought of as formal languages with well-defined boundaries and extents. The diagram in Figure 9 presents the organisation the ontology layers along two axes: _expressivity and detail_.
 The _expressivity_ of a language is the breadth of ideas that can be represented and communicated in that language. The more expressive the language is, the greater the variety and quantity of ideas it can be used to represent.
 
-image:archFig8.png[]
+image:{imagesdir}\archFig8.png[]
 .Figure 8: The main components of the eProcurement ontology and their relation to each other and the UML conceptual model
 
 The design of a language and its formalism involves an inevitable trade-off between the expressive power and its “analysability”, which translates directly into computation difficulty. The more a formalism can express, the harder it becomes to understand, i.e. compute, what instances of it mean.
@@ -340,7 +340,7 @@ The detail refers to how much description and aspects of the domain concepts are
 The detail axis starts, on one side, with establishing the concepts of identity, labels, natural language definitions; and continues through establishing relations and constraints; and ends, on the other side, with formulating special logical conditions, implications and inference rules.
 The conceptual layer accommodates an informal representation of the business objects, places, things, actors in the “real world”, not representations of these things in the information system. It is situated at the base of the diagram with the lowest expressivity because it does not have formal semantics but does have a wide coverage of detail. The dotted line delimits the border between formal and informal layers.
 
-image:archFig9.png[]
+image:{imagesdir}\archFig9.png[]
 
 .Figure 9: Expressivity and extent of the eProcurement ontology layers
 
@@ -391,7 +391,7 @@ This section addresses the aspects of logics in the eProcurement ontology. It sp
 === Model and data relationship
 DL ontologies are structured into two sets: ABox and TBox. The ABox consists of all (class or property) instance assertions. The TBox consists of all terminological axioms, i.e., of all subclass inclusion axioms. The ABox provides information about concrete individuals while the TBox describes general rules that hold for all individuals. In consequence, ABoxes tend to be much larger than TBoxes [44].In Figure 10 depicts the delimitation and relations between the TBox and box ABox components of the eProcurement ontology.
 
-image:archFig10.png[]
+image:{imagesdir}\archFig10.png[]
 
 .Figure 10: The relationship between the data and each of the ontology components
 

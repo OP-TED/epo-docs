@@ -134,7 +134,7 @@ This document is structured in several sections. After describing the context, s
 |The conceptual model enables to understand the meaning of the data model. Generally, the conceptual data model is the most important. The conceptual model does not specify how properties and associations are technically represented .
 
 |Ontology
-|A formal naming and definition of the types, properties, and interrelationships of the entities that exist for a particular domain. In the context of this report, an ontology should be expressed in OWL as this is the format used by the Common Data Model of the CELLAR, in which the ePO will be implemented.
+|A formal naming and definition of the types, properties, and interrelationships of the entities that exist for a particular domain. In the context of this report, an ontology should be expressed in OWL as this is the format used by the Common Data Model of the TED Semantic Web Service, in which the ePO will be implemented.
 
 |Approved by
 |Natalie Muric – Publications Office
@@ -234,7 +234,7 @@ _Creating a model_
 
 ==== OWL DL
 
-The OWL language is built upon the RDF standard. It is an ontology modelling language for describing RDF data. It allows for the strict definition of concepts and the complex relationships between them . The eProcurement Ontology should be expressed in OWL since the Common Data Model of the #CELLAR# - in which the ePO will be implemented - is expressed in OWL.
+The OWL language is built upon the RDF standard. It is an ontology modelling language for describing RDF data. It allows for the strict definition of concepts and the complex relationships between them . The eProcurement Ontology should be expressed in OWL since the Common Data Model of the TED Semantic Web Service - in which the ePO will be implemented - is expressed in OWL.
 
 ==== SPARQL
 SPARQL is a semantic query language. It is used to retrieve and manipulate data stored in RDF format.
