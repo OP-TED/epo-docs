@@ -575,13 +575,13 @@ Table 3: URI patterns for the ontology namespace
 |Purpose |Pattern
 
 |Root reference
-|{baseVoc}/ontology/{ontologyName}
+a|{baseVoc}/ontology/{ontologyName}
 
 |Document reference
-|{baseVoc}/ontology/{ontologyName}[#{documentRef}]
+a|{baseVoc}/ontology/{ontologyName}[#{documentRef}]
 
 |Resources reference
-|{baseVoc}/ontology/{ontologyName}#{resourceName}
+a|{baseVoc}/ontology/{ontologyName}#{resourceName}
 |===
 
 
@@ -597,16 +597,16 @@ Table 4: URI patterns for the reference data namespace
 |Purpose |Pattern
 
 |Root reference
-|{baseVoc}/reference/{listName}
+a|{baseVoc}/reference/{listName}
 
 |Document reference
-|{baseVoc}/reference/{listName}[#{documentRef}]
+a|{baseVoc}/reference/{listName}[#{documentRef}]
 
 |Concept scheme
-|{baseVoc}/reference/{listName}
+a|{baseVoc}/reference/{listName}
 
 |Concepts
-|{baseVoc}/reference/{listName}#{concept}
+a|{baseVoc}/reference/{listName}#{concept}
 |===
 
 
@@ -622,13 +622,13 @@ Table 5: URI patterns for the data shape namespace
 |Purpose |Pattern
 
 |Root reference
-|{baseVoc}/shape/{ontologyName}
+a|{baseVoc}/shape/{ontologyName}
 
 |Document reference
-|{baseVoc}/shape/{ontologyName}#{documentRef}
+a|{baseVoc}/shape/{ontologyName}#{documentRef}
 
 |Shape resources
-|{baseVoc}/shape/{ontologyName}#{resourceName}
+a|{baseVoc}/shape/{ontologyName}#{resourceName}
 |===
 *Ontology restrictions*
 
@@ -642,13 +642,13 @@ Table 6: URI patterns for the restrictions namespace
 |Purpose |Pattern
 
 |Root reference
-|{baseVoc}/ontology/{ontologyName}
+a|{baseVoc}/ontology/{ontologyName}
 
 |Document reference
-|{baseVoc}/rule/{ontologyName}#{documentRef}
+a|{baseVoc}/rule/{ontologyName}#{documentRef}
 
 |Resources
-|{baseVoc}/ontology/{ontologyName}#{resourceName}
+a|{baseVoc}/ontology/{ontologyName}#{resourceName}
 |===
 
 *XML schema*
@@ -662,16 +662,16 @@ Table 7: URI patterns for the instance data namespace
 |Purpose |Pattern
 
 |Root reference
-|{baseData}/resource{documentRef}
+a|{baseData}/resource{documentRef}
 
 |Document reference
-|{baseData}/resource/{documentRef}/{documentRef}
+a|{baseData}/resource/{documentRef}/{documentRef}
 
 |Fragment reference
-|{baseData}/resource/{documentRef}/{fragmentRef}[/{subFragmentRef}]
+a|{baseData}/resource/{documentRef}/{fragmentRef}[/{subFragmentRef}]
 
 |Resources
-{baseData}/resource/{documentRef}#{resourceId}
+a|{baseData}/resource/{documentRef}#{resourceId}
 |===
 
 
