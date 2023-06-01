@@ -1,8 +1,8 @@
 * xref:release-notes.adoc[Version 3.1.0 Release Notes (detailed)]
 * xref:Report-v3.0.0.adoc[Version 3.1.0 Report]
-* xref:EPO@new_main::references.adoc[Reference Documents]
-* xref:EPO@new_main::methodology.adoc[Ontology Methodology]
-* xref:EPO@new_main::history.adoc[Version History]
+* xref:new_main@EPO::references.adoc[Reference Documents]
+* xref:new_main@EPO::methodology.adoc[Ontology Methodology]
+* xref:new_main@EPO::history.adoc[Version History]
 * xref:epo-wgm::index.adoc[Working Group Documents]
 
 
