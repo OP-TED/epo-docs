@@ -501,7 +501,7 @@ There is a five star rating system[6] to measure published data reusability. Thi
 * Provide metadata using open standards such as RDF;
 * Include links to related URIs, so that people can discover more things.
 
-Moreover, the eProcurement URI scheme must subscribe to the “Cool URIs” recommendations [17] and ensure that they don’t change [11].
+Moreover, the eProcurement URI scheme must subscribe to the “Cool URIs” recommendations [17] and ensure that they don’t change [11].
 
 * Simplicity. Short, mnemonic URIs will not break as easily when sent in emails and are in general easier to remember.
 * Stability. Once you set up a URI to identify a certain resource, it should remain this way as long as possible.
@@ -541,8 +541,8 @@ A simple syntax is adopted to express the scheme templates in terms of URI path 
 
 The segment denomination can be literal or variable. The literal segment means that the value provided is constant and must appear as such in the indicated position.
 
-The variable segments are marked by curly brackets ( \{ } ) and represent the name of the slot which must be filled with a concrete value when a new URI is minted in the implementation process. For example, the pattern segment/\{varSegment} can be instantiated as segment/123.
-It is possible to indicate that a path sub-sequence is optional by wrapping it in square brackets ( [ ] ). For example segment/[\{varSubSegment}/]varSubSubSegment pattern can be instantiated either as segment/abc/123 or segment/123.
+The variable segments are marked by curly brackets ( \{ \} ) and represent the name of the slot which must be filled with a concrete value when a new URI is minted in the implementation process. For example, the pattern segment/\{varSegment\} can be instantiated as segment/123.
+It is possible to indicate that a path sub-sequence is optional by wrapping it in square brackets ( [ ] ). For example segment/[\{varSubSegment\}/]varSubSubSegment pattern can be instantiated either as segment/abc/123 or segment/123.
 
 This section defines templates for two dedicated PURI namespaces corresponding roughly to TBox–ABox distinction in the ontology structure, or the model–data delimitation, which is explained in Section 5.1. The first namespace, baseVoc, is dedicated to the ontology vocabulary and modelling artefacts; while the second, baseData, is foreseen to accommodate the large volume of instance data.
 
@@ -559,7 +559,7 @@ Table 2: Base PURIs employed by the eProcurement ontology
 
 |Base URI for data
 |baseData
-|http://data.europa.eu/\{agentSpecificId}
+|http://data.europa.eu/\{agentSpecificId\}
 |===
 
 
@@ -575,13 +575,13 @@ Table 3: URI patterns for the ontology namespace
 |Purpose |Pattern
 
 |Root reference
-|\{baseVoc}/ontology/\{ontologyName}
+|\{baseVoc\}/ontology/\{ontologyName\}
 
 |Document reference
-|\{baseVoc}/ontology/\{ontologyName}[#\{documentRef}]
+|\{baseVoc\}/ontology/\{ontologyName\}[#\{documentRef\}]
 
 |Resources reference
-|\{baseVoc}/ontology/\{ontologyName}#\{resourceName}
+|\{baseVoc\}/ontology/\{ontologyName\}#\{resourceName\}
 |===
 
 
@@ -597,16 +597,16 @@ Table 4: URI patterns for the reference data namespace
 |Purpose |Pattern
 
 |Root reference
-|\{baseVoc}/reference/\{listName}
+|\{baseVoc\}/reference/\{listName\}
 
 |Document reference
-|\{baseVoc}/reference/\{listName}[#\{documentRef}]
+|\{baseVoc\}/reference/\{listName\}[#\{documentRef\}]
 
 |Concept scheme
-|\{baseVoc}/reference/\{listName}
+|\{baseVoc\}/reference/\{listName\}
 
 |Concepts
-|\{baseVoc}/reference/\{listName}#\{concept}
+|\{baseVoc\}/reference/\{listName\}#\{concept\}
 |===
 
 
@@ -622,13 +622,13 @@ Table 5: URI patterns for the data shape namespace
 |Purpose |Pattern
 
 |Root reference
-|\{baseVoc}/shape/\{ontologyName}
+|\{baseVoc\}/shape/\{ontologyName\}
 
 |Document reference
-|\{baseVoc}/shape/\{ontologyName}#\{documentRef}
+|\{baseVoc\}/shape/\{ontologyName\}#\{documentRef\}
 
 |Shape resources
-|\{baseVoc}/shape/\{ontologyName}#\{resourceName}
+|\{baseVoc\}/shape/\{ontologyName\}#\{resourceName\}
 |===
 *Ontology restrictions*
 
@@ -642,13 +642,13 @@ Table 6: URI patterns for the restrictions namespace
 |Purpose |Pattern
 
 |Root reference
-|\{baseVoc}/ontology/\{ontologyName}
+|\{baseVoc\}/ontology/\{ontologyName\}
 
 |Document reference
-|\{baseVoc}/rule/\{ontologyName}#\{documentRef}
+|\{baseVoc\}/rule/\{ontologyName\}#\{documentRef\}
 
 |Resources
-|\{baseVoc}/ontology/\{ontologyName}#\{resourceName}
+|\{baseVoc\}/ontology/\{ontologyName\}#\{resourceName\}
 |===
 
 *XML schema*
@@ -662,16 +662,16 @@ Table 7: URI patterns for the instance data namespace
 |Purpose |Pattern
 
 |Root reference
-|\{baseData}/resource\{documentRef}
+|\{baseData\}/resource\{documentRef\}
 
 |Document reference
-|\{baseData}/resource/\{documentRef}/\{documentRef}
+|\{baseData\}/resource/\{documentRef\}/\{documentRef\}
 
 |Fragment reference
-|\{baseData}/resource/\{documentRef}/\{fragmentRef}[/{subFragmentRef}]
+|\{baseData\}/resource/\{documentRef\}/\{fragmentRef\}[/{subFragmentRef\}]
 
 |Resources
-|\{baseData}/resource/\{documentRef}#\{resourceId}
+|\{baseData\}/resource/\{documentRef\}#\{resourceId\}
 |===
 
 
@@ -687,10 +687,10 @@ Table 8: URI patterns for the metadata resources namespace
 |Purpose |Pattern
 
 |Dataset
-|\{baseData}/metadata/\{datasetId}
+|\{baseData\}/metadata/\{datasetId\}
 
 |Resources
-|\{baseData}/metadata/\{datasetId}#\{resourceId}
+|\{baseData\}/metadata/\{datasetId\}#\{resourceId\}
 |===
 
 
@@ -703,10 +703,10 @@ Table 9: URI patterns for the namespace of the services
 |===
 |Purpose |Pattern
 |Sparql
-|\{baseData}/service/sparql/\{dataLakeId}
+|\{baseData\}/service/sparql/\{dataLakeId\}
 
 |Catalogue
-|\{baseData}/service/catalogue/\{catalogueId}
+|\{baseData\}/service/catalogue/\{catalogueId\}
 |===
 
 
