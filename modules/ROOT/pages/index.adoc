@@ -13,11 +13,11 @@ xref:index_epo_3.1.0.adoc[Click here to read the version 3.1.0 details]
 ****
 
 [.tile]
-.ePO V3.1.1: In Development
+.ePO Future Releases
 ****
-The eProcurement Ontology V3.1.1 is currently in development and is scheduled to be released in July 2023. New features will include... #Get info#. Click on the link below for the details in the upcoming release.
+Information on future releases planned for the eProcurement Ontology can be found via the link below. Information includes scheduled releases in the short term, and features, updates and fixes to be addressed in the longer term.
 
-xref:3.1.1@EPO::index.adoc[Version 3.1.1 (in development) can be found here.]
+xref:future_releases@EPO::index.adoc[Information on future releases can be found here.]
 ****
 
 
