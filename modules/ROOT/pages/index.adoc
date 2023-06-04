@@ -1,6 +1,6 @@
 //xref:history.adoc[History of all Working Group Meetings]
 
-xref:wgm-2022.adoc[Cumulated content of Working Group Meeting from 2023]
+xref:wgm-2023.adoc[Cumulated content of Working Group Meeting from 2023]
 
 xref:wgm-2022.adoc[Cumulated content of Working Group Meeting from 2022]
 

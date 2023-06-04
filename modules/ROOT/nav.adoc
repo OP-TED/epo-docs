@@ -325,3 +325,5 @@
 //*** link:{attachmentsdir}/presentations/
 
 * xref:future-wgm-agenda.adoc[Future agenda]
+
+* xref:EPO::index.adoc[Back to EPO Homepage]

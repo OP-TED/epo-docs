@@ -61,17 +61,18 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAl8AAAFTCAIAAACI9/6sAACAAEl
 
 * Despatch role is not needed in Order.
 * The discussion continued with going through all the roles needed.
-    1. Order is triggered by Originator +
-    2. OrderLine is triggered by Originator
+    . Order is triggered by Originator +
+    . OrderLine is triggered by Originator
 
 * If several orginators are involved, they are mentioned at the OrderLine level.
 * If one originator is involved, it is mentioned at the Order level.
-    3. Order is submitted by Buyer +
-    4. Order is submitted to Seller +
-    5. Delivery instruction is delivered to Consignee +
-    6. Delivery instruction is destined for Beneficiary +
-    7. Order is invoiced to invoicee +
-    8. Order is despatched by Despatcher (needed as can choose)
+[start=3]
+    . Order is submitted by Buyer +
+    . Order is submitted to Seller +
+    . Delivery instruction is delivered to Consignee +
+    . Delivery instruction is destined for Beneficiary +
+    . Order is invoiced to invoicee +
+    . Order is despatched by Despatcher (needed as can choose)
 
 * It is not clear yet if an invoicee is needed. It still remains the question if the invoicee is not always the buyer.
 * Carrier role is not needed in order.
