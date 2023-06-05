@@ -19,12 +19,12 @@ InfEurope completed a report for the EU Publications Office on the xref:ePO_Arch
 '''
 === *17 April 2020: The eProcurement UML Conceptual Model Conventions*
 
-xref:umlconv.adoc[The UML Model Conventions]
+xref:umlconv2020.adoc[The UML Model Conventions]
 
 '''
 === *20 May 2020: Transformation of the eProcurement UML Model into a Formal OWL Ontology*
 
-xref:uml2owl.adoc[The UML to OWL Transformation Rules]
+xref:uml2owl_2020.adoc[The UML to OWL Transformation Rules]
 
 
 include::partial$feedback.adoc[]
