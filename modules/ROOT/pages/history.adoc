@@ -25,7 +25,7 @@ Version 3.0.0 was released in August 2022, with the current and latest 3.x versi
 
 
 === *Version in Development:*
-xref:3.1.1@EPO::index.adoc[Version 3.1.1 (in development) can be found here.]
+xref:future_releases@EPO::release-notes.adoc[Version 4.0.0 RC 1 (in development) can be found here.]
 
 
 === *Archived versions can be found here:*
