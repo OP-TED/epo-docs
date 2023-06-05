@@ -1,4 +1,7 @@
-= *eProcurement Ontology Version 3.1.0 (latest)*
+= *eProcurement Ontology Version 3.1.0*
+
+== Latest Production Release: 16.12.2022
+
 == *Release Overview*
 
 == *Changes in V3.1.0*
