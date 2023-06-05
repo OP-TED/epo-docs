@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfec98d-9395-44f4-9ce8-589fc8c18e58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/antora-playbook-epo-local.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/content" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/content" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
