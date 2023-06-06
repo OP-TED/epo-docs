@@ -1,11 +1,11 @@
 = ePO Reports from the Working Group General Meetings
 
 
-xref:ePO_11th_WGM_report.adoc@EPO::index.adoc[Report from the 11th Working Group General Meeting: 28 June 2022]
+xref:ePO_11th_WGM_report.adoc[Report from the 11th Working Group General Meeting: 28 June 2022]
 
-xref:ePO_12th_WGM_report.adoc@EPO::index.adoc[Report from the 11th Working Group General Meeting: 8 December 2022]
+xref:ePO_12th_WGM_report.adoc[Report from the 11th Working Group General Meeting: 8 December 2022]
 
-xref:ePO_13th_WGM_report.adoc@EPO::index.adoc[Report from the 11th Working Group General Meeting: 9 March 2023]
+xref:ePO_13th_WGM_report.adoc[Report from the 11th Working Group General Meeting: 9 March 2023]
 
 
 
