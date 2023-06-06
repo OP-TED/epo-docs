@@ -1,11 +1,69 @@
 = ePO Reports from the Working Group General Meetings
 
+xref:ePO_13th_WGM_report.adoc[Report from the 13th Working Group General Meeting: 9 March 2023]
 
+'''
+xref:ePO_12th_WGM_report.adoc[Report from the 12th Working Group General Meeting: 8 December 2022]
+
+link:{attachmentsdir}/work_group_meetings_reports/12th_WGM/eProcurement-Ontology_3.1.0.pptx[12th WGM Presentation]
+
+'''
 xref:ePO_11th_WGM_report.adoc[Report from the 11th Working Group General Meeting: 28 June 2022]
 
-xref:ePO_12th_WGM_report.adoc[Report from the 11th Working Group General Meeting: 8 December 2022]
+link:{attachmentsdir}/work_group_meetings_reports/11th_WGM/eProcurement_Ontology_3.0.0.pptx[11th WGM Presentation]
 
-xref:ePO_13th_WGM_report.adoc[Report from the 11th Working Group General Meeting: 9 March 2023]
+'''
+*_Covid-19 interrupted the in-person meetings between the 10th and 11th meetings, hence the time gap._*
+
+'''
+link:{attachmentsdir}/work_group_meetings_reports/10th%20WGM/Report%20on%20the%2010th%20eProcurement%20WG%20meeting.pdf[Report from the 10th Working Group General Meeting: 10.10.2019]
+
+link:{attachmentsdir}/work_group_meetings_reports/10th%20WGM/FRBR-ShortIntro.pdf[Functional Requirements for Bibliographic Records]
+
+link:https://docs.google.com/presentation/d/1ef-OvHPK3yCoharfl3MpEDKGWD3_ReDk5sLAbgPQo1U/edit#slide=id.g51dbe530b6_0_49[10th WGM OCDS presentation]
+
+'''
+link:{attachmentsdir}/work_group_meetings_reports/9th%20WGM/Report%20on%20the%209th%20eProcurement%20WG%20meeting.pdf[Report from the 9th Working Group General Meeting: 23.05.2019]
+
+link:{attachmentsdir}/work_group_meetings_reports/9th%20WGM/9th%20working%20group%20meeting%20presentation.pptx[9th WGM Presentation]
+
+'''
+link:{attachmentsdir}/work_group_meetings_reports/8th%20WGM/Report%20on%20the%208th%20eProcurement%20WG%20meeting.pdf[ Report from the 8th Working Group General Meeting: 12.02.2019]
+
+link:{attachmentsdir}/work_group_meetings_reports/8th%20WGM/8th%20working%20group%20meeting.pptx[8th WGM Presentation]
+
+link:{attachmentsdir}/work_group_meetings_reports/8th%20WGM/Workshop-on-eSubmissioneEvaluation.v2.0.pptx[8th Workshop-on-eSubmissioneEvaluation.v2.0.]
+link:{attachmentsdir}/work_group_meetings_reports/8th%20WGM/eForms_Ontology_J_Hercher.pptx[8th eForms_Ontology Presentation]
+
+'''
+link:{attachmentsdir}/work_group_meetings_reports/7th_WGM/AO10649_ePO_WGM7_20180621.pdf[Report from the 7th Working Group General Meeting: 14.06.2018]
+
+link:{attachmentsdir}/work_group_meetings_reports/7th_WGM/AO10649_ePO_WGM7_20180621.pptx[7th WGM Presentation]
+
+'''
+link:{attachmentsdir}/work_group_meetings_reports/6th_WGM/AO10649_ePO_WGM6_20180516.pdf[Report from the 6th Working Group General Meeting: 16.05.2018]
+
+link:{attachmentsdir}/work_group_meetings_reports/6th_WGM/AO10649_ePO_WGM6_20180516.pptx[6th WGM Presentation]
+
+'''
+link:{attachmentsdir}/work_group_meetings_reports/5th_WGM/AO10649_ePO_WGM5_20180328.pdf[Report from the 5th Working Group General Meeting: 28.03.2018]
+
+link:{attachmentsdir}/work_group_meetings_reports/5th_WGM/AO10649_ePO_WGM5_20180328.pptx[5th WGM Presentation]
+
+'''
+link:{attachmentsdir}/work_group_meetings_reports/4th_WGM/AO10649_ePO_WGM4_20180223_v1_4.pdf[Report from the 4th Working Group General Meeting: 23.02.2018]
+
+link:{attachmentsdir}/work_group_meetings_reports/4th_WGM/AO10649_ePO_WGM4_20180223_v1_4.pptx[4th WGM Presentation]
+
+'''
+link:{attachmentsdir}/work_group_meetings_reports/3rd_WGM/Report%20Third%20WG%20meeting_2017-05-24.docx[Report from the 3rd Working Group General Meeting: 24.05.2017]
+
+'''
+link:{attachmentsdir}/work_group_meetings_reports/2nd_WGM/Report%20Second%20WG%20meeting%202017-04-26.docx[Report from the 2nd Working Group General Meeting: 26.04.2017]
+
+'''
+2017-03-23
+link:{attachmentsdir}/work_group_meetings_reports/1st_WGM/Report_First%20WG%20meeting%202017-03-23.docx[Report from the 1st Working Group General Meeting: 23.03.2017]
 
 
 
