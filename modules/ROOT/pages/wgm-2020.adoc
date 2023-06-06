@@ -1,4 +1,4 @@
-== Cumulated content of Working Group Meeting from 2020
+== Cumulative content of Working Group Meetings in 2020
 
 include::notes/2020-12-17-wgm.adoc[]
 

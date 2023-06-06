@@ -1,4 +1,4 @@
-== Cumulated content of Working Group Meeting from 2021
+== Cumulative content of Working Group Meetings in 2021
 
 include::notes/2021-12-16-wgm.adoc[]
 
