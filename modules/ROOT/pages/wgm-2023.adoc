@@ -1,4 +1,4 @@
-== Cumulated content of Working Group Meeting from 2023
+== Cumulative content of Working Group Meeting from 2023
 
 include::notes/2023-05-04-wgm.adoc[]
 

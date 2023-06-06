@@ -62,7 +62,6 @@ link:{attachmentsdir}/work_group_meetings_reports/3rd_WGM/Report%20Third%20WG%20
 link:{attachmentsdir}/work_group_meetings_reports/2nd_WGM/Report%20Second%20WG%20meeting%202017-04-26.docx[Report from the 2nd Working Group General Meeting: 26.04.2017]
 
 '''
-2017-03-23
 link:{attachmentsdir}/work_group_meetings_reports/1st_WGM/Report_First%20WG%20meeting%202017-03-23.docx[Report from the 1st Working Group General Meeting: 23.03.2017]
 
 
