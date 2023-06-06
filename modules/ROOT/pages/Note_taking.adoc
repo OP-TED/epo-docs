@@ -1,0 +1,164 @@
+:imagesdir: images
+:downloaddir: download
+:xrefstyle: short
+
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+
+
+= Ontology workgroup notes-taking practice proposal
+
+:toc:
+:toc-placement: preamble
+:toclevels: 1
+:showtitle:
+
+toc::[]
+
+This document proposes a methodology on how to record the discussions in of the expert working group in a structured manner.
+
+
+== Requirements
+This section lists the set of requirements for documenting workgroup sessions.
+
+* The workgroup meeting discussions must be recorded so that a reader, referring to them at a later date, will understand clearly,the topics addressed, and the decisions taken on each  topic.
+* The workgroup decisions must be accessible on a public space, preferably next to the model.
+* The notes should, where possible, contain visual representations or diagrams that assist understanding of the written text.
+
+(more requirements may be added at any time)
+
+== Session Composition
+
+*Moderator*
+
+Each workgroup session should be lead by a _moderator_, who is responsible for the meeting agenda (or general session topic), for directing the discussion flow, and facilitating representative participation of the attendees.
+
+The responsibilities of the moderator are to:
+
+* ensure the discussions are efficient and concise so that the decisions and agreement can be reached in the minimum amount of time.
+* frame the discussions so that well-defined issues are discussed one at a time.
+* prepare the meeting agenda with a list of topics to be addressed, or to propose a general session discussion topic.
+
+*Model editor*
+
+The _model editor_ is responsible for sharing a view (or screen) of the model for discussion during the session. All the participants may then view the model view and discuss a given issue, its representation in the model, or information from reference materials. The _model editor_ manages the  model parts being discussed and can edit the model in real-time to reflect the changes agreed in the discussion.
+
+
+The responsibilities of the model editor are to:
+
+* ensure that the model part under revision is consistent with the decision of the group
+* ensure that the editing is complete (online or offline by the next session). If the editing is incomplete, the editor will either ask questions or request time to complete the model part editing and take sufficient notes of what should be done after the session.
+* implement all the previous session tasks before the next session (provided that the tasks were well specified and did not require domain expert validation)
+* ask competency questions to the working group to elicit modeling aspects and implement them on the spot, or record implementation tasks.
+
+*Session secretary*
+
+The session discussion is documented by the _session secretary_, who is responsible for taking structured, accurate and complete notes on the issues discussed and the decisions taken by the group. The notes must capture the problems discussed, possible alternative solutions, and the document the rationale behind the preferred solution.
+
+The responsibilities of the session secretary are to:
+
+* maintain clarity about the issue in discussion (most of the time). If the discussion drifts out of the scope, then the session secretary should call this out and redirect discussion back onto the issue.
+* document clearly, in sufficient detail and in a structured manner, the basic aspects of each issue discussed. The structure of the preferred decision shall be compatible with the _model anamnesis_ approach described in Section <<_model_anamnesis>>. If the documentation is incomplete, then the additional questions must be asked to achieve a complete picture of the issue.
+* record competency questions for each issue discussed that characterise an element of a part of the model.
+* record model editing tasks that shall be executed after the session is complete and before the next session. This is where tasks are not complex, not model agnostic, nor require expert specification so that the input of a domain expert is unnecessary.
+* publish the session notes at the end of each session together with the model change-log.
+
+*Domain experts*
+
+The _domain experts_ participants discuss the issue proposed by the moderator. They provide insights and answer questions posed by the model editor, the session secretary and the moderator.
+
+== Note-taking
+
+The session note-taking shall be done, ideally, in a persistently collaborative environment. Therefore, solutions that allow simultaneous, multi-user editing on the same document are preferred. Access to the document should be provided to all workgroup participants, or at a minimum, to the session moderator, session secretary, and the model editor.
+
+Possible technical choices:
+
+* Word and Excel files in Sharepoint/MsTeams
+* Google Documents/Sheets
+
+== Model anamnesis
+
+The approach of recording a modelling and design decisions recommended here is based on [Plataniotis et.al. 2012] titled "EA Anamnesis: Towards an approach for Enterprise Architecture (EA) rationalization".
+
+"Anamnesis", an ancient Greek word, is a term used in medicine, philosophy and other sciences and denotes reminiscence and repair of forgetfulness.
+
+The "model anamnesis" approach proposes a specialised template that captures a model decision taken in terms of decision attributes. The template form is presented in the table below.
+
+[cols="3,7"]
+|===
+|Decision attribute |Description
+
+|*Title*
+|_A small but informative description of the EA decision taken._
+
+|*Issue* _(the problem)_
+|_This field addresses the issue that the Enterprise Architect had to solve with this decision. It is a short description of the issue and not an argument supporting the decision._
+
+|*Alternative choices* _(the possible solutions)_
+|_This field describes the alternative choices considered for the same EA issue. An architect can use alternatives to describe alternative options for addressing the EA issue._
+
+|*Rationale*
+|_The reason leading to the architect's choice of that speciﬁc decision from the alternatives. A rationale answers the “why” question for each decision. The information of this field should provide added value to the overall decision._
+
+|*Notes*
+|_General and additional information that might help the reader to understand the issue better._
+|===
+
+== Versioning system
+
+A versioning system shall be used consistently for storing the model and tracking its evolution over time. Similarly, the work group notes and session documentation shall be stored and tracked over time.
+
+For Enterprise Architect Models, there are several alternatives available. One of them, native to Enterprise Architect, is the establishment of a model repository made available in the Corporate, Unified, and Ultimate versions of the software. A more widely known and open approach is using the Git versioning system.
+
+For the EPO model a GitHub solution has been chosen. A similar approach or one available in the GitHub ecosystem shall be adopted for the model documentation and the work group meetings. The GitHub wiki, GitHub pages with Sphinx or AsciiDoc are a few approaches that can be adopted.
+
+It is a good practice to edit the model in session specific branches. This however not be always possible or convenient. The important part is to be able to identify the model version before the beginning of the workgroup session and the model version after its completion.
+
+== Publishing
+
+The evolution of the model over time shall be published so that the wider public has access to a specific (tagged) version of the model, a development branch, or the latest stable version of the model.
+
+When publishing, the following aspects shall be available:
+
+* the session notes covering the issues discussed, and the associated decisions
+* the (reference to) model version before the session
+* the (reference to) model version after the session
+* the differential (diff) report between the initial and final models, which is automatically generated and lists the atomic changes in the model.
+
+Each well-defined set of model changes that can be properly delimited and motivated, must be documented using the model anamnesis approach described in Section <<_model_anamnesis>>. A well-defined set of changes can be framed by:
+
+* a workgroup session covering a list of documented issues
+* an offline modelling session executing a set of tasks or an implementation of a well-defined modelling target.
+
+== Proposed workflow & tools
+
+=== Note-taking
+
+A richly informative Google Docs or Sharepoint shared folder where date-tagged documents are added.
+
+Google Docs is preferred because it is a collaborative concomitant multi-editor application with add-ons available that enable publishing in Markdown or AsciiDoc format on GitHub.
+
+=== Generating the AsciiDoc/Markdown session notes
+
+Use the add-ons "Articul8" or "AsciiDoc Processor" in Google Docs to export to the preferred output format.
+
+=== Generating the model-diff report
+
+LemonTree, recommended, is one of the few tools that can generate a comprehensive change-notes report between two versions of a model.
+
+It has advantages such as: allowing to use Git versioning natively from Enterprise Architect, comparing versions of two models in ain interactive manner, and merging and resolving conflicts between versions of a model.
+
+The disadvantage is that no human-readable diff-report can be generated, which means that the change-log is available only as a diffing session viewable using LemonTree software.
+
+LemonTree shall be used to generate an interactive session that compares EA models. This method shall be used until a replacement method to generate the human-readable model diff-report is found.
+
+=== Committing to GitHub
+
+The model changes shall be committed soon after the session is complete. The session decision notes, and the diff report, must follow the model commit.
+
+=== Publishing the notes as GitHub pages
+
+Once the notes are committed to GitHub, they shall be published for the broader public. This shall be done by setting up GitHub Action automations that execute Antora playbook and produce the GitHub pages.
