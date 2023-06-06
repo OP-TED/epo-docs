@@ -1,18 +1,18 @@
-== Working Group meeting 14/03/2023
+= Working Group meeting  14/03/2023
 
 *Date:* 14/03/2023  +
 *Participants:* Natalie Muric,  Najeh Hajlaoui, Ivan Willer, Peter Borresen, Paloma Arillo +
 *Model editor:* Andreea Pasăre +
 *Note editor:*  Jana Ahmad
 
-=== Agenda
+== Agenda
 
 * Continue discussing eFulfillment
 ** To continue from: ConsolidatedShipment (from the spreadsheet)
 * A party should have an authorization. This needs to be modelled.
 * Know how to integrate Certificate
 
-=== Discussion
+== Discussion
 WG checked if the ePO model is complete regarding UBL eFulfilment requirements by having diagrams which clearly depict the necessary elements, as following:
 
 
