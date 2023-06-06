@@ -1,5 +1,5 @@
 name: epo-wgm
-version: master
+version: wg-corrections
 title: ePO Working Documents
 start_page: ROOT:index.adoc
 nav:
