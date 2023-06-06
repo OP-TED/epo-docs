@@ -24,7 +24,7 @@ xref:general.adoc[Click here to access the annual reports]
 [.tile]
 .ePO Working Group Meeting Reports: eCatalogue
 ****
-This section contains the minutes eCatalogue from #January 2022# onwards.
+This section contains the minutes eCatalogue from January 2022 onwards.
 
 xref:eCatalogueMeetings.adoc[Click here to access the eCatalogue  reports]
 ****
@@ -32,7 +32,7 @@ xref:eCatalogueMeetings.adoc[Click here to access the eCatalogue  reports]
 [.tile]
 .ePO Working Group Meetings Cumulative Reports: eFulfillment
 ****
-This section contains the minutes eFulfillment from #August 2022# onwards.
+This section contains the minutes eFulfillment from August 2022 onwards.
 
 xref:eFulfilmentMeetings.adoc[Click here to access the eFulfillment  reports]
 ****

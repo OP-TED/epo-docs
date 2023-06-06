@@ -4,7 +4,7 @@ xref:wgm-2023.adoc[Cumulative content of Working Group Meetings: 2023]
 
 xref:wgm-2022.adoc[Cumulative content of Working Group Meetings: 2022]
 
-xref:wgm-2021.adoc[Cumulative content of Working Group Meetings:2021]
+xref:wgm-2021.adoc[Cumulative content of Working Group Meetings: 2021]
 
 xref:wgm-2020.adoc[Cumulative content of Working Group Meetings: 2020]
 
