@@ -1,4 +1,4 @@
-= eProcurement Ontology Documentation
+= eProcurement Working Group Meetings
 
 [.tile-container]
 --
