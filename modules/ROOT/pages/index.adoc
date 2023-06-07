@@ -22,7 +22,7 @@ xref:general.adoc[Click here to access the annual reports]
 
 
 [.tile]
-.ePO Working Group Meeting Reports: eCatalogue
+.ePO Working Group Meeting Cumulative Reports: eCatalogue
 ****
 This section contains the minutes eCatalogue from January 2022 onwards.
 
