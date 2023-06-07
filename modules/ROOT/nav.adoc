@@ -4,6 +4,8 @@ xref:general.adoc[Working Group General Meetings]
 
 xref:cumulative.adoc[Working Group Meetings Cumulative Reports]
 
+xref:indiv.adoc[Working Group Individual Meetings Reports]
+
 xref:eCatalogueMeetings.adoc[eCatalogue Meetings]
 
 xref:eOrderingMeetings.adoc[eOrdering Meetings]
