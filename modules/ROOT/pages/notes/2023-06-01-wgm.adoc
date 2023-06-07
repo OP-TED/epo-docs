@@ -2,8 +2,8 @@
 
 *Date:* 01/06/2023   +
 *Participants:* Natalie Muric, Glan Luigi Albano, Giovanna Filippone, Goncalo Negrao, Martina Pititto, Paolo De Lazzaro, Peter, Thomas Pettersson  +
-*Model editor:  *Andreea Pasăre  +
-*Note editor***:**  Jana Ahmad  +
+*Model editor:* Andreea Pasăre  +
+*Note editor:*  Jana Ahmad  +
 Agenda:
 
 * ePO module harmonisation
