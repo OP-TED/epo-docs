@@ -1,4 +1,5 @@
-== *eProcurement Ontology 3.1.0*
+== *eProcurement Ontology 4.0.0 RC 1*
+#edit rest of page - convert info to 4.0.0 rc 1#
 
 The release of version 3.1.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v3.1.0[here].
 

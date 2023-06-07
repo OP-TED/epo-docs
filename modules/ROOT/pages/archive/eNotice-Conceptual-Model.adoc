@@ -1,4 +1,0 @@
-= Conceptual model Diagrams
-
-* link:{attachmentsdir}/html_reports/eNotice/index.html[HTML view]
-* link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[Enterprise Architect file]

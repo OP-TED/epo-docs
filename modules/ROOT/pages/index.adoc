@@ -4,20 +4,22 @@
 --
 
 [.tile]
-.ePO V3.1.0: Latest Production Release
+.Next Release: ePO V4.0.0 RC 1
 ****
-The eProcurement Ontology V3.1.0 was released on the 16 December 2022 introducing a new module, eOrdering,a combined glossary, updates, and various fixes as planned for the 2022 Q4 milestone.
+Planned Release Date: July 2023
 
-xref:index_epo_3.1.0.adoc[Click here to read the version 3.1.0 details]
+Details on the next release of the eProcurement Ontology V4.0.0 RC 1, scheduled for July 2023, can be accessed via the link below:
+
+xref:release-notes.adoc[Click here to read the version 4.0.0 RC 1 details]
 
 ****
 
 [.tile]
-.ePO Future Releases
+.Longer Term Planned Releases
 ****
-Information on future releases planned for the eProcurement Ontology can be found via the link below. Information includes scheduled releases in the short term, and features, updates and fixes to be addressed in the longer term.
+In the longer term, V4.0.0 is planned for release in September 2023. The list of planned features, updates and fixes of this release as well as subsequent releases, including proposed dates, can be found here. This list is updated regularly.
 
-xref:future_releases@EPO::index.adoc[Information on future releases can be found here.]
+xref:longer_term.adoc[Future Releases]
 ****
 
 
@@ -26,15 +28,6 @@ xref:future_releases@EPO::index.adoc[Information on future releases can be found
 ****
 This section contains minutes and reports of the Working Group activities and meetings listed by interest/ category.
 
-xref:master@epo-wgm::index.adoc[Click here to read the working group documents]
-****
-
-[.tile]
-.model2owl Documentation
-****
-The model2owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
-
-//xref:xxx@EPO::index.adoc[update when ready]
-Updated documents coming soon.
+xref:master@epo-wgm::index.adoc[Click here to read the Working Group documents]
 ****
 --
