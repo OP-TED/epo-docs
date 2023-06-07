@@ -26,7 +26,7 @@ xref:future_releases@EPO::index.adoc[Information on future releases can be found
 ****
 This section contains minutes and reports of the Working Group activities and meetings listed by interest/ category.
 
-xref:master@epo-wgm::index.adoc[Click here to read the Working Group documents]
+xref:master@epo-wgm::index.adoc[Click here to read the working group documents]
 ****
 
 [.tile]
