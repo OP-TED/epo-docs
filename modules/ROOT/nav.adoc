@@ -12,6 +12,8 @@ xref:eOrderingMeetings.adoc[eOrdering Meetings]
 
 xref:eFulfilmentMeetings.adoc[eFulfilment Meetings]
 
+xref:Note_taking.adoc[Note Taking Guidelines]
+
 xref:epo-wg::index.adoc[Back to Working Group Documents]
 
 xref:EPO::index.adoc[Back to EOP Homepage]
