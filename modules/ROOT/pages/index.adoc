@@ -30,11 +30,11 @@ xref:master@epo-wgm::index.adoc[Click here to read the working group documents]
 ****
 
 [.tile]
-.Model to Owl Documentation
+.model2owl Documentation
 ****
-The Model to Owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
+The model2owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
 
 //xref:xxx@EPO::index.adoc[update when ready]
-*update when ready*
+Updated documents coming soon.
 ****
 --
