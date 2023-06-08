@@ -13,15 +13,4 @@ Details on the next release of the eProcurement Ontology V4.0.0 RC 1, scheduled 
 xref:index_epo_4.0.0_rc_1.adoc[Click here to read the version 4.0.0 RC 1 details]
 
 ****
-
-
-
-
-[.tile]
-.Working Group Documents
-****
-This section contains minutes and reports of the Working Group activities and meetings listed by interest/ category.
-
-xref:master@epo-wgm::index.adoc[Click here to read the Working Group documents]
-****
 --
