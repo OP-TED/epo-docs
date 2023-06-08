@@ -4,7 +4,7 @@
 --
 
 [.tile]
-.ePO Working Group Meetings Cumulative Reports
+.ePO Working Group Meetings Cumulative Reports (by year)
 ****
 The cumulative annual reports are a collation of minutes from all the ePO related meetings in a year. Reports from the years 2019 to 2023 are currently available.
 
@@ -13,7 +13,7 @@ xref:cumulative.adoc[Click here to access the cumulative reports]
 ****
 
 [.tile]
-.ePO Reports from the Working Group General Meetings
+.ePO Reports from the Wider Working Group Quarterly Meetings
 ****
 These reports contain the minutes from the general meetings, and outline project progress, changes implements since the last meeting, and future development plans for the next period.
 
