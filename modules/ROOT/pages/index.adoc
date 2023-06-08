@@ -10,7 +10,7 @@ Planned Release Date: July 2023
 
 Details on the next release of the eProcurement Ontology V4.0.0 RC 1, scheduled for July 2023, can be accessed via the link below:
 
-xref:release-notes.adoc[Click here to read the version 4.0.0 RC 1 details]
+xref:index_epo_4.0.0_rc_1.adoc[Click here to read the version 4.0.0 RC 1 details]
 
 ****
 
