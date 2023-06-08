@@ -14,13 +14,7 @@ xref:release-notes.adoc[Click here to read the version 4.0.0 RC 1 details]
 
 ****
 
-[.tile]
-.Longer Term Planned Releases
-****
-In the longer term, V4.0.0 is planned for release in September 2023. The list of planned features, updates and fixes of this release as well as subsequent releases, including proposed dates, can be found here. This list is updated regularly.
 
-xref:longer_term.adoc[Future Releases]
-****
 
 
 [.tile]
