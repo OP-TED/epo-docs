@@ -3,7 +3,7 @@
 :toc:
 :toclevels: 4
 :toc-title: Contents
-//:attachmentsdir: attachments
+
 
 == Ontology - a General Definition
 In a general sense, an ontology defines what is or exists, such as
