@@ -3,6 +3,7 @@
 :toc:
 :toclevels: 4
 :toc-title: Contents
+:attachmentsdir: attachments
 
 == Ontology - a General Definition
 In a general sense, an ontology defines what is or exists, such as
@@ -156,13 +157,13 @@ This change management process has the following characteristics:
 * *Openness*: In order for public administrations to rely on specifications of structural metadata developed by the ISA Programme, the openness of the change management is a key – openness is also a key assessment criterion in the Common Assessment Method of Standards and Specifications. Openness means that requests for changes can be submitted by any stakeholder and that the analysis and decisions taken are logged in a transparent manner. An open change management process improves the quality of the specification.
 * Controlled change: Public administrations that use structural metadata or implement specifications of structural metadata developed by the ISA Programme must not be negatively impacted by unexpected changes to these specifications. A release schedule must be established, allowing changes to take place in a stepwise and traceable manner. New releases should also be versioned consistently.
 
-The Change Management process is based on generic change and release management processes in ITILv3 and the generic xref:{attachmentsdir}/Methodology-and-tools-for-Structural-Metadata-Management-and-Governance-for-EU-Institutions-and-Member-States_v1.00.pdf[Methodology and tools for Structural Metadata Management and Governance]
+The Change Management process is based on generic change and release management processes in ITILv3 and the generic xref:{attachmentsdir}Methodology-and-tools-for-Structural-Metadata-Management-and-Governance-for-EU-Institutions-and-Member-States_v1.00.pdf[Methodology and tools for Structural Metadata Management and Governance]
 
 == Source Management:
 
 Best practices, i.e., the use of a version-controlled repository (GitHub) and tool (Git), are employed for the development of the ontology. A master/ main branch is used as the source from which code is published.  To make changes to the model, development is done on temporary branches using tags. After validation, the new branch is merged with the main/ master.
 
-image:Bus3.png[]
+image:bus3.png[]
 
 #Figure 3. Source management methodology#
 
@@ -176,7 +177,7 @@ Additional rules the Ontology development is based on:
 eForms coverage
 * One goal for ePO is that all eForms business terms (BT) are found somehow, somewhere in the ontology. This means that BTs become attributes of a class or relations (predicates).
 
-image:Bus4.png[]
+image:bus4.png[]
 
 Figure 4. eForms coverage
 
@@ -197,7 +198,7 @@ Changes in the ontology cannot be done in isolation from the applications that a
 == The hierarchical nature of the model
 Having an upper level of definition is important and helpful. The example below shows how an agent is the higher or abstract level and person is a lower, and more concrete, level.
 
-image:Bus5.png[]
+image:bus5.png[]
 
 Figure 5. Upper-level organisation of ePO
 
@@ -205,7 +206,7 @@ Figure 5. Upper-level organisation of ePO
 
 The development of the eProcurement ontology is oriented by a principle based perspective. One example of a principle is that once something is created / instantiated it is not possible to modify it to something else completely different. (e.g. an organisation should be created only once and it is not repeated in a different way on the model).
 
-image:Bus6.png[]
+image:bus6.png[]
 #Figure 6. Principles for ePO development#
 
 == Technical Aspects
@@ -218,14 +219,14 @@ The UML model follows a set of conventions so that it can be transformed automat
 === Model refactoring
 The new version adopts a package-based grouping of concepts. Also, there are more diagrams introduced than at the beginning of the ePO development. This makes it easier to avoid getting distracted by neighbouring concepts.
 
-image:Bus7.png[]
+image:bus7.png[]
 
 Figure 7. Package-based grouping of ePO concepts
 
 
 === The new structure of the ePO model provides hierarchy and relations diagrams.
 
-image:Bus8.png[]
+image:bus8.png[]
 
 Figure 8. Hierarchy diagram (focus on the abstraction)
 
