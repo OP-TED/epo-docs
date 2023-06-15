@@ -1,0 +1,14 @@
+= Past Releases
+
+mid-2017 ePO version 1.00
+
+ePO version 2.0.0, was initiated in January 2018.
+
+Version 3.0.0 was released in August 2022, with the current and latest 3.x version being 3.1.0.
+
+* xref:1.0.0@EPO::index.adoc[Version 1.0.0], released 2017
+* xref:2.0.0@EPO::index.adoc[Version 2.0.0], released 2018
+* xref:2.0.1@EPO::index.adoc[Version 2.0.1], released 2018
+* xref:3.0.1@EPO::index.adoc[Version 3.0.1], released 2022
+
+Click on the links above to access a past version.
