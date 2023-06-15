@@ -1,0 +1,726 @@
+= Description of a change management release and publication process for structural metadata specifications developed by the ISA Programme
+:sectnums:
+:toc:
+:toclevels: 4
+:toc-title: Contents
+
+--
+The views expressed in this report are purely those of the authors and may not, in any circumstances, be interpreted as stating an official position of the European Commission.
+The European Commission does not guarantee the accuracy of the information included in this study, nor does it accept any responsibility for any use thereof.
+Reference herein to any specific products, specifications, process, or service by trade name, trademark, manufacturer, or otherwise, does not necessarily constitute or imply its endorsement, recommendation, or favouring by the European Commission.
+All care has been taken by the author to ensure that s/he has obtained, where necessary, permission to use any parts of manuscripts including illustrations, maps, and graphs, on which intellectual property rights already exist from the titular holder(s) of such rights or from her/his or their legal representative.
+Description of a change management release and publication process for structural metadata specifications developed by the ISA Programme
+--
+== INTRODUCTION
+=== Objective
+This document formalises how changes to the specifications of structural metadata developed by the ISA Programme are managed and how new releases are published.
+
+According to the definitions followed by the ISA Programme, structural metadata includes data models (e.g. the DCAT application profile for data portals in Europe) and
+reference data (e.g. the ADMS Controlled Vocabularies).
+
+The proposed change management process has the following characteristics:
+
+. Openness: In order for public administrations to rely on specifications of structural metadata developed by the ISA Programme, the openness of the change management is a key – openness is also a key assessment criterion in the Common Assessment Method of Standards and Specifications. Openness means that requests for changes can be submitted by any stakeholder and that the analysis and decisions taken are logged in a transparent manner. An open change management process improves the quality of the specification.
+. Controlled change: Public administrations that use structural metadata or implement specifications of structural metadata developed by the ISA
+Programme must not be negatively impacted by unexpected changes to these
+specifications. A release schedule must be established, allowing changes to take place in a stepwise and traceable manner. New releases should also be versioned consistently.
+
+The Change Management process is based on generic change and release management processes in ITILv3 [2] and the generic “Process and methodology for Metadata Governance and Management” [3].
+
+=== Scope
+The following interoperability solutions developed by the ISA Programme will be
+managed according to this process:
+
+* The Core Vocabularies;
+* The DCAT Application Profile for Datasets in Europe;
+* The ADMS Application Profile; and
+* Any other data specification developed in the future by the ISA Programme.
+
+It is the intention that the processes described in this document will stay aligned with the processes specified for the Common Assessment Method for Standards and Specifications (CAMSS). Experiences with the ISA process may be submitted as feedback to CAMSS.
+
+=== Structure of this document
+The remainder of this report is organised as follows:
+
+In section 2, the governance structure and mechanism, which are proposed for the management of the specifications of structural metadata, are outlined.
+
+Section 3 describes the types of changes, proposes release cycles for these types of changes, and outlines the process phases.
+
+Section 4 describes the processes for managing change requests, for preparing releases of the specifications and for the publication of releases.
+
+Section 5 covers some of the deployment aspects that are related to changing specifications of structural metadata.
+
+Finally, a list of works cited is included at the end of the document.
+
+== GOVERNANCE MECHANISM
+The governance mechanism has the objective to implement the open process to achieve the controlled change of specifications developed by the ISA Programme.
+
+The intended result is that the needs and requirements of the public administrations that are the main stakeholders are being satisfied. These stakeholders are organisations that rely on the specifications of the structural metadata, for example when they manage or implement systems or applications that use or incorporate data that is based on those specifications. As the operation of their systems and applications, and, in particular, the exchange of information with other
+organisations is dependent on those specifications, those stakeholders need to play an important role in the change management process.
+
+=== Governance structure
+Preceding work under ISA Action 1.1 analysed requirements and criteria for metadata management and governance [3]. Based on that earlier work, the following governance structure is proposed:
+
+==== Steering Committee – ISA Coordination Group.
+
+Composed of representatives of the Member States, the Steering Committee:
+
+* Ensures continuity and consistency on the basis of the general directions set by the European Commission in the rolling ISA Work Programme
+* Is informed about activities and progress in their regular meetings; and
+* Endorses the new release of ISA specifications.
+
+==== Governance Committee – ISA Programme Management.
+
+The ISA Programme Management Team is the maintenance organisation for the ISA specifications. In the context of that role, the Team:
+
+* Organises the activities for maintenance of the ISA specifications, safeguards the proper execution of the maintenance process, reports to the Steering Committee and funds the Operational Team;
+* Identifies the need for a revision of an ISA specification, based on change requests received from stakeholders and initial analysis of the change requests by the Operational Team;
+* Instructs the Operational Team to apply editorial changes and minor semantic changes to ISA specifications;
+* Establishes Working Groups composed of stakeholders and invited experts to discuss and resolve requests for major semantic changes to ISA
+specifications;
+* Prepares new releases of ISA specifications for endorsement by the Steering Committee.
+
+==== Operational Team – contractors.
+
+This is composed of a single team that carries out the day-to-day work. In the case of ISA specifications, the Operational Team usually consists of contractors, under the guidance and responsibility of the Governance Committee. The Operational Team:
+
+* Gathers change requests from stakeholders;
+* Advises the Governance Committee on the nature of changes, e.g. whether the change is clear and relevant for the specification at hand, and whether it is an editorial change, or a minor or major semantic change (see section 3.1);
+* Provides the editor for Working Groups;
+* Documents the resolution of change requests in a new release of the specification, either by applying an editorial change, a minor semantic change or by incorporating changes agreed in a Working Group.
+
+==== Working Groups – stakeholders and invited experts.
+
+When change requests are received that require major semantic changes in an ISA specification, the Governance Committee establishes a Working Group consisting of stakeholders (organisations that are either implementing or planning to implement the specification concerned) and invited experts (individuals who bring necessary expertise and possibly connections with a wider community).
+
+Participants in Working Groups are not funded by the ISA Programme. A Working Group has a chair person from one of the stakeholder organisations, and an editor provided by the Operational Team, while a representative of the Governance Committee attends Working Group meetings and conference calls as observer.
+
+=== Public review
+
+Before a new release is finalised, the proposed release is submitted for public review with a minimum period of four weeks, unless the changes are only editorial in nature.
+
+The public review is announced on Joinup and through other relevant channels, e.g. mailing lists of related initiatives. A public comment facility is made available on Joinup.
+
+Comments are resolved either by the Operational Team in case of minor semantic changes, or by the Working Group for semantic changes.
+
+=== Public announcement
+The governance mechanism requires that all potential stakeholders are informed about the possibilities to participate, e.g. as contributors or reviewers, and about the processes that govern the management of the structural metadata. To that end, announcements of the start of a release cycle (see section 3.2) are posted on Joinup.
+
+=== Transparency
+Information about all process events, including change requests, Working Group meeting reports and resolutions will be made public on a suitable location on the Joinup platform.
+
+=== Decision mechanism
+For editorial changes and minor semantic changes, the Governance Committee takes a decision based on a proposal from the Operational Team.
+
+For changes that are processed by a Working Group, the decision process is based on three pillars:
+
+* *Consensus*: Decisions in the Working Group are taken by consensus; the Working Group chairs make sure that consensus is reached among stakeholders. Consensus is reported to the Governance Committee. The Governance Committee is also informed if consensus cannot be reached; in such case, the Governance Committee takes a decision, taking into account the overall strategy and objectives of the ISA Programme;
+* *Appeal*: In the specific case when a stakeholder considers that the process has not been followed properly, or that the stakeholder’s opinions have not been taken into account properly, the stakeholder has the possibility to lodge a formal appeal to the Governance Committee. The Governance Committee takes a decision on the appeal, taking into account the overall strategy and objectives of the ISA Programme;
+* *Endorsement*: Revised specifications are endorsed by the Steering Committee on proposal from the Governance Committee.
+
+=== Persistent identification
+Joinup will be the authoritative source for specifications released by the ISA Programme. A mechanism of Persistent identifiers (HTTP URIs) is set up to guarantee persistence. The Persistent Identifier mechanism provides a way to uniquely, unambiguously and persistently identify the classes and properties in a specification by creating an RDF namespace that is maintained on behalf of the ISA programme. In specific cases,
+namespace maintenance can be assigned to an external organisation such as an (international) standards body.
+
+== TYPES OF CHANGES, RELEASE CYCLES AND PROCESS PHASES
+=== Types of changes
+There are three types of changes that are considered in the change management process:
+
+* *Editorial changes and bug fixes*
+
+An editorial change or bug fix is a correction of an error in a specification, or an additional clarification of an aspect that may not have been well specified. No effect on existing applications is expected.
+
+* *Minor semantic changes*
+
+A minor semantic change may be the addition of a property, the relaxation of the obligation for a particular property or the relaxation of a cardinality. Implementation of minor releases may exist concurrently without a major effect on interoperability.
+
+* *Major semantic changes*
+
+A major semantic change occurs when fundamental aspects of a specification are affected. For example, if a change is made to the overall data model. Such changes typically affect all existing applications and therefore need a specific roll-out plan to ensure and well-defined and well-managed deployment phase.
+
+These three types of changes are handled in different ways as described below.
+
+=== Release cycles
+The three types of changes are processed in three different release cycles, starting with the processing of request and ending with the publication of a revised specification.
+
+Requests can be submitted by stakeholders and the wider community continuously through a request submission facility on Joinup. As soon as requests are received, they are classified by the Operational Team as one of the three types of changes.
+
+The following timetable is established:
+
+* *Editorial changes and bug fixes*
+
+Once per year, the submitted requests for this type of change are collected and processed as described in section 4.2.1. The resulting release is numbered *X.Y.(Z+1)*, e.g. 1.0.1, 1.0.2 etc.
+
+* *Minor semantic changes*
+
+Once per year, the submitted requests for this type of change are collected and processed as described in section 4.2.2. At this time, also editorial changes and bug fixes are processed.
+The resulting release is numbered *X.(Y+1).0*, e.g. 1.1.0, 1.2.0 etc.
+
+* *Major semantic changes*
+Every second year, the submitted requests for this type of change are collected and processed as described in section 4.2.3. At this time, also editorial changes and bug fixes as well as minor semantic changes are processed.
+
+The resulting release is numbered (X+1).0.0, e.g. 2.0.0, 3.0.0 etc. If at the scheduled time for a particular release, no requests of that type have been submitted, a release of a lower category can still be taken into account. If, for example, in two years no major or minor semantic change requests have been received, there may still be a release with editorial changes and bug fixes with release number *X.Y.(Z+1)*. If, in the period leading up to the planned date for a particular type of change, no changes for that or any of the lower categories have been received, no new release will be created.
+
+At the start of every release cycle, an announcement is made on Joinup.
+
+=== Process phases
+
+In this section, a brief overview of the process phases is given. The phases are further elaborated in section 4.
+
+==== Request handling
+This phase starts with the receipt of a request for change (RFC) from a stakeholder. The request is evaluated by the Operational Team (OT). Based on the analysis by the OT, the Governance Committee (GC) decides on the further process.
+
+If the request is rejected because it is not clear or not relevant for the specification at hand, the GC informs the submitter of the rejection with a justification.
+
+If the request is accepted, the GC will schedule the request for inclusion in a new release. As soon as a new release needs to be prepared according to the time plan outlined in section 3.2, the process continues with the Request resolution phase.
+
+The GC informs the Steering Committee (SC) of the start of the release process.
+
+==== Request resolution
+In this phase, there are three options: one for editorial changes and bug fixes, one for minor semantic changes and one for major semantic changes.
+
+*Editorial changes and bug fixes*. For such a change, the GC instructs the OT to apply the change to the specification. The process continues with the Release preparation phase.
+
+*Minor semantic changes*. For a minor semantic change, the GC instructs the OT to apply the change, and then publishes a draft of the new specification for public review. The OT resolves any comments and finalises the new specification. The process continues with the Release preparation phase.
+
+*Major semantic changes*. For major semantic changes, the GC establishes a Working Group (WG). The WG elaborates one or more drafts of the revised specification and discusses these drafts until consensus is reached. It then submits the draft to the GC who publishes the draft for public review. The WG resolves any comments and finalises the new specification. The process continues with the Release preparation phase.
+
+==== Release preparation
+The GC instructs the OT to prepare the specification and any additional documentation. The GC notifies the Steering Committee (SC) that the new release is ready for publication and requests endorsement by the SC.
+
+==== Release endorsement
+The SC discusses the new release and endorses its publication.
+
+==== Release publication
+Following endorsement by the SC, the GC publishes the new release and notifies the stakeholders and the wider public of its availability.
+
+
+== CHANGE MANAGEMENT PROCESSES
+The process of managing specifications of structural metadata includes the processes for managing changes in the specification, managing the preparation of releases of the specification, and managing the process of publication of a release of the specification.
+
+The three following sections provide an outline of those processes, including the goal of the process, the precondition, the actors, the workflow, the frequency and the triggers.
+
+=== Request handling
+This section describes the handling of change request depicted in the figure below.
+image:change1.png[]
+
+Figure 1: Request handling
+
+The flow consists of the following steps, executed by their corresponding actor:
+
+.: Steps of request handling process
+[cols="1,6,4"]
+|===
+|Step|Description|Actor
+|1
+|Receive request
+|Governance Committee
+
+|2
+|Initial evaluation
+|Operational Team
+
+|3
+|Accept/Reject request
+|Governance Committee
+
+|4
+|Schedule resolution
+|Governance Committee
+
+|5
+|Inform Steering Committee
+|Governance Committee
+|===
+
+*Precondition*: the specification of the structural metadata exists and is published.
+
+*Trigger*:
+
+* Stakeholder submission of change request;
+* Error report;
+* Release of a new version of a related specification.
+
+*Goal*: to ensure that change requests are processed in an open yet controlled fashion.
+
+*Primary Actors*:
+
+* *Stakeholders*: submit Request for Change (RFC)
+* *Governance Committee*: takes decision on further processing of RFCs.
+* *Operational Team*: performs an initial evaluation of the RFC.
+
+*Workflow*:
+
+* In step 1, *receive request*, the Governance Committee acknowledges receipt of a request submitted by a stakeholder or group of stakeholders, assigns a reference identifier to it and refers the request for the Operational Team for initial evaluation.
+
+•	In step 2, *initial evaluation*, the Operational Team performs an eligibility check, verifying that the RFC is indeed related to the specification it references, that it conform to the data modelling underlying the specification, that it does not conflict with or duplicates elements that are already in the specification, and that it describes clearly what the requirement is and which change is requested. If the RFC is deemed valid, the Operational Team determines the type of change requested: editorial, minor semantic or major semantic. The Operational Team notifies the Governance Committee of the result of the initial evaluation, recommending acceptance or rejection of the request and specifying the type of request.
+
+•	In step 3, *accept/reject request*, the Governance Committee verifies that the Operational Team has properly executed the initial evaluation and in case the request is rejected, notifies the submitter with a justification why the request was rejected.
+
+•	In step 4, *schedule resolution*, the Governance Committee schedules the resolution of the request based on the type of request. For editorial changes, the Operational Team is instructed to make the necessary changes; for minor semantic changes, the Operational Team is instructed to prepare a draft resolution for public review; and for major semantic changes, the Governance Committee establishes a Working Group.
+
+•	In step 5, *inform Steering Committee*, the Governance Committee reports at regular intervals about RFCs that were rejected and about the start of a release cycle.
+
+
+
+=== Request resolution
+This section describes the resolution of requests. Diagrams are included in the subsections below.
+
+==== Editorial changes
+The following light-weight process is applied to editorial changes.
+
+image:change2.png[]
+
+Figure 2: Request resolution - editorial changes
+
+
+.: Steps of request resolution process for editorial changes
+[cols="1,6,4"]
+|===
+|Step|Description|Actor
+|1
+|Hand over request to Operational Team
+|Governance Committee
+
+|2
+|Apply necessary changes
+|Operational Team
+|===
+
+*Trigger*: RFCs that specify an editorial issue have been submitted, accepted and scheduled for release.
+
+*Goal*: to ensure that small editorial changes are made with minimum delay.
+
+*Primary Actors*:
+
+* *Governance Committee*: hands over the resolution of the RFCs to the Operational Team.
+* *Operational Team*: makes changes to the specification.
+
+*Workflow*:
+
+* In step 1, *hand over request*, the Governance Committee instructs the
+Operational Team to make the necessary changes.
+* In step 2, *apply necessary changes*, the Operational Team incorporates the editorial change to the existing specification and submits the revised version to the Governance Committee.
+
+==== Minor semantic changes
+The following process is applied to minor semantic changes. A minor semantic change may be the addition of a property, the relaxation of the obligation for a particular property or the relaxation of a cardinality.
+
+image:change3.png[]
+
+Figure 3: Request resolution - minor semantic changes
+
+.: Steps of request resolution process for minor semantic changes
+[cols="1,6,4"]
+|===
+|Step|Description|Actor
+|1
+|Hand over request to Operational Team
+|Governance Committee
+
+|2
+|Apply necessary changes
+|Operational Team
+
+|3
+|Publish proposed revision for public review
+|Governance Committee
+
+|4
+|Resolve public comments
+|Operational Team
+|===
+
+*Trigger*: RFCs that specify a minor semantic change have been submitted, accepted and scheduled for release.
+
+*Goal*: to ensure that minor semantic changes are made with minimum delay but with opportunity for the wider community to comment on a new proposed release.
+
+*Primary Actors*:
+
+* *Governance Committee*: hands over the resolution of the RFCs to the
+Operational Team and publishes the draft revision for public review.
+* *Operational Team*: makes changes to the specification and prepares a draft for public review and resolves any public comments.
+* *Stakeholders and other members of the public*: comment on the proposed
+revision in the public review period.
+
+*Workflow*:
+
+* In step 1, *hand over request*, the Governance Committee instructs the
+Operational Team to prepare a draft revision.
+
+* In step 2, *apply necessary changes*, the Operational Team drafts a revised specification for public review.
+
+* In step 3, *publish proposed revision for public review*, the Governance
+Committee makes the draft available for public review.
+
+*In step 4, *resolve public comments*, the Operational Team resolves any
+comments received, and submits the revised version to the Governance
+Committee.
+
+NOTE: In case the public review comments require a substantial change in the revision, steps 3 and 4 can be repeated.
+
+==== Major semantic changes
+
+The following process is applied to major semantic changes. A major change occurs when fundamental aspects of the specification are  affected. For example, if a change is made to the overall data model.
+
+Figure 4: Request resolution - major semantic changes
+
+image:change4.png[]
+
+.: Steps of request resolution process for major semantic changes
+
+[cols="1,6,4"]
+|===
+|Step|Description|Actor
+|1
+|Establish Working Group
+|Governance Committee
+
+|2
+|Elaborate drafts and discuss in scheduled meetings and
+calls
+|Working Group
+
+|3
+|Publish proposed revision for public review
+|Working Group
+
+|4
+|Publish draft for public review
+|Governance Committee
+
+|5
+|Resolve public comments
+|Working Group
+
+|===
+
+*Trigger*: RFCs that specify major semantic changes have been submitted, accepted and scheduled for release.
+
+*Goal*: to ensure that major semantic changes are made with appropriate involvement from stakeholders and with opportunity for the wider community to comment on a new proposed release.
+
+*Primary Actors*:
+
+* *Governance Committee*: establishes a Working Group and publishes draft for public review.
+
+* *Stakeholders and invited experts*: form the membership of the Working
+Group.
+
+* *Operational Team*: provides the editor in the Working Group.
+
+*Workflow*:
+
+* In step 1, *establish working group*, the Governance Committee sets up a
+Working Group according to the methodology defined in the Process and
+Methodology for Core Vocabularies of the ISA Programme [4]. Members of the
+Working Group are recruited from the stakeholders with invited experts. A
+Working Group has a chair person from one of the stakeholders and an editor appointed from the Operational Team. The Governance Committee participates in the Working Group as observer.
+
+* In step 2, *elaborate drafts*, the Working Group creates and discusses a number of drafts until consensus is reached.
+
+* In step 3, *finalise draft*, the Working Group issues a draft based on consensus reached that is sufficiently mature to be published for public review.
+
+* In step 4, *publish proposed revision for public review*, the Governance
+Committee makes the draft available for public review.
+
+* In step 5, *resolve public comments*, the Working Group resolves any
+comments received, and submits the revised version to the Governance
+Committee.
+
+NOTE: In case the public review comments require a substantial change in the revision, steps 4 and 5 can be repeated.
+
+=== Release preparation
+This section describes the release preparation process depicted in the figure below.
+
+Figure 5: Release preparation
+
+image:change6.png[]
+
+.: Steps of release preparation process
+
+[cols="1,6,4"]
+|===
+|Step|Description|Actor
+|1
+|Check submitted revision for compliance with strategic objectives and policies
+|Governance Committee
+
+|2
+|Accept/rejects revision
+|Governance Committee
+
+|3
+|Hand over final version to Operational Team
+|Governance Committee
+
+|4
+|Prepare release
+|Operational Team
+
+|5
+|Notify Steering Committee requesting endorsement
+|Governance Committee
+
+|===
+
+*Trigger*: revised specification is available for release.
+
+*Goal*: to ensure that all relevant documents and supporting information are finalised in order for the Steering Committee to be able to endorse release.
+
+*Primary Actors*:
+
+* *Governance Committee*: checks the proposed revision against strategic
+objectives and policies, accepts or rejects the revision and submits the final specification to the Steering Committee for endorsement.
+
+* *Operational Team*: prepares all documents and supporting information, ready for endorsement and publication.
+
+*Workflow*:
+
+* In step 1, *check submitted revision*, verifies that the proposed revision meets the strategic objectives and policies of the ISA Programme.
+* In step 2, *accept/reject revision*, the Governance Committee decides to
+accept or reject the revision. Rejection will only happen in exceptional cases and will be accompanied by a thorough public justification.
+* In step 3, *hand over final version*, the Governance Committee instructs the Operational Team to prepare all documentation necessary for the release of the revision.
+* In step 4, *prepare release*, the Operational Team prepares all documentation necessary for endorsement and publication.
+* In step 5, *notify Steering Committee*, the Governance Committee submits the release documentation to the Steering Committee with a request to endorse the new release.
+
+=== Release endorsement
+This section describes the release endorsement process depicted in the next figure.
+
+image:change6.png[]
+
+Figure 6: Release endorsement
+
+.: Steps of release endorsement process
+[cols="1,6,4"]
+|===
+|Step|Description|Actor
+|1
+|Present new release
+|Governance Committee
+
+|2
+|Accept/reject release
+|Steering Committee
+
+|===
+
+*Trigger*: new release submitted to the Steering Committee.
+
+*Goal*: to get endorsement on the new release.
+
+*Primary Actors*:
+* *Governance Committee*: presents the new release to the Steering Committee.
+* *Steering Committee*: decides on endorsement of the new release.
+
+*Workflow*:
+
+* In step 1, *present new release*, the Governance Committee introduces the new release at a meeting of the Steering Committee.
+* In step 2, *accept/reject release*, following its own operational principles related to decision-making, the Steering Committee decides on endorsement, verifying that due process is followed and that the release respects the strategic directions of the ISA work programme.
+
+=== Release publication
+
+This section describes the publication process depicted in the figure below.
+
+image:change7.png[]
+Figure 7: Release publication
+The flow consists of the following steps, executed by their corresponding actor:
+
+.: Steps of publication flow
+[cols="1,6,4"]
+|===
+|Step|Description|Actor
+|1
+|Publish release
+|Operational Team
+
+|2
+|Notify stakeholders and wider community of new
+release
+|Governance Committee
+
+|===
+
+*Trigger*: endorsement of the new release
+
+*Goal*: to make sure that the new specifications are documented and published properly.
+
+*Primary Actors*
+
+* Operational Team: *moves the release to the publication environment*.
+* Governance Committee: *notifies stakeholders of the new release of the
+specifications*.
+
+*Secondary Actors*
+
+* Stakeholders and wider community: are *notified of the release, the roll-out plan and the new specifications*.
+
+*Workflow*:
+
+* In step 1, *publish release*, the Operational Team makes the release and additional documentation available for access by the stakeholders and the wider community.
+* In step 2, *notify stakeholders*, the Governance Committee issues a message to the stakeholders and to the wider community with the link to the new release of the specification and the additional documentation.
+
+== DEPLOYMENT
+Although the scope of this document is on the management of specifications of structural metadata and in particular for the management of specifications of Core Vocabularies and Application Profiles, some consideration is given in this section on the approach to the incorporation of the changes applied to these specification in
+applications and systems that rely on these specifications to interoperate.
+
+There are two main cases to consider:
+
+. Changes that are not backward compatible, such as adding new mandatory
+elements or mandatory use of a specific vocabulary; and
+. Changes that are backward compatible, such as adding optional elements or relaxing cardinalities or obligations.
+
+In case changes are not backward compatible and cannot work with the software that was based on the previous version of the data model or schema, the propagation of these changes needs to be accompanied by a software upgrade process. Especially in cases were multiple software vendors are involved, such upgrades need to be carefully planned and executed with ample time for testing and verification.
+
+For changes that are backward compatible, the process does not rely on all systems in the operational environment installing the changes at the same time. Existing systems can continue to operate unchanged, but before they upgrade they will not be able to access functionality that is provided by the new model elements. This means that in the environment of interconnected systems the availability of the new functionality will become available gradually over a certain period of time.
+
+To maintain interoperability, two conditions need to be met:
+
+* Systems that still operate with the old version of the model need to be able to ignore the additional elements in the new version of the schema; and
+* Systems that have already upgraded to the new version need to be able to process data using both versions of the schema.
+
+Even in the case of backward compatibility, it is recommended to organise the upgrade across the network as a well-planned and well-communicated project so that all communication partners are aware of the status of the propagation of the new functionality across the network at all times during the transition period.
+
+A common way of supporting the deployment of changes to system components is the distinction between alpha, beta and stable releases.
+
+* Alpha: Ready for testing the new release of the structural metadata by a small group.
+* Beta: Ready for review by the community. A review could be performed via a public consultation, but this is optional.
+* Stable: Tested and positively reviewed by the stakeholders.
+
+== WORKS CITED
+. IDABC Programme, “CAMSS Assessment Criteria,” 4 June 2012. [Online].
+Available: https://joinup.ec.europa.eu/community/camss/og_page/camss-wiki.
+[Accessed 27 November 2014].
+. The Stationary Office (TSO), “The Official Introduction to the ITIL Service Lifecycle,” 2007.
+. European Commission, ISA Programme, “D4.2 Methodology and tools for
+Metadata Governance and Management for EU institutions and Member States,” 2014. [Online].
+. European Commission, ISA Programme, “Process and Methodology for Core
+Vocabularies,” 2011. [Online]. Available:
+https://joinup.ec.europa.eu/node/43160.
+. Publications Office, “Proposal for metadata governance on interinstitutional level,”2011. [Online]. Available: http://publications.europa.eu/mdr/resource/coremetadata/IMMC_reu3_adoption_anx3.pdf_A-2011-764293.pdf.
+
+== ANNEX: EXPERIENCES FROM THE APPLICATION OF THE CHANGE MANAGEMENT
+PROCESS IN THE CASE OF THE DCAT-AP REVISION
+
+*Context*
+
+The change management process specified in this report was applied in the context of the revision of the DCAT-AP5, which ran between January and October 2015.
+
+*Activities performed*
+The following activities have been performed by each of the governance roles for the revision process of the DCAT-AP:
+
+.: Activities performed for the revision of DCAT-AP
+
+[cols="1,3,2"]
+|===
+|Governance level|Activities| Who
+
+|Steering Committee (SC)
+a|* Stayed informed about progress
+* Endorsed new release (pending)
+|ISA Coordination Group, PSI Expert Group (DG CNECT)
+
+|Governance Committee (GC)
+a|* Organised and safeguarded the proper execution of maintenance activities
+* Contributed to the establishment of the Working Group
+|ISA Programme Management Team
+
+|Operational Team (OT)
+a|* Gathered change requests
+* Advised Governance Committee on nature of changes
+* Provided the editor for the Working Group
+* Documented the resolution of change requests
+* Animated the Working Group and the mailing list
+* Prepared intermediate drafts that were discussed in the meetings of the Working Group
+* Organised and prepared the meetings of the Working Group
+* Ensure alignment with the GeoDCAT-AP Working Group
+* Prepared final release for Steering Committee endorsement (pending)
+|Contractor of ISA action 1.1.
+- Chair: Norbert Hohn, Willem Van
+Gemert (Publications Office of
+the EU)
+- Editor: Makx Dekkers
+
+|Working Group (WG)
+a| Brought expertise
+ Raised issues
+ Proposed requests for change,
+ Proposed resolutions
+ Contributed feedback
+ Reached consensus
+|- Organisations implementing the
+specification
+- Individual experts
+|===
+
+*Effort estimation*
+
+The estimation of effort spent for the revision of the DCAT-AP is based on two dimensions:
+
+* The effort spent by the contractor of ISA Action 1.1. This adds up to a total of 43 person-days
+* In addition to that, we estimate below the effort spent by:
+
+* The members of the Governance Committee
+* The Chairs of the Working Group
+* The member of the Working Group
+
+In total 107 issues were created, from which 6 were created by members of the WG. Also, 403 comments were submitted, from which 131 were submitted by the members of the WG, 11 from the Chairs of the WG, and the rest from the editor of the WG.
+
+The total number of mails that were exchanged via the mailing list6 of the WG is 221. 112 of these mails were written by members of the WG, 12 of them by the Chairs of the WG and the rest from the editor of the WG.
+
+The estimation of effort spent by the members of the Governance Committee, the Chairs and the members of the Working Group (excluding the time spent by the editor) is analysed in the table below and adds up to a total of 141 person-days (approximation).
+
+
+[cols="1,1,1,2"]
+|===
+|Role |Attending meetings|Reviewing drafts|Participating in discussions, reading emails, sharing feedback
+
+|Governance Committee
+|5 meetings * 2 people in average per meeting * 120 min. _Total of 1200 min_
+|*Interim drafts
+
+Public review draft*
+|2 people in average (AK, VP) * 200 emails received * 3 min to read an email.
+_Total of 1200 min_
+
+|Operational team (OT)
+*_not including effort spent by the contractor_
+|5 meetings * 4 people in average per meeting from the OP* 120 min.
+_Total of 2400 min_
+|*Interim drafts
+
+Public review draft*
+|4 people in average * 200 emails received * 3 min to read an email.
+_Total of 2400 min_
+
+12 emails * 30 min to write an
+email.
+_Total of 360 min_
+
+11 comments * 15 min to write a comment on an issue.
+_Total of 165 min_
+
+|Working Group (WG)
+|5 meetings * 11 people in average per meeting * 120 min.
+_Total of 660 min_
+|*Interim drafts
+
+Public review draft*
+|90 people * 200 emails received * 3 min to read an email.
+_Total of 54000 min_
+
+112 emails * 30 min to write an email.
+_Total of 3360 min_
+
+6 issues * 30 min to form and post an issue on Joinup.
+_Total of 180 min_
+
+
+131 comments * 15 min to write a comment on an issue.
+_Total of 1965 min_
+|===
+
+*Lessons learned*
+
+* The most active stakeholder is the operational team. The participation/involvement of the Steering Committee was less than initially foreseen.
+* The 80-20 rule applies for the resolution of change requests, i.e. approximately 80% of the time was spent for resolving the 20% most critical change requests. Minor issues were closed without much debate.
+* Using the same issue tracker both for the revision of the DCAT-AP and GeoDCAT-AP led to difficulties in organising and filtering relevant issues. It is recommended that in the future the issue tracker is not shared between different specifications, even if they are related to each other.
+* Time assigned to meetings needs to reflect the amount and complexity of issues.
+* Non-controversial issues should not be on the agenda but those should be proposed for resolution off-line.

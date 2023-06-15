@@ -1,6 +1,6 @@
 
 * xref:references.adoc[Reference Documents]
-* xref:Business.adoc.adoc[Reference Documents]
+* xref:Business.adoc[Business Overview]
 * xref:methodology.adoc[Ontology Methodology]
 * xref:history.adoc[Version History]
 * xref:epo-wgm::index.adoc[Working Group Documents]
