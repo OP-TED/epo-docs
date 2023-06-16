@@ -13,4 +13,4 @@ link:{attachmentsdir}/d02.01_specification_of_the_process_and_methodology_v1.00.
 link:{attachmentsdir}/d02.02_project_charter_proposal_v1.00_0.pdf[Project charter proposal]
 
 //2016-09-20
-xref:{attachmentsdir}/Landscaping document.docx[Landscaping document]
+
