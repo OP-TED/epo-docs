@@ -1,2 +1,23 @@
-= eProcurement Ontology Documentation (new main)
+= eProcurement Ontology Documentation
 
+== Reference Documentation
+
+Overview for business users or those new to the content:
+
+* xref:business.adoc[Business Overview]
+
+Documents created during project initiation:
+
+* xref:references.adoc[Reference Documents]
+
+A description of the approach to Ontology Development:
+
+* xref:methodology.adoc[Ontology Methodology]
+
+Version History:
+
+* xref:history.adoc[Version History]
+
+Link to the Working Group Documents
+
+* xref:epo-wgm::index.adoc[Working Group Documents]
