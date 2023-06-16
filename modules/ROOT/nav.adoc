@@ -1,5 +1,6 @@
 * xref:release-notes.adoc[Version 3.1.0 Release Notes (detailed)]
-* xref:Report-v3.0.0.adoc[Version 3.1.0 Report]
+* xref:Overview_V3.1.0.adoc[Version 3.1.0 Overview]
+* xref:new_main@EPO::business.adoc[Business Overview]
 * xref:new_main@EPO::references.adoc[Reference Documents]
 * xref:new_main@EPO::methodology.adoc[Ontology Methodology]
 * xref:new_main@EPO::history.adoc[Version History]
