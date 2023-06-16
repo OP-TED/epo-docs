@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dfec98d-9395-44f4-9ce8-589fc8c18e58" name="Default Changelist" comment="">
+    <list default="true" id="f6076a5c-a976-40b1-ae51-9af0f4cffdac" name="Default Changelist" comment="edit links">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/nav.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/nav.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/epo-guidelines.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/epo-guidelines.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts" beforeDir="false" afterPath="$PROJECT_DIR$/scripts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +34,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8dfec98d-9395-44f4-9ce8-589fc8c18e58" name="Default Changelist" comment="" />
+      <changelist id="f6076a5c-a976-40b1-ae51-9af0f4cffdac" name="Default Changelist" comment="edit links" />
       <created>1685951602029</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
