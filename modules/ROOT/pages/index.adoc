@@ -8,7 +8,7 @@ Overview for business users or those new to the content:
 
 Documents created during project initiation:
 
-* xref:references.adoc[Reference Documents]
+* xref:references.adoc[Project Initiation Reference Documents]
 
 A description of the approach to Ontology Development:
 
