@@ -14,4 +14,4 @@
 
 * xref:Report-v3.0.0.adoc[Report]
 
-* xref:dev@EPO::epo-guidelines.adoc[Guidelines]
+* xref:new_main@EPO::index.adoc[Reference Documents]
