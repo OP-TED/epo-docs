@@ -75,4 +75,4 @@
 ** link:https://eprocurementontology.github.io/Competency_questions/SPARQL_examples.html[SPARQL query examples]
 ** link:https://github.com/OP-TED/ePO/issues/new?template=new_competency_question.md&labels=new%20competency%20question&title=COMPETENCY+QUESTION+-[Add a new competency question]
 
-* xref:epo-guidelines.adoc[Guidelines]
+* xref:new_main@EPO::index.adoc[Reference Documents]
