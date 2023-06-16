@@ -156,7 +156,7 @@ This change management process has the following characteristics:
 * *Openness*: In order for public administrations to rely on specifications of structural metadata developed by the ISA Programme, the openness of the change management is a key – openness is also a key assessment criterion in the Common Assessment Method of Standards and Specifications. Openness means that requests for changes can be submitted by any stakeholder and that the analysis and decisions taken are logged in a transparent manner. An open change management process improves the quality of the specification.
 * Controlled change: Public administrations that use structural metadata or implement specifications of structural metadata developed by the ISA Programme must not be negatively impacted by unexpected changes to these specifications. A release schedule must be established, allowing changes to take place in a stepwise and traceable manner. New releases should also be versioned consistently.
 
-The Change Management process is based on generic change and release management processes in ITILv3 and the generic xref:new_main@EPO::Methodology-and-tools-for-Structural-Metadata-Management-and-Governance-for-EU-Institutions-and-Member-States_v1.00.pdf[Methodology and tools for Structural Metadata Management and Governance]
+The Change Management process is based on generic change and release management processes in ITILv3 and the generic xref:EPO@new_main::metgovman.adoc[Methodology and tools for Structural Metadata Management and Governance]
 
 == Source Management:
 
