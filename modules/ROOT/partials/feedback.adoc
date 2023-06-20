@@ -1,4 +1,4 @@
-//must be added to the footer of every page
+//must be added to the footer of every page, still to be finalised
 //'''
 //Any comments about the documentation?
 
