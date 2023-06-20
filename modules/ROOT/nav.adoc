@@ -1,3 +1,8 @@
+:doctitle: Navigation
+:doccode: epo-v3.1.0-prod-004
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 * xref:Overview_V3.1.0.adoc[Version 3.1.0 Overview]
 * xref:release-notes.adoc[Version 3.1.0 Release Notes (detailed)]
 * xref:new_main@EPO::business.adoc[Business Overview]

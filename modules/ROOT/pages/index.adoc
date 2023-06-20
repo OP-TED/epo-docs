@@ -1,4 +1,8 @@
-= eProcurement Ontology Documentation
+:doctitle: eProcurement Ontology Documentation
+:doccode: epo-v3.1.0-prod-001
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 
 [.tile-container]
 --
