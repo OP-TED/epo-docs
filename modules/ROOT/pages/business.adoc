@@ -1,6 +1,4 @@
-= eProcurement Ontology - an Overview for Business Users
-include::../partials/attributes.adoc[]
-:doctitle: business.adoc
+:doctitle: eProcurement Ontology - an Overview for Business Users
 :doccode: epo-main-prod-009
 :author: PWC adapted by NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
@@ -9,7 +7,7 @@ include::../partials/attributes.adoc[]
 :toc:
 :toclevels: 4
 :toc-title: Contents
-//:attachmentsdir: attachments
+
 
 == Ontology - a General Definition
 In a general sense, an ontology defines what is or exists, such as

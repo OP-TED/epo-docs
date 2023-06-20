@@ -1,16 +1,21 @@
-= Description of a change management release and publication process for structural metadata specifications developed by the ISA Programme
+:doctitle: Description of a change management release and publication process for structural metadata specifications developed by the ISA Programme
+:doccode: epo-main-prod-010
+:author: PWC adapted by NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 :sectnums:
 :toc:
 :toclevels: 4
 :toc-title: Contents
 
---
+====
 The views expressed in this report are purely those of the authors and may not, in any circumstances, be interpreted as stating an official position of the European Commission.
 The European Commission does not guarantee the accuracy of the information included in this study, nor does it accept any responsibility for any use thereof.
 Reference herein to any specific products, specifications, process, or service by trade name, trademark, manufacturer, or otherwise, does not necessarily constitute or imply its endorsement, recommendation, or favouring by the European Commission.
 All care has been taken by the author to ensure that s/he has obtained, where necessary, permission to use any parts of manuscripts including illustrations, maps, and graphs, on which intellectual property rights already exist from the titular holder(s) of such rights or from her/his or their legal representative.
 Description of a change management release and publication process for structural metadata specifications developed by the ISA Programme
---
+====
+
 == INTRODUCTION
 === Objective
 This document formalises how changes to the specifications of structural metadata developed by the ISA Programme are managed and how new releases are published.

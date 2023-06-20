@@ -1,6 +1,8 @@
-= Project Charter Proposal
-PWC EU Services
-Version 1.0
+:doctitle: Project Charter Proposal PWC EU Services Version 1.0
+:doccode: epo-main-prod-006
+:author: PWC adapted by NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 :sectnums:
 :toc:
 :toclevels: 4

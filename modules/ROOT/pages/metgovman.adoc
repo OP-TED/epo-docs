@@ -1,4 +1,8 @@
-= Methodology and tools for Metadata Governance and Management for EU Institutions and Member States
+:doctitle: Methodology and tools for Metadata Governance and Management for EU Institutions and Member States
+:doccode: epo-main-prod-011
+:author: PWC adapted by NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 :sectnums:
 :toc:
 :toclevels: 4

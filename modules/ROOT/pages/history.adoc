@@ -1,4 +1,8 @@
-= *History of the ePO Ontology Project and Archived Versions*
+:doctitle: History of the ePO Ontology Project and Archived Versions
+:doccode: epo-main-prod-005
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 
 == *eProcurement Ontology overview*
 Several initiatives around eProcurement in the EU had been launched prior to 2016, driven by the public sector, industry, and academia. Some had grown organically, while others were the result of standardisation work.
