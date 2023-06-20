@@ -1,5 +1,8 @@
-= History
-
+:doctitle: History
+:doccode: epo_wgm_prod_009
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 xref:notes/2022-03-22-wgm.adoc[Working Group meeting 2022-03-22]
 
 xref:notes/2022-03-15-wgm.adoc[Working Group meeting 2022-03-15]

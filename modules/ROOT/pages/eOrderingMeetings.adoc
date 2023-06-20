@@ -1,5 +1,8 @@
-= Cumulated content of eOrdering meetings
-
+:doctitle: Cumulated content of eOrdering meetings
+:doccode: epo_wgm_prod_005
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 
 
 

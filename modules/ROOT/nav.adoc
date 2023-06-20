@@ -1,4 +1,8 @@
-Working Group meetings
+:doctitle: Navigation
+:doccode: epo-wgm-prod-018
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023Working Group meetings
 
 xref:general.adoc[Wider Working Group Quarterly Meetings]
 
