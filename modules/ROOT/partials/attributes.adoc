@@ -1,3 +1,9 @@
+:doctitle:
+:doccode: repo_branch_status_docnumber
+// e.g. epo_v4.0.0_prod_123 (draft/ review/prod/archived)
+:author: author
+:authoremail: authoremail
+:docdate: docdate
 :this-version: 3.1.0
 :this-version-tag: v{this-version}
 :git-repo-url: https://github.com/OP-TED/ePO
