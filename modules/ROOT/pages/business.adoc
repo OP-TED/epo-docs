@@ -42,20 +42,18 @@ The provision of open-source software applications and development kits that can
 When starting to develop a software application, or wanting to extract data from a data set, knowing what data and metadata is, or must be, stored in it is essential. This is where an ontology comes into play, providing a “dictionary” of the data components, what kind of data they contain, and how they relate to each other.
 
 == Reasons for a formal ontology
-•	Ese of a common vocabulary: consistency in the definition of process and concept amongst stakeholders (such as users/ technical implementors/ subject-matter experts).
-•	Standardisation of vocabulary
-•	Adoption of an ontology standard: in this case, the opensource Web Ontology Language (OWL).
-•	Consistency in the definition of process and concepts in technologies used.
-•	Conception of the ontology based on expert knowledge, and maintenance of it through consultation with stakeholders.
-•	Legal and regulatory compliance with EU laws and regulations.
-•	The ability to respond to formal initiatives around improving EU data.
-•	Transparency of EU e-procurement operations and ease of reporting.
-•	Forms a foundation for the technical work required to make the e-procurement technical processes function as intended.
-•	Forms the foundation upon which best practises/ principles/ governance can be applied i.e., all involved in eProcurement process have the same, correct, approved, up-to-date, and consistent definitions and understanding of what is happening in it.
-•	Changes and improvements follow a formal consultation and approval process.
-•	Interfaces to internal systems from other systems have a common documented system to guide their interaction.
-
-e.g.s
+* Ease of a common vocabulary: consistency in the definition of process and concept amongst stakeholders (such as users/ technical implementors/ subject-matter experts).
+* Standardisation of vocabulary
+*	Adoption of an ontology standard: in this case, the opensource Web Ontology Language (OWL).
+*	Consistency in the definition of process and concepts in technologies used.
+*	Conception of the ontology based on expert knowledge, and maintenance of it through consultation with stakeholders.
+*	Legal and regulatory compliance with EU laws and regulations.
+*	The ability to respond to formal initiatives around improving EU data.
+*	Transparency of EU e-procurement operations and ease of reporting.
+*	Forms a foundation for the technical work required to make the e-procurement technical processes function as intended.
+*	Forms the foundation upon which best practises/ principles/ governance can be applied i.e., all involved in eProcurement process have the same, correct, approved, up-to-date, and consistent definitions and understanding of what is happening in it.
+*	Changes and improvements follow a formal consultation and approval process.
+*	Interfaces to internal systems from other systems have a common documented system to guide their interaction.
 
 == eProcurement Ontology (ePO)
 In EU e-Procurement, the ontology describes objects and concepts, with definitions, attributes, attributes (mandatory and optional), and relationships that occur in the EU public procurement process.
@@ -67,13 +65,12 @@ Some attributes and actions of, or relationships between, objects are time and/ 
 
 image:bus1.png[]
 
-Figure 1. ePO phases in Chronological Order
+_Figure 1. ePO phases in Chronological Order_
 
 While the ontology can be quite complex, it must balance the need of being thorough and complete, while remaining flexible enough to evolve and change over time.
 
 == Core Criterion and Core Evidence Vocabulary (CCCEV)
-To facilitate vocabulary standardisation, the EU developed the
-https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/e-government-core-vocabularies/core-criterion-and-core-evidence-vocabulary[Core Criterion and Core Evidence Vocabulary (CCCEV)], which “supports the exchange of information between organisations that define criteria and organisations that respond to these criteria by means of evidences.”
+To facilitate vocabulary standardisation, the EU developed the https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/e-government-core-vocabularies/core-criterion-and-core-evidence-vocabulary[Core Criterion and Core Evidence Vocabulary (CCCEV)], which “supports the exchange of information between organisations that define criteria and organisations that respond to these criteria by means of evidences.”
 
 In eProcurement these are *contracting authorities that issue eNotices* (calls for tender) listing their criteria for legitimate supply, and *economic operators, organisations wishing to respond to calls for tender* by supplying the evidence that they meet the criteria for legitimate supply.
 
@@ -89,7 +86,7 @@ From the website, the benefits of using the CCCEV are to:
 
 The eProcurement Ontology was developed in accordance with the CCCEV's "Once Only" principle.
 
-=== An explanation of the "Once Only" principle (OOP) and the importance of a semantic model:
+=== An explanation of the "Once Only" principle (OOP) and the importance of a semantic model
 
 The "once-only" principle is a key enabler for simplifying administrative procedures for citizens and businesses. The idea behind this legal principle is that public authorities should not request information from businesses and citizens that they can retrieve from national databases or that they already possess.
 
@@ -99,12 +96,12 @@ However, currently this works only within a country. The next step is to open up
 
 Opening up national databases however implies that the different systems need to be interoperable to allow effective exchange of information.
 
-*A semantic model helps to define information in such a way that it enables the seamless transfer of data.*
+*A semantic model helps to define information in such a way that it enables the seamless transfer of data*
 
 Ultimately, the OOP can be implemented in a cross-border context. For instance, when citizens consume public services, they often have to provide evidence that they are entitled to such services, e.g. in the form of certificates, which they would need to request from other public administrations. In practice, the OOP requires administrations to exchange this information directly between each other, after having received consent form the citizen.  The "Core Criterion and Core Evidence" data model (CCCEV) supports this exchange. It defines in a generic way the structure of a criterion, for example, having a driving license. It also specifies the different types of evidence that can be provided as proof by citizens and businesses. The advantage of CCCEV is that it can be universally applied for any kind of criterion and evidence.
 
 
-== History:
+== History
 The objective of the ePO was (and still is) to conceptualise and formally encode eProcurement data, and to make it available in an open, structured, and machine-readable format. This data covers the process from end-to-end, i.e., from notification, through tendering, awarding, ordering, invoicing, and finally to payment.
 
 Under xref:new_main@EPO::history.adoc[Version History] in the menu on the left, you can read the evolution of the e-procurement ontology from version 1.0.0 to the current version, and under xref:new_main@EPO::references.adoc[Reference Documents], you can find documents that contain some useful background information, those that proposed the project, created the specifications, described the work, and set the framework for creating the ontology.
@@ -142,13 +139,13 @@ The modular structure of the ePO to makes maintaining the model easier.
 
 image:bus2.png[]
 
-Figure 2. Modular approach of ePO (work in progress)
+_Figure 2. Modular approach of ePO (work in progress)_
 
 
-== Formal change management of the eProcurement Ontology :
+== Formal change management of the eProcurement Ontology
 The https://joinup.ec.europa.eu/collection/semic-support-centre/specifications[EU’s Semic support site] contains information on a number of core vocabularies in the EU, as well as the services and activities around them, which include change management processes and procedures. The approach for change management is explained in the xref:change.adoc[Description of a change management release and publication process for structural metadata specifications developed by the ISA Programme], also summarised for the eprocurement ontology in chapter 4.3 of the xref:charter.adoc[Project Charter Document]
 
-This document formalises how changes to the specifications of structural metadata developed by the ISA Programme are managed and how new releases are published. According to the definitions followed by the ISA Programme, structural metadata includes data models (e.g. https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211[DCAT application profile for data portals in Europe] and reference data.
+This document formalises how changes to the specifications of structural metadata developed by the ISA Programme are managed and how new releases are published. According to the definitions followed by the ISA Programme, structural metadata includes data models (e.g. https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211[DCAT application profile for data portals in Europe] and reference data).
 
 This change management process has the following characteristics:
 
@@ -157,13 +154,13 @@ This change management process has the following characteristics:
 
 The Change Management process is based on generic change and release management processes in ITILv3 and the generic xref:metgovman.adoc[Methodology and tools for Structural Metadata Management and Governance]
 
-== Source Management:
+== Source Management
 
 Best practices, i.e., the use of a version-controlled repository (GitHub) and tool (Git), are employed for the development of the ontology. A master/ main branch is used as the source from which code is published.  To make changes to the model, development is done on temporary branches using tags. After validation, the new branch is merged with the main/ master.
 
 image:bus3.png[]
 
-Figure 3. Source management methodology
+_Figure 3. Source management methodology_
 
 == Other Rules and Scope
 
@@ -177,7 +174,7 @@ eForms coverage
 
 image:bus4.png[]
 
-Figure 4. eForms coverage
+_Figure 4. eForms coverage_
 
 
 == The Evolution of the eProcurement Ontology
@@ -198,12 +195,13 @@ Having an upper level of definition is important and helpful. The example below 
 
 image:bus5.png[]
 
-Figure 5. Upper-level organisation of ePO
+_Figure 5. Upper-level organisation of ePO_
 
 The development of the eProcurement ontology is oriented by a principle based perspective. One example of a principle is that once something is created / instantiated it is not possible to modify it to something else completely different. (e.g. an organisation should be created only once and not repeated in a different form in the model).
 
 image:bus6.png[]
-Figure 6. Principles for ePO development
+
+_Figure 6. Principles for ePO development_
 
 == Technical Aspects
 
@@ -217,40 +215,42 @@ The new version adopts a package-based grouping of concepts. Also, there are mor
 
 image:bus7.png[]
 
-Figure 7. Package-based grouping of ePO concepts
+_Figure 7. Package-based grouping of ePO concepts_
 
 
-=== The new structure of the ePO model provides hierarchy and relations diagrams.
+=== The new structure of the ePO model provides hierarchy and relations diagrams
 
 image:bus8.png[]
 
-Figure 8. Hierarchy diagram (focus on the abstraction)
+_Figure 8. Hierarchy diagram (focus on the abstraction)_
 
 image:bus9.png[]
 
-Figure 9. Relations diagram (focus on the connections)
+_Figure 9. Relations diagram (focus on the connections)_
 
-There are diagrams used for a scoped view versus a wide view of the model. It is useful to distinguish these scope diagrams because you can see how they are connected to other concepts, some show only the relations, some show only the hierarchy. So, even if the concepts are repeated across various diagrams this makes it easier to follow the logical model construction.
+There are diagrams used for a scoped view versus a wide view of the model. It is useful to distinguish these scope diagrams because you can see how they are connected to other concepts, some show only the relations, some show only the hierarchy. So, even if the concepts are repeated across various diagrams, this makes it easier to follow the logical model construction.
 
-image:bus10.png[]
-Figure 10. xsd data types used
+image:bus10.png[align="center"]
+
+_Figure 10. xsd data types used_
 
 image:bus11.png[]
-Figure 11. Example of transitioning from old UML/UBL data types to new XSD data types
+
+_Figure 11. Example of transitioning from old UML/UBL data types to new XSD data types_
 
 
 * In the past the properties of a class the attribute type ‘Code’ was associated with the class where needed. Currently, these attributes type code have been removed and there are only relations.
 
 image:bus12.png[]
 
-Figure 12. Removal of “Code” type attributes
+_Figure 12. Removal of “Code” type attributes_
 
 
 * The naming conventions are harmonised for predicates and class names. The source class is connected with the target class by using a verb.
 
 image:bus13.png[]
 
-Figure 13. Harmonisation of predicates and class names
+_Figure 13. Harmonisation of predicates and class names_
 
 * The definitions of classes and attributes were completed for version 3.0.0.
 * Efforts were made to align to core vocabularies. The following core vocabularies were re-used:
@@ -263,9 +263,11 @@ Figure 13. Harmonisation of predicates and class names
 Another important part of the development was focused on the reification of the roles. After many discussions, the agent in role design pattern seemed to be the optimal approach for this.
 
 image:bus14.png[]
-Figure 14. Agent In Role pattern
+
+_Figure 14. Agent In Role pattern_
 
 In version 3.x, the roles are represented as a hierarchical structure of concepts, with the superclass being the AgentInRole concept (following the agent in role design pattern). The agent in role is played by an agent and it is contextualised by a procurement object (for example, lot or procedure).
 
 image:bus15.png[]
-Figure 15. Roles hierarchy
+
+_Figure 15. Roles hierarchy_
