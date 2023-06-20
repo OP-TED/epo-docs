@@ -1,16 +1,16 @@
+:doctitle: Ontology workgroup notes-taking practice proposal
+:doccode: epo-wgm-prod-017
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 :imagesdir: images
 :downloaddir: download
 :xrefstyle: short
-
 :tip-caption: :bulb:
 :note-caption: :information_source:
 :important-caption: :heavy_exclamation_mark:
 :caution-caption: :fire:
 :warning-caption: :warning:
-
-
-= Ontology workgroup notes-taking practice proposal
-
 :toc:
 :toc-placement: preamble
 :toclevels: 1
@@ -61,7 +61,7 @@ The session discussion is documented by the _session secretary_, who is responsi
 The responsibilities of the session secretary are to:
 
 * maintain clarity about the issue in discussion (most of the time). If the discussion drifts out of the scope, then the session secretary should call this out and redirect discussion back onto the issue.
-* document clearly, in sufficient detail and in a structured manner, the basic aspects of each issue discussed. The structure of the preferred decision shall be compatible with the _model anamnesis_ approach described in Section <<_model_anamnesis>>. If the documentation is incomplete, then the additional questions must be asked to achieve a complete picture of the issue.
+* document clearly, in sufficient detail and in a structured manner, the basic aspects of each issue discussed. The structure of the preferred decision shall be compatible with the _model anamnesis_ approach described in Section <<model_anamnesis>>. If the documentation is incomplete, then the additional questions must be asked to achieve a complete picture of the issue.
 * record competency questions for each issue discussed that characterise an element of a part of the model.
 * record model editing tasks that shall be executed after the session is complete and before the next session. This is where tasks are not complex, not model agnostic, nor require expert specification so that the input of a domain expert is unnecessary.
 * publish the session notes at the end of each session together with the model change-log.
@@ -78,6 +78,8 @@ Possible technical choices:
 
 * Word and Excel files in Sharepoint/MsTeams
 * Google Documents/Sheets
+
+[#model_anamnesis]
 
 == Model anamnesis
 
@@ -128,7 +130,7 @@ When publishing, the following aspects shall be available:
 * the (reference to) model version after the session
 * the differential (diff) report between the initial and final models, which is automatically generated and lists the atomic changes in the model.
 
-Each well-defined set of model changes that can be properly delimited and motivated, must be documented using the model anamnesis approach described in Section <<_model_anamnesis>>. A well-defined set of changes can be framed by:
+Each well-defined set of model changes that can be properly delimited and motivated, must be documented using the model anamnesis approach described in Section <<model_anamnesis>>. A well-defined set of changes can be framed by:
 
 * a workgroup session covering a list of documented issues
 * an offline modelling session executing a set of tasks or an implementation of a well-defined modelling target.
