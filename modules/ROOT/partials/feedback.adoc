@@ -1,0 +1,5 @@
+//must be added to the footer of every page, still to be finalised
+//'''
+//Any comments about the documentation?
+
+//mailto:documentation@ted.eu["Email us",Documentation comment from WebSite] and let us know.
