@@ -17,3 +17,5 @@ link:{attachmentsdir}/Landscaping%20document.docx[Landscaping document]
 xref:git-methodology.adoc[Git flow methodology]
 
 xref:notes-taking-practice.adoc[Note-taking practice]
+
+xref:versioning.adoc[Versioning]
