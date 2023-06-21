@@ -185,6 +185,7 @@ _Figure 4. eForms coverage_
 The creation and maintenance of the ontology is a collaboration between the OP, programmers, working group members and other stakeholders. Meetings to discuss, agree and schedule changes to the ontology occur regularly.
 
 Triggers for changes in the ontology might be:
+
 •	Changes in law e.g., a change in the requirements for trade, in certain products, or from certain suppliers
 •	Changes in the functionality of software modules using the eProcurement ontology
 •	Feedback from users (errors or suggestions)
