@@ -4,15 +4,15 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
-=== Date
+== Date
 
 28 june 2022
 
-=== Object of the meeting
+== Object of the meeting
 
 To present and request feedback on eProcurement Ontology version 3.0.0
 
-=== Meeting agenda
+== Meeting agenda
 
 Welcome  +
 Methodology [20 min]  +
@@ -24,7 +24,7 @@ Open discussion [30 min]  +
 Open discussion [30 min]  +
 Closing
 
-=== Summary of the meeting
+== Summary of the meeting
 
 Manuela Cruz from the Publications Office of the European Union (OP) gave the welcoming speech, thanking everyone for joining and accepting the invitation. It was stated that work on the eProcurement Ontology (ePO) has  continued through meetings  twice-a-week since the last face to face meeting in November 2019. +
 
@@ -102,7 +102,7 @@ The meeting continued with presenting the ePO modules that are work in progress.
 
 The meeting continued with presentation of the monetary values diagrams through the different procurement phases. This approach made it possible for the objects linked to the monetary value concept to be more visible.
 
-=== Open discussion
+== Open discussion
 
 Q1: It would be great to have a solution for dealing with the Identifier class. +
 A1: In version 2.0.1 there was already an issue, it is a legacy problem. The simple answer is still a set of old decisions in UBL and we need to align with it. The way we work in OWL has to be aligned to UBL. We cannot take a single sided decision. We would like to have more participants in the discussions to get feedback and take decisions. Identifier is one of the top candidates to be addressed in the next release but needs to be discussed with the users/WG.
@@ -136,7 +136,7 @@ A9: This will be brought up in the following WG meetings.
 Q10: Where do the definitions of concepts in the ontology come from? +
 A10: Definitions come from the legislation, unless it is not possible to get them from there so the WG creates definitions for the concepts. Any user is free to send a request to change or explain a definition.
 
-=== Closing
+== Closing
 
 They take place twice a week during the year. Everybody is welcome. Tuesday meetings are more about ePO core development. Thursday meetings are more specific for different modules: eCatalogue, eOrdering, etc. +
 From now on the meetings will be held on Webex. The Thursday meetings have a different link. Users do not need to follow on a weekly basis and any doubt can be put also in a GitHub issue. +
