@@ -37,7 +37,7 @@ Other parts of the ontology will be developed in the future and participation in
 The meeting continued with a presentation of the major developments of the Ontology: the methodology, the model refactoring, the question of the evolution of the ontology itself. +
 The plan is to have a face-to-face meeting by the end of this year 2022 in Luxemburg.
 
-==== Development Methodology
+=== Development Methodology
 
 Some of the rules that were followed while advancing on the development of the ePO are presented. +
 
@@ -74,7 +74,7 @@ Enterprise Architect (EA) is the tool used to design the conceptual model in UML
 
 As pointed out by an attendee there are different tools for representing Web Ontology Language (OWL) which is the machine-readable format.
 
-==== Model refactoring
+=== Model refactoring
 
 The new version adopts a package-based grouping of concepts. Also, there are more diagrams introduced than at the beginning of the ePO development. The aim is to avoid getting distracted by neighbouring concepts.  +
 
@@ -82,7 +82,7 @@ The new structure of the ePO model provides hierarchy and relations diagrams and
 
 The meeting continued with presenting the ePO modules that are work in progress. All these modules will be imported into the ePO core model that is presented in this meeting.
 
-==== Evolution of 2.0.1 to 3.0.0
+=== Evolution of 2.0.1 to 3.0.0
 
 * The documentation has been migrated from GitHub Wiki to the https://docs.ted.europa.eu[TED documentation page.] A live presentation of the documentation page followed. One point in particular is if the user knows which class he is interested in, he can access the related classes by clicking on the concept. It is also possible to go to the description of each concept. The model can be viewed in the HTML version https://docs.ted.europa.eu/EPO/3.0.1/_attachments/html_reports/v3.0.1/ePO/index.html[here].
 * UML/UBL data types were migrated to XSD datatypes.
