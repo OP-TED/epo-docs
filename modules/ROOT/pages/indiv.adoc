@@ -22,6 +22,7 @@ Meeting Minutes are ordered by Year. Most meeting are general, but if a meeting 
 This does not mean, however, that this was the only topic addressed in the meeting, it only indicates the original purpose of the meeting, not what was actually discussed.
 
 [cols="1,1,1,1,1"]
+
 |===
 |<<2023,2023>>
 |<<2022,2022>>
