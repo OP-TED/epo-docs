@@ -1,5 +1,6 @@
 = *eProcurement Ontology Version 4.0.0 RC 1*
 
+Work in Progress, due 31 July 2023
 #change to 4.0.0 RC 1 info#
 
 == Latest Production Release: 16.12.2022

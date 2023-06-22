@@ -1,5 +1,5 @@
 
-'''
-Any comments about the documentation?
+//'''
+//Any comments about the documentation?
 
-mailto:documentation@ted.eu["Email us",Documentation comment from WebSite] and let us know.
+//mailto:documentation@ted.eu["Email us",Documentation comment from WebSite] and let us know.
