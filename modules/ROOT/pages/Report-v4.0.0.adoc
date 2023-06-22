@@ -1,6 +1,6 @@
 = *Report - ePO 4.0.0 RC 1*
 
-#Update for 4.0.0 RC 1#
+#Document integrated into business overview in branch: main. Will no longer be required after v3.1.0#
 
 == Development Methodology
 
