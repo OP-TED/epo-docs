@@ -1,11 +1,11 @@
 //these are different per document, edit and add manually:
 
-//:doctitle:
-//:doccode: repo_branch_status_docnumber
-// e.g. epo_v4.0.0_prod_123 (draft/ review/prod/archived)
-//:author: author
-//:authoremail: author@email
-//:docdate: docdate
+:doctitle: Title
+:doccode: repo_branch_status_number
+ e.g. epo_v4.0.0_prod_123 (draft/ review/prod/archived)
+:author: author
+:authoremail: author@email
+:docdate: docdate
 
 //these are the same in each branch, just edit and then include partial:
 
