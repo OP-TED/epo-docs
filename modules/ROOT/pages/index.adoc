@@ -21,7 +21,7 @@ xref:Overview_V3.1.0.adoc[Click here to read the version 3.1.0 details]
 ****
 Information on future releases planned for the eProcurement Ontology can be found via the link below. Information includes scheduled releases in the short term, and features, updates and fixes to be addressed in the longer term.
 
-xref:future_releases@EPO::Overview_V3.1.0.adoc[Information on future releases can be found here.]
+xref:future_releases@EPO::Overview_v4.0.0-rc.1.adoc[Information on future releases can be found here.]
 ****
 ////
 [.tile]
@@ -45,7 +45,7 @@ xref:epo-wgm::index.adoc[Click here to read the working group documents]
 ****
 The model2owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
 
-//xref:xxx@EPO::Overview_V3.1.0.adoc[update when ready]
+//xref:xxx@EPO::model2owl.adoc[update when ready]
 Updated documents coming soon.
 ****
 ////
