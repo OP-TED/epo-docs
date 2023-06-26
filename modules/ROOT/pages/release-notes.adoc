@@ -1,8 +1,8 @@
-== *eProcurement Ontology 4.0.0 RC 1*
+== *eProcurement Ontology v4.0.0-rc.1*
 
 Work in Progress, due 31 July 2023
 
-#edit rest of page - convert info to 4.0.0 rc 1#
+#edit rest of page - convert info to v4.0.0-rc.1#
 
 The release of version 3.1.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v3.1.0[here].
 
