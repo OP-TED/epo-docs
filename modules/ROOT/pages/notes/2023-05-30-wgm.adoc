@@ -60,7 +60,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABZYAAAN5CAYAAACbrG5qAACAAEl
 
 A DPS (Dynamic Purchasing System) uses a DPS Technique.  In the first stage, the different Qualification Criterion are specified and there is no Award Decision, however a Candidate List is created which lists the economic operators that are admitted to subsequent Mini-Competitions. The subsequent Mini Competitions involve specifying the different Award Criterion to be used. The Mini Competition Award Decision relates to the Mini Competition itself and can result in a Purchase Contract.   +
 
-During the WGM, a question was raised regarding whether "epo:DynamicPurchasingSystem" should be a subclass of "epo:system." The decision was was to leave it for the time being and if the need became apparent this would be implemented.
+During the WGM, a question was raised regarding whether "epo:DynamicPurchasingSystem" should be a subclass of "epo:system." The decision was to leave it for the time being and if the need became apparent this would be implemented.
 
 * Additionally, epo:CandidateList was changed to epo:SelectedCandidateList and its definition is updated to the following definition:
 Record of Candidates admitted to take part in award phases of procurements.
