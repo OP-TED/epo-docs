@@ -1,6 +1,6 @@
 name: EPO
 version: wg-corrections
-title: ePO Working Documents
+title: eProcurement Ontology
 start_page: ROOT:index.adoc
 nav:
 - modules/ROOT/nav.adoc
