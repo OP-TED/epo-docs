@@ -24,4 +24,4 @@ Version History:
 
 Link to the Working Group Documents
 
-* xref:epo-wgm::index.adoc[Working Group Documents]
+* xref:wg_corrections@EPO::index.adoc[Working Group Documents]
