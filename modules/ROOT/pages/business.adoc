@@ -23,7 +23,7 @@ In the EU, two key goals around data and data processing are pursued:
 
 === The provision of open data
 
-The EU's open data portal website, https://data.europa.eu/, makes EU datasets publicly available on a wide range of topics such as agriculture, health, finance, transport, procurement, and many more. The portal’s intentions are to:
+The EU's open data portal, https://data.europa.eu/, makes EU datasets publicly available on a wide range of topics such as agriculture, health, finance, transport, procurement, and many more. The portal’s intentions are to:
 
 . give *access and foster the reuse of European open data* among citizens, business and organisations.
 . promote and support the release of *more, and better-quality metadata and data* by the EU's institutions, agencies and other bodies, and European countries.
