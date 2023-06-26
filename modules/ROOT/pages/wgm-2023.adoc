@@ -4,6 +4,10 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
+include::notes/2023-05-23-wgm.adoc[]
+
+include::notes/2023-05-16-wgm.adoc[]
+
 include::notes/2023-05-04-wgm.adoc[]
 
 include::notes/2023-05-02-wgm.adoc[]
