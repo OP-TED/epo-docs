@@ -37,7 +37,7 @@ xref:past_releases.adoc[Information on past releases can be found here.]
 ****
 This section contains minutes and reports of the Working Group activities and meetings listed by interest/ category.
 
-xref:epo-wgm::index.adoc[Click here to read the working group documents]
+xref:wg_corrections@EPO::index.adoc[Click here to read the working group documents]
 ****
 ////
 [.tile]
