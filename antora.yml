@@ -1,5 +1,5 @@
-name: epo-wgm
-version: master
+name: EPO
+version: wg-meetings
 title: ePO Working Documents
 start_page: ROOT:index.adoc
 nav:
