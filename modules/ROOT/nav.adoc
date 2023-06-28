@@ -1,6 +1,7 @@
 * Working Group meetings
 
 ** xref:wgm-2023.adoc[WGM 2023]
+*** xref:notes/2023-06-13-wgm.adoc[2023-06-13]
 *** xref:notes/2023-06-01-wgm.adoc[2023-06-01]
 *** xref:notes/2023-05-30-wgm.adoc[2023-05-30]
 *** xref:notes/2023-05-23-wgm.adoc[2023-05-23]
@@ -266,6 +267,11 @@
 ** xref:notes/2022-08-11-eful.adoc[2022-08-11]
 
 * Face2Face meetings
+** 2023-06-27
+*** xref:ePO_14th_WGM_report.adoc[14th WGM Report]
+*** link:{attachmentsdir}/work_group_meetings_reports/14th_WGM/eProcurement Ontology - 2023 Q2.pptx[14th WGM Presentation]
+
+ePO_13th_WGM_report
 ** 2023-03-09
 *** xref:ePO_13th_WGM_report.adoc[13th WGM Report]
 *** link:{attachmentsdir}/work_group_meetings_reports/12th_WGM/eProcurement-Ontology_3.1.0.pptx[13th WGM Presentation]
