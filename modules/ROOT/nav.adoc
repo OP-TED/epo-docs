@@ -270,10 +270,6 @@
 
 ** 2023-06-27
 *** xref:ePO_14th_WGM_report.adoc[14th WGM Report]
-*** link:{attachmentsdir}/work_group_meetings_reports/14th_WGM/eProcurement Ontology - 2023 Q2.pptx [14th WGM Presentation]
-
-** 2023-06-27
-*** xref:ePO_14th_WGM_report.adoc[14th WGM Report]
 *** link:{attachmentsdir}/work_group_meetings_reports/14th_WGM/eProcurement-Ontology_4.0.0.pptx[14th WGM Presentation]
 
 ePO_13th_WGM_report
