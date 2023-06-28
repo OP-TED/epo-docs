@@ -272,7 +272,7 @@
 *** xref:ePO_14th_WGM_report.adoc[14th WGM Report]
 *** link:{attachmentsdir}/work_group_meetings_reports/14th_WGM/eProcurement-Ontology_4.0.0.pptx[14th WGM Presentation]
 
-ePO_13th_WGM_report
+
 ** 2023-03-09
 *** xref:ePO_13th_WGM_report.adoc[13th WGM Report]
 *** link:{attachmentsdir}/work_group_meetings_reports/13th_WGM/eProcurement-Ontology_3.1.1.pptx[13th WGM Presentation]
