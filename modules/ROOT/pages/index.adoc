@@ -34,7 +34,7 @@ xref:Overview_V3.1.0.adoc[Click here to read the version 3.1.0 details]
 ****
 Information on future releases planned for the eProcurement Ontology can be found via the link below. Information includes scheduled releases in the short term, and features, updates and fixes to be addressed in the longer term.
 
-xref:future_releases@EPO::Overview_v4.0.0-rc.1.adoc[Information on future releases can be found here.]
+xref:future_releases@EPO::index.adoc[Information on future releases can be found here.]
 ****
 
 [.tile]
