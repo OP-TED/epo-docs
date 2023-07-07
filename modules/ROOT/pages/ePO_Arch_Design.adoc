@@ -15,6 +15,7 @@ The views expressed in this report are purely those of the Author(s) and may not
 Reference herein to any specific products, specifications, process, or service by trade name, trademark, manufacturer, or otherwise, does not necessarily constitute or imply its endorsement, recommendation, or favouring by the European Union.
 
 This report was prepared for the Publications Office of the European Union by Infeurope.
+
 ====
 *Document metadata*
 
@@ -48,7 +49,9 @@ This report was prepared for the Publications Office of the European Union by In
 |Suggested readers
 |project partners, future users, legal practitioners, software developers and architects.
 |===
+
 ====
+
 *Abstract*
 
 Public procurement is undergoing a digital transformation. the EU supports the rethinking of the public procurement process with digital technologies in mind. This goes beyond simply moving to electronic tools; it rethinks various pre-award and post-award phases. The aim is to make them simpler for businesses to participate in and for the public sector to manage. It also allows for the integration of data-based approaches at various stages of the procurement process.
