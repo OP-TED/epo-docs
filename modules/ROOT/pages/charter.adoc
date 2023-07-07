@@ -8,6 +8,7 @@
 :toclevels: 4
 :toc-title: Contents
 
+====
 Document Metadata
 
 [cols="1,3"]
@@ -33,7 +34,7 @@ Natalie Muric - Publications Office of the EU
 |Approved by
 |Natalie Muric - Publications Office of the EU
 |===
-
+====
 *This report was prepared for the Publications Office of the European Union by:*
 _PwC EU Service_
 

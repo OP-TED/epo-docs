@@ -1,4 +1,4 @@
-:doctitle: Report on policy support for e-Procurement Version 1.0
+:doctitle: Report on policy support for e-Procurement Version 1.0 (The Landscaping Document)
 :doccode: epo-main-prod-002
 :author: PWC adapted by NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
@@ -8,6 +8,7 @@
 :toclevels: 4
 :toc-title: Contents
 
+====
 Document Metadata
 
 [cols="1,3"]
@@ -38,7 +39,7 @@ Vassilios Peristeras – European Commission, ISA Programme
 |Approved by
 |Natalie Muric – Publications Office
 |===
-
+====
 *This study was prepared for the ISA Programme by:*
 
 _PwC EU Services_

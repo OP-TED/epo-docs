@@ -8,6 +8,7 @@
 :toclevels: 4
 :toc-title: Contents
 
+====
 _Document Metadata_
 [cols="1,5"]
 |===
@@ -41,7 +42,7 @@ Vassilios Peristeras – European Commission, DG Informatics
 
 Athanasios Karalopoulos - European Commission, DG Informatics
 |===
-
+====
 This study was prepared for the ISA Programme by: PwC EU Services
 
 Disclaimer:
