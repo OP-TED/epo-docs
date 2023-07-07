@@ -4,6 +4,19 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
+====
+*Temporary explanation of intended changes:*
+
+. Branch Nicole_refactoring merge with and become v3.1.0
+. Branch new_ main will merge with and become main. This branch will contain all info that is version independent.
+. Branch wg_corrections will merge with and become wg-meetings
+. A new branch "next_release" will become v4.0.0-rc.1 once the contractors have completed the release overview and release notes. "next_release" will be prepared in the background i.e. not public until it is ready to go live as the numbered version.
+
+. A new branch "future_releases" will contain two "sets" of info regarding future dev plans: general info of what is expected in the next numbered release: fixes/ features etc, and info regarding planned work that is not yet in a release bundle in a list or table.
+. There will be a link to the model2Owl documentation from this page once the documents are ready.
+. Branch v3.1.1 will be archived or deleted.
+====
+
 [.tile-container]
 --
 
@@ -15,15 +28,15 @@ The eProcurement Ontology V3.1.0 was released on the 16 December 2022 introducin
 xref:Overview_V3.1.0.adoc[Click here to read the version 3.1.0 details]
 
 ****
-////
+
 [.tile]
-.ePO Future Releases
+.ePO Future Releases (to be hidden until content ready)
 ****
 Information on future releases planned for the eProcurement Ontology can be found via the link below. Information includes scheduled releases in the short term, and features, updates and fixes to be addressed in the longer term.
 
 xref:future_releases@EPO::Overview_v4.0.0-rc.1.adoc[Information on future releases can be found here.]
 ****
-////
+
 [.tile]
 .ePO Past Releases
 ****
@@ -39,14 +52,14 @@ This section contains minutes and reports of the Working Group activities and me
 
 xref:wg_corrections@EPO::index.adoc[Click here to read the working group documents]
 ****
-////
+
 [.tile]
-.model2owl Documentation
+.model2owl Documentation (to be hidden until content ready)
 ****
 The model2owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
 
 //xref:xxx@EPO::model2owl.adoc[update when ready]
 Updated documents coming soon.
 ****
-////
+
 --
