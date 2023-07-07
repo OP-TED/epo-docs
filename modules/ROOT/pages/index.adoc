@@ -10,9 +10,9 @@
 . Branch Nicole_refactoring merge with and become v3.1.0
 . Branch new_ main will merge with and become main. This branch will contain all info that is version independent.
 . Branch wg_corrections will merge with and become wg-meetings
-. A new branch "next_release" will become v4.0.0-rc.1 once the contractors have completed the release overview and release notes. "next_release" will be prepared in the background i.e. not public until it is ready to go live as the numbered version.
+. A new branch for the next release, now v4.0.0-rc.1 will be prepared in the background by the contractors: the release overview and release notes and typically go live with the code (except for this time when it will be later)
 
-. A new branch "future_releases" will contain two "sets" of info regarding future dev plans: general info of what is expected in the next numbered release: fixes/ features etc, and info regarding planned work that is not yet in a release bundle in a list or table.
+. A new branch "future_releases" will contain two "sets" of info regarding future dev plans: general info of what is expected in the next numbered release: fixes/ features etc, and info regarding planned work that is not yet in a release bundle (in a list or table).
 . There will be a link to the model2Owl documentation from this page once the documents are ready.
 . Branch v3.1.1 will be archived or deleted.
 ====
