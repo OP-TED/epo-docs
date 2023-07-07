@@ -8,7 +8,7 @@
 ====
 *Temporary explanation of intended changes:*
 
-. Branch Nicole_refactoring will merge with and become v3.1.0.
+. Branch Nicole_refactoring will merge with and become the new v3.1.0.
 . Branch new_ main will merge with and become main. This branch will contain all info that is version independent.
 . Branch wg_corrections will merge with and become wg-meetings
 . A new branch for the next release, now v4.0.0-rc.1 will be prepared in the background by the contractors: the release overview and release notes and typically go live with the code (except for this time when it will be later)
