@@ -1,5 +1,5 @@
 name: EPO
-version: wg_corrections
+version: ~
 title: eProcurement Ontology
 start_page: ROOT:index.adoc
 nav:
