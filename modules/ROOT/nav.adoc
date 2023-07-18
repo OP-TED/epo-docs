@@ -7,7 +7,7 @@
 * xref:references.adoc[Reference Documents]
 * xref:methodology.adoc[Ontology Methodology]
 * xref:history.adoc[Version History]
-* xref:wg_corrections@EPO::index.adoc[Working Group Documents]
+* xref:wg_corrections@epo-wgm::index.adoc[Working Group Documents]
 
 
 
