@@ -4,7 +4,7 @@
 :authoremail:
 :docdate: July 2023
 
-In this section, we  outline the versioning rules for the eProcurement ontology, specifically focusing on when to increment major, minor, and patch versions. Understanding these rules is essential for effectively managing and updating ontologies, as well as maintaining compatibility with applications and SPARQL queries. By adhering to these guidelines, developers and maintainers can ensure smooth transitions between different versions and minimise potential disruptions to dependent systems.
+In this section, we outline the versioning rules for the eProcurement ontology, specifically focusing on when to increment major, minor, and patch versions. Understanding these rules is essential for effectively managing and updating ontologies, as well as maintaining compatibility with applications and SPARQL queries. By adhering to these guidelines, developers and maintainers can ensure smooth transitions between different versions and minimise potential disruptions to dependent systems.
 
 === Semantic versioning in a nutshell
 
@@ -62,6 +62,6 @@ The updated ontology can safely replace the previous version without affecting t
 
 This helps track unstable, in-development and release candidate versions, but does not impact precedence.
 
-=== Conclussion
+=== Conclusion
 
 By following the versioning rules outlined in this section, ontology developers and maintainers can effectively manage versioning and ensure a smooth transition between different versions of the ontology. These rules provide clear guidelines for when to increment major, minor, and patch versions, considering the potential impact on applications and SPARQL queries. Adhering to these rules will help minimise disruptions and maintain compatibility across various systems that rely on the ontology.
