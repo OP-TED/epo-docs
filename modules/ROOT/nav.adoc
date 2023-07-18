@@ -5,11 +5,12 @@
 :docdate: June 2023
 * xref:Overview_V3.1.0.adoc[Version 3.1.0 Overview]
 * xref:release-notes.adoc[Version 3.1.0 Release Notes (detailed)]
-* xref:new_main@EPO::business.adoc[Business Overview]
-* xref:new_main@EPO::references.adoc[Reference Documents]
-* xref:new_main@EPO::methodology.adoc[Ontology Methodology]
-* xref:new_main@EPO::history.adoc[Version History]
-* xref:wg_corrections@EPO::index.adoc[Working Group Documents]
+* xref:business.adoc[Business Overview]
+* xref:references.adoc[Reference Documents]
+* xref:methodology.adoc[Ontology Methodology]
+* xref:history.adoc[Version History]
+* xref:epo-wgm::index.adoc[Working Group Documents]
+
 
 
 
