@@ -1,4 +1,5 @@
-* xref:release-notes.adoc[Release Notes (detailed)]
+* xref:Overview_V4.0.0-rc.1.adoc[Release v4.0.0-rc.1 Overview]
+* xref:release-notes.adoc[Release Notes v4.0.0-rc.1 (detailed)]
 * xref:new_main@EPO::references.adoc[Reference Documents]
 * xref:new_main@EPO::methodology.adoc[Ontology Methodology]
 * xref:new_main@EPO::history.adoc[Version History]
