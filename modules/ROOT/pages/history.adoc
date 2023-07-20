@@ -25,18 +25,19 @@ In mid-2017 ePO version 1.00 of the Ontology was delivered and submitted to the 
 
 ePO version 2.0.0, was initiated in January 2018. The goal of this version was to improve and extend the previous version. Version 2.0.1, last 2.x.x version, was released later that year.
 
-Version 3.0.0 was released in August 2022, with the current and latest 3.x version being 3.1.0. Version 4.0.0 RC 1 is currently in development. The ePO project is now funded by the link:https://digital-strategy.ec.europa.eu/en/activities/digital-programme[Digital Europe Project] (DEP).
+Version 3.0.0 was released in August 2022, with the latest 3.x version being 3.1.0. Version 4.0.0-rc.1 was released on 19 July 2023.. The ePO project is now funded by the link:https://digital-strategy.ec.europa.eu/en/activities/digital-programme[Digital Europe Project] (DEP).
 
 
 //=== *Version in Development:*
 //xref:future_releases@EPO::index.adoc[Version 4.0.0 RC 1 (in development) can be found here.]
 
 
-=== *Archived versions can be found here:*
+=== *Older versions can be found here:*
 
 * xref:1.0.0@EPO::index.adoc[Version 1.0.0]
 * xref:2.0.0@EPO::index.adoc[Version 2.0.0]
 * xref:2.0.1@EPO::index.adoc[Version 2.0.1]
 * xref:3.0.1@EPO::index.adoc[Version 3.0.1]
+* xref:3.1.0@EPO::index.adoc[Version 3.1.0]
 
 include::partial$feedback.adoc[]
