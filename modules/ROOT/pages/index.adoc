@@ -10,20 +10,20 @@
 The eProcurement Ontology V3.1.0 was released on the 16 December 2022 introducing a new module, eOrdering,a combined glossary, updates, and various fixes as planned for the 2022 Q4 milestone.
 
 [.tile]
-.ePO V3.1.0: Release Overview
+.ePO v3.1.0: Release Overview
 ****
 
-xref:Overview_V3.1.0.adoc[Click here to read the version 3.1.0 Overview]
+xref:Overview_V3.1.0.adoc[Click here to read the v3.1.0 Overview]
 
 ****
 
 
 
 [.tile]
-.ePO 3.1.0 Release Notes
+.ePO v3.1.0 Release Notes
 ****
 
-xref:release-notes.adoc[Click here to read the 3.1.0 detailed release notes]
+xref:release-notes.adoc[Click here to read the v3.1.0 Detailed Release Notes]
 
 ****
 --
