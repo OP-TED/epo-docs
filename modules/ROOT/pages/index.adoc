@@ -7,23 +7,23 @@
 
 [.tile-container]
 --
-The eProcurement Ontology V4.0.0-rc.1 was released on the 19 July 2023.
+The eProcurement Ontology v4.0.0-rc.1 was released on the 19 July 2023.
 
 [.tile]
-.ePO V4.0.0-rc.1: Release Overview
+.ePO v4.0.0-rc.1: Release Overview
 ****
 
-xref:Overview_V4.0.0-rc.1.adoc[Click here to read the version 4.0.0.-rc.1 Overview]
+xref:Overview_V4.0.0-rc.1.adoc[Click here to read the 4.0.0.-rc.1 Overview]
 
 ****
 
 
 
 [.tile]
-.ePO 4.0.0-rc.1 Release Notes
+.ePO v4.0.0-rc.1 Release Notes
 ****
 
-xref:release-notes.adoc[Click here to read the 4.0.0-rc.1 detailed release notes]
+xref:release-notes.adoc[Click here to read the 4.0.0-rc.1 Detailed Release Notes]
 
 ****
 --
