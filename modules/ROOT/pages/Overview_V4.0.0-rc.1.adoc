@@ -3,27 +3,17 @@
 == *Release Overview*
 
 == *Changes in V4.0.0-rc.1*
-* Modeling Procedure in the context of a Mini-Competition:
-** Award in the context of a Framework Agreement
-** Award in the context of a Dynamic Purchasing System
+* Modeling Procedure in the context of a Mini-Competition
 
-* Standard form mapping requirements:
-** Communication means
-** Procurement Criteria Summary
-** Notice relations harmonisation
+* Standard form mapping requirements
 
-* eForm mapping requirements:
-** Ensure coverage of all BTs from the new eForm Annex
-** Implemented new eForm business terms
-** Revision of all monetary values
+* eForm mapping requirements
 
 * New module development: eFulfilment, eContract
 
-* Post-Award modules alignment (eCatalogue, eOrdering, eFulfilment):
-** Creation of information hubs to allow data to be provided either at document or line level if not a combination of the two
-** Modelling of different charges allowing for the different requirements across the different phases
-** Deliverable becomes a subclass of the Item
-** PostAward Objects become Documents
+* Post-Award modules alignment (eCatalogue, eOrdering, eFulfilment)
+
+* Changed rdfs:Literal data type to rdf:Plain Literal
 
 
 '''
