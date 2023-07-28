@@ -271,6 +271,7 @@ Figure 14. Agent In Role pattern
 In version 3.x, the roles are represented as a hierarchical structure of concepts, with the superclass being the AgentInRole concept (following the agent in role design pattern). The agent in role is played by an agent and it is contextualised by a procurement object (for example, lot or procedure).
 
 image:bus15.png[]
+
 Figure 15. Roles hierarchy
 
 include::partial$feedback.adoc[]
