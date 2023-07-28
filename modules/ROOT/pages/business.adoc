@@ -275,3 +275,5 @@ From version 3.x, the roles are represented as a hierarchical structure of conce
 image:bus15.png[]
 
 _Figure 15. Roles hierarchy_
+
+include::partial$feedback.adoc[]

@@ -1,5 +1,5 @@
 :doctitle: eProcurement Ontology Architecture and Formalisation Specifications Version 1.0
-:doccode: epo-main-prod-009
+:doccode: epo-main-prod-008
 :author: PWC adapted by NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
@@ -794,3 +794,5 @@ In Reasoning Web International Summer School, pages 112–183. Springer, 2012.
 . D. Tsarkov and I. Horrocks. Fact++ description logic reasoner: System description. In International joint conference on automated reasoning, pages 292–297. Springer, 2006.
 . S. A. White. Introduction to bpmn. Ibm Cooperation, 2(0):0, 2004.
 . P. Winstanley, A. Perego, S. Cox, D. Browning, R. Albertoni, and A. G. Beltran. Data catalog vocabulary (DCAT) - version 2. W3C recommendation, W3C, Feb. 2020. https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/.
+
+include::partial$feedback.adoc[]

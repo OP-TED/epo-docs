@@ -563,3 +563,5 @@ https://github.com/eprocurementontology/eprocurementontology/issues/16
 https://github.com/eprocurementontology/eprocurementontology/issues/18
 * Enable the publication of notices as linked open data to enable the exploitation of the corresponding data through the semantic web in ways yet to be envisaged,
 https://github.com/eprocurementontology/eprocurementontology/issues/18
+
+include::partial$feedback.adoc[]

@@ -1390,6 +1390,8 @@ The collaboration environment could be hosted on Joinup , an online platform dev
 . European Commission - Eurostat, "NUTS," [Online]. Available: http://ec.europa.eu/eurostat/web/nuts/overview.
 . European Commission - DG MARKT, "e-CERTIS User Guide," [Online]. Available: https://joinup.ec.europa.eu/sites/default/files/files_epractice/sites/e-CERTIS%20End%20user%20guide.pdf.
 
+include::partial$feedback.adoc[]
+
 
 
 

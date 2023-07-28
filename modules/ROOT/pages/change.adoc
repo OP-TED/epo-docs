@@ -729,3 +729,5 @@ _Total of 1965 min_
 * Using the same issue tracker both for the revision of the DCAT-AP and GeoDCAT-AP led to difficulties in organising and filtering relevant issues. It is recommended that in the future the issue tracker is not shared between different specifications, even if they are related to each other.
 * Time assigned to meetings needs to reflect the amount and complexity of issues.
 * Non-controversial issues should not be on the agenda but those should be proposed for resolution off-line.
+
+include::partial$feedback.adoc[]

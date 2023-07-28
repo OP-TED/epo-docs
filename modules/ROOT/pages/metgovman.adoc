@@ -1828,3 +1828,5 @@ a|Feature list: The tool should provide:
 * Write-access over WebDAV or Subversion.
 |===
 
+include::partial$feedback.adoc[]
+
