@@ -2,4 +2,4 @@
 '''
 Any comments about the documentation?
 
-link:https://github.com/OP-TED/epo-docs/issues/new/choose[Click here to open a Documentation issue]
+link:https://github.com/OP-TED/epo-docs/issues/new/choose[Click here to let us know]

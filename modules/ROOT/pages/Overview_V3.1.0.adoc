@@ -59,8 +59,9 @@ link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_mo
 * link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[The eOrdering Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/ePO-combined-glossary.html[The ePO Combined Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO-combined-glossary.html[here]
 
-'''
+
 ////
+'''
 === *The eProcurement UML Conceptual Model Conventions*
 
 link:https://github.com/meaningfy-ws/model2owl/blob/master/doc/uml-conventions/uml-conventions.pdf[The UML Model Conventions]
@@ -70,6 +71,5 @@ link:https://github.com/meaningfy-ws/model2owl/blob/master/doc/uml-conventions/u
 
 link:https://github.com/meaningfy-ws/model2owl/blob/master/doc/uml2owl-transformation/uml2owl-transformation.pdf[The UML to OWL Transformation Rules]
 
-
-include::partial$feedback.adoc[]
 ////
+include::partial$feedback.adoc[]
