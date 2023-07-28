@@ -27,5 +27,3 @@ xref:release-notes.adoc[Click here to read the 3.1.0 Detailed Release Notes]
 
 ****
 --
-
-include::partial$feedback.adoc[]
