@@ -37,3 +37,5 @@ include::notes/2023-01-24-wgm.adoc[]
 include::notes/2023-01-17-wgm.adoc[]
 
 include::notes/2023-01-10-wgm.adoc[]
+
+include::partial$feedback.adoc[]

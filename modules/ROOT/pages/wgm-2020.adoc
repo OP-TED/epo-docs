@@ -153,3 +153,5 @@ include::notes/2020-01-14-wgm.adoc[]
 include::notes/2020-01-09-wgm.adoc[]
 
 include::notes/2020-01-07-wgm.adoc[]
+
+include::partial$feedback.adoc[]

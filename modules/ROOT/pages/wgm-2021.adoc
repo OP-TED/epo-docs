@@ -115,3 +115,5 @@ include::notes/2021-01-14-wgm.adoc[]
 include::notes/2021-01-12-wgm.adoc[]
 
 include::notes/2021-01-07-wgm.adoc[]
+
+include::partial$feedback.adoc[]

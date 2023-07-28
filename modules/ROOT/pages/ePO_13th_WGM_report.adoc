@@ -238,3 +238,4 @@ Natalie Muric of the Publications Office presented the next meeting schedule for
 * Tues 5 or Thurs 7 September (afternoons)
 * Tues 5 or Thurs 7 December (afternoons)
 
+include::partial$feedback.adoc[]

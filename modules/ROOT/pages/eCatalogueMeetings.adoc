@@ -16,3 +16,5 @@ include::notes/2022-03-10-ecat.adoc[]
 include::notes/2022-02-24-ecat.adoc[]
 include::notes/2022-01-27-ecat.adoc[]
 include::notes/2022-01-20-ecat.adoc[]
+
+include::partial$feedback.adoc[]

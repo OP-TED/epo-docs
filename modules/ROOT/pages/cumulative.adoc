@@ -13,3 +13,5 @@ xref:wgm-2021.adoc[Cumulative content of Working Group Meetings: 2021]
 xref:wgm-2020.adoc[Cumulative content of Working Group Meetings: 2020]
 
 xref:wgm-2019.adoc[Cumulative content of Working Group Meetings: 2019]
+
+include::partial$feedback.adoc[]

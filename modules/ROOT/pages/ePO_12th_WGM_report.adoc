@@ -248,6 +248,8 @@ or alternatively via:
 * Email: +++<u>+++OP-EPROCUREMENT-ONTOLOGY@publications.europa.eu+++</u>+++
 * E mail: +++<u>+++natalie.muric@publications.europa.eu+++</u>+++
 
+include::partial$feedback.adoc[]
+
 
 
 

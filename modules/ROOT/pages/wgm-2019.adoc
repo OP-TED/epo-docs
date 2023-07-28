@@ -39,3 +39,5 @@ include::notes/2019-10-29-wgm.adoc[]
 include::notes/2019-10-24-wgm.adoc[]
 
 include::notes/2019-10-22-wgm.adoc[]
+
+include::partial$feedback.adoc[]

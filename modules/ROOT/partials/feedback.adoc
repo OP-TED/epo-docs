@@ -1,5 +1,5 @@
 //must be added to the footer of every page, still to be finalised
-//'''
-//Any comments about the documentation?
+'''
+Any comments on the documentation?
 
-//mailto:documentation@ted.eu["Email us",Documentation comment from WebSite] and let us know.
+link:https://github.com/OP-TED/epo-docs/issues/new/choose[Click here to let us know]

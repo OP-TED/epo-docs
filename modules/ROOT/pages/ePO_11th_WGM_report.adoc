@@ -149,3 +149,5 @@ Email: mailto:natalie.muric@publications.europa.eu[natalie.muric@publications.eu
 
 Lawyers interested in the public procurement domain are interested in receiving some more general information on the subject and participate in the future developments of the ePO. Definitions for classes, attributes and predicates can be modified. The ePO will work on producing more user-friendly documentation, such as information sheets which are more understandable from a business point of view. +
 The meeting ended by asking everyone that received a forwarded invitation to the meeting to send OP an email in order to be able to contact them back and to add them to the distribution list.
+
+include::partial$feedback.adoc[]

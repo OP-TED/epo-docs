@@ -164,3 +164,5 @@ The model changes shall be committed soon after the session is complete. The ses
 === Publishing the notes as GitHub pages
 
 Once the notes are committed to GitHub, they shall be published for the broader public. This shall be done by setting up GitHub Action automations that execute Antora playbook and produce the GitHub pages.
+
+include::partial$feedback.adoc[]
