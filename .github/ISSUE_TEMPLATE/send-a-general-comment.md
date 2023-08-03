@@ -1,5 +1,5 @@
 ---
-name: Send a General Comments
+name: Send a General Comment
 about: Collects general comments about the documentation.
 title: ''
 labels: ''
