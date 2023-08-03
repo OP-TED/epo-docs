@@ -1,5 +1,5 @@
 ---
-name: Document Error Detected
+name: Report an Error
 about: Collects errors detected in the documentation
 title: ''
 labels: ''
