@@ -11,7 +11,7 @@
 * xref:history.adoc[Version History]
 * xref:epo-wgm::index.adoc[Working Group Documents]
 
-
-
+xref:epo-home:partials$nav_main.adoc[]
+//include::version@component:module:partial$file-coordinate-of-target-partial.adoc[optional attribute]
 
 
