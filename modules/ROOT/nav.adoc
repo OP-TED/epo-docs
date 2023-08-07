@@ -5,8 +5,8 @@
 :docdate: June 2023Working Group meetings
 
 * xref:epo-home::index.adoc[Home]
-* xref:EPO::Overview_V3.1.0.adoc[Version 3.1.0 Overview]
-* xref:EPO::release-notes.adoc[Version 3.1.0 Release Notes (detailed)]
+* xref:EPO::Overview_V3.1.0.adoc[Release Overview]
+* xref:EPO::release-notes.adoc[Release Notes]
 
 * [.separated]#**Common Documents**#
 * xref:epo-home::business.adoc[Business Overview]
