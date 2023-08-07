@@ -45,7 +45,7 @@ xref:v4.0.0-rc.1@EPO:Overview_V4.0.0-rc.1.adoc[Click here to read the version 4.
 .ePO v4.0.0-rc.1 Release Notes
 ****
 
-xref:v4.0.0-rc.1@EPO:release-notes.adoc[Click here to read the 4.0.0-rc.1 detailed release notes]
+xref:v4.0.0-rc.1@EPO:release-notes.adoc[Click here to read the 4.0.0-rc.1 Detailed Release Notes]
 
 ****
 --
