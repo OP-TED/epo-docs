@@ -9,11 +9,11 @@
 * xref:EPO::release-notes.adoc[Version 3.1.0 Release Notes (detailed)]
 
 * [.separated]#**Common Documents**#
-* xref:new_main::business.adoc[Business Overview]
-* xref:new_main::references.adoc[Reference Documents]
-* xref:new_main::methodology.adoc[Ontology Methodology]
-* xref:new_main::history.adoc[Version History]
-* xref:new_main::versioning.adoc[ePO Versioning Rules]
+* xref:epo-home::business.adoc[Business Overview]
+* xref:epo-home::references.adoc[Reference Documents]
+* xref:epo-home::methodology.adoc[Ontology Methodology]
+* xref:epo-home::history.adoc[Version History]
+* xref:epo-home::versioning.adoc[ePO Versioning Rules]
 
 * [.separated]#**Working Group Documents**#
 * xref:epo-wgm::wider.adoc[Wider Working Group Quarterly Meetings]
