@@ -13,7 +13,7 @@
 * xref:references.adoc[Reference Documents]
 * xref:methodology.adoc[Ontology Methodology]
 * xref:history.adoc[Version History]
-* xref:new_main::versioning.adoc[ePO Versioning Rules]
+* xref:versioning.adoc[ePO Versioning Rules]
 
 * [.separated]#**Working Group Documents**#
 * xref:epo-wgm::wider.adoc[Wider Working Group Quarterly Meetings]
