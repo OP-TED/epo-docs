@@ -4,7 +4,7 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
-* xref:epo-home:index.adoc[Home]
+* xref:index.adoc[Home]
 * xref:Overview_V3.1.0.adoc[Version 3.1.0 Overview]
 * xref:release-notes.adoc[Version 3.1.0 Release Notes (detailed)]
 
