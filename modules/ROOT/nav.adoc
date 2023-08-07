@@ -4,7 +4,27 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
-include::partials/nav_main.adoc[]
+* xref:epo-home::index.adoc[Home]
+* xref:EPO::Overview_V3.1.0.adoc[Version 3.1.0 Overview]
+* xref:EPO::release-notes.adoc[Version 3.1.0 Release Notes (detailed)]
+
+* [.separated]#**Common Documents**#
+* xref:epo-home::business.adoc[Business Overview]
+* xref:epo-home::references.adoc[Reference Documents]
+* xref:epo-home::methodology.adoc[Ontology Methodology]
+* xref:epo-home::history.adoc[Version History]
+* xref:epo-home::versioning.adoc[ePO Versioning Rules]
+
+* [.separated]#**Working Group Documents**#
+* xref:epo-wgm::wider.adoc[Wider Working Group Quarterly Meetings]
+* xref:epo-wgm::cumulative.adoc[Working Group Meetings Cumulative Reports (by year)]
+* xref:epo-wgm::indiv.adoc[Working Group Individual Meetings Reports]
+//* xref:epo-wgm::eCatalogueMeetings.adoc[eCatalogue Meetings]
+//* xref:epo-wgm::eOrderingMeetings.adoc[eOrdering Meetings]
+//* xref:epo-wgm::eFulfilmentMeetings.adoc[eFulfilment Meetings]
+* xref:epo-wgm::Note_taking.adoc[Note Taking Guidelines]
+
+
 
 
 
