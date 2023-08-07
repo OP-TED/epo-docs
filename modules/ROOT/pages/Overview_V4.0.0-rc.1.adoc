@@ -1,3 +1,9 @@
+:doctitle: eProcurement Ontology
+:doccode: epo-v4.0.0-rc.1-prod-003
+:author: Andreea Pasare
+:authoremail:
+:docdate: July 2023
+
 == Candidate Release 4.0.0-rc.1: 19.07.2023
 
 == *Release Overview*
