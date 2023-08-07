@@ -13,14 +13,17 @@
 * xref:references.adoc[Reference Documents]
 * xref:methodology.adoc[Ontology Methodology]
 * xref:history.adoc[Version History]
-//* xref:epo-wgm::index.adoc[Working Group Documents]
 * xref:new_main::versioning.adoc[ePO Versioning Rules]
 
 * [.separated]#**Working Group Documents**#
-//* xref:EPO::index.adoc[ePO Docs `{epo_latest_version}`]
-// * xref:EPO::index.adoc[ePO Development Docs]
-// * xref:EPO::references.adoc[Reference Documents]
-* xref:epo-wgm::index.adoc[Working Group Meetings]
+* xref:epo-wgm::wider.adoc[Wider Working Group Quarterly Meetings]
+* xref:epo-wgm::cumulative.adoc[Working Group Meetings Cumulative Reports (by year)]
+* xref:epo-wgm::indiv.adoc[Working Group Individual Meetings Reports]
+//* xref:epo-wgm::eCatalogueMeetings.adoc[eCatalogue Meetings]
+//* xref:epo-wgm::eOrderingMeetings.adoc[eOrdering Meetings]
+//* xref:epo-wgm::eFulfilmentMeetings.adoc[eFulfilment Meetings]
+* xref:epo-wgm::Note_taking.adoc[Note Taking Guidelines]
+
 // * xref:rdf-mapping::index.adoc[XML to RDF Mappings]
 // * xref:rdf-conversion::index.adoc[XML to RDF Conversion]
 
