@@ -5,8 +5,8 @@
 :docdate: June 2023
 
 * xref:index.adoc[Home]
-* xref:Overview_V3.1.0.adoc[Version 3.1.0 Overview]
-* xref:release-notes.adoc[Version 3.1.0 Release Notes (detailed)]
+* xref:Overview_V3.1.0.adoc[Release Overview]
+* xref:release-notes.adoc[Release Notes (detailed)]
 
 * [.separated]#**Common Documents**#
 * xref:epo-home::business.adoc[Business Overview]
