@@ -6,7 +6,7 @@
 
 * xref:index.adoc[Home]
 * xref:Overview_V3.1.0.adoc[Release Overview]
-* xref:release-notes.adoc[Release Notes (detailed)]
+* xref:release-notes.adoc[Release Notes]
 
 * [.separated]#**Common Documents**#
 * xref:epo-home::business.adoc[Business Overview]
