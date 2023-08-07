@@ -52,3 +52,5 @@ RDF representation of the eNotice module can be downloaded link:https://github.c
 ** Modelling of different charges allowing for the different requirements across the different phases
 ** Deliverable becomes a subclass of the Item
 ** PostAward Objects become Documents
+
+include::partial$feedback.adoc[]

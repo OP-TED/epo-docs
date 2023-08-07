@@ -90,6 +90,5 @@ link:https://github.com/meaningfy-ws/model2owl/blob/master/doc/uml-conventions/u
 
 link:https://github.com/meaningfy-ws/model2owl/blob/master/doc/uml2owl-transformation/uml2owl-transformation.pdf[The UML to OWL Transformation Rules]
 
-
-include::partial$feedback.adoc[]
 ////
+include::partial$feedback.adoc[]
