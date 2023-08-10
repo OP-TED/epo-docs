@@ -35,7 +35,7 @@
 '''
 == *Release Notes*
 
-The xref:release-notes.adoc[4.0.0-rc.1 Release Notes (detailed)] can be found xref:release-notes.adoc[here].
+The xref:release-notes.adoc[4.0.0-rc.1 release notes] can be found xref:release-notes.adoc[here].
 
 '''
 == *Technical Files*

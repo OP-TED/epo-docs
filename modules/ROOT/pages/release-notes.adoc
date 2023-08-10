@@ -65,7 +65,7 @@ RDF representation of the eOrdering module can be downloaded link:https://github
 * epo:SecondaryRole
 * epo:TertiaryRole
 
-== New Controlled Vocabularies
+== New controlled vocabularies
 
 === ePO core
 
@@ -81,7 +81,7 @@ RDF representation of the eOrdering module can be downloaded link:https://github
 * at-voc-new:price-type
 * at-voc-new:document-type
 
-== Deleted Controlled Vocabularies
+== Deleted controlled vocabularies
 
 === ePO core
 
