@@ -10,7 +10,7 @@
 [.tile]
 .ePO 3.1.0: Latest Production Release
 ****
-The eProcurement Ontology V3.1.0 was released on the 16 December 2022 introducing a new module, eOrdering,a combined glossary, updates, and various fixes as planned for the 2022 Q4 milestone.
+The eProcurement Ontology v3.1.0 was released on the 16 December 2022 introducing a new module, eOrdering,a combined glossary, updates, and various fixes as planned for the 2022 Q4 milestone.
 
 xref:3.1@EPO::index.adoc[Click here to read the version 3.1.0 details]
 
