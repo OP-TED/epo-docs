@@ -1,13 +1,13 @@
-:doctitle: eProcurement Ontology Version 3.1.0
+:doctitle: eProcurement Ontology
 :doccode: epo-v3.1.0-prod-003
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
-== Latest Production Release: 16.12.2022
+== Latest Production Release 3.1.0: 16.12.2022
 
 == *Release Overview*
 
-== *Changes in V3.1.0*
+== *Changes in 3.1.0*
 * a new module, eOrdering, was introduced
 * the inclusion of notice systematisation in the eNotice module
 * changes to Procurement Object: classes and attributes (Procedure, PlannedProcurementPart, Lot)
@@ -23,12 +23,12 @@
 '''
 == *Release Notes*
 
-The xref:release-notes.adoc[Version 3.1.0 Release Notes (detailed)] can be found xref:release-notes.adoc[here].
+The xref:release-notes.adoc[3.1.0 Release Notes] can be found xref:release-notes.adoc[here].
 
 '''
 == *Technical Files*
 
-link:https://github.com/OP-TED/ePO/tree/v3.1.0[Version 3.1.0 technical build files] can be downloaded from GitHub link:https://github.com/OP-TED/ePO/tree/v3.1.0[here]
+link:https://github.com/OP-TED/ePO/tree/v3.1.0[The 3.1.0 technical build files] can be downloaded from GitHub link:https://github.com/OP-TED/ePO/tree/v3.1.0[here]
 
 '''
 == *Ontology*

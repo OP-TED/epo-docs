@@ -1,8 +1,10 @@
-:doctitle: eProcurement Ontology V3.1.0 Release Notes
+:doctitle: eProcurement Ontology
 :doccode: epo-main-prod-002
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
+
+== *Release notes 3.1.0*
 
 The release of version 3.1.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v3.1.0[here].
 
