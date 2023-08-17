@@ -8,7 +8,7 @@
 * xref:Overview_V3.1.0.adoc[Release Overview]
 * xref:release-notes.adoc[Release Notes]
 
-* [.separated]#**Common Documents**#
+* [.separated]#**General Reference**#
 * xref:epo-home::business.adoc[Business Overview]
 * xref:epo-home::references.adoc[Reference Documents]
 * xref:epo-home::methodology.adoc[Ontology Methodology]
