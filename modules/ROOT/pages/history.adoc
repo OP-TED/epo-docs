@@ -7,7 +7,7 @@
 == *eProcurement Ontology overview*
 Several initiatives around eProcurement in the EU had been launched prior to 2016, driven by the public sector, industry, and academia. Some had grown organically, while others were the result of standardisation work.
 
-The vocabularies and the semantics that they introduced, the phases of public procurement that they covered, and the technologies they used differed greatly. These differences hampered data interoperability and reuse.
+The vocabularies and the semantics that they introduced, the phases of public procurement that they covered, and the technologies they used, differed greatly. These differences hampered data interoperability and reuse.
 
 The situation created a need for a common representation of the knowledge around eProcurement as it is practiced in the European Union. This meant that a common vocabulary, axioms, and rules were needed. 
 

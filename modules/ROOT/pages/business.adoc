@@ -48,7 +48,7 @@ When starting to develop a software application, or wanting to extract data from
 == Reasons for a Formal Ontology
 * Ease of a common vocabulary: consistency in the definition of process and concept amongst stakeholders (such as users/ technical implementors/ subject-matter experts).
 * Standardisation of vocabulary
-*	Adoption of an ontology standard: in this case, the opensource Web Ontology Language (OWL).
+*	Adoption of an ontology standard: in this case, the open-source Web Ontology Language (OWL).
 *	Consistency in the definition of process and concepts in technologies used.
 *	Conception of the ontology based on expert knowledge, and maintenance of it through consultation with stakeholders.
 *	Legal and regulatory compliance with EU laws and regulations.
@@ -108,7 +108,7 @@ Ultimately, the OOP can be implemented in a cross-border context. For instance, 
 == History
 The objective of the ePO was (and still is) to conceptualise and formally encode eProcurement data, and to make it available in an open, structured, and machine-readable format. This data covers the process from end-to-end, i.e., from notification, through tendering, awarding, ordering, invoicing, and finally to payment.
 
-Under xref:new_main@EPO::history.adoc[Version History] in the menu on the left, you can read the evolution of the e-procurement ontology from version 1.0.0 to the current version, and under xref:new_main@EPO::references.adoc[Reference Documents], you can find documents that contain some useful background information, those that proposed the project, created the specifications, described the work, and set the framework for creating the ontology.
+Under xref:history.adoc[Version History] in the menu on the left, you can read the evolution of the e-procurement ontology from version 1.0.0 to the current version, and under xref:references.adoc[Reference Documents], you can find documents that contain some useful background information, those that proposed the project, created the specifications, described the work, and set the framework for creating the ontology.
 
 == Representation of the eProcurement Ontology
 The ontology artifacts are in the form of:

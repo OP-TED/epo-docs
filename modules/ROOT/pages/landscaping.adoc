@@ -59,7 +59,7 @@ All care has been taken by the author to ensure that s/he has obtained, where ne
 
 Public procurement represents around the 20% of GDP in Europe. This big buying volume offers a high economic potential to enhance efficiency of European procurement.
 
-The EU is investing significantly on the digitalisation of the public procurement process (referred to as e-Procurement). This goes beyond simply moving to electronic tools; it rethinks various pre-award and post-award phases with the aim of makng them simpler for businesses to participate in, and for the public sector to manage. It also allows for the integration of data-based approaches at various stages of the procurement process.
+The EU is investing significantly on the digitalisation of the public procurement process (referred to as e-Procurement). This goes beyond simply moving to electronic tools; it rethinks various pre-award and post-award phases with the aim of making them simpler for businesses to participate in, and for the public sector to manage. It also allows for the integration of data-based approaches at various stages of the procurement process.
 
 With e-Procurement, public spending should become more transparent, evidence-oriented, optimised, streamlined and integrated with market conditions. More specifically, e-Procurement offers a range of benefits such as:
 

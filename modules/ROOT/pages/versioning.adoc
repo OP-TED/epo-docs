@@ -10,7 +10,7 @@ In this section, we outline the versioning rules for the eProcurement ontology, 
 
 “Dependency hell” plagues software management and impacts models, architecture and documentation. As a project expands, the complexity of changes and dependencies increase, complicating the release of new work packages. Version lock and version promiscuity impede progress, making it difficult to move projects forward safely and efficiently.
 
-Semantic Versioning offers a solution by providing a set of rules for assigning and incrementing version numbers. It clearly communicates changes in artefacts through version number increments and change notes, using the *X.Y.Z (Major.Minor.Patch)* format:
+Semantic Versioning offers a solution by providing a set of rules for assigning and incrementing version numbers. It clearly communicates changes in artefacts through version number increments and change notes using the *X.Y.Z (Major.Minor.Patch)* format:
 
 * Bug fixes increment the patch version,
 * Backwards-compatible changes increment the minor version, and

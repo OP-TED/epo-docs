@@ -31,7 +31,7 @@ The structure of the sentence is always as follows:
 
  As a <role of user>, I need <something> in order to gain <the benefit>
 
-.Example
+.Examples
 As a contracting authority <role of the user> I need to know the number of tenderers that have submitted a tender <something> so that I can add it to the award notice <the benefit>.
 
 image::UserStoriesExamplesTable.png[More examples of user stories]
