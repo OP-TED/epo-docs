@@ -5,16 +5,16 @@
 :docdate: June 2023
 
 == *17 April 2020: eProcurement Ontology Architecture and Formalisation Specifications*
-InfEurope completed a report for the EU Publications Office on the xref:ePO_Arch_Design.adoc[eProcurement ontology architecture and formalisation specifications] on the 17 April 2020, which describes the architecture at a technical level, including technologies, process and methodology, and conceptual models. The report can be accessed xref:ePO_Arch_Design.adoc[here]
+InfEurope delivered a report commissioned by the EU Publications Office on the xref:ePO_Arch_Design.adoc[eProcurement ontology architecture and formalisation specifications] on the 17 April 2020, describing the ePO architecture at a technical level, including technologies, process and methodology, and conceptual models. The report can be accessed xref:ePO_Arch_Design.adoc[here]
 
 == *3 August 2017: Specification of the Project Process and Methodology, and Project Charter Proposal*
-On the 3 August 2017, PWC EU Services issued the first draft of document, xref:specification.adoc[Specification of the Process and Methodology to develop the eProcurement Ontology], and version 1.0 of a second report, the D02.02 xref:charter.adoc[Project Charter Proposal], which describes the project, listing its scope, stakeholders, success criteria, deliverables, costs and other aspects essential to, or covered by, the project.
+On the 3 August 2017, PWC EU Services delivered two documents commissioned by the Publications Office of the EU, and funded by the ISA^2^ Project, the first draft of document, xref:specification.adoc[Specification of the Process and Methodology to develop the eProcurement Ontology], and version 1.0 of a second report, the D02.02 xref:charter.adoc[Project Charter Proposal], which describes the project, listing its scope, stakeholders, success criteria, deliverables, costs and other aspects essential to, or covered by, the project.
 
 The Specification and Methodology can be found xref:specification.adoc[here].
 The Project Charter Proposal can be accessed xref:charter.adoc[here].
 
 == *20 September 2016: First Support for an eProcurement Ontology*
-On the 20 September 2016, PWC EU Services issued version 1.00 of a report, the D04.07 Report on policy support for e-Procurement (e-Procurement ontology), known as the xref:landscaping.adoc[Landscaping Document], for the ISA Project, the initial funder of the eProcurement Ontology Project.
+On the 20 September 2016, PWC EU Services was contracted, by the publications Office of the EU, to provide version 1.00 of a report, the D04.07 Report on policy support for e-Procurement, known as the xref:landscaping.adoc[Landscaping Document], for the ISA Project, the initial funder of the eProcurement Ontology Project.
 
 The document sets the context for an eProcurement Ontology, proposes a solution, and addresses topics such as process, methodology, technology, and audience, and then concludes, and proposes the next steps in the project. The xref:landscaping.adoc[full report] can be accessed xref:landscaping.adoc[here].
 
