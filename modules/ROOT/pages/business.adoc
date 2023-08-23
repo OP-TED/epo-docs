@@ -14,10 +14,94 @@ In a general sense, an ontology defines what is or exists, such as
 
 An ontology can be thought of as the description of an ecosystem, and covers all the definitions, actors, and interactions in the ecosystem. It gives structure and definition to the data collected.
 
-== Key Data Processing Goals
+=== What is the ePO Ontology?
+In EU e-Procurement, the ontology describes objects and concepts, with definitions, attributes, attributes (mandatory and optional), and relationships that occur in the EU public procurement process.
+
+=== Reasons for a formal ontology
+•	Ese of a common vocabulary: consistency in the definition of process and concept amongst stakeholders (such as users/ technical implementors/ subject-matter experts).
+•	Standardisation of vocabulary
+•	Adoption of an ontology standard: in this case, the opensource Web Ontology Language (OWL).
+•	Consistency in the definition of process and concepts in technologies used.
+•	Conception of the ontology based on expert knowledge, and maintenance of it through consultation with stakeholders.
+•	Legal and regulatory compliance with EU laws and regulations.
+•	The ability to respond to formal initiatives around improving EU data.
+•	Transparency of EU e-procurement operations and ease of reporting.
+•	Forms a foundation for the technical work required to make the e-procurement technical processes function as intended.
+•	Forms the foundation upon which best practises/ principles/ governance can be applied i.e., all involved in eProcurement process have the same, correct, approved, up-to-date, and consistent definitions and understanding of what is happening in it.
+•	Changes and improvements follow a formal consultation and approval process.
+•	Interfaces to internal systems from other systems have a common documented system to guide their interaction.
+
+
+
+
+== Principles of the eProcurement Ontology (ePO)
+
+*Figure 1 ePO phases in Chronological Order:*
+image:bus1.png[]
+
+==== Time phased approach
+Some objects of the ontology are time agnostic - a Buyer, for example, occurs at every phase of the procurement process.
+
+Some attributes and actions of, or relationships between, objects are time and/ or circumstance dependent i.e., they only appear, or are relevant, at certain stages in the process.
+
+While the ontology can be quite complex, it must balance the needs of being thorough and complete, and remaining flexible enough to evolve and change over time.
+
+=== Other Rules and Scope
+
+Additional rules the Ontology development is based on:
+
+* Using an upper-level ontology as an anchor and deciding the appropriate underpinning, ontological commitment, and level of abstraction (the upper model is not included in the final ontology)
+* Modelling principles set in place and applied consistently, i.e., wrt naming, relation directions, design patterns applied, etc.
+* The scope set to include both the concepts in the current TED standard forms (non-electronic) and those from the eForms.
+eForms coverage
+* One goal for ePO is that all eForms business terms (BT) are found somehow, somewhere in the ontology. This means that BTs become attributes of a class or relations (predicates).
+
+*Figure 4 - eForms coverage:*
+image:bus4.png[]
+
+=== The Evolution of the eProcurement Ontology
+
+
+*Figure 5 - The ePO roadmap 2017 - 2025:*
+image:epo_roadmap August 2023.png[]
+
+The creation and maintenance of the ontology is a collaboration between the OP, programmers, working group members and other stakeholders. Meetings to discuss, agree and schedule changes to the ontology occur regularly.
+
+Triggers for changes in the ontology might be:
+
+•	Changes in law e.g., a change in the requirements for trade, in certain products, or from certain suppliers
+•	Changes in the functionality of software modules using the eProcurement ontology
+•	Feedback from users (errors or suggestions)
+•	Discussion in the working group meetings
+•	Planned features in upcoming software releases
+•	New initiatives by the EU to further their data related goals
+
+Changes in the ontology cannot be done in isolation from the applications that are based on them. This is where versioning protects the functionality of the last version for those still using it, while allowing those who wish to adopt the new version to do so. Both versions work in parallel for a time until legislation or other reason, e.g, withdrawal of technical support, forces users to upgrade their version.
+
+=== #Working group meetings and schedules#
+
+=== #Stakeholders#
+
+
+=== The hierarchical nature of the model
+Having an upper level of definition is important and helpful. The example below shows how an agent is the higher or abstract level and person is a lower, and more concrete, level.
+
+image:bus5.png[]
+
+Figure 5. Upper-level organisation of ePO
+
+
+
+The development of the eProcurement ontology is oriented by a principle based perspective. One example of a principle is that once something is created / instantiated it is not possible to modify it to something else completely different. (e.g. an organisation should be created only once and it is not repeated in a different way on the model).
+
+image:bus6.png[]
+#Figure 6. Principles for ePO development#
+
+=== Key Data Processing Goals
 In the EU, two key goals around data and data processing are pursued:
 
-=== The provision of open data
+
+==== The provision of open data
 
 The EU portal website, https://data.europa.eu/, makes many datasets publicly available on areas ranging from agriculture to health, finances, transport, procurement, and many more. The portal’s intentions are to:
 
@@ -26,7 +110,7 @@ The EU portal website, https://data.europa.eu/, makes many datasets publicly ava
 . *educate citizens and organisations* about the opportunities that arise from the availability of open data.
 Collecting high quality data and fostering its reuse are key components of this goal.
 
-=== The Enactment of the Interoperable Europe Act (Policy | Joinup (europa.eu))
+==== The Enactment of the Interoperable Europe Act (Policy | Joinup (europa.eu))
 
 The Interoperable Europe Act proposes a strategic interoperability cooperation mechanism across the European Union by “creating the setup and tools for interoperability within public administrations on a Union-wide scale and remove the unnecessary legal, organisational, semantic and technical obstacles”.
 
@@ -41,39 +125,32 @@ The provision of open-source software applications and development kits that can
 
 When starting to develop a software application, or wanting to extract data from a data set, knowing what data and metadata is, or must be, stored in it is essential. This is where an ontology comes into play, providing a “dictionary” of the data components, what kind of data they contain, and how they relate to each other.
 
-== Reasons for a formal ontology
-•	Ese of a common vocabulary: consistency in the definition of process and concept amongst stakeholders (such as users/ technical implementors/ subject-matter experts).
-•	Standardisation of vocabulary
-•	Adoption of an ontology standard: in this case, the opensource Web Ontology Language (OWL).
-•	Consistency in the definition of process and concepts in technologies used.
-•	Conception of the ontology based on expert knowledge, and maintenance of it through consultation with stakeholders.
-•	Legal and regulatory compliance with EU laws and regulations.
-•	The ability to respond to formal initiatives around improving EU data.
-•	Transparency of EU e-procurement operations and ease of reporting.
-•	Forms a foundation for the technical work required to make the e-procurement technical processes function as intended.
-•	Forms the foundation upon which best practises/ principles/ governance can be applied i.e., all involved in eProcurement process have the same, correct, approved, up-to-date, and consistent definitions and understanding of what is happening in it.
-•	Changes and improvements follow a formal consultation and approval process.
-•	Interfaces to internal systems from other systems have a common documented system to guide their interaction.
+=== #Upper Level Ontologies:#
 
-e.g.s
+=== Source Management:
 
-== eProcurement Ontology (ePO)
-In EU e-Procurement, the ontology describes objects and concepts, with definitions, attributes, attributes (mandatory and optional), and relationships that occur in the EU public procurement process.
+Best practices, i.e., the use of a version-controlled repository (GitHub) and tool (Git), are employed for the development of the ontology. A master/ main branch is used as the source from which code is published.  To make changes to the model, development is done on temporary branches using tags. After validation, the new branch is merged with the main/ master.
 
-=== Time phased approach
-Some objects of the ontology are time agnostic - a Buyer, for example, occurs at every phase of the procurement process.
+image:bus3.png[]
 
-Some attributes and actions of, or relationships between, objects are time and/ or circumstance dependent i.e., they only appear, or are relevant, at certain stages in the process.
+#Figure 3. Source management methodology#
 
-image:bus1.png[]
+== Reuse of other ontologies and vocabularies
+=== An explanation of the "Once Only" principle (OOP) and the importance of a semantic model:
 
-Figure 1. ePO phases in Chronological Order
+The "once-only" principle is a key enabler for simplifying administrative procedures for citizens and businesses. The idea behind this legal principle is that public authorities should not request information from businesses and citizens that they can retrieve from national databases or that they already possess.
 
-#e.g.s:#
+In some European countries, this is already established practice. It not only saves millions of euros but also makes interaction between authorities, business and citizens much easier.
 
-While the ontology can be quite complex, it must balance the need of being thorough and complete, while remaining flexible enough to evolve and change over time.
+However, currently this works only within a country. The next step is to open up those systems to the citizens and businesses of other countries.
 
-== Core Criterion and Core Evidence Vocabulary (CCCEV)
+Opening up national databases however implies that the different systems need to be interoperable to allow effective exchange of information.
+
+*A semantic model helps to define information in such a way that it enables the seamless transfer of data.*
+
+Ultimately, the OOP can be implemented in a cross-border context. For instance, when citizens consume public services, they often have to provide evidence that they are entitled to such services, e.g. in the form of certificates, which they would need to request from other public administrations. In practice, the OOP requires administrations to exchange this information directly between each other, after having received consent form the citizen.  The "Core Criterion and Core Evidence" data model (CCCEV) supports this exchange. It defines in a generic way the structure of a criterion, for example, having a driving license. It also specifies the different types of evidence that can be provided as proof by citizens and businesses. The advantage of CCCEV is that it can be universally applied for any kind of criterion and evidence.
+
+=== Core Criterion and Core Evidence Vocabulary (CCCEV)
 To facilitate vocabulary standardisation, the EU developed the
 https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/e-government-core-vocabularies/core-criterion-and-core-evidence-vocabulary[Core Criterion and Core Evidence Vocabulary (CCCEV)], which “supports the exchange of information between organisations that define criteria and organisations that respond to these criteria by means of evidences.”
 
@@ -91,25 +168,9 @@ From the website, the benefits of using the CCCEV are to:
 
 The eProcurement Ontology was developed in accordance with the CCCEV's "Once Only" principle.
 
-=== An explanation of the "Once Only" principle (OOP) and the importance of a semantic model:
+=== #Single Digital Gateway#
 
-The "once-only" principle is a key enabler for simplifying administrative procedures for citizens and businesses. The idea behind this legal principle is that public authorities should not request information from businesses and citizens that they can retrieve from national databases or that they already possess.
-
-In some European countries, this is already established practice. It not only saves millions of euros but also makes interaction between authorities, business and citizens much easier.
-
-However, currently this works only within a country. The next step is to open up those systems to the citizens and businesses of other countries.
-
-Opening up national databases however implies that the different systems need to be interoperable to allow effective exchange of information.
-
-*A semantic model helps to define information in such a way that it enables the seamless transfer of data.*
-
-Ultimately, the OOP can be implemented in a cross-border context. For instance, when citizens consume public services, they often have to provide evidence that they are entitled to such services, e.g. in the form of certificates, which they would need to request from other public administrations. In practice, the OOP requires administrations to exchange this information directly between each other, after having received consent form the citizen.  The "Core Criterion and Core Evidence" data model (CCCEV) supports this exchange. It defines in a generic way the structure of a criterion, for example, having a driving license. It also specifies the different types of evidence that can be provided as proof by citizens and businesses. The advantage of CCCEV is that it can be universally applied for any kind of criterion and evidence.
-
-
-== History:
-The objective of the ePO was (and still is) to conceptualise and formally encode eProcurement data, and to make it available in an open, structured, and machine-readable format. This data covers the process from end-to-end, i.e., from notification, through tendering, awarding, ordering, invoicing, and finally to payment.
-
-Under xref:new_main@EPO::history.adoc[Version History] in the menu on the left, you can read the evolution of the e-procurement ontology from version 1.0.0 to the current version, and under xref:new_main@EPO::references.adoc[Reference Documents], you can find documents that contain some useful background information, those that proposed the project, created the specifications, described the work, and set the framework for creating the ontology.
+=== #Core Vocabularies#
 
 == Representation of the eProcurement Ontology
 The ontology artifacts are in the form of:
@@ -158,64 +219,16 @@ This change management process has the following characteristics:
 
 The Change Management process is based on generic change and release management processes in ITILv3 and the generic xref:new_main@EPO::metgovman.adoc[Methodology and tools for Structural Metadata Management and Governance]
 
-== Source Management:
-
-Best practices, i.e., the use of a version-controlled repository (GitHub) and tool (Git), are employed for the development of the ontology. A master/ main branch is used as the source from which code is published.  To make changes to the model, development is done on temporary branches using tags. After validation, the new branch is merged with the main/ master.
-
-image:bus3.png[]
-
-#Figure 3. Source management methodology#
-
-== Other Rules and Scope
-
-Additional rules the Ontology development is based on:
-
-* Using an upper-level ontology as an anchor and deciding the appropriate underpinning, ontological commitment, and level of abstraction (the upper model is not included in the final ontology)
-* Modelling principles set in place and applied consistently, i.e., wrt naming, relation directions, design patterns applied, etc.
-* The scope set to include both the concepts in the current TED standard forms (non-electronic) and those from the eForms.
-eForms coverage
-* One goal for ePO is that all eForms business terms (BT) are found somehow, somewhere in the ontology. This means that BTs become attributes of a class or relations (predicates).
-
-image:bus4.png[]
-
-Figure 4. eForms coverage
 
 
-== The Evolution of the eProcurement Ontology
-The creation and maintenance of the ontology is a collaboration between the OP, programmers, working group members and other stakeholders. Meetings to discuss, agree and schedule changes to the ontology occur regularly.
-
-Triggers for changes in the ontology might be:
-•	Changes in law e.g., a change in the requirements for trade, in certain products, or from certain suppliers
-•	Changes in the functionality of software modules using the eProcurement ontology
-•	Feedback from users (errors or suggestions)
-•	Discussion in the working group meetings
-•	Planned features in upcoming software releases
-•	New initiatives by the EU to further their data related goals
-
-Changes in the ontology cannot be done in isolation from the applications that are based on them. This is where versioning protects the functionality of the last version for those still using it, while allowing those who wish to adopt the new version to do so. Both versions work in parallel for a time until legislation or other reason, e.g, withdrawal of technical support, forces users to upgrade their version.
-
-== The hierarchical nature of the model
-Having an upper level of definition is important and helpful. The example below shows how an agent is the higher or abstract level and person is a lower, and more concrete, level.
-
-image:bus5.png[]
-
-Figure 5. Upper-level organisation of ePO
-
-#Principle-based perspective: where are all principles listed?#
-
-The development of the eProcurement ontology is oriented by a principle based perspective. One example of a principle is that once something is created / instantiated it is not possible to modify it to something else completely different. (e.g. an organisation should be created only once and it is not repeated in a different way on the model).
-
-image:bus6.png[]
-#Figure 6. Principles for ePO development#
-
-== Technical Aspects
+=== Technical Aspects
 
 Enterprise Architect (EA) is the tool used to design the conceptual model. The ontology is designed as UML model and Class diagrams offer thematic views on the model.
 The ontology architecture is described in this report. It covers the main building blocks of the ontology, how it is layered (core, restrictions and shapes), and what output artefacts are created for each layer.
 The UML model follows a set of conventions so that it can be transformed automatically into OWL, and SHACL representations (using model2owl toolchain).
 
-== Examples of the conceptual model elements
-=== Model refactoring
+=== Examples of the conceptual model elements
+==== Model refactoring
 The new version adopts a package-based grouping of concepts. Also, there are more diagrams introduced than at the beginning of the ePO development. This makes it easier to avoid getting distracted by neighbouring concepts.
 
 image:bus7.png[]
@@ -223,7 +236,7 @@ image:bus7.png[]
 Figure 7. Package-based grouping of ePO concepts
 
 
-=== The new structure of the ePO model provides hierarchy and relations diagrams.
+==== The new structure of the ePO model provides hierarchy and relations diagrams.
 
 image:bus8.png[]
 
