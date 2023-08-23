@@ -325,6 +325,7 @@ There are diagrams used for a scoped view versus a wide view of the model. It is
 
 ==== Data Types
 Figure 10 - xsd data types used
+
 image:bus10.png[]
 
 Figure 11 - Example of transitioning from old UML/UBL data types to new XSD data types
