@@ -85,14 +85,14 @@ Changes in the ontology cannot be done in isolation from the applications that a
 Meeting minutes and presentations are made publicly available link:https://docs.ted.europa.eu/epo-wgm/index.html[online].
 
 === Stakeholders
-.Stakeholder areas of interest and types of use cases
+.Stakeholder and their areas of interest
 [cols="1,1"]
 |===
-|Stakeholder category|Type of use case
+|Stakeholder category|Area of interest
 
 |Contracting authorities
-|Interconnection of public procurement systems
-Transparency and monitoring
+|Interconnection of public procurement systems,
+Transparency and monitoring,
 Innovation & value added services
 
 |Economic operators
@@ -100,11 +100,11 @@ Innovation & value added services
 Innovation & value added services
 
 |Procurement intermediaries and aggregators
-|Interconnection of public procurement systems
+|Interconnection of public procurement systems,
 Innovation & value added services
 
 |Academia and researchers
-|Innovation & value added services
+|Innovation & value added services,
 Transparency and monitoring
 
 |Media and (data) journalists
