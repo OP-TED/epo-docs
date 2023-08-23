@@ -67,7 +67,7 @@ image:epo_roadmap August 2023.png[]
 |ePO versions 4.4.0-rc.1 and 4.4.0
 |eAwarding module in v4.4.0
 
-|March 2025 and
+|March 2025
 |ePO version 4.5.0-rc.1
 |eRequest module in v4.5.0-rc.1
 
