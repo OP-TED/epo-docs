@@ -22,7 +22,7 @@ To achieve this, the EU Publications Office (OP) engaged a working group of expe
 
 == *Timeline*
 
-image:../images/epo_roadmap August 2023.png[]
+image:epo_roadmap August 2023.png[]
 [cols="1,2,2"]
 |===
 |Date|Version|Notes
