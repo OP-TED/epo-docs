@@ -4,9 +4,11 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
+////
 xref:ePO_14th_WGM_report.adoc[Report from the 14th Working Group General Meeting: 1 August 2023]
 
 ''''
+////
 xref:ePO_13th_WGM_report.adoc[Report from the 13th Working Group General Meeting: 9 March 2023]
 
 '''
