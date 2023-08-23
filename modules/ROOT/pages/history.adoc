@@ -47,21 +47,33 @@ image:epo_roadmap August 2023.png[]
 |ePO versions 4.1.0-rc.1 and 4.1.0
 |eAccess module in v4.1.0
 
-|March 2024 and May 2024
-|ePO versions 4.2.0-rc.1 and 4.2.0
-|eSubmission module in v4.2.0-rc.1 and eInvoicing module in v4.2.0
+|March 2024
+|ePO version 4.2.0-rc.1
+|eSubmission module in v4.2.0-rc.1
 
-|July 2024 and September 2024
-|ePO versions 4.3.0-rc.1 and 4.3.0
-|Contracts Registry in v4.3.0-rc.1 and eEvaluation in v4.3.0
+| May 2024
+|ePO version 4.2.0
+|eInvoicing module in v4.2.0
+
+|July 2024
+|ePO version 4.3.0-rc.1
+|Contracts Registry in v4.3.0-rc.1
+
+|September 2024
+|ePO version 4.3.0
+|eEvaluation in v4.3.0
 
 |November 2024 and January 2025
 |ePO versions 4.4.0-rc.1 and 4.4.0
 |eAwarding module in v4.4.0
 
-|March 2025 and May 2025
-|ePO versions 4.5.0-rc.1 and 4.5.0
-|eRequest module in v4.5.0-rc.1 and ePayment module in v4.5.0
+|March 2025 and
+|ePO version 4.5.0-rc.1
+|eRequest module in v4.5.0-rc.1
+
+|May 2025
+|ePO version 4.5.0
+|ePayment module in v4.5.0
 |===
 
 include::partial$feedback.adoc[]
