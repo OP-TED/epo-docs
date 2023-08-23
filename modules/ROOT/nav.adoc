@@ -23,7 +23,7 @@
 //* xref:epo-wgm::eCatalogueMeetings.adoc[eCatalogue Meetings]
 //* xref:epo-wgm::eOrderingMeetings.adoc[eOrdering Meetings]
 //* xref:epo-wgm::eFulfilmentMeetings.adoc[eFulfilment Meetings]
-* xref:epo-wgm::Note_taking.adoc[Note Taking Guidelines]
+//* xref:epo-wgm::Note_taking.adoc[Note Taking Guidelines]
 
 // * xref:rdf-mapping::index.adoc[XML to RDF Mappings]
 // * xref:rdf-conversion::index.adoc[XML to RDF Conversion]
