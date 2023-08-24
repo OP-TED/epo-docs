@@ -1,0 +1,5 @@
+== ePO conceptual model from frozen-2.0.2 branch
+
+This version was not released as an official version.
+
+* Click link:https://github.com/OP-TED/ePO/blob/feature/frozen-2.0.2/implementation/test/roles-as-classes/ePO-CM-roles-as-classes.eap[here] to download the conceptual model for the ePO frozen version 2.0.2.
