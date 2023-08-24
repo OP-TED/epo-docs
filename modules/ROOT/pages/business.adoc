@@ -329,7 +329,7 @@ image:bus10.png[]
 Figure 11 - Example of transitioning from old UML/UBL data types to new XSD data types
 image:bus11.png[]
 
-* #The ontology is provided in UML, where the use of a code list is recommended. However, in OWL generation,there is no code list so users are able to use whatever terms they wish.#
+* #The ontology is provided in UML, where the use of a code list is recommended. However, in OWL generation, there is no code list so users are able to use whatever terms they wish.#
 
 * In the past the properties of a class the attribute type ‘Code’ was associated with the class where needed. Currently, these attributes type code have been removed and there are only relations.
 
