@@ -179,7 +179,7 @@ The provision of open-source software applications and development kits that can
 
 When starting to develop a software application, or wanting to extract data from a data set, knowing what data and metadata is, or must be, stored in it is essential. This is where an ontology comes into play, providing a “dictionary” of the data components, what kind of data they contain, and how they relate to each other.
 
-=== #Upper Level Ontologies:#
+=== Upper Level Ontologies:
 
 Upper level ontologies are generally defined as a schema consisting of general terms that are common across all domains such as "object", "property" and "relation". (lower or domain ontologies being the data that populates the schema)
 
@@ -329,7 +329,7 @@ image:bus10.png[]
 Figure 11 - Example of transitioning from old UML/UBL data types to new XSD data types
 image:bus11.png[]
 
-* #The ontology is provided in UML, where the use of a code list is recommended. However, in OWL generation, there is no code list so users are able to use whatever terms they wish.#
+* The ontology is provided in UML, where the use of a code list is recommended. However, in OWL generation, there is no code list so users are able to use whatever terms they wish.
 
 * In the past the properties of a class the attribute type ‘Code’ was associated with the class where needed. Currently, these attributes type code have been removed and there are only relations.
 
