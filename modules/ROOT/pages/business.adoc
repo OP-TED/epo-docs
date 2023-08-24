@@ -192,6 +192,7 @@ The application of upper level ontologies enables semantic interoperability of o
 Best practices, i.e., the use of a version-controlled repository (GitHub) and tool (Git), are employed for the development of the ontology. A master/ main branch is used as the source from which code is published.  To make changes to the model, development is done on temporary branches using tags. After validation, the new branch is merged with the main/ master.
 
 *Figure 5 - Source management methodology:*
+
 image:bus3.png[]
 
 == Reuse of other ontologies and vocabularies
@@ -277,7 +278,7 @@ link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_mo
 
 The modular structure of the ePO to makes maintaining the model easier.
 
-*Figure 6 - Modular approach of ePO (work in progress)*
+*Figure 6 - The modular approach of the ePO:*
 
 image:bus2.png[]
 
@@ -304,41 +305,41 @@ The UML model follows a set of conventions so that it can be transformed automat
 ==== Model refactoring
 The new version adopts a package-based grouping of concepts. Also, there are more diagrams introduced than at the beginning of the ePO development. This makes it easier to avoid getting distracted by neighbouring concepts.
 
-*Figure 7 - Package-based grouping of ePO concepts*
+*Figure 7 - Package-based grouping of ePO concepts:*
 
 image:bus7.png[]
 
 
 ==== The new structure of the ePO model provides hierarchy and relations diagrams.
 
-*Figure 8 - Hierarchy diagram (focus on the abstraction)*
+*Figure 8 - Hierarchy diagram (focus on the abstraction):*
 image:bus8.png[]
 
 
-*Figure 9 - Relations diagram (focus on the connections)*
+*Figure 9 - Relations diagram (focus on the connections):*
 image:bus9.png[]
 
 
 There are diagrams used for a scoped view versus a wide view of the model. It is useful to distinguish these scope diagrams because you can see how they are connected to other concepts, some show only the relations, some show only the hierarchy. Even if the concepts are repeated across various diagrams, this makes it easier to follow the logical model construction.
 
 ==== Data Types
-Figure 10 - xsd data types used
+*Figure 10 - xsd data types used:*
 
 image:bus10.png[]
 
-Figure 11 - Example of transitioning from old UML/UBL data types to new XSD data types
+*Figure 11 - Example of transitioning from old UML/UBL data types to new XSD data types:*
 image:bus11.png[]
 
 * The ontology is provided in UML, where the use of a code list is recommended. However, in OWL generation, there is no code list so users are able to use whatever terms they wish.
 
 * In the past the properties of a class the attribute type ‘Code’ was associated with the class where needed. Currently, these attributes type code have been removed and there are only relations.
 
-*Figure 12 - Removal of “Code” type attributes*
+*Figure 12 - Removal of “Code” type attributes:*
 image:bus12.png[]*
 
 * The naming conventions are harmonised for predicates and class names. The source class is connected with the target class by using a verb.
 
-*Figure 13 - Harmonisation of predicates and class names*
+*Figure 13 - Harmonisation of predicates and class names:*
 image:bus13.png[]
 
 When releasing, naming conventions follow those of other vocabularies.
@@ -353,13 +354,13 @@ When releasing, naming conventions follow those of other vocabularies.
 
 * Another important part of the development was focused on the reification of the roles.
 
-*Figure 14 - Agent In Role pattern*
+*Figure 14 - Agent In Role pattern:*
 image:bus14.png[]
 
 
 In version 3.x, the roles are represented as a hierarchical structure of concepts, with the superclass being the AgentInRole concept (following the agent in role design pattern). The agent in role is played by an agent and it is contextualised by a procurement object (for example, lot or procedure).
 
-*Figure 15 - Roles hierarchy*
+*Figure 15 - Roles hierarchy:*
 image:bus15.png[]
 
 
