@@ -185,6 +185,8 @@ Upper level ontologies are generally defined as a schema consisting of general t
 
 Some sources define more levels of ontology, such as upper, domain-level, task-level and application ontologies. In all cases, however, the upper or top level describes very general concepts independent of domain.
 
+The application of upper level ontologies enables semantic interoperability of ontologies across multiple domains. Because the general concepts they describe are common to all domains, they provide a common ontological foundation for domain ontologies.
+
 === Source Management:
 
 Best practices, i.e., the use of a version-controlled repository (GitHub) and tool (Git), are employed for the development of the ontology. A master/ main branch is used as the source from which code is published.  To make changes to the model, development is done on temporary branches using tags. After validation, the new branch is merged with the main/ master.
