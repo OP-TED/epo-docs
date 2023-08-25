@@ -4,6 +4,17 @@
 :toclevels: 4
 :toc-title: Contents
 
+== Abstract
+In 2016 the Publications Office of the European Union (Publications Office or OP) started a project funded by the ISA Programme to organise and support the development of a Public Procurement Ontology (ePO).
+
+The ultimate objective of the ontology is to put forth a commonly agreed OWL ontology that will conceptualise, formally encode and make available in an open, structured and machine-readable format data about public procurement, covering it from end to end, i.e. from notification, through tendering to awarding, ordering, invoicing and payment. With this goal in mind the OP engaged a Working Group (WG) of experts with the mission of building consensus on the analysis results and deliverables developed by the OP’s teams.
+
+By mid-2017 a version 1.00 of the Ontology was delivered and submitted to the Working group for discussion. All the materials related to this version were made public and are accessible through the ISA^2^ Joinup platform; including the discussions held in the Working Group (WG).
+
+ePO v2.0.0, was initiated in January 2018 and subsequently, further versions have been released. More details on the evolution of the ePO can be found on the link:history.adoc[History and Planned Releases] page.
+
+This document describes the objectives, the methodological approach and the deliverables produced in this new version.
+
 == What is the ePO Ontology?
 In EU e-Procurement, the ontology describes objects and concepts, with definitions, attributes, attributes (mandatory and optional), and relationships that occur in the EU public procurement process.
 Ontology - a General Definition
@@ -248,11 +259,35 @@ The link:https://joinup.ec.europa.eu/collection/semantic-interoperability-commun
 
 
 == Representation of the eProcurement Ontology
-The ontology artifacts are in the form of:
+The ontology artifacts are in machine-readable, and human-readable form:
+
+=== Machine-readable:
+
+the main machine-readable formats are the
+
+* *OWL core*: This component constitutes the backbone of the eProcurement ontology. It is the simplest from the formal point of view and lightest in terms of detail.
+The main purpose of this component is to declare the classes, properties datatypes and controlled lists. It established, in a machine-readable format, the concepts by assigning each a URI and decorating it with a human-readable labels and descriptions. This represents a mechanism that established a common understanding between humans and machine. It is void of any constraints or restrictions and may be used as a formal ontology or
+as a data exchange vocabulary.
+
+* *OWL restrictions*: This component accommodates formal intentional definitions of the classes and properties. It is mostly formed of subclass restrictions, complex class definitions, domain and range specifications for properties; which can be derived from the conceptual
+model.
+This component provides the rules and logical conditions for reasoning with eProcurement ontology. So, the statements from this component play the role of necessary and sufficient conditions to support consistency checking and classification reasoning functionalities for eProcurement ontology.
+Mostly expressions in OWL 2 should be acceptable for the reasoning purposes of eProcurement ontology. It is possible, however, that OWL 2 is too expressive, leading to slow reasoning, and thus downgrading to OWL dialect (EL, QL, RL) might be necessary. This implies that multiple variants of these components should be generated, one for each OWL dialect as described in Section 5.4. Each of these
+variants shall be tested, and the most appropriate choice selected for reasoning in the validation phase
+
+* *SHACL_shapes*: In OWL the constraints are formed at the semantic level in the way the logic of the entire knowledge base holds together consistently. It is not always easy or obvious how the constraints should be formed so that they fulfil a business or application requirement. Moreover, in practice, often the kind of constraints necessary are those
+aiming at the surface representation of the data. Take, XSD for example, it provides a description of how an XML document ought to be structured.
+In the eProcurement domain, before the RDF data is utilised as a semantic resource, it must first respect a more formal conventions on how it is instantiated and organised. There is a need for the XSD counterpart for the RDF graphs.
+Shapes Constraint Language (SHACL) is a specification for validating graph-based data against a set of  conditions. It provides a concise, uniform syntax for both describing and constraining the contents of an RDF graph. Among others, SHACL includes features to express conditions that constrain the number of values that a property may have, the type of such values, numeric ranges, string matching
+patterns, and logical combinations of such constraints.
+Application profiles (AP) represent a set of constraints on the logical model tying it to a particular system implementation. The application profiles, in this project, must be expressed using SHACL language. The approach taken by the Publications Office to develop APs is described in. The same style should be maintained for the eProcurement APs. The AP must be conceived as extending the core ontology and fleshing the classes and properties with node and property shapes. The constraints available in the conceptual model are generic and should be automatically generated.
+However, when it comes to integration with specific systems, these constraints may not be sufficient, possibly even too rigid at times. Therefore, it is recommended to conceptualise the data shapes not a single fit it all AP but rather to create specific APs as the needs arise.
+
+=== Human readable:
 
 * *Conceptual models*: these are provided in the enterprise architecture format of visual maps, showing the elements: the classes, their properties,their  attributes, the relationships between classes, the direction of relationship, the nature of relationships e.g., 1 to many, etc.
 
-* *Glossaries*: these are provided in the form of tables that list the elements, its definition, the attributes of the class, and the format the data must be in e.g., numeric, binary, etc.
+* *Glossaries*: A glossary is a "dictionary" providing the definitions of concepts and is provided in the form of a table that lists the concept, its definition, the attributes of the class, and the format the data must be in e.g., numeric, binary, etc.
 
 
 === The Core Vocabulary module and other modules
