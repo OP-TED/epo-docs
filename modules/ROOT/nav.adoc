@@ -11,7 +11,7 @@
 * [.separated]#**General Reference**#
 * xref:epo-home::business.adoc[Business Overview]
 * xref:epo-home::references.adoc[Reference Documents]
-* xref:epo-home::methodology.adoc[Ontology Methodology]
+//* xref:epo-home::methodology.adoc[Ontology Methodology]
 * xref:epo-home::history.adoc[Version History]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
 
