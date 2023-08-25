@@ -11,7 +11,7 @@ The ultimate objective of the ontology is to put forth a commonly agreed OWL ont
 
 By mid-2017 a version 1.00 of the Ontology was delivered and submitted to the Working group for discussion. All the materials related to this version were made public and are accessible through the ISA^2^ Joinup platform; including the discussions held in the Working Group (WG).
 
-ePO v2.0.0, was initiated in January 2018 and subsequently, further versions have been released. More details on the evolution of the ePO can be found on the link:history.adoc[History and Planned Developments] page.
+ePO v2.0.0, was initiated in January 2018 and subsequently, further versions have been released. More details on the evolution of the ePO can be found on the xref:history.adoc[History and Planned Developments] page.
 
 This document describes the objectives, the methodological approach and the deliverables produced in this new version.
 
@@ -208,21 +208,22 @@ image:bus3.png[]
 
 == Reuse of other ontologies and vocabularies
 
-=== An explanation of the "Once Only" principle (OOP) and the importance of a semantic model:
+=== Core Vocabularies
 
-The "once-only" principle is a key enabler for simplifying administrative procedures for citizens and businesses. The idea behind this legal principle is that public authorities should not request information from businesses and citizens that they can retrieve from national databases or that they already possess.
+link:https://op.europa.eu/en/web/eu-vocabularies/corevocs[The EU Core Vocabularies] (from the website) are simplified, re-usable and extensible data models that capture the fundamental characteristics of an entity in a context-neutral fashion. Public administrations can use and extend the Core Vocabularies in the following contexts:
 
-In some European countries, this is already established practice. It not only saves millions of euros but also makes interaction between authorities, business and citizens much easier.
+•    Development of new systems: the Core Vocabularies can be used as a default starting point for designing the conceptual and logical data models in newly developed information systems.
 
-However, currently this works only within a country. The next step is to open up those systems to the citizens and businesses of other countries.
+•    Information exchange between systems: the Core Vocabularies can become the basis of a context-specific data model used to exchange data among existing information systems.
 
-Opening up national databases however implies that the different systems need to be interoperable to allow effective exchange of information.
+•    Data integration: the Core Vocabularies can be used to integrate data that comes from disparate data sources and create a data mesh-up.
 
-*A semantic model helps to define information in such a way that it enables the seamless transfer of data.*
+•    Open data publishing: the Core Vocabularies can be used as the foundation of a common export format for data in base registries like cadastres, business registers and public service portals.
 
-Ultimately, the OOP can be implemented in a cross-border context. For instance, when citizens consume public services, they often have to provide evidence that they are entitled to such services, e.g. in the form of certificates, which they would need to request from other public administrations. In practice, the OOP requires administrations to exchange this information directly between each other, after having received consent form the citizen.  The "Core Criterion and Core Evidence" data model (CCCEV) supports this exchange. It defines in a generic way the structure of a criterion, for example, having a driving license. It also specifies the different types of evidence that can be provided as proof by citizens and businesses. The advantage of CCCEV is that it can be universally applied for any kind of criterion and evidence.
+The link:https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-criterion-and-core-evidence-vocabulary/about[Handbook] for using the Core Vocabularies describes how the Core Vocabularies can be used by public administrations. It explains how to a) design new data models that extend the Core Vocabularies; and b) map existing data models to the Core Vocabularies. There is also a link:https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/practical-guide-using-egovernment-core-vocabularies[practical guide to using the Core Vocabularies], based on the handbook.
 
-=== Core Criterion and Core Evidence Vocabulary (CCCEV)
+
+==== Core Criterion and Core Evidence Vocabulary (CCCEV)
 To facilitate vocabulary standardisation, the EU developed the
 https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/e-government-core-vocabularies/core-criterion-and-core-evidence-vocabulary[Core Criterion and Core Evidence Vocabulary (CCCEV)], which “supports the exchange of information between organisations that define criteria and organisations that respond to these criteria by means of evidences.”
 
@@ -243,19 +244,7 @@ The eProcurement Ontology was developed in accordance with the CCCEV's "Once Onl
 === Single Digital Gateway
 The link:https://eur-lex.europa.eu/EN/legal-content/glossary/single-digital-gateway.html[single digital gateway] is a network of national portals that provides online access to information, administrative procedures and assistance services that European Union (EU) citizens and businesses may need when living or doing business in another EU Member State. Access to the digital gateway is gained via a search function in the link:https://europa.eu/youreurope/index_en.htm[Your Europe portal].
 
-=== Core Vocabularies
 
-link:https://op.europa.eu/en/web/eu-vocabularies/corevocs[The EU Core Vocabularies] (from the website) are simplified, re-usable and extensible data models that capture the fundamental characteristics of an entity in a context-neutral fashion. Public administrations can use and extend the Core Vocabularies in the following contexts:
-
-•    Development of new systems: the Core Vocabularies can be used as a default starting point for designing the conceptual and logical data models in newly developed information systems.
-
-•    Information exchange between systems: the Core Vocabularies can become the basis of a context-specific data model used to exchange data among existing information systems.
-
-•    Data integration: the Core Vocabularies can be used to integrate data that comes from disparate data sources and create a data mesh-up.
-
-•    Open data publishing: the Core Vocabularies can be used as the foundation of a common export format for data in base registries like cadastres, business registers and public service portals.
-
-The link:https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/core-criterion-and-core-evidence-vocabulary/about[Handbook] for using the Core Vocabularies describes how the Core Vocabularies can be used by public administrations. It explains how to a) design new data models that extend the Core Vocabularies; and b) map existing data models to the Core Vocabularies. There is also a link:https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/practical-guide-using-egovernment-core-vocabularies[practical guide to using the Core Vocabularies], based on the handbook.
 
 
 == Representation of the eProcurement Ontology
@@ -263,38 +252,40 @@ The ontology artifacts are in machine-readable, and human-readable form:
 
 === Machine-readable:
 
-the main machine-readable formats are the
+The formats for each module are the:
 
 * *OWL core*: This component constitutes the backbone of the eProcurement ontology. It is the simplest from the formal point of view and lightest in terms of detail.
 The main purpose of this component is to declare the classes, properties datatypes and controlled lists. It established, in a machine-readable format, the concepts by assigning each a URI and decorating it with a human-readable labels and descriptions. This represents a mechanism that established a common understanding between humans and machine. It is void of any constraints or restrictions and may be used as a formal ontology or
 as a data exchange vocabulary.
 
-* *OWL restrictions*: This component accommodates formal intentional definitions of the classes and properties. It is mostly formed of subclass restrictions, complex class definitions, domain and range specifications for properties; which can be derived from the conceptual
-model.
+* *OWL restrictions*: This component accommodates formal intentional definitions of the classes and properties. It is mostly formed of subclass restrictions, complex class definitions, domain and range specifications for properties; which can be derived from the conceptual model.
 This component provides the rules and logical conditions for reasoning with eProcurement ontology. So, the statements from this component play the role of necessary and sufficient conditions to support consistency checking and classification reasoning functionalities for eProcurement ontology.
 Mostly expressions in OWL 2 should be acceptable for the reasoning purposes of eProcurement ontology. It is possible, however, that OWL 2 is too expressive, leading to slow reasoning, and thus downgrading to OWL dialect (EL, QL, RL) might be necessary. This implies that multiple variants of these components should be generated, one for each OWL dialect as described in Section 5.4. Each of these
 variants shall be tested, and the most appropriate choice selected for reasoning in the validation phase
 
-* *SHACL_shapes*: In OWL the constraints are formed at the semantic level in the way the logic of the entire knowledge base holds together consistently. It is not always easy or obvious how the constraints should be formed so that they fulfil a business or application requirement. Moreover, in practice, often the kind of constraints necessary are those
-aiming at the surface representation of the data. Take, XSD for example, it provides a description of how an XML document ought to be structured.
-In the eProcurement domain, before the RDF data is utilised as a semantic resource, it must first respect a more formal conventions on how it is instantiated and organised. There is a need for the XSD counterpart for the RDF graphs.
-Shapes Constraint Language (SHACL) is a specification for validating graph-based data against a set of  conditions. It provides a concise, uniform syntax for both describing and constraining the contents of an RDF graph. Among others, SHACL includes features to express conditions that constrain the number of values that a property may have, the type of such values, numeric ranges, string matching
-patterns, and logical combinations of such constraints.
-Application profiles (AP) represent a set of constraints on the logical model tying it to a particular system implementation. The application profiles, in this project, must be expressed using SHACL language. The approach taken by the Publications Office to develop APs is described in. The same style should be maintained for the eProcurement APs. The AP must be conceived as extending the core ontology and fleshing the classes and properties with node and property shapes. The constraints available in the conceptual model are generic and should be automatically generated.
-However, when it comes to integration with specific systems, these constraints may not be sufficient, possibly even too rigid at times. Therefore, it is recommended to conceptualise the data shapes not a single fit it all AP but rather to create specific APs as the needs arise.
+* *SHACL_shapes*: In OWL the constraints are formed at the semantic level in the way the logic of the entire knowledge base holds together consistently. It is not always easy or obvious how the constraints should be formed so that they fulfil a business or application requirement. Moreover, in practice, often the kind of constraints necessary are those aiming at the surface representation of the data. XSD, for example, provides a description of how an XML document ought to be structured.
+In the eProcurement domain, before the RDF data is utilised as a semantic resource, it must first respect a more formal convention on how it is instantiated and organised. There is a need for the XSD counterpart for the RDF graphs.
+Shapes Constraint Language (SHACL) provides a specification for validating graph-based data against a set of  conditions. It provides a concise, uniform syntax for both describing and constraining the contents of an RDF graph. Amongst others, SHACL includes features to express conditions that constrain the number of values that a property may have, the type of such values, numeric ranges, string matching patterns, and logical combinations of such constraints.
+Application profiles (AP) represent a set of constraints on the logical model tying it to a particular system implementation. The application profiles, in this project, must be expressed using SHACL language. The approach taken by the Publications Office to develop APs is described in. The same style should be maintained for the eProcurement APs.
 
 === Human readable:
 
-* *Conceptual models*: these are provided in the enterprise architecture format of visual maps, showing the elements: the classes, their properties,their  attributes, the relationships between classes, the direction of relationship, the nature of relationships e.g., 1 to many, etc.
-
-* *Glossaries*: A glossary is a "dictionary" providing the definitions of concepts and is provided in the form of a table that lists the concept, its definition, the attributes of the class, and the format the data must be in e.g., numeric, binary, etc.
+*Conceptual models*: these are provided in the enterprise architecture format of visual maps, showing the elements: the classes, their properties, their attributes, the relationships between classes, the direction of relationship, the nature of relationships e.g., 1 to many, etc. Glossaries complement the conceptual models: A glossary is a "dictionary" providing the definitions of concepts and is provided in the form of a table that lists the concept, its definition, the attributes of the class, and the format the data must be in e.g., numeric, binary, etc.
 
 
-=== The Core Vocabulary module and other modules
+=== The Core Module and other modules
 
-The eProcurement ontology includes a core module, containing common vocabulary elements, and specific modules: eCatalogue, eNotice, and eOrdering, containing vocabularies specific to that module.
+The eProcurement ontology includes a core module, containing concepts common to all modules, and specific modules: eCatalogue, eNotice, and eOrdering, containing vocabularies specific to that module.
 
-*The Conceptual Models can be viewed via the following links*
+
+
+The modular structure of the ePO to makes maintaining the model easier.
+
+*Figure 6 - The modular approach of the ePO:*
+
+image:bus2.png[]
+
+*Each version of the ePO has a Conceptual Model and Glossary can be viewed via the following links:*
 
 * The  eCore Conceptual Module: link:{attachmentsdir}/html_reports/ePO/index.html[HTML] and
 link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
@@ -310,14 +301,7 @@ link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_mo
 * link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[The eNotice Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[The eOrdering Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/ePO-combined-glossary.html[The ePO Combined Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO-combined-glossary.html[here]
-
-The modular structure of the ePO to makes maintaining the model easier.
-
-*Figure 6 - The modular approach of the ePO:*
-
-image:bus2.png[]
-
-The https://joinup.ec.europa.eu/collection/semic-support-centre/specifications[EU’s Semic support site] contains information on a number of core vocabularies in the EU, as well as the services and activities around them, which include change management processes and procedures. The approach for change management is explained in the xref:change.adoc[Description of a change management release and publication process for structural metadata specifications developed by the ISA Programme], also summarised for the eProcurement Ontology in chapter 4.3 of the xref:charter.adoc[Project Charter Document]
+ The approach for change management is explained in the xref:change.adoc[Description of a change management release and publication process for structural metadata specifications developed by the ISA Programme], also summarised for the eProcurement Ontology in chapter 4.3 of the xref:charter.adoc[Project Charter Document]
 
 This document formalises how changes to the specifications of structural metadata developed by the ISA Programme are managed and how new releases are published. According to the definitions followed by the ISA Programme, structural metadata includes data models (e.g. https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211[DCAT application profile for data portals in Europe] and reference data.
 
@@ -337,15 +321,15 @@ The ontology architecture is described in this report. It covers the main buildi
 The UML model follows a set of conventions so that it can be transformed automatically into OWL, and SHACL representations (using model2owl toolchain).
 
 === Examples of the conceptual model elements
-==== Model refactoring
-The new version adopts a package-based grouping of concepts. Also, there are more diagrams introduced than at the beginning of the ePO development. This makes it easier to avoid getting distracted by neighbouring concepts.
+
+Version 3.1.0 onwards adopts a package-based grouping of concepts. Also, there are more diagrams introduced than at the beginning of the ePO development. This makes it easier to avoid getting distracted by neighbouring concepts.
 
 *Figure 7 - Package-based grouping of ePO concepts:*
 
 image:bus7.png[]
 
 
-==== The new structure of the ePO model provides hierarchy and relations diagrams.
+The ePO model provides hierarchy and relations diagrams.
 
 *Figure 8 - Hierarchy diagram (focus on the abstraction):*
 image:bus8.png[]
@@ -365,6 +349,7 @@ image:bus10.png[]
 *Figure 11 - Example of transitioning from old UML/UBL data types to new XSD data types:*
 image:bus11.png[]
 
+==== Codelists
 * The ontology is provided in UML, where the use of a code list is recommended. However, in OWL generation, there is no code list so users are able to use whatever terms they wish.
 
 * In the past the properties of a class the attribute type ‘Code’ was associated with the class where needed. Currently, these attributes type code have been removed and there are only relations.
@@ -372,24 +357,18 @@ image:bus11.png[]
 *Figure 12 - Removal of “Code” type attributes:*
 image:bus12.png[]*
 
-* The naming conventions are harmonised for predicates and class names. The source class is connected with the target class by using a verb.
+==== Naming Conventions
+* The naming conventions are harmonised for predicates and class names. The source class is connected with the target class by using a verb. For more information on naming conventions, go to link:https://meaningfy-ws.github.io/model2owl-docs/public-review/uml/conceptual-model-conventions.html[Conceptual Model conventions]
+
 
 *Figure 13 - Harmonisation of predicates and class names:*
 image:bus13.png[]
 
-When releasing, naming conventions follow those of other vocabularies.
+*5.5.3.1* AgentinRole Patterns
 
-* The definitions of classes and attributes were completed for version 3.0.0.
-* Efforts were made to align to core vocabularies. The following core vocabularies were re-used:
-** Core Location Vocabulary
-** Core Person Vocabulary
-** Core Public Organisation Vocabulary
-** Core Criterion and Core Evidence Vocabulary
-** Core Public Service Vocabulary Application Profile
+Another important part of the development was focused on the reification of the roles.
 
-* Another important part of the development was focused on the reification of the roles.
-
-*Figure 14 - Agent In Role pattern:*
+*Figure 14 - AgentInRole pattern:*
 image:bus14.png[]
 
 
