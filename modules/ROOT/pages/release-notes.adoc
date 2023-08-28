@@ -2,18 +2,6 @@
 
 The release candidate v4.0.0-rc.1 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1[here].
 
-RDF representation of the eProcurement ontology can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/ePO[here].
-
-RDF representation of the eCatalogue module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/eCatalogue[here].
-
-RDF representation of the eOrdering module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/eOrdering[here].
-
-RDF representation of the eFulfilment module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/eNotice[here].
-
-RDF representation of the eContract module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/eNotice[here].
-
-RDF representation of the eNotice module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/eNotice[here].
-
 == Release notes
 
 |===
@@ -549,5 +537,18 @@ RDF representation of the eNotice module can be downloaded link:https://github.c
 ||epo-not:PreMarketConsultationNotice|generalisation -> epo:Notice|
 |===
 
+=== RDF Representations
+
+RDF representation of the eProcurement ontology can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/ePO[here].
+
+RDF representation of the eCatalogue module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/eCatalogue[here].
+
+RDF representation of the eOrdering module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/eOrdering[here].
+
+RDF representation of the eFulfilment module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/eNotice[here].
+
+RDF representation of the eContract module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/eNotice[here].
+
+RDF representation of the eNotice module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1/implementation/eNotice[here].
 
 
