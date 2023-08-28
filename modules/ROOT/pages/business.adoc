@@ -73,10 +73,10 @@ image:bus4.png[]
 === The Evolution of the eProcurement Ontology
 
 
-*Figure 3 - The ePO roadmap 2017 - 2022:*
+*Figure 3 - The ePO roadmap 2017 - 2022*
 image:2017-2022.png[]
 
-*Figure 4 - The ePO roadmap 2023 - 2025:*
+*Figure 4 - The ePO roadmap 2023 - 2025*
 image:2023-2025.png[]
 
 More detail on the proposal for each release, go to the xref:history.adoc[History and Future Developments page].
