@@ -22,7 +22,12 @@ To achieve this, the EU Publications Office (OP) engaged a working group of expe
 
 == *Timeline*
 
-image:epo_roadmap August 2023.png[]
+=== 2017 - 2022:
+image:../images/2017-2022.png[]
+
+=== 2023 - 2025:
+image:../images/2023-2025.png[]
+
 [cols="1,2,2"]
 |===
 |Date|Version|Notes
@@ -33,7 +38,7 @@ image:epo_roadmap August 2023.png[]
 
 |January 2018
 |ePO version 2.0.0
-|Improved and extended version 1.0.0. Version 2.0.1,  released later that year.
+|Improved and extended version 1.0.0. Version 2.0.1, released later that year.
 
 |August 2022
 |ePO version 3.0.0

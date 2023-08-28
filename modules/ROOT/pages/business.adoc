@@ -73,10 +73,13 @@ image:bus4.png[]
 === The Evolution of the eProcurement Ontology
 
 
-*Figure 3 - The ePO roadmap 2017 - 2025:*
-image:epo_roadmap August 2023.png[]
+*Figure 3 - The ePO roadmap 2017 - 2022:*
+image:2017-2022.png[]
 
-More detail on what is proposed for each release, go to the xref:history.adoc[History and Future Developments page].
+*Figure 4 - The ePO roadmap 2023 - 2025:*
+image:2023-2025.png[]
+
+More detail on the proposal for each release, go to the xref:history.adoc[History and Future Developments page].
 
 The creation and maintenance of the ontology is a collaboration between the OP, programmers, working group members and other stakeholders. Meetings to discuss, agree and schedule changes to the ontology occur regularly.
 
@@ -142,7 +145,7 @@ Transparency and monitoring
 === The hierarchical nature of the model
 Having an upper level of definition is important and helpful. The example below shows how an agent is the higher or abstract level and person is a lower, and more concrete, level.
 
-*Figure 4 - Upper-level organisation of ePO:*
+*Figure 5 - Upper-level organisation of ePO:*
 image:bus5.png[]
 
 The development of the eProcurement ontology is oriented by a principle based perspective. One example of a principle is that once something is created / instantiated it is not possible to modify it to something else completely different. (e.g. an organisation should be created only once and it is not repeated in a different way on the model).
@@ -202,7 +205,7 @@ The application of upper level ontologies enables semantic interoperability of o
 
 Best practices, i.e., the use of a version-controlled repository (GitHub) and tool (Git), are employed for the development of the ontology. A master/ main branch is used as the source from which code is published.  To make changes to the model, development is done on temporary branches using tags. After validation, the new branch is merged with the main/ master.
 
-*Figure 5 - Source management methodology:*
+*Figure 6 - Source management methodology:*
 
 image:bus3.png[]
 
@@ -281,7 +284,7 @@ The eProcurement ontology includes a core module, containing concepts common to 
 
 The modular structure of the ePO to makes maintaining the model easier.
 
-*Figure 6 - The modular approach of the ePO:*
+*Figure 7 - The modular approach of the ePO:*
 
 image:bus2.png[]
 
@@ -324,29 +327,29 @@ The UML model follows a set of conventions so that it can be transformed automat
 
 Version 3.1.0 onwards adopts a package-based grouping of concepts. Also, there are more diagrams introduced than at the beginning of the ePO development. This makes it easier to avoid getting distracted by neighbouring concepts.
 
-*Figure 7 - Package-based grouping of ePO concepts:*
+*Figure 8 - Package-based grouping of ePO concepts:*
 
 image:bus7.png[]
 
 
 The ePO model provides hierarchy and relations diagrams.
 
-*Figure 8 - Hierarchy diagram (focus on the abstraction):*
+*Figure 9 - Hierarchy diagram (focus on the abstraction):*
 image:bus8.png[]
 
 
-*Figure 9 - Relations diagram (focus on the connections):*
+*Figure 10 - Relations diagram (focus on the connections):*
 image:bus9.png[]
 
 
 There are diagrams used for a scoped view versus a wide view of the model. It is useful to distinguish these scope diagrams because you can see how they are connected to other concepts, some show only the relations, some show only the hierarchy. Even if the concepts are repeated across various diagrams, this makes it easier to follow the logical model construction.
 
 ==== Data Types
-*Figure 10 - xsd data types used:*
+*Figure 11 - xsd data types used:*
 
 image:bus10.png[]
 
-*Figure 11 - Example of transitioning from old UML/UBL data types to new XSD data types:*
+*Figure 12 - Example of transitioning from old UML/UBL data types to new XSD data types:*
 image:bus11.png[]
 
 ==== Codelists
@@ -354,27 +357,27 @@ image:bus11.png[]
 
 * In the past the properties of a class the attribute type ‘Code’ was associated with the class where needed. Currently, these attributes type code have been removed and there are only relations.
 
-*Figure 12 - Removal of “Code” type attributes:*
+*Figure 13 - Removal of “Code” type attributes:*
 image:bus12.png[]*
 
 ==== Naming Conventions
 * The naming conventions are harmonised for predicates and class names. The source class is connected with the target class by using a verb. For more information on naming conventions, go to link:https://meaningfy-ws.github.io/model2owl-docs/public-review/uml/conceptual-model-conventions.html[Conceptual Model conventions]
 
 
-*Figure 13 - Harmonisation of predicates and class names:*
+*Figure 14 - Harmonisation of predicates and class names:*
 image:bus13.png[]
 
 *5.5.3.1* AgentinRole Patterns
 
 Another important part of the development was focused on the reification of the roles.
 
-*Figure 14 - AgentInRole pattern:*
+*Figure 15 - AgentInRole pattern:*
 image:bus14.png[]
 
 
 In version 3.x, the roles are represented as a hierarchical structure of concepts, with the superclass being the AgentInRole concept (following the agent in role design pattern). The agent in role is played by an agent and it is contextualised by a procurement object (for example, lot or procedure).
 
-*Figure 15 - Roles hierarchy:*
+*Figure 16 - Roles hierarchy:*
 image:bus15.png[]
 
 
