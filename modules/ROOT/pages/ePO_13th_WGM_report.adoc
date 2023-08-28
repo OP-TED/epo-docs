@@ -1,10 +1,14 @@
-= eProcurement Ontology
+:doctitle: REPORT ON THE 13TH WORKING GROUP MEETING OF THE EPROCUREMENT ONTOLOGY
+:doccode: epo_wgm_prod_008
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 
-=== Q1 meeting
+== Q1 meeting
 
 === Online meeting: 9/03/2023
 
-== Agenda
+=== Agenda
 
 * Welcome
 * Release 3.1.0 (December 2022)
@@ -20,12 +24,12 @@
 * Open discussion
 * Closing
 
-== Welcome:
+=== Welcome:
 
 Natalie Muric explained the aim of the meeting is to present the work carried out since the last meeting in December and to present the short-term plan for the first half of 2023.  Stakeholders’ attention was drawn to the next modules to be evolved, namely eAccess and eContract.  +
 The following sections provide a summary of what was presented and discussed.
 
-== Release 3.1.0 (17 December 2022)
+=== Release 3.1.0 (17 December 2022)
 
 Andrea Pasare from Meaningfy presented links covering release 3.1.0:
 
@@ -50,9 +54,9 @@ She then provided a description of release 3.1.0. The release contains:
 * Implementation of a metadata management mechanism.
 * Fixes to https://github.com/OP-TED/ePO/issues[issues posted on github] for example requirements brought about by the https://github.com/OP-TED/ted-rdf-mapping/issues[TED-RDF-mapping] project which maps the standard forms to the ontology.
 
-== Work carried out in 1st quarter 2023
+=== Work carried out in 1st quarter 2023
 
-=== ePO core updates:
+==== ePO core updates:
 
 The main modifications to the ePO core were highlighted:
 
@@ -64,7 +68,7 @@ The main modifications to the ePO core were highlighted:
 * Labelling for the different modules.
 * Planning of fixes per quarter ie https://github.com/OP-TED/ePO/milestone/2[Q1 2023 milestone]
 
-=== Procurement criteria summary
+==== Procurement criteria summary
 
 https://github.com/OP-TED/ePO/issues/420[https://github.com/OP-TED/ePO/issues/420]  +
 epo:ProcurementCriterion was up-until now modelled at lot level; however in order to map to standard forms the epo:ProcurementCriterion needed to be linked to the epo:Procedure in an aggregated way, therefore the epo:ProcurementCriteriaSummary concept has been added to the model:
@@ -218,7 +222,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA3IAAADNCAYAAAD9o0LcAAAte0l
 
 There was a suggestion to coordinate with the DTLF (Digital Transport and Logistics Forum) whose main area of work is to provide technical assistance for the implementation of Regulation (EU) 202/1056 on Electronic Freight Transport Information.  In the near future they will be modelling the waybill which PEPPOL will need to implement.
 
-== Closing:
+=== Closing:
 
 Natalie Muric of the Publications Office presented the next meeting schedule for ePO:
 
@@ -234,3 +238,4 @@ Natalie Muric of the Publications Office presented the next meeting schedule for
 * Tues 5 or Thurs 7 September (afternoons)
 * Tues 5 or Thurs 7 December (afternoons)
 
+include::partial$feedback.adoc[]

@@ -1,0 +1,534 @@
+:doctitle: Individual Meeting Minutes
+:doccode: epo-wgm-prod-011
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
+:sectanchors:
+
+//== Categories:
+
+//[cols="1,1,1,1"]
+//|===
+//|<<_general_meeting_minutes,General Meeting Minutes>>
+//|<<_eCatalogue_meeting_minutes,eCatalogue Meeting Minutes>>
+//|<<_eFulfillment_meeting_minutes,eFulfillment Meeting Minutes>>
+//|<<_eOrdering_meeting_minutes,eOrdering Meeting Minutes>>
+//|===
+
+== Meeting Minutes
+
+Meeting Minutes are ordered by *year*. Most meetings are general, but if a meeting was planned for a specific topic e.g., "eOrdering", then this will be indicated in brackets after the meeting date.
+
+This does not mean necessarily that this was the only topic addressed in the meeting; it only indicates the original purpose of the meeting, not what was actually discussed in it.
+
+[cols="1,1,1,1,1"]
+
+|===
+|<<2023,2023>>
+|<<2022,2022>>
+|<<2021,2021>>
+|<<2020,2020>>
+|<<2019,2019>>
+|===
+
+[#2023]
+=== 2023
+xref:notes/2023-08-01-wgm.adoc[2023-08-01]
+
+xref:notes/2023-06-01-wgm.adoc[2023-06-01]
+
+xref:notes/2023-05-30-wgm.adoc[2023-05-30]
+
+xref:notes/2023-05-23-wgm.adoc[2023-05-23]
+
+xref:notes/2023-05-16-wgm.adoc[2023-05-16]
+
+xref:notes/2023-05-04-wgm.adoc[2023-05-04]
+
+xref:notes/2023-05-02-wgm.adoc[2023-05-02]
+
+xref:notes/2023-04-27-wgm.adoc[2023-04-27]
+
+xref:notes/2023-04-25-wgm.adoc[2023-04-25]
+
+xref:notes/2023-04-20-eord.adoc[2023-04-20 (eOrdering)]
+
+xref:notes/2023-04-11-wgm.adoc[2023-04-11]
+
+xref:notes/2023-04-04-wgm.adoc[2023-04-04]
+
+xref:notes/2023-03-30-eful.adoc[2023-03-30 (eFulfillment)]
+
+xref:notes/2023-03-28-eord.adoc[2023-03-28 (eOrdering)]
+
+xref:notes/2023-03-24-eful.adoc[2023-03-24 (eFulfillment)]
+
+xref:notes/2023-03-23-eord.adoc[2023-03-23 (eOrdering)]
+
+xref:notes/2023-03-21-wgm.adoc[2023-03-21]
+
+xref:notes/2023-03-14-eful.adoc[2023-03-14 (eFulfillment)]
+
+xref:notes/2023-03-07-eful.adoc[2023-03-07 (eFulfillment)]
+
+xref:notes/2023-03-02-eful.adoc[2023-03-02 (eFulfillment)]
+
+xref:notes/2023-02-28-wgm.adoc[2023-02-28]
+
+xref:notes/2023-02-23-eord.adoc[2023-02-23 (eOrdering)]
+
+xref:notes/2023-02-21-eord.adoc[2023-02-21 (eOrdering)]
+
+xref:notes/2023-02-14-eord.adoc[2023-02-14 (eOrdering)]
+
+xref:notes/2023-02-09-eord.adoc[2023-02-09 (eOrdering)]
+
+xref:notes/2023-02-07-wgm.adoc[2023-02-07]
+
+xref:notes/2023-01-31-wgm.adoc[2023-01-31]
+
+xref:notes/2023-01-26-eord.adoc[2023-01-26 (eOrdering)]
+
+xref:notes/2023-01-24-wgm.adoc[2023-01-24]
+
+xref:notes/2023-01-17-wgm.adoc[2023-01-17]
+
+xref:notes/2023-01-12-eord.adoc[2023-01-12 (eOrdering)]
+
+xref:notes/2023-01-10-wgm.adoc[2023-01-10]
+
+[#2022]
+=== 2022
+
+xref:notes/2022-12-15-eord.adoc[2022-12-15 (eCatalogue)]
+
+xref:notes/2022-12-13-wgm.adoc[2022-12-13]
+
+xref:notes/2022-12-01-eord.adoc[2022-12-01 (eOrdering)]
+
+xref:notes/2022-11-29-wgm.adoc[2022-11-29]
+
+xref:notes/2022-11-22-wgm.adoc[2022-11-22]
+
+xref:notes/2022-11-17-eord.adoc[2022-11-17 (eOrdering)]
+
+xref:notes/2022-11-15-wgm.adoc[2022-11-15]
+
+xref:notes/2022-11-08-wgm.adoc[2022-11-08]
+
+xref:notes/2022-11-03-eord.adoc[2022-11-03 (eOrdering)]
+
+xref:notes/2022-10-25-wgm.adoc[2022-10-25]
+
+xref:notes/2022-10-20-eord.adoc[2022-10-20 (eOrdering)]
+
+xref:notes/2022-10-18-wgm.adoc[2022-10-18]
+
+xref:notes/2022-10-11-wgm.adoc[2022-10-11]
+
+xref:notes/2022-10-06-eord.adoc[2022-10-06 (eOrdering)]
+
+xref:notes/2022-10-04-wgm.adoc[2022-10-04]
+
+xref:notes/2022-09-27-wgm.adoc[2022-09-27]
+
+xref:notes/2022-09-13-wgm.adoc[2022-09-13]
+
+xref:notes/2022-09-08-eord.adoc[2022-09-08 (eOrdering)]
+
+xref:notes/2022-09-06-wgm.adoc[2022-09-06]
+
+xref:notes/2022-08-30-wgm.adoc[2022-08-30]
+
+xref:notes/2022-08-25-eord.adoc[2022-08-25 (eOrdering)]
+
+xref:notes/2022-08-23-wgm.adoc[2022-08-23]
+
+xref:notes/2022-08-16-wgm.adoc[2022-08-16]
+
+xref:notes/2022-08-11-eful.adoc[2022-08-11 (eFulfillment)]
+
+xref:notes/2022-08-09-wgm.adoc[2022-08-09]
+
+xref:notes/2022-08-02-wgm.adoc[2022-08-02]
+
+xref:notes/2022-07-28-ecat.adoc[2022-07-28 (eCatalogue)]
+
+xref:notes/2022-07-26-wgm.adoc[2022-07-26]
+
+xref:notes/2022-07-21-eord.adoc[2022-07-21 (eOrdering)]
+
+xref:notes/2022-07-19-wgm.adoc[2022-07-19]
+
+xref:notes/2022-07-14-ecat.adoc[2022-07-14 (eCatalogue)]
+
+xref:notes/2022-07-12-wgm.adoc[2022-07-12]
+
+xref:notes/2022-07-06-eord-kick-off.adoc[2022-07-06 Kick-off (eOrdering)]
+
+xref:notes/2022-07-05-wgm.adoc[2022-07-05]
+
+xref:notes/2022-06-30-ecat.adoc[2022-06-30 (eCatalogue)]
+
+xref:notes/2022-06-21-wgm.adoc[2022-06-21]
+
+xref:notes/2022-06-16-ecat.adoc[2022-06-16 (eCatalogue)]
+
+xref:notes/2022-06-14-wgm.adoc[2022-06-14]
+
+xref:notes/2022-06-07-wgm.adoc[2022-06-07]
+
+xref:notes/2022-06-02-ecat.adoc[2022-06-02 (eCatalogue)]
+
+xref:notes/2022-05-24-wgm.adoc[2022-05-24]
+
+xref:notes/2022-05-19-ecat.adoc[2022-05-19 (eCatalogue)]
+
+xref:notes/2022-05-17-wgm.adoc[2022-05-17]
+
+xref:notes/2022-05-10-wgm.adoc[2022-05-10]
+
+xref:notes/2022-05-05-ecat.adoc[2022-05-05 (eCatalogue)]
+
+xref:notes/2022-04-12-wgm.adoc[2022-04-12]
+
+xref:notes/2022-04-07-ecat.adoc[2022-04-07 (eCatalogue)]
+
+xref:notes/2022-04-05-wgm.adoc[2022-04-05]
+
+xref:notes/2022-03-22-wgm.adoc[2022-03-22]
+
+xref:notes/2022-03-15-wgm.adoc[2022-03-15]
+
+xref:notes/2022-03-10-ecat.adoc[2022-03-10 (eCatalogue)]
+
+xref:notes/2022-03-08-wgm.adoc[2022-03-08]
+
+xref:notes/2022-03-01-wgm.adoc[2022-03-01]
+
+xref:notes/2022-02-24-ecat.adoc[2022-02-24 (eCatalogue)]
+
+xref:notes/2022-02-22-wgm.adoc[2022-02-22]
+
+xref:notes/2022-02-15-wgm.adoc[2022-02-15]
+
+xref:notes/2022-02-08-wgm.adoc[2022-02-08]
+
+xref:notes/2022-02-01-wgm.adoc[2022-02-01]
+
+xref:notes/2022-01-27-ecat.adoc[2022-01-27 (eCatalogue)]
+
+xref:notes/2022-01-25-wgm.adoc[2022-01-25]
+
+xref:notes/2022-01-20-ecat.adoc[2022-01-20 (eCatalogue)]
+
+xref:notes/2022-01-18-wgm.adoc[2022-01-18]
+
+xref:notes/2022-01-11-wgm.adoc[2022-01-11]
+
+[#2021]
+=== 2021
+
+xref:notes/2021-12-16-wgm.adoc[2021-12-16]
+
+xref:notes/2021-12-14-wgm.adoc[2021-12-14]
+
+xref:notes/2021-12-07-wgm.adoc[2021-12-07]
+
+xref:notes/2021-11-18-wgm.adoc[2021-11-18]
+
+xref:notes/2021-11-16-wgm.adoc[2021-11-16]
+
+xref:notes/2021-11-11-wgm.adoc[2021-11-11]
+
+xref:notes/2021-11-09-wgm.adoc[2021-11-09]
+
+xref:notes/2021-11-04-wgm.adoc[2021-11-04]
+
+xref:notes/2021-10-28-wgm.adoc[2021-10-28]
+
+xref:notes/2021-10-26-wgm.adoc[2021-10-26]
+
+xref:notes/2021-10-21-wgm.adoc[2021-10-21]
+
+xref:notes/2021-10-19-wgm.adoc[2021-10-19]
+
+xref:notes/2021-10-14-wgm.adoc[2021-10-14]
+
+xref:notes/2021-10-12-wgm.adoc[2021-10-12]
+
+xref:notes/2021-10-12-wgm.adoc[2021-10-12]
+
+xref:notes/2021-10-07-wgm.adoc[2021-10-07]
+
+xref:notes/2021-10-05-wgm.adoc[2021-10-05]
+
+xref:notes/2021-09-30-wgm.adoc[2021-09-30]
+
+xref:notes/2021-09-21-wgm.adoc[2021-09-21]
+
+xref:notes/2021-06-10-wgm.adoc[2021-06-10]
+
+xref:notes/2021-06-03-wgm.adoc[2021-06-03]
+
+xref:notes/2021-06-10-wgm.adoc[2021-06-01]
+
+xref:notes/2021-05-27-wgm.adoc[2021-05-27]
+
+xref:notes/2021-05-25-wgm.adoc[2021-05-25]
+
+xref:notes/2021-05-18-wgm.adoc[2021-05-18]
+
+xref:notes/2021-05-11-wgm.adoc[2021-05-11]
+
+xref:notes/2021-05-06-wgm.adoc[2021-05-06]
+
+xref:notes/2021-05-04-wgm.adoc[2021-05-04]
+
+xref:notes/2021-04-29-wgm.adoc[2021-04-29]
+
+xref:notes/2021-04-27-wgm.adoc[2021-04-27]
+
+xref:notes/2021-04-22-wgm.adoc[2021-04-22]
+
+xref:notes/2021-04-20-wgm.adoc[2021-04-20]
+
+xref:notes/2021-04-15-wgm.adoc[2021-04-15]
+
+xref:notes/2021-04-13-wgm.adoc[2021-04-13]
+
+xref:notes/2021-03-25-wgm.adoc[2021-03-25]
+
+xref:notes/2021-03-23-wgm.adoc[2021-03-23]
+
+xref:notes/2021-03-16-wgm.adoc[2021-03-16]
+
+xref:notes/2021-03-11-wgm.adoc[2021-03-11]
+
+xref:notes/2021-03-09-wgm.adoc[2021-03-09]
+
+xref:notes/2021-03-04-wgm.adoc[2021-03-04]
+
+xref:notes/2021-03-02-wgm.adoc[2021-03-02]
+
+xref:notes/2021-02-25-wgm.adoc[2021-02-25]
+
+xref:notes/2021-02-23-wgm.adoc[2021-02-23]
+
+xref:notes/2021-02-18-wgm.adoc[2021-02-18]
+
+xref:notes/2021-02-16-wgm.adoc[2021-02-16]
+
+xref:notes/2021-02-11-wgm.adoc[2021-02-11]
+
+xref:notes/2021-02-09-wgm.adoc[2021-02-09]
+
+xref:notes/2021-02-04-wgm.adoc[2021-02-04]
+
+xref:notes/2021-02-02-wgm.adoc[2021-02-02]
+
+xref:notes/2021-01-28-wgm.adoc[2021-01-28]
+
+xref:notes/2021-01-26-wgm.adoc[2021-01-26]
+
+xref:notes/2021-01-21-wgm.adoc[2021-01-21]
+
+xref:notes/2021-01-19-wgm.adoc[2021-01-19]
+
+xref:notes/2021-01-14-wgm.adoc[2021-01-14]
+
+xref:notes/2021-01-12-wgm.adoc[2021-01-12]
+
+xref:notes/2021-01-07-wgm.adoc[2021-01-07]
+
+[#2020]
+=== 2020
+xref:notes/2020-12-17-wgm.adoc[2020-12-17]
+
+xref:notes/2020-12-15-wgm.adoc[2020-12-15]
+
+xref:notes/2020-12-10-wgm.adoc[2020-12-10]
+
+xref:notes/2020-12-03-wgm.adoc[2020-12-03]
+
+xref:notes/2020-12-01-wgm.adoc[2020-12-01]
+
+xref:notes/2020-11-26-wgm.adoc[2020-11-26]
+
+xref:notes/2020-11-24-wgm.adoc[2020-11-24]
+
+xref:notes/2020-11-19-wgm.adoc[2020-11-19]
+
+xref:notes/2020-11-17-wgm.adoc[2020-11-17]
+
+xref:notes/2020-11-12-wgm.adoc[2020-11-12]
+
+xref:notes/2020-11-10-wgm.adoc[2020-11-10]
+
+xref:notes/2020-11-05-wgm.adoc[2020-11-05]
+
+xref:notes/2020-11-03-wgm.adoc[2020-11-03]
+
+xref:notes/2020-10-29-wgm.adoc[2020-10-29]
+
+xref:notes/2020-10-27-wgm.adoc[2020-10-27]
+
+xref:notes/2020-10-22-wgm.adoc[2020-10-22]
+
+xref:notes/2020-10-20-wgm.adoc[2020-10-20]
+
+xref:notes/2020-10-15-wgm.adoc[2020-10-15]
+
+xref:notes/2020-10-13-wgm.adoc[2020-10-13]
+
+xref:notes/2020-10-08-wgm.adoc[2020-10-08]
+
+xref:notes/2020-10-06-wgm.adoc[2020-10-06]
+
+xref:notes/2020-10-01-wgm.adoc[2020-10-01]
+
+xref:notes/2020-09-29-wgm.adoc[2020-09-29]
+
+xref:notes/2020-09-22-wgm.adoc[2020-09-22]
+
+xref:notes/2020-09-17-wgm.adoc[2020-09-17]
+
+xref:notes/2020-09-15-wgm.adoc[2020-09-15]
+
+xref:notes/2020-09-10-wgm.adoc[2020-09-10]
+
+xref:notes/2020-09-08-wgm.adoc[2020-09-08]
+
+xref:notes/2020-09-08-wgm-tc440.adoc[Working Group and TC440 meeting 2020-09-08]
+
+xref:notes/2020-09-03-wgm.adoc[2020-09-03]
+
+xref:notes/2020-09-01-wgm.adoc[2020-09-01]
+
+xref:notes/2020-07-30-wgm.adoc[2020-07-30]
+
+xref:notes/2020-07-28-wgm.adoc[2020-07-28]
+
+xref:notes/2020-07-23-wgm.adoc[2020-07-23]
+
+xref:notes/2020-07-16-wgm.adoc[2020-07-16, 2020-07-14, 2020-07-09, 2020-07-07]
+
+xref:notes/2020-07-02-wgm.adoc[2020-07-02]
+
+xref:notes/2020-06-30-wgm.adoc[2020-06-30]
+
+xref:notes/2020-06-25-wgm.adoc[2020-06-25]
+
+xref:notes/2020-06-18-wgm.adoc[2020-06-18]
+
+xref:notes/2020-06-11-wgm.adoc[2020-06-11, 2020-06-09]
+
+xref:notes/2020-06-04-wgm.adoc[2020-06-04]
+
+xref:notes/2020-06-02-wgm.adoc[2020-06-02]
+
+xref:notes/2020-05-28-wgm.adoc[2020-05-28]
+
+xref:notes/2020-05-26-wgm.adoc[2020-05-26, 2020-05-19]
+
+xref:notes/2020-05-14-wgm.adoc[2020-05-14]
+
+xref:notes/2020-05-12-wgm.adoc[2020-05-12]
+
+xref:notes/2020-05-07-wgm.adoc[2020-05-07, 2020-05-05]
+
+xref:notes/2020-04-30-wgm.adoc[2020-04-30]
+
+xref:notes/2020-04-28-wgm.adoc[2020-04-28]
+
+xref:notes/2020-04-23-wgm.adoc[2020-04-23]
+
+xref:notes/2020-04-21-wgm.adoc[2020-04-21]
+
+xref:notes/2020-04-17-wgm.adoc[2020-04-17, 2020-04-16,2020-04-15, 2020-04-14]
+
+xref:notes/2020-04-07-wgm.adoc[2020-04-07]
+
+xref:notes/2020-04-02-wgm.adoc[2020-04-02, 2020-03-31]
+
+xref:notes/2020-03-26-wgm.adoc[2020-03-26, 2020-03-24]
+
+xref:notes/2020-03-19-wgm.adoc[2020-03-19]
+
+xref:notes/2020-03-17-wgm.adoc[2020-03-17]
+
+xref:notes/2020-03-12-wgm.adoc[2020-03-12]
+
+xref:notes/2020-03-10-wgm.adoc[2020-03-10]
+
+xref:notes/2020-03-05-wgm.adoc[2020-03-05]
+
+xref:notes/2020-03-03-wgm.adoc[2020-03-03]
+
+xref:notes/2020-02-27-wgm.adoc[2020-02-27]
+
+xref:notes/2020-02-26-wgm.adoc[2020-02-26]
+
+xref:notes/2020-02-25-wgm.adoc[2020-02-25]
+
+xref:notes/2020-02-20-wgm.adoc[2020-02-20]
+
+xref:notes/2020-02-13-wgm.adoc[2020-02-13]
+
+xref:notes/2020-02-11-wgm.adoc[2020-02-11]
+
+xref:notes/2020-02-06-wgm.adoc[2020-02-06, 2020-02-04]
+
+xref:notes/2020-01-30-wgm.adoc[2020-01-30]
+
+xref:notes/2020-01-28-wgm.adoc[2020-01-28]
+
+xref:notes/2020-01-21-wgm.adoc[2020-01-21]
+
+xref:notes/2020-01-16-wgm.adoc[2020-01-16]
+
+xref:notes/2020-01-14-wgm.adoc[2020-01-14]
+
+xref:notes/2020-01-09-wgm.adoc[2020-01-09]
+
+xref:notes/2020-01-07-wgm.adoc[2020-01-07]
+
+[#2019]
+=== 2019
+xref:notes/2019-12-19-wgm.adoc[2019-12-19]
+
+xref:notes/2019-12-17-wgm.adoc[2019-12-17]
+
+xref:notes/2019-12-12-wgm.adoc[2019-12-12]
+
+xref:notes/2019-12-10-wgm.adoc[2019-12-10]
+
+xref:notes/2019-12-05-wgm.adoc[2019-12-05]
+
+xref:notes/2019-12-03-wgm.adoc[2019-12-03]
+
+xref:notes/2019-11-28-wgm.adoc[2019-11-28]
+
+xref:notes/2019-11-26-wgm.adoc[2019-11-26]
+
+xref:notes/2019-11-22-wgm.adoc[2019-11-22]
+
+xref:notes/2019-11-21-wgm.adoc[2019-11-21]
+
+xref:notes/2019-11-12-wgm.adoc[2019-11-12]
+
+xref:notes/2019-11-11-wgm.adoc[2019-11-11]
+
+xref:notes/2019-11-07-wgm.adoc[2019-11-07]
+
+xref:notes/2019-11-05-wgm.adoc[2019-11-05]
+
+xref:notes/2019-10-31-wgm.adoc[2019-10-31]
+
+xref:notes/2019-10-29-wgm.adoc[2019-10-29]
+
+xref:notes/2019-10-24-wgm.adoc[2019-10-24]
+
+xref:notes/2019-10-22-wgm.adoc[2019-10-22]
+
+include::partial$feedback.adoc[]

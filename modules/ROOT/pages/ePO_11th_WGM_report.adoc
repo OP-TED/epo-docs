@@ -1,15 +1,18 @@
-== REPORT ON THE 11TH WORKING GROUP MEETING OF THE EPROCUREMENT ONTOLOGY
+:doctitle: REPORT ON THE 11TH WORKING GROUP MEETING OF THE EPROCUREMENT ONTOLOGY
+:doccode: epo_wgm_prod_006
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 
-
-=== Date
+== Date
 
 28 june 2022
 
-=== Object of the meeting
+== Object of the meeting
 
 To present and request feedback on eProcurement Ontology version 3.0.0
 
-=== Meeting agenda
+== Meeting agenda
 
 Welcome  +
 Methodology [20 min]  +
@@ -21,7 +24,7 @@ Open discussion [30 min]  +
 Open discussion [30 min]  +
 Closing
 
-=== Summary of the meeting
+== Summary of the meeting
 
 Manuela Cruz from the Publications Office of the European Union (OP) gave the welcoming speech, thanking everyone for joining and accepting the invitation. It was stated that work on the eProcurement Ontology (ePO) has  continued through meetings  twice-a-week since the last face to face meeting in November 2019. +
 
@@ -34,7 +37,7 @@ Other parts of the ontology will be developed in the future and participation in
 The meeting continued with a presentation of the major developments of the Ontology: the methodology, the model refactoring, the question of the evolution of the ontology itself. +
 The plan is to have a face-to-face meeting by the end of this year 2022 in Luxemburg.
 
-==== Development Methodology
+=== Development Methodology
 
 Some of the rules that were followed while advancing on the development of the ePO are presented. +
 
@@ -71,7 +74,7 @@ Enterprise Architect (EA) is the tool used to design the conceptual model in UML
 
 As pointed out by an attendee there are different tools for representing Web Ontology Language (OWL) which is the machine-readable format.
 
-==== Model refactoring
+=== Model refactoring
 
 The new version adopts a package-based grouping of concepts. Also, there are more diagrams introduced than at the beginning of the ePO development. The aim is to avoid getting distracted by neighbouring concepts.  +
 
@@ -79,7 +82,7 @@ The new structure of the ePO model provides hierarchy and relations diagrams and
 
 The meeting continued with presenting the ePO modules that are work in progress. All these modules will be imported into the ePO core model that is presented in this meeting.
 
-==== Evolution of 2.0.1 to 3.0.0
+=== Evolution of 2.0.1 to 3.0.0
 
 * The documentation has been migrated from GitHub Wiki to the https://docs.ted.europa.eu[TED documentation page.] A live presentation of the documentation page followed. One point in particular is if the user knows which class he is interested in, he can access the related classes by clicking on the concept. It is also possible to go to the description of each concept. The model can be viewed in the HTML version https://docs.ted.europa.eu/EPO/3.0.1/_attachments/html_reports/v3.0.1/ePO/index.html[here].
 * UML/UBL data types were migrated to XSD datatypes.
@@ -99,7 +102,7 @@ The meeting continued with presenting the ePO modules that are work in progress.
 
 The meeting continued with presentation of the monetary values diagrams through the different procurement phases. This approach made it possible for the objects linked to the monetary value concept to be more visible.
 
-=== Open discussion
+== Open discussion
 
 Q1: It would be great to have a solution for dealing with the Identifier class. +
 A1: In version 2.0.1 there was already an issue, it is a legacy problem. The simple answer is still a set of old decisions in UBL and we need to align with it. The way we work in OWL has to be aligned to UBL. We cannot take a single sided decision. We would like to have more participants in the discussions to get feedback and take decisions. Identifier is one of the top candidates to be addressed in the next release but needs to be discussed with the users/WG.
@@ -133,7 +136,7 @@ A9: This will be brought up in the following WG meetings.
 Q10: Where do the definitions of concepts in the ontology come from? +
 A10: Definitions come from the legislation, unless it is not possible to get them from there so the WG creates definitions for the concepts. Any user is free to send a request to change or explain a definition.
 
-=== Closing
+== Closing
 
 They take place twice a week during the year. Everybody is welcome. Tuesday meetings are more about ePO core development. Thursday meetings are more specific for different modules: eCatalogue, eOrdering, etc. +
 From now on the meetings will be held on Webex. The Thursday meetings have a different link. Users do not need to follow on a weekly basis and any doubt can be put also in a GitHub issue. +
@@ -146,3 +149,5 @@ Email: mailto:natalie.muric@publications.europa.eu[natalie.muric@publications.eu
 
 Lawyers interested in the public procurement domain are interested in receiving some more general information on the subject and participate in the future developments of the ePO. Definitions for classes, attributes and predicates can be modified. The ePO will work on producing more user-friendly documentation, such as information sheets which are more understandable from a business point of view. +
 The meeting ended by asking everyone that received a forwarded invitation to the meeting to send OP an email in order to be able to contact them back and to add them to the distribution list.
+
+include::partial$feedback.adoc[]

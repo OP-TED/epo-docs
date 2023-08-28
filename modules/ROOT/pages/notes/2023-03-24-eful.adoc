@@ -1,17 +1,17 @@
-== Working Group meeting
+= Working Group meeting 24/03/2023
 
 *Date:* 24/03/2023  +
 *Participants:*, Natalie Muric, Peter Borresen +
 *Model editor:* Andreea Pasăre +
 *Note editor:*  Jana Ahmad
 
-=== Agenda
+== Agenda
 
 * Discuss the eFulfilment model with respect to the CEN-TC-440-Peppol-Despatch advice model
 ** To continue from Consignee information.
 
 
-=== Discussion
+== Discussion
 
 The eFulfilment model was discussed and compared with the CEN-TC-440-Peppol-Despatch advice model in order to identify any differences or areas for improvement. Several changes were made to the eFulfilment model to align it with the Peppol standard, as follows.
 
