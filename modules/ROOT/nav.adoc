@@ -5,14 +5,14 @@
 :docdate: June 2023Working Group meetings
 
 * xref:epo-home::index.adoc[Home]
-* xref:EPO::Overview_V3.1.0.adoc[Release Overview]
+//* xref:EPO::Overview_V3.1.0.adoc[Release Overview]
 * xref:EPO::release-notes.adoc[Release Notes]
 
 * [.separated]#**General Reference**#
 * xref:epo-home::business.adoc[Business Overview]
 * xref:epo-home::references.adoc[Reference Documents]
 //* xref:epo-home::methodology.adoc[Ontology Methodology]
-* xref:epo-home::history.adoc[Version History]
+* xref:epo-home::history.adoc[History and Planned Developments]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
 
 * [.separated]#**Working Group Documents**#
