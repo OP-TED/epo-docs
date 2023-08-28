@@ -1,10 +1,23 @@
-* xref:Overview_V4.0.0-rc.1.adoc[Release v4.0.0-rc.1 Overview]
-* xref:release-notes.adoc[Release Notes v4.0.0-rc.1 (detailed)]
-* xref:references.adoc[Reference Documents]
-* xref:methodology.adoc[Ontology Methodology]
-* xref:history.adoc[Version History]
-* xref:epo-wgm::index.adoc[Working Group Documents]
+:doctitle: Navigation
+:doccode: epo-v4.0.0-rc.1prod-004
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: August 2023
 
+* xref:index.adoc[Home]
+* xref:release-notes.adoc[Release Notes]
+
+* [.separated]#**General Reference**#
+* xref:epo-home::business.adoc[Business Overview]
+* xref:epo-home::references.adoc[Reference Documents]
+* xref:epo-home::history.adoc[History and Planned Developments]
+* xref:epo-home::versioning.adoc[ePO Versioning Rules]
+
+
+* [.separated]#**Working Group Documents**#
+* xref:epo-wgm::wider.adoc[Quarterly Meetings]
+* xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)]
+* xref:epo-wgm::indiv.adoc[Individual Meeting Reports]
 
 
 
