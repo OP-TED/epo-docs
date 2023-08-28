@@ -23,10 +23,10 @@ To achieve this, the EU Publications Office (OP) engaged a working group of expe
 == *Timeline*
 
 === 2017 - 2022:
-image:../images/2017-2022.png[]
+image:2017-2022.png[]
 
 === 2023 - 2025:
-image:../images/2023-2025.png[]
+image:2023-2025.png[]
 
 [cols="1,2,2"]
 |===
