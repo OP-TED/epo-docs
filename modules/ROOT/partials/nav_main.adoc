@@ -1,0 +1,27 @@
+:doctitle: Navigation
+:doccode: epo-main-prod-004
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
+
+* xref:index.adoc[Home]
+
+* [.separated]#**Common Documents**#
+* xref:business.adoc[Business Overview]
+* xref:references.adoc[Reference Documents]
+* xref:methodology.adoc[Ontology Methodology]
+* xref:history.adoc[Version History]
+//* xref:epo-wgm::index.adoc[Working Group Documents]
+* xref:versioning.adoc[ePO Versioning Rules]
+
+* [.separated]#**Working Group Documents**#
+//* xref:EPO::index.adoc[ePO Docs `{epo_latest_version}`]
+// * xref:EPO::index.adoc[ePO Development Docs]
+// * xref:EPO::references.adoc[Reference Documents]
+* xref:epo-wgm::index.adoc[Working Group Meetings]
+// * xref:rdf-mapping::index.adoc[XML to RDF Mappings]
+// * xref:rdf-conversion::index.adoc[XML to RDF Conversion]
+
+
+
+

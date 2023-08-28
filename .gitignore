@@ -7,4 +7,6 @@ node_modules
 .yarn
 yarn.lock
 branches
+scripts
+/modules/ROOT/pages/archive/
 .idea/

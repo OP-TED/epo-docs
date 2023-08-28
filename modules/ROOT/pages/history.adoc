@@ -1,0 +1,84 @@
+:doctitle: ePO History and Planned Developments
+:doccode: epo-main-prod-005
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
+
+== *eProcurement Ontology overview*
+Several initiatives around eProcurement in the EU had been launched prior to 2016, driven by the public sector, industry, and academia. Some had grown organically, while others were the result of standardisation work.
+
+The vocabularies and the semantics that they introduced, the phases of public procurement that they covered, and the technologies they used, differed greatly. These differences hampered data interoperability and reuse.
+
+The situation created a need for a common representation of the knowledge around eProcurement as it is practiced in the European Union. This meant that a common vocabulary, axioms, and rules were needed. 
+
+In 2016 the Publications Office of the European Union (Publications Office or OP) initiated a project to manage and support the development of an electronic Procurement Ontology (ePO), funded by the link:https://ec.europa.eu/isa2/home_en/[ISA^2^ Programme]. The aim of the project was to develop an eProcurement Ontology based on the open-source link:https://www.w3.org/OWL/[OWL] (Web Ontology Language) standard, and make it available to EU member states.
+
+This project was in conjunction with a parallel project to develop the associated eForms.
+
+The ultimate objective of the ePO was (and still is) to conceptualise and formally encode eProcurement data, and to make it available in an open, structured, and machine-readable format. This data would cover the process from end-to-end, i.e., from notification, through tendering, awarding, ordering, invoicing, and finally to payment.
+
+
+To achieve this, the EU Publications Office (OP) engaged a working group of experts (WG) with the mission of building consensus on the analysis, results, and deliverables developed by the OP teams. The working group continues to work with the OP on the ePO.
+
+== *Timeline*
+
+=== 2017 - 2022:
+image:2017-2022.png[]
+
+=== 2023 - 2025:
+image:2023-2025.png[]
+
+[cols="1,2,2"]
+|===
+|Date|Version|Notes
+
+|Mid-2017
+|ePO version 1.0.0
+|Materials made public and accessible through the ISA^2^ Joinup platform, including Working Group discussions.
+
+|January 2018
+|ePO version 2.0.0
+|Improved and extended version 1.0.0. Version 2.0.1, released later that year.
+
+|August 2022
+|ePO version 3.0.0
+|eNotice module released in v3.0.1 and eOrdering module released in v3.1.0. Going forward, the ePO project funded by the link:https://digital-strategy.ec.europa.eu/en/activities/digital-programme[Digital Europe Project] (DEP).
+
+|July 2023 and September 2023
+|ePO versions v4.0.0-rc.1 and v4.0.0
+|eFulfilment module in v4.0.0
+
+|November 2023 and January 2024
+|ePO versions 4.1.0-rc.1 and 4.1.0
+|eAccess module in v4.1.0
+
+|March 2024
+|ePO version 4.2.0-rc.1
+|eSubmission module in v4.2.0-rc.1
+
+| May 2024
+|ePO version 4.2.0
+|eInvoicing module in v4.2.0
+
+|July 2024
+|ePO version 4.3.0-rc.1
+|Contracts Registry in v4.3.0-rc.1
+
+|September 2024
+|ePO version 4.3.0
+|eEvaluation in v4.3.0
+
+|November 2024 and January 2025
+|ePO versions 4.4.0-rc.1 and 4.4.0
+|eAwarding module in v4.4.0
+
+|March 2025
+|ePO version 4.5.0-rc.1
+|eRequest module in v4.5.0-rc.1
+
+|May 2025
+|ePO version 4.5.0
+|ePayment module in v4.5.0
+|===
+
+include::partial$feedback.adoc[]

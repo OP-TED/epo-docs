@@ -1,0 +1,355 @@
+= *Section 4 Transformation of UML datatypes*
+
+In this section are specified transformation rules for UML datatypes and enumerations. Table 3 provides an overview of the section coverage.
+
+[cols="1,1,1,1"]
+|===
+|UML element|Rules in core ontology layer|Rules in data shape layer|Rules in reasoning layer
+
+|Primitive datatype
+|Rule 25
+|
+|
+
+|Structured datatype
+|Rule 26
+|
+|
+
+|Enumeration
+|Rule 27
+|
+|Rule 29
+
+|Enumeration item
+|Rule 28
+|
+|
+|===
+
+== *Primitive datatype*
+
+The UML primitive type defines a predefined datatype without any substructure. The UML specification [5] predefines five primitive types: String, Integer, Boolean, Unlimited, Natural and Real. Here we extended those to the list provided in Table 4.
+
+Insert figure 16 pg 30
+
+*Rule 25* (Datatype - in core ontology layer). Specify datatype declaration axiom for UML datatype as follows:
+* UML primitive datatypes are declared as the mapped XSD datatype in Table 4.
+* XSD and RDF(S) datatypes are declared as such.
+* Model specific datatypes are declared as such.
+
+Table 4: Mapping of UML primitive types to XSD datatypes
+
+[cols="1,1"]
+|===
+s|UML datatype|XSD datatype
+
+|Boolean 
+|xsd:boolean
+
+|Float 
+|xsd:float
+
+|Integer 
+|xsd:integer
+
+|Char 
+|xsd:string
+
+|String 
+|xsd:string
+
+|Short 
+|xsd:short
+
+|Long 
+|xsd:long
+
+|Decimal 
+|xsd:decimal
+
+|Real 
+|xsd:float
+
+|Date 
+|xsd:date
+
+|Numeric 
+|xsd:integer
+
+|Text
+|xsd:string
+|===
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+xsd:string a rdfs:Datatype ;
+    rdfs:label "String"@en ;
+    skos:definition "Description of the datatype    meaning"@en ;
+.
+xsd:boolean a rdfs:Datatype ;
+    rdfs:label "Boolean"@en ;
+    skos:definition "Description of the datatype meaning"@en ;
+.
+:DatatypeName a rdfs:Datatype ;
+    rdfs:label "Datatype name"@en ;
+    skos:definition "Description of the datatype meaning"@en ;
+.
+a|
+[source, rdf]
+<rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string">
+    <rdfs:label xml:lang="en">String</rdfs:label>
+    <skos:definition xml:lang="en">Description of the   datatype meaning</skos:definition>
+</rdfs:Datatype>
+<rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
+    <rdfs:label xml:lang="en">Boolean</rdfs:label>
+    <skos:definition xml:lang="en">Description of the datatype meaning</skos:definition>
+</rdfs:Datatype>
+<rdfs:Datatype rdf:about="http://base.uri/DatatypeName">
+    <rdfs:label xml:lang="en">Datatype name</rdfs:label>
+    <skos:definition xml:lang="en">Description of the datatype meaning</skos:definition>
+</rdfs:Datatype>
+
+s|Listing 61: Datatype declaration in Turtle syntax
+s|Listing 62: Datatype declaration in RDF/XML syntax
+|===
+
+== *Structured datatypes*
+The UML structured datatype [5] has attributes and is used to define complex data types. The structured datatypes should be treated as classes.
+*Rule 26* (Structured Datatype - in core ontology layer). Specify OWL class declaration axiom for UML structured datatype.
+
+== *Enumeration*
+UML Enumerations [5] are kinds of datatypes, whose values correspond to one of user-defined literals. They should be transformed into SKOS [13] concept schemes comprising the concepts corresponding to enumerated items.
+
+Insert fig 17 & 18 pg 32
+
+*Rule 27* (Enumeration - in core ontology layer). Specify SKOS concept scheme instantiation axiom for an UML enumeration.
+
+[cols="1,1"]
+|===
+a|
+[source,turtle]
+:ControlledList a skos:ConceptScheme ;
+    rdfs:label "Controlled list" ;
+    skos:prefLabel "Controlled list"@en ;
+    skos:definition "Definition of the concept scheme meaning"@en ;
+.
+a|
+[source, rdf]
+<skos:ConceptScheme rdf:about="http://base.uri/ControlledList">
+    <rdfs:label>Controlled list</rdfs:label>
+    <skos:prefLabel xml:lang="en">Controlled list</skos:prefLabel>
+    <skos:definition xml:lang="en">Definition of the concept scheme meaning</skos:definition>
+</skos:ConceptScheme>
+
+s|Listing 61: Datatype declaration in Turtle syntax
+s|Listing 62: Datatype declaration in RDF/XML syntax
+|===
+
+Rule 28 (Enumeration items - in core ontology layer). Specify SKOS concept
+instantiation axiom for an UML enumeration item.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:itemA a skos:Concept ;
+    skos:inScheme :ControlledList ;
+    rdfs:label "Item A" ;
+    skos:prefLabel "Item A"@en ;
+    skos:definition "Description for the concept meaning"@en ;
+.
+:itemB a skos:Concept ;
+    skos:inScheme :ControlledList ;
+    rdfs:label "Item B" ;
+    skos:prefLabel "Item B"@en ;
+    skos:definition "Description for the concept meaning"@en ;
+.   
+a|
+[source, rdf]
+<skos:Concept rdf:about="http://base.uri/itemA">
+    <skos:inScheme rdf:resource="http://base.uri/ControlledList"/>
+    <rdfs:label>Item A</rdfs:label>
+    <skos:prefLabel xml:lang="en">Item A</skos:prefLabel>
+    <skos:definition xml:lang="en">Description for the concept meaning</skos:definition>
+</skos:Concept>
+    <skos:Concept rdf:about="http://base.uri/itemB">
+    <skos:inScheme rdf:resource="http://base.uri/ControlledList"/>
+    <rdfs:label>Item B</rdfs:label>
+    <skos:prefLabel xml:lang="en">Item B</skos:prefLabel>
+    <skos:definition xml:lang="en">Description for the concept meaning</skos:definition>
+</skos:Concept>
+
+s|Listing 63: Concept scheme instantiation in Turtle syntax
+s|Listing 64: Concept scheme instantiation in RDF/XML syntax
+|===
+
+Rule 29 (Enumeration - in reasoning layer). For an UML enumeration, specify an equivalent class restriction covering the set of individuals that are skos:inScheme of this enumeration.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ControlledList a owl:Class ;
+    owl:equivalentClass [
+        rdf:type owl:Restriction ;
+        owl:allValuesFrom :ControlledList ;
+        owl:onProperty skos:inScheme ;
+    ] ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ControlledList">
+    <owl:equivalentClass>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource=".../02/skos/core#inScheme"/>
+        <owl:hasValue
+rdf:resource="http://base.uri/ControlledList"/>
+        </owl:Restriction>
+    </owl:equivalentClass>
+</owl:Class>
+
+|Listing 67: In-scheme equivalent class in Turtle syntax
+|Listing 68: In-scheme equivalent class in RDF/XML syntax
+|===
+
+5 Transformation of UML descriptors
+
+In this section are specied transformation rules for UML descriptive elements.
+Table 5 provides an overview of the section coverage.
+
+[cols="1,1,1,1"]
+|===
+|UML element|Rules in core ontology layer|Rules in data shape layer|Rules in reasoning layer
+
+|Name
+|Rule 30
+|Rule 31
+|Rule 32
+
+|Note
+|Rule 30
+|Rule 31
+|Rule 32
+
+|Comment
+|Rule 30
+|Rule 31
+|Rule 32
+|===
+.Overview of transformation rules for UML datatypes
+
+5.1 Name
+Most of the UML elements are named. The UML conventions [7] dedicate an ex-
+tensive section to the naming conventions and how deterministically to generate an
+URI and a label from the UML element name. The label should be associated to
+the resource URI by rdfs:label and, even if redundant, also as skos:prefLabel.
+
+Rule 30 (Label). Specify a label for UML element.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+
+a|
+[source, rdf]
+
+
+|Listing 69: Labels in Turtle syntax
+|Listing 70: Labels in RDF/XML syntax
+|===
+
+5.2 Note
+Most of the UML element foresee provisions of descriptions and notes. They should
+be transformed into rdfs:comment and skos:definition.
+
+Rule 31 (Description). Specify a description for UML element.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+
+a|
+[source, rdf]
+
+
+|Listing 71: Description in Turtle syntax
+|Listing 72: Description in RDF/XML syntax
+|===
+
+5.3 Comment
+In accordance with [5], every kind of UML Element may own Comments (see Figure
+19). They add no semantics but may represent information useful to the reader. In
+OWL it is possible to define the annotation axiom for OWL Class, Datatype, Object-
+Property, DataProperty, AnnotationProperty and NamedIndividual. The textual
+explanation added to UML Class is identified as useful for conceptual modelling [3],
+therefore the Comments that are connected to UML Classes are taken into consid-
+eration in the transformation.
+As UML Comments add no semantics, they are not used in any method of semantic
+validation. In OWL the AnnotationAssertion [15] axiom does not add any semantics
+either, and it only improves readability.
+
+Insert fig 19, pg 36
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+
+a|
+[source, rdf]
+
+
+|Listing 73: Comment in Turtle syntax
+|Listing 74: Comment in RDF/XML syntax
+|===
+
+6 Additional rules
+
+In this section are specied new transformation rules that were implemented after
+the UML model refactoring.
+
+Rule 33 (Dependency target  in reasnoning layer). Specify object property range
+for the target end of the dependency.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+
+a|
+[source, rdf]
+
+
+|Listing 75: Range specication in Turtle syntax
+|Listing 76: Range specication in RDF/XML syntax
+|===
+
+Rule 34 (Dependency range shape  in data shape layer). Within the SHACL
+Node Shape corresponding to the source UML class, specify property constraints
+indicating the range class.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+
+a|
+[source, rdf]
+
+
+|Listing 77: Property class constraint in Turtle syntax
+|Listing 78: Property class constraint in RDF/XML syntax
+|===

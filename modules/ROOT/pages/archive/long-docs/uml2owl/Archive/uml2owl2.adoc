@@ -1,0 +1,537 @@
+== *Rules for the transformation of UML Classes and Attributes:*
+
+The rules covered on this page are listed in the table below:
+
+.Overview of transformation rules for UML classes and attributes
+[cols="1,1,1,1"]
+|===
+|*UML element Rules in reasoning layer*|*Rules in core ontology layer*|*Rules in data shape layer*|*Rules in reasoning layer*
+
+s|Class 
+^|Rule 1
+^|Rule 2
+^|
+
+s|Abstract class
+^|
+^|Rule 3
+^|
+
+s|Attribute
+^|Rule 4
+^|
+^|Rule 5
+
+s|Attribute type
+^|
+^|Rule 7
+^|Rule 6
+
+s|Attribute multiplicity
+^|
+^|Rule 8
+^|Rule 9, Rule 10
+|===
+
+=== *Class*
+In UML, a Class is used to specify a classification of objects. 
+
+UML represents atomic classes as named elements of type Class without further features. In OWL, the atomic class, owl:Class, has no intension. It can only be interpreted by its name that has a meaning in the world outside the ontology. The atomic class is a class description that is simultaneously a class axiom.
+
+#insert figure 6 pg 10#
+
+*Rule 1* (Class - in core ontology layer). 
+Specify declaration axiom for UML Class as OWL Class where the URI and a label are deterministically generated from the class name. The label and, if available, the description are ascribed to the class.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a owl:Class ;
+    rdfs:label "Class name"@en ;
+.
+a|
+[source,rdf]
+<owl:Class
+        rdf:about="http://base.uri/ClassName">
+    <rdfs:label xml:lang="en">Class name</rdfs:label>
+</owl:Class>
+
+s|Listing 1: Class declaration in Turtle syntax 
+s|Listing 2: Class declaration in RDF/XML syntax
+|===
+
+'''
+*Rule 2* (Class - in data shape layer). Specify declaration axiom for UML Class as SHACL Node Shape where the URI and a label are deterministically generated from the class name.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape .
+a|
+[source,rdf]
+<rdf:Description
+        rdf:about="http://base.uri/ClassName">
+<rdf:type
+        rdf:resource="http://www.w3.org/ns/shacl#NodeShape">
+<rdf:Description>
+
+s|Listing 1: Class declaration in Turtle syntax 
+s|Listing 2: Class declaration in RDF/XML syntax
+|===
+
+'''
+=== *Abstract class*
+
+In UML, an abstract Class [5] cannot have any instances and only its subclasses can be instantiated. The abstract classes are declared just like the regular ones (Rule 1 and 2) and in addition a constraint validation rule is generated to ensure that no instance of this class is permitted.
+
+OWL follows the Open World Assumption [15], therefore, even if the ontology does not contain any instances for a speciic class, it is unknown whether the class has any instances. We cannot conirm that the UML abstract class is correctly defined with respect to the OWL domain ontology, but we can detect if it is not using SHACL constraints.
+
+*Rule 3* (Class - in data shape layer). Specify declaration axiom for UML Class as SHACL Node Shape with a SPARQL constraint that selects all instances of this class.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName
+    rdf:type sh:NodeShape ;
+    sh:sparql [
+        sh:select """SELECT $this
+            WHERE {
+                $this a :ClassName .
+            }
+            """ ;
+    ] ;
+.
+a|
+[source,rdf]
+<sh:NodeShape 
+        rdf:about="http://base.uri/ClassName">
+    <sh:sparql rdf:parseType="Resource">
+        <sh:select>SELECT $this
+        WHERE {
+            $this a :ClassName .
+        }
+        </sh:select>
+    </sh:sparql>
+</sh:NodeShape>
+
+s|Listing 5: Instance checking constraint in Turtle syntax
+s|Listing 6: Instance checking constraint in RDF/XML syntax
+|===
+
+'''
+=== *Attributes*
+
+The UML attributes [5] are properties that are owned by a Classifier, e.g. Class. Both UML attributes and associations are represented by one meta-model element - Property. OWL also allows one to define properties. A transformation of UML attribute to OWL data property or OWL object property bases on its type. If the type of the attribute is a primitive type it should be  ransformed into OWL datatype property. However, if the type of the attribute is a structured datatype, class of enumeration , it should be transformed into an OWL object property.
+
+#Insert fig 8 pg10#
+
+*Rule 4* (Attribute - in core ontology layer). Specify declaration axiom(s) for attribute(s) as OWL data or object properties deciding based on their types. The attributes with primary types should be treated as data properties, whereas those typed with classes or enumerations should be treated as object properties.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:attribute1 a owl:DatatypeProperty ;
+    rdfs:label "attribute 1"@en;
+    skos:definition "Description of the attribute meaning"@en;
+.
+:attribute2 a owl:ObjectProperty ;
+    rdfs:label "attribute 2"@en;
+    skos:definition "Description of the attribute meaning"@en;
+.
+a|
+[source,rdf]
+<owl:DatatypeProperty 
+        rdf:about="http://base.uri/attribute1">
+    <rdfs:label xml:lang="en">attribute 1</rdfs:label>
+    <skos:definition xml:lang="en">Description of the attribute meaning</skos:definition>
+</owl:DatatypeProperty>
+<owl:ObjectProperty
+        rdf:about="http://base.uri/ attribute2">
+    <rdfs:label xml:lang="en">attribute 1</rdfs:label>
+    <skos:definition xml:lang="en">Description of the attribute meaning</skos:definition>
+</owl:ObjectProperty>
+
+s|Listing 7: Property declaration in Turtle syntax
+s|Listing 8: Property declaration in RDF/XML syntax
+|===
+
+'''
+=== *Attribute owner*
+
+*Rule 5* (Attribute domain - in reasnoning layer). Specify data (or object) property domains for attribute(s).
+
+[cols="1,1"]
+|===
+
+a|  
+[source,turtle]
+:attribute1 a
+        owl:DatatypeProperty ;
+    rdfs:domain :ClassName ;
+.
+:attribute2 a owl:ObjectProperty ;
+    rdfs:domain :ClassName ;
+a|
+[source,rdf]
+<owl:DatatypeProperty
+        rdf:about="http://base.uri/attribute1">
+    <rdfs:domain
+        rdf:resource="http://base.uri/ClassName"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty
+        rdf:about="http://base.uri/attribute2">
+    <rdfs:domain
+        rdf:resource="http://base.uri/ClassName"/>
+</owl:ObjectProperty>
+
+s|Listing 9: Domain specification in Turtle syntax
+s|Listing 10: Domain specification in RDF/XML syntax
+|===
+
+'''
+=== *Attribute type*
+
+*Rule 6* (Attribute type - in reasnoning layer). Specify data (or object) property range for attribute(s).
+
+[cols="1,1"]
+|===
+
+a|  
+[source,turtle]
+:attribute1 a owl:DatatypeProperty;
+    rdfs:range xsd:string;
+.
+:attribute2 a owl:ObjectProperty;
+    rdfs:range :OtehrClass;
+.
+a|
+[source,rdf]
+<owl:DatatypeProperty
+        rdf:about="http://base.uri/attribute1">
+    <rdfs:range
+        rdf:resource="http://www.w3c.org...#string"/>
+</owl:DatatypeProperty>
+<owl:ObjectProperty
+        rdf:about="http://base.uri/attribute2">
+    <rdfs:range
+        rdf:resource="http://base.uri/OtherClass"/>
+</owl:ObjectProperty>
+
+s|Listing 11: Range specification in Turtle syntax
+s|Listing 12: Range specification in RDF/XML syntax
+|===
+
+*Rule 7* (Attribute range shape  in data shape layer). Within the SHACL Node Shape corresponding to the UML class, specify property constraints, for each UML attribute, indicating the range class or datatype.
+
+[cols="1,1"]
+|===
+a|  
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        a sh:PropertyShape ;
+        sh:path :attribute1 ;
+        sh:datatype xsd:string ;
+        sh:name "attribute 1" ;
+    ];
+    sh:property [
+        a sh:PropertyShape ;
+        sh:path :attribute2 ;
+        sh:class :OtherClass ;
+        sh:name "attribute 2" ;
+    ];
+.
+a|
+[source,]
+<sh:NodeShape
+        rdf:about="http://base.uri/ClassName">
+<sh:property>
+    <sh:PropertyShape>
+        <sh:path rdf:resource="http://base.uri/attribute1"/>
+        <sh:name>attribute 1</sh:name>
+        <sh:datatype rdf:resource="http://www.w3c.org...#string"/>
+    </sh:PropertyShape>
+</sh:property>
+<sh:property>
+    <sh:PropertyShape>
+        <sh:path rdf:resource="http://base.uri/attribute2"/>
+        <sh:name>attribute 2</sh:name>
+        <sh:class rdf:resource="http://base.uri/OtherClass"/>
+    </sh:PropertyShape>
+</sh:property>
+</sh:NodeShape>
+
+s|Listing 13: Property class and datatype constraint in Turtle syntax
+s|Listing 14: Property class and datatype constraint in RDF/XML syntax
+|===
+
+'''
+=== *Attribute multiplicity*
+
+In [5], multiplicity bounds of multiplicity element are specified in the form of [<lowerbound>... <upper-bound>]. The lower-bound, also referred here as minimum cardinality or min is of a non-negative Integer type and the upper-bound, also referred here as maximum cardinality or max, is of an UnlimitedNatural type (see Section 4.1).
+The strictly compliant specification of UML in version 2.5 defines only a single value range for MultiplicityElement. not limit oneself to a single interval. Therefore, the below UML to OWL mapping covers a wider case - a possibility of specifying more value ranges for a multiplicity element. Nevertheless, if the reader would like to strictly follow the current UML specification, the particular single lower..upper bound interval is therein also comprised.
+
+Insert Graphic pg 15 fig 9
+
+*Rule 8* (Attribute multiplicity - in data shape layer). Within the SHACL Node Shape corresponding to the UML class, specify property constraints, corresponding to each attribute, indicating the minimum and maximum cardinality, only where min and max are different from "*"" (any) and multiplicity is not [1..1]. The expressions are formulated according to the following cases.
+
+A. exact cardinality, e.g. [2..2]
+B. minimum cardinality only, e.g. [1..*]
+C. maximum cardinality only, e.g. [*..2]
+D. minimum and maximum cardinality , e.g. [1..2]
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        sh:path :attribute1;
+        sh:minCount 2 ;
+        sh:maxCount 2 ;
+        sh:name "attribute 1" ;
+    ] ;
+.
+a|
+[source, rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+<sh:property>
+    <sh:PropertyShape>
+        <sh:path rdf:resource="http://base.uri/attribute1"/>
+        <sh:name>attribute 1</sh:name>
+        <sh:minCount rdf:datatype="http://www.w3.org...#integer">2</sh:minCount>
+        <sh:maxCount rdf:datatype="http://www.w3.org...#integer">2</sh:maxCount>
+    </sh:PropertyShape>
+</sh:property>
+</sh:NodeShape>
+
+s|Listing 15: Exact cardinality constraint in Turtle syntax
+s|Listing 16: Exact cardinality constraint in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        sh:path :attribute2;
+        sh:minCount 1 ;
+        sh:name "attribute 2" ;
+    ] ;
+.
+a|
+[source, rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+<sh:property>
+    <sh:PropertyShape>
+        <sh:path rdf:resource="http://base.uri/attribute2"/>
+        <sh:name>attribute 2</sh:name>
+        <sh:minCount rdf:datatype="http://www.w3.org...#integer">1</sh:minCount>
+    </sh:PropertyShape>
+</sh:property>
+</sh:NodeShape>
+
+s|Listing 17: Min cardinality constraint in Turtle syntax
+s|Listing 18: Min cardinality constraint in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        sh:path :attribute3;
+        sh:maxCount 2 ;
+        sh:name "attribute 3" ;
+    ] ;
+.
+a|
+[source, rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+<sh:property>
+    <sh:PropertyShape>
+        <sh:path rdf:resource="http://base.uri/attribute3"/>
+        <sh:name>attribute 3</sh:name>
+        <sh:maxCount rdf:datatype="http://www.w3.org...#integer">2</sh:maxCount>
+    </sh:PropertyShape>
+</sh:property>
+</sh:NodeShape>
+
+s|Listing 19: Max cardinality constraint in Turtle syntax
+s|Listing 20: Max cardinality constraint in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a sh:NodeShape ;
+    sh:property [
+        sh:path :attribute4;
+        sh:minCount 1 ;
+        sh:maxCount 2 ;
+        sh:name "attribute 4" ;
+    ] ;
+.
+a|
+[source, rdf]
+<sh:NodeShape rdf:about="http://base.uri/ClassName">
+<sh:property>
+    <sh:PropertyShape>
+        <sh:path rdf:resource="http://base.uri/attribute4"/>
+        <sh:name>attribute 4</sh:name>
+        <sh:minCount rdf:datatype="http://www.w3.org...#integer">1</sh:minCount>
+        <sh:maxCount rdf:datatype="http://www.w3.org...#integer">2</sh:maxCount>
+    </sh:PropertyShape>
+</sh:property>
+</sh:NodeShape>
+
+s|Listing 21: Min and max cardinality constraint in Turtle syntax
+s|Listing 22: Min and max cardinality constraint in RDF/XML syntax
+|===
+
+It should be noted that upper-bound of UML MultiplicityElement can be specified as unlimited: "*"". In OWL, cardinality expressions serve to restrict the number of individuals that are connected by an object property expression to a given number of instances of a specified class expression [15]. Therefore, UML unlimited upper-bound does not add any information to OWL ontology, hence it is not transformed.
+
+*Rule 9* (Attribute multiplicity - in reasnoning layer). For each attribute multi-plicity of the form ( min .. max ), where min and max are different than "*"" (any), specify a subclass axiom where the OWL class, corresponding to the UML class, specialises an anonymous restriction of properties formulated according to the following cases.
+
+A. exact cardinality, e.g. [2..2]
+B. minimum cardinality only, e.g. [1..*]
+C. maximum cardinality only, e.g. [*..2]
+D. maximum and maximum cardinality , e.g. [1..2]
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:ClassName a owl:Class ;
+    rdfs:subClassOf [ a 
+        owl:Restriction ;
+        owl:cardinality"2"^^xsd:integer;
+        owl:onProperty :attribute1 ;
+    ] ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://base.uri/attribute1"/>
+            <owl:cardinality rdf:datatype="http://www.w3.org...#integer">2</owl:cardinality>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
+
+s|Listing 23: Cardinality restriction in Turtle syntax
+s|Listing 24: Cardinality restriction in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a owl:Class ;
+    rdfs:subClassOf [ a
+        owl:Restriction ;
+        owl:minCardinality "1"^^xsd:integer;
+        owl:onProperty :attribute2 ;
+    ] ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://base.uri/attribute2"/>
+            <owl:minCardinality rdf:datatype="http://www.w3.org...#integer">1</owl:cardinality>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
+
+s|Listing 25: Min cardinality restriction in Turtle syntax
+s|Listing 26: Min cardinality restriction in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a owl:Class ;
+    rdfs:subClassOf [ a
+        owl:Restriction ;
+        owl:maxCardinality"2"^^xsd:integer;
+        owl:onProperty :attribute3 ;
+    ] ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://base.uri/attribute3"/>
+            <owl:maxCardinality rdf:datatype="http://www.w3.org...#integer">2</owl:cardinality>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
+
+s|Listing 27: Max cardinality restriction in Turtle syntax
+s|Listing 28: Max cardinality restriction in RDF/XML syntax
+
+a|
+[source,turtle]
+:ClassName a owl:Class ;
+    rdfs:subClassOf [
+        rdf:type owl:Class ;
+        owl:intersectionOf (
+            [ a owl:Restriction ;
+                owl:minCardinality"1"^^xsd:integer;
+                owl:onProperty:attribute4; ]
+            [ a owl:Restriction ;
+                owl:maxCardinality"2"^^xsd:integer;
+                owl:onProperty:attribute4; ]
+        ) ;
+    ] ;
+.
+a|
+[source, rdf]
+<owl:Class rdf:about="http://base.uri/ClassName">
+    <rdfs:subClassOf>
+        <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://base.uri/attribute4"/>
+                    <owl:minCardinality rdf:datatype="...#integer">1</owl:minCardinality>
+                </owl:Restriction>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://base.uri/attribute4"/>
+                    <owl:maxCardinality rdf:datatype="...#integer">2</owl:maxCardinality>
+                </owl:Restriction>
+            </owl:intersectionOf>
+        </owl:Class>
+    </rdfs:subClassOf>
+</owl:Class>
+
+
+s|Listing 29: Min and max cardinality restriction in Turtle syntax
+s|Listing 30: Min and max cardinality restriction in RDF/XML syntax
+|===
+
+Attributes with multiplicity exactly one correspond to functional object or data properties in OWL. If we apply the previous rule specifying min and max cardinality will lead to inconsistent ontology. To avoid that it is important that min and max cardinality are not generated from [1..1] multiplicity but only functional property axiom.
+
+*Rule 10* (Attribute multiplicity "one" - in reasnoning layer). For each attribute that has multiplicity exactly one, i.e. [1.. ], specify functional property axiom.
+
+[cols="1,1"]
+|===
+
+a|
+[source,turtle]
+:attribute5 a 
+    owl:FunctionalProperty
+.
+a|
+[source, rdf]
+<rdf:Description rdf:about="http://base.uri/attribute5">
+    <rdf:type rdf:resource="http://...owl#FunctionalProperty"/>
+</rdf:Description>
+
+|Listing 31: Declaring a functional property in Turtle syntax
+|Listing 32: Declaring a functional property in RDF/XML syntax
+|===
+
+include::partial$feedback.adoc[]
