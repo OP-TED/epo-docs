@@ -307,7 +307,7 @@ The Change Management process is based on generic change and release management 
 === Technical Aspects
 
 Enterprise Architect (EA) is the tool used to design the conceptual model. The ontology is designed as UML model and Class diagrams offer thematic views on the model.
-The ontology architecture is described in this report. It covers the main building blocks of the ontology, how it is layered (core, restrictions and shapes), and what output artefacts are created for each layer.
+The ontology architecture is described link:https://meaningfy-ws.github.io/model2owl-docs/public-review/uml/conceptual-model-conventions.html[on this website]. It covers the main building blocks of the ontology, how it is layered (core, restrictions and shapes), and what output artefacts are created for each layer.
 The UML model follows a set of conventions so that it can be transformed automatically into OWL, and SHACL representations (using model2owl toolchain).
 
 === Examples of the conceptual model elements
