@@ -14,6 +14,18 @@ include::notes/2023-05-23-wgm.adoc[]
 
 include::notes/2023-05-16-wgm.adoc[]
 
+include::notes/2023-08-01-wgm.adoc[]
+
+include::notes/2023-06-13-wgm.adoc[]
+
+include::notes/2023-06-01-wgm.adoc[]
+
+include::notes/2023-05-30-wgm.adoc[]
+
+include::notes/2023-05-23-wgm.adoc[]
+
+include::notes/2023-05-16-wgm.adoc[]
+
 include::notes/2023-05-04-wgm.adoc[]
 
 include::notes/2023-05-02-wgm.adoc[]
