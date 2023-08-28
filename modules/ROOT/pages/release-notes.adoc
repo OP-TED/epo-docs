@@ -1,16 +1,13 @@
-== *eProcurement Ontology 3.1.0*
+:doctitle: eProcurement Ontology
+:doccode: epo-main-prod-002
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
+
+== *Release notes 3.1.0*
 
 The release of version 3.1.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v3.1.0[here].
 
-RDF representation of the eProcurement ontology can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/ePO[here].
-
-RDF representation of the eCatalogue module can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eCatalogue[here].
-
-RDF representation of the eNotice module can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eNotice[here].
-
-RDF representation of the eOrdering module can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eOrdering[here].
-
-== Release notes
 
 |===
 |*Metadata*|*Value*
@@ -24,14 +21,14 @@ RDF representation of the eOrdering module can be downloaded link:https://github
 * Development of a new module, eOrdering
 * The prefix used for the eOrdering module is “epo-ord”
 * Included notice systematisation in eNotice module
-* Procurement Objects (Procedure, PlannedProcurementPart, Lot)
+* Changes to Procurement Object classes and attributes (Procedure, PlannedProcurementPart, Lot)
 * Roles hierarchy restructure
-* model2owl updates:
+* model2owl (uml2owl) updates:
 ** Combined glossary
 ** Providing Turtle output files
 ** Implemented metadata management mechanism
 * https://github.com/OP-TED/ePO/issues[GitHub issues] revision and labelling
-* GitHub issue fixes for https://github.com/OP-TED/ePO/milestone/1[Q4 2022 milestone]
+* GitHub issue fixes for the https://github.com/OP-TED/ePO/milestone/1[Q4 2022 milestone]
 * Updates for standard forms mappings - TED-RDF-mapping
 
 
@@ -59,13 +56,13 @@ RDF representation of the eOrdering module can be downloaded link:https://github
 * epo:SecondaryRole
 * epo:TertiaryRole
 
-== New Controlled Vocabularies
+== New controlled vocabularies
 
 === ePO core
 
 * at-voc:cpvsuppl
 * at-voc:review-decision-type (renamed from at-voc:decision-type)
-* at-voc:remedy-type (renamed from )at-voc:review-remedy-type)
+* at-voc:remedy-type (renamed from at-voc:review-remedy-type)
 * at-voc-new:evaluation-group-type (changed prefix from epo:)
 * at-voc-new:legal-regime (changed prefix from epo:)
 * at-voc-new:notification-phases-content-types (changed prefix from epo:)
@@ -75,7 +72,7 @@ RDF representation of the eOrdering module can be downloaded link:https://github
 * at-voc-new:price-type
 * at-voc-new:document-type
 
-== Deleted Controlled Vocabularies
+== Deleted controlled vocabularies
 
 === ePO core
 
@@ -224,3 +221,38 @@ RDF representation of the eOrdering module can be downloaded link:https://github
 |epo-cat:ProductSpecification|epo-cat:hasDocumentType -> at-voc-new:document-type|
 |epo-cat:Item|epo:hasBuyerItemID -> epo:Identifier|
 |===
+
+== *Ontology*
+
+=== Conceptual Models
+*The Conceptual Models can be viewed via the following links*
+
+* The  eCore Conceptual Module: link:{attachmentsdir}/html_reports/ePO/index.html[HTML] and
+link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
+* The eCatalogue Conceptual Module: link:{attachmentsdir}/html_reports/eCatalogue/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
+* The eNotice Conceptual Module: link:{attachmentsdir}/html_reports/eNotice/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
+* The eOrdering Module: link:{attachmentsdir}/html_reports/eOrdering/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
+
+'''
+=== Glossaries
+*The Glossaries for the following entities can be downloaded via the following links:*
+
+* link:{attachmentsdir}/html_reports/glossary/ePO_glossary.html[The eCore Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eCatalogue_glossary.html[The eCatalogue Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eCatalogue_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[The eNotice Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[The eOrdering Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/ePO-combined-glossary.html[The ePO Combined Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO-combined-glossary.html[here]
+
+'''
+=== RDF Representations
+* RDF representation of the eProcurement ontology can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/ePO[here].
+
+* RDF representation of the eCatalogue module can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eCatalogue[here].
+
+* RDF representation of the eNotice module can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eNotice[here].
+
+* RDF representation of the eOrdering module can be downloaded link:https://github.com/OP-TED/ePO/tree/v3.1.0/implementation/eOrdering[here].
+
+
+
+include::partial$feedback.adoc[]

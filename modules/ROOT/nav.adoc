@@ -1,20 +1,33 @@
-* xref:index.adoc[Overview]
+:doctitle: Navigation
+:doccode: epo-v3.1.0-prod-004
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 
-* Conceptual Model
-** xref:ePO-core-Conceptual-Model.adoc[ePO core]
-** xref:eCatalogue-Conceptual-Model.adoc[eCatalogue]
-** xref:eNotice-Conceptual-Model.adoc[eNotice]
-** xref:eOrdering-Conceptual-Model.adoc[eOrdering]
-
-* Glossary
-** xref:ePO-core-Glossary.adoc[ePO core]
-** xref:eCatalogue-Glossary.adoc[eCatalogue]
-** xref:eNotice-Glossary.adoc[eNotice]
-** xref:eOrdering-Glossary.adoc[eOrdering]
-** xref:ePO-combined-Glossary.adoc[ePO combined Glossary]
-
+* xref:index.adoc[Home]
+//* xref:Overview_V3.1.0.adoc[Release Overview]
 * xref:release-notes.adoc[Release Notes]
 
-//* xref:Report-v3.0.0.adoc[Report]
+* [.separated]#**General Reference**#
+* xref:epo-home::business.adoc[Business Overview]
+* xref:epo-home::references.adoc[Reference Documents]
+//* xref:epo-home::methodology.adoc[Ontology Methodology]
+* xref:epo-home::history.adoc[History and Planned Developments]
+* xref:epo-home::versioning.adoc[ePO Versioning Rules]
 
-* xref:dev@EPO::epo-guidelines.adoc[Guidelines]
+
+* [.separated]#**Working Group Documents**#
+* xref:epo-wgm::wider.adoc[Quarterly Meetings]
+* xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)]
+* xref:epo-wgm::indiv.adoc[Individual Meeting Reports]
+//* xref:epo-wgm::eCatalogueMeetings.adoc[eCatalogue Meetings]
+//* xref:epo-wgm::eOrderingMeetings.adoc[eOrdering Meetings]
+//* xref:epo-wgm::eFulfilmentMeetings.adoc[eFulfilment Meetings]
+//* xref:epo-wgm::Note_taking.adoc[Note Taking Guidelines]
+
+// * xref:rdf-mapping::index.adoc[XML to RDF Mappings]
+// * xref:rdf-conversion::index.adoc[XML to RDF Conversion]
+
+
+
+
