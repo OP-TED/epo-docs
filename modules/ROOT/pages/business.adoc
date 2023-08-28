@@ -280,35 +280,22 @@ Application profiles (AP) represent a set of constraints on the logical model ty
 
 The eProcurement ontology includes a core module, containing concepts common to all modules, and specific modules: eCatalogue, eNotice, and eOrdering, containing vocabularies specific to that module.
 
-
-
 The modular structure of the ePO to makes maintaining the model easier.
 
 *Figure 7 - The modular approach of the ePO:*
 
 image:bus2.png[]
 
-*Each version of the ePO has a Conceptual Model and Glossary can be viewed via the following links:*
+*Each version and, within the version, each module of the ePO has a Conceptual Model. These can be viewed via the following link:*
+https://github.com/OP-TED/ePO/tree/release/x.y.z/analysis_and_design/conceptual_model, replacing "x.y.z" for the version you wish to view.
 
-* The  eCore Conceptual Module: link:{attachmentsdir}/html_reports/ePO/index.html[HTML] and
-link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eCatalogue Conceptual Module: link:{attachmentsdir}/html_reports/eCatalogue/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eNotice Conceptual Module: link:{attachmentsdir}/html_reports/eNotice/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eOrdering Module: link:{attachmentsdir}/html_reports/eOrdering/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v3.1.0/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
+*Similarly, The Glossaries for each version and module can beviewed and downloaded via the following link, https://github.com/OP-TED/ePO/tree/release/x.y.z/glossary, replaceing the x.y.z with a valid version number.
 
-'''
-*The Glossaries for the following entities can be downloaded via the following links:*
-
-* link:{attachmentsdir}/html_reports/glossary/ePO_glossary.html[The eCore Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO_glossary.html[here]
-* link:{attachmentsdir}/html_reports/glossary/eCatalogue_glossary.html[The eCatalogue Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eCatalogue_glossary.html[here]
-* link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[The eNotice Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[here]
-* link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[The eOrdering Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[here]
-* link:{attachmentsdir}/html_reports/glossary/ePO-combined-glossary.html[The ePO Combined Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO-combined-glossary.html[here]
- The approach for change management is explained in the xref:change.adoc[Description of a change management release and publication process for structural metadata specifications developed by the ISA Programme], also summarised for the eProcurement Ontology in chapter 4.3 of the xref:charter.adoc[Project Charter Document]
+The approach for change management is explained in the xref:change.adoc[Description of a change management release and publication process for structural metadata specifications developed by the ISA Programme], also summarised for the eProcurement Ontology in chapter 4.3 of the xref:charter.adoc[Project Charter Document]
 
 This document formalises how changes to the specifications of structural metadata developed by the ISA Programme are managed and how new releases are published. According to the definitions followed by the ISA Programme, structural metadata includes data models (e.g. https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211[DCAT application profile for data portals in Europe] and reference data.
 
-This change management process has the following characteristics:
+The change management process has the following characteristics:
 
 * *Openness*: In order for public administrations to rely on specifications of structural metadata developed by the ISA Programme, the openness of the change management is a key – openness is also a key assessment criterion in the Common Assessment Method of Standards and Specifications. Openness means that requests for changes can be submitted by any stakeholder and that the analysis and decisions taken are logged in a transparent manner. An open change management process improves the quality of the specification.
 * Controlled change: Public administrations that use structural metadata or implement specifications of structural metadata developed by the ISA Programme must not be negatively impacted by unexpected changes to these specifications. A release schedule must be established, allowing changes to take place in a stepwise and traceable manner. New releases should also be versioned consistently.
