@@ -1,0 +1,5 @@
+== *eCatalogue Glossary*
+
+In the link below the different concepts that compose the eCatalogue module can be consulted. Note that the definitions of each class can be consulted clicking over each class:
+
+link:{attachmentsdir}/html_reports/glossary/eCatalogue_glossary.html[Click here to see the eCatalogue Glossary]

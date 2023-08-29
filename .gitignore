@@ -10,7 +10,13 @@ yarn.lock
 /.idea
 /scripts
 branches
+<<<<<<< HEAD
 =======
 branches
 
 >>>>>>> 617c8c22911ca5d4fa98962a036923d529e53dda
+=======
+scripts
+/modules/ROOT/pages/archive/
+.idea/
+>>>>>>> 5ad2cb38609af7f2375a933235c5f090fdbeacd2

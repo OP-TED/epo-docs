@@ -1,8 +1,33 @@
-* xref:index.adoc[Overview]
-* Conceptual Model
-** xref:development-branch.adoc[development]
-** xref:frozen-2.0.2-branch.adoc[frozen 2.0.2]
-* xref:epo-guidelines.adoc[Guidelines]
-* xref:epo-wgm::index.adoc[Working Group Documents]
+:doctitle: Navigation
+:doccode: epo-main-prod-004
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
+
+* xref:epo-home::index.adoc[Home]
+//* xref:EPO::Overview_V3.1.0.adoc[Release Overview]
+* xref:EPO::release-notes.adoc[Release Notes]
+
+* [.separated]#**General Reference**#
+* xref:epo-home::business.adoc[Business Overview]
+* xref:epo-home::references.adoc[Reference Documents]
+// * xref:epo-home::methodology.adoc[Ontology Methodology]
+* xref:epo-home::history.adoc[History and Planned Developments]
+* xref:epo-home::versioning.adoc[ePO Versioning Rules]
+
+* [.separated]#**Working Group Documents**#
+* xref:epo-wgm::wider.adoc[Quarterly Meetings]
+* xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)]
+* xref:epo-wgm::indiv.adoc[Individual Meeting Reports]
+//* xref:epo-wgm::eCatalogueMeetings.adoc[eCatalogue Meetings]
+//* xref:epo-wgm::eOrderingMeetings.adoc[eOrdering Meetings]
+//* xref:epo-wgm::eFulfilmentMeetings.adoc[eFulfilment Meetings]
+//* xref:epo-wgm::Note_taking.adoc[Note Taking Guidelines]
+
+
+
+
+
+
 
 
