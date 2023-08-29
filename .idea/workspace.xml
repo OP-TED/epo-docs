@@ -2,24 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b17980f-1cb5-4bdd-a435-c26b8f952cae" name="Default Changelist" comment="removed release overview link">
-      <change afterPath="$PROJECT_DIR$/scripts/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/.yarnrc.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/nodejs_scripts/yarn-4.0.0-rc.18.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/.yarnrc.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/antora-playbook-epo-local.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/nodejs_scripts/yarn-4.0.0-rc.18.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/run.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Empty" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="2UeuLUYQ5Vs7wqQ76gi3sh29hsS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultPlantUmlFileTemplate" value="Empty" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="resolved conflict">
       <created>1687338676342</created>
@@ -27,6 +48,13 @@
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1687338676342</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b17980f-1cb5-4bdd-a435-c26b8f952cae" name="Default Changelist" comment="removed release overview link" />
+      <created>1693312314155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693312314155</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
