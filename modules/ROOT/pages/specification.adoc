@@ -728,7 +728,7 @@ The classes, properties and relationships in the conceptual data model for the e
 An online version of the conceptual data model is available with the following link: https://github.com/eprocurementontology/eprocurementontology/wiki/CM-Visualisation[].
 
 .Figure 4: Conceptual data model
-#Insert fig 4 pg 28#
+image:24.png[]
 
 === Classes
 General classes are the most generic classes used in the conceptual model but not specifically related to the use cases. Classes derived from the use cases may be classified as sub-classes of the general classes wherever appropriate. These subclass are specified in the definition of the more specific classes in Table 8.
