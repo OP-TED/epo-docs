@@ -852,7 +852,7 @@ As raised by the issue 40 and 27, the relationship between the classes Call For 
 The issue 752 highlighted that, depending on further use cases, it may be necessary to distinguish between Framework Agreements and Specific Contracts. This will be decided by the working group in the next phases.
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
-.Call for Tender
+Call for Tender
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -882,7 +882,7 @@ _Labels and Definitions still to be defined_
 ==== Tender
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
-.Tender
+Tender
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -910,7 +910,7 @@ As specified in the issue 39 and 4153, the relationships coming from Contract Aw
 The issue 3954 was raised more specifically for the relationship between Contract Award Notice and Buyer.
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
-.Contract Award Notice
+Contract Award Notice
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -929,7 +929,7 @@ The issue 3954 was raised more specifically for the relationship between Contrac
 ==== Contract
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
-.Contract
+Contract
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -963,7 +963,7 @@ The issue 3954 was raised more specifically for the relationship between Contrac
 ==== Product Or Service Or Work
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
-.Product Or Service Or Work
+Product Or Service Or Work
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -997,7 +997,7 @@ _Labels and Definitions still to be defined_
 An issue was opened on GitHub to discuss further a potential relationship between Economic Operator and Contract Award Notice55.
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
-.Economic Operator
+Economic Operator
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -1024,7 +1024,7 @@ _Labels and Definitions still to be defined_
 ==== Invoice
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
-.Invoice
+Invoice
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -1072,7 +1072,7 @@ _Labels and Definitions still to be defined_
 There will be a detailed discussion concerning this class during the dedicated meeting in the next phase which will most probably be the fourth working group meeting, as described by the table 6 of the Project Charter. The issue 2557 on GitHub is open to gather all the comments regarding this class.
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
-.Monetary Value
+Monetary Value
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -1101,7 +1101,7 @@ _Labels and Definitions still to be defined_
 As explained in the issue 4758 and during the third working group meeting, a Payment can be made to other parties than Economic Operator. Consequently, the working group will have to decide to which classes the class Payment is related to except for the existing relations with Buyer, Economic Operator, Evidence and Monetary Value. This issue is related to issue 2859 for which the latest version of the conceptual data model included a relationship between Evidence and Payment.
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
-.Payment
+Payment
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -1157,30 +1157,46 @@ This section presents the mapping of the elements in the conceptual model to reu
 |http://www.w3.org/ns/locn#Address[]
 
 |Agent
-|http://purl.org/dc/terms/Agent[] Considering to reuse:
-* http://xmlns.com/foaf/spec/#term_Agent
+|http://purl.org/dc/terms/Agent[]
+
+Considering to reuse:
+http://xmlns.com/foaf/spec/#term_Agent
 
 |Award Criterion
-|http://data.europa.eu/eproc/ontology#AwardCriterion Considering to reuse:
-* http://data.europa.eu/m8g/Criterion  http://purl.org/procurement/public-contracts#AwardCriteriaCombination
-* http://contsem.unizar.es/def/sector-publico/pproc#TenderRequirements
+|http://data.europa.eu/eproc/ontology#AwardCriterion
+
+Considering to reuse:
+
+http://data.europa.eu/m8g/Criterion http://purl.org/procurement/public-contracts#AwardCriteriaCombination
+
+http://contsem.unizar.es/def/sector-publico/pproc#TenderRequirements
 
 |Buyer
-|http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/ProductsAndServices/Buyer Alternative to reuse:
-* http://data.europa.eu/m8g/PublicOrganisation
+|http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/ProductsAndServices/Buyer
+
+Alternative to reuse:
+
+http://data.europa.eu/m8g/PublicOrganisation
 
 |Call For Tender
 |http://data.europa.eu/eproc/ontology#CallForTender
 
 |Classification
-|http://data.europa.eu/eproc/ontology#Classification Alternative to reuse:
-* http://www.eurocris.org/ontologies/cerif/1.3#Classification
+|http://data.europa.eu/eproc/ontology#Classification
+
+Alternative to reuse:
+
+http://www.eurocris.org/ontologies/cerif/1.3#Classification
 
 |Concept
 |http://www.w3.org/2004/02/skos/core#Concept
 
 |Contract
-|http://www.omg.org/spec/EDMC-FIBO/FND/Agreements/Contracts/Contract Alternatives for reuse:  http://purl.org/procurement/public-contracts#Contract
+|http://www.omg.org/spec/EDMC-FIBO/FND/Agreements/Contracts/Contract
+
+Alternatives for reuse:
+
+http://purl.org/procurement/public-contracts#Contract
 
 |Contract Award Notice
 |http://contsem.unizar.es/def/sector-publico/pproc#ContractAwardNotice
@@ -1189,37 +1205,83 @@ This section presents the mapping of the elements in the conceptual model to reu
 |http://data.europa.eu/eproc/ontology#ContractingAuthority
 
 |Country
-|http://data.europa.eu/eproc/ontology#Country Alternative to reuse:  http://www.omg.org/spec/EDMC-FIBO/FND/Places/Countries/Country  http://d-nb.info/standards/elementset/gnd#Country  http://rdf.geospecies.org/ont/geospecies#Country
+|http://data.europa.eu/eproc/ontology#Country
+
+Alternative to reuse:
+
+http://www.omg.org/spec/EDMC-FIBO/FND/Places/Countries/Country
+
+http://d-nb.info/standards/elementset/gnd#Country
+
+http://rdf.geospecies.org/ont/geospecies#Country
 
 |Currency
-|http://data.europa.eu/eproc/ontology#Currency Alternative to reuse:  http://www.omg.org/spec/EDMC-FIBO/FND/Accounting/CurrencyAmount/Currency  https://w3id.org/saref#Currency  http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Currency
+|http://data.europa.eu/eproc/ontology#Currency
+
+Alternative to reuse:
+
+http://www.omg.org/spec/EDMC-FIBO/FND/Accounting/CurrencyAmount/Currency
+
+https://w3id.org/saref#Currency
+
+http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Currency
 
 |Document
-|http://data.europa.eu/eproc/ontology#Document Alternative:  http://www.omg.org/spec/EDMC-FIBO/FND/Arrangements/Documents/Document
+|http://data.europa.eu/eproc/ontology#Document
+
+Alternative:
+
+http://www.omg.org/spec/EDMC-FIBO/FND/Arrangements/Documents/Document
 
 |Economic Operator
-|http://data.europa.eu/eproc/ontology#EconomicOperator Alternative to reuse:  http://www.w3.org/ns/org#Organization
+|http://data.europa.eu/eproc/ontology#EconomicOperator
+
+Alternative to reuse:
+
+http://www.w3.org/ns/org#Organization
 
 |Evidence
 |http://data.europa.eu/m8g/Evidence
 
 |Exclusion Criterion
-http://data.europa.eu/eproc/ontology#ExclusionCriterion Alternative to reuse:  http://semanticscience.org/resource/SIO_000143  http://purl.obolibrary.org/obo/OBI_0500028
+|http://data.europa.eu/eproc/ontology#ExclusionCriterion
+
+Alternatives to reuse:
+
+http://semanticscience.org/resource/SIO_000143
+
+http://purl.obolibrary.org/obo/OBI_0500028
 
 |Invoice
-|http://data.europa.eu/eproc/ontology#Invoice Alternative to reuse:  http://schema.org/Invoice  http://purl.org/cerif/frapo/Invoice
+|http://data.europa.eu/eproc/ontology#Invoice
+
+Alternative to reuse:
+
+http://schema.org/Invoice http://purl.org/cerif/frapo/Invoice
 
 |Location
 |http://purl.org/dc/terms/Location
 
 |Monetary Value
-|https://www.w3.org/TR/vocab-org/#class-organization Alternative to reuse:  http://standard.open-contracting.org/latest/en/schema/reference/#organization
+|https://www.w3.org/TR/vocab-org/#class-organization
+
+Alternative to reuse:
+
+http://standard.open-contracting.org/latest/en/schema/reference/#organization
 
 |Other Contracting Entity
 |http://data.europa.eu/eproc/ontology#OtherContractingElements
 
 |Payment
-|http://data.europa.eu/eproc/ontology#Payment Alternative to reuse:  http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/PaymentsAndSchedules/Payment  http://purl.org/cerif/frapo/Payment  http://reference.data.gov.uk/def/payment#Payment
+|http://data.europa.eu/eproc/ontology#Payment
+
+Alternative to reuse:
+
+http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/PaymentsAndSchedules/Payment
+
+http://purl.org/cerif/frapo/Payment
+
+http://reference.data.gov.uk/def/payment#Payment
 
 |Procurement Criterion
 |http://data.europa.eu/m8g/Criterion
@@ -1228,19 +1290,41 @@ http://data.europa.eu/eproc/ontology#ExclusionCriterion Alternative to reuse: �
 |http://standard.open-contracting.org/latest/en/schema/reference/#procuringEntity as proposed in the issue 6 https://github.com/eprocurementontology/eprocurementontology/issues/6. This will be further discussed by the working group in the next phases.
 
 |Product Or Service Or Work
-|http://data.europa.eu/eproc/ontology#ProductOrServiceOrWork Alternative to reuse:  http://purl.org/goodrelations/v1#ProductOrService  http://data.europa.eu/m8g/PublicService
+|http://data.europa.eu/eproc/ontology#ProductOrServiceOrWork
+
+Alternative to reuse:
+
+http://purl.org/goodrelations/v1#ProductOrService
+
+http://data.europa.eu/m8g/PublicService
 
 |Public Undertaking
 |http://data.europa.eu/eproc/ontology#PublicUndertaking
 
 |Selection Criterion
-|http://data.europa.eu/eproc/ontology#SelectionCriterion Considering to reuse:  http://data.europa.eu/m8g/Criterion  http://contsem.unizar.es/def/sector-publico/pproc#TenderersRequirements
+|http://data.europa.eu/eproc/ontology#SelectionCriterion
+
+Considering to reuse:
+
+http://data.europa.eu/m8g/Criterion
+
+http://contsem.unizar.es/def/sector-publico/pproc#TenderersRequirements
 
 |Specification
-|http://data.europa.eu/eproc/ontology#Specification Considering to reuse:  http://semanticscience.org/resource/SIO_000090
+|http://data.europa.eu/eproc/ontology#Specification
+
+Considering to reuse:
+
+http://semanticscience.org/resource/SIO_000090
 
 |Tender
-|http://data.europa.eu/eproc/ontology#Tender Alternative to reuse:  http://standard.open-contracting.org/latest/en/schema/reference/#tender  http://purl.org/procurement/public-contracts#Tender
+|http://data.europa.eu/eproc/ontology#Tender
+
+Alternative to reuse:
+
+http://standard.open-contracting.org/latest/en/schema/reference/#tender
+
+http://purl.org/procurement/public-contracts#Tender
 |===
 
 === Data type properties
@@ -2275,7 +2359,7 @@ Table 7: General classes
 
 Table 8: Classes in the conceptual data model
 
-Table 10: Mapping of the conceptual model to OWL classes
+Table 9: Mapping of the conceptual model to OWL classes
 
 Table 11: Mapping to OWL data type properties
 
@@ -2289,11 +2373,11 @@ Table 15: Use case template
 
 Table 16: Requirements template
 
-Table 17: class template
+Table 17: Class template
 
 Table 18: Properties template
 
-Table 19: relationships template
+Table 19: Relationships template
 
 Table 20: Class template
 
@@ -2301,7 +2385,7 @@ Table 21: Data type property template
 
 Table 22: Object property template
 
-Table 23: additional concepts
+Table 23: Additional concepts
 
 == List of Figures
 
