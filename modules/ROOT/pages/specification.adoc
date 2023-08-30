@@ -25,13 +25,13 @@
 
 |Authors
 |Makx Dekkers - AMI Consult 
-Emidio Stani - PwC EU Services 
-Brecht Wyns - PwC EU Services 
-Florian Barthélemy - PwC EU Services
+Emidio Stani - PWC EU Services 
+Brecht Wyns - PWC EU Services 
+Florian Barthélemy - PWC EU Services
 
 |Reviewed by
 |Natalie Muric - Publications Office of the European Union 
-Nikolaos Loutas - PwC EU Services
+Nikolaos Loutas - PWC EU Services
 
 |Approved by
 |Natalie Muric - Publications Office of the European Union
@@ -40,7 +40,7 @@ Nikolaos Loutas - PwC EU Services
 ====
 
 *This report was prepared for the Publications Office of the European Union by:*
-_PwC EU Services_
+_PWC EU Services_
 
 
 *Disclaimer:*
@@ -53,7 +53,7 @@ All care has been taken by the author to ensure that s/he has obtained, where ne
 
 
 == INTRODUCTION
-This report is the result of preliminary work on the specification of an e-procurement ontology commissioned by the Publications Office of the EU. The work was performed by PwC together with a working group of stakeholders in the period between December 2016 and May 2017. The report acts as a first draft of the specification of the ontology based on a limited number of use cases as well as a starting point for the further development of the ontology by the working group in 2017 and 2018.
+This report is the result of preliminary work on the specification of an e-procurement ontology commissioned by the Publications Office of the EU. The work was performed by PWC together with a working group of stakeholders in the period between December 2016 and May 2017. The report acts as a first draft of the specification of the ontology based on a limited number of use cases as well as a starting point for the further development of the ontology by the working group in 2017 and 2018.
 
 === Context and problem statement
 
@@ -71,19 +71,19 @@ In the current preliminary phase, covered by these specifications and the projec
 Taking into consideration the document “Process and methodology for developing semantic agreements”, the work identifies and gives examples of each step of the process for creating the e-procurement ontology, clearly specifying the roles of the different actors and the input required from them within the timeline of creating the ontology.
 
 == PROCESS AND METHODOLOGY
-The approach towards the development of the e-procurement Ontology is based on the ISA process and methodology for developing Core Vocabularies9, which provides guidance in two domains. First, the process describes how consensus is reached among stakeholders and domain experts so that the ontology meets its goals. Second, the methodology describes how the ontology is specified following best practices for selecting, reusing, developing and presenting concepts. In case amendments to the ontology are requested after its publication, the change management, release and publication process for structural metadata specifications developed by the ISA Programme10 should be followed.
-An earlier version of the process and methodology in the work to develop the e-procurement ontology methodology was presented in the landscaping report11.
+The approach towards the development of the e-procurement Ontology is based on the ISA process and methodology for developing Core Vocabularies, which provides guidance in two domains. First, the process describes how consensus is reached among stakeholders and domain experts so that the ontology meets its goals. Second, the methodology describes how the ontology is specified following best practices for selecting, reusing, developing and presenting concepts. In case amendments to the ontology are requested after its publication, the change management, release and publication process for structural metadata specifications developed by the ISA Programme should be followed.
+An earlier version of the process and methodology in the work to develop the e-procurement ontology methodology was presented in the landscaping report.
 
 === Process
 The process of developing the initial ontology involves several steps that lead to the establishment of a Working Group that will be responsible for the development of the complete ontology. Table 1 lists the steps from inception of the work until the publication of the initial specification.
 
-.: Process overview
+.Process overview
 [cols="1"]
 |===
 |*Process*
 _Reaching consensus_
 
-|1. Identify stakeholders (Publications Office and PwC)
+|1. Identify stakeholders (Publications Office and PWC)
 
 2. Identify chair(s) (Publications Office)
 
@@ -91,21 +91,21 @@ _Reaching consensus_
 
 4. Form working group (Publications Office) Identify review group (Publications Office)
 
-5. Verify and secure IPR12 (Intellectual property rights): coordinate the signing of the ISA contributor agreement (PwC)
+5. Verify and secure IPR12 (Intellectual property rights): coordinate the signing of the ISA contributor agreement (PWC)
 
-6. Establish working environment and culture (PwC)
+6. Establish working environment and culture (PWC)
 
-7. Develop first draft of the specification with an initial ontology and a draft Project Charter (PwC)
+7. Develop first draft of the specification with an initial ontology and a draft Project Charter (PWC)
 
-8. Present the draft specification and Project Charter in a Working Group meeting (PwC)
+8. Present the draft specification and Project Charter in a Working Group meeting (PWC)
 
-9. Further develop draft specification and Project Charter (PwC in collaboration with Working Group)
+9. Further develop draft specification and Project Charter (PWC in collaboration with Working Group)
 
-10. Finalise draft specification and Project Charter (PwC)
+10. Finalise draft specification and Project Charter (PWC)
 |===
 
-The process to be used by the Working Group in the development of the complete ontology is described in the Project Charter13, an accompanying document to this report.
-In this report, the following meanings are attributed to the terms in bold, as described in the e-Government Core Vocabularies Handbook14:
+The process to be used by the Working Group in the development of the complete ontology is described in the Project Charter, an accompanying document to this report.
+In this report, the following meanings are attributed to the terms in bold, as described in the e-Government Core Vocabularies Handbook:
 
 
 An *element* is a class, a property, or an association. Classes are instantiated into *instances* (individuals) representing a real-world physical or conceptual thing. *Classes* are used to express facts about the generic characteristics of an individual instance. For example, the fact that an individual 'Gotlobb Frege is a (instance of the class) Person'. *Properties* or associations are used to construct facts about individuals. The property 'Family name' can be used in the fact 'Frege is the family name of Gotlobb Frege'.
@@ -117,7 +117,7 @@ The methodology proposed includes three steps. These are shown in Figure 1 with 
 
 
 
-.: e-procurement ontology development process
+Figure 1: The e-procurement ontology development process
 image:ontdescproc.png[]
 
 ==== Step 1: Define use cases
@@ -127,7 +127,7 @@ A use case is a description of actions and event steps that explain the interact
 . To understand how the ontology will be used in the future; and
 . As inspiration to identify key concepts and relationships, based on which a conceptual data model will be built.
 
-The step consists of 2 sub-steps:
+Step 1 consists of 2 sub-steps:
 
 [cols="1,4"]
 |===
@@ -147,7 +147,7 @@ The working group members should propose and agree on new use cases where they f
 
 In order to develop a conceptual data model, which defines the domain and scope of the ontology, information requirements first need to be elicited. Information requirements describe the concepts and relationships that need to be defined in the conceptual data model in order to support the use cases.
 
-This step is split into three tasks:
+Step 2 is split into three tasks:
 
 [cols="1,4"]
 |===
@@ -218,23 +218,25 @@ The conceptual data model is the key tool to reach semantic agreements between W
 |===
 
 |Step 3.1
-|*_Enumerate important concepts based on information requirements_*
+a|*_Enumerate important concepts based on information requirements_*
 As a first step towards creating a conceptual data model, the concepts that are directly resulting from the information requirements should be enumerated in a list of the classes and properties or in a UML diagram.
 
 
 _Example:_
+
 .Figure 2: example - important classes, properties and relationships
 image:classproprel.png[]
 
 
 |Step 3.2
-|*_Identify missing classes, properties and relationships_*
+a|*_Identify missing classes, properties and relationships_*
 
 The list of classes, properties and relationships directly resulting from information requirements, identified in step 2.1, will most probably not be complete. Classes might be “floating”, meaning that a relationship between this class and other classes seem to be missing at first sight, or some classes might be missing. Since use cases are often written with a focus on the business processes or specific activities, the UML or list of classes, properties and relationships resulting from the previous step will probably not represent all those that are needed for a comprehensive ontology. In order to close the gaps and refine the classes, properties and relationships, members of the working group need to identify missing elements based on their domain expertise. At this stage, the working group might consider looking into existing conceptual data models in order to identify potential solutions for gaps in the conceptual model.
 Based on the classes, properties and relationships identified, two methods may be employed to define a class hierarchy: either top-down, starting with definition of the most general concepts and then specialising as necessary, or bottom-up, starting with definition of the most specific classes and then generalising, or a combination of the two, starting with a small number of main classes and properties. In the case of the e-procurement ontology, the combination approach will be used.
 
 
 _Example:_
+
 .Figure 3: example - missing elements
 image:misselem.png[]
 
@@ -243,7 +245,7 @@ image:misselem.png[]
 |*_Define the Class_*
 
 The Working Group has to propose and agree on definitions for each of the classes. A template for documenting final definitions is proposed in Annex I section I.3. The editor will first draw up a list of equivalent terms including the definition from each source and propose a term to the working group to discuss and agree on.In the e-procurement ontology, definitions should to the extent possible come from legislation, such as the e-procurement and e-invoicing directives16. If legislation does not provide suitable definitions, definitions from established business vocabularies such as UBL or XBRL should be used.
-In the issue 32 raised on GitHub, an approach was proposed towards describing the classes, properties and relationships in the ontology. The issue was resolved in the third working group meeting of 24/05/2017.https://github.com/eprocurementontology/eprocurement ontology/issues/32 which involves a merge of this step with step 4 whereby already at this stage the ruse of existing ontologies will be taken into consideration.
+In the issue 32 raised on GitHub, an approach was proposed towards describing the classes, properties and relationships in the ontology. The issue was resolved in the third working group meeting of 24/05/2017. "https://github.com/eprocurementontology/eprocurement ontology/issues/32" which involves a merge of this step with step 4 whereby already at this stage the ruse of existing ontologies will be taken into consideration.
 
 
 _Example of how the label and definition will be displayed. It should be noted the labels and definitions shown in the example are yet to be discussed and agreed upon with the working group._
@@ -255,10 +257,10 @@ _Example of how the label and definition will be displayed. It should be noted t
 |Label|Definition
 
 |Contracting Authority
-|State, regional or local authorities, bodies governed by public law or associations formed by one or more such authorities or one or more such bodies governed by public law17
+|State, regional or local authorities, bodies governed by public law or associations formed by one or more such authorities or one or more such bodies governed by public law.
 
 |Economic Operator
-|An Agent, in the context of the e-procurement ontology, a natural or legal person, or public entity, or a group of such persons or elements, including temporary associations of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market18
+|An Agent, in the context of the e-procurement ontology, a natural or legal person, or public entity, or a group of such persons or elements, including temporary associations of undertakings, which offers the execution of works and/or a work, the supply of products, or the provision of services on the market.
 
 |...
 |...
@@ -272,6 +274,7 @@ Several types of properties are considered: attributes that describe characteris
 
 
 _Example_
+
 Property (from 3.3 Use Case 3)
 
 image:label.png[]
@@ -285,7 +288,7 @@ image:labelsub.png[]
 |Define the facets of the properties
 
 The following facets should be defined:
-* The data type describes the type of value in which a property can be expressed, for example “number”, “string” or “value from a controlled vocabulary19”.
+* The data type describes the type of value in which a property can be expressed, for example “number”, “string” or “value from a controlled vocabulary”.
 * The domain: the type of entity that the property describes or which is the subject of the relationship e.g. the relationship “publishes” has domain “Contracting Authority” and range “call for tender”.
 * The range: the type of elements that can be used as object of the relationship, e.g. the relationship “publishes” has domain “Contracting Authority” and range “call for tender”.
 * The cardinality is how the relationship between two elements in a data model, e.g. one-to-one (1..1), one-to-many (1..n), etc.
@@ -306,25 +309,30 @@ image:relationship.png[]
 While new classes and properties are added and defined, others might be eliminated, as their semantic meaning might be the same.
 The outcome of step 2 is documented in section 5.
 
-==== Step 4: Consider reusing existing ontologies*
+==== Step 4: Consider reusing existing ontologies
 
 In this step, knowledge about existing work in the same or related areas is considered as a basis for the development of the ontology. Reuse of existing ontologies may help in interoperability with existing systems and applications.
 
 For the e-procurement ontology, the analysis of related ontologies, vocabularies and projects in section 4 of D04.07 Report on policy support for e-procurement - e-procurement ontology will serve as a basis for the selection and integration of existing ontologies.
 
-This step can be then split into two tasks:
+Step 4 can be then split into two tasks:
 
 [cols="1,5"]
 |===
 |Task 1
-|*_Analyse related ontologies and vocabularies for similar classes, properties and relationships_*
+a|*_Analyse related ontologies and vocabularies for similar classes, properties and relationships_*
+
 The descriptions of the various classes and properties in the conceptual data model serve to compare the ones derived from the information requirements and use cases to the ones defined in external specifications such as XML schemas, RDF vocabularies and ontologies. Determining similarity between classes and properties requires a bit of flexibility as the ones that were defined in a slightly different context might use a different terminology.
+
 Online tools such as Linked Open Vocabularies (LOV21) can help in order to identify and analyse existing ontologies and to identify elements that could be reused.
 
 |Task 2
-|*_Choose relevant classes or properties from other ontologies and vocabularies_*
+a|*_Choose relevant classes or properties from other ontologies and vocabularies_*
+
 If an external class or property is sufficiently similar to one in the conceptual data model, some of its relevant characteristics can be reused following the reusability levels defined in Table 2 later on. In some cases, there may be a need to adapt the description in the conceptual data model to align with the external class or property. Even if external ones are not directly reusable, for example because their context is very different, they can still be used as inspiration for the ontology.
+
 The working group has to select and validate the reuse of relevant elements from other ontologies and map them to the concepts in the conceptual data model. When several elements from other ontologies are considered, the working group members have to reach consensus on which ontology to reuse. When considering whether a class or property is reusable, the working group should always check whether the domain and range of the reused class or property are compatible with the domain and range needed in the e-procurement ontology.
+
 Concretely, by mapping the other ontologies to the classes and properties of the conceptual data model, the working group will define which classes and properties from other ontologies are "broader" or "narrower" than the related elements from the conceptual data model. A class or property from the conceptual data model will always comply with the definition of a broader class or property from another ontology while it will need to be redefined to comply with a narrower class or property from another ontology. In the case where no classes and properties from other ontologies, related to a specific class or property from the conceptual data model exist or none of the existing classes and properties are accepted by the working group, the working group should define the class or property as described in the conceptual data model.
 
 
@@ -336,12 +344,12 @@ For Economic Operator, the working group might consider to reuse either
 * http://www.w3.org/ns/regorg#RegisteredOrganization.
 
 The ORG ontology defines Organization as an Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a Corporation, Charity, Government or Church. Note that this is a super class of "gr:BusinessEntity" and it is recommended to use the GoodRelations vocabulary to denote Business classifications such as DUNS or NAICS.
+
 The Regorg Vocabulary defines Registered Organization as an organization that is legally registered. In many countries there is a single registry although in others, such as Spain and Germany, multiple registries exist. A Registered Organization is able to trade, is legally liable for its actions, accounts, tax affairs etc. Legal entity status is conferred by the act of registration cf. org:FormalOrganization that applies to any legal entity, including those created by other legal means. This makes registered organizations distinct from the broader concept of organizations, groups or, in some jurisdictions, sole traders. Many organizations exist that are not legal elements yet to the outside world they have staff, hierarchies, locations etc. Other organizations exist that are an umbrella for several legal elements universities are often good examples of this). This vocabulary is concerned solely with registered organizations. In RDF, Registered Organization is a sub class of the Organization Ontology's org:FormalOrganization which is itself a sub class of the more general 'Agent' class found in FOAF and Dublin Core that does encompass organizations, natural persons, groups etc. - i.e. an Agent is any entity that is able to carry out actions.
+
 In this example, neither of the definitions from the ontologies exactly matches the definition used for the class economic operator. Therefore, the working group should decide if it is preferable to keep this definition or to adapt it to comply with one of the two definitions from other ontologies. When a definition of a reusable class or property is more general than the definition the working group has in mind, the external one can be re-used, and the definition can be narrowed in the e-procurement ontology by defining the e-procurement class or property as a subclass or sub-property of the reused element.
 
 The final agreed list of reusable classes and properties should be documented according to the templates in Annex I.
-
-
 
 _Example_
 
@@ -354,7 +362,7 @@ image:4.2-2.png[]
 .Object Type Properties:
 image:4.2-3.png[]
 
-In the case of reusing an external ontology, the methodology will consider three levels of re-usability accordingly to section 4.1.2 of A Contextual Approach to Ontology Reuse: Methodology, Methods and Tools for the Semantic Web22.
+In the case of reusing an external ontology, the methodology will consider three levels of re-usability accordingly to section 4.1.2 of A Contextual Approach to Ontology Reuse: Methodology, Methods and Tools for the Semantic Web.
 |===
 .Table 2: Reuse levels
 
@@ -420,6 +428,7 @@ The following roles are distinguished:
 The work is conducted with the following tools to facilitate the development and consensus process:
 
 Ontology development tool: Protégé, http://protege.stanford.edu/[]
+
 * Conference call facility: Adobe Connect, http://ec-wacs.adobeconnect.com/op2598/[]
 * Mailing list: eprocurementontology@joinup.ec.europa.eu
 * Issue tracker: Github https://github.com/eprocurement[]
@@ -443,6 +452,7 @@ The three use cases that form the basis of the initial ontology were selected on
 The landscaping report contained twelve use cases, six in category 1, four in category 2 and two in category 3. The use cases in the next sections were chosen to cover some of the main functionalities that the ontology needs to support.
 
 The reasons for selecting these three use cases include:
+
 * the use cases taken together cover multiple steps of the procurement process;
 * the use cases individually are not too broad, i.e. they do not attempt to cover the whole procurement process;
 * the use cases involve various actors; and
@@ -452,7 +462,7 @@ The other use cases outlined in the report may be included in the further develo
 
 === Use case 1: Data journalism
 
-.Table 3: Data journalism - use case description
+.Data journalism - use case description
 
 [cols="1,3"]
 |===
@@ -491,7 +501,7 @@ s|Element|Description
 
 An issue was opened25 concerning the similarities identified between the work package 9 from LOD 226 and this second use case. The working group should discuss how this relationship impacts the second use case and decide about the next steps concerning the use case.
 
-.: Automated matchmaking of procured services and products with businesses - use case description
+.Automated matchmaking of procured services and products with businesses - use case description
 [cols="1,3"]
 |===
 s|Element|Description
@@ -515,7 +525,7 @@ s|Element|Description
 |A system or repository which contains capabilities of economic operators and calls for tender with their procurement criteria published by contracting authorities.
 
 |Flow
-|. As part of a regular process, a system finds a call for paperclips. It then maps the capabilities of economic operators available in their own repository, which is aggregating data from European business registries to check if there exist companies that produce the required type of paperclips according to the procurement criteria.
+a|. As part of a regular process, a system finds a call for paperclips. It then maps the capabilities of economic operators available in their own repository, which is aggregating data from European business registries to check if there exist companies that produce the required type of paperclips according to the procurement criteria.
 . From this mapping, the system identifies a partial match with the company BudgetClip and sends a message to Bob, the bid manager at BudgetClip to make him aware of the opportunity and propose him to cooperate with another company, CustomSteel, in order to be able to fulfil all the requirements defined in the selection criteria.
 . In partnership with CustomSteel, Bob prepares the tender and sends it to the contracting authority, waiting for the awarding process to complete and hoping that his tender will be awarded.
 
@@ -526,7 +536,7 @@ s|Element|Description
 
 === Use case 3: Verifying VAT payments on intracommunity service provision
 
-.: Verifying VAT payments on intracommunity service provision - use case description
+.Verifying VAT payments on intracommunity service provision - use case description
 [cols="1,3"]
 |===
 s|Element|Description
@@ -550,7 +560,7 @@ s|Element|Description
 |A unique way to identify economic operators and contracting authorities, such as BRIS, as well as common classification systems, is required. An economic operator was awarded a tender with a contracting authority.
 
 |Flow
-|. The Bulgarian Tax Authority is monitoring the activity of the local economic operator, DigiServices, by reviewing the payments made to them by a contracting authority in Belgium, EcoEnv.
+a|. The Bulgarian Tax Authority is monitoring the activity of the local economic operator, DigiServices, by reviewing the payments made to them by a contracting authority in Belgium, EcoEnv.
 . In particular, the Bulgarian Tax Authority wants to compare the information about EcoEnv provided by the Belgian Tax Authority including the value of the contract awarded to DigiServices with the information included in the last annual VAT statement that DigiServices has submitted.
 . The Belgian Tax authority provides then the information about EcoEnv to the Bulgarian Tax Authority in machine-readable format following the e-procurement ontology specifications. This makes it easy to compare the information against the reporting templates followed by the Bulgarian Tax Authority, as mappings to the e-procurement ontology have been created, allowing the easy data transformation and comparison.
 . The Bulgarian Tax Authority then verifies that the determined amount of the VAT was properly declared and paid in Belgium and therefore there is no need to apply taxation.
@@ -564,7 +574,7 @@ s|Element|Description
 
 * In order to create a conceptual data model, information requirements are on the use cases. The information requirements that should be taken into this preliminary stage, i.e. covering the three use cases selected above, are listed in Tender -> tender
 * Volume in terms of EUR, contract value -> monetary value
-* Country, Belgium, France, Spain  country
+* Country, Belgium, France, Spain -> country
 * local economic operator, DigiServices, company, BudgetClip, CustomSteel, Bob -> Economic Operator
 * Payment evidence -> evidence
 * Initial agreement -> contract
@@ -576,8 +586,6 @@ s|Element|Description
 * Company name -> name
 * Contract award notice -> contract award notice
 * VAT -> VAT
-
-*Table 6: Information requirements.*
 
 Generalisation of the terms:
 
@@ -596,7 +604,7 @@ Generalisation of the terms:
 * Contract award notice -> contract award notice
 * VAT -> VAT
 
-.: Information requirements
+.Information requirements
 [cols="1,4,1"]
 |===
 |Information requirement|Description|Related Use Case
@@ -605,7 +613,7 @@ Generalisation of the terms:
 |The concept of call for tender MUST be defined.
 |UC1, UC2
 
-|#IR1#
+|IR1
 |The data model MUST describe that a contracting authority publishes a call for tender.
 |UC2
 
@@ -686,7 +694,7 @@ Generalisation of the terms:
 
 === Classes and properties
 
-As described in section 2.2, the development process of the e-procurement ontology is based on the document Ontology Development 101: A Guide to Creating Your First Ontology28. In section 6 of that document, there are suggestions for naming conventions. These are complemented with those proposed In the Open Semantic Framework's Ontology Best Practices29.In the rules described below, the label is differentiated from the name of properties and classes. The names refer to the machine-readable denomination of the classes and properties and are used in the URI while the labels refer to the same denomination but without the rules applying to the names to ease the comprehension by human-readers. As this document is written for human-readers, labels are used in most of the cases.
+As described in section 2.2, the development process of the e-procurement ontology is based on the document Ontology Development 101: A Guide to Creating Your First Ontology. In section 6 of that document, there are suggestions for naming conventions. These are complemented with those proposed In the Open Semantic Framework's Ontology Best Practices.In the rules described below, the label is differentiated from the name of properties and classes. The names refer to the machine-readable denomination of the classes and properties and are used in the URI while the labels refer to the same denomination but without the rules applying to the names to ease the comprehension by human-readers. As this document is written for human-readers, labels are used in most of the cases.
 
 The following rules are applied to the e-procurement ontology:
 
@@ -703,14 +711,15 @@ The following rules are applied to the e-procurement ontology:
 
 The e-procurement ontology will be described through:
 
-The *URI* (e.g. http://data.europa.eu/xyz/ontology#); the string xyz represents the namespace to be assigned by the URI Committee
-The *namespace* and its preferred prefix (e.g. eproc);
-A *label* to annotate the title of the ontology (e.g. “e-procurement ontology”);
-A *comment*, to describe the ontology;
-The indication of the *creator* and *publisher*;
-*Editorial note* (e.g. if the ontology reuses terms from other ontologies);
-*History note*, to indicate the changes over time of the ontology;
-The current *version* of the ontology;
+* The *URI* (e.g. http://data.europa.eu/xyz/ontology#); the string xyz represents the namespace to be assigned by the URI Committee;
+* The *namespace* and its preferred prefix (e.g. eproc);
+* A *label* to annotate the title of the ontology (e.g. “e-procurement ontology”);
+* A *comment*, to describe the ontology;
+* The indication of the *creator* and *publisher*;
+* *Editorial note* (e.g. if the ontology reuses terms from other ontologies);
+* *History note*, to indicate the changes over time of the ontology;
+* The current *version* of the ontology;
+
 *Reference links*; in the case of the e-procurement ontology this will link to the Joinup page https://joinup.ec.europa.eu/asset/eprocurementontology/.
 
 == CONCEPTUAL MODEL
@@ -724,9 +733,10 @@ An online version of the conceptual data model is available with the following l
 === Classes
 General classes are the most generic classes used in the conceptual model but not specifically related to the use cases. Classes derived from the use cases may be classified as sub-classes of the general classes wherever appropriate. These subclass are specified in the definition of the more specific classes in Table 8.
 
-.: General classes
+*General classes*
 (The definitions are still to be agreed upon by the working group, these are possible examples)
 
+.General Classes
 [cols="1,5"]
 |===
 |Label|Definition
@@ -751,10 +761,11 @@ General classes are the most generic classes used in the conceptual model but no
 
 |===
 
-.: Classes in the conceptual data model
+*Classes in the conceptual data model*
 
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
+.Classes in the conceptual data model
 [cols="1,5"]
 |===
 |Label|Definition
@@ -841,6 +852,7 @@ As raised by the issue 40 and 27, the relationship between the classes Call For 
 The issue 752 highlighted that, depending on further use cases, it may be necessary to distinguish between Framework Agreements and Specific Contracts. This will be decided by the working group in the next phases.
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
+.Call for Tender
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -862,14 +874,15 @@ The issue 752 highlighted that, depending on further use cases, it may be necess
 |===
 
 
-*Labels and Definitions still to be defined*
+
 
 ==== Procurement Criterion
-To be defined
+_Labels and Definitions still to be defined_
 
 ==== Tender
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
+.Tender
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -897,6 +910,7 @@ As specified in the issue 39 and 4153, the relationships coming from Contract Aw
 The issue 3954 was raised more specifically for the relationship between Contract Award Notice and Buyer.
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
+.Contract Award Notice
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -915,6 +929,7 @@ The issue 3954 was raised more specifically for the relationship between Contrac
 ==== Contract
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
+.Contract
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -948,6 +963,7 @@ The issue 3954 was raised more specifically for the relationship between Contrac
 ==== Product Or Service Or Work
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
+.Product Or Service Or Work
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -964,15 +980,16 @@ The issue 3954 was raised more specifically for the relationship between Contrac
 |===
 
 '''
-*Labels and Definitions still to be defined:*
 
-==== Specification
-==== Classification
-==== Procuring Entity
-==== Buyer
-==== Contracting Authority
-==== Public undertaking
+==== Specification,
+==== Classification,
+==== Procuring Entity,
+==== Buyer,
+==== Contracting Authority,
+==== Public undertaking,
 ==== Other Contracting Entity
+_Labels and Definitions still to be defined_
+
 '''
 
 ==== Economic Operator
@@ -980,6 +997,7 @@ The issue 3954 was raised more specifically for the relationship between Contrac
 An issue was opened on GitHub to discuss further a potential relationship between Economic Operator and Contract Award Notice55.
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
+.Economic Operator
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -996,15 +1014,17 @@ An issue was opened on GitHub to discuss further a potential relationship betwee
 |===
 
 '''
-*Labels and Definitions still to be defined*
 
 ==== Country
+_Labels and Definitions still to be defined_
+
 '''
 
 
 ==== Invoice
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
+.Invoice
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -1041,9 +1061,9 @@ An issue was opened on GitHub to discuss further a potential relationship betwee
 |===
 
 '''
-*Labels and Definitions still to be defined*
 
 ==== Evidence
+_Labels and Definitions still to be defined_
 
 '''
 
@@ -1052,6 +1072,7 @@ An issue was opened on GitHub to discuss further a potential relationship betwee
 There will be a detailed discussion concerning this class during the dedicated meeting in the next phase which will most probably be the fourth working group meeting, as described by the table 6 of the Project Charter. The issue 2557 on GitHub is open to gather all the comments regarding this class.
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
+.Monetary Value
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -1068,9 +1089,10 @@ There will be a detailed discussion concerning this class during the dedicated m
 |===
 
 '''
-*Labels and Definitions still to be defined*
 
 ==== Currency
+_Labels and Definitions still to be defined_
+
 '''
 
 
@@ -1079,6 +1101,7 @@ There will be a detailed discussion concerning this class during the dedicated m
 As explained in the issue 4758 and during the third working group meeting, a Payment can be made to other parties than Economic Operator. Consequently, the working group will have to decide to which classes the class Payment is related to except for the existing relations with Buyer, Economic Operator, Evidence and Monetary Value. This issue is related to issue 2859 for which the latest version of the conceptual data model included a relationship between Evidence and Payment.
 (The labels and definitions are still to be agreed upon by the working group, these are possible examples)
 
+.Payment
 [cols="1,3,2,1"]
 |===
 |Label|Definition|Range/ Data type|Card
@@ -1123,9 +1146,9 @@ This section presents the mapping of the elements in the conceptual model to reu
 
 === Classes
 
-.Table 9: Mapping of the conceptual model to OWL classes
 (The labels and URIs are still to be agreed upon by the working group, these are possible examples)
 
+.Mapping of the conceptual model to OWL classes
 [cols="1,5"]
 |===
 |Label|URI
@@ -1221,9 +1244,9 @@ http://data.europa.eu/eproc/ontology#ExclusionCriterion Alternative to reuse: �
 |===
 
 === Data type properties
-.Table 10: Mapping to OWL data type properties
 (The labels and URIs are still to be agreed upon by the working group, these are possible examples)
 
+.Mapping to OWL data type properties
 [cols="1,1,2"]
 |===
 |Label| Data type| URI
@@ -1238,29 +1261,32 @@ http://data.europa.eu/eproc/ontology#ExclusionCriterion Alternative to reuse: �
 |===
 
 === Relationships: object type properties
-.Table 11: Mapping to OWL object type properties
+
 (The labels and URIs are still to be agreed upon by the working group, these are possible examples)
-[cols="1,5"]
+
+.Mapping to OWL object type properties
+[cols="1,3"]
 |===
 |Label|URI
 
 |awards
-|http://data.europa.eu/eproc/ontology#awards Alternative to reuse:  http://purl.org/cerif/frapo/awards  http://schema.org/awards
+|http://data.europa.eu/eproc/ontology#awards; Alternative to reuse: http://purl.org/cerif/frapo/awards http://schema.org/awards
 
 |charges for
 |http://data.europa.eu/eproc/ontology#chargesFor
 
 |has Currency
-|http://data.europa.eu/eproc/ontology#hasCurrency Alternative to reuse:  http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasCurrency
+|http://data.europa.eu/eproc/ontology#hasCurrency; Alternative to reuse: http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasCurrency
 
 |has Net Value
-|http://data.europa.eu/eproc/ontology#hasNetValue Alternative to reuse:  http://data.europa.eu/m8g/value
+|http://data.europa.eu/eproc/ontology#hasNetValue; Alternative to reuse: http://data.europa.eu/m8g/value
 
 |has VAT
 |http://data.europa.eu/eproc/ontology#hasVAT
 
 |is Award For
-|http://data.europa.eu/eproc/ontology#isAwardFor Alternative to reuse:  http://purl.org/procurement/public-contracts#agreement
+|http://data.europa.eu/eproc/ontology#isAwardFor
+Alternative to reuse: http://purl.org/procurement/public-contracts#agreement
 
 |is Classified By
 |http://data.europa.eu/eproc/ontology#isClassifiedBy
@@ -1272,13 +1298,13 @@ http://data.europa.eu/eproc/ontology#ExclusionCriterion Alternative to reuse: �
 |http://data.europa.eu/eproc/ontology#isContractedBy
 
 |is Evidenced By
-|http://data.europa.eu/eproc/ontology#isEvidencedBy Alternative to reuse:  http://www.omg.org/spec/EDMC-FIBO/FND/Agreements/Contracts/isEvidencedBy
+|http://data.europa.eu/eproc/ontology#isEvidencedBy; Alternative to reuse: http://www.omg.org/spec/EDMC-FIBO/FND/Agreements/Contracts/isEvidencedBy
 
 |is Invoiced Under
 |http://data.europa.eu/eproc/ontology#isInvoicedUnder
 
 |is Issued By
-|http://data.europa.eu/eproc/ontology#isIssuedBy Alternative to reuse:  http://purl.org/dc/terms/issued
+|http://data.europa.eu/eproc/ontology#isIssuedBy; Alternative to reuse: http://purl.org/dc/terms/issued
 
 |is Issued To
 |http://data.europa.eu/eproc/ontology#isIssuedTo
@@ -1290,7 +1316,7 @@ http://data.europa.eu/eproc/ontology#ExclusionCriterion Alternative to reuse: �
 |http://data.europa.eu/eproc/ontology#isPaidTo
 
 |is Payment For
-|http://data.europa.eu/eproc/ontology#isPaymentFor Alternative to reuse:  http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/PaymentsAndSchedules/fulfillsObligation
+|http://data.europa.eu/eproc/ontology#isPaymentFor; Alternative to reuse: http://www.omg.org/spec/EDMC-FIBO/FND/ProductsAndServices/PaymentsAndSchedules/fulfillsObligation
 
 |is Published By
 |http://data.europa.eu/eproc/ontology#isPublishedBy
@@ -1299,16 +1325,16 @@ http://data.europa.eu/eproc/ontology#ExclusionCriterion Alternative to reuse: �
 |http://data.europa.eu/eproc/ontology#isSpecifiedBy
 
 |is Submitted By
-|http://data.europa.eu/eproc/ontology#isSubmittedBy Alternative to reuse:  http://purl.org/cerif/frapo/isSubmittedBy  http://purl.org/procurement/public-contracts#tender
+|http://data.europa.eu/eproc/ontology#isSubmittedBy; Alternative to reuse: http://purl.org/cerif/frapo/isSubmittedBy http://purl.org/procurement/public-contracts#tender
 
 |offers
 |http://data.europa.eu/eproc/ontology#offers
 
 |operates In
-|http://data.europa.eu/eproc/ontology#operatesIn Alternative to reuse:  http://schema.org/location  http://purl.org/procurement/public-contracts#location
+|http://data.europa.eu/eproc/ontology#operatesIn; Alternative to reuse: http://schema.org/location http://purl.org/procurement/public-contracts#location
 
 |procures
-|http://data.europa.eu/eproc/ontology#procures Alternative to reuse:  http://purl.org/procurement/public-contracts#item
+|http://data.europa.eu/eproc/ontology#procures; Alternative to reuse: http://purl.org/procurement/public-contracts#item
 
 |requires
 |http://data.europa.eu/eproc/ontology#requires
@@ -1361,7 +1387,7 @@ During the execution of the methodology based on 3 use cases, some challenges we
 
 === Project team
 
-.: Project team
+.Project team
 
 [cols="1,2"]
 |===
@@ -1383,16 +1409,16 @@ During the execution of the methodology based on 3 use cases, some challenges we
 |Publications Office
 
 |Nikolaos Loutas
-|PwC EU Services
+|PWC EU Services
 
 |Emidio Stani
-|PwC EU Services
+|PWC EU Services
 
 |Brecht Wyns
-|PwC EU Services
+|PWC EU Services
 
 |Florian Barthélemy
-|PwC EU Services
+|PWC EU Services
 
 |Makx Dekkers (editor)
 |AMI Consult
@@ -1400,7 +1426,7 @@ During the execution of the methodology based on 3 use cases, some challenges we
 
 === Working Group
 
-.: working group
+.Working Group
 
 [cols="1,2"]
 |===
@@ -1474,8 +1500,8 @@ During the execution of the methodology based on 3 use cases, some challenges we
 The description of the selected use cases should clearly describe the need and the flow or usage scenario, in such a way that the information requirements can be derived.
 
 For the description of the use cases, the following template is used.
-.Table 14: Use case template
 
+.Table 14: Use case template
 [cols="1,4"]
 |===
 |Element|Description
@@ -1484,10 +1510,11 @@ For the description of the use cases, the following template is used.
 |A short phrase that can be used to refer to the use case
 
 |Category
-|The type of use case; one of
- Transparency and monitoring
- Innovation & value added services
- Interconnection of public procurement systems
+a|The type of use case; one of
+
+* Transparency and monitoring
+* Innovation & value added services
+* Interconnection of public procurement systems
 
 |Description
 |Concise text that provides basic information about the actors, the goal and the intended results of the use case
@@ -1513,11 +1540,11 @@ These Use Cases are at the heart of the development of the Domain Model and Data
 
 === Requirements
 
-Once the Use Cases have been written and agreed, these should be reduced to a set of Requirements that the ontology must meet. In complex cases, it may be appropriate to assign a priority to each requirement using the familiar RFC211963 keywords of MUST, SHOULD and COULD64.
+Once the Use Cases have been written and agreed, these should be reduced to a set of Requirements that the ontology must meet. In complex cases, it may be appropriate to assign a priority to each requirement using the familiar RFC211963 keywords of MUST, SHOULD and COULD.
 
 It will be useful to assign an identifier to each of the requirements, possible linking to an issue in an issue tracker so that the requirement can be cross-referenced to the relevant elements (elements, attributes, relationships) in the ontology that fulfils it.
 
-.: contains the template for the description of requirements.
+.The template for the description of requirements.
 
 [cols="1,4"]
 |===
@@ -1537,7 +1564,7 @@ It will be useful to assign an identifier to each of the requirements, possible 
 
 Classes:
 
-.: class template
+.Class template
 
 [cols="1,4"]
 |===
@@ -1552,7 +1579,7 @@ Classes:
 
 Properties:
 
-.: Data type property template
+.Data type property template
 
 [cols="1,4"]
 |===
@@ -1576,7 +1603,7 @@ Properties:
 
 Relationships:
 
-.: Relationships or object type property template
+.Relationships or object type property template
 
 [cols="1,4"]
 |===
@@ -1600,11 +1627,11 @@ Relationships:
 
 The “relationships” and “properties” templates can be merged if this benefits the structure of the data modelling, e.g. when properties are listed per class.
 
-=== Mapping of the conceptual data elements to OWL*
+=== Mapping of the conceptual data elements to OWL
 
 Classes:
 
-.Table 19: Class template
+.Class template
 
 [cols="1,4"]
 |===
@@ -1619,7 +1646,7 @@ Classes:
 
 Data type properties:
 
-.: Data type property template
+.Data type property template
 
 [cols="1,4"]
 |===
@@ -1632,7 +1659,7 @@ Data type properties:
 |The class to which the property belongs
 
 |Data Type
-|The data type describes the type of value in which a property can be expressed, for example “number”, “string” or “value from a controlled vocabulary”. The issue 31 is open for comments regarding the codelists and controlled vocabularies which should be used. This will be further discussed in the next phases by the working group. https://github.com/eprocurementontology/eprocurement ontology/issues/31
+|The data type describes the type of value in which a property can be expressed, for example “number”, “string” or “value from a controlled vocabulary”. The issue 31 is open for comments regarding the codelists and controlled vocabularies which should be used. This will be further discussed in the next phases by the working group. https://github.com/eprocurementontology/eprocurement_ontology/issues/31
 
 |URI
 |A string of characters used to identify a resource
@@ -1640,7 +1667,7 @@ Data type properties:
 
 Relationships:
 
-.: Relationship or object property template
+.Relationship or object property template
 
 [cols="1,4"]
 |===
@@ -1667,7 +1694,7 @@ working group65. In the next phases of the project, the working group will have 
 discuss about the additional elements proposed in order to decide whether those need
 to be included in the ontology or not, and if yes, about the definitions of those elements.
 
-.: additional concepts
+.additional concepts
 
 [cols="1,3,1"]
 |===
@@ -1690,7 +1717,7 @@ s|Information requirement| Definition| URI
 |http://standard.open-contracting.org/latest/en/schema/reference
 |===
 
-*_Criterion & evidence:_*
+.Criterion & evidence
 [cols="1,3,2"]
 |===
 
@@ -1711,7 +1738,7 @@ s|Information requirement| Definition| URI
 |http://contsem.unizar.es/def/sector-publico/pproc.html
 |===
 
-*_Buyer:_*
+.Buyer
 [cols="1,3,2"]
 |===
 
@@ -1741,7 +1768,7 @@ currency attached."
 buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU)"66
 |https://espd.github.io/ESPD-EDM/
 |===
-*_Seller:_*
+.Seller
 [cols="1,4,1"]
 |===
 
@@ -1771,7 +1798,7 @@ in the market and has submitted a tender bid for a public contract
 |http://loted.eu/ontology
 |===
 
-*_Amount & payment:_*
+.Amount & payment
 [cols="1,2,2"]
 |===
 |Gross Amount
@@ -1806,7 +1833,7 @@ public service or a product.
 |http://www.heppnetz.de/ontologies/goodrelations/v1.html#hasCurrencyValue
 |===
 
-*_Product & service_*
+.Product & service
 [cols="1,2,2"]
 |===
 |Product Or Service
@@ -1827,7 +1854,7 @@ http://loted.eu/ontology
 |http://loted.eu/ontology
 |===
 
-*_Product & service_*
+.Product & service
 [cols="1,2,2"]
 |===
 
@@ -1849,7 +1876,7 @@ instances of a mass-produced commodity (gr:SomeItems), or a model / prototype sp
 |http://loted.eu/ontology
 |===
 
-*_Country:_*
+.Country
 [cols="1,2,2"]
 |===
 |Country
@@ -1865,7 +1892,7 @@ instances of a mass-produced commodity (gr:SomeItems), or a model / prototype sp
 |http://loted.eu/ontology
 |===
 
-*_Tax:_*
+.Tax:
 [cols="1,2,2"]
 |===
 |Tax Total
@@ -1889,7 +1916,7 @@ instances of a mass-produced commodity (gr:SomeItems), or a model / prototype sp
 |http://www.heppnetz.de/ontologies/goodrelations/v1#taxID
 |===
 
-*_Jurisdiction:_*
+.Jurisdiction
 [cols="1,2,2"]
 |===
 |Jurisdiction
@@ -1899,6 +1926,8 @@ instances of a mass-produced commodity (gr:SomeItems), or a model / prototype sp
 
 == Annex III LIST OF GITHUB ISSUES
 
+
+.GitHub Issues
 [cols="1,3,1,5"]
 |===
 s|ID|Issue title and link|Status|Explanation
@@ -2129,7 +2158,6 @@ matchmaking...' and the WP of LOD2]
 An extract of the OWL file (i.e eproc_v0.5) was added under this annex. The entire OWL file can be consulted or downloaded from GitHub: https://github.com/eprocurementontology/eprocurementontology/wiki
 
 [source,OWL]
-
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://data.europa.eu/eproc/ontology#"
  xml:base="http://data.europa.eu/eproc/ontology"
@@ -2153,6 +2181,7 @@ model of the e-procurement process</rdfs:comment>
 property names from existing ontologies:
 List TBD</skos:editorialNote>
 
+[source,OWL]
 <vann:preferredNamespacePrefix>eproc</vann:preferredNamespacePrefix>
 <skos:historyNote xml:lang="en">* 0.1 *
 - added the following concepts:
@@ -2161,25 +2190,23 @@ List TBD</skos:editorialNote>
 rdf:resource="https://joinup.ec.europa.eu/asset/eprocurementontology"/>
 <rdfs:label xml:lang="en">e-procurement ontology</rdfs:label>
 </owl:Ontology>
-
-<!
+<!--
 ///////////////////////////////////////////////////////////////////////////////////////
 //
 // Datatypes
 //
 ///////////////////////////////////////////////////////////////////////////////////////
->
-<! http://www.w3.org/2001/XMLSchema#date >
+-->
+<!-- http://www.w3.org/2001/XMLSchema#date -->
 <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-
- <!
+<!--
  ///////////////////////////////////////////////////////////////////////////////////////
  //
  // Object Properties
  //
  ///////////////////////////////////////////////////////////////////////////////////////
- >
- <! http://data.europa.eu/eproc/ontology#chargesFor >
+ -->
+ <!-- http://data.europa.eu/eproc/ontology#chargesFor -->
  <owl:ObjectProperty
 rdf:about="http://data.europa.eu/eproc/ontology#chargesFor">
  <rdfs:domain
@@ -2190,7 +2217,7 @@ rdf:resource="http://data.europa.eu/eproc/ontology#ProductOrServiceOrWork"/>
 Invoice is issued</rdfs:comment>
  <rdfs:label xml:lang="en">charges for</rdfs:label>
  </owl:ObjectProperty>
- <! http://data.europa.eu/eproc/ontology#hasCurrency >
+ <!-- http://data.europa.eu/eproc/ontology#hasCurrency -->
  <owl:ObjectProperty
 rdf:about="http://data.europa.eu/eproc/ontology#hasCurrency">
  <rdfs:domain
@@ -2202,7 +2229,7 @@ Currency NAL is mandatory.</rdfs:comment>
  <rdfs:label xml:lang="en">has currency</rdfs:label>
  </owl:ObjectProperty>
 
- <! http://data.europa.eu/eproc/ontology#hasNetValue >
+ <!-- http://data.europa.eu/eproc/ontology#hasNetValue -->
  <owl:ObjectProperty
 rdf:about="http://data.europa.eu/eproc/ontology#hasNetValue">
  <rdfs:domain
@@ -2215,7 +2242,7 @@ VAT</rdfs:comment>
  <rdfs:label xml:lang="en">has net value</rdfs:label>
  </owl:ObjectProperty>
 
- <! http://data.europa.eu/eproc/ontology#hasVAT >
+ <!-- http://data.europa.eu/eproc/ontology#hasVAT -->
  <owl:ObjectProperty
 rdf:about="http://data.europa.eu/eproc/ontology#hasVAT">
  <rdfs:domain
@@ -2230,35 +2257,58 @@ Tax</rdfs:comment>
  </owl:ObjectProperty>
 
 
-
 == List of Tables
 
 Table 1: Process overview
+
 Table 2: Reuse levels
+
 Table 3: Data journalism - use case description
+
 Table 4: Automated matchmaking of procured services and products with businesses - use case description
+
 Table 5: Verifying VAT payments on intracommunity service provision - use case description
+
 Table 6: Information requirements
+
 Table 7: General classes
+
 Table 8: Classes in the conceptual data model
+
 Table 10: Mapping of the conceptual model to OWL classes
+
 Table 11: Mapping to OWL data type properties
+
 Table 12: Mapping to OWL object type properties
+
 Table 13: Project team
+
 Table 14: working group
+
 Table 15: Use case template
+
 Table 16: Requirements template
+
 Table 17: class template
+
 Table 18: Properties template
+
 Table 19: relationships template
+
 Table 20: Class template
+
 Table 21: Data type property template
+
 Table 22: Object property template
+
 Table 23: additional concepts
 
 == List of Figures
 
 Figure 1: e-procurement ontology development process
+
 Figure 2: example - important classes, properties and relationships
+
 Figure 3: example - missing elements
+
 Figure 4: Conceptual data model
