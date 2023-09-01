@@ -1,3 +1,13 @@
-/build
-/antora-playbook-local.yml
-.vscode/settings.json
+target
+build
+/.idea
+node_modules
+.vscode
+.node
+.yarn
+yarn.lock
+branches
+scripts
+.asciidoctor
+.asciidoctorconfig
+/modules/ROOT/pages/archive/
