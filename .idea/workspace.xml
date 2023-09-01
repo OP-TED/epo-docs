@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b17980f-1cb5-4bdd-a435-c26b8f952cae" name="Default Changelist" comment="Rearranged navigation">
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/business.adoc" beforeDir="false" />
-    </list>
+    <list default="true" id="2b17980f-1cb5-4bdd-a435-c26b8f952cae" name="Default Changelist" comment="corrected name" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
