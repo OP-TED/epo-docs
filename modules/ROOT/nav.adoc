@@ -7,11 +7,12 @@
 * xref:epo-home::index.adoc[Home]
 //* xref:EPO::Overview_V3.1.0.adoc[Release Overview]
 * xref:EPO::release-notes.adoc[Release Notes]
+* xref:EPO::business.adoc[Business Overview]
+* xref:EPO::conceptual.adoc[Conceptual Models]
+* xref:EPO::glossaries.adoc[Glossaries]
 
 * [.separated]#**General Reference**#
-* xref:epo-home::business.adoc[Business Overview]
 * xref:epo-home::references.adoc[Reference Documents]
-// * xref:epo-home::methodology.adoc[Ontology Methodology]
 * xref:epo-home::history.adoc[History and Planned Developments]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
 
@@ -19,10 +20,7 @@
 * xref:epo-wgm::wider.adoc[Quarterly Meetings]
 * xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)]
 * xref:epo-wgm::indiv.adoc[Individual Meeting Reports]
-//* xref:epo-wgm::eCatalogueMeetings.adoc[eCatalogue Meetings]
-//* xref:epo-wgm::eOrderingMeetings.adoc[eOrdering Meetings]
-//* xref:epo-wgm::eFulfilmentMeetings.adoc[eFulfilment Meetings]
-//* xref:epo-wgm::Note_taking.adoc[Note Taking Guidelines]
+
 
 
 

@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b17980f-1cb5-4bdd-a435-c26b8f952cae" name="Default Changelist" comment="amended .gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/epo-guidelines.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/frozen-2.0.2-branch.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/partials/nav_main.adoc" beforeDir="false" />
+    <list default="true" id="2b17980f-1cb5-4bdd-a435-c26b8f952cae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/nav.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/nav.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/business.adoc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
