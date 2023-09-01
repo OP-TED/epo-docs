@@ -5,7 +5,6 @@
 :docdate: June 2023
 
 * xref:epo-home::index.adoc[Home]
-//* xref:EPO::Overview_V3.1.0.adoc[Release Overview]
 * xref:EPO::release-notes.adoc[Release Notes]
 * xref:EPO::business.adoc[Business Overview]
 * xref:EPO::conceptual.adoc[Conceptual Models]
