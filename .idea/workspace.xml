@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b17980f-1cb5-4bdd-a435-c26b8f952cae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/nav.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/nav.adoc" afterDir="false" />
+    <list default="true" id="2b17980f-1cb5-4bdd-a435-c26b8f952cae" name="Default Changelist" comment="Rearranged navigation">
       <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/business.adoc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693557606531</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Rearranged navigation">
+      <created>1693575902647</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693575902647</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Rearranged navigation">
+      <created>1693575964636</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1693575964636</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +149,7 @@
     <MESSAGE value="Updated formatting: specification.adoc" />
     <MESSAGE value="Updated formatting: landscaping.adoc" />
     <MESSAGE value="amended .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="amended .gitignore" />
+    <MESSAGE value="Rearranged navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rearranged navigation" />
   </component>
 </project>
