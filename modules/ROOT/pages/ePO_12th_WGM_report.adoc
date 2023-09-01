@@ -1,4 +1,8 @@
-= 12th WGM Meeting Report
+:doctitle: REPORT ON THE 12TH WORKING GROUP MEETING OF THE EPROCUREMENT ONTOLOGY
+:doccode: epo_wgm_prod_007
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 
 **Online meeting: 08/12/2022**
 
@@ -243,6 +247,8 @@ or alternatively via:
 
 * Email: +++<u>+++OP-EPROCUREMENT-ONTOLOGY@publications.europa.eu+++</u>+++
 * E mail: +++<u>+++natalie.muric@publications.europa.eu+++</u>+++
+
+include::partial$feedback.adoc[]
 
 
 

@@ -1,4 +1,8 @@
-= eProcurement Ontology
+:doctitle: REPORT ON THE 13TH WORKING GROUP MEETING OF THE EPROCUREMENT ONTOLOGY
+:doccode: epo_wgm_prod_008
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 
 == Q1 meeting
 
@@ -218,7 +222,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA3IAAADNCAYAAAD9o0LcAAAte0l
 
 There was a suggestion to coordinate with the DTLF (Digital Transport and Logistics Forum) whose main area of work is to provide technical assistance for the implementation of Regulation (EU) 202/1056 on Electronic Freight Transport Information.  In the near future they will be modelling the waybill which PEPPOL will need to implement.
 
-== Closing:
+=== Closing:
 
 Natalie Muric of the Publications Office presented the next meeting schedule for ePO:
 
@@ -234,3 +238,4 @@ Natalie Muric of the Publications Office presented the next meeting schedule for
 * Tues 5 or Thurs 7 September (afternoons)
 * Tues 5 or Thurs 7 December (afternoons)
 
+include::partial$feedback.adoc[]

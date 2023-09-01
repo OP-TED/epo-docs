@@ -1,0 +1,17 @@
+:doctitle: Cumulative Content of the Working Group Meetings by Year
+:doccode: epo_wgm_prod_002
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
+
+xref:wgm-2023.adoc[Cumulative content of Working Group Meetings: 2023]
+
+xref:wgm-2022.adoc[Cumulative content of Working Group Meetings: 2022]
+
+xref:wgm-2021.adoc[Cumulative content of Working Group Meetings: 2021]
+
+xref:wgm-2020.adoc[Cumulative content of Working Group Meetings: 2020]
+
+xref:wgm-2019.adoc[Cumulative content of Working Group Meetings: 2019]
+
+include::partial$feedback.adoc[]

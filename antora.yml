@@ -1,5 +1,5 @@
-name: EPO
-version: wg-meetings
+name: epo-wgm
+version: ~
 title: eProcurement Ontology
 start_page: ROOT:index.adoc
 nav:

@@ -1,4 +1,8 @@
-== Cumulated content of Working Group Meeting from 2021
+:doctitle: Cumulative content of Working Group Meetings in 2021
+:doccode: epo-wgm-prod-014
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2023
 
 include::notes/2021-12-16-wgm.adoc[]
 
@@ -111,3 +115,5 @@ include::notes/2021-01-14-wgm.adoc[]
 include::notes/2021-01-12-wgm.adoc[]
 
 include::notes/2021-01-07-wgm.adoc[]
+
+include::partial$feedback.adoc[]

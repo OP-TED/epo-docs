@@ -1,6 +1,6 @@
-== Working Group meeting
+== Working Group meeting 11/10/2022
 
-*Date:* 11/10/2022  +
+*Date:*c  +
 *Participants:* Peter Borresen, Mauro, Natalie Muric, Csongor Nyulas, Pietro Palermo, Emidio Stani  +
 *Model editor:* Eugeniu Costetchi +
 *Note editor:* Andreea Pasăre
