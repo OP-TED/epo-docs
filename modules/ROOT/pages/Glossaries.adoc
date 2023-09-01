@@ -1,0 +1,13 @@
+== *Ontology*
+
+=== Glossaries
+*The Glossaries for the following entities can be downloaded via the following links:*
+
+* link:{attachmentsdir}/html_reports/glossary/ePO_glossary.html[The eCore Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eCatalogue_glossary.html[The eCatalogue Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eCatalogue_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[The eNotice Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[The eOrdering Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/ePO-combined-glossary.html[The ePO Combined Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO-combined-glossary.html[here]
+
+
+include::partial$feedback.adoc[]
