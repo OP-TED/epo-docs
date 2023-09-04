@@ -6,8 +6,8 @@
 
 * xref:index.adoc[Home]
 * xref:release-notes.adoc[Release Notes]
-* xref:EPO::business.adoc[Business Overview]
-* xref:EPO::conceptual.adoc[Conceptual Models]
+* xref:business.adoc[Business Overview]
+* xref:conceptual.adoc[Conceptual Models]
 * xref:EPO::glossaries.adoc[Glossaries]
 
 * [.separated]#**General Reference**#
