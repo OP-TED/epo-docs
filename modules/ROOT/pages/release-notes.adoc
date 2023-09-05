@@ -147,9 +147,9 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 
 == Changed classes
 
-
+[cols="1,2,2,2"]
 |===
-|*module*|*class*|*added attributes*|*deleted attributes*
+s|module|class|added attributes|deleted attributes
 
 |ePO core|cccev:InformationConcept|dct:description|epo:hasDescription
 ||cccev:InformationConcept|skos:prefLabel|epo:hasName
@@ -254,9 +254,9 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 ||epo-ord:OrderResponse|epo-ord:hasResponseDescription|
 |===
 
-
+[cols="1,2,2,2"]
 |===
-|*module*|*class*|*added property*|*deleted property*
+s|module|class|added property|deleted property
 
 |ePO core|cccev:InformationConcept|adms:identifier -> adms:Identifier|epo:hasID -> epo:Identifier
 ||cpv:Person|cv:registeredAddress|
