@@ -82,9 +82,9 @@ The release of version 3.1.0 and its corresponding technical files can be found 
 
 === Procurement object package
 
-
+[cols="1,2,2"]
 |===
-|*class*|*added attributes*|*deleted attributes*
+s|class|added attributes|deleted attributes
 
 |epo:ProcurementElement|epo:hasDescription (moved from epo:ProcurementObject)|
 |epo:ProcurementElement|epo:hasTitle (moved from epo:ProcurementObject)|
@@ -96,9 +96,9 @@ The release of version 3.1.0 and its corresponding technical files can be found 
 |epo:ProcurementObject|epo:isUsingEUFunds (moved from epo:PlannedProcurementPart)|
 |===
 
-
+[cols="1,2,2"]
 |===
-|*class*|*added property*|*deleted property*
+s|class|added property|deleted property
 
 |epo:AwardDecision|generalisation -> epo:ProcurementElement|generalisation -> epo:ProcurementObject
 |epo:Contract|epo:signedByContractor -> epo:Contractor|epo:signedBySignatory -> epo:ContractSignatory
@@ -120,20 +120,21 @@ The release of version 3.1.0 and its corresponding technical files can be found 
 
 === Agent package
 
-
+[cols="1,2,2"]
 |===
-|*class*|*added property*|*deleted property*
+s|class|added property|deleted property
 
 |cpv:Person|person:placeOfBirth|cpv:placeOfBirth
 |cpv:Person|person:placeOfDeath|cpv:placeOfDeath
 |org:Organization|cv:registeredAddress -> locn:Address|legal:registeredAddress -> locn:Address
 |===
 
+
 === Role package
 
-
+[cols="1,2,2"]
 |===
-|*class*|*added property*|*deleted property*
+s|class|added property|deleted property
 
 |epo:AcquiringParty|generalisation -> epo:AgentInRole|
 |epo:AuxiliaryParty|generalisation -> epo:AgentInRole|
@@ -163,9 +164,9 @@ The release of version 3.1.0 and its corresponding technical files can be found 
 
 === Term package
 
-
+[cols="1,2,2"]
 |===
-|*class*|*added property*|*deleted property*
+s|class|added property|deleted property
 
 |epo:AccessTerm|generalisation -> epo:ProcedureSpecificTerm|
 |epo:ContractTerm|epo:hasContractNatureType -> at-voc:contract-nature (moved from epo:Purpose)|
@@ -177,9 +178,9 @@ The release of version 3.1.0 and its corresponding technical files can be found 
 
 === Contextual description package
 
-
+[cols="1,2,2"]
 |===
-|*class*|*added property*|*deleted property*
+s|class|added property|deleted property
 
 |epo:LotAwardOutcome|epo:hasRestatedAwardedValue -> epo:MonetaryValue|
 |epo:LotAwardOutcome|epo:hasBargainPrice -> epo:MonetaryValue|
@@ -189,27 +190,27 @@ The release of version 3.1.0 and its corresponding technical files can be found 
 
 === Notice description package
 
-
+[cols="1,2,2"]
 |===
-|*class*|*added attributes*|*deleted attributes*
+s|class|added attributes|deleted attributes
 
 |epo:ElementConfidentialityDescription|epo:hasInstanceReference|epo:hasClassReference
 |===
 
 === Empirical types package
 
-
+[cols="1,2,2"]
 |===
-|*class*|*added property*|*deleted property*
+s|class|added property|deleted property
 
 |owl:Thing|epo:containsModificationsOf -> owl:Thing|
 |===
 
 === eCatalogue module
 
-
+[cols="1,2,2"]
 |===
-|*class*|*added property*|*deleted property*
+s|class|added property|deleted property
 
 |epo-cat:Catalogue|epo-cat:isReceivedByCatalogueReceiver -> epo:CatalogueReceiver|
 |epo-cat:Catalogue|epo:specifiesSeller -> epo-ord:Seller|
