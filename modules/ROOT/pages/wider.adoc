@@ -4,11 +4,12 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
-////
-xref:ePO_14th_WGM_report.adoc[Report from the 14th Working Group General Meeting: 1 August 2023]
 
-''''
-////
+xref:ePO_Q2_2023_WGM.adoc[Report from the Q2 2023 Working Group General Meeting: 27 June 2023]
+
+link:{attachmentsdir}/work_group_meetings_reports/Q2_2023_WGM/eProcurementOntology-2023-Q2.pptx[Q2 2023 WGM presentation]
+
+'''
 xref:ePO_13th_WGM_report.adoc[Report from the 13th Working Group General Meeting: 9 March 2023]
 
 '''
