@@ -33,7 +33,14 @@ This does not mean necessarily that this was the only topic addressed in the mee
 
 [#2023]
 === 2023
-xref:notes/2023-08-01-wgm.adoc[2023-08-01]
+
+//xref:notes/2023-08-01-wgm.adoc[2023-08-01]
+
+xref:notes/2023-07-04-wgm.adoc[2023-07-04]
+
+xref:notes/2023-06-20-wgm.adoc[2023-06-20]
+
+xref:notes/2023-06-13-wgm.adoc[2023-06-13]
 
 xref:notes/2023-06-01-wgm.adoc[2023-06-01]
 

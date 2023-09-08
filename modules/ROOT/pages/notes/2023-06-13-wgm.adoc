@@ -1,0 +1,60 @@
+== Working Group meeting
+
+*Date:* 13/06/2023   +
+*Participants:* Natalie Muric, Giampaolo Sellitto +
+*Model editor:* Andreea Pasăre  +
+*Note editor:* Jana Ahmad
+
+=== Agenda:
+
+* Revise all Monetary Values with respect to Framework Agreement.
+
+=== Discussion:
+
+The participants validated the monetary values in relation to the BTs in the extended Annex of eForms. The BTs were mapped to the ePO ontology as follows, where the main bullet represents the BTs and the sub-bullets represent the corresponding ePO mapping:
+
+* BT-27: Framework Maximum Value
+** epo:FrameworkAgreementTerm epo:hasLaunchFrameworkAgreementMaximumValue epo:MonetaryValue
+* BT-157: Group Framework Maximum Value
+** epo:FrameworkAgreementTerm epo:hasLaunchGroupFrameworkAgreementMaximumValue epo:MonetaryValue
+** epo:hasEstimatedValue was changed to epo:hasLaunchGroupFrameworkAgreementMaximumValue
+* BT-644: Prize Value
+** epo:Prize po:hasPrizeValue / epo:hasAmountValue epo:MonetaryValue .
+* BT-161: Notice Value
+** epo:NoticeAwardInformation epo:hasTotalAwardedValue epo:MonetaryValue
+* BT-118: Notice Framework Maximum Value
+** epo:NoticeAwardInformation epo:hasTotalAwardedValue  epo:MonetaryValue
+* BT-1118: Notice Framework Approximate Value
+** epo:NoticeAwardInformation epo:hasApproximateFrameworkAgreementValue epo:MonetaryValue
+* BT-156: Group Framework Re-calculated Maximum Value
+** epo:LotGroupAwardInformation  epo:hasGroupFrameworkAgreementMaximumValue  epo:MonetaryValue
+**  epo:hasGroupFrameworkAgreementAwardedValue was changed to epo:hasGroupFrameworkAgreementMaximumValue
+* BT-1561: Group Framework Re-estimated Value
+** epo:LotGroupAwardInformation  epo:hasApproximateGroupFrameworkAgreementValue  epo:MonetaryValue
+* BT-709: Framework Re-calculated Maximum Value
+** epo:LotAwardDecision  epo:hasFrameworkAgreementMaximumValue  epo:MonetaryValue
+* BT-660: Framework Re-estimated Value
+** epo:LotAwardDecision  epo:hasApproximateFrameworkAgreementValue  epo:MonetaryValue
+** epo:hasFrameworkAgreementEstimatedValue was changed to epo:hasApproximateFrameworkAgreementValue
+* BT-710: Tender Value Lowest
+** epo:SubmissionStatisticalInformation  epo:hasLowestReceivedTenderValue  epo:MonetaryValue
+* BT-711: Tender Value Highest
+** epo:SubmissionStatisticalInformation epo:hasHighestReceivedTenderValue  epo:MonetaryValue
+* BT-720: Tender Value
+** epo:Tender epo:hasFinancialOfferValue  epo:MonetaryValue
+* BT-779: Tender Payment Value
+** epo:ContractLotCompletionInformation  epo:providesContractTotalPaymentValue  epo:MonetaryValue
+* BT-782: Tender Penalties
+** epo:ContractLotCompletionInformation  epo:providesContractTotalPenaltyValue  epo:MonetaryValue
+* BT-162: Concession Revenue User
+** epo:ConcessionEstimate epo:hasEstimatedUserConcessionRevenue  epo:MonetaryValue
+* BT-160: Concession Revenue Buyer
+** epo:ConcessionEstimate epo:hasEstimatedBuyerConcessionRevenue  epo:MonetaryValue
+* BT-553: Subcontracting Value
+** epo:SubcontractingEstimate  epo:hasSubcontractingEstimatedValue  epo:MonetaryValue
+* BT-793: Review Remedy Value
+** epo:ReviewDecision  epo:hasRemedyValue  epo:MonetaryValue
+* BT-795: Review Request Fee
+** epo:ReviewRequest epo:hasReviewRequestFee epo:MonetaryValue
+** epo:paidReviewRequestFee was changed to epo:hasReviewRequestFee
+

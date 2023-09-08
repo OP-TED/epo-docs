@@ -1,0 +1,44 @@
+== Working Group meeting
+
+*Date:* 20/06/2023   +
+*Participants:* Natalie Muric,  +
+*Model editor:* Andreea Pasăre  +
+*Note editor:* Jana Ahmad
+
+=== Agenda
+
+* Revise new eForms BTs in the extended Annex.
+
+=== Discussion
+
+The participants validated the new concepts in relation to the BTS found in the extended Annex of eForms. The BTs were mapped to the ePO ontology as follows, where the main bullet represents the BTs and the sub-bullets represent the corresponding ePO mapping:
+
+* BT-803: Notice Dispatch Date eSender
+** epo:Notice epo:hasESenderDispatchDate  in epo:Notice.
+* BT-738: Notice Preferred Publication Date
+** epo:hasPreferredPublicationDate in epo:PublicationProvision
+* BT-578: Security Clearance
+**  epo:isSecurityClearanceRequired property was created in epo:SecurityClearanceTerm
+* BT-801: Non-Disclosure Agreement
+** epo:NonDisclosureAgreementTerm class was created.
+** epo:isNonDisclosureAgreementRequired:boolean property was created on epo:NonDisclosureAgreementTerm.
+* BT-802: Non-Disclosure Agreement Description
+** dct:description on epo:NonDisclosureAgreementTerm concept.
+* BT-1371: Previous Planning Lot Identifier
+** This BT refers to the identifier of the Lot in the current Notice. The mapping for this BT should be coupled with the mapping from BT-1251. We also need to add a link between epo:PlannedProcurementPart and the epo:ProcurementObject (by using epo:foreseesProcurementObject relation).
+* 1251: Previous Planning Lot Identifier
+** This refers to the identifier of the Previous PLannedProcurementPart; that will become the Lot from BT-1371.
+** Example of Implementation in ePO: (it was noted, this can be implemented in other ways).
+*** epo-not:CompetitionNotice epo:refersToPrevious epo-not:PlanningNotice.  epo-not:PlanningNotice epo:announcesPlannedProcurementPart epo:PlannedProcurementPart. epo:PlannedProcurementPart adms:identifier adms:Identifier.
+
+==== Definitions:
+
+During the meeting, the participants validated the definitions of the following terms:
+
+* epo:hasPublicationDate: Date of formal public issuance of the document.
+* dct:issued: Date of formal issuance of the resource. Additional information: This is generally used for modules other than eNotice.
+
+=== Action Point
+
+* Change back Lot Award Decision concept to Lot Award Outcome and also change back related relations.
+
