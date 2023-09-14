@@ -7,7 +7,7 @@ The conceptual data model is available both as an link:https://github.com/eprocu
 The subsections below provide further details on key Classes of the ePO and about how these Classes relate to other Ontologies. Furthermore, a brief description for each model is provided in order to make it more understandable.
 
 .Legend
-image::v2.0.0/Legend.png[align="center"]
+image::Legend.png[align="center"]
 
 * Boxes in colour beige are Classes, i.e. main entities of the ontology, like "Procurement Procedure", "Procuring Entity", "Economic Operator", etc.;
 
@@ -24,7 +24,7 @@ image::v2.0.0/Legend.png[align="center"]
 ** Data properties define what kind of value the attributes of the classes should have. For example, the class "Procurement Project" has three attributes: Description, ID and Title. Each attribute has one type of data assigned. The descriptions and titles should be expressed as a “Text”, and the ID should be an “Identifier”.
 
 .Procurement Project Attributes
-image::v2.0.0/Procurement Project Attributes.jpg[align="center"]
+image::Procurement Project Attributes.jpg[align="center"]
 
 * Associations between Classes are represented as unidirectional arrows to keep the diagrams simple. However, when the association is bi-directional it is indicated with two predicates and the second one is enclosed with parenthesis "()". In the OWL-TTL these are declared as "inverse" properties. Examples: "_Procurement Procedure includes lots (belongs to) Lots_", in the diagram, is to be read as:
 
@@ -38,14 +38,14 @@ image::v2.0.0/Procurement Project Attributes.jpg[align="center"]
 General view of the Classes and relations of the ePO v2.0.0 Ontology. Keep in mind that for this version the focus was put on e-Notification and e-Access.
 
 .ePO v.2.0.0 - Conceptual Data Model, overview
-image::v2.0.0/ConceptualModel_Overview.png[align="center"]
+image::ConceptualModel_Overview.png[align="center"]
 
 == Classes and properties
 
 === Procurement Project
 
 .Procurement Project
-image::v2.0.0/Procurement Project.jpg[align="center"]
+image::Procurement Project.jpg[align="center"]
 
 1. Procurement is the acquisition by means of a public contract of works, supplies or services by one or more contracting authorities from economic operators chosen by those contracting authorities, whether or not the works, supplies or services are intended for a public purpose. (Directive 2014/24/EU, Article 1(2)).
 
@@ -65,7 +65,7 @@ image::v2.0.0/Procurement Project.jpg[align="center"]
 === Procurement Procedure
 
 .Procurement Procedure
-image::v2.0.0/Procurement Procedure.jpg[align="center"]
+image::Procurement Procedure.jpg[align="center"]
 
 1. Procurement Procedures is a series of activities leading to the conclusion of a public contract.
 
@@ -89,7 +89,7 @@ image::v2.0.0/Procurement Procedure.jpg[align="center"]
 === Accelerated Procedure
 
 .Accelerated Procedure
-image::v2.0.0/Accelerated Procedure.jpg[align="center"]
+image::Accelerated Procedure.jpg[align="center"]
 
 1. An accelerated procedure takes place when the time limits within the procedure are reduced.
 
@@ -103,7 +103,7 @@ image::v2.0.0/Accelerated Procedure.jpg[align="center"]
 === Procurement Terms
 
 .Procurement Terms
-image::v2.0.0/Procurement Terms.jpg[align="center"]
+image::Procurement Terms.jpg[align="center"]
 
 1. The Procurement Terms are "conditions or stipulations established by the Procuring  Entity:
 
@@ -123,7 +123,7 @@ image::v2.0.0/Procurement Terms.jpg[align="center"]
 === Lots
 
 .Lots
-image::v2.0.0/Lots.jpg[align="center"]
+image::Lots.jpg[align="center"]
 
 1. A Lot is one of the parts into which a Procurement Procedure is divided.
 
@@ -139,7 +139,7 @@ image::v2.0.0/Lots.jpg[align="center"]
 === Technique
 
 .Technique
-image::v2.0.0/Technique.jpg[align="center"]
+image::Technique.jpg[align="center"]
 
 1. Techniques are specific methods of carrying out a purchase. E.g. Framework Agreement, e-Auction or Dynamic Purchase System.
 
@@ -149,7 +149,7 @@ image::v2.0.0/Technique.jpg[align="center"]
 === Procuring Entity
 
 .Procuring Entity
-image::v2.0.0/Procuring Entity.jpg[align="center"]
+image::Procuring Entity.jpg[align="center"]
 
 1. In any Procurement Procedure, there is at least one Procuring Entity;
 
@@ -167,7 +167,7 @@ image::v2.0.0/Procuring Entity.jpg[align="center"]
 === Economic Operator
 
 .Economic Operator
-image::v2.0.0/Economic Operator.jpg[align="center"]
+image::Economic Operator.jpg[align="center"]
 
 1. An Economic Operator is an organisation.
 
@@ -185,7 +185,7 @@ image::v2.0.0/Economic Operator.jpg[align="center"]
 === Tender
 
 .Tender
-image::v2.0.0/Tender.jpg[align="center"]
+image::Tender.jpg[align="center"]
 
 1. Tenders are submitted by Tenderers, who are Economic Operators.
 
@@ -199,7 +199,7 @@ image::v2.0.0/Tender.jpg[align="center"]
 === Evaluation Result
 
 .Evaluation Result
-image::v2.0.0/Evaluation Result.jpg[align="center"]
+image::Evaluation Result.jpg[align="center"]
 
 1. The Evaluation Result is presented in the form of a report showing the assessment of the tenders by the evaluation board.
 
@@ -213,7 +213,7 @@ image::v2.0.0/Evaluation Result.jpg[align="center"]
 === Contract
 
 .Contract
-image::v2.0.0/Contract.jpg[align="center"]
+image::Contract.jpg[align="center"]
 
 1. One of the activities that takes place in the Procurement Procedure life-cycle is the evaluation of Tenderers and Tenders, and the awarding of a contract to one or more Tenderer. The awarded Tenderer(s) are the "Winner(s)".
 
@@ -231,7 +231,7 @@ image::v2.0.0/Contract.jpg[align="center"]
 === Criterion
 
 .Criterion
-image::v2.0.0/Criterion.jpg[align="center"]
+image::Criterion.jpg[align="center"]
 
 1. Criterion is a generic business-agnostic class. This eProcurement ontology (ePO) uses this as a base class to extend Award Criterion, Exclusion Grounds and Selection Criterion (see the rest of diagrams about criteria for details).
 
@@ -259,7 +259,7 @@ image::v2.0.0/Criterion.jpg[align="center"]
 === Award Criterion
 
 .Award Criterion
-image::v2.0.0/Award Criterion.jpg[align="center"]
+image::Award Criterion.jpg[align="center"]
 
 1. Award Criteria are used to evaluate Tenders. They may include the best price-quality ratio, including qualitative, environmental and/or social aspects, linked to the subject-matter of the public contract in question.
 
@@ -277,7 +277,7 @@ image::v2.0.0/Award Criterion.jpg[align="center"]
 === Exclusion Grounds
 
 .Exclusion Grounds
-image::v2.0.0/Exclusion Grounds.jpg[align="center"]
+image::Exclusion Grounds.jpg[align="center"]
 
 1. Tenderers may be excluded from participate in a Procurement Procedure, in case they bridge any of the legal criteria established in the Directives. This criteria are named Exclusion Grounds.
 
@@ -289,7 +289,7 @@ image::v2.0.0/Exclusion Grounds.jpg[align="center"]
 === Selection Criterion
 
 .Selection Criterion
-image::v2.0.0/Selection Criterion.jpg[align="center"]
+image::Selection Criterion.jpg[align="center"]
 
 1. Selection Criteria aim at ensuring that a candidate or tenderer has the legal and financial capacities and the technical and professional abilities to perform the contract to be awarded (see ePO Glossary for the difference between Candidate and Tenderer).
 
@@ -305,7 +305,7 @@ image::v2.0.0/Selection Criterion.jpg[align="center"]
 === Documents
 
 .Documents
-image::v2.0.0/Documents.jpg[align="center"]
+image::Documents.jpg[align="center"]
 
 1. The ePO sees Documents as aggregators of the business domain data. In other words, the content of a Document are individuals that exist in the data graphs. A such (aggregators of individuals) they are ideal artifacts for the interoperability.
 
@@ -333,7 +333,7 @@ image::v2.0.0/Documents.jpg[align="center"]
 === Contract Award Notice
 
 .Contract Award Notice
-image::v2.0.0/Contract Award Notice.jpg[align="center"]
+image::Contract Award Notice.jpg[align="center"]
 
 1. Procuring Entities shall publish the award of a contract by means of Contract Award Notices.
 
@@ -343,4 +343,4 @@ image::v2.0.0/Contract Award Notice.jpg[align="center"]
 === Data Types
 
 .Data Types
-image::v2.0.0/Data Types.jpg[align="center"]
+image::Data Types.jpg[align="center"]
