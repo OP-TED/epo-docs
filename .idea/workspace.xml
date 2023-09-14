@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b17980f-1cb5-4bdd-a435-c26b8f952cae" name="Default Changelist" comment="updated nav.adoc">
+    <list default="true" id="2b17980f-1cb5-4bdd-a435-c26b8f952cae" name="Default Changelist" comment="moved obsolete attachment folders and files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +23,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/ROOT/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/ROOT/Archive/_attachments" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\paterni\Code\epo-docs\modules\ROOT\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\paterni\Code\epo-docs\modules\ROOT\Archive\_attachments" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -39,6 +42,14 @@
       <option name="presentableId" value="Default" />
       <updated>1685951602029</updated>
     </task>
+    <task id="LOCAL-00001" summary="moved obsolete attachment folders and files">
+      <created>1694697066970</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694697066970</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -52,5 +63,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="moved obsolete attachment folders and files" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved obsolete attachment folders and files" />
   </component>
 </project>
