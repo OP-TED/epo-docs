@@ -3,6 +3,6 @@
 * link:{attachmentsdir}/html_reports/v3.0.1/eNotice/index.html[HTML view]
 * link:https://github.com/OP-TED/ePO/blob/v3.0.1/analysis_and_design/conceptual_model/ePO_CM.eap[Enterprise Architect file]
 
-xref:v3.0.1@EPO:ROOT:attachment$/html_reports/v3.0.1/eNotice/index.html[test link]
+xref:/attachments/html_reports/v3.0.1/eNotice/index.html[test link]
 
 //xref:version@component:module:attachment$file-coordinate-of-attachment.ext[optional link text]
