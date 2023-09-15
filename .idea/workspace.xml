@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b17980f-1cb5-4bdd-a435-c26b8f952cae" name="Default Changelist" comment="corrected guidelines in nav">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="50995aff-59c6-441b-b563-771b3bae7ee3" name="Default Changelist" comment="corrected guidelines in nav">
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/epo-guidelines.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/epo-guidelines.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
