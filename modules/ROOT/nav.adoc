@@ -8,4 +8,4 @@
 
 * xref:eProcurement-Glossary-v2.0.1.adoc[Glossary]
 
-* xref:main@EPO::references.adoc[Reference Documents]
+* xref:2.0.1@EPO::epo-guidelines.adoc[Guidelines]
