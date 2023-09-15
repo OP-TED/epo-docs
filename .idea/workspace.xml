@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50995aff-59c6-441b-b563-771b3bae7ee3" name="Default Changelist" comment="corrected guidelines in nav">
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/epo-guidelines.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/epo-guidelines.adoc" afterDir="false" />
-    </list>
+    <list default="true" id="4d9b5cfa-0c90-4a00-bf2a-bdad76e62582" name="Default Changelist" comment="moved obsolete files to archive" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,66 +10,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2QmGyVQMkPfKtwPzpqzFG62cg9r" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/ROOT/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/ROOT/Archive/_attachments" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\paterni\Code\epo-docs\modules\ROOT\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\paterni\Code\epo-docs\modules\ROOT\images" />
       <recent name="C:\Users\paterni\Code\epo-docs\modules\ROOT\Archive\_attachments" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="f6076a5c-a976-40b1-ae51-9af0f4cffdac" name="Default Changelist" comment="edit links" />
-      <created>1685951602029</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1685951602029</updated>
-    </task>
-    <task id="LOCAL-00001" summary="moved obsolete attachment folders and files">
-      <created>1694697066970</created>
+    <task id="LOCAL-00001" summary="moved obsolete files to archive">
+      <created>1694768531503</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1694697066970</updated>
+      <updated>1694768531503</updated>
     </task>
-    <task id="LOCAL-00002" summary="moved images into one folder">
-      <created>1694697713730</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1694697713730</updated>
-    </task>
-    <task id="LOCAL-00003" summary="corrected image path">
-      <created>1694697971500</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1694697971500</updated>
-    </task>
-    <task id="LOCAL-00004" summary="corrected guidelines in nav">
-      <created>1694698603970</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1694698603970</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,10 +45,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved obsolete attachment folders and files" />
-    <MESSAGE value="moved images into one folder" />
-    <MESSAGE value="corrected image path" />
-    <MESSAGE value="corrected guidelines in nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected guidelines in nav" />
+    <MESSAGE value="moved obsolete files to archive" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved obsolete files to archive" />
   </component>
 </project>
