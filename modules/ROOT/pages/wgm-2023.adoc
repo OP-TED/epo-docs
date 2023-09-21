@@ -5,8 +5,15 @@
 :docdate: June 2023
 
 
+include::notes/2023-09-12-wgm.adoc[]
 
-//include::notes/2023-08-01-wgm.adoc[]
+include::notes/2023-09-05-wgm.adoc[]
+
+include::notes/2023-08-29-wgm.adoc[]
+
+include::notes/2023-08-22-wgm.adoc[]
+
+include::notes/2023-08-01-wgm.adoc[]
 
 include::notes/2023-07-04-wgm.adoc[]
 
