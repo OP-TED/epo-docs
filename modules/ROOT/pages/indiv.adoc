@@ -34,6 +34,8 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2023]
 === 2023
 
+xref:notes/2023-09-21-wgm.adoc[2023-09-21 (eCatalogue/eFulfilment)]
+
 xref:notes/2023-09-12-wgm.adoc[2023-09-12]
 
 xref:notes/2023-09-05-wgm.adoc[2023-09-05]
