@@ -1,5 +1,6 @@
 :doctitle: eProcurement Ontology
 :doccode: epo-main-prod-002
+:page-name: release-notes
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
