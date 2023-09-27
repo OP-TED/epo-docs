@@ -1,3 +1,110 @@
+== *eProcurement Ontology v4.0.0-rc.2*
+
+The release candidate v4.0.0-rc.2 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.2[here].
+
+== Release notes
+
+
+|===
+|*Metadata*|*Value*
+
+|Reference ePO version|4.0.0-rc.2
+|Target ePO version|4.0.0-rc.1
+|Authors|Andreea Pasăre
+|Date|2023-09-25
+|===
+
+= Change notes
+
+
+== New classes
+
+=== ePO core
+
+* epo:ContextDescription (renamed from epo:ContextSpecificDescription)
+* epo:Certificate (moved from ePO Catalogue module)
+* epo:CertificationLabel (moved from ePO Catalogue module)
+* epo:ChangeInformation (renamed from epo:NoticeChangeInformation)
+* epo:Certifier (moved form ePO Catalogue module)
+
+== Deleted classes
+
+=== ePO core
+
+* epo:ContextSpecificDescription (renamed to epo:ContextDescription)
+* epo:NoticeChangeInformation (renamed to epo:ChangeInformation)
+
+=== eCatalogue
+
+* epo:Certificate (moved to ePO Core module)
+* epo:CertificationLabel (moved to ePO Core module)
+* epo:Certifier (moved to ePO Core module)
+* epo-cat:CatalogueFragment
+
+== New Controlled Vocabularies
+
+=== ePO core
+
+* at-voc-new:certification-label-type (moved from ePO Catalogue module)
+
+== Deleted Controlled Vocabularies
+
+=== eCatalogue
+
+* at-voc-new:certification-label-type (moved to ePO Core)
+* at-voc-new:vat-category
+
+
+== Changed classes
+
+
+|===
+|*module*|*class*|*added attributes*|*deleted attributes*
+
+|*ePO Core*|org:Organization||epo:hasOrganisationUnitName
+||epo:Notice||epo:hasLongTitle
+||epo:LotGroup|dct:description|
+||epo:LotGroup|dct:title|
+||epo:TenderGroup|dct:description|
+||epo:TenderGroup|dct:title|
+||epo:DesignContestRegimeTerm|epo:hasDescriptionOfPrizes|
+||epo:ProcedureTerm|epo:isSubmissionForAllLotsRequired|epo:isSubmissionForAllLotsAllowed
+|===
+
+
+
+|===
+|*module*|*class*|*added property*|*deleted property*
+
+|*ePO core*|org:Organization|org:subOrganizationOf -> org:Organization|
+||epo:LotAwardOutcome||epo:hasAwardedEstimatedValue -> epo:MonetaryValue
+||epo:LotAwardOutcome||epo:hasFrameworkAgreementEstimatedValue -> epo:MonetaryValue
+||epo:NoticeAwardInformation|epo:describesDirectAwardPrenotificationNotice -> epo-not:DirectAwardPrenotificationNotice|epo:describesResultNotice -> epo-not:DirectAwardPrenotificationNotice
+||cccev:Evidence|epo:hasValidityPeriod -> epo:Period|
+||cccev:Requirement|adms:identifier -> adms:Identifier|
+||epo:Certificate||epo:hasValidityPeriod -> epo:Period
+||epo:Notice||epo:conformsToSpecificLegalBasis -> at-voc:legal-basis
+||epo:LotGroup|epo:hasInternalIdentifier -> adms:Identifier|
+||epo:LotGroup|epo:hasEstimatedValue -> epo:MonetaryValue|
+||epo:LotGroup|epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue|
+||epo:ProcurementObject|epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue|
+||epo:TenderGroup|adms:identifier -> adms:Identifier|
+||epo:Certifier|generalisation -> epo:AuxiliaryParty|
+||epo:JuryMember|epo:playedBy -> cpv:Person|epo:playedBy -> foaf:Person
+||epo:OpeningTerm|generalisation -> epo:ProcedureSpecificTerm|
+||epo:DesignContestRegimeTerm|generalisation -> epo:ProcedureSpecificTerm|
+||epo:FrameworkAgreementTerm||epo:hasLaunchGroupFrameworkAgreementMaximumValue -> epo:MonetaryValue
+||epo:FrameworkAgreementTerm||epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue
+||epo:ReviewTerm|generalisation -> epo:ProcedureSpecificTerm|
+||epo:SubmissionTerm|epo:hasTenderValidityDuration -> epo:Duration|
+|*eCatalogue*|epo-cat:CatalogueLine|epo-cat:hasActivityCode -> at-voc-new:activity-code|
+||epo-cat:Catalogue|epo-cat:hasActivityCode -> at-voc-new:activity-code|
+|*eOrdering*|epo-ord:TaxInformation||epo-cat:hasVATCategory -> at-voc-new:vat-category
+|*eContract*|epo-con:ContractAmendment|epo:updatesContractValue -> epo:MonetaryValue|epo:hasRestatedContractValue -> epo:MonetaryValue
+|===
+
+
+
 == *eProcurement Ontology v4.0.0-rc.1*
 
 The release candidate v4.0.0-rc.1 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1[here].
@@ -74,6 +181,7 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo:Technique (renamed from epo:TechniqueUsage)
 * epo:VehicleInformation
 * adms:Identifier (renamed from epo:Identifier)
+
 === eCatalogue
 
 * epo-cat:InformationHub
@@ -81,6 +189,7 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo-cat:PostAwardDocument
 * epo-cat:Certificate (renamed from epo-cat:ItemCertificate)
 * epo-cat:ItemProperty (renamed from epo-cat:ItemDescription)
+
 === eOrdering
 
 * epo-ord:DeliveryAgreement
@@ -89,6 +198,7 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo-ord:OrderResponseInformation
 * epo-ord:OrderResponseLine
 * epo-ord:OrderResponse
+
 === eNotice
 
 * epo-not:PreMarketConsultationNotice
@@ -104,6 +214,7 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo:ElementConfidentialityDescription
 * epo:NoticeDescription
 * epo:PublicationProvision
+
 === eCatalogue
 
 * epo-cat:CatalogueDocument
@@ -115,6 +226,7 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo-ord:Beneficiary
 * epo-ord:Invoicee
 * epo-ord:Ordering
+
 === eNotice
 
 * epo-not:PMCNotice
@@ -128,14 +240,17 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * at-voc:green-public-procurement-criteria
 * at-voc:review-body-type
 * at-voc:vehicle-category
+
 === eCatalogue
 
 * at-voc-new:tax-category (renamed from at-voc-new:charge-category)
 * at-voc-new:tax-scheme (renamed from at-voc-new:charge-modifier)
 * at-voc-new:item-classification (renamed from at-voc-new:unspc)
+
 === eOrdering
 
 * at-voc-new:ResponseStatus
+
 == Deleted Controlled Vocabularies
 
 === ePO core
@@ -180,7 +295,7 @@ s|module|class|added attributes|deleted attributes
 ||epo:GreenProcurement|epo:usesCleanVehicleDirective|
 ||epo:GreenProcurement||epo:hasTotalVehicles
 ||epo:GreenProcurement||epo:hasZeroEmissionVehicles
-||epo:GreenProcurement||epo:hasZeroEmissionVehicles
+||epo:GreenProcurement||epo:hasCleanVehicles
 ||epo:LotAwardOutcome||epo:hasAwardDecisionDate
 ||epo:LotAwardOutcome||epo:hasAdditionalNonAwardJustification
 ||epo:NonDisclosureAgreementTerm|dct:description|
@@ -230,7 +345,7 @@ s|module|class|added attributes|deleted attributes
 ||epo:Technique (renamed from epo:TechniqueUsage)|dct:description|epo:hasDescription
 ||epo:VehicleInformation|epo:hasTotalVehicles|
 ||epo:VehicleInformation|epo:hasZeroEmissionVehicles|
-||epo:VehicleInformation|epo:hasZeroEmissionVehicles|
+||epo:VehicleInformation|epo:hasCleanVehicles|
 ||foaf:Agent|dct:title|epo:hasTitle
 ||org:Organization|epo:hasInternetAddress|
 ||org:Organization|epo:hasOrganisationUnitName|epo:hasOrganisationUnit
