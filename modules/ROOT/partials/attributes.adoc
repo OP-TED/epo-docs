@@ -1,8 +1,7 @@
 //these are different per document, edit and add manually:
-
 :doctitle: Title
 :doccode: repo_branch_status_number
- e.g. epo_v4.0.0_prod_123 (draft/ review/prod/archived)
+// e.g. epo_v4.0.0_prod_123 (draft/ review/prod/archived)
 :author: author
 :authoremail: author@email
 :docdate: docdate

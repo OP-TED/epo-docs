@@ -1,10 +1,16 @@
-== *Ontology*
+:doctitle: Ontology
+:page-code: epo-v3.1.0-prod-006
+:page-name: glossaries
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: August 2023
 
 ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 3.1.0@glossaries.adoc
 endif::[]
 
-=== Glossaries
+
+== Glossaries
 *The Glossaries for the following entities can be downloaded via the following links:*
 
 * link:{attachmentsdir}/html_reports/glossary/ePO_glossary.html[The eCore Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO_glossary.html[here]
