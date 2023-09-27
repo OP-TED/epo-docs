@@ -1,5 +1,9 @@
 == *Ontology*
 
+ifeval::[{epo_latest_version} == {page-component-version}]
+:page-aliases: 3.1.0@glossaries.adoc
+endif::[]
+
 === Glossaries
 *The Glossaries for the following entities can be downloaded via the following links:*
 

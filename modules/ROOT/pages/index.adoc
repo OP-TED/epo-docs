@@ -5,7 +5,9 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
-include::partial$latest_fix.adoc[]
+ifeval::[{epo_latest_version} == {page-component-version}]
+:page-aliases: 3.1.0@index.adoc
+endif::[]
 
 [.tile-container]
 --

@@ -4,6 +4,10 @@
 :toclevels: 4
 :toc-title: Contents
 
+ifeval::[{epo_latest_version} == {page-component-version}]
+:page-aliases: 3.1.0@business.adoc
+endif::[]
+
 == Abstract
 In 2016 the Publications Office of the European Union (Publications Office or OP) started a project funded by the ISA Programme to organise and support the development of a Public Procurement Ontology (ePO).
 

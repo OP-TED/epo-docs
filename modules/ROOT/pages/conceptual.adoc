@@ -1,5 +1,9 @@
 == *Ontology*
 
+ifeval::[{epo_latest_version} == {page-component-version}]
+:page-aliases: 3.1.0@conceptual.adoc
+endif::[]
+
 === Conceptual Models
 *The Conceptual Models can be viewed via the following links*
 
