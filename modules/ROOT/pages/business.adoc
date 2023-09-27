@@ -6,7 +6,7 @@
 :docdate: June 2023
 
 ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: {page-component-version}@{page-name}.adoc
+:page-aliases: [{page-component-version}@{page-name}.adoc]
 // :page-aliases: 3.1.0@business.adoc
 endif::[]
 
