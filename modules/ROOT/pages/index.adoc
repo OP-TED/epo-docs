@@ -5,6 +5,8 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
+include::partial$latest_fix.adoc[]
+
 [.tile-container]
 --
 The eProcurement Ontology v3.1.0 was released on the 16 December 2022 introducing a new module, eOrdering,a combined glossary, updates, and various fixes as planned for the 2022 Q4 milestone.
