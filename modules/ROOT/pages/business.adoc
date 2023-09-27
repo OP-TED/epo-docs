@@ -5,7 +5,7 @@
 :toc-title: Contents
 
 ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: 3.1.0@business.adoc
+:page-aliases: 3.1.0@index.adoc
 endif::[]
 
 == Abstract
