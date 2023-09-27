@@ -1,14 +1,12 @@
 :doctitle: eProcurement Ontology - an Overview for Business Users
 :page-code: epo-v3.1.0-prod-003
-:page-name: business.adoc
+:page-name: business
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
 ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: {page-component-version}@{page-name}
-//.adoc}
-// :page-aliases: 3.1.0@business.adoc
+:page-aliases: 3.1.0@business.adoc
 endif::[]
 
 :sectnums:
