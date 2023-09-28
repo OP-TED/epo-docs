@@ -5,9 +5,7 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: August 2023
 
-ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: 3.1.0@conceptual.adoc
-endif::[]
+include::partial$latest_fix.adoc[]
 
 
 == Conceptual Models
