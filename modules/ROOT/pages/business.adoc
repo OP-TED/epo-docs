@@ -10,7 +10,7 @@
 //endif::[]
 
 ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: {page-component-version}@{page-component-name}.adoc
+:page-aliases:{page-component-version}@{page-component-name}.adoc
 endif::[]
 
 :sectnums:
