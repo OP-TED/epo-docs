@@ -1,14 +1,14 @@
 //these are different per document, edit and add manually:
-:doctitle: Title
-:doccode: repo_branch_status_number
-// e.g. epo_v4.0.0_prod_123 (draft/ review/prod/archived)
+:doctitle: this becomes the level 1 heading
+:page-code: see the ePO page dictionary for this code
+:page-name: name of document
 :author: author
-:authoremail: author@email
-:docdate: docdate
+:authoremail: author@writing.com
+:docdate: June 2023
 
-//these are the same in each branch, just edit and then include partial:
+//these are the same in each branch, edit and then add manually
 
-:this-version: 3.1.0
+:this-version: e.g. 3.1.0
 :this-version-tag: v{this-version}
 :git-repo-url: https://github.com/OP-TED/ePO
 :path-to-dist: /ascii_doc/modules/ROOT
