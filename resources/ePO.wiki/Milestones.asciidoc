@@ -1,4 +1,0 @@
-The figure below shows the main milestones of ePO development and the current status:
-
-image::https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/08-Project%20Management/Timeline.png[ePO Timeline, overview, width="900", align="center"]
-
