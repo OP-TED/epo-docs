@@ -1,11 +1,16 @@
 == *eProcurement Ontology guidelines*
 
-//link:/pdfs/ontology-architecture.pdf[The architectural design]
-xref:{attachmentsdir}/ontology-architecture.pdf[The architectural design]
 
+
+//link:/pdfs/ontology-architecture.pdf[The architectural design]
+//xref:modules/ROOT/attachments/ontology-architecture.pdf[The architectural design]
+xref:attachment$ontology-architecture.pdf[The architectural design]
 xref:{attachmentsdir}/uml-conventions.pdf[UML conventions]
 
 xref:{attachmentsdir}/uml2owl-transformation.pdf[uml2owl transformation rules]
+
+
+
 
 
 //2017-08-03
