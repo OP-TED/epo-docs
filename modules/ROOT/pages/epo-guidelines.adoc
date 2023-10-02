@@ -1,10 +1,10 @@
 == *eProcurement Ontology guidelines*
 
-xref:2.0.1@epo::pages/pdfs/ontology-architecture.pdf[The architectural design]
+link:/pdfs/ontology-architecture.pdf[The architectural design]
 
-xref:2.0.1@epo::pages/pdfs//uml-conventions.pdf[UML conventions]
+link:/pdfs//uml-conventions.pdf[UML conventions]
 
-xref:2.0.1@epo::pages/pdfs/uml2owl-transformation.pdf[uml2owl transformation rules]
+link:/pdfs/uml2owl-transformation.pdf[uml2owl transformation rules]
 
 //2017-08-03
 xref:epo-home::specification.adoc[Specification of the process and methodology]
