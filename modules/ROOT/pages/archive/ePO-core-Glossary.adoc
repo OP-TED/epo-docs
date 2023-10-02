@@ -1,9 +1,0 @@
-== *ePO core Glossary*
-
-=== Concepts
-
-The following list of eProcurement concepts have been detected through an analysis of the new procurement forms (link:https://github.com/eForms/eForms/blob/master/README.md[eForms]) to be used soon by all tenderers in the EU. eForms are one of the actions in the Single Market Strategy, where the European Commission has 6 committed to "facilitate the collection, consolidation, management and analysis of procurement data, supporting Member States’ efforts towards better governance in public procurement.
-
-In the link below the different concepts that compose the eProcurement Ontology can be consulted. Note that the definitions of each class can be consulted clicking over each class:
-
-link:{attachmentsdir}/html_reports/glossary/ePO_glossary.html[Click here to see the ePO core Glossary]

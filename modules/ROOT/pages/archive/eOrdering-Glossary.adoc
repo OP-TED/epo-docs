@@ -1,5 +1,0 @@
-== *eOrdering Glossary*
-
-In the link below the different concepts that compose the eOrdering module can be consulted. Note that the definitions of each class can be consulted clicking over each class:
-
-link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[Click here to see the eOrdering Glossary]
