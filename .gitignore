@@ -1,6 +1,6 @@
 target
 build
-/.idea
+.idea
 node_modules
 .vscode
 .node
