@@ -28,6 +28,6 @@ The document sets the context for an eProcurement Ontology, proposes a solution,
 
 //xref:uml2owl_2020.adoc[The UML to OWL Transformation Rules]
 
-
+include::partial$feedback.adoc[]
 
 
