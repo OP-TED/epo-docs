@@ -4,6 +4,5 @@ node_modules
 .node
 .yarn
 yarn.lock
-workspace.xml
 /modules/ROOT/pages/archive/
 .idea
