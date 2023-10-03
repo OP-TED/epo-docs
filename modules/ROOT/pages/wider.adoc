@@ -12,6 +12,8 @@ link:{attachmentsdir}/work_group_meetings_reports/Q2_2023_WGM/eProcurementOntolo
 '''
 xref:ePO_13th_WGM_report.adoc[Report from the 13th Working Group General Meeting: 9 March 2023]
 
+link:{attachmentsdir}/work_group_meetings_reports/13th_WGM/eProcurement-Ontology_3.1.1.pptx[Q1 2023 WGM presentation]
+
 '''
 xref:ePO_12th_WGM_report.adoc[Report from the 12th Working Group General Meeting: 8 December 2022]
 
