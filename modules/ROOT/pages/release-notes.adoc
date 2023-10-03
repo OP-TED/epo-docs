@@ -1,4 +1,9 @@
-== *eProcurement Ontology v4.0.0-rc.2*
+:doctitle: eProcurement Ontology v4.0.0-rc.2
+:page-code: epo-v4.0.0-rc-prod-002
+:page-name: release-notes
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: July 2023
 
 The release candidate v4.0.0-rc.2 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.2[here].
 

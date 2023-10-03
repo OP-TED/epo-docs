@@ -1,4 +1,9 @@
-== *Ontology*
+:doctitle: Ontology
+:page-code: epo-v4.0.0-rc-prod-006
+:page-name: glossaries
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: July 2023
 
 === Glossaries
 *The Glossaries for the following entities can be downloaded via the following links:*

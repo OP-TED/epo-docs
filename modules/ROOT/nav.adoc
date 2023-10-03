@@ -1,5 +1,6 @@
 :doctitle: Navigation
 :doccode: epo-v4.0.0-rc.1prod-004
+:page-name: nav
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: August 2023
