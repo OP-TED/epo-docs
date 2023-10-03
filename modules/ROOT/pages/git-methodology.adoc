@@ -1,3 +1,9 @@
+:doctitle: Git Methodology
+:doccode: epo-main-prod-013
+:author: Unknown, adapted by NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: October 2023
+
 :imagesdir: images
 :downloaddir: download
 :xrefstyle: short
@@ -225,6 +231,7 @@ The experimental preview, which covers the pre-release guarantees, is complement
 * [[[git]]] Chacon, S., & Straub, B. (2014). Pro git (p. 456). Springer Nature. https://library.oapen.org/bitstream/handle/20.500.12657/28155/1001839.pdf
 
 * [[[github]]] Where the world builds software. GitHub. (n.d.). https://github.com/.
+
 
 
 

@@ -6,4 +6,4 @@ node_modules
 yarn.lock
 workspace.xml
 /modules/ROOT/pages/archive/
-.idea/
+.idea

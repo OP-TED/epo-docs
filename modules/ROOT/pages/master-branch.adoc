@@ -1,4 +1,0 @@
-== Html version of ePO model from master branch
-
-* link:{attachmentsdir}/html_reports/master/ePO/index.html[Conceptual model]
-* link:{attachmentsdir}/html_reports/master/eCatalogue/index.html[eCatalogue]

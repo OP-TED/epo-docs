@@ -1,8 +1,0 @@
-![](https://github.com/eprocurementontology/eprocurementontology.github.io/blob/master/images/EuropaUnlocked.PNG) 
-# Welcome to the ePO Wiki
-
-The ultimate objective of the e-procurement ontology (ePO) is to put forth a commonly agreed OWL ontology that will conceptualise, formally encode and make available in an open, structured and machine-readable format data about public procurement, covering it from end to end, i.e. from notification, through tendering to awarding, ordering, invoicing and payment. It is the intention of the e-procurement ontology to unify existing practices, thus facilitating seamless exchange, access and reuse of data.
-
-In the framework of this project, we will identify and give examples of each step of the process for creating the e-procurement ontology. Clearly specifying the roles of the different actors and the input required of them within the timeline of creating the ontology. The different phases needed to create the ontology and the intermediary processes within these phases will be clearly defined giving examples taken from the 3 use cases. In parallel to this process, a working group composed of stakeholders from multiple interested groups will be set up. This working group will decide by consensus on how the ontology should be developed at all stages and may decide to adopt the first draft of the specification proposed and described during the first meeting. This project will provide the working group with the process, methodology and technology to be followed for developing the final version of the e-procurement ontology.
-
-[**Release Notes v2.0.0**](https://eprocurementontology.github.io/release_notes.html#version-2-0-0-2018)
