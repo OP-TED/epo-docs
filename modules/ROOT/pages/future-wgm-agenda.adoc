@@ -1,6 +1,0 @@
-// delete this file
-== Future Working Group Meeting agenda
-
-=== 28th February 2023 - eOrdering meeting
-
-* Continue discussing Procedure/Sub-procedure from we stopped on 7-02-2023 WGM
