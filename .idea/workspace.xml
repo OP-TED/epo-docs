@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a99dfa7e-e506-4ea1-80b7-eb5045899cf5" name="Default Changelist" comment="excluded .idea">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a99dfa7e-e506-4ea1-80b7-eb5045899cf5" name="Default Changelist" comment="excluded .idea" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,6 +195,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/scripts" />
+      <path value="$PROJECT_DIR$/scripts/content" />
+    </ignored-roots>
     <MESSAGE value="resolved conflict" />
     <MESSAGE value="removed release overview link" />
     <MESSAGE value="updated .gitignore" />
