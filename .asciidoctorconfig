@@ -1,4 +1,2 @@
-:imagesdir: {.asciidoctorconfig}
-:icons: font
-
-
+:stylesdir: {asciidoctorconfigdir}/.asciidoctor
+:stylesheet: site.css
