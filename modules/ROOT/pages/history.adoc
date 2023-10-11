@@ -9,7 +9,7 @@ Several initiatives around eProcurement in the EU had been launched prior to 201
 
 The vocabularies and the semantics that they introduced, the phases of public procurement that they covered, and the technologies they used, differed greatly. These differences hampered data interoperability and reuse.
 
-The situation created a need for a common representation of the knowledge around eProcurement as it is practiced in the European Union. This meant that a common vocabulary, axioms, and rules were needed. 
+The situation created a need for a common representation of the knowledge around eProcurement as it is practiced in the European Union. This meant that a common vocabulary, and both common axioms and rules were needed. 
 
 In 2016 the Publications Office of the European Union (Publications Office or OP) initiated a project to manage and support the development of an electronic Procurement Ontology (ePO), funded by the link:https://ec.europa.eu/isa2/home_en/[ISA^2^ Programme]. The aim of the project was to develop an eProcurement Ontology based on the open-source link:https://www.w3.org/OWL/[OWL] (Web Ontology Language) standard, and make it available to EU member states.
 
