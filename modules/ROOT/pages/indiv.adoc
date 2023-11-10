@@ -34,6 +34,8 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2023]
 === 2023
 
+xref:notes/2023-11-07-wgm.adoc[2023-11-07 (eAccess)]
+
 xref:notes/2023-10-31-wgm.adoc[2023-10-31 (eAccess)]
 
 xref:notes/2023-10-24-wgm.adoc[2023-10-24 (eAccess)]
