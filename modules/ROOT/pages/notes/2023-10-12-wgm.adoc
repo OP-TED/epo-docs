@@ -1,0 +1,59 @@
+== Working Group meeting   +
+*Date*:12/10/2023    +
+*Participants:* Lamya Rafes, Pietro Palermo, Thomas Pettersson, Giovanni Paolo Sellito  +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Natalie Muric
+
+
+=== Agenda
+
+* eOrdering
+
+=== Discussion
+
+How to represent the different concepts and their usage.
+
+Andreea presented the first 50 terms where she has put the ePO class path and the ePO property path.  +
+Cbc:identifier has multiple usages, such as in contract or in catalogue. However, in ePO we need to add the adms:identifier property to each class.
+
+How to number the different business terms and groups was discussed. For example, for the Order data model we can have the following:
+
+BG-ORD-0  +
+BT-ORD-01
+
+It was suggested that the example above should implemented in the other phases. Whereby, if something is missing then the numbering jumps in the given phase.
+
+Usage note clarifies how the concept is to be used.
+
+Specification identification and Business type process type identifier are not part of ePO. It is not clear whether eOrdering will use it.  It has been kept so far to be aligned with eInvoicing.
+
+Sales order reference is needed maybe in the response so the seller can give its own identifier to the order.
+
+The predicate hasSellerOrderID is created between epo-ord:Order and adms:Identifer.  There is an argumentation that this should not be within the Order Group as it is added later by the Seller, but for ease it is left here for the time being:
+
+*epo-ord:hasSellerOrderID*  +
+Definition: The identifier of the Order given by the Seller.   +
+Additional Information: This identifier is different than the identifier of the Order given by the Buyer and it is useful for internal purposes.   +
+WG approval 12/10/2023
+
+The ontology needs to address the problem of Order issue date and order issue time the first being mandatory and the secondary being optional.  This is the same problem as in notices.
+
+The order itself does not have a currency, but the different monetary values associated to the order do have.  Therefore there is no mapping between the order and currency but rather through the individual monetary values.
+
+The Buyer contact is the Buyer Contact point in the ontology. More detailed information on the Buyer is used later, so here the dct:description will be applied.
+
+
+The ontology will provide the overall map of the concepts used. In the ordering it is not part of the ontology project to provide a model for the different transactions within the ordering phase.  The same can be applied to the other modules
+
+The next business term discussed was:
+
+*epo-ord:hasSellerOrderID*
+
+Definition:  +
+The identifier of the Order given by the Seller.
+
+Additional Information:  +
+This identifier is different than the identifier of the Order given by the Buyer and it is useful for internal purposes.
+
+WG approval 12/10/2023
+

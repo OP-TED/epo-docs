@@ -1,0 +1,68 @@
+== Working Group meeting   +
+*Date*:24/10/2023    +
+*Participants:* Paloma Arillo, Ansgar Mondorf, Laurent Schoonjans, Pascaline Laure Tchienehom    +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Andreea Pasăre
+
+
+=== Agenda
+
+* Discuss ESPD future OUC presentation
+* Present eAccess user stories and natural language statements
+
+=== Discussion
+
+==== ESPD OUC presentation
+
+Paloma presents the calendar of the future ESPD and ePO meetings.  +
+The General Yearly Turnover slides where then worked on for the ESPD-EDM OUC Meeting.  +
+It was noted that the question to ask during the presentation should be: Where is the Threshold per year checkbox in the mock-ups from the ESPD-EDM repository GitHub issue 44?  +
+Pascaline showed that in the ESPD-EDM technical handbook there is another mock-up which seems more up-to-date: https://docs.ted.europa.eu/ESPD-EDM/latest/xml_technical_handbook.html#_turnovers[https://docs.ted.europa.eu/ESPD-EDM/latest/xml_technical_handbook.html#_turnovers]
+
+
+==== eAccess user stories
+
+EG_misrepresentation is used to check if the Tenderer has been misrepresented, withheld information, unable to provide required documents and obtained confidential information of this procedure.
+
+
+All {ADDITIONAL_DESCRIPTION_LINE} tags need to be answered by the Tenderer.
+
+This should not be in the ePO model, but as part of the definition of the https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/criterion/misrepresent[misrepresentation] element code (exclusion ground) used.  +
+Below is a screenshot from the Belgian ESPD service:
+
+
+==== Natural language statements [NLS]
+
+Going through the NLS one by one:
+
+* As an open question: is this the contact point of the role or of the Organization?
+|===
+|The Buyer must have a contact point. |epo-acc:ESPDRequest / epo:Procedure / epo:Buyer / org:Organization / cpov:ContactPoint |?this epo-acc:concernsProcedure / epo:isResponsabilityOfBuyer / epo:playedBy / epo:hasPrimaryContactPoint ?value .
+
+|===
+This is an open question since in ePO we provide both ways.  +
+An email is sent by Lorent to Marc Christopher to ask this question. To be confirmed with GROW.
+
+* It is not mandatory for a Procurement Service Provider to be involved in an ESPD Request.
+|===
+|The Buyer specified in an ESPD Request may use a Service Provider to offer a platform that can be used by both the Buyer and Economic Operator. |epo-acc:ESPDRequest / epo:Procedure / epo:Buyer / epo:ProcurementServiceProvider |?this epo-acc:concernsProcedure / epo:isResponsabilityOfBuyer / epo:delegatesAncillaryActivitiesTo ?value .
+
+|===
+
+* Is there an use-case where an ESPD Request does not provide both Exclusion Grounds and Selection Criteria?
+In an ESPD Request only the Exclusion Grounds are mandatory, and generally specifies Selection Criteria.
+|===
+|An ESPD Request +++<s>+++should+++</s>+++  may specify a Selection Criterion. |epo-acc:ESPDRequest / epo:SelectionCriterion |?this epo-acc:specifiesProcurementCriterion ?value .
+
+|===
+
+* Can an Exclusion Ground have a REQUIREMENT tag?
+In general, no, but there might be one or two. (see tax-pay in EG_Contributions)
+
+
+=== Action points
+
+* Update Natural language statements with Requirements for Exclusion Grounds and complete US-EG-27 and then send a copy of the requirements spreadsheet.
+* Discuss about the Exclusion ground that are at the Lot Level in ePO, and the summary at the Procedure level.
+
+

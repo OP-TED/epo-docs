@@ -34,6 +34,18 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2023]
 === 2023
 
+xref:notes/2023-10-31-wgm.adoc[2023-10-31 (eAccess)]
+
+xref:notes/2023-10-24-wgm.adoc[2023-10-24 (eAccess)]
+
+xref:notes/2023-10-12-wgm.adoc[2023-10-12 (eOrdering)]
+
+xref:notes/2023-10-10-wgm.adoc[2023-10-10 (eAccess)]
+
+xref:notes/2023-10-05-wgm.adoc[2023-10-05 (eAccess)]
+
+xref:notes/2023-10-03-wgm.adoc[2023-10-03 (eAccess)]
+
 xref:notes/2023-09-26-wgm.adoc[2023-09-26 (eAccess)]
 
 xref:notes/2023-09-21-wgm.adoc[2023-09-21 (eCatalogue/eFulfilment)]
