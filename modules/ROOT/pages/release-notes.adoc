@@ -1,13 +1,84 @@
-:doctitle: eProcurement Ontology v4.0.0-rc.2
+:doctitle: eProcurement Ontology v4.0.0
 :page-code: epo-v4.0.0-rc-prod-002
 :page-name: release-notes
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: July 2023
 
+The release v4.0.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0[here].
+
+=== Release notes
+
+* Modeling Procedure in the context of a Mini-Competition:
+** Award in the context of a Framework Agreement
+** Award in the context of a Dynamic Purchasing System
+
+* Standard form mapping requirements:
+** Communication means
+** Procurement Criteria Summary
+** Notice relations harmonisation
+
+* eForm mapping requirements:
+** Ensure coverage of all BTs from the new eForm Annex
+** Implemented new eForm business terms
+** Revision of all monetary values
+
+* New module development: eFulfilment, eContract
+
+* Post-Award modules alignment (eCatalogue, eOrdering, eFulfilment):
+** Creation of information hubs to allow data to be provided either at document or line level if not a combination of the two
+** Modelling of different charges allowing for the different requirements across the different phases
+** Deliverable becomes a subclass of the Item
+** PostAward Objects become Documents
+
+* Changed rdfs:Literal data type to rdf:Plain Literal
+
+* RDF metadata updates
+
+|===
+|*Metadata*|*Value*
+
+|Reference ePO version|4.0.0
+|Target ePO version|4.0.0-rc.2
+|Authors|Andreea Pasăre
+|Date|2023-11-24
+|===
+
+== Change notes
+
+
+=== New classes
+
+**ePO core**
+
+* person:Person (renamed from cv:Person)
+* time:Duration
+
+=== Deleted classes
+
+**ePO core**
+
+* cv:Person (renamed to person:Person)
+
+=== Changed classes
+
+
+|===
+|*module*|*class*|*added property*|*deleted property*
+
+|*ePO core*|cpov:ContactPoint|lcon:address -> locn:Address|cv:address -> locn:Address
+||person:Person||person:placeOfBirth -> dct:Location
+||person:Person||person:placeOfDeath -> dct:Location
+||org:Organization|lcon:address -> locn:Address|cv:address -> locn:Address
+||epo:Duration|generalisation -> time:Duration|
+|===
+
+
+== *eProcurement Ontology v4.0.0-rc.2*
+
 The release candidate v4.0.0-rc.2 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.2[here].
 
-== Release notes
+=== Release notes
 
 
 |===
@@ -19,12 +90,12 @@ The release candidate v4.0.0-rc.2 and its corresponding technical files can be f
 |Date|2023-09-25
 |===
 
-= Change notes
+=== Change notes
 
 
-== New classes
+=== New classes
 
-=== ePO core
+**ePO core**
 
 * epo:ContextDescription (renamed from epo:ContextSpecificDescription)
 * epo:Certificate (moved from ePO Catalogue module)
@@ -32,35 +103,35 @@ The release candidate v4.0.0-rc.2 and its corresponding technical files can be f
 * epo:ChangeInformation (renamed from epo:NoticeChangeInformation)
 * epo:Certifier (moved form ePO Catalogue module)
 
-== Deleted classes
+=== Deleted classes
 
-=== ePO core
+**ePO core**
 
 * epo:ContextSpecificDescription (renamed to epo:ContextDescription)
 * epo:NoticeChangeInformation (renamed to epo:ChangeInformation)
 
-=== eCatalogue
+**eCatalogue**
 
 * epo:Certificate (moved to ePO Core module)
 * epo:CertificationLabel (moved to ePO Core module)
 * epo:Certifier (moved to ePO Core module)
 * epo-cat:CatalogueFragment
 
-== New Controlled Vocabularies
+=== New Controlled Vocabularies
 
-=== ePO core
+**ePO core**
 
 * at-voc-new:certification-label-type (moved from ePO Catalogue module)
 
-== Deleted Controlled Vocabularies
+=== Deleted Controlled Vocabularies
 
-=== eCatalogue
+**eCatalogue**
 
 * at-voc-new:certification-label-type (moved to ePO Core)
 * at-voc-new:vat-category
 
 
-== Changed classes
+=== Changed classes
 
 
 |===
@@ -109,12 +180,11 @@ The release candidate v4.0.0-rc.2 and its corresponding technical files can be f
 |===
 
 
-
 == *eProcurement Ontology v4.0.0-rc.1*
 
 The release candidate v4.0.0-rc.1 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1[here].
 
-== Release notes
+=== Release notes
 
 |===
 |*Metadata*|*Value*
@@ -125,35 +195,12 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 |Date|2023-07-19
 |===
 
-* Modeling Procedure in the context of a Mini-Competition:
-** Award in the context of a Framework Agreement
-** Award in the context of a Dynamic Purchasing System
 
-* Standard form mapping requirements:
-** Communication means
-** Procurement Criteria Summary
-** Notice relations harmonisation
+=== Change notes
 
-* eForm mapping requirements:
-** Ensure coverage of all BTs from the new eForm Annex
-** Implemented new eForm business terms
-** Revision of all monetary values
+=== New classes
 
-* New module development: eFulfilment, eContract
-
-* Post-Award modules alignment (eCatalogue, eOrdering, eFulfilment):
-** Creation of information hubs to allow data to be provided either at document or line level if not a combination of the two
-** Modelling of different charges allowing for the different requirements across the different phases
-** Deliverable becomes a subclass of the Item
-** PostAward Objects become Documents
-
-* Changed rdfs:Literal data type to rdf:Plain Literal
-
-== Change notes
-
-== New classes
-
-=== ePO core
+**ePO core**
 
 * epo:AdHocChannel
 * epo:AwardCriteriaSummary
@@ -187,7 +234,7 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo:VehicleInformation
 * adms:Identifier (renamed from epo:Identifier)
 
-=== eCatalogue
+**eCatalogue**
 
 * epo-cat:InformationHub
 * epo-cat:Line
@@ -195,7 +242,7 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo-cat:Certificate (renamed from epo-cat:ItemCertificate)
 * epo-cat:ItemProperty (renamed from epo-cat:ItemDescription)
 
-=== eOrdering
+**eOrdering**
 
 * epo-ord:DeliveryAgreement
 * epo-ord:AllowanceInformation (renamed from epo-ord:DiscountInformation)
@@ -204,13 +251,13 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo-ord:OrderResponseLine
 * epo-ord:OrderResponse
 
-=== eNotice
+**eNotice**
 
 * epo-not:PreMarketConsultationNotice
 
-== Deleted classes
+=== Deleted classes
 
-=== ePO core
+**ePO core**
 
 * epo:ContractModification
 * epo:ElementDescription
@@ -219,12 +266,14 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo:ElementConfidentialityDescription
 * epo:NoticeDescription
 * epo:PublicationProvision
+* owl:Thing
 
-=== eCatalogue
+**eCatalogue**
 
 * epo-cat:CatalogueDocument
 * epo-cat:CatalogueUpdateDocument
-=== eOrdering
+
+**eOrdering**
 
 * epo-ful:Carrier
 * epo-ful:Invoicer
@@ -232,13 +281,13 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo-ord:Invoicee
 * epo-ord:Ordering
 
-=== eNotice
+**eNotice**
 
 * epo-not:PMCNotice
 
-== New Controlled Vocabularies
+=== New Controlled Vocabularies
 
-=== ePO core
+**ePO core**
 
 * at-voc:EU-programme
 * at-voc:cvd-contract-type
@@ -246,26 +295,26 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * at-voc:review-body-type
 * at-voc:vehicle-category
 
-=== eCatalogue
+**eCatalogue**
 
 * at-voc-new:tax-category (renamed from at-voc-new:charge-category)
 * at-voc-new:tax-scheme (renamed from at-voc-new:charge-modifier)
 * at-voc-new:item-classification (renamed from at-voc-new:unspc)
 
-=== eOrdering
+**eOrdering**
 
 * at-voc-new:ResponseStatus
 
-== Deleted Controlled Vocabularies
+=== Deleted Controlled Vocabularies
 
-=== ePO core
+**ePO core**
 
 * at-voc-new:notification-phases-content-types
 * at-voc-new:legal-regime
 * at-voc-new:evaluation-group-type
 * at-voc:cpvsuppl
 
-== Changed classes
+=== Changed classes
 
 [cols="1,2,2,2"]
 |===
@@ -354,6 +403,15 @@ s|module|class|added attributes|deleted attributes
 ||foaf:Agent|dct:title|epo:hasTitle
 ||org:Organization|epo:hasInternetAddress|
 ||org:Organization|epo:hasOrganisationUnitName|epo:hasOrganisationUnit
+||adms:Identifier|skos:notation|epo:hasIdentifierValue
+||adms:Identifier||epo:hasSchemeAgencyId
+||adms:Identifier|adms:schemaAgency|epo:hasSchemeAgencyName
+||adms:Identifier||epo:hasSchemeDataURI
+||adms:Identifier||epo:hasSchemeID
+||adms:Identifier|epo:hasScheme|epo:hasSchemeName
+||adms:Identifier||epo:hasSchemeURI
+||adms:Identifier|epo:hasSchemeVersion|epo:hasSchemeVersionID
+||epo:Period||epo:hasDescription
 |eCatalogue|epo-cat:Batch|epo-cat:hasManufactureDate|
 ||epo-cat:Brand|dct:title|epo:hasName
 ||epo-cat:ItemModel|dct:title|epo:hasName
