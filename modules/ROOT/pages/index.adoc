@@ -5,6 +5,10 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: July 2023
 
+ifeval::[{epo_latest_version} == {page-component-version}]
+:page-aliases: 4.0.0@index.adoc
+endif::[]
+
 [.tile-container]
 --
 The eProcurement Ontology v4.0.0 was released on the 24 November 2023.

@@ -5,6 +5,10 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: July 2023
 
+ifeval::[{epo_latest_version} == {page-component-version}]
+:page-aliases: 4.0.0@glossaries.adoc
+endif::[]
+
 === Glossaries
 *The Glossaries for the following entities can be downloaded via the following links:*
 

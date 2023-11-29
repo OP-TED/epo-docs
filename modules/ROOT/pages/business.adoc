@@ -11,6 +11,10 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: July 2023
 
+ifeval::[{epo_latest_version} == {page-component-version}]
+:page-aliases: 4.0.0@business.adoc
+endif::[]
+
 == Abstract
 In 2016 the Publications Office of the European Union (Publications Office or OP) started a project funded by the ISA Programme to organise and support the development of a Public Procurement Ontology (ePO).
 
