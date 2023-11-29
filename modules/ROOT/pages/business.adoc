@@ -12,7 +12,7 @@
 :docdate: July 2023
 
 ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: 4.0.0@business.adoc
+:page-aliases: 4.0.0@business.adoc,4.0@business.adoc
 endif::[]
 
 == Abstract

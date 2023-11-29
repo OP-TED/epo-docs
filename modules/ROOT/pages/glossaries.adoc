@@ -6,7 +6,7 @@
 :docdate: July 2023
 
 ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: 4.0.0@glossaries.adoc
+:page-aliases: 4.0.0@glossaries.adoc,4.0@glossaries.adoc
 endif::[]
 
 === Glossaries
