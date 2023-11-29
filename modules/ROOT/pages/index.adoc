@@ -6,7 +6,7 @@
 :docdate: June 2023
 
 ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: {page-component-version}@{page-component-name}.adoc
+:page-aliases: 3.1.0@index.adoc,3.1@index.adoc
 endif::[]
 
 [.tile-container]
