@@ -347,6 +347,8 @@ There are diagrams used for a scoped view versus a wide view of the model. It is
 
 image:bus10.png[]
 
+As of version 4.0.0, the data type rdf:PlainLiteral is used instead of rdfs:Literal.
+
 *Figure 12 - Example of transitioning from old UML/UBL data types to new XSD data types:*
 image:bus11.png[]
 
