@@ -9,7 +9,7 @@
 * xref:EPO::release-notes.adoc[Release Notes]
 * xref:EPO::business.adoc[Business Overview]
 * xref:EPO::conceptual.adoc[Conceptual Models]
-* xref:EPO::glossaries.adoc[Glossaries]
+* xref:v3.1@EPO::glossaries.adoc[Glossaries]
 
 * [.separated]#**General Reference**#
 * xref:epo-home::references.adoc[Reference Documents]
