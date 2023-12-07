@@ -7,7 +7,7 @@
 
 ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 3.1.0@business.adoc,3.1@business.adoc
-::[]
+endif::[]
 
 //ifeval::[{epo_latest_version} == {page-component-version}]
 //:page-aliases: {page-component-version}@{page-component-name}.adoc
