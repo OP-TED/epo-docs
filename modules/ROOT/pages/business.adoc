@@ -22,7 +22,7 @@ The ultimate objective of the ontology is to put forth a commonly agreed OWL ont
 
 By mid-2017 a version 1.00 of the Ontology was delivered and submitted to the Working group for discussion. All the materials related to this version were made public and are accessible through the ISA^2^ Joinup platform; including the discussions held in the Working Group (WG).
 
-ePO v2.0.0, was initiated in January 2018 and subsequently, further versions have been released. More details on the evolution of the ePO can be found on the xref:epo-home@history.adoc[History and Planned Developments] page.
+ePO v2.0.0, was initiated in January 2018 and subsequently, further versions have been released. More details on the evolution of the ePO can be found on the xref:epo-home:history.adoc[History and Planned Developments] page.
 
 This document describes the objectives, the methodological approach and the deliverables produced in this new version.
 
