@@ -998,7 +998,7 @@ Description: A document used by a Contracting Party to define a procurement proj
 |link:../UBL-CallForTenders-2.1.xls[]
 
 |Document model (UML)
-|#link no longer valid#
+|link no longer valid
 
 |Summary report
 |http://docs.oasis-open.org/ubl/os-UBL-2.1/mod/summary/reports/UBL-CallForTenders-2.1.html[html report]
@@ -1020,7 +1020,8 @@ To make full use of the ESPD concept, the European Commission will establish a s
 
 With regard to technical requirements, the transmission will be done through e-Tendering solutions. As the service works in conjunction with e-Certis, business registers and e-Tendering solutions, great care will be taken to harmonise the semantic data model. Development will be linked to e-SENS, the standardisation initiatives of CEN, the ISA Core Business Vocabulary, and solution providers.
 
-In conclusion, the main objective of the ESPD is to reduce the administrative burden for buyers and suppliers participating in public procurement procedures. The ESPD service will reduce that burden by removing the need to produce a substantial number of certificates and documentation related to exclusion and selection criteria #during the initial submission phase?#.
+In conclusion, the main objective of the ESPD is to reduce the administrative burden for buyers and suppliers participating in public procurement procedures. The ESPD service will reduce that burden by removing the need to produce a substantial number of certificates and documentation related to exclusion and selection criteria.
+//#during the initial submission phase?#.
 
 .Figure 2: ESPD Data Model <<_16>>
 image::./espdatamodel.png[]
