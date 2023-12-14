@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f65399d-6c85-493f-958d-55e0a86263ed" name="Default Changelist" comment="updated nav xref links for 3.1.0 to include the version">
+    <list default="true" id="4f65399d-6c85-493f-958d-55e0a86263ed" name="Default Changelist" comment="updated links">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701951704071</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="updated links">
+      <created>1702466492724</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702466492724</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,6 +239,7 @@
     <MESSAGE value="added feedback partial" />
     <MESSAGE value="excluded .idea" />
     <MESSAGE value="updated nav xref links for 3.1.0 to include the version" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated nav xref links for 3.1.0 to include the version" />
+    <MESSAGE value="updated links" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated links" />
   </component>
 </project>
