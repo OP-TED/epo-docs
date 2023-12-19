@@ -1,9 +1,7 @@
 :doctitle: eProcurement Ontology Documentation
-:page-code: epo-v4.0.0-rc.1-prod-001
+:page-code: epo-v4.1.0-rc.1-prod-001
 :page-name: index
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: July 2023
+:docdate: December 2023
 
 ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 4.0.0@index.adoc,4.0@index.adoc
@@ -11,7 +9,7 @@ endif::[]
 
 [.tile-container]
 --
-The eProcurement Ontology v4.0.0 was released on the 24 November 2023.
+The eProcurement Ontology v4.1.0-rc.1 was released on the 19 December 2023.
 
 //[.tile]
 //.ePO v4.0.0-rc.1: Release Overview
@@ -24,10 +22,10 @@ The eProcurement Ontology v4.0.0 was released on the 24 November 2023.
 
 
 [.tile]
-.ePO v4.0.0 Release Notes
+.ePO v4.1.0-rc.1 Release Notes
 ****
 
-xref:release-notes.adoc[Click here to read the 4.0.0 Release Notes]
+xref:release-notes.adoc[Click here to read the 4.1.0-rc.1 Release Notes]
 
 ****
 --

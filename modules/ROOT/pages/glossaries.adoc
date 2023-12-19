@@ -1,9 +1,7 @@
 :doctitle: Ontology
-:page-code: epo-v4.0.0-rc-prod-006
+:page-code: epo-v4.1.0-rc.1-prod-006
 :page-name: glossaries
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: July 2023
+:docdate: December 2023
 
 ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 4.0.0@glossaries.adoc,4.0@glossaries.adoc
@@ -17,6 +15,7 @@ endif::[]
 * link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[The eOrdering Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eOrdering_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/eFulfilment_glossary.html[The eFulfilment Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eFulfilment_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/eContract_glossary.html[The eContract Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eContract_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eAccess_glossary.html[The eAccess Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eAccess_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[The eNotice Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/ePO_combined_glossary.html[The ePO combined Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO_combined_glossary.html[here]
 
