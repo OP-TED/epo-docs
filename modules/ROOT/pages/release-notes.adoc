@@ -4,7 +4,7 @@
 :docdate: December 2023
 
 ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: 4.0.0@release-notes.adoc,4.0@release-notes.adoc
+:page-aliases: 4.1.0@release-notes.adoc,4.1@release-notes.adoc
 endif::[]
 
 The release v4.1.0-rc.1 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.1.0-rc.1[here].
