@@ -1,4 +1,4 @@
-:doctitle: eProcurement Ontology v4.0.0
+:doctitle: eProcurement Ontology v4.1.0-rc.1
 :page-code: epo-v4.1.0-rc.1-prod-002
 :page-name: release-notes
 :docdate: December 2023
