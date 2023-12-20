@@ -27,7 +27,7 @@ The release v4.1.0-rc.1 and its corresponding technical files can be found link:
 |Reference ePO version|4.1.0-rc.1
 |Target ePO version|4.0.0
 |Authors|Andreea Pasăre
-|Date|2023-12-19
+|Date|2023-12-20
 |===
 
 === Change notes
