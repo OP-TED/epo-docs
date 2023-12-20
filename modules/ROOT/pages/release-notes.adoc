@@ -12,8 +12,102 @@ The release v4.1.0-rc.1 and its corresponding technical files can be found link:
 
 === Release notes
 
-* Modeling Procedure in the context of a Mini-Competition:
-* ....
+* eCatalogue - Catalogue Response development
+* eAccess module development
+* Minor updates for the following modules:
+** ePO core
+** eCatalogue
+** eFulfilment
+** eOrdering
+
+
+|===
+|*Metadata*|*Value*
+
+|Reference ePO version|4.1.0-rc.1
+|Target ePO version|4.0.0
+|Authors|Andreea Pasăre
+|Date|2023-12-19
+|===
+
+=== Change notes
+
+==== New classes
+
+*ePO core*
+
+* cccev:InformationRequirement
+* time:Duration
+
+*eCatalogue*
+
+* epo-cat:CatalogueResponseInformation
+* epo-cat:CatalogueResponseLine
+* epo-cat:CatalogueResponse
+
+*eFulfilment*
+
+* epo-ful:ReceiptAdviceLine
+* epo-ful:ReceiptAdvice
+
+==== Changed classes
+
+
+|===
+|*module*|*class*|*added attributes*|*deleted attributes*
+
+|*ePO Core*|epo:ProcurementCriterion|epo:hasAdditionalInformation|
+|===
+
+
+
+|===
+|*module*|*class*|*added property*|*deleted property*
+
+|*ePO Core*|cccev:InformationRequirement|cccev:hasConcept -> cccev:InformationConcept|
+||cccev:InformationRequirement|generalisation -> cccev:Requirement|
+||cccev:Requirement|cccev:hasConcept -> cccev:InformationConcept|
+||cccev:Requirement|cccev:isDerivedFrom -> eli:LegalResource|
+||epo:Duration|generalisation -> time:Duration|
+||epo:Procedure|epo:specifiesExclusionGround -> epo:ExclusionGround|
+||epo:ProcurementCriterion|epo-acc:containsRequirementGroup -> epo-acc:RequirementGroup|
+||epo:ProcurementCriterion|epo-acc:containsQuestionGroup -> epo-acc:QuestionGroup|
+||epo:QualificationCriterion|epo:includesNationalCriterion -> epo:QualificationCriterion|
+|*eCatalogue*|epo-cat:CatalogueLine|epo-cat:foreseesPackage -> epo-ful:Package|
+||epo-cat:Catalogue|epo:hasValidityPeriod -> epo:Period|
+||epo-cat:CatalogueResponseInformation|generalisation -> epo-cat:InformationHub|
+||epo-cat:CatalogueResponseInformation|epo-cat:isSpecificToCatalogueResponseLine -> epo-cat:CatalogueResponseLine|
+||epo-cat:CatalogueResponseInformation|epo-ord:hasAcceptanceStatus -> at-voc-new:ResponseStatus|
+||epo-cat:CatalogueResponseLine|epo:hasUUID -> adms:Identifier|
+||epo-cat:CatalogueResponseLine|epo-cat:refersToCatalogueLine -> epo-cat:CatalogueLine|
+||epo-cat:CatalogueResponse|epo-cat:specifiesCatalogueResponseInformation -> epo-cat:CatalogueResponseInformation|
+||epo-cat:CatalogueResponse|generalisation -> epo-cat:PostAwardDocument|
+||epo-cat:CatalogueResponse|epo-cat:comprisesCatalogueResponseLine -> epo-cat:CatalogueResponseLine|
+||epo-cat:CatalogueResponse|epo-cat:refersToCatalogue -> epo-cat:Catalogue|
+||epo-cat:CatalogueResponse|epo:specifiesCatalogueProvider -> epo:CatalogueProvider|
+||epo-cat:CatalogueResponse|epo:specifiesCatalogueReceiver -> epo:CatalogueReceiver|
+|*eFulfilment*|epo-ful:ReceiptAdviceLine|epo-ful:hasOversupplyQuantity -> epo:Quantity|
+||epo-ful:ReceiptAdviceLine|epo-ful:hasReceivedQuantity -> epo:Quantity|
+||epo-ful:ReceiptAdviceLine|epo-ful:hasShortQuantity -> epo:Quantity|
+||epo-ful:ReceiptAdviceLine|epo-ful:hasShortageAction -> at-voc-new:action-code|
+||epo-ful:ReceiptAdviceLine|generalisation -> epo-cat:Line|
+||epo-ful:ReceiptAdviceLine|epo-ful:hasRejectReason -> at-voc-new:reject-reason|
+||epo-ful:ReceiptAdviceLine|epo:hasRejectedQuantity -> epo:Quantity|
+||epo-ful:ReceiptAdviceLine|epo-ful:isSubmittedForDespatchLine -> epo-ful:DespatchLine|
+||epo-ful:ReceiptAdviceLine|epo-ful:RejectionAction -> at-voc-new:action-code|
+||epo-ful:ReceiptAdvice|epo-ful:specifiesBuyer -> epo:Buyer|
+||epo-ful:ReceiptAdvice|epo-ful:specifiesDespatcher -> epo-ful:Despatcher|
+||epo-ful:ReceiptAdvice|epo-ful:hasAssociatedDocument -> epo:Document|
+||epo-ful:ReceiptAdvice|generalisation -> epo-cat:PostAwardDocument|
+||epo-ful:ReceiptAdvice|epo-ful:specifiesSeller -> epo-ord:Seller|
+||epo-ful:ReceiptAdvice|epo-ful:isSubmittedForDespatchAdvice -> epo-ful:DespatchAdvice|
+||epo-ful:ReceiptAdvice|epo-ful:specifiesConsignee -> epo-ord:Consignee|
+||epo-ful:ReceiptAdvice|epo-ful:isSubmittedForShipment -> epo-ful:ShipmentInformation|
+||epo-ful:ReceiptAdvice|epo-ful:comprisesReceiptAdviceLine -> epo-ful:ReceiptAdviceLine|
+|*eOdering*|epo-ord:Order|epo-ord:hasSellerOrderID -> adms:Identifier|
+|===
+
+
 
 
 include::partial$feedback.adoc[]

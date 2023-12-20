@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>classes::epo:LotGroup</title>
+<title>classes::org:Organization</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("epo:LotGroup", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("org:Organization", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">12/10/2018 12:28:49 PM</td>
+			<td width="85%" class="ObjectDetailsValue">1/14/2020 12:03:10 PM</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">9/25/2023 6:06:37 PM</td>
+			<td class="ObjectDetailsValue">12/18/2023 3:53:27 PM</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">jseguraf</td>
+			<td class="ObjectDetailsValue">estaromi</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{2046EF02-69A1-4fa0-BF42-2A6E50CAF4E6}</td>
+			<td class="ObjectDetailsValue">{029FD14D-C413-41b1-81DD-DA4802D8A322}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1/EA11/EA178.html">award decision outcome relations</a>, <a href="../EA1/EA7/EA4/EA147.html">procedure term</a>, <a href="../EA1/EA3/EA84.html">procurement object hierarchy</a>, <a href="../EA1/EA8/EA161.html">procurement criterion</a>, <a href="../EA1/EA1/EA65.html">monetary value - competition</a>, <a href="../EA1/EA1/EA67.html">monetary value - award</a>, <a href="../EA1/EA48.html">main objects over time</a>, <a href="../EA1/EA2/EA75.html">competition</a>, <a href="../EA1/EA2/EA77.html">submission</a>, <a href="../EA1/EA2/EA79.html">award</a>, <a href="../EA1/EA8/EA159.html">procurement criteria summary</a>, competition notice relations, result notice relations, dap notice relations, modification notice relations, completion notice relations, <a href="../EA1/EA3/EA88.html">procedure and lot relations</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1/EA5/EA100.html">role relations</a>, <a href="../EA1/EA5/EA1/EA106.html">role playing on buyer side</a>, <a href="../EA1/EA5/EA1/EA108.html">role playing on the seller side</a>, <a href="../EA1/EA6/EA114.html">location</a>, <a href="../EA1/EA4/EA91.html">agent hierarchy</a>, <a href="../EA1/EA4/EA93.html">agent relations</a>, <a href="../EA1/EA2/EA75.html">competition</a>, item labels, <a href="../EA1/EA4/EA95.html">communication means</a>, access, <a href="../EA1/EA8/EA164.html">certification</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Combination of several Lots to conduct comparative assessment of the Tenders.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;The comparative assessment may refer to the Selection Criteria, Award and Value that apply to several Lots.&lt;br/&gt;&lt;br/&gt;Pending of discussion with eForms&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Member States may provide that, where more than one lot may be awarded to the same tenderer, contracting authorities may award contracts combining several or all lots where they have specified in the contract notice or in the invitation to confirm interest that they reserve the possibility of doing so and indicate the lots or groups of lots that may be combined.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">A collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organisations are often decomposable into hierarchical structures.&lt;br/&gt;&lt;br/&gt;(WG approval 23/11/2018).&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -102,6 +102,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -110,43 +111,43 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public rdf:PlainLiteral</i><br /><strong>&nbsp;&nbsp;dct:title</strong>
+					<i>Public rdf:PlainLiteral</i><br /><strong>&nbsp;&nbsp;epo:hasLegalName</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes570')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes570" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes651')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes651" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes570_00" style="display: none;">
+						<tr id="DetailsImageAttributes651_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes570_01" style="display: none;">
+						<tr id="DetailsImageAttributes651_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes570_02" style="display: none;">
+						<tr id="DetailsImageAttributes651_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes570_03" style="display: none;">
+						<tr id="DetailsImageAttributes651_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes570_04" style="display: none;">
+						<tr id="DetailsImageAttributes651_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td>Range:0 to *</td>
 						</tr>
-						<tr id="DetailsImageAttributes570_05" style="display: none;">
+						<tr id="DetailsImageAttributes651_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes570_06" style="display: none;">
+						<tr id="DetailsImageAttributes651_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes570_07" style="display: none;">
+							<tr id="DetailsImageAttributes651_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -159,7 +160,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A name given to the resource.&lt;br/&gt;&lt;br/&gt;WG approval 30/05/2023&lt;br/&gt;&lt;br/&gt;
+			The officially registered name of an organisation. &lt;br/&gt;&lt;br/&gt;WG Approval 10/01/2023&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -168,43 +169,43 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public rdf:PlainLiteral</i><br /><strong>&nbsp;&nbsp;dct:description</strong>
+					<i>Public rdf:PlainLiteral</i><br /><strong>&nbsp;&nbsp;epo:hasBuyerLegalTypeDescription</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes571')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes571" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes652')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes652" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes571_00" style="display: none;">
+						<tr id="DetailsImageAttributes652_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes571_01" style="display: none;">
+						<tr id="DetailsImageAttributes652_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes571_02" style="display: none;">
+						<tr id="DetailsImageAttributes652_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes571_03" style="display: none;">
+						<tr id="DetailsImageAttributes652_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes571_04" style="display: none;">
+						<tr id="DetailsImageAttributes652_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td>Range:0 to 1</td>
 						</tr>
-						<tr id="DetailsImageAttributes571_05" style="display: none;">
+						<tr id="DetailsImageAttributes652_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes571_06" style="display: none;">
+						<tr id="DetailsImageAttributes652_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes571_07" style="display: none;">
+							<tr id="DetailsImageAttributes652_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -217,7 +218,181 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			An account of the resource.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.&lt;br/&gt;&lt;br/&gt;WG Approval 30/05/2023&lt;br/&gt;&lt;br/&gt;
+			Self-explanatory text about the Buyer Legal Type.&lt;br/&gt;&lt;br/&gt;Additional information:&lt;br/&gt;This field is used when the Buyer Legal Type is not available in the controlled list at-voc:buyer-legal-type . This is necessary in to cover data provided in the TED Standard Forms. It shall be deprecated in the future. &lt;br/&gt;&lt;br/&gt;WG Approval 06/09/2022&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public rdf:PlainLiteral</i><br /><strong>&nbsp;&nbsp;epo:hasLegalFormType</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes653')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes653" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes653_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes653_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes653_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes653_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes653_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes653_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes653_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes653_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The classification of an Organisation according to legislation.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;Generally, this is defined for Tenderers who want to submit as an Organisation Group.&lt;br/&gt;Note that the codelist provided at national level should be used.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public rdf:PlainLiteral</i><br /><strong>&nbsp;&nbsp;epo:hasMainActivityDescription</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes654')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes654" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes654_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes654_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes654_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes654_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes654_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes654_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes654_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes654_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Self-explanatory text about the Main Activity .&lt;br/&gt;&lt;br/&gt;Additional information:&lt;br/&gt;This field is used when the Main Activity is not available in the controlled list at-voc:main-activity-type . This is necessary in to cover data provided in the TED Standard Forms. It shall be deprecated in the future. &lt;br/&gt;&lt;br/&gt;WG Approval 06/09/2022&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public xsd:anyURI</i><br /><strong>&nbsp;&nbsp;epo:hasInternetAddress</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes655')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes655" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes655_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes655_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes655_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes655_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes655_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes655_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes655_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes655_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The main web page used by the instance of the concept.&lt;br/&gt;&lt;br/&gt;WG Approval 01/06/2023&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -236,7 +411,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA377.html">adms:Identifier</a><br />
+						<a href="EA376.html">epo:Certificate</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -244,84 +419,15 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasInternalIdentifier<br />
+						<strong>Name:</strong> epo:hasCertification<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink572" onclick="parent.toggleDiv('detailsDIVLink572','DetailsImageLink572')" />Details:
-							<div id="detailsDIVLink572" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA359.html">epo:Lot</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:setsGroupingContextForLot<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink573" onclick="parent.toggleDiv('detailsDIVLink573','DetailsImageLink573')" />Details:
-							<div id="detailsDIVLink573" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA336.html">epo:ProcurementCriterion</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:specifiesProcurementCriterion<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink574" onclick="parent.toggleDiv('detailsDIVLink574','DetailsImageLink574')" />Details:
-							<div id="detailsDIVLink574" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA378.html">epo:MonetaryValue</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasEstimatedValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink575" onclick="parent.toggleDiv('detailsDIVLink575','DetailsImageLink575')" />Details:
-							<div id="detailsDIVLink575" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">A forecast of the value of the procurement before competition.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;Different cases of estimated values may refer to a lot, the global value of the procedure, or of a combinatorial value of a group of lots.&lt;br/&gt;The forecast is calculated by the buyer and covers all revenues&#160;&#160;whether coming from the buyer or third parties.&lt;br/&gt;See for example recital (19), Article 5 of Directive 2014/24/EU and other articles from the rest of Directives about procurement.&lt;br/&gt;&lt;br/&gt;In the case of framework agreements and dynamic purchasing systems this refers to the maximum estimated value.&lt;br/&gt;&lt;br/&gt;This property corresponds to BT-27 in eForms (for Lot and Procedure) and can be used for BT-157 (for LotGroup).&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;WG Approval 05/12/2019&lt;br/&gt;&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink656" onclick="parent.toggleDiv('detailsDIVLink656','DetailsImageLink656')" />Details:
+							<div id="detailsDIVLink656" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Relation to the proof of conformance.&lt;br/&gt;&lt;br/&gt;WG approval 30/05/2023&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -329,7 +435,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA378.html">epo:MonetaryValue</a><br />
+						<a href="EA363.html">locn:Address</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -337,14 +443,62 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasLaunchFrameworkAgreementMaximumValue<br />
+						<strong>Name:</strong> cv:registeredAddress<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink576" onclick="parent.toggleDiv('detailsDIVLink576','DetailsImageLink576')" />Details:
-							<div id="detailsDIVLink576" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink657" onclick="parent.toggleDiv('detailsDIVLink657','DetailsImageLink657')" />Details:
+							<div id="detailsDIVLink657" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The registered address relationship links a Resource with the legally registered Address.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;It is the address to which formal communications can be sent, such as the postal address.&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA364.html">org:Organization</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> org:subOrganizationOf<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink658" onclick="parent.toggleDiv('detailsDIVLink658','DetailsImageLink658')" />Details:
+							<div id="detailsDIVLink658" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization.&lt;br/&gt;&lt;br/&gt;WG 31/08/2023&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA310.html">adms:Identifier</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:hasLegalIdentifier<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink659" onclick="parent.toggleDiv('detailsDIVLink659','DetailsImageLink659')" />Details:
+							<div id="detailsDIVLink659" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -352,7 +506,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA377.html">adms:Identifier</a><br />
+						<a href="EA311.html">cpov:ContactPoint</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -360,15 +514,61 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> adms:identifier<br />
+						<strong>Name:</strong> epo:hasPrimaryContactPoint<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink577" onclick="parent.toggleDiv('detailsDIVLink577','DetailsImageLink577')" />Details:
-							<div id="detailsDIVLink577" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">A unique identifier of the instance of the concept.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;For example, in the case of the Procurement Identifier, this could be the European Public Procurement Identifier, and/or any other identifier provided by the buyer, the service provider or any other stakeholder.&lt;br/&gt;&lt;br/&gt;WG Approval 12/11/2019&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink660" onclick="parent.toggleDiv('detailsDIVLink660','DetailsImageLink660')" />Details:
+							<div id="detailsDIVLink660" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA310.html">adms:Identifier</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:hasTaxIdentifier<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink661" onclick="parent.toggleDiv('detailsDIVLink661','DetailsImageLink661')" />Details:
+							<div id="detailsDIVLink661" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA363.html">locn:Address</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> locn:address<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink662" onclick="parent.toggleDiv('detailsDIVLink662','DetailsImageLink662')" />Details:
+							<div id="detailsDIVLink662" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Associates any Resource with the corresponding Address.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;Asserting the address relationship implies that the Resource has an Address.&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -386,7 +586,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA368.html">epo:Tender</a><br />
+						<a href="EA340.html">epo:OrganisationGroup</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -394,14 +594,14 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isSubjectToGrouping<br />
+						<strong>Name:</strong> epo:leadBy<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink578" onclick="parent.toggleDiv('detailsDIVLink578','DetailsImageLink578')" />Details:
-							<div id="detailsDIVLink578" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink663" onclick="parent.toggleDiv('detailsDIVLink663','DetailsImageLink663')" />Details:
+							<div id="detailsDIVLink663" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -409,7 +609,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						epo-not:ResultNotice<br />
+						<a href="EA364.html">org:Organization</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -417,153 +617,15 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:refersToLotGroup<br />
+						<strong>Name:</strong> org:subOrganizationOf<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink579" onclick="parent.toggleDiv('detailsDIVLink579','DetailsImageLink579')" />Details:
-							<div id="detailsDIVLink579" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA255.html">epo:LotGroupAwardInformation</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:describesLotGroup<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink580" onclick="parent.toggleDiv('detailsDIVLink580','DetailsImageLink580')" />Details:
-							<div id="detailsDIVLink580" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						epo-not:DirectAwardPrenotificationNotice<br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:announcesLotGroup<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink581" onclick="parent.toggleDiv('detailsDIVLink581','DetailsImageLink581')" />Details:
-							<div id="detailsDIVLink581" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA369.html">epo:TenderGroup</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isSubmittedForLotGroup<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink582" onclick="parent.toggleDiv('detailsDIVLink582','DetailsImageLink582')" />Details:
-							<div id="detailsDIVLink582" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						epo-not:CompletionNotice<br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:refersToLotGroup<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink583" onclick="parent.toggleDiv('detailsDIVLink583','DetailsImageLink583')" />Details:
-							<div id="detailsDIVLink583" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						epo-not:CompetitionNotice<br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:announcesLotGroup<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink584" onclick="parent.toggleDiv('detailsDIVLink584','DetailsImageLink584')" />Details:
-							<div id="detailsDIVLink584" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA335.html">epo:ProcedureTerm</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:definesLotGroup<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink585" onclick="parent.toggleDiv('detailsDIVLink585','DetailsImageLink585')" />Details:
-							<div id="detailsDIVLink585" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Relation indicating a ProcedureTerm has a LotGroup.&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink664" onclick="parent.toggleDiv('detailsDIVLink664','DetailsImageLink664')" />Details:
+							<div id="detailsDIVLink664" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization.&lt;br/&gt;&lt;br/&gt;WG 31/08/2023&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -571,7 +633,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						epo-not:ContractModificationNotice<br />
+						<a href="EA340.html">epo:OrganisationGroup</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -579,14 +641,14 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:refersToLotGroup<br />
+						<strong>Name:</strong> epo:hasMember<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink586" onclick="parent.toggleDiv('detailsDIVLink586','DetailsImageLink586')" />Details:
-							<div id="detailsDIVLink586" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink665" onclick="parent.toggleDiv('detailsDIVLink665','DetailsImageLink665')" />Details:
+							<div id="detailsDIVLink665" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -608,7 +670,84 @@ function nameClassifier(name, separator)
 
 
 			</table>
-		</div>	</div>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA402.html">at-voc:country</a></td>
+					<td width="10%" class="TableRow" valign="top">Enumeration</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA362.html">foaf:Agent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA315.html">epo:Business</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA398.html">at-voc:buyer-legal-type</a></td>
+					<td width="10%" class="TableRow" valign="top">Enumeration</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">A category that indicates the right of an Organisation to play the role of a buyer.
+
+Additional Information:
+The category also effects the rules that the buyer has to abide to within the public procurement procedure.
+WG 07/09/2021
+
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA340.html">epo:OrganisationGroup</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA413.html">at-voc:main-activity</a></td>
+					<td width="10%" class="TableRow" valign="top">Enumeration</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">The principal sectoral area in which an organisation operates.
+
+Additional information:
+
+The activities associated with buyers are derived from the top level of the Classification of the functions of the government (COFOG) from the United Nations Statistics Division.
+
+The activities associated with buyer are derived from sectors explicitly falling within the sectoral directive (2014/25/EU Art. 8 - Art. 14).
+
+WG Approval 05/05/2020
+
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA312.html">cpov:PublicOrganisation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
 <div class="pageFooter"></div>
  
 </body>

@@ -84,7 +84,36 @@
                   </tr>
                   <tr>
                      <td>cccev:InformationConcept</td>
-                     <td>Piece of information that the Evidence provides or the Requirement needs.</td>
+                     <td>Piece of information that the Evidence provides or the Requirement needs.
+                        
+                        Additional Information:
+                        
+                        The Information Concept class offers the ability to describe conceptually the Requirements
+                        and provided facts in Evidences. In complementarity with the Supported Value class,
+                        this is a (first) step towards facilitating the assessment of the requirements in
+                        an automated way based on the Evidence provided.</td>
+                  </tr>
+                  <tr>
+                     <td>cccev:InformationRequirement</td>
+                     <td>Requested data that is to be proven by Evidence.
+                        
+                        Additional Information:
+                        
+                        Information Requirements are the most neutral kind of Requirements. They aim to request
+                        information in any form, e.g. a person's date of birth or a company's turnover. They
+                        represent requests for data that prove one or more facts of the real world in a formal
+                        manner, or that leads to the source of such a proof. They can be understood as 'requests
+                        for Evidences'. The response to an Information Requirement is an Evidence when the
+                        issuer of the response is an authoritative source (e.g. a Civil Registry providing
+                        data about a natural person for the provision of public service through the Single
+                        Digital Gateway). In other cases, the responses might not be issued by an authoritative
+                        source, but the issuer supports the responses with Evidences (or commits to support
+                        them timely, e.g. a self-declaration or a declaration of oath). The Information Requirement
+                        can require structured data or documents of any form. For structured data, the Requirement
+                        can use 'Concepts' to specify the structure and type of the data expected in the response.
+                        For both structured and unstructured data, the Information Requirement can indicate
+                        the expected Type of Evidence, its format, source, and other properties related to
+                        the Evidence.</td>
                   </tr>
                   <tr>
                      <td>cccev:Requirement</td>
@@ -232,10 +261,11 @@
                      <td>epo:Awarder</td>
                      <td>A Role of an Agent that signs the Award Decision.
                         
-                        Additional Information:
+                        Additional information:
                         BT-08 can be Awarding CBP; BG-03 is the Buyer. But Awarding CPB is not the same as
                         the Buyer; the organisations may differ for these roles. Having the Awarder Role allows
-                        us to specify which Organisation is involved in the Award Decision.</td>
+                        us to specify which Organisation is involved in the Award Decision.
+                        </td>
                   </tr>
                   <tr>
                      <td>epo:AwardEvaluationTerm</td>
@@ -1731,7 +1761,7 @@
                      <td>rdf:PlainLiteral [0..*]</td>
                   </tr>
                   <tr>
-                     <td>epo:ChangeInformation<br>epo:Notice<br>epo:ProcurementObject<br></td>
+                     <td>epo:ChangeInformation<br>epo:Notice<br>epo:ProcurementCriterion<br>epo:ProcurementObject<br></td>
                      <td>epo:hasAdditionalInformation</td>
                      <td>Supplementary data about the instance of the concept.
                         
@@ -1740,8 +1770,10 @@
                         
                         WG Approval 15/10/2019 Supplementary data about the instance of the concept.
                         
+                        WG Approval 15/10/2019 Supplementary data about the instance of the concept.
+                        
                         WG Approval 15/10/2019</td>
-                     <td>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br></td>
+                     <td>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:AccessTerm</td>
@@ -3900,7 +3932,7 @@
                <tbody>
                   <tr>
                      <td>adms:identifier</td>
-                     <td>Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. A unique identifier of the instance of the concept.
+                     <td>Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class.  A unique identifier of the instance of the concept.
                         
                         Additional Information
                         
@@ -3908,17 +3940,7 @@
                         Public Procurement Identifier, and/or any other identifier provided by the buyer,
                         the service provider or any other stakeholder.
                         
-                        WG Approval 12/11/2019
-                        
-                         Links a resource to an adms:Identifier class. A unique identifier of the instance of the concept.
-                        
-                        Additional Information
-                        
-                        For example, in the case of the Procurement Identifier, this could be the European
-                        Public Procurement Identifier, and/or any other identifier provided by the buyer,
-                        the service provider or any other stakeholder.
-                        
-                        WG Approval 12/11/2019 A unique identifier of the instance of the concept.
+                        WG Approval 12/11/2019  A unique identifier of the instance of the concept.
                         
                         Additional Information
                         
@@ -3936,8 +3958,18 @@
                         the service provider or any other stakeholder.
                         
                         WG Approval 12/11/2019
-                         Links a resource to an adms:Identifier class.    Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class.</td>
-                     <td>cccev:InformationConcept -&gt; adms:Identifier [0..1]<br>cccev:Requirement -&gt; adms:Identifier [0..1]<br>dct:Location -&gt; adms:Identifier [0..1]<br>epo:Document -&gt; adms:Identifier [0..*]<br>epo:Fund -&gt; adms:Identifier [0..1]<br>epo:Project -&gt; adms:Identifier [0..1]<br>foaf:Agent -&gt; adms:Identifier [0..*]<br>epo:LotGroup -&gt; adms:Identifier [0..1]<br>epo:ProcurementElement -&gt; adms:Identifier [1]<br>epo:TenderGroup -&gt; adms:Identifier [0..1]<br><br><br><br><br><br><br><br></td>
+                          Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. A unique identifier of the instance of the concept.
+                        
+                        Additional Information
+                        
+                        For example, in the case of the Procurement Identifier, this could be the European
+                        Public Procurement Identifier, and/or any other identifier provided by the buyer,
+                        the service provider or any other stakeholder.
+                        
+                        WG Approval 12/11/2019
+                        
+                         Links a resource to an adms:Identifier class.</td>
+                     <td><br>foaf:Agent -&gt; adms:Identifier [0..*]<br>epo:Document -&gt; adms:Identifier [0..*]<br>dct:Location -&gt; adms:Identifier [0..1]<br>cccev:Requirement -&gt; adms:Identifier [0..1]<br><br>epo:LotGroup -&gt; adms:Identifier [0..1]<br><br>epo:TenderGroup -&gt; adms:Identifier [0..1]<br>epo:ProcurementElement -&gt; adms:Identifier [1]<br><br><br><br>cccev:InformationConcept -&gt; adms:Identifier [0..1]<br><br>epo:Project -&gt; adms:Identifier [0..1]<br>epo:Fund -&gt; adms:Identifier [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>cccev:confidentialityLevelType</td>
@@ -3962,6 +3994,11 @@
                         the age of a person and the Constraint would be the required age in the context of
                         a specific evaluation.</td>
                      <td>cccev:Constraint -&gt; cccev:InformationConcept [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cccev:hasConcept</td>
+                     <td></td>
+                     <td>cccev:Requirement -&gt; cccev:InformationConcept [0..*]</td>
                   </tr>
                   <tr>
                      <td>cccev:hasRequirement</td>
@@ -4468,8 +4505,8 @@
                   </tr>
                   <tr>
                      <td>epo:hasConstraint</td>
-                     <td></td>
-                     <td>epo:ProcurementCriterion -&gt; cccev:Constraint [0..*]</td>
+                     <td> </td>
+                     <td>cccev:InformationRequirement -&gt; cccev:Constraint [0..*]<br>epo:ProcurementCriterion -&gt; cccev:Constraint [0..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:hasContactPointInRole</td>
@@ -5220,8 +5257,11 @@
                      <td>epo:hasUUID</td>
                      <td>A universally unique identifier for an instance of this document.
                         
+                        WG Approval 12/05/2020
+                         A universally unique identifier for an instance of this document.
+                        
                         WG Approval 12/05/2020</td>
-                     <td>epo:Document -&gt; adms:Identifier [0..1]</td>
+                     <td><br>epo:Document -&gt; adms:Identifier [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:hasValidityPeriod</td>
@@ -5229,9 +5269,11 @@
                         
                         WG approval 30/05/2023 The relation indicating until when a given instance of a concept is applicable.
                         
+                        WG approval 30/05/2023 The relation indicating until when a given instance of a concept is applicable.
+                        
                         WG approval 30/05/2023
                         </td>
-                     <td>cccev:Evidence -&gt; epo:Period [0..1]<br>epo:Technique -&gt; epo:Period [0..1]<br></td>
+                     <td>cccev:Evidence -&gt; epo:Period [0..1]<br><br>epo:Technique -&gt; epo:Period [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:hasVariantPermission</td>
@@ -5267,6 +5309,21 @@
                         
                         </td>
                      <td>epo:StrategicProcurement -&gt; at-voc:accessibility [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>epo:includesNationalCriterion</td>
+                     <td>Relation indicating that a Criterion contains a Criterion that is specific to a given
+                        Member State.
+                        
+                        Additional Information:
+                        In the ESPD, a Subcriterion is used to define national sub-criteria; maps to a UBL-2.3
+                        cac:SubTenderingCriterion class. It is currently used only for purely national criteria,
+                        to be able to establish the mapping from eCertis.
+                        
+                        WG approval 07/11/2023
+                        
+                        </td>
+                     <td>epo:QualificationCriterion -&gt; epo:QualificationCriterion [0..*]</td>
                   </tr>
                   <tr>
                      <td>epo:includesTender</td>
@@ -5522,7 +5579,7 @@
                   <tr>
                      <td>epo:relatesToEFormSectionIdentifier</td>
                      <td>  </td>
-                     <td>epo:ChangeInformation -&gt; adms:Identifier [1..*]<br>epo:NonPublishedInformation -&gt; adms:Identifier [1..*]<br><br></td>
+                     <td>epo:NonPublishedInformation -&gt; adms:Identifier [1..*]<br><br>epo:ChangeInformation -&gt; adms:Identifier [1..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:requestsRemedyType</td>
@@ -5579,6 +5636,11 @@
                      <td>epo:specifiesCleanVehicleDirectiveVehicleCategory</td>
                      <td></td>
                      <td>epo:VehicleInformation -&gt; at-voc:vehicle-category [0..1]</td>
+                  </tr>
+                  <tr>
+                     <td>epo:specifiesExclusionGround</td>
+                     <td></td>
+                     <td>epo:Procedure -&gt; epo:ExclusionGround [0..*]</td>
                   </tr>
                   <tr>
                      <td>epo:specifiesProcurementCriteriaSummary</td>

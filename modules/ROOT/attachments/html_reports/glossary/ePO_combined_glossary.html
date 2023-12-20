@@ -84,7 +84,36 @@
                   </tr>
                   <tr>
                      <td>cccev:InformationConcept</td>
-                     <td>Piece of information that the Evidence provides or the Requirement needs.</td>
+                     <td>Piece of information that the Evidence provides or the Requirement needs.
+                        
+                        Additional Information:
+                        
+                        The Information Concept class offers the ability to describe conceptually the Requirements
+                        and provided facts in Evidences. In complementarity with the Supported Value class,
+                        this is a (first) step towards facilitating the assessment of the requirements in
+                        an automated way based on the Evidence provided.</td>
+                  </tr>
+                  <tr>
+                     <td>cccev:InformationRequirement</td>
+                     <td>Requested data that is to be proven by Evidence.
+                        
+                        Additional Information:
+                        
+                        Information Requirements are the most neutral kind of Requirements. They aim to request
+                        information in any form, e.g. a person's date of birth or a company's turnover. They
+                        represent requests for data that prove one or more facts of the real world in a formal
+                        manner, or that leads to the source of such a proof. They can be understood as 'requests
+                        for Evidences'. The response to an Information Requirement is an Evidence when the
+                        issuer of the response is an authoritative source (e.g. a Civil Registry providing
+                        data about a natural person for the provision of public service through the Single
+                        Digital Gateway). In other cases, the responses might not be issued by an authoritative
+                        source, but the issuer supports the responses with Evidences (or commits to support
+                        them timely, e.g. a self-declaration or a declaration of oath). The Information Requirement
+                        can require structured data or documents of any form. For structured data, the Requirement
+                        can use 'Concepts' to specify the structure and type of the data expected in the response.
+                        For both structured and unstructured data, the Information Requirement can indicate
+                        the expected Type of Evidence, its format, source, and other properties related to
+                        the Evidence.</td>
                   </tr>
                   <tr>
                      <td>cccev:Requirement</td>
@@ -156,6 +185,50 @@
                   <tr>
                      <td>dct:Location</td>
                      <td>An identifiable geographic place or named place.
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>eli:LegalExpression</td>
+                     <td>The intellectual realisation of a legal resource in the form of a "sequence of signs"
+                        (typically alpha-numeric characters in a legal context).
+                        For example, any version of the legal resource whose content is specified and different
+                        from others for any reason: language, versions, etc.;
+                        
+                        Note that ELI ontology accommodates different point of view on what should be considered
+                        a new legal resource, or a new legal expression of the same resource. Typically, a
+                        consolidated version can be viewed, in the context of ELI, either as separate legal
+                        resource (linked to original version and previous consolidated version using corresponding
+                        ELI relations), or as a different legal expression of the same legal resource.
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>eli:LegalResource</td>
+                     <td>A work in a legislative corpus. This applies to acts that have been legally enacted
+                        (whether or not they are still in force).
+                        For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (adapted
+                        from Akoma Ntoso)
+                        
+                        A legal resource can represent a legal act or any component of a legal act, like an
+                        article.  Legal resources can be linked together using properties defined in the model.
+                        
+                        Note that ELI ontology accommodates different point of view on what should be considered
+                        a new legal resource, or a new legal expression of the same resource. Typically, a
+                        consolidated version can be viewed, in the context of ELI, either as separate legal
+                        resource (linked to original version and previous consolidated version using corresponding
+                        ELI relations), or as a different legal expression of the same legal resource.
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>eli:LegalResourceSubdivision</td>
+                     <td>A component of a legal act, at an arbitrary level of precision, like a chapter, an
+                        article, an alinea, a paragraph or an list item.</td>
+                  </tr>
+                  <tr>
+                     <td>eli:Work</td>
+                     <td>Any distinct intellectual creation (i.e., the intellectual content), in the context
+                        of ELI.
+                        
+                        The substance of Work is ideas.
                         </td>
                   </tr>
                   <tr>
@@ -232,10 +305,11 @@
                      <td>epo:Awarder</td>
                      <td>A Role of an Agent that signs the Award Decision.
                         
-                        Additional Information:
+                        Additional information:
                         BT-08 can be Awarding CBP; BG-03 is the Buyer. But Awarding CPB is not the same as
                         the Buyer; the organisations may differ for these roles. Having the Awarder Role allows
-                        us to specify which Organisation is involved in the Award Decision.</td>
+                        us to specify which Organisation is involved in the Award Decision.
+                        </td>
                   </tr>
                   <tr>
                      <td>epo:AwardEvaluationTerm</td>
@@ -1319,6 +1393,38 @@
                         WG approval 05/08/2021 (revised 26/10/2021)</td>
                   </tr>
                   <tr>
+                     <td>epo-acc:ESPDRequest</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:Question</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:QuestionGroup</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:QuestionSubgroup</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:Requirement</td>
+                     <td>Data that a Buyer requests from a Tenderer.
+                        
+                        Additional information:
+                        
+                        The Requirement often has a Constraint.
+                        
+                        WG approval 12/12/2023</td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:RequirementGroup</td>
+                     <td>A concept that contains one or more related Requirements or Requirement Subgroup.
+                        
+                        WG approval 12/12/2023</td>
+                  </tr>
+                  <tr>
                      <td>epo-cat:Batch</td>
                      <td>A production Lot in which the Item instances were produced. 
                         
@@ -1363,6 +1469,18 @@
                         
                         
                         </td>
+                  </tr>
+                  <tr>
+                     <td>epo-cat:CatalogueResponse</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>epo-cat:CatalogueResponseInformation</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>epo-cat:CatalogueResponseLine</td>
+                     <td></td>
                   </tr>
                   <tr>
                      <td>epo-cat:ChargeInformation</td>
@@ -1600,6 +1718,14 @@
                   </tr>
                   <tr>
                      <td>epo-ful:Package</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>epo-ful:ReceiptAdvice</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>epo-ful:ReceiptAdviceLine</td>
                      <td></td>
                   </tr>
                   <tr>
@@ -2401,7 +2527,7 @@
                      <td>rdf:PlainLiteral [0..*]</td>
                   </tr>
                   <tr>
-                     <td>epo-ord:DeliveryAgreement<br>epo-ord:TaxInformation<br>cccev:InformationConcept<br>cccev:Requirement<br>cpov:ContactPoint<br>cv:Channel<br>epo:AgentInRole<br>epo:Document<br>epo:ElectronicSignature<br>epo:Fund<br>epo:NonDisclosureAgreementTerm<br>epo:SecurityClearanceTerm<br>epo:SubcontractingEstimate<br>epo:SubcontractTerm<br>epo:System<br>epo:Technique<br>epo:LotGroup<br>epo:ProcurementElement<br>epo:TenderGroup<br>epo-cat:Line<br>epo-cat:Item<br>epo-ful:TemperatureSpecification<br>epo-ful:TransportEquipment<br>epo-ful:ShipmentInformation<br></td>
+                     <td>eli:LegalExpression<br>eli:LegalResource<br>epo-ful:TemperatureSpecification<br>epo-ful:TransportEquipment<br>epo-ful:ShipmentInformation<br>epo-ord:DeliveryAgreement<br>epo-ord:TaxInformation<br>epo-cat:Line<br>epo-cat:Item<br>cccev:InformationConcept<br>cccev:Requirement<br>cpov:ContactPoint<br>cv:Channel<br>epo:AgentInRole<br>epo:Document<br>epo:ElectronicSignature<br>epo:Fund<br>epo:NonDisclosureAgreementTerm<br>epo:SecurityClearanceTerm<br>epo:SubcontractingEstimate<br>epo:SubcontractTerm<br>epo:System<br>epo:Technique<br>epo:LotGroup<br>epo:ProcurementElement<br>epo:TenderGroup<br></td>
                      <td>dct:description</td>
                      <td>An account of the resource.
                         
@@ -2409,6 +2535,106 @@
                         Description may include but is not limited to: an abstract, a table of contents, a
                         graphical representation, or a free-text account of the resource.
                         
+                        WG Approval 30/05/2023
+                         An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023
+                         An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023
+                         An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023
+                         An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
+                        WG Approval 30/05/2023 An account of the resource.
+                        
+                        Additional Information:
+                        Description may include but is not limited to: an abstract, a table of contents, a
+                        graphical representation, or a free-text account of the resource.
+                        
                         WG Approval 30/05/2023 An account of the resource.
                         
                         Additional Information:
@@ -2465,95 +2691,17 @@
                         Description may include but is not limited to: an abstract, a table of contents, a
                         graphical representation, or a free-text account of the resource.
                         
-                        WG Approval 30/05/2023 An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
                         WG Approval 30/05/2023
-                         An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023 An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023 An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023 An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023 An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023 An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023
-                         An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023 An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023
-                         An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023 An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023 An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023 An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023 An account of the resource.
-                        
-                        Additional Information:
-                        Description may include but is not limited to: an abstract, a table of contents, a
-                        graphical representation, or a free-text account of the resource.
-                        
-                        WG Approval 30/05/2023</td>
-                     <td>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [1..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br></td>
+                        </td>
+                     <td>rdfs:Literal [0..*]<br>rdfs:Literal [1..1]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [1..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br></td>
+                  </tr>
+                  <tr>
+                     <td>eli:LegalExpression<br>eli:LegalResource<br></td>
+                     <td>dct:identifier</td>
+                     <td>An unambiguous reference to the resource within a given context.
+                         An unambiguous reference to the resource within a given context.
+                        </td>
+                     <td>xsd:anyURI [0..*]<br>xsd:anyURI [0..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:Document</td>
@@ -2572,9 +2720,16 @@
                      <td>xsd:dateTime [0..1]</td>
                   </tr>
                   <tr>
-                     <td>epo:AgentInRole<br>epo:Document<br>epo:Fund<br>foaf:Agent<br>epo:LotGroup<br>epo:ProcurementElement<br>epo:TenderGroup<br>epo-cat:Brand<br>epo-cat:ItemModel<br>epo-cat:Item<br></td>
+                     <td>eli:LegalExpression<br>epo-cat:Brand<br>epo-cat:ItemModel<br>epo-cat:Item<br>epo:AgentInRole<br>epo:Document<br>epo:Fund<br>foaf:Agent<br>epo:LotGroup<br>epo:ProcurementElement<br>epo:TenderGroup<br></td>
                      <td>dct:title</td>
-                     <td>A name given to the resource.
+                     <td>A name given to the resource. A name given to the resource.
+                        
+                        WG approval 30/05/2023
+                         A name given to the resource.
+                        
+                        WG approval 30/05/2023 A name given to the resource.
+                        
+                        WG approval 30/05/2023 A name given to the resource.
                         
                         WG approval 30/05/2023
                          A name given to the resource.
@@ -2594,15 +2749,18 @@
                         WG approval 30/05/2023 A name given to the resource.
                         
                         WG approval 30/05/2023
-                         A name given to the resource.
-                        
-                        WG approval 30/05/2023
-                         A name given to the resource.
-                        
-                        WG approval 30/05/2023 A name given to the resource.
-                        
-                        WG approval 30/05/2023</td>
-                     <td>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [1..1]<br>rdf:PlainLiteral [1..1]<br>rdf:PlainLiteral [1..1]<br></td>
+                        </td>
+                     <td>rdfs:Literal [1..*]<br>rdf:PlainLiteral [1..1]<br>rdf:PlainLiteral [1..1]<br>rdf:PlainLiteral [1..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br>rdf:PlainLiteral [0..*]<br></td>
+                  </tr>
+                  <tr>
+                     <td>eli:LegalExpression<br>eli:LegalResource<br></td>
+                     <td>eli:number</td>
+                     <td>An identifier or other disambiguating feature for a legal resource or legal expression.
+                        This can be the number of a legislation, the number of an article, or the issue number
+                        of an official journal. An identifier or other disambiguating feature for a legal resource or legal expression.
+                        This can be the number of a legislation, the number of an article, or the issue number
+                        of an official journal.</td>
+                     <td>xsd:string [0..*]<br>xsd:string [0..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:SelectionCriteriaSummary</td>
@@ -2691,7 +2849,7 @@
                      <td>rdf:PlainLiteral [0..*]</td>
                   </tr>
                   <tr>
-                     <td>epo:ChangeInformation<br>epo:Notice<br>epo:ProcurementObject<br></td>
+                     <td>epo:ChangeInformation<br>epo:Notice<br>epo:ProcurementCriterion<br>epo:ProcurementObject<br></td>
                      <td>epo:hasAdditionalInformation</td>
                      <td>Supplementary data about the instance of the concept.
                         
@@ -2700,8 +2858,10 @@
                         
                         WG Approval 15/10/2019 Supplementary data about the instance of the concept.
                         
+                        WG Approval 15/10/2019 Supplementary data about the instance of the concept.
+                        
                         WG Approval 15/10/2019</td>
-                     <td>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br></td>
+                     <td>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..1]<br>rdf:PlainLiteral [0..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:AccessTerm</td>
@@ -5198,7 +5358,7 @@
                <tbody>
                   <tr>
                      <td>adms:identifier</td>
-                     <td>Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. A unique identifier of the instance of the concept.
+                     <td>Links a resource to an adms:Identifier class.    Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class.  A unique identifier of the instance of the concept.
                         
                         Additional Information
                         
@@ -5206,17 +5366,7 @@
                         Public Procurement Identifier, and/or any other identifier provided by the buyer,
                         the service provider or any other stakeholder.
                         
-                        WG Approval 12/11/2019
-                        
-                         Links a resource to an adms:Identifier class. A unique identifier of the instance of the concept.
-                        
-                        Additional Information
-                        
-                        For example, in the case of the Procurement Identifier, this could be the European
-                        Public Procurement Identifier, and/or any other identifier provided by the buyer,
-                        the service provider or any other stakeholder.
-                        
-                        WG Approval 12/11/2019 A unique identifier of the instance of the concept.
+                        WG Approval 12/11/2019  A unique identifier of the instance of the concept.
                         
                         Additional Information
                         
@@ -5234,8 +5384,18 @@
                         the service provider or any other stakeholder.
                         
                         WG Approval 12/11/2019
-                         Links a resource to an adms:Identifier class.    Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class.    Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class.</td>
-                     <td>cccev:InformationConcept -&gt; adms:Identifier [0..1]<br>cccev:Requirement -&gt; adms:Identifier [0..1]<br>dct:Location -&gt; adms:Identifier [0..1]<br>epo:Document -&gt; adms:Identifier [0..*]<br>epo:Fund -&gt; adms:Identifier [0..1]<br>epo:Project -&gt; adms:Identifier [0..1]<br>foaf:Agent -&gt; adms:Identifier [0..*]<br>epo:LotGroup -&gt; adms:Identifier [0..1]<br>epo:ProcurementElement -&gt; adms:Identifier [1]<br>epo:TenderGroup -&gt; adms:Identifier [0..1]<br>epo-ful:Consignment -&gt; adms:Identifier [0..1]<br>epo-ful:TransportEquipment -&gt; adms:Identifier [0..1]<br>epo-ful:ShipmentStage -&gt; adms:Identifier [0..1]<br>epo-ful:TransportEquipmentSeal -&gt; adms:Identifier [0..1]<br>epo-ful:ShipmentInformation -&gt; adms:Identifier [0..1]<br>epo-cat:Line -&gt; adms:Identifier [0..1]<br>epo-ful:AbstractContainer -&gt; adms:Identifier [0..1]<br>epo-cat:Line -&gt; adms:Identifier [0..1]<br>epo-ful:AbstractContainer -&gt; adms:Identifier [0..1]<br>epo-ful:TransportEquipmentSeal -&gt; adms:Identifier [0..1]<br>epo-ful:ShipmentStage -&gt; adms:Identifier [0..1]<br>epo-ful:TransportEquipment -&gt; adms:Identifier [0..1]<br>epo-ful:Consignment -&gt; adms:Identifier [0..1]<br>epo-ful:ShipmentInformation -&gt; adms:Identifier [0..1]<br></td>
+                          Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. Links a resource to an adms:Identifier class. A unique identifier of the instance of the concept.
+                        
+                        Additional Information
+                        
+                        For example, in the case of the Procurement Identifier, this could be the European
+                        Public Procurement Identifier, and/or any other identifier provided by the buyer,
+                        the service provider or any other stakeholder.
+                        
+                        WG Approval 12/11/2019
+                        
+                         Links a resource to an adms:Identifier class.</td>
+                     <td>epo-ful:AbstractContainer -&gt; adms:Identifier [0..1]<br>epo-ful:TransportEquipmentSeal -&gt; adms:Identifier [0..1]<br>epo-ful:ShipmentStage -&gt; adms:Identifier [0..1]<br>epo-ful:TransportEquipment -&gt; adms:Identifier [0..1]<br>epo-ful:Consignment -&gt; adms:Identifier [0..1]<br>epo-ful:ShipmentInformation -&gt; adms:Identifier [0..1]<br>epo-cat:Line -&gt; adms:Identifier [0..1]<br>epo-ful:Consignment -&gt; adms:Identifier [0..1]<br>foaf:Agent -&gt; adms:Identifier [0..*]<br>epo:Document -&gt; adms:Identifier [0..*]<br>dct:Location -&gt; adms:Identifier [0..1]<br>cccev:Requirement -&gt; adms:Identifier [0..1]<br>epo-ful:TransportEquipment -&gt; adms:Identifier [0..1]<br>epo:LotGroup -&gt; adms:Identifier [0..1]<br>epo-ful:ShipmentStage -&gt; adms:Identifier [0..1]<br>epo:TenderGroup -&gt; adms:Identifier [0..1]<br>epo:ProcurementElement -&gt; adms:Identifier [1]<br>epo-ful:TransportEquipmentSeal -&gt; adms:Identifier [0..1]<br>epo-ful:ShipmentInformation -&gt; adms:Identifier [0..1]<br>epo-cat:Line -&gt; adms:Identifier [0..1]<br>cccev:InformationConcept -&gt; adms:Identifier [0..1]<br>epo-ful:AbstractContainer -&gt; adms:Identifier [0..1]<br>epo:Project -&gt; adms:Identifier [0..1]<br>epo:Fund -&gt; adms:Identifier [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>cccev:confidentialityLevelType</td>
@@ -5262,9 +5422,19 @@
                      <td>cccev:Constraint -&gt; cccev:InformationConcept [0..*]</td>
                   </tr>
                   <tr>
+                     <td>cccev:hasConcept</td>
+                     <td></td>
+                     <td>cccev:Requirement -&gt; cccev:InformationConcept [0..*]</td>
+                  </tr>
+                  <tr>
                      <td>cccev:hasRequirement</td>
                      <td>A more specific Requirement that is part of the Requirement.</td>
                      <td>cccev:Requirement -&gt; cccev:Requirement [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cccev:isDerivedFrom</td>
+                     <td> </td>
+                     <td>cccev:Requirement -&gt; eli:LegalResource []<br>cccev:Requirement -&gt; eli:LegalResource []<br></td>
                   </tr>
                   <tr>
                      <td>cccev:supportsConcept</td>
@@ -5307,6 +5477,11 @@
                      <td>epo-cat:Item -&gt; epo-cat:Item [0..*]</td>
                   </tr>
                   <tr>
+                     <td>dct:isPartOf</td>
+                     <td></td>
+                     <td>eli:Work -&gt; eli:Work [0..*]</td>
+                  </tr>
+                  <tr>
                      <td>dct:isReplacedBy</td>
                      <td>A related resource that is supplanted, displaced, or superseded by the described resource.
                         
@@ -5318,6 +5493,11 @@
                         A related resource that is supplanted, displaced, or superseded by the described resource.
                         </td>
                      <td>epo-cat:Item -&gt; epo-cat:Item [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>dct:language</td>
+                     <td> </td>
+                     <td>eli:LegalExpression -&gt; at-voc:language [1..*]<br>eli:LegalExpression -&gt; at-voc:language [1..*]<br></td>
                   </tr>
                   <tr>
                      <td>dct:replaces</td>
@@ -5351,6 +5531,26 @@
                      <td>cccev:Criterion -&gt; at-voc:criterion [0..1]</td>
                   </tr>
                   <tr>
+                     <td>eli:jurisdiction</td>
+                     <td>The jurisdiction from which the legal resource originates. 
+                        
+                        The place identifier can be taken from the Administrative Territorial Unit table published
+                        of the EU Publications Office at https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/atu.
+                        Member States don't have to recreate their own list of values.
+                         The jurisdiction from which the legal resource originates. 
+                        
+                        The place identifier can be taken from the Administrative Territorial Unit table published
+                        of the EU Publications Office at https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/atu.
+                        Member States don't have to recreate their own list of values.
+                        </td>
+                     <td>eli:LegalExpression -&gt; at-voc:atu [0..*]<br>eli:LegalResource -&gt; at-voc:atu [0..*]<br></td>
+                  </tr>
+                  <tr>
+                     <td>eli:uri_schema</td>
+                     <td>   </td>
+                     <td>eli:LegalExpression -&gt; adms:Identifier [0..*]<br>eli:LegalResourceSubdivision -&gt; adms:Identifier [0..*]<br>eli:LegalResourceSubdivision -&gt; adms:Identifier [0..*]<br>eli:LegalExpression -&gt; adms:Identifier [0..*]<br></td>
+                  </tr>
+                  <tr>
                      <td>epo:actsOnBehalfOf</td>
                      <td>Represents.</td>
                      <td>epo:ProcurementServiceProvider -&gt; epo:Buyer [1..*]</td>
@@ -5363,7 +5563,7 @@
                   <tr>
                      <td>epo:announcesAwardDecision</td>
                      <td>   </td>
-                     <td>epo-not:ResultNotice -&gt; epo:AwardDecision [0..*]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:AwardDecision [0..*]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:AwardDecision [0..*]<br>epo-not:ResultNotice -&gt; epo:AwardDecision [0..*]<br></td>
+                     <td>epo-not:DirectAwardPrenotificationNotice -&gt; epo:AwardDecision [0..*]<br>epo-not:ResultNotice -&gt; epo:AwardDecision [0..*]<br>epo-not:ResultNotice -&gt; epo:AwardDecision [0..*]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:AwardDecision [0..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:announcesCompletionOfContract</td>
@@ -5383,7 +5583,7 @@
                   <tr>
                      <td>epo:announcesLot</td>
                      <td>   </td>
-                     <td>epo-not:DirectAwardPrenotificationNotice -&gt; epo:Lot [1..*]<br>epo-not:CompetitionNotice -&gt; epo:Lot [1..*]<br>epo-not:CompetitionNotice -&gt; epo:Lot [1..*]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:Lot [1..*]<br></td>
+                     <td>epo-not:CompetitionNotice -&gt; epo:Lot [1..*]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:Lot [1..*]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:Lot [1..*]<br>epo-not:CompetitionNotice -&gt; epo:Lot [1..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:announcesLotGroup</td>
@@ -5408,7 +5608,7 @@
                   <tr>
                      <td>epo:announcesProcedure</td>
                      <td>   </td>
-                     <td>epo-not:DirectAwardPrenotificationNotice -&gt; epo:Procedure [1]<br>epo-not:CompetitionNotice -&gt; epo:Procedure [1]<br>epo-not:CompetitionNotice -&gt; epo:Procedure [1]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:Procedure [1]<br></td>
+                     <td>epo-not:CompetitionNotice -&gt; epo:Procedure [1]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:Procedure [1]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:Procedure [1]<br>epo-not:CompetitionNotice -&gt; epo:Procedure [1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:announcesReviewObject</td>
@@ -5418,7 +5618,7 @@
                   <tr>
                      <td>epo:announcesRole</td>
                      <td>         </td>
-                     <td>epo-not:DirectAwardPrenotificationNotice -&gt; epo:AgentInRole [1..*]<br>epo-not:ContractModificationNotice -&gt; epo:AgentInRole [0..*]<br>epo-not:PlanningNotice -&gt; epo:AgentInRole [1..*]<br>epo-not:CompetitionNotice -&gt; epo:AgentInRole [1..*]<br>epo-not:CompletionNotice -&gt; epo:AgentInRole [0..*]<br>epo-not:CompetitionNotice -&gt; epo:AgentInRole [1..*]<br>epo-not:CompletionNotice -&gt; epo:AgentInRole [0..*]<br>epo-not:ContractModificationNotice -&gt; epo:AgentInRole [0..*]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:AgentInRole [1..*]<br>epo-not:PlanningNotice -&gt; epo:AgentInRole [1..*]<br></td>
+                     <td>epo-not:CompetitionNotice -&gt; epo:AgentInRole [1..*]<br>epo-not:CompletionNotice -&gt; epo:AgentInRole [0..*]<br>epo-not:ContractModificationNotice -&gt; epo:AgentInRole [0..*]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:AgentInRole [1..*]<br>epo-not:PlanningNotice -&gt; epo:AgentInRole [1..*]<br>epo-not:DirectAwardPrenotificationNotice -&gt; epo:AgentInRole [1..*]<br>epo-not:ContractModificationNotice -&gt; epo:AgentInRole [0..*]<br>epo-not:PlanningNotice -&gt; epo:AgentInRole [1..*]<br>epo-not:CompetitionNotice -&gt; epo:AgentInRole [1..*]<br>epo-not:CompletionNotice -&gt; epo:AgentInRole [0..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:associatedWith</td>
@@ -5864,10 +6064,12 @@
                   </tr>
                   <tr>
                      <td>epo:hasBuyerItemID</td>
-                     <td>This refers to the identifier for the specific instance of the produced concept.
-                        WG Approval 16/05/2023
-                         This refers to the identifier for the specific instance of the produced concept.
-                        WG Approval 16/05/2023
+                     <td>The general identifier assigned to the concept as defined by the Buyer.​
+                        
+                        WG approval 16/05/2023
+                         The general identifier assigned to the concept as defined by the Buyer.​
+                        
+                        WG approval 16/05/2023
                         </td>
                      <td>epo-cat:Item -&gt; adms:Identifier [0..1]<br>epo-cat:Item -&gt; adms:Identifier [0..1]<br></td>
                   </tr>
@@ -5894,7 +6096,7 @@
                         WG approval 30/05/2023 Relation to the proof of conformance.
                         
                         WG approval 30/05/2023</td>
-                     <td>foaf:Person -&gt; epo:Certificate [0..*]<br>org:Organization -&gt; epo:Certificate [0..*]<br>epo-cat:Item -&gt; epo:Certificate [0..*]<br>epo-cat:Item -&gt; epo:Certificate [0..*]<br></td>
+                     <td>epo-cat:Item -&gt; epo:Certificate [0..*]<br>foaf:Person -&gt; epo:Certificate [0..*]<br>org:Organization -&gt; epo:Certificate [0..*]<br>epo-cat:Item -&gt; epo:Certificate [0..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:hasChangeJustification</td>
@@ -5923,8 +6125,8 @@
                   </tr>
                   <tr>
                      <td>epo:hasConstraint</td>
-                     <td></td>
-                     <td>epo:ProcurementCriterion -&gt; cccev:Constraint [0..*]</td>
+                     <td> </td>
+                     <td>cccev:InformationRequirement -&gt; cccev:Constraint [0..*]<br>epo:ProcurementCriterion -&gt; cccev:Constraint [0..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:hasContactPointInRole</td>
@@ -6143,12 +6345,12 @@
                   </tr>
                   <tr>
                      <td>epo:hasFormType</td>
-                     <td>A categorisation of the steps in which the Notice is used.
+                     <td>                                                                             A categorisation of the steps in which the Notice is used.
                         
                         WG Approval 12/05/2020
                         
-                                                                                                     </td>
-                     <td>epo:Notice -&gt; at-voc:form-type [0..1]<br>epo-not:Notice1 -&gt; planning [0..1]<br>epo-not:Notice10 -&gt; competition [0..1]<br>epo-not:Notice11 -&gt; competition [0..1]<br>epo-not:Notice12 -&gt; competition [0..1]<br>epo-not:Notice13 -&gt; competition [0..1]<br>epo-not:Notice14 -&gt; competition [0..1]<br>epo-not:Notice15 -&gt; competition [0..1]<br>epo-not:Notice16 -&gt; competition [0..1]<br>epo-not:Notice17 -&gt; competition [0..1]<br>epo-not:Notice18 -&gt; competition [0..1]<br>epo-not:Notice19 -&gt; competition [0..1]<br>epo-not:Notice2 -&gt; planning [0..1]<br>epo-not:Notice20 -&gt; competition [0..1]<br>epo-not:Notice21 -&gt; competition [0..1]<br>epo-not:Notice22 -&gt; competition [0..1]<br>epo-not:Notice23 -&gt; competition [0..1]<br>epo-not:Notice24 -&gt; competition [0..1]<br>epo-not:Notice25 -&gt; dir-awa-pre [0..1]<br>epo-not:Notice26 -&gt; dir-awa-pre [0..1]<br>epo-not:Notice27 -&gt; dir-awa-pre [0..1]<br>epo-not:Notice28 -&gt; dir-awa-pre [0..1]<br>epo-not:Notice29 -&gt; result [0..1]<br>epo-not:Notice3 -&gt; planning [0..1]<br>epo-not:Notice30 -&gt; result [0..1]<br>epo-not:Notice31 -&gt; result [0..1]<br>epo-not:Notice32 -&gt; result [0..1]<br>epo-not:Notice33 -&gt; result [0..1]<br>epo-not:Notice34 -&gt; result [0..1]<br>epo-not:Notice35 -&gt; result [0..1]<br>epo-not:Notice36 -&gt; result [0..1]<br>epo-not:Notice37 -&gt; result [0..1]<br>epo-not:Notice38 -&gt; cont-modif [0..1]<br>epo-not:Notice39 -&gt; cont-modif [0..1]<br>epo-not:Notice4 -&gt; planning [0..1]<br>epo-not:Notice40 -&gt; cont-modif [0..1]<br>epo-not:Notice5 -&gt; planning [0..1]<br>epo-not:Notice6 -&gt; planning [0..1]<br>epo-not:Notice7 -&gt; planning [0..1]<br>epo-not:Notice8 -&gt; planning [0..1]<br>epo-not:Notice9 -&gt; planning [0..1]<br>epo-not:CANDefence-D81 -&gt; Form18 [0..1]<br>epo-not:CANSocial-D25 -&gt; Form6 [0..1]<br>epo-not:CANSocialNotice-D25 -&gt; Form22 [0..1]<br>epo-not:CANStandard-D24 -&gt; Form3 [0..1]<br>epo-not:CNDefence-D81 -&gt; Form17 [0..1]<br>epo-not:CNSocial-D25 -&gt; Form5 [0..1]<br>epo-not:CNSocialNotice-D25 -&gt; Form22 [0..1]<br>epo-not:CNStandard-D24 -&gt; Form2 [0..1]<br>epo-not:ConcessionAwardNotice-D23 -&gt; Form25 [0..1]<br>epo-not:ConcessionNotice-D23 -&gt; Form24 [0..1]<br>epo-not:DesignContest-D24 -&gt; Form12 [0..1]<br>epo-not:DesignContest-D25 -&gt; Form12 [0..1]<br>epo-not:DesignContestResult-D24 -&gt; Form13 [0..1]<br>epo-not:DesignContestResult-D25 -&gt; Form13 [0..1]<br>epo-not:Modification-D23 -&gt; Form20 [0..1]<br>epo-not:Modification-D24 -&gt; Form20 [0..1]<br>epo-not:Modification-D25 -&gt; Form20 [0..1]<br>epo-not:PIN-CFCSocial-D25 -&gt; Form4 [0..1]<br>epo-not:PIN-CFCSocialNotice-D25 -&gt; Form22 [0..1]<br>epo-not:PIN-CFCStandard-D24 -&gt; Form1 [0..1]<br>epo-not:PIN-RTL-D24 -&gt; Form1 [0..1]<br>epo-not:PIN-RTL-D25 -&gt; Form4 [0..1]<br>epo-not:PINDefence-D81 -&gt; Form16 [0..1]<br>epo-not:PINOnly-D24 -&gt; Form1 [0..1]<br>epo-not:PINOnly-D25 -&gt; Form4 [0..1]<br>epo-not:PINProfile-D24 -&gt; Form8 [0..1]<br>epo-not:PINProfile-D25 -&gt; Form8 [0..1]<br>epo-not:PINProfile-D81 -&gt; Form8 [0..1]<br>epo-not:QS-D25 -&gt; Form7 [0..1]<br>epo-not:QSNotice-D25 -&gt; Form22 [0..1]<br>epo-not:SocialAndOtherSpecificServices-D23 -&gt; Form23 [0..1]<br>epo-not:SocialAndOtherSpecificServices-D24 -&gt; Form21 [0..1]<br>epo-not:Subcontract-D81 -&gt; Form19 [0..1]<br>epo-not:VEAT-D23 -&gt; Form15 [0..1]<br>epo-not:VEAT-D24 -&gt; Form15 [0..1]<br>epo-not:VEAT-D25 -&gt; Form15 [0..1]<br>epo-not:VEAT-D81 -&gt; Form15 [0..1]<br></td>
+                        </td>
+                     <td>epo-not:Notice1 -&gt; planning [0..1]<br>epo-not:Notice10 -&gt; competition [0..1]<br>epo-not:Notice11 -&gt; competition [0..1]<br>epo-not:Notice12 -&gt; competition [0..1]<br>epo-not:Notice13 -&gt; competition [0..1]<br>epo-not:Notice14 -&gt; competition [0..1]<br>epo-not:Notice15 -&gt; competition [0..1]<br>epo-not:Notice16 -&gt; competition [0..1]<br>epo-not:Notice17 -&gt; competition [0..1]<br>epo-not:Notice18 -&gt; competition [0..1]<br>epo-not:Notice19 -&gt; competition [0..1]<br>epo-not:Notice2 -&gt; planning [0..1]<br>epo-not:Notice20 -&gt; competition [0..1]<br>epo-not:Notice21 -&gt; competition [0..1]<br>epo-not:Notice22 -&gt; competition [0..1]<br>epo-not:Notice23 -&gt; competition [0..1]<br>epo-not:Notice24 -&gt; competition [0..1]<br>epo-not:Notice25 -&gt; dir-awa-pre [0..1]<br>epo-not:Notice26 -&gt; dir-awa-pre [0..1]<br>epo-not:Notice27 -&gt; dir-awa-pre [0..1]<br>epo-not:Notice28 -&gt; dir-awa-pre [0..1]<br>epo-not:Notice29 -&gt; result [0..1]<br>epo-not:Notice3 -&gt; planning [0..1]<br>epo-not:Notice30 -&gt; result [0..1]<br>epo-not:Notice31 -&gt; result [0..1]<br>epo-not:Notice32 -&gt; result [0..1]<br>epo-not:Notice33 -&gt; result [0..1]<br>epo-not:Notice34 -&gt; result [0..1]<br>epo-not:Notice35 -&gt; result [0..1]<br>epo-not:Notice36 -&gt; result [0..1]<br>epo-not:Notice37 -&gt; result [0..1]<br>epo-not:Notice38 -&gt; cont-modif [0..1]<br>epo-not:Notice39 -&gt; cont-modif [0..1]<br>epo-not:Notice4 -&gt; planning [0..1]<br>epo-not:Notice40 -&gt; cont-modif [0..1]<br>epo-not:Notice5 -&gt; planning [0..1]<br>epo-not:Notice6 -&gt; planning [0..1]<br>epo-not:Notice7 -&gt; planning [0..1]<br>epo-not:Notice8 -&gt; planning [0..1]<br>epo-not:Notice9 -&gt; planning [0..1]<br>epo-not:CANDefence-D81 -&gt; Form18 [0..1]<br>epo-not:CANSocial-D25 -&gt; Form6 [0..1]<br>epo-not:CANSocialNotice-D25 -&gt; Form22 [0..1]<br>epo-not:CANStandard-D24 -&gt; Form3 [0..1]<br>epo-not:CNDefence-D81 -&gt; Form17 [0..1]<br>epo-not:CNSocial-D25 -&gt; Form5 [0..1]<br>epo-not:CNSocialNotice-D25 -&gt; Form22 [0..1]<br>epo-not:CNStandard-D24 -&gt; Form2 [0..1]<br>epo-not:ConcessionAwardNotice-D23 -&gt; Form25 [0..1]<br>epo-not:ConcessionNotice-D23 -&gt; Form24 [0..1]<br>epo-not:DesignContest-D24 -&gt; Form12 [0..1]<br>epo-not:DesignContest-D25 -&gt; Form12 [0..1]<br>epo-not:DesignContestResult-D24 -&gt; Form13 [0..1]<br>epo-not:DesignContestResult-D25 -&gt; Form13 [0..1]<br>epo-not:Modification-D23 -&gt; Form20 [0..1]<br>epo-not:Modification-D24 -&gt; Form20 [0..1]<br>epo-not:Modification-D25 -&gt; Form20 [0..1]<br>epo-not:PIN-CFCSocial-D25 -&gt; Form4 [0..1]<br>epo-not:PIN-CFCSocialNotice-D25 -&gt; Form22 [0..1]<br>epo-not:PIN-CFCStandard-D24 -&gt; Form1 [0..1]<br>epo-not:PIN-RTL-D24 -&gt; Form1 [0..1]<br>epo-not:PIN-RTL-D25 -&gt; Form4 [0..1]<br>epo-not:PINDefence-D81 -&gt; Form16 [0..1]<br>epo-not:PINOnly-D24 -&gt; Form1 [0..1]<br>epo-not:PINOnly-D25 -&gt; Form4 [0..1]<br>epo-not:PINProfile-D24 -&gt; Form8 [0..1]<br>epo-not:PINProfile-D25 -&gt; Form8 [0..1]<br>epo-not:PINProfile-D81 -&gt; Form8 [0..1]<br>epo-not:QS-D25 -&gt; Form7 [0..1]<br>epo-not:QSNotice-D25 -&gt; Form22 [0..1]<br>epo-not:SocialAndOtherSpecificServices-D23 -&gt; Form23 [0..1]<br>epo-not:SocialAndOtherSpecificServices-D24 -&gt; Form21 [0..1]<br>epo-not:Subcontract-D81 -&gt; Form19 [0..1]<br>epo-not:VEAT-D23 -&gt; Form15 [0..1]<br>epo-not:VEAT-D24 -&gt; Form15 [0..1]<br>epo-not:VEAT-D25 -&gt; Form15 [0..1]<br>epo-not:VEAT-D81 -&gt; Form15 [0..1]<br>epo:Notice -&gt; at-voc:form-type [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:hasFrameworkAgreementMaximumValue</td>
@@ -6230,19 +6432,17 @@
                   </tr>
                   <tr>
                      <td>epo:hasItemStandardID</td>
-                     <td>The identifier for the instance of the concept based on a standard scheme.
+                     <td>The general identifier assigned to the concept based on a standard scheme.​
                         
                         Additional information: 
-                        For example the GTIN scheme (Global Trade Item Number). 
+                        For example the GTIN scheme (Global Trade Item Number).
                         
-                        WG Approval 24/02/2022
-                         The identifier for the instance of the concept based on a standard scheme.
+                        WG approval 16/05/2023 The general identifier assigned to the concept based on a standard scheme.​
                         
                         Additional information: 
-                        For example the GTIN scheme (Global Trade Item Number). 
+                        For example the GTIN scheme (Global Trade Item Number).
                         
-                        WG Approval 24/02/2022
-                        </td>
+                        WG approval 16/05/2023</td>
                      <td>epo-cat:Item -&gt; adms:Identifier [0..*]<br>epo-cat:Item -&gt; adms:Identifier [0..*]<br></td>
                   </tr>
                   <tr>
@@ -6279,7 +6479,7 @@
                   </tr>
                   <tr>
                      <td>epo:hasLegalBasis</td>
-                     <td>The legal basis under which the procurement procedure takes place.
+                     <td>                                                                            The legal basis under which the procurement procedure takes place.
                         
                         Additional Information: 
                         For example European Directives or Regulations, national laws etc.
@@ -6295,8 +6495,8 @@
                         WG 09/11/2021
                         
                         The codelist to be used is at-voc:legal-basis which is available at http://publications.europa.eu/resource/dataset/legal-basis
-                                                                                                    </td>
-                     <td>epo:ProcurementObject -&gt; at-voc:legal-basis [0..*]<br>epo-not:VEAT-D81 -&gt; Directive 81 [0..1]<br>epo-not:PINProfile-D81 -&gt; Directive 81 [0..1]<br>epo-not:Notice6 -&gt; Directive 81 [0..1]<br>epo-not:PINDefence-D81 -&gt; Directive 81 [0..1]<br>epo-not:Subcontract-D81 -&gt; Directive 81 [0..1]<br>epo-not:Notice27 -&gt; Directive 81 [0..1]<br>epo-not:Notice22 -&gt; Directive 81 [0..1]<br>epo-not:CNDefence-D81 -&gt; Directive 81 [0..1]<br>epo-not:Notice18 -&gt; Directive 81 [0..1]<br>epo-not:CANDefence-D81 -&gt; Directive 81 [0..1]<br>epo-not:Notice3 -&gt; Directive 81 [0..1]<br>epo-not:Notice9 -&gt; Directive 81 [0..1]<br>epo-not:Notice31 -&gt; Directive 81 [0..1]<br>epo-not:Modification-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice26 -&gt; Directive 25 [0..1]<br>epo-not:CNSocial-D25 -&gt; Directive 25 [0..1]<br>epo-not:PIN-CFCSocial-D25 -&gt; Directive 25 [0..1]<br>epo-not:PINOnly-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice2 -&gt; Directive 25 [0..1]<br>epo-not:PINProfile-D25 -&gt; Directive 25 [0..1]<br>epo-not:PIN-RTL-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice37 -&gt; Directive 25 [0..1]<br>epo-not:VEAT-D25 -&gt; Directive 25 [0..1]<br>epo-not:CANSocialNotice-D25 -&gt; Directive 25 [0..1]<br>epo-not:QSNotice-D25 -&gt; Directive 25 [0..1]<br>epo-not:QS-D25 -&gt; Directive 25 [0..1]<br>epo-not:DesignContestResult-D25 -&gt; Directive 25 [0..1]<br>epo-not:CNSocialNotice-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice34 -&gt; Directive 25 [0..1]<br>epo-not:Notice24 -&gt; Directive 25 [0..1]<br>epo-not:CANSocial-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice30 -&gt; Directive 25 [0..1]<br>epo-not:Notice8 -&gt; Directive 25 [0..1]<br>epo-not:Notice13 -&gt; Directive 25 [0..1]<br>epo-not:Notice5 -&gt; Directive 25 [0..1]<br>epo-not:Notice39 -&gt; Directive 25 [0..1]<br>epo-not:Notice21 -&gt; Directive 25 [0..1]<br>epo-not:Notice15 -&gt; Directive 25 [0..1]<br>epo-not:Notice17 -&gt; Directive 25 [0..1]<br>epo-not:DesignContest-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice11 -&gt; Directive 25 [0..1]<br>epo-not:PIN-CFCSocialNotice-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice10 -&gt; Directive 24 [0..1]<br>epo-not:SocialAndOtherSpecificServices-D24 -&gt; Directive 24 [0..1]<br>epo-not:VEAT-D24 -&gt; Directive 24 [0..1]<br>epo-not:PINOnly-D24 -&gt; Directive 24 [0..1]<br>epo-not:Notice25 -&gt; Directive 24 [0..1]<br>epo-not:Notice23 -&gt; Directive 24 [0..1]<br>epo-not:CNStandard-D24 -&gt; Directive 24 [0..1]<br>epo-not:PIN-CFCStandard-D24 -&gt; Directive 24 [0..1]<br>epo-not:Notice29 -&gt; Directive 24 [0..1]<br>epo-not:Notice38 -&gt; Directive 24 [0..1]<br>epo-not:Notice36 -&gt; Directive 24 [0..1]<br>epo-not:Notice1 -&gt; Directive 24 [0..1]<br>epo-not:DesignContestResult-D24 -&gt; Directive 24 [0..1]<br>epo-not:Notice33 -&gt; Directive 24 [0..1]<br>epo-not:CANStandard-D24 -&gt; Directive 24 [0..1]<br>epo-not:DesignContest-D24 -&gt; Directive 24 [0..1]<br>epo-not:PIN-RTL-D24 -&gt; Directive 24 [0..1]<br>epo-not:Notice20 -&gt; Directive 24 [0..1]<br>epo-not:PINProfile-D24 -&gt; Directive 24 [0..1]<br>epo-not:Notice12 -&gt; Directive 24 [0..1]<br>epo-not:Notice4 -&gt; Directive 24 [0..1]<br>epo-not:Notice16 -&gt; Directive 24 [0..1]<br>epo-not:Notice7 -&gt; Directive 24 [0..1]<br>epo-not:VEAT-D23 -&gt; Directive 23 [0..1]<br>epo-not:Notice35 -&gt; Directive 23 [0..1]<br>epo-not:Modification-D23 -&gt; Directive 23 [0..1]<br>epo-not:Notice32 -&gt; Directive 23 [0..1]<br>epo-not:Notice19 -&gt; Directive 23 [0..1]<br>epo-not:ConcessionNotice-D23 -&gt; Directive 23 [0..1]<br>epo-not:ConcessionAwardNotice-D23 -&gt; Directive 23 [0..1]<br>epo-not:Notice40 -&gt; Directive 23 [0..1]<br>epo-not:Notice28 -&gt; Directive 23 [0..1]<br>epo-not:SocialAndOtherSpecificServices-D23 -&gt; Directive 23 [0..1]<br>epo-not:Notice14 -&gt; Directive 23 [0..1]<br></td>
+                        </td>
+                     <td>epo-not:VEAT-D81 -&gt; Directive 81 [0..1]<br>epo-not:PINProfile-D81 -&gt; Directive 81 [0..1]<br>epo-not:Notice6 -&gt; Directive 81 [0..1]<br>epo-not:PINDefence-D81 -&gt; Directive 81 [0..1]<br>epo-not:Subcontract-D81 -&gt; Directive 81 [0..1]<br>epo-not:Notice27 -&gt; Directive 81 [0..1]<br>epo-not:Notice22 -&gt; Directive 81 [0..1]<br>epo-not:CNDefence-D81 -&gt; Directive 81 [0..1]<br>epo-not:Notice18 -&gt; Directive 81 [0..1]<br>epo-not:CANDefence-D81 -&gt; Directive 81 [0..1]<br>epo-not:Notice3 -&gt; Directive 81 [0..1]<br>epo-not:Notice9 -&gt; Directive 81 [0..1]<br>epo-not:Notice31 -&gt; Directive 81 [0..1]<br>epo-not:Modification-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice26 -&gt; Directive 25 [0..1]<br>epo-not:CNSocial-D25 -&gt; Directive 25 [0..1]<br>epo-not:PIN-CFCSocial-D25 -&gt; Directive 25 [0..1]<br>epo-not:PINOnly-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice2 -&gt; Directive 25 [0..1]<br>epo-not:PINProfile-D25 -&gt; Directive 25 [0..1]<br>epo-not:PIN-RTL-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice37 -&gt; Directive 25 [0..1]<br>epo-not:VEAT-D25 -&gt; Directive 25 [0..1]<br>epo-not:CANSocialNotice-D25 -&gt; Directive 25 [0..1]<br>epo-not:QSNotice-D25 -&gt; Directive 25 [0..1]<br>epo-not:QS-D25 -&gt; Directive 25 [0..1]<br>epo-not:DesignContestResult-D25 -&gt; Directive 25 [0..1]<br>epo-not:CNSocialNotice-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice34 -&gt; Directive 25 [0..1]<br>epo-not:Notice24 -&gt; Directive 25 [0..1]<br>epo-not:CANSocial-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice30 -&gt; Directive 25 [0..1]<br>epo-not:Notice8 -&gt; Directive 25 [0..1]<br>epo-not:Notice13 -&gt; Directive 25 [0..1]<br>epo-not:Notice5 -&gt; Directive 25 [0..1]<br>epo-not:Notice39 -&gt; Directive 25 [0..1]<br>epo-not:Notice21 -&gt; Directive 25 [0..1]<br>epo-not:Notice15 -&gt; Directive 25 [0..1]<br>epo-not:Notice17 -&gt; Directive 25 [0..1]<br>epo-not:DesignContest-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice11 -&gt; Directive 25 [0..1]<br>epo-not:PIN-CFCSocialNotice-D25 -&gt; Directive 25 [0..1]<br>epo-not:Notice10 -&gt; Directive 24 [0..1]<br>epo-not:SocialAndOtherSpecificServices-D24 -&gt; Directive 24 [0..1]<br>epo-not:VEAT-D24 -&gt; Directive 24 [0..1]<br>epo-not:PINOnly-D24 -&gt; Directive 24 [0..1]<br>epo-not:Notice25 -&gt; Directive 24 [0..1]<br>epo-not:Notice23 -&gt; Directive 24 [0..1]<br>epo-not:CNStandard-D24 -&gt; Directive 24 [0..1]<br>epo-not:PIN-CFCStandard-D24 -&gt; Directive 24 [0..1]<br>epo-not:Notice29 -&gt; Directive 24 [0..1]<br>epo-not:Notice38 -&gt; Directive 24 [0..1]<br>epo-not:Notice36 -&gt; Directive 24 [0..1]<br>epo-not:Notice1 -&gt; Directive 24 [0..1]<br>epo-not:DesignContestResult-D24 -&gt; Directive 24 [0..1]<br>epo-not:Notice33 -&gt; Directive 24 [0..1]<br>epo-not:CANStandard-D24 -&gt; Directive 24 [0..1]<br>epo-not:DesignContest-D24 -&gt; Directive 24 [0..1]<br>epo-not:PIN-RTL-D24 -&gt; Directive 24 [0..1]<br>epo-not:Notice20 -&gt; Directive 24 [0..1]<br>epo-not:PINProfile-D24 -&gt; Directive 24 [0..1]<br>epo-not:Notice12 -&gt; Directive 24 [0..1]<br>epo-not:Notice4 -&gt; Directive 24 [0..1]<br>epo-not:Notice16 -&gt; Directive 24 [0..1]<br>epo-not:Notice7 -&gt; Directive 24 [0..1]<br>epo-not:VEAT-D23 -&gt; Directive 23 [0..1]<br>epo-not:Notice35 -&gt; Directive 23 [0..1]<br>epo-not:Modification-D23 -&gt; Directive 23 [0..1]<br>epo-not:Notice32 -&gt; Directive 23 [0..1]<br>epo-not:Notice19 -&gt; Directive 23 [0..1]<br>epo-not:ConcessionNotice-D23 -&gt; Directive 23 [0..1]<br>epo-not:ConcessionAwardNotice-D23 -&gt; Directive 23 [0..1]<br>epo-not:Notice40 -&gt; Directive 23 [0..1]<br>epo-not:Notice28 -&gt; Directive 23 [0..1]<br>epo-not:SocialAndOtherSpecificServices-D23 -&gt; Directive 23 [0..1]<br>epo-not:Notice14 -&gt; Directive 23 [0..1]<br>epo:ProcurementObject -&gt; at-voc:legal-basis [0..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:hasLegalIdentifier</td>
@@ -6353,16 +6553,12 @@
                   </tr>
                   <tr>
                      <td>epo:hasManufacturerItemID</td>
-                     <td>This refers to the general identifier for the concept as defined by the manufacturer.
+                     <td>The general identifier assigned to the concept as defined by the Manufacturer. ​
                         
+                        WG approval 16/05/2023
+                         The general identifier assigned to the concept as defined by the Manufacturer. ​
                         
-                        WG Approval 16/05/2023
-                        
-                         This refers to the general identifier for the concept as defined by the manufacturer.
-                        
-                        
-                        WG Approval 16/05/2023
-                        
+                        WG approval 16/05/2023
                         </td>
                      <td>epo-cat:Item -&gt; adms:Identifier [0..1]<br>epo-cat:Item -&gt; adms:Identifier [0..1]<br></td>
                   </tr>
@@ -6455,7 +6651,7 @@
                   <tr>
                      <td>epo:hasNoticeType</td>
                      <td>                 </td>
-                     <td>epo:Notice -&gt; at-voc:notice-type [1]<br>epo-not:CANSocialNotice -&gt; can-social [1]<br>epo-not:CANStandardNotice -&gt; can-standard [1]<br>epo-not:CNSocialNotice -&gt; cn-social [1]<br>epo-not:CNStandardNotice -&gt; cn-standard [1]<br>epo-not:CompletionNotice -&gt; compl [1]<br>epo-not:ContractModificationNotice -&gt; can-modif [1]<br>epo-not:DesignContestNotice -&gt; cn-desg [1]<br>epo-not:DesignContestResultNotice -&gt; can-desg [1]<br>epo-not:PIN-CFCSocialNotice -&gt; pin-cfc-social [1]<br>epo-not:PIN-CFCStandardNotice -&gt; pin-cfc-standard [1]<br>epo-not:PINOnlyNotice -&gt; pin-only [1]<br>epo-not:PINProfileNotice -&gt; pin-buyer [1]<br>epo-not:PINTimeLimitNotice -&gt; pin-rtl [1]<br>epo-not:PreMarketConsultationNotice -&gt; pmc [1]<br>epo-not:QSNotice -&gt; qu-sy [1]<br>epo-not:SubcontractNotice -&gt; subco [1]<br>epo-not:VoluntaryEx-AnteTransparencyNotice -&gt; veat [1]<br></td>
+                     <td>epo-not:CANSocialNotice -&gt; can-social [1]<br>epo-not:CANStandardNotice -&gt; can-standard [1]<br>epo-not:CNSocialNotice -&gt; cn-social [1]<br>epo-not:CNStandardNotice -&gt; cn-standard [1]<br>epo-not:CompletionNotice -&gt; compl [1]<br>epo-not:ContractModificationNotice -&gt; can-modif [1]<br>epo-not:DesignContestNotice -&gt; cn-desg [1]<br>epo-not:DesignContestResultNotice -&gt; can-desg [1]<br>epo-not:PIN-CFCSocialNotice -&gt; pin-cfc-social [1]<br>epo-not:PIN-CFCStandardNotice -&gt; pin-cfc-standard [1]<br>epo-not:PINOnlyNotice -&gt; pin-only [1]<br>epo-not:PINProfileNotice -&gt; pin-buyer [1]<br>epo-not:PINTimeLimitNotice -&gt; pin-rtl [1]<br>epo-not:PreMarketConsultationNotice -&gt; pmc [1]<br>epo-not:QSNotice -&gt; qu-sy [1]<br>epo-not:SubcontractNotice -&gt; subco [1]<br>epo-not:VoluntaryEx-AnteTransparencyNotice -&gt; veat [1]<br>epo:Notice -&gt; at-voc:notice-type [1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:hasNutsCode</td>
@@ -6568,6 +6764,11 @@
                      <td>org:Organization -&gt; at-voc:country [0..1]</td>
                   </tr>
                   <tr>
+                     <td>epo:hasRejectedQuantity</td>
+                     <td> </td>
+                     <td>epo-ful:ReceiptAdviceLine -&gt; epo:Quantity [0..1]<br>epo-ful:ReceiptAdviceLine -&gt; epo:Quantity [0..1]<br></td>
+                  </tr>
+                  <tr>
                      <td>epo:hasRemedyValue</td>
                      <td>Additional information:
                         This relation corresponds in eForms to BT-793     Review Remedy Value.</td>
@@ -6594,6 +6795,11 @@
                         WG Approval 09/11/2021
                         </td>
                      <td>epo:ParticipationCondition -&gt; at-voc:reserved-procurement [0..*]<br>epo:ParticipationConditionsSummary -&gt; at-voc:reserved-procurement [0..*]<br></td>
+                  </tr>
+                  <tr>
+                     <td>epo:hasResourceType</td>
+                     <td></td>
+                     <td>eli:LegalResource -&gt; at-voc:resource-type [1..*]</td>
                   </tr>
                   <tr>
                      <td>epo:hasReviewBodyType</td>
@@ -6640,12 +6846,12 @@
                   </tr>
                   <tr>
                      <td>epo:hasSellerItemID</td>
-                     <td> The general identifier for the concept as defined by the seller.
+                     <td>The general identifier assigned to the concept as defined by the Seller.​
                         
-                        WG Approval 16/05/2023
-                          The general identifier for the concept as defined by the seller.
+                        WG approval 16/05/2023
+                         The general identifier assigned to the concept as defined by the Seller.​
                         
-                        WG Approval 16/05/2023
+                        WG approval 16/05/2023
                         </td>
                      <td>epo-cat:Item -&gt; adms:Identifier [0..1]<br>epo-cat:Item -&gt; adms:Identifier [0..1]<br></td>
                   </tr>
@@ -6686,6 +6892,11 @@
                         
                         </td>
                      <td>epo:SubcontractTerm -&gt; at-voc:subcontracting-obligation [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>epo:hasSubdivision</td>
+                     <td></td>
+                     <td>eli:LegalResourceSubdivision -&gt; at-voc:subdivision [0..1]</td>
                   </tr>
                   <tr>
                      <td>epo:hasTaxIdentifier</td>
@@ -6787,8 +6998,14 @@
                      <td>epo:hasUUID</td>
                      <td>A universally unique identifier for an instance of this document.
                         
+                        WG Approval 12/05/2020
+                         A universally unique identifier for an instance of this document.
+                        
+                        WG Approval 12/05/2020
+                         A universally unique identifier for an instance of this document.
+                        
                         WG Approval 12/05/2020</td>
-                     <td>epo:Document -&gt; adms:Identifier [0..1]</td>
+                     <td>epo-cat:CatalogueResponseLine -&gt; adms:Identifier [1]<br>epo-cat:CatalogueResponseLine -&gt; adms:Identifier [1]<br>epo:Document -&gt; adms:Identifier [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:hasValidityPeriod</td>
@@ -6796,9 +7013,13 @@
                         
                         WG approval 30/05/2023 The relation indicating until when a given instance of a concept is applicable.
                         
+                        WG approval 30/05/2023 The relation indicating until when a given instance of a concept is applicable.
+                        
+                        WG approval 30/05/2023 The relation indicating until when a given instance of a concept is applicable.
+                        
                         WG approval 30/05/2023
                         </td>
-                     <td>cccev:Evidence -&gt; epo:Period [0..1]<br>epo:Technique -&gt; epo:Period [0..1]<br></td>
+                     <td>epo-cat:Catalogue -&gt; epo:Period [0..1]<br>cccev:Evidence -&gt; epo:Period [0..1]<br>epo-cat:Catalogue -&gt; epo:Period [0..1]<br>epo:Technique -&gt; epo:Period [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:hasVariantPermission</td>
@@ -6834,6 +7055,21 @@
                         
                         </td>
                      <td>epo:StrategicProcurement -&gt; at-voc:accessibility [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>epo:includesNationalCriterion</td>
+                     <td>Relation indicating that a Criterion contains a Criterion that is specific to a given
+                        Member State.
+                        
+                        Additional Information:
+                        In the ESPD, a Subcriterion is used to define national sub-criteria; maps to a UBL-2.3
+                        cac:SubTenderingCriterion class. It is currently used only for purely national criteria,
+                        to be able to establish the mapping from eCertis.
+                        
+                        WG approval 07/11/2023
+                        
+                        </td>
+                     <td>epo:QualificationCriterion -&gt; epo:QualificationCriterion [0..*]</td>
                   </tr>
                   <tr>
                      <td>epo:includesTender</td>
@@ -7009,7 +7245,7 @@
                   <tr>
                      <td>epo:playedBy</td>
                      <td>   </td>
-                     <td>epo:AgentInRole -&gt; foaf:Agent [1]<br>epo:JuryMember -&gt; person:Person [0..1]<br>epo-ful:TransportMeansOperator -&gt; foaf:Person [0..1]<br>epo-ful:TransportMeansOperator -&gt; foaf:Person [0..1]<br></td>
+                     <td>epo-ful:TransportMeansOperator -&gt; foaf:Person [0..1]<br>epo:AgentInRole -&gt; foaf:Agent [1]<br>epo:JuryMember -&gt; person:Person [0..1]<br>epo-ful:TransportMeansOperator -&gt; foaf:Person [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:providesContractTotalPaymentValue</td>
@@ -7048,12 +7284,12 @@
                   <tr>
                      <td>epo:refersToLot</td>
                      <td>      </td>
-                     <td>epo:Notice -&gt; epo:Lot [1..*]<br>epo-not:CompletionNotice -&gt; epo:Lot [1..*]<br>epo-not:ContractModificationNotice -&gt; epo:Lot [1..*]<br>epo-not:ResultNotice -&gt; epo:Lot [1..*]<br>epo-not:CompletionNotice -&gt; epo:Lot [1..*]<br>epo-not:ContractModificationNotice -&gt; epo:Lot [1..*]<br>epo-not:ResultNotice -&gt; epo:Lot [1..*]<br></td>
+                     <td>epo-not:CompletionNotice -&gt; epo:Lot [1..*]<br>epo-not:ContractModificationNotice -&gt; epo:Lot [1..*]<br>epo-not:ResultNotice -&gt; epo:Lot [1..*]<br>epo:Notice -&gt; epo:Lot [1..*]<br>epo-not:CompletionNotice -&gt; epo:Lot [1..*]<br>epo-not:ContractModificationNotice -&gt; epo:Lot [1..*]<br>epo-not:ResultNotice -&gt; epo:Lot [1..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:refersToLotGroup</td>
                      <td>     </td>
-                     <td>epo-not:ContractModificationNotice -&gt; epo:LotGroup [0..*]<br>epo-not:ResultNotice -&gt; epo:LotGroup [0..*]<br>epo-not:CompletionNotice -&gt; epo:LotGroup [0..*]<br>epo-not:CompletionNotice -&gt; epo:LotGroup [0..*]<br>epo-not:ContractModificationNotice -&gt; epo:LotGroup [0..*]<br>epo-not:ResultNotice -&gt; epo:LotGroup [0..*]<br></td>
+                     <td>epo-not:CompletionNotice -&gt; epo:LotGroup [0..*]<br>epo-not:ContractModificationNotice -&gt; epo:LotGroup [0..*]<br>epo-not:ResultNotice -&gt; epo:LotGroup [0..*]<br>epo-not:ContractModificationNotice -&gt; epo:LotGroup [0..*]<br>epo-not:ResultNotice -&gt; epo:LotGroup [0..*]<br>epo-not:CompletionNotice -&gt; epo:LotGroup [0..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo:refersToLotGroupAwardInformation</td>
@@ -7068,7 +7304,7 @@
                   <tr>
                      <td>epo:refersToNoticeAwardInformation</td>
                      <td>   </td>
-                     <td>epo-not:ContractModificationNotice -&gt; epo:NoticeAwardInformation [0..1]<br>epo-not:CompletionNotice -&gt; epo:NoticeAwardInformation [0..1]<br>epo-not:CompletionNotice -&gt; epo:NoticeAwardInformation [0..1]<br>epo-not:ContractModificationNotice -&gt; epo:NoticeAwardInformation [0..1]<br></td>
+                     <td>epo-not:CompletionNotice -&gt; epo:NoticeAwardInformation [0..1]<br>epo-not:ContractModificationNotice -&gt; epo:NoticeAwardInformation [0..1]<br>epo-not:ContractModificationNotice -&gt; epo:NoticeAwardInformation [0..1]<br>epo-not:CompletionNotice -&gt; epo:NoticeAwardInformation [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:refersToPlannedPart</td>
@@ -7122,7 +7358,7 @@
                   <tr>
                      <td>epo:refersToProcedure</td>
                      <td>      </td>
-                     <td>epo:Notice -&gt; epo:Procedure [1]<br>epo-not:ResultNotice -&gt; epo:Procedure [1]<br>epo-not:ContractModificationNotice -&gt; epo:Procedure [1]<br>epo-not:CompletionNotice -&gt; epo:Procedure [1]<br>epo-not:CompletionNotice -&gt; epo:Procedure [1]<br>epo-not:ContractModificationNotice -&gt; epo:Procedure [1]<br>epo-not:ResultNotice -&gt; epo:Procedure [1]<br></td>
+                     <td>epo-not:CompletionNotice -&gt; epo:Procedure [1]<br>epo-not:ContractModificationNotice -&gt; epo:Procedure [1]<br>epo-not:ResultNotice -&gt; epo:Procedure [1]<br>epo:Notice -&gt; epo:Procedure [1]<br>epo-not:ResultNotice -&gt; epo:Procedure [1]<br>epo-not:ContractModificationNotice -&gt; epo:Procedure [1]<br>epo-not:CompletionNotice -&gt; epo:Procedure [1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:refersToProject</td>
@@ -7137,7 +7373,7 @@
                   <tr>
                      <td>epo:relatesToEFormSectionIdentifier</td>
                      <td>   </td>
-                     <td>epo:ChangeInformation -&gt; adms:Identifier [1..*]<br>epo:NonPublishedInformation -&gt; adms:Identifier [1..*]<br>epo-con:ContractModificationInformation -&gt; adms:Identifier [0..1]<br>epo-con:ContractModificationInformation -&gt; adms:Identifier [0..1]<br></td>
+                     <td>epo:NonPublishedInformation -&gt; adms:Identifier [1..*]<br>epo-con:ContractModificationInformation -&gt; adms:Identifier [0..1]<br>epo:ChangeInformation -&gt; adms:Identifier [1..*]<br>epo-con:ContractModificationInformation -&gt; adms:Identifier [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:requestsRemedyType</td>
@@ -7188,7 +7424,7 @@
                   <tr>
                      <td>epo:specifiesBuyer</td>
                      <td>   </td>
-                     <td>epo-ord:Order -&gt; epo:Buyer [1]<br>epo-cat:Catalogue -&gt; epo:Buyer [0..*]<br>epo-ord:Order -&gt; epo:Buyer [1]<br>epo-cat:Catalogue -&gt; epo:Buyer [0..*]<br></td>
+                     <td>epo-ord:Order -&gt; epo:Buyer [1]<br>epo-cat:Catalogue -&gt; epo:Buyer [0..*]<br>epo-cat:Catalogue -&gt; epo:Buyer [0..*]<br>epo-ord:Order -&gt; epo:Buyer [1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:specifiesCarrier</td>
@@ -7197,13 +7433,13 @@
                   </tr>
                   <tr>
                      <td>epo:specifiesCatalogueProvider</td>
-                     <td> </td>
-                     <td>epo-cat:Catalogue -&gt; epo:CatalogueProvider [0..1]<br>epo-cat:Catalogue -&gt; epo:CatalogueProvider [0..1]<br></td>
+                     <td>   </td>
+                     <td>epo-cat:Catalogue -&gt; epo:CatalogueProvider [0..1]<br>epo-cat:CatalogueResponse -&gt; epo:CatalogueProvider [1]<br>epo-cat:Catalogue -&gt; epo:CatalogueProvider [0..1]<br>epo-cat:CatalogueResponse -&gt; epo:CatalogueProvider [1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:specifiesCatalogueReceiver</td>
-                     <td> </td>
-                     <td>epo-cat:Catalogue -&gt; epo:CatalogueReceiver [0..1]<br>epo-cat:Catalogue -&gt; epo:CatalogueReceiver [0..1]<br></td>
+                     <td>   </td>
+                     <td>epo-cat:Catalogue -&gt; epo:CatalogueReceiver [0..1]<br>epo-cat:CatalogueResponse -&gt; epo:CatalogueReceiver [1]<br>epo-cat:Catalogue -&gt; epo:CatalogueReceiver [0..1]<br>epo-cat:CatalogueResponse -&gt; epo:CatalogueReceiver [1]<br></td>
                   </tr>
                   <tr>
                      <td>epo:specifiesCleanVehicleDirectiveContractType</td>
@@ -7224,6 +7460,11 @@
                      <td>epo:specifiesDespatcher</td>
                      <td> </td>
                      <td>epo-ord:Order -&gt; epo-ful:Despatcher [0..1]<br>epo-ord:Order -&gt; epo-ful:Despatcher [0..1]<br></td>
+                  </tr>
+                  <tr>
+                     <td>epo:specifiesExclusionGround</td>
+                     <td></td>
+                     <td>epo:Procedure -&gt; epo:ExclusionGround [0..*]</td>
                   </tr>
                   <tr>
                      <td>epo:specifiesFreightForwarder</td>
@@ -7284,14 +7525,64 @@
                      <td>epo:ProcurementObject -&gt; epo:Technique [0..*]</td>
                   </tr>
                   <tr>
+                     <td>epo-acc:concernsProcedure</td>
+                     <td> </td>
+                     <td>epo-acc:ESPDRequest -&gt; epo:Procedure [1]<br>epo-acc:ESPDRequest -&gt; epo:Procedure [1]<br></td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:containsQuestion</td>
+                     <td></td>
+                     <td>epo-acc:QuestionGroup -&gt; epo-acc:Question [1..*]</td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:containsQuestionGroup</td>
+                     <td> </td>
+                     <td>epo:ProcurementCriterion -&gt; epo-acc:QuestionGroup [0..*]<br>epo:ProcurementCriterion -&gt; epo-acc:QuestionGroup [0..*]<br></td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:containsQuestionSubgroup</td>
+                     <td>  </td>
+                     <td>epo-acc:QuestionGroup -&gt; epo-acc:QuestionSubgroup [0..*]<br>epo-acc:QuestionSubgroup -&gt; epo-acc:QuestionSubgroup [0..*]<br>epo-acc:RequirementGroup -&gt; epo-acc:QuestionSubgroup [1..*]<br></td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:containsRequirement</td>
+                     <td></td>
+                     <td>epo-acc:RequirementGroup -&gt; epo-acc:Requirement [1..*]</td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:containsRequirementGroup</td>
+                     <td> </td>
+                     <td>epo:ProcurementCriterion -&gt; epo-acc:RequirementGroup [0..*]<br>epo:ProcurementCriterion -&gt; epo-acc:RequirementGroup [0..*]<br></td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:refersToNotice</td>
+                     <td> </td>
+                     <td>epo-acc:ESPDRequest -&gt; epo:Notice [0..*]<br>epo-acc:ESPDRequest -&gt; epo:Notice [0..*]<br></td>
+                  </tr>
+                  <tr>
+                     <td>epo-acc:specifiesProcurementCriterion</td>
+                     <td> </td>
+                     <td>epo-acc:ESPDRequest -&gt; epo:ProcurementCriterion [1..*]<br>epo-acc:ESPDRequest -&gt; epo:ProcurementCriterion [1..*]<br></td>
+                  </tr>
+                  <tr>
                      <td>epo-cat:comprisesCatalogueLine</td>
                      <td></td>
                      <td>epo-cat:Catalogue -&gt; epo-cat:CatalogueLine [1..*]</td>
                   </tr>
                   <tr>
+                     <td>epo-cat:comprisesCatalogueResponseLine</td>
+                     <td></td>
+                     <td>epo-cat:CatalogueResponse -&gt; epo-cat:CatalogueResponseLine [0..*]</td>
+                  </tr>
+                  <tr>
                      <td>epo-cat:describesItem</td>
                      <td></td>
                      <td>epo-cat:ItemProperty -&gt; epo-cat:Item [1]</td>
+                  </tr>
+                  <tr>
+                     <td>epo-cat:foreseesPackage</td>
+                     <td> </td>
+                     <td>epo-cat:CatalogueLine -&gt; epo-ful:Package [0..1]<br>epo-cat:CatalogueLine -&gt; epo-ful:Package [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo-cat:hasAccessoryItem</td>
@@ -7337,7 +7628,11 @@
                   </tr>
                   <tr>
                      <td>epo-cat:hasCatalogueLineValidity</td>
-                     <td> </td>
+                     <td>The relation indicating until when a Catalogue Line instance is applicable.
+                        
+                        WG approval 21/09/2023 The relation indicating until when a Catalogue Line instance is applicable.
+                        
+                        WG approval 21/09/2023</td>
                      <td>epo-cat:CatalogueLine -&gt; epo:Period [0..1]<br>epo-cat:CatalogueLine -&gt; epo:Period [0..1]<br></td>
                   </tr>
                   <tr>
@@ -7591,6 +7886,11 @@
                      <td>epo-cat:ItemRelation -&gt; epo-cat:Item [1]</td>
                   </tr>
                   <tr>
+                     <td>epo-cat:isSpecificToCatalogueResponseLine</td>
+                     <td></td>
+                     <td>epo-cat:CatalogueResponseInformation -&gt; epo-cat:CatalogueResponseLine [0..1]</td>
+                  </tr>
+                  <tr>
                      <td>epo-cat:isSpecificToLine</td>
                      <td></td>
                      <td>epo-cat:InformationHub -&gt; epo-cat:Line [0..*]</td>
@@ -7599,6 +7899,21 @@
                      <td>epo-cat:isSubordinatedToContract</td>
                      <td> </td>
                      <td>epo-cat:Catalogue -&gt; epo:Contract [0..1]<br>epo-cat:Catalogue -&gt; epo:Contract [0..1]<br></td>
+                  </tr>
+                  <tr>
+                     <td>epo-cat:refersToCatalogue</td>
+                     <td></td>
+                     <td>epo-cat:CatalogueResponse -&gt; epo-cat:Catalogue [1]</td>
+                  </tr>
+                  <tr>
+                     <td>epo-cat:refersToCatalogueLine</td>
+                     <td></td>
+                     <td>epo-cat:CatalogueResponseLine -&gt; epo-cat:CatalogueLine [1]</td>
+                  </tr>
+                  <tr>
+                     <td>epo-cat:specifiesCatalogueResponseInformation</td>
+                     <td></td>
+                     <td>epo-cat:CatalogueResponse -&gt; epo-cat:CatalogueResponseInformation [1]</td>
                   </tr>
                   <tr>
                      <td>epo-cat:specifiesChargeInformation</td>
@@ -7626,6 +7941,11 @@
                      <td>epo-ful:DespatchAdvice -&gt; epo-ful:DespatchLine [1..*]</td>
                   </tr>
                   <tr>
+                     <td>epo-ful:comprisesReceiptAdviceLine</td>
+                     <td></td>
+                     <td>epo-ful:ReceiptAdvice -&gt; epo-ful:ReceiptAdviceLine [0..*]</td>
+                  </tr>
+                  <tr>
                      <td>epo-ful:containsGoodsItem</td>
                      <td></td>
                      <td>epo-ful:Package -&gt; epo-ful:GoodsItem [1..*]</td>
@@ -7651,8 +7971,8 @@
                   </tr>
                   <tr>
                      <td>epo-ful:hasAssociatedDocument</td>
-                     <td>   </td>
-                     <td>epo-ful:DespatchAdvice -&gt; epo-cat:PostAwardDocument [0..1]<br>epo-ful:DespatchLine -&gt; epo-cat:PostAwardDocument [0..1]<br>epo-ful:DespatchLine -&gt; epo-cat:PostAwardDocument [0..1]<br>epo-ful:DespatchAdvice -&gt; epo-cat:PostAwardDocument [0..1]<br></td>
+                     <td>     </td>
+                     <td>epo-ful:DespatchLine -&gt; epo:Document [0..1]<br>epo-ful:DespatchAdvice -&gt; epo:Document [0..1]<br>epo-ful:ReceiptAdvice -&gt; epo:Document [0..1]<br>epo-ful:ReceiptAdvice -&gt; epo:Document [0..1]<br>epo-ful:DespatchAdvice -&gt; epo:Document [0..1]<br>epo-ful:DespatchLine -&gt; epo:Document [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo-ful:hasCarrierConsignmentID</td>
@@ -7796,6 +8116,11 @@
                      <td>epo-ful:DespatchLine -&gt; epo:Quantity [0..1]<br>epo-ful:DespatchLine -&gt; epo:Quantity [0..1]<br></td>
                   </tr>
                   <tr>
+                     <td>epo-ful:hasOversupplyQuantity</td>
+                     <td> </td>
+                     <td>epo-ful:ReceiptAdviceLine -&gt; epo:Quantity [0..1]<br>epo-ful:ReceiptAdviceLine -&gt; epo:Quantity [0..1]<br></td>
+                  </tr>
+                  <tr>
                      <td>epo-ful:hasPackagingType</td>
                      <td></td>
                      <td>epo-ful:Package -&gt; at-voc-new:packaging-type [0..1]</td>
@@ -7806,9 +8131,29 @@
                      <td>epo-ful:Consignment -&gt; epo-ful:ShipmentStage [0..*]</td>
                   </tr>
                   <tr>
+                     <td>epo-ful:hasReceivedQuantity</td>
+                     <td> </td>
+                     <td>epo-ful:ReceiptAdviceLine -&gt; epo:Quantity [0..1]<br>epo-ful:ReceiptAdviceLine -&gt; epo:Quantity [0..1]<br></td>
+                  </tr>
+                  <tr>
+                     <td>epo-ful:hasRejectReason</td>
+                     <td></td>
+                     <td>epo-ful:ReceiptAdviceLine -&gt; at-voc-new:reject-reason [0..1]</td>
+                  </tr>
+                  <tr>
                      <td>epo-ful:hasRequestedPickUpInformation</td>
                      <td></td>
                      <td>epo-ful:Consignment -&gt; epo-ful:ShipmentInformation [1]</td>
+                  </tr>
+                  <tr>
+                     <td>epo-ful:hasShortageAction</td>
+                     <td></td>
+                     <td>epo-ful:ReceiptAdviceLine -&gt; at-voc-new:action-code [0..1]</td>
+                  </tr>
+                  <tr>
+                     <td>epo-ful:hasShortQuantity</td>
+                     <td> </td>
+                     <td>epo-ful:ReceiptAdviceLine -&gt; epo:Quantity [0..1]<br>epo-ful:ReceiptAdviceLine -&gt; epo:Quantity [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo-ful:hasSizeType</td>
@@ -7827,7 +8172,19 @@
                   </tr>
                   <tr>
                      <td>epo-ful:hasTraceID</td>
-                     <td> </td>
+                     <td>The identifier used for tracking the goods item
+                        
+                        Additional information:
+                        An example is the EPC number used in RFID.
+                        
+                        WG approval 21/09/2023
+                         The identifier used for tracking the goods item
+                        
+                        Additional information:
+                        An example is the EPC number used in RFID.
+                        
+                        WG approval 21/09/2023
+                        </td>
                      <td>epo-ful:GoodsItem -&gt; adms:Identifier [0..1]<br>epo-ful:GoodsItem -&gt; adms:Identifier [0..1]<br></td>
                   </tr>
                   <tr>
@@ -7881,6 +8238,23 @@
                      <td>epo-ful:ShipmentInformation -&gt; epo-ful:DespatchLine [0..1]</td>
                   </tr>
                   <tr>
+                     <td>epo-ful:isSubmittedForDespatchAdvice</td>
+                     <td>Additional information:
+                        In PEPPOL (https://test-docs.peppol.eu/logistics/qa/codelist/ReceiptAdviceTypeCode/)
+                        this predicate is used for option D - Response to the Advanced Despatch Advice document.</td>
+                     <td>epo-ful:ReceiptAdvice -&gt; epo-ful:DespatchAdvice [0..1]</td>
+                  </tr>
+                  <tr>
+                     <td>epo-ful:isSubmittedForDespatchLine</td>
+                     <td></td>
+                     <td>epo-ful:ReceiptAdviceLine -&gt; epo-ful:DespatchLine [1]</td>
+                  </tr>
+                  <tr>
+                     <td>epo-ful:isSubmittedForShipment</td>
+                     <td></td>
+                     <td>epo-ful:ReceiptAdvice -&gt; epo-ful:ShipmentInformation [0..1]</td>
+                  </tr>
+                  <tr>
                      <td>epo-ful:refersToConsignment</td>
                      <td></td>
                      <td>epo-ful:DespatchAdvice -&gt; epo-ful:Consignment [1]</td>
@@ -7911,14 +8285,24 @@
                      <td>epo-ful:DespatchAdvice -&gt; epo-ful:ShipmentAgreement [0..1]</td>
                   </tr>
                   <tr>
-                     <td>epo-ful:specifiesConsignee</td>
+                     <td>epo-ful:RejectionAction</td>
+                     <td></td>
+                     <td>epo-ful:ReceiptAdviceLine -&gt; at-voc-new:action-code [0..1]</td>
+                  </tr>
+                  <tr>
+                     <td>epo-ful:specifiesBuyer</td>
                      <td> </td>
-                     <td>epo-ful:DespatchAdvice -&gt; epo-ord:Consignee [1..*]<br>epo-ful:DespatchAdvice -&gt; epo-ord:Consignee [1..*]<br></td>
+                     <td>epo-ful:ReceiptAdvice -&gt; epo:Buyer [0..1]<br>epo-ful:ReceiptAdvice -&gt; epo:Buyer [0..1]<br></td>
+                  </tr>
+                  <tr>
+                     <td>epo-ful:specifiesConsignee</td>
+                     <td>   </td>
+                     <td>epo-ful:DespatchAdvice -&gt; epo-ord:Consignee [1..*]<br>epo-ful:ReceiptAdvice -&gt; epo-ord:Consignee [1..*]<br>epo-ful:DespatchAdvice -&gt; epo-ord:Consignee [1..*]<br>epo-ful:ReceiptAdvice -&gt; epo-ord:Consignee [1..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo-ful:specifiesDespatcher</td>
-                     <td></td>
-                     <td>epo-ful:DespatchAdvice -&gt; epo-ful:Despatcher [1..*]</td>
+                     <td> </td>
+                     <td>epo-ful:ReceiptAdvice -&gt; epo-ful:Despatcher [1]<br>epo-ful:DespatchAdvice -&gt; epo-ful:Despatcher [1..*]<br></td>
                   </tr>
                   <tr>
                      <td>epo-ful:specifiesOriginator</td>
@@ -7929,6 +8313,11 @@
                      <td>epo-ful:specifiesPlaceOfDespatch</td>
                      <td> </td>
                      <td>epo-ful:ShipmentInformation -&gt; dct:Location [0..1]<br>epo-ful:ShipmentInformation -&gt; dct:Location [0..1]<br></td>
+                  </tr>
+                  <tr>
+                     <td>epo-ful:specifiesSeller</td>
+                     <td> </td>
+                     <td>epo-ful:ReceiptAdvice -&gt; epo-ord:Seller [0..1]<br>epo-ful:ReceiptAdvice -&gt; epo-ord:Seller [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo-ful:specifiesShipment</td>
@@ -8002,8 +8391,8 @@
                   </tr>
                   <tr>
                      <td>epo-ord:hasAcceptanceStatus</td>
-                     <td></td>
-                     <td>epo-ord:OrderResponseInformation -&gt; at-voc-new:ResponseStatus [1]</td>
+                     <td>  </td>
+                     <td>epo-ord:OrderResponseInformation -&gt; at-voc-new:ResponseStatus [1]<br>epo-cat:CatalogueResponseInformation -&gt; at-voc-new:ResponseStatus [1]<br>epo-cat:CatalogueResponseInformation -&gt; at-voc-new:ResponseStatus [1]<br></td>
                   </tr>
                   <tr>
                      <td>epo-ord:hasAmountDueForPayment</td>
@@ -8031,9 +8420,14 @@
                      <td>epo-ord:Order -&gt; epo:MonetaryValue [0..1]<br>epo-ord:Order -&gt; epo:MonetaryValue [0..1]<br></td>
                   </tr>
                   <tr>
+                     <td>epo-ord:hasSellerOrderID</td>
+                     <td> </td>
+                     <td>epo-ord:Order -&gt; adms:Identifier [0..1]<br>epo-ord:Order -&gt; adms:Identifier [0..1]<br></td>
+                  </tr>
+                  <tr>
                      <td>epo-ord:hasTaxInformation</td>
                      <td>    </td>
-                     <td>epo-ord:AllowanceChargeInformation -&gt; epo-ord:TaxInformation [0..1]<br>epo-cat:Item -&gt; epo-ord:TaxInformation [0..*]<br>epo:Contract -&gt; epo-ord:TaxInformation [0..1]<br>epo:Contract -&gt; epo-ord:TaxInformation [0..1]<br>epo-cat:Item -&gt; epo-ord:TaxInformation [0..*]<br></td>
+                     <td>epo-ord:AllowanceChargeInformation -&gt; epo-ord:TaxInformation [0..1]<br>epo-cat:Item -&gt; epo-ord:TaxInformation [0..*]<br>epo:Contract -&gt; epo-ord:TaxInformation [0..1]<br>epo-cat:Item -&gt; epo-ord:TaxInformation [0..*]<br>epo:Contract -&gt; epo-ord:TaxInformation [0..1]<br></td>
                   </tr>
                   <tr>
                      <td>epo-ord:hasTotalAllowanceAmount</td>
@@ -8168,6 +8562,11 @@
                      <td>epo-ord:specifiesSpecificDeliveryAgreement</td>
                      <td></td>
                      <td>epo-ord:DeliveryInformation -&gt; epo-ord:DeliveryAgreement [0..1]</td>
+                  </tr>
+                  <tr>
+                     <td>frbroo:R3i_realises</td>
+                     <td></td>
+                     <td>eli:LegalExpression -&gt; eli:Work [1]</td>
                   </tr>
                   <tr>
                      <td>locn:address</td>
