@@ -21,7 +21,7 @@ The release specific glossaries
 
 
 == General Reference
-* xref:epo-home::references.adoc[references.adoc] +
+* xref:epo-home::references.adoc[Reference Documentation] +
 Useful reference documents in the development of the ePO
 * xref:epo-home::history.adoc[History and Planned Developments] +
 Milestones in the project and future development plans
