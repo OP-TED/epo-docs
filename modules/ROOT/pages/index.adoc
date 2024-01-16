@@ -9,7 +9,6 @@ The eProcurement Ontology (ePO) defines and develops the semantic ontology relat
 The following topics are included in this version of the eProcurement Ontology documentation:
 
 
-
 == Release Documentation
 * xref:EPO::release-notes.adoc[Release Notes] +
 The release notes as on GitHub
