@@ -4,53 +4,35 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
-[.tile-container]
---
+The eProcurement Ontology (ePO) defines and develops the semantic ontology related to EU public procurement. It creates and maintains the ontology according to EU regulations and directives.
 
-[.tile]
-.ePO 4.0.0: Latest Production Release
-****
-The eProcurement Ontology v4.0.0 was released on the 24 November 2023 furthering work on the eFulfilment and eContract modules, amongst other updates.
+The following topics are included in this version of the eProcurement Ontology documentation:
 
-xref:4.0@EPO::index.adoc[Click here to read the version 4.0.0 details]
 
-//Information on 4.0.0-rc.1 can also be found on this page.
-****
 
-////
-[.tile]
-.ePO Future Releases (to be hidden until content ready)
-****
-Information on future releases planned for the eProcurement Ontology can be found via the link below. Information includes scheduled releases in the short term, and features, updates and fixes to be addressed in the longer term.
+== Release Documentation
+* xref:EPO::release-notes.adoc[Release Notes] +
+The release notes as on GitHub
+* xref:EPO::business.adoc[Business Overview] +
+Business Overview of this release
+* xref:EPO::conceptual.adoc[Conceptual Models] +
+The release specific conceptual Model(s)
+* xref:EPO::glossaries.adoc[Glossaries] +
+The release specific glossaries
 
-xref:future_releases@EPO::index.adoc[Information on future releases can be found here.]
-****
-////
 
-[.tile]
-.ePO Past Releases
-****
-Information on past releases, versions 1.0.0 through to 3.1.0, of the eProcurement Ontology can be found via the link below. The information includes a brief description of each release. A full description of each release can be found following the links on the Past Releases page.
+== General Reference
+* xref:epo-home::references.adoc[references.adoc] +
+Useful reference documents in the development of the ePO
+* xref:epo-home::history.adoc[History and Planned Developments] +
+Milestones in the project and future development plans
+* xref:epo-home::versioning.adoc[ePO Versioning Rules] +
+An overview of the versioning rules for releases
 
-xref:past_releases.adoc[Information on past releases can be found here.]
-****
-
-[.tile]
-.Working Group Documents
-****
-This section contains minutes and reports of the Working Group activities and meetings listed by interest/ category.
-
-xref:epo-wgm::index.adoc[Click here to read the working group documents]
-****
-
-////
-[.tile]
-.model2owl Documentation (to be hidden until content ready)
-****
-The model2owl Project consists of a set of tools for transforming a UML v2.5 model from its XMI v2.5.1 serialisation into a formal ontology.
-
-//xref:xxx@EPO::model2owl.adoc[update when ready]
-Updated documents coming soon.
-****
-////
---
+== Working Group Documents
+* xref:epo-wgm::wider.adoc[Quarterly Meetings] +
+Minutes, Presentations etc from the quarterly Working Group Meetings
+* xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)] +
+All weekly meetings minutes collated into yearly documents
+* xref:epo-wgm::indiv.adoc[Individual Meeting Reports] +
+All the weekly meeting minutes and documents saved individually
