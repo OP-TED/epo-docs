@@ -1,0 +1,101 @@
+== Working Group meeting   +
+*Date*: 14/12/2023    +
+*Participants:* Pietro Palermo, Ivan Willer, Thomas Pettersen  +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Natalie Muric
+
+
+=== Agenda
+
+* Order data model update
+
+=== Discussion  +
+Definitions were added for the following concepts:
+
+|===
+|Project reference identifier |The identifier of the project the order refers to.
+
+|Order validity period |A group of business terms providing information on the validity period of an Order.
+|Order validity end date |The date at which the order validity period ends.
+|Order validity end time |The time at which the order validity period ends.
+|Offer reference |A group of business terms providing information on a preceding Offer.
+|Offer reference identifier |The identifier of the Offer.
+|Offer reference issue date |The date of formal issuance of the Offer.
+|Offer reference issue time |The time of formal issuance of the Offer.
+|Offer issuer identifier |to be taken from eCatalogue
+|Order reference |A group of business terms providing information on the Order being referenced to.
+|Order reference identifier |The identifier of the referenced Order.
+|Order reference issue date |The date of formal issuance of the referenced Order.
+|Order reference issue time |The time of formal issuance of the referenced Order.
+|Originator document reference |A group of business terms providing information on a document in which the originator describes his needs.
+|Originator document reference identifier |The identifier of the referenced originator document.
+|Originator document reference issue date |The date of formal issuance of the originator document.
+|Originator document reference issue time |The time of formal issuance of the originator document.
+|Catalogue reference |to be taken from eCatalogue
+|Catalogue reference identifier |to be taken from eCatalogue
+|Catalogue reference issue date |to be taken from eCatalogue
+|Catalogue reference issue time |to be taken from eCatalogue
+|Additional documents reference |A group of business terms providing information on one or more referenced documents.
+|Additional document reference identifier |The identifier of the referenced document.
+|Additional document reference issue date |The date of formal issuance of the referenced document.
+|Additional document reference issue time |The time of formal issuance of the referenced document.
+| |
+|Attached document |An attached document embedded as
+binary object or sent together with
+the Order.
+|Attached document Mime code |The Mime code of the attached document.
+
+Allowed mime codes:
+- application/pdf
+- image/png
+- image/jpeg
+- text/csv
+- application/vnd.openxmlformatsofficedocument.
+spreadsheetml.sheet
+- application/
+|Attached document filename |The file name of the attached
+document.
+| |
+|External document URI |The URL (Uniform Resource Locator) that identifies where the external document is located.
+|Contract information |To be taken from Pre-Award
+|Contract identifier |To be taken from Pre-Award
+|Contract issue date |To be taken from Pre-Award
+|Contract issue time |To be taken from Pre-Award
+|Contract description |To be taken from Pre-Award
+|Buyer information |A group of business terms providing information on the agent that awards a contract and/or purchases items.
+|Party information |
+|Buyer party electronic address |The identifier of the Buyer's electronic address from which the Order is sent.
+|Scheme identifier |The identification scheme identifier.
+|Party identification |
+|Buyer party identification |An identifier of the Buyer.
+|Scheme identifier |The identification scheme identifier.
+|Party name |
+|Buyer name |The full name of the Buyer.
+|===
+
+|===
+|Buyers legal registration identifier |The identifier issued by an official registrar that identifies the Buyer as a legal entity or person.
+
+|Scheme identifier |The identification scheme identifier.
+|===
+
+
+* Order hasValidityPeriod to be added to the model (column FGH) - need to find a solution for date and datetime
+* Quotation changed to Offer to align with the ontology
+* Offer issuer is changed to Offer issuer identifier
+* All BG descriptions have been harmonised to start with:  "A group of business terms providing information on ……"
+* Originator Request: Definiton taken from ontology
+* Attached document, Attached document Mime code, Attached document filename not covered by ontology but will give an external document URI.
+
+
+=== Action Points
+
+* Add epo:Order epo:hasValidityPeriod epo:Period as following:
+|===
+|epo-ord:Order / epo:Period / xsd:dateTime |?this epo:hasValidityPeriod / epo:hasEnd ?value . |The date and time at which this period ends.
+
+|epo-ord:Order / epo:Period / xsd:dateTime |?this epo:hasValidityPeriod / epo:hasEnd ?value . |The date and time at which this period ends.
+|===
+
+* Investigate a possible solution for date and time implementation in ePO.
+

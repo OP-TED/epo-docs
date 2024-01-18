@@ -1,16 +1,16 @@
-Working Group meeting   +
+== Working Group meeting   +
 *Date*: 28/11/2023    +
 *Participants:* Paloma Arillo, Pascaline  Laure Tchienehom,  Cristian Vasquez  +
 *Model editor:* Andreea Pasăre   +
 *Note editor:* Andreea Pasăre
 
 
-Agenda
+=== Agenda
 
 * Requirements  and Questions
 
 
-Discussion
+=== Discussion
 
 The models that were requested at the end of the last WGM were presented:
 
@@ -40,6 +40,6 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+AAAAG5CAYAAAAOOV5rAACAAEl
 
 
 
-Action Point
+=== Action Point
 
 * Create a model based on the final proposal of this meeting.

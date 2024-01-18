@@ -1,5 +1,5 @@
 == Working Group meeting   +
-*Date*: 21/11/2023    +
+*Date:* 21/11/2023    +
 *Participants:* Paloma Arillo, Eugeniu Costetchi, Pascaline  Laure Tchienehom,  Cristian Vasquez  +
 *Model editor:* Andreea Pasăre   +
 *Note editor:* Natalie Muric

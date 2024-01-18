@@ -1,17 +1,17 @@
-Working Group meeting   +
+== Working Group meeting   +
 *Date*: 12/12/2023    +
 *Participants:* Paloma Arillo, Klaus Nielsen, Laurent Schoojans, Dragos Stoica, Pascaline  Laure Tchienehom,  Cristian Vasquez  +
 *Model editor:* Andreea Pasăre   +
 *Note editor:* Natalie Muric
 
 
-Agenda
+=== Agenda
 
 * Questions whilst addressing the ESPD Request
 * Review eAccess diagrams to be published in the release candidate
 * eAccess concept definitions
 
-Discussion
+=== Discussion
 
 Questions whilst addressing the ESPD Request
 
@@ -80,7 +80,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOUAAAJxCAIAAACCGpG/AACAAEl
 
 
 
-Action Points
+=== Action Points
 
 * Create instance diagram using group and subgroups identifiers instead of the concepts.
 

@@ -24,6 +24,7 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [cols="1,1,1,1,1"]
 
 |===
+|<<2024,2024>>
 |<<2023,2023>>
 |<<2022,2022>>
 |<<2021,2021>>
@@ -31,8 +32,16 @@ This does not mean necessarily that this was the only topic addressed in the mee
 |<<2019,2019>>
 |===
 
+[#2024]
+=== 2024
+
+xref:notes/2024-01-16-wgm.adoc[2024-01-16 (eSubmission)]
+
+
 [#2023]
 === 2023
+
+xref:notes/2023-12-14-wgm.adoc[2023-12-12 (eOrdering)]
 
 xref:notes/2023-12-12-wgm.adoc[2023-12-12 (eAccess)]
 
