@@ -6,13 +6,13 @@
 
 * xref:epo-home::index.adoc[Home]
 
-* [.separated]#**Release Documentation**#
-* xref:EPO::release-notes.adoc[Release Notes]
+* [.separated]#**General Documentation**#
 * xref:EPO::business.adoc[Business Overview]
 * xref:EPO::conceptual.adoc[Conceptual Models]
 * xref:EPO::glossaries.adoc[Glossaries]
+* xref:EPO::release-notes.adoc[Release Notes]
 
-* [.separated]#**General Reference**#
+* [.separated]#**Reference Documentation**#
 * xref:epo-home::references.adoc[Reference Documents]
 * xref:epo-home::history.adoc[History and Planned Developments]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]

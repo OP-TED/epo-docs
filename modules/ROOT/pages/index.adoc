@@ -9,18 +9,19 @@ The eProcurement Ontology (ePO) defines and develops the semantic ontology relat
 The following topics are included in this version of the eProcurement Ontology documentation:
 
 
-== Release Documentation
-* xref:EPO::release-notes.adoc[Release Notes] +
-The release notes as on GitHub
+== General Documentation
+
 * xref:EPO::business.adoc[Business Overview] +
 Business Overview of this release
 * xref:EPO::conceptual.adoc[Conceptual Models] +
 The release specific conceptual Model(s)
 * xref:EPO::glossaries.adoc[Glossaries] +
 The release specific glossaries
+* xref:EPO::release-notes.adoc[Release Notes] +
+The release notes as on GitHub
 
 
-== General Reference
+== Reference Documentation
 * xref:epo-home::references.adoc[Reference Documentation] +
 Useful reference documents in the development of the ePO
 * xref:epo-home::history.adoc[History and Planned Developments] +
