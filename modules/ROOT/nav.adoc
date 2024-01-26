@@ -5,13 +5,15 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
-* xref:3.1@EPO::index.adoc[Home]
-* xref:3.1@EPO::release-notes.adoc[Release Notes]
+ xref:epo-home::index.adoc[Home]
+
+* [.separated]#**General Documentation**#
 * xref:3.1@EPO::business.adoc[Business Overview]
 * xref:3.1@EPO::conceptual.adoc[Conceptual Models]
 * xref:3.1@EPO::glossaries.adoc[Glossaries]
+* xref:3.1@EPO::release-notes.adoc[Release Notes]
 
-* [.separated]#**General Reference**#
+* [.separated]#**Reference Documentation**#
 * xref:epo-home::references.adoc[Reference Documents]
 * xref:epo-home::history.adoc[History and Planned Developments]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
