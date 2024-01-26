@@ -31,10 +31,13 @@
     <property name="DefaultPlantUmlFileTemplate" value="Empty" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../espd-docs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/ROOT/images" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\paterni\Code\epo-docs\modules\ROOT\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\paterni\Code\epo-docs\modules\ROOT\pages\archive" />
     </key>
@@ -202,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702466492724</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="updated links">
+      <created>1706179539695</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1706179539695</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
