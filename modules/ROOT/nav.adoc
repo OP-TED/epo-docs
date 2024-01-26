@@ -5,7 +5,7 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: August 2023
 
- xref:epo-home::index.adoc[Home]
+* xref:epo-home::index.adoc[Home]
 
 * [.separated]#**General Documentation**#
 * xref:business.adoc[Business Overview]
