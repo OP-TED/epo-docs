@@ -3,7 +3,7 @@
 :page-name: nav
 :docdate: December 2023
 
- xref:epo-home::index.adoc[Home]
+* xref:epo-home::index.adoc[Home]
 
 * [.separated]#**General Documentation**#
 * xref:business.adoc[Business Overview]
