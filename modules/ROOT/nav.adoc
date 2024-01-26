@@ -3,13 +3,15 @@
 :page-name: nav
 :docdate: December 2023
 
-* xref:index.adoc[Home]
-* xref:release-notes.adoc[Release Notes]
+ xref:epo-home::index.adoc[Home]
+
+* [.separated]#**General Documentation**#
 * xref:business.adoc[Business Overview]
 * xref:conceptual.adoc[Conceptual Models]
 * xref:glossaries.adoc[Glossaries]
+* xref:release-notes.adoc[Release Notes]
 
-* [.separated]#**General Reference**#
+* [.separated]#**Reference Documentation**#
 * xref:epo-home::references.adoc[Reference Documents]
 * xref:epo-home::history.adoc[History and Planned Developments]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
