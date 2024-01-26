@@ -1,0 +1,38 @@
+== Working Group meeting   +
+*Date*: 25/1/2024    +
+*Participants:* Peter Borresen, Natalie Muric, Pietro Palermo  +
+*Model editor: *Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
+
+== Agenda
+
+* Order data model update
+* Plan work on Fulfillment data model update
+
+== Discussion
+
+Order data model update
+
+
+* A question was raised about the terminology of Agent rather than Actor in the TC440. CEN BII used the term Actor, however eOrdering is now using Agent to be aligned with the ontology. The choreography document of TC440 eOrdering has undergone formal vote so it seems that it cannot be changed.
+* There was a discussion on the Buyer name business term description:
+** It was noted that for TC440 a usage note could be used when the buyer is a private entity. Such a usage note could be:
+"In the context of business to consumer, the Buyer may be a Taxable person who trades as a person or persons.
+In such cases, the ePO paths that go through Organization for this Business Group will need to go through Person."
+** This implies that all related fields such as the address will be referring to the person and not an organization. This causes a problem because in the ontology we have Person and Organization and if data is received concerning a cellar and it has to be converted to ontology conformant data we would not be able to differentiate whether we deal with a person or an organization.
+* After that, there was a discussion on the Seller:
+** The seller can be an organization or a person, so both ePO class and property paths should be provided.
+** If the Seller is a Person it was decided that:
+*** For Seller trading name we should use dct:alternative at the level of person:Person.
+*** For Seller name we should use dct:name at the level of person:Person.
+**
+
+Fulfillment data model update
+
+
+* It was decided that the ePO class and property paths and definitions will be provided in a similar manner as in the Order data model update.
+
+== Action Points
+
+* It was noted that at times the ontology goes too granular for the data that will be provided when creating ontology conformant data.  *The ePO should look into* how they can help data providers find a solution to this. An example of this is when the legal representative of a Seller can either be a legal person or an organization.  Often data sources only consider the party and not whether it is a person or an organization therefore if they want to provide ontology conformant data they need a way of differentiating between the two which, in this situation, they cannot.

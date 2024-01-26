@@ -1,0 +1,41 @@
+== Working Group meeting   +
+*Date*: 23/01/2024    +
+*Participants:* ** **Paloma Arillo, Natalie Muric, Giovanni Paolo Sellitto, Dragos Stoica, Pascaline Laure Tchienehom
+
+*Model editor: *Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
+== Agenda
+
+* Continue collecting eSubmission requirements.
+
+
+In the first instance, eSubmission will be based on the ESPD Response. We would like your input concerning use cases on data coming from ESPD Responses
+
+== Discussion
+
+* There is a problem with Power of attorney . A person has a power of attorney and it is not a role. The ESPD model appears to conflate Person and PowerOfAttorney. The modeling in UBL  was consulted (https://docs.oasis-open.org/ubl/UBL-2.4.html[https://docs.oasis-open.org/ubl/UBL-2.4.html]) where the PowerOfAttorney exists, which is a document that has an AgentParty.
+**  The Implementing Regulation for ESPD was consulted (https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0007).[https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0007).]
+** A person can represent an organization and have power of attorney (a capability). This power of attorney is a legal document. The mandate (also a document) contains the context in which the power of attorney works.
+** How should the ePO implement the power of attorney?
+*** Should it be implemented as a document, with a Person connected with the power of attorney as well as the organization?
+
+* Cac::DocumentReference: Is a class to define a reference to a document (Document Reference)  A reference to the evidentiary document (Evidence) / A reference to a document relevant to this certificate or an application for this certificate (Certificate). We have this in ePO as a *Certificate *(foaf:Person hasCertification epo:Certificate, etc).
+* We do not have examples of the xml for mandate document.
+** We will create an attribute epo.hasAdditionalDocumentIdentifier
+** A mandate is a token that a person can have, for example in Italy the EIDS token may be used to provide all the mandates/power of attorneys of a given person.
+** We could model the *legal representative* of the organization, without the Power of attorney. the *legal representative* of an organization has a mandate to fulfill and may give someone else the power of attorney.
+** It seems that power of attorney differs from country to country. Maybe we should avoid the words power of Attorney, and use something like: *isLegallyRepresentedBy *a person, and connect this Person to a Certificate in ePO with 2 possible specialisations PowerOfAttorney and Mandate. Unless there is a use case for the specialisations they should not be implemented at this point.
+* It was discussed whether or how cac:Evidence  cac:EvidenceSupplied should be implemented in the ePO. In the ePO, we will merge these two terms into one concept.
+* espd:FinancialRatioType: Is a technical code list that we do not need to implement in the ePO. 
+* For the access-right code list, the ESPD uses  only the values "_confidential" _or "_public"_.
+* By the end of the week we will have the draft of the ORSD document. 
+
+== Action Points
+
+* Create an issue on how the ESPD models the power of Attorney.  We should ask them if there is a conflation between the concept of a person and PowerOfAttorney document.
+* Create an issue in the ESPD github stating that the link of cac:ResidenceAddress to the at-voc::country is missing in the ESPD document.
+* Edit Github issue 502. (https://github.com/OP-TED/ePO/issues/502)[https://github.com/OP-TED/ePO/issues/502)]
+
+
+
