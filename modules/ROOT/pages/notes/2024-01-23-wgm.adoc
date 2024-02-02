@@ -2,7 +2,7 @@
 *Date*: 23/01/2024    +
 *Participants:* ** **Paloma Arillo, Natalie Muric, Giovanni Paolo Sellitto, Dragos Stoica, Pascaline Laure Tchienehom
 
-*Model editor: *Andreea Pasăre   +
+*Model editor:* Andreea Pasăre   +
 *Note editor:* Achilles Dougalis
 
 == Agenda

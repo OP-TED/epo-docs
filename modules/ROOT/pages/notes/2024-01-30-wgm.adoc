@@ -1,0 +1,74 @@
+== Working Group meeting
+ 
+*Date*: 30/01/2024    +
+*Participants:* ** **Paloma Arillo, Natalie Muric, Giovanni Paolo Sellitto, Dragos Stoica, Pascaline Laure Tchienehom  +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+ 
+== Agenda
+
+* Review the eSubmission requirements 
+* Discuss ESPD GitHub issues 
+ 
+== Discussion
+
+*About the eSubmission requirements*** **
+ 
+
+* 2 user stories were presented. One for the Tenderer/Candidate, and one for the Buyer.  
+* A https://github.com/OP-TED/ESPD-EDM/issues/412[request] was made for more user stories and competency questions. It was explained that the user stories should be created in the same vein as per the eAccess module. Although the ESPD response structure reuses the ESPD request structure, we need to know the questions that could be created on the data in the ESPD response.  
+* It was agreed that some user stories from eAccess can be modified to accommodate eSubmission, and examples of these modifications were shown during the meeting.   
+
+** Examples of user stories from eAccess: 
+
+|===
+|US-SC-1  |Economic Operator  |As an Economic Operator, I want to know which evidence needs to be supplied by relied upon entities, so I can take part in the Procurement Procedure.  
+
+|US-SC-2  |Economic Operator  |As an Economic Operator, I want to know for which Criterion I need to provide information on a relied upon entity, so I can take part in the Procurement Procedure.  
+|===
+
+* Translated eSubmission user stories: 
+
+|===
+|US-SC-1  |Buyer |As a Buyer, I want to know if the Tenderer/Candidate relies upon other entities and consult the evidence supplied for this criteria, so I can assess if the Tenderer/Candidate is eligible to take part in the Procurement Procedure.  
+
+|US-SC-2  |Buyer  |As an Buyer, I want to consult the information on an entity that the Tenderer/Candidate relies upon, so I can assess if the Tenderer/Candidate can take part in the Procurement Procedure.  
+|===
+ 
+
+* In the user story for the subcontractor the data available will depend on whether explicit information was requested in the ESPD request. The need for information on the subcontractor may vary from country to country.  
+
+* Financial ratio type:  
+It was decided that financial ratio type should be implemented in ePO, even though this  codelist is maintained by the ESPD team in their repository.   +
+It was mentioned that ePO could refer to the ESPD's code list about Financial ratio type, https://github.com/OP-TED/ESPD-EDM/blob/master/codelists/gc/FinancialRatioType.gc[espd:FinancialRatioType].   +
+It was noted that the name of the dependency link from cac:ResponseValue to the espd:FiancialRatioType codelist is missing in the ESPD Response TOV (see diagram below). We will add a ticket to inform the ESPD team although this has no consequence at this stage on ePO.  
+ 
+
+* It was decided that the user stories for Exclusion Grounds can be reused in eSubmission as-is for eAccess module. 
+
+* It was mentioned that the US-EG-2 user story is not viable for both eSubmission and eAccess because we cannot have a Procedure without Exclusion Ground. 
+
+|===
+|US-EG-2 |Buyer |As a Buyer, I want to see if any Procedure has been processed without Exclusion Grounds, and if so, what type of Procedure was it, so I can ??? 
+
+|===
+ 
+ 
+*Discussion on ESPD GitHub issues*** **
+ 
+ 
+
+* It was noted that the ePO team should Specify when creating issues in the ESPD-EDM github whether the issue is related to the ePO via the label "ePO question". 
+* The following issues were discussed and updated:  
+** https://github.com/OP-TED/ESPD-EDM/issues/406[406] 
+** https://github.com/OP-TED/ESPD-EDM/issues/407[407] 
+** https://github.com/OP-TED/ESPD-EDM/issues/408[408] 
+** https://github.com/OP-TED/ESPD-EDM/issues/411[411] 
+** https://github.com/OP-TED/ESPD-EDM/issues/412[412] 
+ 
+== Action Points
+
+* Add a ticket to inform the ESPD team about the missing name of the dependency link between cac:ResponseValue and the espd:FiancialRatioType codelist . 
+* The ESPD should check the competency questions before Friday 2/2/2024.  
+ 
+

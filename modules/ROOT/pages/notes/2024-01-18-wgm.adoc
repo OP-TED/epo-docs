@@ -1,9 +1,9 @@
 == Working Group meeting (Maintenance & evolution of existing modules)  +
 *Date*: 18/01/2024    +
 *Participants:* ** **Paloma Arillo, Najeh Hajlaoui, Natalie Muric, Pascaline  Laure Tchienehom, Dragos Stoica  +
-*Model editor: *Andreea Pasăre   +
-*Note editor:* Achilles Dougalis 
- 
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
  
 == Agenda
 

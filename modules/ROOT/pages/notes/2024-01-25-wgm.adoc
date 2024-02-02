@@ -1,7 +1,7 @@
 == Working Group meeting   +
 *Date*: 25/1/2024    +
 *Participants:* Peter Borresen, Natalie Muric, Pietro Palermo  +
-*Model editor: *Andreea Pasăre   +
+*Model editor:* Andreea Pasăre   +
 *Note editor:* Achilles Dougalis
 
 
