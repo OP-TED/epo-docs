@@ -104,7 +104,7 @@ The release v4.1.0-rc.1 and its corresponding technical files can be found link:
 ||epo-ful:ReceiptAdvice|epo-ful:specifiesConsignee -> epo-ord:Consignee|
 ||epo-ful:ReceiptAdvice|epo-ful:isSubmittedForShipment -> epo-ful:ShipmentInformation|
 ||epo-ful:ReceiptAdvice|epo-ful:comprisesReceiptAdviceLine -> epo-ful:ReceiptAdviceLine|
-|*eOdering*|epo-ord:Order|epo-ord:hasSellerOrderID -> adms:Identifier|
+|*eOrdering*|epo-ord:Order|epo-ord:hasSellerOrderID -> adms:Identifier|
 |===
 
 
