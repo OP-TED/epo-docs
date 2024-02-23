@@ -1,0 +1,27 @@
+== Working Group meeting
+
+*Date*: 22/02/2024    +
+*Participants:* Peter Borresen  +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
+== Agenda
+
+* Order data model update
+
+== Discussion
+
+* During the meeting  the Dispatch advice data model file was updated up to line 21. The following concepts were covered:
+** dispatcher
+** Consignee
+** Seller
+** Shipment
+*** Consignment
+**** Carrier
+***** Transport means operator.
+
+== Action Points
+
+* Add missing definitions on the covered fields.
+* Provide mappings for the covered fields.
+
