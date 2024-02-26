@@ -16,12 +16,12 @@ The following topics are included in this version of the eProcurement Ontology d
 
 == General Documentation
 
-* xref:4.0@EPO::business.adoc[Business Overview] +
+* xref:business.adoc[Business Overview] +
 Business Overview of this release
 * xref:4.0@EPO::conceptual.adoc[Conceptual Models] +
 The release specific conceptual Model(s)
 * xref:4.0@EPO::glossaries.adoc[Glossaries] +
-The release specific glossaries
+The release-specific glossaries
 * xref:4.0@EPO::release-notes.adoc[Release Notes] +
 The release notes as on GitHub
 
