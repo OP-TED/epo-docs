@@ -9,25 +9,35 @@ ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 4.0.0@index.adoc,4.0@index.adoc
 endif::[]
 
-[.tile-container]
---
-The eProcurement Ontology v4.0.0 was released on the 24 November 2023.
+The eProcurement Ontology (ePO) defines and develops the semantic ontology related to EU public procurement. It creates and maintains the ontology according to EU regulations and directives.
 
-//[.tile]
-//.ePO v4.0.0-rc.1: Release Overview
-//****
-
-//xref:Overview_V4.0.0-rc.1.adoc[Click here to read the 4.0.0.-rc.1 Overview]
-
-//****
+The following topics are included in this version of the eProcurement Ontology documentation:
 
 
+== General Documentation
 
-[.tile]
-.ePO v4.0.0 Release Notes
-****
+* xref:4.0@EPO::business.adoc[Business Overview] +
+Business Overview of this release
+* xref:4.0@EPO::conceptual.adoc[Conceptual Models] +
+The release specific conceptual Model(s)
+* xref:4.0@EPO::glossaries.adoc[Glossaries] +
+The release specific glossaries
+* xref:4.0@EPO::release-notes.adoc[Release Notes] +
+The release notes as on GitHub
 
-xref:release-notes.adoc[Click here to read the 4.0.0 Release Notes]
 
-****
---
+== Reference Documentation
+* xref:epo-home::references.adoc[Reference Documentation] +
+Useful reference documents in the development of the ePO
+* xref:epo-home::history.adoc[History and Planned Developments] +
+Milestones in the project and future development plans
+* xref:epo-home::versioning.adoc[ePO Versioning Rules] +
+An overview of the versioning rules for releases
+
+== Working Group Documents
+* xref:epo-wgm::wider.adoc[Quarterly Meetings] +
+Minutes, Presentations etc from the quarterly Working Group Meetings
+* xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)] +
+All weekly meetings minutes collated into yearly documents
+* xref:epo-wgm::indiv.adoc[Individual Meeting Reports] +
+All the weekly meeting minutes and documents saved individually
