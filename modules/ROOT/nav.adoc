@@ -6,10 +6,10 @@
 * xref:epo-home::index.adoc[Home]
 
 * [.separated]#**General Documentation**#
-* xref:business.adoc[Business Overview]
-* xref:conceptual.adoc[Conceptual Models]
-* xref:glossaries.adoc[Glossaries]
-* xref:release-notes.adoc[Release Notes]
+* xref:4.1@EPO::business.adoc[Business Overview]
+* xref:4.1@EPO::conceptual.adoc[Conceptual Models]
+* xref:4.1@EPO::glossaries.adoc[Glossaries]
+* xref:4.1@EPO::release-notes.adoc[Release Notes]
 
 * [.separated]#**Reference Documentation**#
 * xref:epo-home::references.adoc[Reference Documents]
