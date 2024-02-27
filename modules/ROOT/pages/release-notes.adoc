@@ -189,6 +189,7 @@ modification.
 
 === Changed classes
 
+[width=75%]
 [cols="1,2,2,2"]
 |===
 s|module|class|added attributes|deleted attributes
@@ -212,7 +213,8 @@ s|module|class|added attributes|deleted attributes
 ||epo:AwardCriterion|epo:hasAwardCriteriaStatedInProcurementDocuments|
 ||epo:AwardDecision|epo:hasAwardDecisionDate|
 ||epo:AwardDecision|epo:hasAdditionalNonAwardJustification|
-||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:hasAdditionalInformation|
+||epo:ChangeInformation (renamed from epo:NoticeChange)
+|epo:hasAdditionalInformation|
 ||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:hasProcurementDocumentChangeDate|
 ||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:isProcurementDocumentChanged|
 ||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:hasChangeReasonDescription|
