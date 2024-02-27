@@ -189,6 +189,7 @@ modification.
 
 === Changed classes
 
+[%autowidth]
 //[width=75%]
 [cols="1,2,2,2"]
 |===
