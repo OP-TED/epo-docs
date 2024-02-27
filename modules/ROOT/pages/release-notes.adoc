@@ -190,7 +190,7 @@ modification.
 === Changed classes
 
 [width=75%]
-[cols="1,2,2,2"]
+[cols="10h,20h,20h,20"]
 |===
 s|module|class|added attributes|deleted attributes
 
@@ -210,7 +210,7 @@ s|module|class|added attributes|deleted attributes
 ||cv:Channel|dct:description|epo:hasDescription
 ||epo:AgentInRole|dct:description|epo:hasDescription
 ||epo:AgentInRole|dct:title|epo:hasTitle
-||epo:AwardCriterion|epo:hasAwardCriteriaStatedInProcurementDocuments|
+a||epo:AwardCriterion|epo:hasAwardCriteriaStatedInProcurementDocuments|
 ||epo:AwardDecision|epo:hasAwardDecisionDate|
 ||epo:AwardDecision|epo:hasAdditionalNonAwardJustification|
 ||epo:ChangeInformation (renamed from epo:NoticeChange)
