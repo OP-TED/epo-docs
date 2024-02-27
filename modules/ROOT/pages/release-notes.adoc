@@ -248,35 +248,55 @@ a||epo:AwardCriterion|epo:hasAwardCriteriaStatedInProcurementDocuments|
 ||epo:Notice|epo:hasEFormsSubtype|
 ||epo:Notice|epo:hasAdditionalInformation|
 ||epo:Notice|epo:hasESenderDispatchDate|
-||epo:ParticipationConditionsSummary|epo:describesObjectiveParticipationRules|
-||epo:ParticipationConditionsSummary|epo:describesVerificationMethod|
+||epo:ParticipationConditionsSummary|epo:
+describesObjectiveParticipationRules|
+||epo:ParticipationConditionsSummary|epo:
+describesVerificationMethod|
 ||epo:ProcedureTerm||epo:hasLotAwardLimit
-||epo:ProcedureTerm|epo:isSubmissionForAllLotsRequired|epo:isSubmissionForAllLotsAllowed
-||epo:ProcurementCriteriaSummary|epo:indicatesPerformingStaffInformationRequirement|
+||epo:ProcedureTerm|epo:isSubmissionForAll
+LotsRequired|epo:isSubmissionForAllLotsAllowed
+||epo:ProcurementCriteriaSummary|epo:
+indicatesPerformingStaffInformationRequirement|
 ||epo:ProcurementElement|dct:description|epo:hasDescription
 ||epo:ProcurementElement|dct:title|epo:hasTitle
 ||epo:ProcurementObject|epo:hasLegalBasisDescription|
-||epo:ProfessionalSuitabilitySummary|epo:describesProfessionRelevantLaw|
-||epo:ProfessionalSuitabilitySummary|epo:hasServiceReservedToParticularProfession|
-||epo:ProfessionalSuitabilitySummary|epo:describesProfession|
+||epo:ProfessionalSuitabilitySummary|epo:describes
+ProfessionRelevantLaw|
+||epo:ProfessionalSuitabilitySummary|epo:hasService
+ReservedToParticularProfession|
+||epo:ProfessionalSuitabilitySummary|epo:describes
+Profession|
 ||epo:PurchaseContract||epo:isWithinFrameworkAgreement
-||epo:QualificationCriteriaSummary|epo:hasQualificationCondition|
-||epo:QualificationCriteriaSummary|epo:hasConditionVerificationMethod|
-||epo:SecurityClearanceTerm|epo:isSecurityClearanceRequired|
+||epo:QualificationCriteriaSummary|epo:
+hasQualificationCondition|
+||epo:QualificationCriteriaSummary|epo:
+hasConditionVerificationMethod|
+||epo:SecurityClearanceTerm|epo:isSecurity
+ClearanceRequired|
 ||epo:SecurityClearanceTerm|dct:description|epo:hasDescription
-||epo:SelectionCriteriaSummary|epo:hasSelectionCriteriaStatedInProcurementDocuments|
-||epo:SelectionCriteriaSummary|epo:describesMinimumLevelOfStandards|
+||epo:SelectionCriteriaSummary|epo:hasSelection
+CriteriaStatedInProcurementDocuments|
+||epo:SelectionCriteriaSummary|epo:describes
+MinimumLevelOfStandards|
 ||epo:SubcontractTerm|dct:description|epo:hasDescription
-||epo:SubcontractingEstimate|dct:description|epo:hasDescription
-||epo:SubmissionStatisticalInformation|epo:hasOtherCountriesReceivedTenders|
-||epo:SubmissionStatisticalInformation|epo:hasNonEEAReceivedTenders|epo:hasReceivedNonEEATenders
-||epo:SubmissionStatisticalInformation|epo:hasNonEUReceivedTenders|epo:hasReceivedNonEUTenders
-||epo:SubmissionStatisticalInformation|epo:hasSMEReceivedTenders|epo:hasReceivedSMETenders
+||epo:SubcontractingEstimate|dct:description|epo:
+hasDescription
+||epo:SubmissionStatisticalInformation|epo:
+hasOtherCountriesReceivedTenders|
+||epo:SubmissionStatisticalInformation|epo:
+hasNonEEAReceivedTenders|epo:hasReceivedNonEEATenders
+||epo:SubmissionStatisticalInformation|epo:
+hasNonEUReceivedTenders|epo:hasReceivedNonEUTenders
+||epo:SubmissionStatisticalInformation|epo:
+hasSMEReceivedTenders|epo:hasReceivedSMETenders
 ||epo:SubmissionTerm|epo:hasReceiptTenderDeadline|
-||epo:SubmissionTerm|epo:hasReceiptPreliminaryMarketConsultationDeadline|
-||epo:SubmissionTerm|epo:hasReceiptParticipationRequestDeadline|
+||epo:SubmissionTerm|epo:hasReceiptPreliminary
+MarketConsultationDeadline|
+||epo:SubmissionTerm|epo:hasReceiptParticipation
+RequestDeadline|
 ||epo:System|dct:description|epo:hasDescription
-||epo:Technique (renamed from epo:TechniqueUsage)|dct:description|epo:hasDescription
+||epo:Technique (renamed from epo:TechniqueUsage)|dct:
+description|epo:hasDescription
 ||epo:TenderGroup|dct:description|
 ||epo:TenderGroup|dct:title|
 ||epo:VehicleInformation|epo:hasTotalVehicles|
@@ -303,8 +323,12 @@ a||epo:AwardCriterion|epo:hasAwardCriteriaStatedInProcurementDocuments|
 ||epo-ord:Order|epo-ord:hasCustomerReference|
 ||epo-ord:Order|epo-ord:hasAccountingCost|
 ||epo-ord:Order|epo-ord:hasPaymentTerm|
-||epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|epo-cat:hasPercentage|epo-cat:hasPricePercentage
-||epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|epo-ful:hasAllowanceChargeReasonDescription|
+||epo-ord:AllowanceChargeInformation (renamed from
+epo-ord:PriceModifierInformation)|epo-cat:
+hasPercentage|epo-cat:hasPricePercentage
+||epo-ord:AllowanceChargeInformation (renamed
+from epo-ord:PriceModifierInformation)|epo-ful:
+hasAllowanceChargeReasonDescription|
 ||epo-ord:TaxInformation|epo-cat:hasPercentage|
 ||epo-ord:TaxInformation|dct:description|
 ||epo-ord:OrderResponse|epo-ord:hasResponseDescription|
