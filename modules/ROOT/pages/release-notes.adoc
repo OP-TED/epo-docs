@@ -12,12 +12,7 @@ endif::[]
 The release v4.0.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0[here].
 
 The release notes provide the global changes since the last version (3.1.0). The change notes show each individual semantic
-modification. Since there has been two release candidates for version 4.0.0, the changes notes are presented as follows:
-
-* v3.1.0 to v4.0.0-rc.1
-* v4.0.0-rc.1 to v4.0.0-rc.2
-* v4.0.0-rc.2 to v4.0.0
-
+modification.
 
 === Release notes
 
@@ -51,173 +46,27 @@ modification. Since there has been two release candidates for version 4.0.0, the
 |*Metadata*|*Value*
 
 |Reference ePO version|4.0.0
-|Target ePO version|4.0.0-rc.2
+|Target ePO version|3.1.0
 |Authors|Andreea Pasăre
 |Date|2023-11-24
 |===
 
 == Change notes
 
-
 === New classes
 
 **ePO core**
 
-* person:Person (renamed from cv:Person)
-* time:Duration
-
-=== Deleted classes
-
-**ePO core**
-
-* cv:Person (renamed to person:Person)
-
-=== Changed classes
-
-
-|===
-|*module*|*class*|*added property*|*deleted property*
-
-|*ePO core*|cpov:ContactPoint|lcon:address -> locn:Address|cv:address -> locn:Address
-||person:Person||person:placeOfBirth -> dct:Location
-||person:Person||person:placeOfDeath -> dct:Location
-||org:Organization|lcon:address -> locn:Address|cv:address -> locn:Address
-||epo:Duration|generalisation -> time:Duration|
-|===
-
-
-== *eProcurement Ontology v4.0.0-rc.2*
-
-The release candidate v4.0.0-rc.2 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.2[here].
-
-=== Release notes
-
-
-|===
-|*Metadata*|*Value*
-
-|Reference ePO version|4.0.0-rc.2
-|Target ePO version|4.0.0-rc.1
-|Authors|Andreea Pasăre
-|Date|2023-09-25
-|===
-
-=== Change notes
-
-
-=== New classes
-
-**ePO core**
-
-* epo:ContextDescription (renamed from epo:ContextSpecificDescription)
-* epo:Certificate (moved from ePO Catalogue module)
-* epo:CertificationLabel (moved from ePO Catalogue module)
-* epo:ChangeInformation (renamed from epo:NoticeChangeInformation)
-* epo:Certifier (moved form ePO Catalogue module)
-
-=== Deleted classes
-
-**ePO core**
-
-* epo:ContextSpecificDescription (renamed to epo:ContextDescription)
-* epo:NoticeChangeInformation (renamed to epo:ChangeInformation)
-
-**eCatalogue**
-
-* epo:Certificate (moved to ePO Core module)
-* epo:CertificationLabel (moved to ePO Core module)
-* epo:Certifier (moved to ePO Core module)
-* epo-cat:CatalogueFragment
-
-=== New Controlled Vocabularies
-
-**ePO core**
-
-* at-voc-new:certification-label-type (moved from ePO Catalogue module)
-
-=== Deleted Controlled Vocabularies
-
-**eCatalogue**
-
-* at-voc-new:certification-label-type (moved to ePO Core)
-* at-voc-new:vat-category
-
-
-=== Changed classes
-
-
-|===
-|*module*|*class*|*added attributes*|*deleted attributes*
-
-|*ePO Core*|org:Organization||epo:hasOrganisationUnitName
-||epo:Notice||epo:hasLongTitle
-||epo:LotGroup|dct:description|
-||epo:LotGroup|dct:title|
-||epo:TenderGroup|dct:description|
-||epo:TenderGroup|dct:title|
-||epo:DesignContestRegimeTerm|epo:hasDescriptionOfPrizes|
-||epo:ProcedureTerm|epo:isSubmissionForAllLotsRequired|epo:isSubmissionForAllLotsAllowed
-|===
-
-
-
-|===
-|*module*|*class*|*added property*|*deleted property*
-
-|*ePO core*|org:Organization|org:subOrganizationOf -> org:Organization|
-||epo:LotAwardOutcome||epo:hasAwardedEstimatedValue -> epo:MonetaryValue
-||epo:LotAwardOutcome||epo:hasFrameworkAgreementEstimatedValue -> epo:MonetaryValue
-||epo:NoticeAwardInformation|epo:describesDirectAwardPrenotificationNotice -> epo-not:DirectAwardPrenotificationNotice|epo:describesResultNotice -> epo-not:DirectAwardPrenotificationNotice
-||cccev:Evidence|epo:hasValidityPeriod -> epo:Period|
-||cccev:Requirement|adms:identifier -> adms:Identifier|
-||epo:Certificate||epo:hasValidityPeriod -> epo:Period
-||epo:Notice||epo:conformsToSpecificLegalBasis -> at-voc:legal-basis
-||epo:LotGroup|epo:hasInternalIdentifier -> adms:Identifier|
-||epo:LotGroup|epo:hasEstimatedValue -> epo:MonetaryValue|
-||epo:LotGroup|epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue|
-||epo:ProcurementObject|epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue|
-||epo:TenderGroup|adms:identifier -> adms:Identifier|
-||epo:Certifier|generalisation -> epo:AuxiliaryParty|
-||epo:JuryMember|epo:playedBy -> cpv:Person|epo:playedBy -> foaf:Person
-||epo:OpeningTerm|generalisation -> epo:ProcedureSpecificTerm|
-||epo:DesignContestRegimeTerm|generalisation -> epo:ProcedureSpecificTerm|
-||epo:FrameworkAgreementTerm||epo:hasLaunchGroupFrameworkAgreementMaximumValue -> epo:MonetaryValue
-||epo:FrameworkAgreementTerm||epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue
-||epo:ReviewTerm|generalisation -> epo:ProcedureSpecificTerm|
-||epo:SubmissionTerm|epo:hasTenderValidityDuration -> epo:Duration|
-|*eCatalogue*|epo-cat:CatalogueLine|epo-cat:hasActivityCode -> at-voc-new:activity-code|
-||epo-cat:Catalogue|epo-cat:hasActivityCode -> at-voc-new:activity-code|
-|*eOrdering*|epo-ord:TaxInformation||epo-cat:hasVATCategory -> at-voc-new:vat-category
-|*eContract*|epo-con:ContractAmendment|epo:updatesContractValue -> epo:MonetaryValue|epo:hasRestatedContractValue -> epo:MonetaryValue
-|===
-
-
-== *eProcurement Ontology v4.0.0-rc.1*
-
-The release candidate v4.0.0-rc.1 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0-rc.1[here].
-
-=== Release notes
-
-|===
-|*Metadata*|*Value*
-
-|Reference ePO version|3.1.0
-|Target ePO version|4.0.0-rc.1
-|Authors|Andreea Pasăre, Eugeniu Costetchi
-|Date|2023-07-19
-|===
-
-
-=== Change notes
-
-=== New classes
-
-**ePO core**
-
+* adms:Identifier (renamed from epo:Identifier)
 * epo:AdHocChannel
 * epo:AwardCriteriaSummary
 * epo:AwardOutcome
 * epo:Candidate
+* epo:Certificate (moved from ePO Catalogue module and renamed from epo-cat:ItemCertificate)
+* epo:CertificationLabel (moved from ePO Catalogue module)
+* epo:Certifier (moved form ePO Catalogue module)
+* epo:ChangeInformation (renamed from epo:NoticeChange)
+* epo:ContextDescription (renamed from epo:ContextSpecificDescription)
 * epo:DirectContract
 * epo:DynamicPurchaseSystemTechnique (renamed from epo:DynamicPurchaseSystemTechniqueUsage)
 * epo:EAuctionTechnique (renamed from epo:EAuctionTechniqueUsage)
@@ -229,7 +78,6 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo:MiniCompetitionAwardOutcome
 * epo:NonDisclosureAgreementTerm
 * epo:NonPublishedInformation
-* epo:NoticeChangeInformation (renamed from epo:NoticeChange)
 * epo:OfferIssuer
 * epo:Offer
 * epo:OriginatorRequest
@@ -244,21 +92,21 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 * epo:TechnicalAbilitySummary
 * epo:Technique (renamed from epo:TechniqueUsage)
 * epo:VehicleInformation
-* adms:Identifier (renamed from epo:Identifier)
+* person:Person (renamed from cpv:Person)
+* time:Duration
 
 **eCatalogue**
 
 * epo-cat:InformationHub
+* epo-cat:ItemProperty (renamed from epo-cat:ItemDescription)
 * epo-cat:Line
 * epo-cat:PostAwardDocument
-* epo-cat:Certificate (renamed from epo-cat:ItemCertificate)
-* epo-cat:ItemProperty (renamed from epo-cat:ItemDescription)
 
 **eOrdering**
 
-* epo-ord:DeliveryAgreement
-* epo-ord:AllowanceInformation (renamed from epo-ord:DiscountInformation)
 * epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)
+* epo-ord:AllowanceInformation (renamed from epo-ord:DiscountInformation)
+* epo-ord:DeliveryAgreement
 * epo-ord:OrderResponseInformation
 * epo-ord:OrderResponseLine
 * epo-ord:OrderResponse
@@ -271,11 +119,13 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 
 **ePO core**
 
+* cpv:Person (renamed to person:Person)
+* epo:ContextSpecificDescription (renamed to epo:ContextDescription)
 * epo:ContractModification
-* epo:ElementDescription
-* epo:ElementModificationDescription
 * epo:ElementChangeDescription
 * epo:ElementConfidentialityDescription
+* epo:ElementDescription
+* epo:ElementModificationDescription
 * epo:NoticeDescription
 * epo:PublicationProvision
 * owl:Thing
@@ -283,7 +133,11 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 **eCatalogue**
 
 * epo-cat:CatalogueDocument
+* epo-cat:CatalogueFragment
 * epo-cat:CatalogueUpdateDocument
+* epo-cat:CertificationLabel (moved to ePO Core module)
+* epo-cat:Certifier (moved to ePO Core module)
+* epo-cat:ItemCertificate (moved to ePO Core module and renamed to epo:Certificate)
 
 **eOrdering**
 
@@ -301,17 +155,18 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 
 **ePO core**
 
-* at-voc:EU-programme
+* at-voc-new:certification-label-type (moved from ePO Catalogue module)
 * at-voc:cvd-contract-type
+* at-voc:EU-programme
 * at-voc:green-public-procurement-criteria
 * at-voc:review-body-type
 * at-voc:vehicle-category
 
 **eCatalogue**
 
+* at-voc-new:item-classification (renamed from at-voc-new:unspc)
 * at-voc-new:tax-category (renamed from at-voc-new:charge-category)
 * at-voc-new:tax-scheme (renamed from at-voc-new:charge-modifier)
-* at-voc-new:item-classification (renamed from at-voc-new:unspc)
 
 **eOrdering**
 
@@ -321,10 +176,16 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 
 **ePO core**
 
+* at-voc-new:evaluation-group-type
 * at-voc-new:notification-phases-content-types
 * at-voc-new:legal-regime
-* at-voc-new:evaluation-group-type
 * at-voc:cpvsuppl
+
+**eCatalogue**
+
+* at-voc-new:certification-label-type (moved to ePO Core)
+* at-voc-new:vat-category
+
 
 === Changed classes
 
@@ -332,26 +193,33 @@ The release candidate v4.0.0-rc.1 and its corresponding technical files can be f
 |===
 s|module|class|added attributes|deleted attributes
 
-|ePO core|cccev:InformationConcept|dct:description|epo:hasDescription
+|ePO core|adms:Identifier|skos:notation|epo:hasIdentifierValue
+||adms:Identifier||epo:hasSchemeAgencyId
+||adms:Identifier|adms:schemaAgency|epo:hasSchemeAgencyName
+||adms:Identifier||epo:hasSchemeDataURI
+||adms:Identifier||epo:hasSchemeID
+||adms:Identifier|epo:hasScheme|epo:hasSchemeName
+||adms:Identifier||epo:hasSchemeURI
+||adms:Identifier|epo:hasSchemeVersion|epo:hasSchemeVersionID
+||cccev:InformationConcept|dct:description|epo:hasDescription
 ||cccev:InformationConcept|skos:prefLabel|epo:hasName
 ||cccev:Requirement|dct:description|epo:hasDescription
 ||cccev:Requirement|skos:prefLabel|epo:hasName
 ||cpov:ContactPoint|dct:description|epo:hasDescription
-||cpv:Person||cv:deathDate
-||cpv:Person||legal:registeredAddress
 ||cv:Channel|dct:description|epo:hasDescription
-||epo-cat:Item|epo:hasAddressURL|epo:hasURL
-||epo-cat:Item||epo:hasAdditionalInformation
-||epo-cat:Item||epo:hasEndpoint
-||epo-cat:Item||epo:isAdhocChannel
-||epo-cat:Item||epo:hasName
 ||epo:AgentInRole|dct:description|epo:hasDescription
 ||epo:AgentInRole|dct:title|epo:hasTitle
 ||epo:AwardCriterion|epo:hasAwardCriteriaStatedInProcurementDocuments|
 ||epo:AwardDecision|epo:hasAwardDecisionDate|
 ||epo:AwardDecision|epo:hasAdditionalNonAwardJustification|
-||epo:ContractLotCompletionInformation|epo:hasPaymentValueDiscrepancyJustification|
+||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:hasAdditionalInformation|
+||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:hasProcurementDocumentChangeDate|
+||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:isProcurementDocumentChanged|
+||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:hasChangeReasonDescription|
+||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:hasChangeDescription|
 ||epo:Contract||epo:hasAccessURL
+||epo:ContractLotCompletionInformation|epo:hasPaymentValueDiscrepancyJustification|
+||epo:DesignContestRegimeTerm|epo:hasDescriptionOfPrizes|
 ||epo:Document|dct:title|
 ||epo:Document|dct:issued|
 ||epo:Document|dct:description|
@@ -364,15 +232,12 @@ s|module|class|added attributes|deleted attributes
 ||epo:GreenProcurement||epo:hasCleanVehicles
 ||epo:LotAwardOutcome||epo:hasAwardDecisionDate
 ||epo:LotAwardOutcome||epo:hasAdditionalNonAwardJustification
+||epo:LotGroup|dct:description|
+||epo:LotGroup|dct:title|
 ||epo:NonDisclosureAgreementTerm|dct:description|
 ||epo:NonDisclosureAgreementTerm|epo:isNonDisclosureAgreementRequired|
 ||epo:NonPublishedInformation|epo:hasAccessibilityDate|
 ||epo:NonPublishedInformation|epo:hasConfidentialityJustification|
-||epo:NoticeChangeInformation (renamed from epo:NoticeChange)|epo:hasAdditionalInformation|
-||epo:NoticeChangeInformation (renamed from epo:NoticeChange)|epo:hasProcurementDocumentChangeDate|
-||epo:NoticeChangeInformation (renamed from epo:NoticeChange)|epo:isProcurementDocumentChanged|
-||epo:NoticeChangeInformation (renamed from epo:NoticeChange)|epo:hasChangeReasonDescription|
-||epo:NoticeChangeInformation (renamed from epo:NoticeChange)|epo:hasChangeDescription|
 ||epo:Notice|epo:hasOJSIssueNumber|
 ||epo:Notice|epo:hasOJSType|
 ||epo:Notice|epo:hasLongTitle|
@@ -384,6 +249,7 @@ s|module|class|added attributes|deleted attributes
 ||epo:ParticipationConditionsSummary|epo:describesObjectiveParticipationRules|
 ||epo:ParticipationConditionsSummary|epo:describesVerificationMethod|
 ||epo:ProcedureTerm||epo:hasLotAwardLimit
+||epo:ProcedureTerm|epo:isSubmissionForAllLotsRequired|epo:isSubmissionForAllLotsAllowed
 ||epo:ProcurementCriteriaSummary|epo:indicatesPerformingStaffInformationRequirement|
 ||epo:ProcurementElement|dct:description|epo:hasDescription
 ||epo:ProcurementElement|dct:title|epo:hasTitle
@@ -409,28 +275,26 @@ s|module|class|added attributes|deleted attributes
 ||epo:SubmissionTerm|epo:hasReceiptParticipationRequestDeadline|
 ||epo:System|dct:description|epo:hasDescription
 ||epo:Technique (renamed from epo:TechniqueUsage)|dct:description|epo:hasDescription
+||epo:TenderGroup|dct:description|
+||epo:TenderGroup|dct:title|
 ||epo:VehicleInformation|epo:hasTotalVehicles|
 ||epo:VehicleInformation|epo:hasZeroEmissionVehicles|
 ||epo:VehicleInformation|epo:hasCleanVehicles|
 ||foaf:Agent|dct:title|epo:hasTitle
 ||org:Organization|epo:hasInternetAddress|
-||org:Organization|epo:hasOrganisationUnitName|epo:hasOrganisationUnit
-||adms:Identifier|skos:notation|epo:hasIdentifierValue
-||adms:Identifier||epo:hasSchemeAgencyId
-||adms:Identifier|adms:schemaAgency|epo:hasSchemeAgencyName
-||adms:Identifier||epo:hasSchemeDataURI
-||adms:Identifier||epo:hasSchemeID
-||adms:Identifier|epo:hasScheme|epo:hasSchemeName
-||adms:Identifier||epo:hasSchemeURI
-||adms:Identifier|epo:hasSchemeVersion|epo:hasSchemeVersionID
+||org:Organization||epo:hasOrganisationUnit
 ||epo:Period||epo:hasDescription
 |eCatalogue|epo-cat:Batch|epo-cat:hasManufactureDate|
 ||epo-cat:Brand|dct:title|epo:hasName
-||epo-cat:ItemModel|dct:title|epo:hasName
+||epo-cat:Item|epo:hasAddressURL|epo:hasURL
+||epo-cat:Item||epo:hasAdditionalInformation
+||epo-cat:Item||epo:hasEndpoint
+||epo-cat:Item||epo:isAdhocChannel
 ||epo-cat:Item|dct:title|epo:hasName
 ||epo-cat:Item|dct:description|epo:hasDescription
 ||epo-cat:Item||epo-cat:hasExternalSpecification
 ||epo-cat:Item||epo-cat:hasVATRate
+||epo-cat:ItemModel|dct:title|epo:hasName
 ||epo-cat:Line|dct:description|
 |eOrdering|epo-ord:DeliveryAgreement|dct:description|
 ||epo-ord:DeliveryInformation|epo-ord:hasDeliveryDeadline|
@@ -448,8 +312,10 @@ s|module|class|added attributes|deleted attributes
 |===
 s|module|class|added property|deleted property
 
-|ePO core|cccev:InformationConcept|adms:identifier -> adms:Identifier|epo:hasID -> epo:Identifier
-||cpv:Person|cv:registeredAddress|
+|ePO core|cccev:Evidence|epo:hasValidityPeriod -> epo:Period|
+||cccev:InformationConcept|adms:identifier -> adms:Identifier|epo:hasID -> epo:Identifier
+||cccev:Requirement|adms:identifier -> adms:Identifier|
+||cpov:ContactPoint|lcon:address -> locn:Address|cv:address -> locn:Address
 ||cv:Channel|epo:hasEndpointIdentifier -> adms:Identifier|
 ||dct:Location|adms:identifier -> adms:Identifier|
 ||epo:AdHocChannel|generalisation -> cv:Channel|
@@ -470,6 +336,8 @@ s|module|class|added property|deleted property
 ||epo:Buyer|epo:exposesInvoiceeChannel -> cv:Channel|
 ||epo:Buyer|epo:indicatesInvoiceeContactPoint -> cpov:ContactPoint|
 ||epo:Candidate|generalisation -> epo:OfferingParty|
+||epo:Certificate||epo:hasValidityPeriod -> epo:Period
+||epo:Certifier|generalisation -> epo:AuxiliaryParty|
 ||epo:ConcessionEstimate|epo:hasConcessionEstimatedValue|
 ||epo:ContractLotCompletionInformation|epo:providesContractTotalPaymentValue -> epo:MonetaryValue|epo:hasPaymentValue -> epo:MonetaryValue
 ||epo:ContractLotCompletionInformation|epo:providesContractTotalPenaltyValue -> epo:MonetaryValue|epo:hasPenaltyValue -> epo:MonetaryValue
@@ -482,20 +350,22 @@ s|module|class|added property|deleted property
 ||epo:Contract|epo:hasContractValue -> epo:MonetaryValue|
 ||epo:Contract|epo:isSubjectToContractSpecificTerm -> epo:ContractSpecificTerm|
 ||epo:Contract|epo:isFundedBy -> epo:Fund|
-||epo:ElementConfidentialityDescription|epo:hasPurpose -> epo:Purpose|
-||epo:ElementConfidentialityDescription|epo-ord:hasTaxInformation -> epo-ord:TaxInformation|
+||epo:DesignContestRegimeTerm|generalisation -> epo:ProcedureSpecificTerm|
 ||epo:DirectContract|epo:resultsFromLotAwardOutcome -> epo:LotAwardOutcome|
 ||epo:DirectContract|generalisation -> epo:Document|
 ||epo:Document|epo:hasElectronicDigest -> epo:Document|
 ||epo:Document|epo:hasElectronicSignature -> epo:ElectronicSignature|
+||epo:Duration|generalisation -> time:Duration|
 ||epo:EconomicStandingSummary|generalisation -> epo:SelectionCriteriaSummary|
-||epo:Estimate|generalisation -> epo:ContextSpecificDescription|
+||epo:ElementConfidentialityDescription|epo:hasPurpose -> epo:Purpose|
+||epo:ElementConfidentialityDescription|epo-ord:hasTaxInformation -> epo-ord:TaxInformation|
+||epo:Estimate|generalisation -> epo:ContextDescription|
 ||epo:ExclusionGroundsSummary|generalisation -> epo:QualificationCriteriaSummary|
 ||epo:ExclusionGround||epo:specifiesExclusionGround -> epo:Procedure
 ||epo:ExclusionGround|generalisation -> epo:QualificationCriterion|generalisation -> epo:ProcurementCriterion
 ||epo:FrameworkAgreementTerm||epo:hasOverallMaximumValue -> epo:MonetaryValue
-||epo:FrameworkAgreementTerm|epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue|
-||epo:FrameworkAgreementTerm|epo:hasLaunchGroupFrameworkAgreementMaximumValue -> epo:MonetaryValue|
+||epo:FrameworkAgreementTerm||epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue
+||epo:FrameworkAgreementTerm||epo:hasLaunchGroupFrameworkAgreementMaximumValue -> epo:MonetaryValue
 ||epo:FrameworkAgreementTerm|generalisation -> epo:ContractSpecificTerm|
 ||epo:FrameworkAgreement|epo:resultsFromLotAwardOutcome -> epo:LotAwardOutcome|
 ||epo:Fund|epo:hasFundProgramme -> at-voc:EU-programme|
@@ -504,17 +374,21 @@ s|module|class|added property|deleted property
 ||epo:JuryMember|epo:playedBy -> foaf:Agent|
 ||epo:JuryMember|generalisation -> epo:AcquiringParty|
 ||epo:LotAwardOutcome||epo:comprisesTenderAwardOutcome -> epo:TenderAwardOutcome
+||epo:LotAwardOutcome||epo:hasAwardedEstimatedValue -> epo:MonetaryValue
 ||epo:LotAwardOutcome||epo:hasRestatedAwardedValue -> epo:MonetaryValue
-||epo:LotAwardOutcome||epo:isAdoptedByBuyer -> epo:Buyer
 ||epo:LotAwardOutcome|epo:hasFrameworkAgreementMaximumValue -> epo:MonetaryValue|
 ||epo:LotAwardOutcome|epo:hasApproximateFrameworkAgreementValue -> epo:MonetaryValue|
+||epo:LotAwardOutcome||epo:isAdoptedByBuyer -> epo:Buyer
 ||epo:LotAwardOutcome|generalisation -> epo:AwardOutcome|
+||epo:LotAwardOutcome||epo:hasFrameworkAgreementEstimatedValue -> epo:MonetaryValue
 ||epo:LotGroupAwardInformation|epo:hasGroupFrameworkAgreementMaximumValue -> epo:MonetaryValue|epo:hasGroupFrameworkAgreementAwardedValue -> epo:MonetaryValue
-||epo:LotGroupAwardInformation|generalisation -> epo:ContextSpecificDescription|generalisation -> epo:ContextualProjection
-||epo:LotGroup||epo:hasEstimatedValue -> epo:MonetaryValue
+||epo:LotGroupAwardInformation|generalisation -> epo:ContextDescription|generalisation -> epo:ContextualProjection
 ||epo:LotGroup||epo:specifiesSelectionCriterion -> epo:SelectionCriterion
 ||epo:LotGroup|epo:specifiesProcurementCriterion -> epo:ProcurementCriterion|epo:specifiesAwardCriterion -> epo:AwardCriterion
 ||epo:LotGroup|adms:identifier -> adms:Identifier|
+||epo:LotGroup|epo:hasInternalIdentifier -> adms:Identifier|
+||epo:LotGroup|epo:hasEstimatedValue -> epo:MonetaryValue|
+||epo:LotGroup|epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue|
 ||epo:Lot||epo:specifiesSelectionCriterion -> epo:SelectionCriterion
 ||epo:Lot|epo:specifiesProcurementCriterion -> epo:ProcurementCriterion|epo:specifiesAwardCriterion -> epo:AwardCriterion
 ||epo:Lot||epo:hasRestatedEstimatedValue -> epo:MonetaryValue
@@ -526,22 +400,22 @@ s|module|class|added property|deleted property
 ||epo:MultipleStageProcedureTerm|generalisation -> epo:LotSpecificTerm|
 ||epo:MultipleStageProcedureTerm|epo:concernsNotice -> epo:Notice|
 ||epo:MultipleStageProcedureTerm|epo:relatesToEFormSectionIdentifier -> adms:Identifier|
-||epo:MultipleStageProcedureTerm|generalisation -> epo:ContextSpecificDescription|
 ||epo:MultipleStageProcedureTerm|epo:hasNonPublicationJustification -> at-voc:non-publication-justification|
-||epo:NoticeAwardInformation|epo:describesResultNotice -> epo-not:DirectAwardPrenotificationNotice|
+||epo:NoticeAwardInformation|epo:describesDirectAwardPrenotificationNotice -> epo-not:DirectAwardPrenotificationNotice|epo:describesResultNotice -> epo-not:DirectAwardPrenotificationNotice
 ||epo:NoticeAwardInformation|epo:hasApproximateFrameworkAgreementValue -> epo:MonetaryValue|
-||epo:NoticeChangeInformation (renamed from epo:NoticeChange)||epo:hasElementChange -> epo:ElementChangeDescription
-||epo:NoticeChangeInformation (renamed from epo:NoticeChange)|generalisation -> epo:ContextSpecificDescription|generalisation -> epo:NoticeDescription
-||epo:NoticeChangeInformation (renamed from epo:NoticeChange)|epo:concernsNotice -> epo:Notice|
-||epo:NoticeChangeInformation (renamed from epo:NoticeChange)|epo:relatesToEFormSectionIdentifier -> adms:Identifier|
-||epo:NoticeChangeInformation (renamed from epo:NoticeChange)|epo:hasChangeJustification -> at-voc:change-corrig-justification|
+||epo:ChangeInformation (renamed from epo:NoticeChange)||epo:hasElementChange -> epo:ElementChangeDescription
+||epo:ChangeInformation (renamed from epo:NoticeChange)|generalisation -> epo:ContextDescription|generalisation -> epo:NoticeDescription
+||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:concernsNotice -> epo:Notice|
+||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:relatesToEFormSectionIdentifier -> adms:Identifier|
+||epo:ChangeInformation (renamed from epo:NoticeChange)|epo:hasChangeJustification -> at-voc:change-corrig-justification|
 ||epo:Notice||epo:hasNotificationContentType -> at-voc-new:notification-phases-content-types
 ||epo:Notice|epo:refersToLot -> epo:Lot|
-||epo:Notice|epo:conformsToSpecificLegalBasis -> at-voc:legal-basis|
+||epo:Notice||epo:conformsToSpecificLegalBasis -> at-voc:legal-basis
 ||epo:OfferIssuer|epo:distributesOffer -> epo:Offer|
 ||epo:OfferIssuer|generalisation -> epo:OfferingParty|
 ||epo:OfferingParty||epo:playedByBusiness -> epo:Business
 ||epo:Offer|generalisation -> epo:Document|
+||epo:OpeningTerm|generalisation -> epo:ProcedureSpecificTerm|
 ||epo:OriginatorRequest|generalisation -> epo:Document|
 ||epo:ParticipationConditionsSummary|generalisation -> epo:ProcurementCriteriaSummary|
 ||epo:ParticipationConditionsSummary|epo:hasReservedProcurement -> at-voc:reserved-procurement|
@@ -565,6 +439,7 @@ s|module|class|added property|deleted property
 ||epo:ProcurementElement|epo:usesChannel -> cv:Channel|
 ||epo:ProcurementElement|epo:hasEstimatedValue -> epo:MonetaryValue|
 ||epo:ProcurementElement|adms:identifier -> adms:Identifier|
+||epo:ProcurementObject|epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue|
 ||epo:ProcurementObject||epo:hasID -> epo:Identifier
 ||epo:ProcurementObject||epo:usesChannel -> cv:Channel
 ||epo:ProcurementObject||epo:refersToPlannedPart -> epo:PlannedProcurementPart
@@ -582,7 +457,7 @@ s|module|class|added property|deleted property
 ||epo:ReviewObject|generalisation -> epo:Document|generalisation -> epo:ProcurementElement
 ||epo:ReviewProcedureInformationProvider||epo:dependsOnReviewer -> epo:Reviewer
 ||epo:ReviewRequest|epo:hasReviewRequestFee -> epo:MonetaryValue|epo:paidReviewRequestFee -> epo:MonetaryValue
-||epo:ReviewTerm||generalisation -> epo:ProcedureSpecificTerm
+||epo:ReviewTerm|generalisation -> epo:ProcedureSpecificTerm|
 ||epo:Reviewer|epo:hasReviewBodyType -> at-voc:review-body-type|
 ||epo:SelectedCandidateList|epo:containsCandidate -> epo:Candidate|
 ||epo:SelectedCandidateList|epo:hasStartDate -> epo:Period|
@@ -590,9 +465,11 @@ s|module|class|added property|deleted property
 ||epo:SelectionCriterion|generalisation -> epo:QualificationCriterion|generalisation -> epo:ProcurementCriterion
 ||epo:SubmissionStatisticalInformation|epo:summarisesInformationForAwardOutcome -> epo:AwardOutcome|epo:summarisesInformationForLotAwardOutcome -> epo:LotAwardOutcome
 ||epo:SubmissionTerm|epo:hasTenderValidityPeriod -> epo:Period|epo:hasValidityPeriod -> epo:Period
+||epo:SubmissionTerm|epo:hasTenderValidityDuration -> epo:Duration|
 ||epo:TechnicalAbilitySummary|generalisation -> epo:SelectionCriteriaSummary|
 ||epo:TenderAwardOutcome|epo:indicatesAwardToWinner -> epo:Winner|epo:indicatesAwardOfLotToWinner -> epo:Winner
 ||epo:TenderAwardOutcome|epo:concernsTender -> epo:Tender|epo:describesTender -> epo:Tender
+||epo:TenderGroup|adms:identifier -> adms:Identifier|
 ||epo:TenderProcessor||epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider
 ||epo:TenderProcessor||epo:dependsOnBuyer -> epo:Buyer
 ||epo:TenderReceiver||epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider
@@ -604,15 +481,21 @@ s|module|class|added property|deleted property
 ||epo:VehicleInformation|epo:specifiesCleanVehicleDirectiveContractType -> at-voc:cvd-contract-type|
 ||epo:Winner|epo:needsToBeATenderer -> epo:Tenderer|epo:dependsOnTenderer -> epo:Tenderer
 ||foaf:Agent|adms:identifier -> adms:Identifier|epo:hasID -> epo:Identifier
-||foaf:Person|epo:hasCertification -> epo-cat:Certificate|
+||foaf:Person|epo:hasCertification -> epo:Certificate|
 ||locn:Address|adms:identifier -> adms:Identifier|epo:hasID -> epo:Identifier
 ||org:Organization|epo:hasLegalIdentifier -> adms:Identifier|
 ||org:Organization|epo:hasRegistrationCountry -> at-voc:country|
-||org:Organization|epo:hasCertification -> epo-cat:Certificate|
+||org:Organization|epo:hasCertification -> epo:Certificate|
 ||org:Organization|epo:hasTaxIdentifier -> adms:Identifier|
+||org:Organization|lcon:address -> locn:Address|cv:address -> locn:Address
+||org:Organization|org:subOrganizationOf -> org:Organization|
+||person:Person||person:placeOfBirth -> dct:Location
+||person:Person||person:placeOfDeath -> dct:Location
 |eCatalogue|epo-cat:CatalogueLine|generalisation -> epo-cat:Line|
+||epo-cat:CatalogueLine|epo-cat:hasActivityCode -> at-voc-new:activity-code|
 ||epo-cat:CatalogueLine||epo:hasID -> epo:Identifier
 ||epo-cat:CatalogueLine||epo-cat:specifiesItem -> epo-cat:Item
+||epo-cat:Catalogue|epo-cat:hasActivityCode -> at-voc-new:activity-code|
 ||epo-cat:Catalogue||epo:hasValidityPeriod -> epo:Period
 ||epo-cat:Catalogue|generalisation -> epo-cat:PostAwardDocument|
 ||epo-cat:Catalogue|epo:specifiesCatalogueReceiver -> epo:CatalogueReceiver|epo-cat:isReceivedByCatalogueReceiver -> epo:CatalogueReceiver
@@ -622,10 +505,10 @@ s|module|class|added property|deleted property
 ||epo-cat:ChargeInformation||epo-cat:hasChargeCategory -> at-voc-new:charge-category
 ||epo-cat:ChargeInformation||epo-cat:hasChargeCategoryModifier -> at-voc-new:charge-modifier
 ||epo-cat:InformationHub|epo-cat:isSpecificToLine -> epo-cat:Line|
-||epo-cat:InformationHub|generalisation -> epo:ContextSpecificDescription|
+||epo-cat:InformationHub|generalisation -> epo:ContextDescription|
 ||epo-cat:ItemProperty (renamed from epo-cat:ItemDescription)||generalisation -> epo:ElementDescription
 ||epo-cat:Item|epo-ord:hasTaxInformation -> epo-ord:TaxInformation|
-||epo-cat:Item|epo:hasCertification -> epo-cat:Certificate|epo-cat:hasCertification -> epo-cat:ItemCertificate
+||epo-cat:Item|epo:hasCertification -> epo:Certificate|epo-cat:hasCertification -> epo-cat:ItemCertificate
 ||epo-cat:Item|epo:hasSellerItemID -> adms:Identifier|epo:hasCertification -> epo-cat:ItemCertificate
 ||epo-cat:Item|dct:isReplacedBy -> epo-cat:Item|dct:isReplaceBy -> epo-cat:Item
 ||epo-cat:Item|epo:hasSerialID -> adms:Identifier|
@@ -638,7 +521,13 @@ s|module|class|added property|deleted property
 ||epo-cat:Price|epo-ord:hasPriceDiscountInformation -> epo-ord:AllowanceInformation|
 ||epo-cat:Price|epo:hasPriceSurchargeInformation -> epo-cat:ChargeInformation|
 ||epo-cat:ProductSpecification|generalisation -> epo-cat:PostAwardDocument|generalisation -> epo:Document
-|eOrdering|epo-ord:ContractInformation|generalisation -> epo-cat:InformationHub|generalisation -> epo:ContextSpecificDescription
+|eContract|epo-con:ContractAmendment|epo:updatesContractValue -> epo:MonetaryValue|epo:hasRestatedContractValue -> epo:MonetaryValue
+|eOrdering|epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|generalisation -> epo-cat:InformationHub|generalisation -> epo:ContextSpecificDescription
+||epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|epo:isCalculatedOn -> epo:MonetaryValue|
+||epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|epo-ord:hasTaxInformation -> epo-ord:TaxInformation|
+||epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|epo-cat:hasAmount -> epo:MonetaryValue|epo-cat:hasFixedAmount -> epo:MonetaryValue
+||epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|epo-ful:hasAllowanceChargeReason -> at-voc-new:allowance-charge-reason|
+||epo-ord:ContractInformation|generalisation -> epo-cat:InformationHub|generalisation -> epo:ContextSpecificDescription
 ||epo-ord:DeliveryAgreement|epo-ord:specifiesDeliveryAgreementLocation -> dct:Location|
 ||epo-ord:DeliveryInformation||epo:concernsBeneficiary -> epo-ord:Beneficiary
 ||epo-ord:DeliveryInformation|epo-ord:specifiesPlaceOfDelivery -> dct:Location|epo-ord:concernsPlaceOfDelivery -> dct:Location
@@ -666,19 +555,6 @@ s|module|class|added property|deleted property
 ||epo-ord:Order|epo-ord:hasAmountDueForPayment -> epo:MonetaryValue|
 ||epo-ord:Order|epo:specifiesBuyer -> epo:Buyer|epo-ord:isSubmittedByBuyer -> epo:Buyer
 ||epo-ord:Order|epo-ord:hasTotalChargeAmount -> epo:MonetaryValue|
-||epo-ord:OriginatorInformation|epo-ord:concernsOriginatorRequest -> epo:OriginatorRequest|
-||epo-ord:OriginatorInformation|generalisation -> epo-cat:InformationHub|generalisation -> epo:ContextSpecificDescription
-||epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|generalisation -> epo-cat:InformationHub|generalisation -> epo:ContextSpecificDescription
-||epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|epo:isCalculatedOn -> epo:MonetaryValue|
-||epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|epo-ord:hasTaxInformation -> epo-ord:TaxInformation|
-||epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|epo-cat:hasAmount -> epo:MonetaryValue|epo-cat:hasFixedAmount -> epo:MonetaryValue
-||epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)|epo-ful:hasAllowanceChargeReason -> at-voc-new:allowance-charge-reason|
-||epo-ord:TaxInformation|epo:isCalculatedOn -> epo:MonetaryValue|
-||epo-ord:TaxInformation|epo-cat:hasAmount -> epo:MonetaryValue|
-||epo-ord:TaxInformation|generalisation -> epo-cat:InformationHub|
-||epo-ord:TaxInformation|epo-cat:hasTaxCategory -> at-voc-new:tax-category|
-||epo-ord:TaxInformation|epo-cat:hasTaxScheme -> at-voc-new:tax-scheme|
-||epo-ord:TaxInformation|epo-cat:hasVATCategory -> at-voc-new:vat-category|
 ||epo-ord:OrderResponseInformation|generalisation -> epo-cat:InformationHub|
 ||epo-ord:OrderResponseInformation|epo-ord:isSpecificToOrderResponseLine -> epo-ord:OrderResponseLine|
 ||epo-ord:OrderResponseInformation|epo-ord:hasDeliveryPeriod -> epo:Period|
@@ -691,6 +567,13 @@ s|module|class|added property|deleted property
 ||epo-ord:OrderResponse|epo-ord:specifiesSeller -> epo-ord:Seller|
 ||epo-ord:OrderResponse|epo-ord:specifiesBuyer -> epo:Buyer|
 ||epo-ord:OrderResponse|epo-ord:implementsContract -> epo:Contract|
+||epo-ord:OriginatorInformation|epo-ord:concernsOriginatorRequest -> epo:OriginatorRequest|
+||epo-ord:OriginatorInformation|generalisation -> epo-cat:InformationHub|generalisation -> epo:ContextSpecificDescription
+||epo-ord:TaxInformation|epo:isCalculatedOn -> epo:MonetaryValue|
+||epo-ord:TaxInformation|epo-cat:hasAmount -> epo:MonetaryValue|
+||epo-ord:TaxInformation|generalisation -> epo-cat:InformationHub|
+||epo-ord:TaxInformation|epo-cat:hasTaxCategory -> at-voc-new:tax-category|
+||epo-ord:TaxInformation|epo-cat:hasTaxScheme -> at-voc-new:tax-scheme|
 |eNotice|epo-not:CompetitionNotice|epo:announcesLot -> epo:Lot|epo-not:announcesLot -> epo:Lot
 ||epo-not:CompetitionNotice|epo:announcesLotGroup -> epo:LotGroup|epo-not:announcesLotGroup -> epo:LotGroup
 ||epo-not:CompetitionNotice|epo:announcesRole -> epo:AgentInRole|epo-not:announcesRole -> epo:AgentInRole
