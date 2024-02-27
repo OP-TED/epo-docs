@@ -189,8 +189,8 @@ modification.
 
 === Changed classes
 
-[width=75%]
-[cols="10h,20h,20h,20"]
+//[width=75%]
+[cols="1,2,2,2"]
 |===
 s|module|class|added attributes|deleted attributes
 
