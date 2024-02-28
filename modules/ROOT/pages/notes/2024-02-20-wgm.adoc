@@ -8,7 +8,8 @@
 == Agenda
 
 * eSubmission model update.
-Discussion
+
+== Discussion
 
 * The diagram that represents the ESPD-EDM OTHER-EO-PQS sheet in the excel file https://github.com/OP-TED/ESPD-EDM/blob/master/codelists/ESPD-criterion.xlsx[Criterion] was presented. OTHER-EO-PQS is about the existence and the proof of economic operators existing in a prequalification system or official list.
 ** The  ESPD Response does not differentiate between a certificate and a list. Therefore, it was decided that both concepts would be mapped to the epo:Certificate.
