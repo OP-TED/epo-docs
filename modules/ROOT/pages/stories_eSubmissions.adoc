@@ -103,11 +103,11 @@ If all the data concepts represented in the eSubmission module were instantiated
 
 |US-SUB-4
 |Buyer
-|As a Buyer, I want to know if the Tenderer/Candidate relies upon other entities and consult the evidence supplied for this criteria, so I can evaluate if the Tenderer/Candidate is eligible to take part in the Procurement Procedure.
+|As a Buyer, I want to know if the Tenderer/Candidate relies upon other entities and consult the evidence supplied for this criterion, so I can evaluate if the Tenderer/Candidate is eligible to take part in the Procurement Procedure.
 
 |US-SUB-5
 |Buyer
-|As a Buyer, I want to consult the information on a entity that the Tenderer/Candidate relies upon, so I can evaluate if the Tenderer/Candidate can take part in the Procurement Procedure.
+|As a Buyer, I want to consult the information on an entity that the Tenderer/Candidate relies upon, so I can evaluate if the Tenderer/Candidate can take part in the Procurement Procedure.
 
 |US-SUB-6
 |Buyer
