@@ -1,4 +1,4 @@
-:doctitle: eAccess – Ontology Requirements Specification Document (ORSD) 
+:doctitle: eAccess Ontology Requirements Specification Document (ORSD) 
 :page-code: epo-v4.1.0-rc.1-prod-007
 :page-name: ORSD - eAccess
 :docdate: February 2024
@@ -21,6 +21,7 @@
 == The ESPD process 
 
 image:eAccess1.png[]
+
 https://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.2?preview=/50202899/50202902/worddavfb2663b152365ec41613fa960a2c498d.png[source: https://wiki.ds.unipi.gr]
 
 == ESPD request transaction
@@ -35,7 +36,6 @@ Consults the ESPD Request
 
 
 == Use cases
-
 
 [cols="2,2,1,2"]
 
