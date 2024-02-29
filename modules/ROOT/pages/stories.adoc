@@ -4,8 +4,10 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: February 2024
 
-== Modules
+== eAccess
 
 include::stories_eAccess.adoc[]
+
+=== eSubmission
 
 include::stories_eSubmission.adoc[]
