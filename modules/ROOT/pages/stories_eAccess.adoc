@@ -27,7 +27,7 @@ https://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.2?preview=/50202899/
 
 === ESPD request transaction
 
-==== Roles involved:
+==== Roles involved
 * Platform Provider 
 Procurement Service Provider or Buyer that provides an ESPD service
 * Buyer
