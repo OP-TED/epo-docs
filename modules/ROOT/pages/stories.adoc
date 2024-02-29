@@ -1,0 +1,11 @@
+:doctitle: User Stories and Natural Language Statements
+:doccode: epo-main-prod-039
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: February 2024
+
+== Modules
+
+include::stories_eAccess.adoc[]
+
+include::stories_eSubmission.adoc[]
