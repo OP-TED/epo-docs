@@ -16,7 +16,7 @@
 * xref:epo-home::references.adoc[Reference Documents]
 * xref:epo-home::history.adoc[History and Planned Developments]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
-* xref:epo-home::stories.adoc[Use Cases and User Stories]
+* xref:epo-home::stories.adoc[User Stories and Natural Language Statements]
 
 * [.separated]#**Working Group Documents**#
 * xref:epo-wgm::wider.adoc[Quarterly Meetings]
