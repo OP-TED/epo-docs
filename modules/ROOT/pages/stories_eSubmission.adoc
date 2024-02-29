@@ -3,7 +3,8 @@
 :page-name: ORSD - eSubmissions
 :docdate: February 2024
 
-== Resources
+== eSubmission
+=== Resources
 
 . ESPD-EDM GitHub repository:
 
@@ -17,13 +18,13 @@
 
 * https://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.2[ESPDint - Interopable ESPD and VCD Services]
 
-== The ESPD response transaction
+=== The ESPD response transaction
 
 A structured electronic business document for providing qualification information in a simplified way through an European Single Procurement Document (ESPD) when responding to a Call for Tender.
 
 
 
-=== Roles involved
+==== Roles involved
 
 * Platform Provider
 
@@ -39,7 +40,7 @@ Reviews the data from the ESPD Response
 
 
 
-=== Activity description
+==== Activity description
 
 The ESPD Response uses the ESPD Request as a template.
 
@@ -47,7 +48,7 @@ The ESPD Response uses the ESPD Request as a template.
 
 * The Buyer reviews the data provided in the ESPD Response.
 
-== Use cases
+=== Use cases
 
 
 [cols="2,2,1,2"]
@@ -233,7 +234,7 @@ If all the data concepts represented in the eSubmission module were instantiated
 
 
 
-== Natural Language Statements
+=== Natural Language Statements
 
 . An ESPD Response has an identifier.
 
