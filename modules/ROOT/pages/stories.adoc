@@ -4,6 +4,9 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: February 2024
 
+== Introduction
+
+Introduction to be written
 
 include::stories_eAccess.adoc[]
 

@@ -1,4 +1,4 @@
-:doctitle: eSubmission Ontology Requirements Specification Document (ORSD)
+:doctitle: 
 :page-code: epo-v4.1.0-rc.1-prod-007
 :page-name: ORSD - eSubmissions
 :docdate: February 2024
