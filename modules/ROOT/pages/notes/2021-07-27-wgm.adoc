@@ -10,18 +10,18 @@
 
 ==== GitHub Issues Update
 
-The following issues have been discussed and updated:
+The following issues were discussed and updated:
 
-Issue 295 reuse more from the EC core ontologies – updated and closed
+Issue 295: reuse more from the EC core ontologies – updated and closed
 
-Issue 293  reg2015 owl-core mixes up label and namespace – to be discussed further with ECO and to be updated
+Issue 293:  reg2015 owl-core mixes up label and namespace – to be discussed further with ECO and to be updated
 
-Issue 303 latest version and tracker? – closed
+Issue 303: latest version and tracker? – closed
 
-Issue 299 add specific subclasses of Concept or restrictions on Conceptschema – updated
+Issue 299: add specific subclasses of Concept or restrictions on Conceptschema – updated
 
-Issue 282 Economic Operator class: Erole type property – updated
+Issue 282: Economic Operator class: Erole type property – updated
 
-Issue 281 Predicate harmonization – updated
+Issue 281: Predicate harmonization – updated
 
-Issue 279 Buyer definition does not cater for post award needs – updated
+Issue 279: Buyer definition does not cater for post award needs – updated
