@@ -3,7 +3,10 @@
 :page-name: ORSD - eAccess
 :docdate: February 2024
 
-== eAccess
+== eAccess 
+
+The eAccess Ontology Requirements Specification Document (OSDR) covers the https://docs.ted.europa.eu/ESPD-EDM/latest/xml_technical_handbook.html#_the_espd_request_document[ESPD Request Document].
+
 === Resources
 
 . ESPD-EDM GitHub repository: 

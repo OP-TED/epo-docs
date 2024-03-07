@@ -24,7 +24,7 @@ Use cases are then developed to create user stories.
 User stories are a method of helping identify information requirements. The method consists in drafting very simple sentences structured around three main questions:
 
 *  Who is the beneficiary of an action? <role of the user>
-*  What is the need? <something> 
+*  What is the need? <something>
 *  What is the benefit? <the benefit>
 
 The structure of the sentence is always as follows:
