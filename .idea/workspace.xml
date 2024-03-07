@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="updated links">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="updates user stories pages typo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +223,63 @@
       <option name="project" value="LOCAL" />
       <updated>1706170862296</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="updated links">
+      <created>1709196811282</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1709196811282</updated>
+    </task>
+    <task id="LOCAL-00027" summary="updated links">
+      <created>1709201665308</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1709201665308</updated>
+    </task>
+    <task id="LOCAL-00028" summary="updated links">
+      <created>1709202348238</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1709202348238</updated>
+    </task>
+    <task id="LOCAL-00029" summary="updated links">
+      <created>1709203724056</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1709203724056</updated>
+    </task>
+    <task id="LOCAL-00030" summary="updated links">
+      <created>1709204797366</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1709204797366</updated>
+    </task>
+    <task id="LOCAL-00031" summary="updates user stories pages">
+      <created>1709206079779</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1709206079779</updated>
+    </task>
+    <task id="LOCAL-00032" summary="updates user stories pages">
+      <created>1709206111817</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1709206111817</updated>
+    </task>
+    <task id="LOCAL-00033" summary="updates user stories pages typo">
+      <created>1709210364236</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1709210364236</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,8 +316,10 @@
     <MESSAGE value="added feedback partial" />
     <MESSAGE value="excluded .idea" />
     <MESSAGE value="updated nav xref links for 3.1.0 to include the version" />
-    <MESSAGE value="updated links" />
     <MESSAGE value="added asciidoctor config" />
-    <option name="LAST_COMMIT_MESSAGE" value="added asciidoctor config" />
+    <MESSAGE value="updated links" />
+    <MESSAGE value="updates user stories pages" />
+    <MESSAGE value="updates user stories pages typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates user stories pages typo" />
   </component>
 </project>

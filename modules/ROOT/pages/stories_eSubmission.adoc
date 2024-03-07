@@ -5,7 +5,7 @@
 
 == eSubmission
 
-The eSubmission Ontology Requirements Specification Document (OSDR) covers the https://docs.ted.europa.eu/ESPD-EDM/latest/xml_technical_handbook.html#_the_espd_response_document[ESPD Response Document].
+The eSubmission Ontology Requirements Specification Document (ORSD) covers the https://docs.ted.europa.eu/ESPD-EDM/latest/xml_technical_handbook.html#_the_espd_response_document[ESPD Response Document].
 
 === Resources
 
