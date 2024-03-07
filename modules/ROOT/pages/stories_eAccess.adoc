@@ -77,8 +77,8 @@ Selection criteria may relate to:
 |===
 s|Code|RoleS|User Story 
 |US-G-1 	|Buyer 	|As a Buyer, I want to know that the Economic Operator substantiates the non-existence of the exclusion grounds and fulfils all qualitative selection criteria, so I can select it as a Candidate for the Procurement Procedure.
-|US-G-2 	|Buyer 	|As a Buyer, I need to define my Selection Criteria, therefore I would like to see the Selection Criteria my Organisation has previously used, #so I can ???#
-|US-G-3 	|Buyer 	|As a Buyer, I need to define my Selection Criteria, therefore I would like to see the Selection Criteria which were previously used by other Organisations in my country, #so I can ???#
+|US-G-2 	|Buyer 	|As a Buyer, I would like to see the Selection Criteria my Organisation has previously used, so I can define the Selection Criteria for my Procurement Procedure. 
+|US-G-3 	|Buyer 	|As a Buyer, I would like to see the Selection Criteria that were previously used by other Organisations in my country, so I can define the Selection Criteria for my Procurement Procedure.
 |US-G-4 	|Economic Operator 	|As an Economic Operator, I want to know the Selection Criteria I need to fulfil, so I can take part in the Procurement Procedure. 
 |US-G-5 	|Economic Operator 	|As an Economic Operator, I want to know the Exclusion Ground I need to substantiate, so I can take part in the Procurement Procedure. 
 |US-G-6	|Economic Operator 	|As an Economic Operator, I want to know the Subcriterion I need to fulfil, so I can take part in the Procurement Procedure.
