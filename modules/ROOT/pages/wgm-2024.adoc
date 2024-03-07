@@ -1,0 +1,33 @@
+:doctitle: Cumulative content of Working Group Meetings in 2024
+:doccode: epo-wgm-prod-036
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: March 2024
+
+include::notes/2024-02-29-wgm.adoc[]
+
+include::notes/2024-02-27-wgm.adoc[]
+
+include::notes/2024-02-22-wgm.adoc[]
+
+include::notes/2024-02-20-wgm.adoc[]
+
+include::notes/2024-02-15-wgm.adoc[]
+
+include::notes/2024-02-13-wgm.adoc[]
+
+include::notes/2024-02-08-wgm.adoc[]
+
+include::notes/2024-02-06-wgm.adoc[]
+
+include::notes/2024-02-01-wgm.adoc[]
+
+include::notes/2024-01-30-wgm.adoc[]
+
+include::notes/2024-01-25-wgm.adoc[]
+
+include::notes/2024-01-23-wgm.adoc[]
+
+include::notes/2024-01-18-wgm.adoc[]
+
+include::notes/2024-01-16-wgm.adoc[]
