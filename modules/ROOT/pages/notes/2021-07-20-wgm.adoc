@@ -1,0 +1,31 @@
+== Working Group meeting 20/07/2021
+
+
+*Date:* 20/07/2021 +
+*Participants:* Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP) and Giampaolo Sellitto (ANAC)
+*Model editor:* Eugeniu Costetchi  +
+*Note editor:* Andreea Pasăre
+
+=== Issues
+
+==== GitHub Issues Update
+
+The following issues have been discussed and updated:
+
+Issue 307 Subcontractor vs hasSubcontracted (relates to 306) – updated
+
+Issue 306 Link of Role and Procedure – updated
+
+Issue 305 Role-ContactPoint props, discrepancy between ontology and conceptual model – updated
+
+Issue 304 rdf:PlainLiteral instead of rdf:Literal – updated
+
+Issue 303 latest version and tracker? – updated
+
+Issue 302 questions about Amount and Value – updated
+
+Issue 301 every term must have a definition – work ongoing
+
+Issue 300 add superclass epo:ProcurementWithSpecificRequirement – closed
+
+Issue 299 add specific subclasses of Concept or restrictions on Conceptschema– updated
