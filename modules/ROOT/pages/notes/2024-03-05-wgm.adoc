@@ -1,0 +1,52 @@
+== Working Group meeting
+
+*Date*: 05/03/2024    +
+*Participants:* ** **Paloma Arillo, Giovanni Paolo Sellitto, Dragos Stoica, Pascaline Laure Tchienehom  +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
+== Agenda
+
+* Add definitions for eSubmission and eAccess.
+
+== Discussion
+
+* The diagrams of the eSubmission and eAccess modules that will be pre-released were briefly presented.
+* The ESPD-EDM Conceptual model and business handbook were consulted in order to update the definitions of the following concepts:
+
+
+* epo-sub:ESPDResponse class:
+** Definition: "A document conveying the fulfilment or not by the economic operator of the Exclusion Grounds and the Selection Criteria set out by the Buyer for a specific Procurement using a European Single Procurement Document (ESPD) Request. WG Approval 05/03/2024".
+** Property: epo-sub:providesInformationOn
+*** Definition: "Offers information about an instance of a concept. WG approval 05/03/2024".
+** Property: epo-sub:referstoOtherESPDResponse:
+*** Definition: "Reference to other European Single Procurement Document (ESPD) Response. WG approval 05/03/2024".
+** Property: epo-sub:relatesToESPDRequest:
+*** Definition: "Is about an European Single Procurement Document (ESPD) Request.WG approval 05/03/2024".
+*
+* epo-acc:ESPDRequest class:
+** Definition: "An updated self-declaration used by the economic operator as a preliminary evidence in replacement of certificates issued by public authorities or third parties confirming that the economic operator fulfils the Exclusion Grounds and the Selection Criteria set out by the Buyer for a specific Procurement. WG Approval 05/03/2024".
+* epo-sub:NationalPrequalificationData class:
+** Definition: "Data that describe the distinctive features or characteristics that qualify an economic operator to take part in a tendering process. WG approval 05/03/2024".
+** Attribute epo-sub:hasBussinessClassificationSchemeDescription can now be removed, as it has the same meaning as epo-sub:hasEconomicOperatorIdentifier property (that property's cardinality also changed to [0..*].
+***  epo-sub:hasEconomicOperatorIdentifier definition: "The identifier assigned to an economic operator in a national pre-qualification system or official list. WG approval 05/03/2024".
+** Attribute epo-sub:hasCompletedTaskDescription:
+*** Definition: "Text describing the works, supplies or services executed, delivered or performed in a procurement project that can be used as an evidence for the classification of the economic operator. WG approval 05/03/2024".
+** Property epo-sub:hasEmployeeQuantity:
+*** Definition: "The number of people hired by the Organization. WG approval 05/03/2024".
+** Property epo-sub:hasFinancialCapability:
+*** Definition: "A monetary amount representing the financial capability of the Organization. Additional information:
+Used to represent the general Turnover of the Organization (for statistical purposes).WG approval 05/03/2024".
+** Property epo-sub:concernsOrganization:
+*** Definition: "Relates to organization".
+* epo-sub:LegalRepresentative class:
+** Definition: "The Role of an Agent that can represent an Organization. WG approval 05/03/2024".
+* epo-sub-Mandate class:
+** Definition: "An authorization to act as a representative of an Organization. WG approval 05/03/2024".
+* epo-sub-PowerOfAttorney class:
+** Definition: "A legal document that grants someone the authority to make decisions on behalf of an Organization. WG approval 05/03/2024".
+
+
+
+
+
