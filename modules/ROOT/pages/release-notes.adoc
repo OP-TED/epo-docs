@@ -847,18 +847,18 @@ s|module|class|added property|deleted property
 
 |
 |epo:AwardOutcome
-|generalisation -> epo:ContextualProjection
+|generalisation -> epo:Contextual-Projection
 |
 
 |
 |epo:Awarder
 |
-|epo:dependsOnBuyer -> epo:Buyer
+|epo:depends-OnBuyer -> epo:Buyer
 
 |
 |epo:BudgetProvider
 |
-|epo:dependsOnBuyer -> epo:Buyer
+|epo:depends-OnBuyer -> epo:Buyer
 
 |
 |epo:BudgetProvider
@@ -877,7 +877,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:Buyer
-|epo:indicatesInvoiceeContactPoint -> cpov:ContactPoint
+|epo:indicatesInvoicee-ContactPoint -> cpov:ContactPoint
 |
 
 |
@@ -903,11 +903,11 @@ s|module|class|added property|deleted property
 |
 |epo:ContractLotCompletion-Information
 |epo:providesContractTotal-PaymentValue -> epo:MonetaryValue
-|epo:hasPaymentValue -> epo:MonetaryValue
+|epo:hasPaymentValue -> epo:Monetary-Value
 
 |
 |epo:ContractLotCompletion-Information
-|epo:providesContractTotal-PenaltyValue -> epo:MonetaryValue
+|epo:providesContractTotal-Penalty-Value -> epo:MonetaryValue
 |epo:hasPenaltyValue -> epo:MonetaryValue
 
 |
@@ -1047,7 +1047,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:Fund
-|epo:hasFundProgramme -> at-voc:EU-programme
+|epo:hasFund-Programme -> at-voc:EU-programme
 |
 
 |
@@ -1087,12 +1087,12 @@ s|module|class|added property|deleted property
 
 |
 |epo:LotAwardOutcome
-|epo:hasFrameworkAgreement-MaximumValue -> epo:MonetaryValue
+|epo:hasFramework-AgreementMaximumValue -> epo:MonetaryValue
 |
 
 |
 |epo:LotAwardOutcome
-|epo:hasApproximateFramework-AgreementValue -> epo:MonetaryValue
+|epo:hasApproximate-FrameworkAgreementValue -> epo:MonetaryValue
 |
 
 |
@@ -1213,11 +1213,11 @@ s|module|class|added property|deleted property
 |
 |epo:NoticeAwardInformation
 |epo:describesDirectAward-PrenotificationNotice -> epo-not:DirectAwardPrenotification-Notice
-|epo:describesResultNotice -> epo-not:DirectAwardPrenotification-Notice
+|epo:describesResultNotice -> epo-not:DirectAward-Prenotification-Notice
 
 |
 |epo:NoticeAwardInformation
-|epo:hasApproximateFramework-AgreementValue -> epo:MonetaryValue
+|epo:hasApproximate-FrameworkAgreementValue -> epo:MonetaryValue
 |
 
 |
@@ -1237,7 +1237,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:ChangeInformation (renamed from epo:NoticeChange)
-|epo:relatesToEFormSectionIdentifier -> adms:Identifier
+|epo:relatesToEForm-SectionIdentifier -> adms:Identifier
 |
 
 |
@@ -1248,7 +1248,7 @@ s|module|class|added property|deleted property
 |
 |epo:Notice
 |
-|epo:hasNotificationContentType -> at-voc-new:notification-phases-content-types
+|epo:hasNotification-ContentType -> at-voc-new:notification-phases-content-types
 
 |
 |epo:Notice
@@ -1258,7 +1258,7 @@ s|module|class|added property|deleted property
 |
 |epo:Notice
 |
-|epo:conformsToSpecificLegalBasis -> at-voc:legal-basis
+|epo:conformsToSpecific-LegalBasis -> at-voc:legal-basis
 
 |
 |epo:OfferIssuer
@@ -1313,7 +1313,7 @@ s|module|class|added property|deleted property
 |
 |epo:ParticipationRequest-Processor
 |
-|epo:dependsOnServiceProvider -> epo:Procurement-ServiceProvider
+|epo:dependsOnService-Provider -> epo:Procurement-ServiceProvider
 
 |
 |epo:ParticipationRequestP-rocessor
