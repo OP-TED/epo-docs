@@ -1176,7 +1176,7 @@ s|module|class|added property|deleted property
 |epo:hasPerformingStaff-QualificationInformation -> at-voc:requirement-stage
 
 |
-|epo:MiniCompetitionAward-Outcome
+|epo:MiniCompetition-AwardOutcome
 |epo:resultsFromUsing-CandidateList -> epo:SelectedCandidateList
 |
 
@@ -1311,22 +1311,22 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo:ParticipationRequest-Processor
+|epo:Participation-RequestProcessor
 |
-|epo:dependsOnService-Provider -> epo:Procurement-ServiceProvider
+|epo:dependsOn-ServiceProvider -> epo:Procurement-ServiceProvider
 
 |
-|epo:ParticipationRequestP-rocessor
+|epo:Participation-RequestProcessor
 |
 |epo:dependsOnBuyer -> epo:Buyer
 
 |
-|epo:ParticipationRequest-Receiver
+|epo:Participation-RequestReceiver
 |
-|epo:dependsOnService-Provider -> epo:ProcurementService-Provider
+|epo:dependsOn-ServiceProvider -> epo:Procurement-ServiceProvider
 
 |
-|epo:ParticipationRequest-Receiver
+|epo:Participation-RequestReceiver
 |
 |epo:dependsOnBuyer -> epo:Buyer
 
@@ -1351,8 +1351,8 @@ s|module|class|added property|deleted property
 |generalisation -> epo:ProcurementObject
 
 |
-|epo:PlannedProcurementPart
-|epo:foreseesProcurement-Object -> epo:ProcurementObject
+|epo:Planned-ProcurementPart
+|epo:foresees-ProcurementObject -> epo:ProcurementObject
 |
 
 |
@@ -1367,11 +1367,11 @@ s|module|class|added property|deleted property
 
 |
 |epo:Procedure
-|epo:specifiesProcurementCriteria-Summary -> epo:ProcurementCriteria-Summary
-|epo:specifiesExclusionGround -> epo:ExclusionGround
+|epo:specifiesProcurement-CriteriaSummary -> epo:Procurement-CriteriaSummary
+|epo:specifiesExclusion-Ground -> epo:ExclusionGround
 
 |
-|epo:ProcurementCriteria-Summary
+|epo:Procurement-CriteriaSummary
 |generalisation -> cccev:Requirement
 |
 
@@ -1431,7 +1431,7 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo:ProfessionalSuitabilitySummary
+|epo:Professional-SuitabilitySummary
 |generalisation -> epo:SelectionCriteriaSummary
 |
 
@@ -1442,7 +1442,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:PurchaseContract
-|epo:resultsFromMiniCompetition-AwardOutcome -> epo:MiniCompetition-AwardOutcome
+|epo:resultsFromMini-CompetitionAwardOutcome -> epo:MiniCompetition-AwardOutcome
 |
 
 |
@@ -1456,7 +1456,7 @@ s|module|class|added property|deleted property
 |epo:hasAdditional-Classification -> at-voc:cpvsuppl
 
 |
-|epo:QualificationCriteriaSummary
+|epo:Qualification-CriteriaSummary
 |generalisation -> epo:Procurement-CriteriaSummary
 |
 
@@ -2046,7 +2046,7 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo-ord:OriginatorInformation
+|epo-ord:Originator-Information
 |generalisation -> epo-cat:InformationHub
 |generalisation -> epo:ContextSpecific-Description
 
