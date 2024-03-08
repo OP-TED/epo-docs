@@ -987,7 +987,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:EconomicStanding-Summary
-|generalisation -> epo:SelectionCriteriaSummary
+|generalisation -> epo:Selection-CriteriaSummary
 |
 
 |
@@ -997,7 +997,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:ElementConfidentiality-Description
-|epo-ord:hasTaxInformation -> epo-ord:TaxInformation
+|epo-ord:hasTax-Information -> epo-ord:-TaxInformation
 |
 
 |
@@ -1112,8 +1112,8 @@ s|module|class|added property|deleted property
 
 |
 |epo:LotGroupAward-Information
-|epo:hasGroupFrameworkAgreement-MaximumValue -> epo:MonetaryValue
-|epo:hasGroupFrameworkAgreement-AwardedValue -> epo:MonetaryValue
+|epo:hasGroup-FrameworkAgreement-MaximumValue -> epo:MonetaryValue
+|epo:hasGroup-FrameworkAgreement-AwardedValue -> epo:MonetaryValue
 
 |
 |epo:LotGroupAward-Information
@@ -1158,17 +1158,17 @@ s|module|class|added property|deleted property
 |
 |epo:Lot
 |epo:specifiesProcurement-Criterion -> epo:ProcurementCriterion
-|epo:specifiesAwardCriterion -> epo:AwardCriterion
+|epo:specifies-AwardCriterion -> epo:AwardCriterion
 
 |
 |epo:Lot
 |
-|epo:hasRestatedEstimated-Value -> epo:MonetaryValue
+|epo:hasRestated-Estimated-Value -> epo:MonetaryValue
 
 |
 |epo:Lot
 |
-|epo:hasReservedProcurement -> at-voc:reserved-procurement
+|epo:hasReserved-Procurement -> at-voc:reserved-procurement
 
 |
 |epo:Lot
@@ -1212,11 +1212,11 @@ s|module|class|added property|deleted property
 
 |
 |epo:NoticeAwardInformation
-|epo:describesDirectAward-PrenotificationNotice -> epo-not:DirectAwardPrenotification-Notice
+|epo:describesDirectAward-PrenotificationNotice -> epo-not:DirectAward-Prenotification-Notice
 |epo:describesResultNotice -> epo-not:DirectAward-Prenotification-Notice
 
 |
-|epo:NoticeAwardInformation
+|epo:NoticeAward-Information
 |epo:hasApproximate-FrameworkAgreementValue -> epo:MonetaryValue
 |
 
@@ -1367,7 +1367,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:Procedure
-|epo:specifiesProcurement-CriteriaSummary -> epo:Procurement-CriteriaSummary
+|epo:specifies-ProcurementCriteriaSummary -> epo:-ProcurementCriteriaSummary
 |epo:specifiesExclusion-Ground -> epo:ExclusionGround
 
 |
@@ -1432,7 +1432,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:Professional-SuitabilitySummary
-|generalisation -> epo:SelectionCriteriaSummary
+|generalisation -> epo:Selection-CriteriaSummary
 |
 
 |
@@ -1462,7 +1462,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:QualificationCriterion
-|generalisation -> epo:ProcurementCriterion
+|generalisation -> epo:Procurement-Criterion
 |
 
 |
@@ -1478,7 +1478,7 @@ s|module|class|added property|deleted property
 |
 |epo:ReviewObject
 |generalisation -> epo:Document
-|generalisation -> epo:ProcurementElement
+|generalisation -> epo:Procurement-Element
 
 |
 |epo:ReviewProcedure-InformationProvider
@@ -1492,7 +1492,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:ReviewTerm
-|generalisation -> epo:ProcedureSpecificTerm
+|generalisation -> epo:Procedure-SpecificTerm
 |
 
 |
@@ -1517,8 +1517,8 @@ s|module|class|added property|deleted property
 
 |
 |epo:SelectionCriterion
-|generalisation -> epo:QualificationCriterion
-|generalisation -> epo:ProcurementCriterion
+|generalisation -> epo:Qualification-Criterion
+|generalisation -> epo:Procurement-Criterion
 
 |
 |epo:SubmissionStatistical-Information
@@ -1578,7 +1578,7 @@ s|module|class|added property|deleted property
 |
 |epo:Tender
 |generalisation -> epo:Document
-|generalisation -> epo:ProcurementElement
+|generalisation -> epo:Procurement-Element
 
 |
 |epo:Tender
