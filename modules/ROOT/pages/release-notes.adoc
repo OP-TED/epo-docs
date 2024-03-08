@@ -15,6 +15,7 @@ The release notes provide the global changes since the last version (3.1.0). The
 modification.
 
 == Release notes
+== Release notes
 
 * Modeling Procedure in the context of a Mini-Competition:
 ** Award in the context of a Framework Agreement
