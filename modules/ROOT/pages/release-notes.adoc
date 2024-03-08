@@ -15,6 +15,7 @@ The release notes provide the global changes since the last version (3.1.0). The
 modification.
 
 == Release notes
+== Release notes
 
 * Modeling Procedure in the context of a Mini-Competition:
 ** Award in the context of a Framework Agreement
@@ -190,7 +191,7 @@ modification.
 === Changed classes
 
 //[%autowidth]
-[width=50%]
+//[width=50%]
 [cols="1,2,2,2"]
 |===
 s|module|class|added attributes|deleted attributes
@@ -277,7 +278,7 @@ s|module|class|added attributes|deleted attributes
 
 |
 |epo:AwardCriterion
-|epo:hasAwardCriteriaStatedInProcurementDocuments
+|epo:hasAwardCriteria-StatedInProcurementDocuments
 |
 
 |
@@ -287,7 +288,7 @@ s|module|class|added attributes|deleted attributes
 
 |
 |epo:AwardDecision
-|epo:hasAdditionalNonAwardJustification
+|epo:hasAdditional-NonAwardJustification
 |
 
 |
@@ -297,17 +298,17 @@ s|module|class|added attributes|deleted attributes
 
 |
 |epo:ChangeInformation (renamed from epo:NoticeChange)
-|epo:hasProcurementDocumentChangeDate
+|epo:hasProcurement-DocumentChangeDate
 |
 
 |
 |epo:ChangeInformation (renamed from epo:NoticeChange)
-|epo:isProcurementDocumentChanged
+|epo:isProcurement-DocumentChanged
 |
 
 |
 |epo:ChangeInformation (renamed from epo:NoticeChange)
-|epo:hasChangeReasonDescription
+|epo:hasChangeReason-Description
 |
 
 |
@@ -321,12 +322,12 @@ s|module|class|added attributes|deleted attributes
 |epo:hasAccessURL
 
 |
-|epo:ContractLotCompletionInformation
-|epo:hasPaymentValueDiscrepancyJustification
+|epo:ContractLot-CompletionInformation
+|epo:hasPaymentValue-DiscrepancyJustification
 |
 
 |
-|epo:DesignContestRegimeTerm
+|epo:DesignContest-RegimeTerm
 |epo:hasDescriptionOfPrizes
 |
 
@@ -388,7 +389,7 @@ s|module|class|added attributes|deleted attributes
 |
 |epo:LotAwardOutcome
 |
-|epo:hasAdditionalNonAwardJustification
+|epo:hasAdditionalNonAward-Justification
 
 |
 |epo:LotGroup
@@ -407,7 +408,7 @@ s|module|class|added attributes|deleted attributes
 
 |
 |epo:NonDisclosureAgreementTerm
-|epo:isNonDisclosureAgreementRequired
+|epo:isNonDisclosureAgreement-Required
 |
 
 |
@@ -417,7 +418,7 @@ s|module|class|added attributes|deleted attributes
 
 |
 |epo:NonPublishedInformation
-|epo:hasConfidentialityJustification
+|epo:hasConfidentiality-Justification
 |
 
 |
@@ -437,7 +438,7 @@ s|module|class|added attributes|deleted attributes
 
 |
 |epo:Notice
-|epo:hasNoticePublicationNumber
+|epo:hasNoticePublication-Number
 |
 
 |
@@ -461,13 +462,13 @@ s|module|class|added attributes|deleted attributes
 |
 
 |
-|epo:ParticipationConditionsSummary
-|epo:describesObjectiveParticipationRules
+|epo:ParticipationConditions-Summary
+|epo:describesObjective-ParticipationRules
 |
 
 |
-|epo:ParticipationConditionsSummary
-|epo:describesVerificationMethod
+|epo:ParticipationConditions-Summary
+|epo:describesVerification-Method
 |
 
 |
@@ -477,12 +478,12 @@ s|module|class|added attributes|deleted attributes
 
 |
 |epo:ProcedureTerm
-|epo:isSubmissionForAllLotsRequired
-|epo:isSubmissionForAllLotsAllowed
+|epo:isSubmissionForAllLots-Required
+|epo:isSubmissionForAllLots-Allowed
 
 |
-|epo:ProcurementCriteriaSummary
-|epo:indicatesPerformingStaffInformationRequirement
+|epo:ProcurementCriteria-Summary
+|epo:indicatesPerforming-StaffInformationRequirement
 |
 
 |
@@ -501,17 +502,17 @@ s|module|class|added attributes|deleted attributes
 |
 
 |
-|epo:ProfessionalSuitabilitySummary
-|epo:describesProfessionRelevantLaw
+|epo:ProfessionalSuitability-Summary
+|epo:describesProfession-RelevantLaw
 |
 
 |
-|epo:ProfessionalSuitabilitySummary
-|epo:hasServiceReservedToParticularProfession
+|epo:ProfessionalSuitability-Summary
+|epo:hasServiceReservedTo-ParticularProfession
 |
 
 |
-|epo:ProfessionalSuitabilitySummary
+|epo:ProfessionalSuitability-Summary
 |epo:describesProfession
 |
 
@@ -521,18 +522,18 @@ s|module|class|added attributes|deleted attributes
 |epo:isWithinFrameworkAgreement
 
 |
-|epo:QualificationCriteriaSummary
+|epo:QualificationCriteria-Summary
 |epo:hasQualificationCondition
 |
 
 |
-|epo:QualificationCriteriaSummary
-|epo:hasConditionVerificationMethod
+|epo:QualificationCriteria-Summary
+|epo:hasConditionVerification-Method
 |
 
 |
 |epo:SecurityClearanceTerm
-|epo:isSecurityClearanceRequired
+|epo:isSecurityClearance-Required
 |
 
 |
@@ -542,12 +543,12 @@ s|module|class|added attributes|deleted attributes
 
 |
 |epo:SelectionCriteriaSummary
-|epo:hasSelectionCriteriaStatedInProcurementDocuments
+|epo:hasSelectionCriteriaStated-InProcurementDocuments
 |
 
 |
 |epo:SelectionCriteriaSummary
-|epo:describesMinimumLevelOfStandards
+|epo:describesMinimumLevelOf-Standards
 |
 
 |
@@ -561,22 +562,22 @@ s|module|class|added attributes|deleted attributes
 |epo:hasDescription
 
 |
-|epo:SubmissionStatisticalInformation
-|epo:hasOtherCountriesReceivedTenders
+|epo:SubmissionStatistical-Information
+|epo:hasOtherCountriesReceived-Tenders
 |
 
 |
-|epo:SubmissionStatisticalInformation
+|epo:SubmissionStatistical-Information
 |epo:hasNonEEAReceivedTenders
 |epo:hasReceivedNonEEATenders
 
 |
-|epo:SubmissionStatisticalInformation
+|epo:SubmissionStatistical-Information
 |epo:hasNonEUReceivedTenders
 |epo:hasReceivedNonEUTenders
 
 |
-|epo:SubmissionStatisticalInformation
+|epo:SubmissionStatistical-Information
 |epo:hasSMEReceivedTenders
 |epo:hasReceivedSMETenders
 
@@ -587,12 +588,12 @@ s|module|class|added attributes|deleted attributes
 
 |
 |epo:SubmissionTerm
-|epo:hasReceiptPreliminaryMarketConsultationDeadline
+|epo:hasReceiptPreliminary-MarketConsultationDeadline
 |
 
 |
 |epo:SubmissionTerm
-|epo:hasReceiptParticipationRequestDeadline
+|epo:hasReceiptParticipation-RequestDeadline
 |
 
 |
@@ -693,7 +694,7 @@ s|module|class|added attributes|deleted attributes
 |
 |epo-cat:Item
 |
-|epo-cat:hasExternalSpecification
+|epo-cat:hasExternal-Specification
 
 |
 |epo-cat:Item
@@ -736,13 +737,13 @@ s|module|class|added attributes|deleted attributes
 |
 
 |
-|epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)
+|epo-ord:AllowanceCharge-Information (renamed from epo-ord:-PriceModifierInformation)
 |epo-cat:hasPercentage
 |epo-cat:hasPricePercentage
 
 |
-|epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)
-|epo-ful:hasAllowanceChargeReasonDescription
+|epo-ord:AllowanceCharge-Information (renamed from epo-ord:-PriceModifierInformation)
+|epo-ful:hasAllowanceCharge-ReasonDescription
 |
 
 |
@@ -807,18 +808,18 @@ s|module|class|added property|deleted property
 
 |
 |epo:AwardCriteriaSummary
-|generalisation -> epo:ProcurementCriteriaSummary
+|generalisation -> epo:Procurement-CriteriaSummary
 |
 
 |
 |epo:AwardDecision
 |generalisation -> epo:Document
-|generalisation -> epo:ProcurementElement
+|generalisation -> epo:Procurement-Element
 
 |
 |epo:AwardDecision
-|epo:comprisesAwardOutcome -> epo:AwardOutcome
-|epo:comprisesLotAwardOutcome -> epo:LotAwardOutcome
+|epo:comprisesAward-Outcome -> epo:AwardOutcome
+|epo:comprisesLot-AwardOutcome -> epo:LotAwardOutcome
 
 |
 |epo:AwardOutcome
@@ -832,12 +833,12 @@ s|module|class|added property|deleted property
 
 |
 |epo:AwardOutcome
-|epo:comprisesTenderAwardOutcome -> epo:TenderAwardOutcome
+|epo:comprisesTender-AwardOutcome -> epo:TenderAwardOutcome
 |
 
 |
 |epo:AwardOutcome
-|epo:hasNonAwardJustification -> at-voc:non-award-justification
+|epo:hasNonAward-Justification -> at-voc:non-award-justification
 |
 
 |
@@ -847,23 +848,23 @@ s|module|class|added property|deleted property
 
 |
 |epo:AwardOutcome
-|generalisation -> epo:ContextualProjection
+|generalisation -> epo:Contextual-Projection
 |
 
 |
 |epo:Awarder
 |
-|epo:dependsOnBuyer -> epo:Buyer
+|epo:depends-OnBuyer -> epo:Buyer
 
 |
 |epo:BudgetProvider
 |
-|epo:dependsOnBuyer -> epo:Buyer
+|epo:depends-OnBuyer -> epo:Buyer
 
 |
 |epo:BudgetProvider
 |
-|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider
+|epo:dependsOnService-Provider -> epo:Procurement-ServiceProvider
 
 |
 |epo:Buyer
@@ -877,7 +878,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:Buyer
-|epo:indicatesInvoiceeContactPoint -> cpov:ContactPoint
+|epo:indicatesInvoicee-ContactPoint -> cpov:ContactPoint
 |
 
 |
@@ -897,32 +898,32 @@ s|module|class|added property|deleted property
 
 |
 |epo:ConcessionEstimate
-|epo:hasConcessionEstimatedValue
+|epo:hasConcession-EstimatedValue
 |
 
 |
-|epo:ContractLotCompletionInformation
-|epo:providesContractTotalPaymentValue -> epo:MonetaryValue
-|epo:hasPaymentValue -> epo:MonetaryValue
+|epo:ContractLotCompletion-Information
+|epo:providesContractTotal-PaymentValue -> epo:MonetaryValue
+|epo:hasPaymentValue -> epo:Monetary-Value
 
 |
-|epo:ContractLotCompletionInformation
-|epo:providesContractTotalPenaltyValue -> epo:MonetaryValue
+|epo:ContractLotCompletion-Information
+|epo:providesContractTotal-Penalty-Value -> epo:MonetaryValue
 |epo:hasPenaltyValue -> epo:MonetaryValue
 
 |
 |epo:ContractTerm
 |
-|epo:hasContractorLegalFormRequirement
+|epo:hasContractorLegal-FormRequirement
 
 |
 |epo:ContractTerm
-|epo:hasLegalFormRequirement
-|epo:hasContractorLegalFormRequirementDescription
+|epo:hasLegalForm-Requirement
+|epo:hasContractorLegal-FormRequirementDescription
 
 |
 |epo:ContractTerm
-|epo:hasEInvoicingPermission -> at-voc:permission
+|epo:hasEInvoicing-Permission -> at-voc:permission
 |
 
 |
@@ -937,17 +938,17 @@ s|module|class|added property|deleted property
 
 |
 |epo:Contract
-|epo:specifiesDeliverable -> epo-con:Deliverable
+|epo:specifies-Deliverable -> epo-con:Deliverable
 |
 
 |
 |epo:Contract
-|epo:hasContractValue -> epo:MonetaryValue
+|epo:hasContract-Value -> epo:MonetaryValue
 |
 
 |
 |epo:Contract
-|epo:isSubjectToContractSpecificTerm -> epo:ContractSpecificTerm
+|epo:isSubjectToContract-SpecificTerm -> epo:ContractSpecificTerm
 |
 
 |
@@ -956,13 +957,13 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo:DesignContestRegimeTerm
+|epo:DesignContest-RegimeTerm
 |generalisation -> epo:ProcedureSpecificTerm
 |
 
 |
 |epo:DirectContract
-|epo:resultsFromLotAwardOutcome -> epo:LotAwardOutcome
+|epo:resultsFromLot-AwardOutcome -> epo:LotAwardOutcome
 |
 
 |
@@ -972,12 +973,12 @@ s|module|class|added property|deleted property
 
 |
 |epo:Document
-|epo:hasElectronicDigest -> epo:Document
+|epo:hasElectronic-Digest -> epo:Document
 |
 
 |
 |epo:Document
-|epo:hasElectronicSignature -> epo:ElectronicSignature
+|epo:hasElectronic-Signature -> epo:ElectronicSignature
 |
 
 |
@@ -986,18 +987,18 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo:EconomicStandingSummary
-|generalisation -> epo:SelectionCriteriaSummary
+|epo:EconomicStanding-Summary
+|generalisation -> epo:Selection-CriteriaSummary
 |
 
 |
-|epo:ElementConfidentialityDescription
+|epo:ElementConfidentiality-Description
 |epo:hasPurpose -> epo:Purpose
 |
 
 |
-|epo:ElementConfidentialityDescription
-|epo-ord:hasTaxInformation -> epo-ord:TaxInformation
+|epo:ElementConfidentiality-Description
+|epo-ord:hasTax-Information -> epo-ord:-TaxInformation
 |
 
 |
@@ -1006,8 +1007,8 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo:ExclusionGroundsSummary
-|generalisation -> epo:QualificationCriteriaSummary
+|epo:ExclusionGrounds-Summary
+|generalisation -> epo:Qualification-CriteriaSummary
 |
 
 |
@@ -1028,12 +1029,12 @@ s|module|class|added property|deleted property
 |
 |epo:FrameworkAgreementTerm
 |
-|epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue
+|epo:hasLaunchFramework-AgreementMaximumValue -> epo:MonetaryValue
 
 |
 |epo:FrameworkAgreementTerm
 |
-|epo:hasLaunchGroupFrameworkAgreementMaximumValue -> epo:MonetaryValue
+|epo:hasLaunchGroupFramework-AgreementMaximumValue -> epo:MonetaryValue
 
 |
 |epo:FrameworkAgreementTerm
@@ -1042,12 +1043,12 @@ s|module|class|added property|deleted property
 
 |
 |epo:FrameworkAgreement
-|epo:resultsFromLotAwardOutcome -> epo:LotAwardOutcome
+|epo:resultsFromLot-AwardOutcome -> epo:LotAwardOutcome
 |
 
 |
 |epo:Fund
-|epo:hasFundProgramme -> at-voc:EU-programme
+|epo:hasFund-Programme -> at-voc:EU-programme
 |
 
 |
@@ -1073,26 +1074,26 @@ s|module|class|added property|deleted property
 |
 |epo:LotAwardOutcome
 |
-|epo:comprisesTenderAwardOutcome -> epo:TenderAwardOutcome
+|epo:comprisesTender-AwardOutcome -> epo:TenderAwardOutcome
 
 |
 |epo:LotAwardOutcome
 |
-|epo:hasAwardedEstimatedValue -> epo:MonetaryValue
+|epo:hasAwardedEstimated-Value -> epo:MonetaryValue
 
 |
 |epo:LotAwardOutcome
 |
-|epo:hasRestatedAwardedValue -> epo:MonetaryValue
+|epo:hasRestatedAwarded-Value -> epo:MonetaryValue
 
 |
 |epo:LotAwardOutcome
-|epo:hasFrameworkAgreementMaximumValue -> epo:MonetaryValue
+|epo:hasFramework-AgreementMaximumValue -> epo:MonetaryValue
 |
 
 |
 |epo:LotAwardOutcome
-|epo:hasApproximateFrameworkAgreementValue -> epo:MonetaryValue
+|epo:hasApproximate-FrameworkAgreementValue -> epo:MonetaryValue
 |
 
 |
@@ -1108,26 +1109,26 @@ s|module|class|added property|deleted property
 |
 |epo:LotAwardOutcome
 |
-|epo:hasFrameworkAgreementEstimatedValue -> epo:MonetaryValue
+|epo:hasFrameworkAgreement-EstimatedValue -> epo:MonetaryValue
 
 |
-|epo:LotGroupAwardInformation
-|epo:hasGroupFrameworkAgreementMaximumValue -> epo:MonetaryValue
-|epo:hasGroupFrameworkAgreementAwardedValue -> epo:MonetaryValue
+|epo:LotGroupAward-Information
+|epo:hasGroup-FrameworkAgreement-MaximumValue -> epo:MonetaryValue
+|epo:hasGroup-FrameworkAgreement-AwardedValue -> epo:MonetaryValue
 
 |
-|epo:LotGroupAwardInformation
-|generalisation -> epo:ContextDescription
-|generalisation -> epo:ContextualProjection
-
-|
-|epo:LotGroup
-|
-|epo:specifiesSelectionCriterion -> epo:SelectionCriterion
+|epo:LotGroupAward-Information
+|generalisation -> epo:Context-Description
+|generalisation -> epo:Contextua-lProjection
 
 |
 |epo:LotGroup
-|epo:specifiesProcurementCriterion -> epo:ProcurementCriterion
+|
+|epo:specifiesSelection-Criterion -> epo:SelectionCriterion
+
+|
+|epo:LotGroup
+|epo:specifiesProcurement-Criterion -> epo:ProcurementCriterion
 |epo:specifiesAwardCriterion -> epo:AwardCriterion
 
 |
@@ -1147,37 +1148,37 @@ s|module|class|added property|deleted property
 
 |
 |epo:LotGroup
-|epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue
+|epo:hasLaunchFrameworkAgreement-MaximumValue -> epo:MonetaryValue
 |
 
 |
 |epo:Lot
 |
-|epo:specifiesSelectionCriterion -> epo:SelectionCriterion
+|epo:specifiesSelection-Criterion -> epo:SelectionCriterion
 
 |
 |epo:Lot
-|epo:specifiesProcurementCriterion -> epo:ProcurementCriterion
-|epo:specifiesAwardCriterion -> epo:AwardCriterion
-
-|
-|epo:Lot
-|
-|epo:hasRestatedEstimatedValue -> epo:MonetaryValue
+|epo:specifiesProcurement-Criterion -> epo:ProcurementCriterion
+|epo:specifies-AwardCriterion -> epo:AwardCriterion
 
 |
 |epo:Lot
 |
-|epo:hasReservedProcurement -> at-voc:reserved-procurement
+|epo:hasRestated-Estimated-Value -> epo:MonetaryValue
 
 |
 |epo:Lot
 |
-|epo:hasPerformingStaffQualificationInformation -> at-voc:requirement-stage
+|epo:hasReserved-Procurement -> at-voc:reserved-procurement
 
 |
-|epo:MiniCompetitionAwardOutcome
-|epo:resultsFromUsingCandidateList -> epo:SelectedCandidateList
+|epo:Lot
+|
+|epo:hasPerformingStaff-QualificationInformation -> at-voc:requirement-stage
+
+|
+|epo:MiniCompetition-AwardOutcome
+|epo:resultsFromUsing-CandidateList -> epo:SelectedCandidateList
 |
 
 |
@@ -1188,7 +1189,7 @@ s|module|class|added property|deleted property
 |
 |epo:MultipleStageProcedureTerm
 |
-|epo:hasQualificationSystemPeriod -> epo:Period
+|epo:hasQualificationSystem-Period -> epo:Period
 
 |
 |epo:MultipleStageProcedureTerm
@@ -1196,28 +1197,28 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo:MultipleStageProcedureTerm
+|epo:MultipleStageProcedure-Term
 |epo:concernsNotice -> epo:Notice
 |
 
 |
-|epo:MultipleStageProcedureTerm
-|epo:relatesToEFormSectionIdentifier -> adms:Identifier
+|epo:MultipleStageProcedure-Term
+|epo:relatesToEFormSection-Identifier -> adms:Identifier
 |
 
 |
-|epo:MultipleStageProcedureTerm
-|epo:hasNonPublicationJustification -> at-voc:non-publication-justification
+|epo:MultipleStageProcedure-Term
+|epo:hasNonPublication-Justification -> at-voc:non-publication-justification
 |
-
-|
-|epo:NoticeAwardInformation
-|epo:describesDirectAwardPrenotificationNotice -> epo-not:DirectAwardPrenotificationNotice
-|epo:describesResultNotice -> epo-not:DirectAwardPrenotificationNotice
 
 |
 |epo:NoticeAwardInformation
-|epo:hasApproximateFrameworkAgreementValue -> epo:MonetaryValue
+|epo:describesDirectAward-PrenotificationNotice -> epo-not:DirectAward-Prenotification-Notice
+|epo:describesResultNotice -> epo-not:DirectAward-Prenotification-Notice
+
+|
+|epo:NoticeAward-Information
+|epo:hasApproximate-FrameworkAgreementValue -> epo:MonetaryValue
 |
 
 |
@@ -1237,7 +1238,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:ChangeInformation (renamed from epo:NoticeChange)
-|epo:relatesToEFormSectionIdentifier -> adms:Identifier
+|epo:relatesToEForm-SectionIdentifier -> adms:Identifier
 |
 
 |
@@ -1248,7 +1249,7 @@ s|module|class|added property|deleted property
 |
 |epo:Notice
 |
-|epo:hasNotificationContentType -> at-voc-new:notification-phases-content-types
+|epo:hasNotification-ContentType -> at-voc-new:notification-phases-content-types
 
 |
 |epo:Notice
@@ -1258,7 +1259,7 @@ s|module|class|added property|deleted property
 |
 |epo:Notice
 |
-|epo:conformsToSpecificLegalBasis -> at-voc:legal-basis
+|epo:conformsToSpecific-LegalBasis -> at-voc:legal-basis
 
 |
 |epo:OfferIssuer
@@ -1291,12 +1292,12 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo:ParticipationConditionsSummary
-|generalisation -> epo:ProcurementCriteriaSummary
+|epo:ParticipationConditions-Summary
+|generalisation -> epo:Procurement-CriteriaSummary
 |
 
 |
-|epo:ParticipationConditionsSummary
+|epo:ParticipationConditions-Summary
 |epo:hasReservedProcurement -> at-voc:reserved-procurement
 |
 
@@ -1311,34 +1312,34 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo:ParticipationRequestProcessor
+|epo:Participation-RequestProcessor
 |
-|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider
+|epo:dependsOn-ServiceProvider -> epo:Procurement-ServiceProvider
 
 |
-|epo:ParticipationRequestProcessor
+|epo:Participation-RequestProcessor
 |
 |epo:dependsOnBuyer -> epo:Buyer
 
 |
-|epo:ParticipationRequestReceiver
+|epo:Participation-RequestReceiver
 |
-|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider
+|epo:dependsOn-ServiceProvider -> epo:Procurement-ServiceProvider
 
 |
-|epo:ParticipationRequestReceiver
+|epo:Participation-RequestReceiver
 |
 |epo:dependsOnBuyer -> epo:Buyer
 
 |
 |epo:PaymentExecutor
 |
-|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider
+|epo:dependsOnService-Provider -> epo:ProcurementService-Provider
 
 |
 |epo:PaymentExecutor
 |
-|epo:dependsOnBuyer -> epo:Buyer
+|epo:dependsOnBuyer -> epo:-Buyer
 
 |
 |epo:PlannedProcurementPart
@@ -1351,8 +1352,8 @@ s|module|class|added property|deleted property
 |generalisation -> epo:ProcurementObject
 
 |
-|epo:PlannedProcurementPart
-|epo:foreseesProcurementObject -> epo:ProcurementObject
+|epo:Planned-ProcurementPart
+|epo:foresees-ProcurementObject -> epo:ProcurementObject
 |
 
 |
@@ -1367,17 +1368,17 @@ s|module|class|added property|deleted property
 
 |
 |epo:Procedure
-|epo:specifiesProcurementCriteriaSummary -> epo:ProcurementCriteriaSummary
-|epo:specifiesExclusionGround -> epo:ExclusionGround
+|epo:specifies-ProcurementCriteriaSummary -> epo:-ProcurementCriteriaSummary
+|epo:specifiesExclusion-Ground -> epo:ExclusionGround
 
 |
-|epo:ProcurementCriteriaSummary
+|epo:Procurement-CriteriaSummary
 |generalisation -> cccev:Requirement
 |
 
 |
 |epo:ProcurementCriterion
-|epo:hasPerformingStaffQualificationInformation -> at-voc:requirement-stage
+|epo:hasPerformingStaff-QualificationInformation -> at-voc:requirement-stage
 |
 
 |
@@ -1402,7 +1403,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:ProcurementObject
-|epo:hasLaunchFrameworkAgreementMaximumValue -> epo:MonetaryValue
+|epo:hasLaunchFramework-AgreementMaximumValue -> epo:MonetaryValue
 |
 
 |
@@ -1431,8 +1432,8 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo:ProfessionalSuitabilitySummary
-|generalisation -> epo:SelectionCriteriaSummary
+|epo:Professional-SuitabilitySummary
+|generalisation -> epo:Selection-CriteriaSummary
 |
 
 |
@@ -1442,7 +1443,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:PurchaseContract
-|epo:resultsFromMiniCompetitionAwardOutcome -> epo:MiniCompetitionAwardOutcome
+|epo:resultsFromMini-CompetitionAwardOutcome -> epo:MiniCompetition-AwardOutcome
 |
 
 |
@@ -1453,16 +1454,16 @@ s|module|class|added property|deleted property
 |
 |epo:Purpose
 |
-|epo:hasAdditionalClassification -> at-voc:cpvsuppl
+|epo:hasAdditional-Classification -> at-voc:cpvsuppl
 
 |
-|epo:QualificationCriteriaSummary
-|generalisation -> epo:ProcurementCriteriaSummary
+|epo:Qualification-CriteriaSummary
+|generalisation -> epo:Procurement-CriteriaSummary
 |
 
 |
 |epo:QualificationCriterion
-|generalisation -> epo:ProcurementCriterion
+|generalisation -> epo:Procurement-Criterion
 |
 
 |
@@ -1478,10 +1479,10 @@ s|module|class|added property|deleted property
 |
 |epo:ReviewObject
 |generalisation -> epo:Document
-|generalisation -> epo:ProcurementElement
+|generalisation -> epo:Procurement-Element
 
 |
-|epo:ReviewProcedureInformationProvider
+|epo:ReviewProcedure-InformationProvider
 |
 |epo:dependsOnReviewer -> epo:Reviewer
 
@@ -1492,7 +1493,7 @@ s|module|class|added property|deleted property
 
 |
 |epo:ReviewTerm
-|generalisation -> epo:ProcedureSpecificTerm
+|generalisation -> epo:Procedure-SpecificTerm
 |
 
 |
@@ -1512,18 +1513,18 @@ s|module|class|added property|deleted property
 
 |
 |epo:SelectionCriteriaSummary
-|generalisation -> epo:QualificationCriteriaSummary
+|generalisation -> epo:Qualification-CriteriaSummary
 |
 
 |
 |epo:SelectionCriterion
-|generalisation -> epo:QualificationCriterion
-|generalisation -> epo:ProcurementCriterion
+|generalisation -> epo:Qualification-Criterion
+|generalisation -> epo:Procurement-Criterion
 
 |
-|epo:SubmissionStatisticalInformation
-|epo:summarisesInformationForAwardOutcome -> epo:AwardOutcome
-|epo:summarisesInformationForLotAwardOutcome -> epo:LotAwardOutcome
+|epo:SubmissionStatistical-Information
+|epo:summarisesInformation-ForAwardOutcome -> epo:AwardOutcome
+|epo:summarisesInformation-ForLotAwardOutcome -> epo:LotAwardOutcome
 
 |
 |epo:SubmissionTerm
@@ -1532,18 +1533,18 @@ s|module|class|added property|deleted property
 
 |
 |epo:SubmissionTerm
-|epo:hasTenderValidityDuration -> epo:Duration
+|epo:hasTenderValidity-Duration -> epo:Duration
 |
 
 |
 |epo:TechnicalAbilitySummary
-|generalisation -> epo:SelectionCriteriaSummary
+|generalisation -> epo:Selection-CriteriaSummary
 |
 
 |
 |epo:TenderAwardOutcome
 |epo:indicatesAwardToWinner -> epo:Winner
-|epo:indicatesAwardOfLotToWinner -> epo:Winner
+|epo:indicatesAwardOfLot-ToWinner -> epo:Winner
 
 |
 |epo:TenderAwardOutcome
@@ -1558,7 +1559,7 @@ s|module|class|added property|deleted property
 |
 |epo:TenderProcessor
 |
-|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider
+|epo:dependsOnService-Provider -> epo:ProcurementService-Provider
 
 |
 |epo:TenderProcessor
@@ -1568,7 +1569,7 @@ s|module|class|added property|deleted property
 |
 |epo:TenderReceiver
 |
-|epo:dependsOnServiceProvider -> epo:ProcurementServiceProvider
+|epo:dependsOnService-Provider -> epo:ProcurementService-Provider
 
 |
 |epo:TenderReceiver
@@ -1578,7 +1579,7 @@ s|module|class|added property|deleted property
 |
 |epo:Tender
 |generalisation -> epo:Document
-|generalisation -> epo:ProcurementElement
+|generalisation -> epo:Procurement-Element
 
 |
 |epo:Tender
@@ -1587,17 +1588,17 @@ s|module|class|added property|deleted property
 
 |
 |epo:VehicleInformation
-|epo:concernsGreenProcurement -> epo:GreenProcurement
+|epo:concernsGreen-Procurement -> epo:GreenProcurement
 |
 
 |
 |epo:VehicleInformation
-|epo:specifiesCleanVehicleDirectiveVehicleCategory -> at-voc:vehicle-category
+|epo:specifiesCleanVehicle-DirectiveVehicleCategory -> at-voc:vehicle-category
 |
 
 |
 |epo:VehicleInformation
-|epo:specifiesCleanVehicleDirectiveContractType -> at-voc:cvd-contract-type
+|epo:specifiesCleanVehicle-DirectiveContractType -> at-voc:cvd-contract-type
 |
 
 |
@@ -1697,13 +1698,13 @@ s|module|class|added property|deleted property
 
 |
 |epo-cat:Catalogue
-|epo:specifiesCatalogueReceiver -> epo:CatalogueReceiver
-|epo-cat:isReceivedByCatalogueReceiver -> epo:CatalogueReceiver
+|epo:specifiesCatalogue-Receiver -> epo:CatalogueReceiver
+|epo-cat:isReceivedBy-CatalogueReceiver -> epo:CatalogueReceiver
 
 |
 |epo-cat:Catalogue
-|epo:specifiesCatalogueProvider -> epo:CatalogueProvider
-|epo-cat:isReceivedByCatalogueProvider -> epo:CatalogueProvider
+|epo:specifiesCatalogue-Provider -> epo:CatalogueProvider
+|epo-cat:isReceivedByCatalogue-Provider -> epo:CatalogueProvider
 
 |
 |epo-cat:Catalogue
@@ -1712,8 +1713,8 @@ s|module|class|added property|deleted property
 
 |
 |epo-cat:ChargeInformation
-|generalisation -> epo-ord:AllowanceChargeInformation
-|generalisation -> epo-ord:PriceModifierInformation
+|generalisation -> epo-ord:Allowance-ChargeInformation
+|generalisation -> epo-ord:PriceModifier-Information
 
 |
 |epo-cat:ChargeInformation
@@ -1723,7 +1724,7 @@ s|module|class|added property|deleted property
 |
 |epo-cat:ChargeInformation
 |
-|epo-cat:hasChargeCategoryModifier -> at-voc-new:charge-modifier
+|epo-cat:hasChargeCategory--Modifier -> at-voc-new:charge-modifier
 
 |
 |epo-cat:InformationHub
@@ -1767,7 +1768,7 @@ s|module|class|added property|deleted property
 
 |
 |epo-cat:Item
-|epo-cat:hasExternalSpecification -> epo:Document
+|epo-cat:hasExternal-Specification -> epo:Document
 |
 
 |
@@ -1797,12 +1798,12 @@ s|module|class|added property|deleted property
 
 |
 |epo-cat:Price
-|epo-ord:hasPriceDiscountInformation -> epo-ord:AllowanceInformation
+|epo-ord:hasPriceDiscount-Information -> epo-ord:Allowance-Information
 |
 
 |
 |epo-cat:Price
-|epo:hasPriceSurchargeInformation -> epo-cat:ChargeInformation
+|epo:hasPriceSurcharge-Information -> epo-cat:Charge-Information
 |
 
 |
@@ -1813,31 +1814,31 @@ s|module|class|added property|deleted property
 |eContract
 |epo-con:ContractAmendment
 |epo:updatesContractValue -> epo:MonetaryValue
-|epo:hasRestatedContractValue -> epo:MonetaryValue
+|epo:hasRestatedContract-Value -> epo:MonetaryValue
 
 |eOrdering
-|epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)
+|epo-ord:AllowanceCharge-Information (renamed from epo-ord:PriceModifier-Information)
 |generalisation -> epo-cat:InformationHub
-|generalisation -> epo:ContextSpecificDescription
+|generalisation -> epo:Context-SpecificDescription
 
 |
-|epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)
+|epo-ord:AllowanceCharge-Information (renamed from epo-ord:PriceModifier-Information)
 |epo:isCalculatedOn -> epo:MonetaryValue
 |
 
 |
-|epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)
+|epo-ord:AllowanceCharge-Information (renamed from epo-ord:PriceModifier-Information)
 |epo-ord:hasTaxInformation -> epo-ord:TaxInformation
 |
 
 |
-|epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)
+|epo-ord:AllowanceCharge-Information (renamed from epo-ord:PriceModifier-Information)
 |epo-cat:hasAmount -> epo:MonetaryValue
 |epo-cat:hasFixedAmount -> epo:MonetaryValue
 
 |
-|epo-ord:AllowanceChargeInformation (renamed from epo-ord:PriceModifierInformation)
-|epo-ful:hasAllowanceChargeReason -> at-voc-new:allowance-charge-reason
+|epo-ord:AllowanceCharge-Information (renamed from epo-ord:PriceModifier-Information)
+|epo-ful:hasAllowanceCharge-Reason -> at-voc-new:allowance-charge-reason
 |
 
 |
@@ -1847,7 +1848,7 @@ s|module|class|added property|deleted property
 
 |
 |epo-ord:DeliveryAgreement
-|epo-ord:specifiesDeliveryAgreementLocation -> dct:Location
+|epo-ord:specifiesDelivery-AgreementLocation -> dct:Location
 |
 
 |
@@ -1857,8 +1858,8 @@ s|module|class|added property|deleted property
 
 |
 |epo-ord:DeliveryInformation
-|epo-ord:specifiesPlaceOfDelivery -> dct:Location
-|epo-ord:concernsPlaceOfDelivery -> dct:Location
+|epo-ord:specifiesPlace-OfDelivery -> dct:Location
+|epo-ord:concernsPlace-OfDelivery -> dct:Location
 
 |
 |epo-ord:DeliveryInformation
@@ -1867,12 +1868,12 @@ s|module|class|added property|deleted property
 
 |
 |epo-ord:DeliveryInformation
-|epo-ord:specifiesGeneralDeliveryAgreement -> epo-ord:DeliveryAgreement
+|epo-ord:specifiesGeneral-DeliveryAgreement -> epo-ord:DeliveryAgreement
 |
 
 |
 |epo-ord:DeliveryInformation
-|epo-ord:specifiesSpecificDeliveryAgreement -> epo-ord:DeliveryAgreement
+|epo-ord:specifiesSpecific-DeliveryAgreement -> epo-ord:DeliveryAgreement
 |
 
 |
@@ -1912,12 +1913,12 @@ s|module|class|added property|deleted property
 
 |
 |epo-ord:Order
-|epo-ord:hasTotalTaxInclusiveAmount -> epo:MonetaryValue
+|epo-ord:hasTotalTax-InclusiveAmount -> epo:MonetaryValue
 |
 
 |
 |epo-ord:Order
-|epo-ord:hasTotalTaxExclusiveAmount -> epo:MonetaryValue
+|epo-ord:hasTotalTax-ExclusiveAmount -> epo:MonetaryValue
 |
 
 |
@@ -1927,7 +1928,7 @@ s|module|class|added property|deleted property
 
 |
 |epo-ord:Order
-|epo-ord:hasTotalLineAmount -> epo:MonetaryValue
+|epo-ord:hasTotalLine-Amount -> epo:MonetaryValue
 |
 
 |
@@ -1942,23 +1943,23 @@ s|module|class|added property|deleted property
 
 |
 |epo-ord:Order
-|epo-ord:hasTotalAllowanceAmount -> epo:MonetaryValue
+|epo-ord:hasTotalAllowance-Amount -> epo:MonetaryValue
 |
 
 |
 |epo-ord:Order
 |epo:specifiesSeller -> epo-ord:Seller
-|epo-ord:isSubmittedToSeller -> epo-ord:Selle
+|epo-ord:isSubmitted-ToSeller -> epo-ord:Selle
 
 |
 |epo-ord:Order
-|epo-ord:hasRoundingAmount -> epo:MonetaryValue
+|epo-ord:hasRounding-Amount -> epo:MonetaryValue
 |
 
 |
 |epo-ord:Order
-|epo-ord:specifiesAllowanceInformation -> epo-ord:AllowanceInformation
-|epo-ord:specifiesDiscountInformation -> epo-ord:DiscountInformation
+|epo-ord:specifiesAllowance-Information -> epo-ord:AllowanceInformation
+|epo-ord:specifiesDiscount-Information -> epo-ord:DiscountInformation
 
 |
 |epo-ord:Order
@@ -1967,42 +1968,42 @@ s|module|class|added property|deleted property
 
 |
 |epo-ord:Order
-|epo-ord:hasAmountDueForPayment -> epo:MonetaryValue
+|epo-ord:hasAmountDueFor-Payment -> epo:MonetaryValue
 |
 
 |
 |epo-ord:Order
 |epo:specifiesBuyer -> epo:Buyer
-|epo-ord:isSubmittedByBuyer -> epo:Buyer
+|epo-ord:isSubmittedBy-Buyer -> epo:Buyer
 
 |
 |epo-ord:Order
-|epo-ord:hasTotalChargeAmount -> epo:MonetaryValue
+|epo-ord:hasTotalCharge-Amount -> epo:MonetaryValue
 |
 
 |
-|epo-ord:OrderResponseInformation
+|epo-ord:OrderResponse-Information
 |generalisation -> epo-cat:InformationHub
 |
 
 |
-|epo-ord:OrderResponseInformation
-|epo-ord:isSpecificToOrderResponseLine -> epo-ord:OrderResponseLine
+|epo-ord:OrderResponse-Information
+|epo-ord:isSpecificToOrder-ResponseLine -> epo-ord:OrderResponseLine
 |
 
 |
-|epo-ord:OrderResponseInformation
+|epo-ord:OrderResponse-Information
 |epo-ord:hasDeliveryPeriod -> epo:Period
 |
 
 |
-|epo-ord:OrderResponseInformation
-|epo-ord:hasAcceptanceStatus -> at-voc-new:ResponseStatus
+|epo-ord:OrderResponse-Information
+|epo-ord:hasAcceptance-Status -> at-voc-new:ResponseStatus
 |
 
 |
 |epo-ord:OrderResponseLine
-|epo-ord:isSubmittedForOrderLine -> epo-ord:OrderLine
+|epo-ord:isSubmittedFor-OrderLine -> epo-ord:OrderLine
 |
 
 |
@@ -2012,7 +2013,7 @@ s|module|class|added property|deleted property
 
 |
 |epo-ord:OrderResponse
-|epo-ord:comprisesOrderResponseLine -> epo-ord:OrderResponseLine
+|epo-ord:comprisesOrder-ResponseLine -> epo-ord:OrderResponseLine
 |
 
 |
@@ -2022,7 +2023,7 @@ s|module|class|added property|deleted property
 
 |
 |epo-ord:OrderResponse
-|epo-ord:specifiesOrderResponseInformation -> epo-ord:OrderResponseInformation
+|epo-ord:specifiesOrder-ResponseInformation -> epo-ord:OrderResponseInformation
 |
 
 |
@@ -2041,14 +2042,14 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo-ord:OriginatorInformation
-|epo-ord:concernsOriginatorRequest -> epo:OriginatorRequest
+|epo-ord:Originator-Information
+|epo-ord:concernsOriginator-Request -> epo:OriginatorRequest
 |
 
 |
-|epo-ord:OriginatorInformation
+|epo-ord:Originator-Information
 |generalisation -> epo-cat:InformationHub
-|generalisation -> epo:ContextSpecificDescription
+|generalisation -> epo:ContextSpecific-Description
 
 |
 |epo-ord:TaxInformation
@@ -2097,7 +2098,7 @@ s|module|class|added property|deleted property
 
 |
 |epo-not:CompletionNotice
-|epo:announcesCompletionOfContract -> epo:Contract
+|epo:announcesCompletion-OfContract -> epo:Contract
 |
 
 |
@@ -2117,7 +2118,7 @@ s|module|class|added property|deleted property
 
 |
 |epo-not:CompletionNotice
-|epo:refersToLotGroupAwardInformation -> epo:LotGroupAwardInformation
+|epo:refersToLotGroupAward-Information -> epo:LotGroupAward-Information
 |
 
 |
@@ -2127,7 +2128,7 @@ s|module|class|added property|deleted property
 
 |
 |epo-not:CompletionNotice
-|epo:refersToNoticeAwardInformation -> epo:NoticeAwardInformation
+|epo:refersToNoticeAward-Information -> epo:NoticeAward-Information
 |
 
 |
@@ -2146,94 +2147,94 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo-not:ContractModificationNotice
+|epo-not:Contract-ModificationNotice
 |epo:refersToLotGroup -> epo:LotGroup
 |
 
 |
-|epo-not:ContractModificationNotice
-|epo:refersToContractToBeModified -> epo:Contract
-|epo-not:refersToContractToBeModified -> epo:Contract
+|epo-not:Contract-ModificationNotice
+|epo:refersToContract-ToBeModified -> epo:Contract
+|epo-not:refersTo-ContractToBeModified -> epo:Contract
 
 |
-|epo-not:ContractModificationNotice
+|epo-not:Contract-ModificationNotice
 |epo:refersToLot -> epo:Lot
 |
 
 |
-|epo-not:ContractModificationNotice
+|epo-not:Contract-ModificationNotice
 |epo:announcesRole -> epo:AgentInRole
 |
 
 |
-|epo-not:ContractModificationNotice
-|epo:refersToNoticeAwardInformation -> epo:NoticeAwardInformation
+|epo-not:Contract-ModificationNotice
+|epo:refersToNotice-AwardInformation -> epo:NoticeAward-Information
 |
 
 |
-|epo-not:ContractModificationNotice
+|epo-not:Contract-ModificationNotice
 |epo:refersToAwardDecision -> epo:AwardDecision
 |
 
 |
-|epo-not:ContractModificationNotice
+|epo-not:Contract-ModificationNotice
 |epo:refersToProcedure -> epo:Procedure
 |
 
 |
-|epo-not:ContractModificationNotice
-|epo:refersToLotGroupAwardInformation -> epo:LotGroupAwardInformation
+|epo-not:Contract-ModificationNotice
+|epo:refersToLotGroup-AwardInformation -> epo:LotGroup-AwardInformation
 |
 
 |
-|epo-not:ContractModificationNotice
-|epo:announcesContractAmendment -> epo-con:ContractAmendment
+|epo-not:Contract-ModificationNotice
+|epo:announces-ContractAmendment -> epo-con:ContractAmendment
 |
 
 |
-|epo-not:DirectAwardPrenotificationNotice
-|epo:announcesLotGroupAwardInformation -> epo:LotGroupAwardInformation
+|epo-not:DirectAward-PrenotificationNotice
+|epo:announcesLotGroup-AwardInformation -> epo:LotGroup-AwardInformation
 |
 
 |
-|epo-not:DirectAwardPrenotificationNotice
+|epo-not:DirectAward-PrenotificationNotice
 |epo:announcesContract -> epo:Contract
 |
 
 |
-|epo-not:DirectAwardPrenotificationNotice
+|epo-not:DirectAward-PrenotificationNotice
 |epo:announcesLot -> epo:Lot
 |
 
 |
-|epo-not:DirectAwardPrenotificationNotice
+|epo-not:DirectAward-PrenotificationNotice
 |epo:announcesRole -> epo:AgentInRole
 |
 
 |
-|epo-not:DirectAwardPrenotificationNotice
-|epo:announcesNoticeAwardInformation -> epo:NoticeAwardInformation
+|epo-not:DirectAward-PrenotificationNotice
+|epo:announcesNotice-AwardInformation -> epo:NoticeAward-Information
 |
 
 |
-|epo-not:DirectAwardPrenotificationNotice
+|epo-not:DirectAward-PrenotificationNotice
 |epo:announcesProcedure -> epo:Procedure
 |epo-not:announcesProcedure -> epo:Procedure
 
 |
-|epo-not:DirectAwardPrenotificationNotice
+|epo-not:DirectAward-PrenotificationNotice
 |epo:announcesLotGroup -> epo:LotGroup
 |
 
 |
-|epo-not:DirectAwardPrenotificationNotice
+|epo-not:DirectAward-PrenotificationNotice
 |epo:announcesAwardDecision -> epo:AwardDecision
 |
 
 |
 |epo-not:PlanningNotice
-|epo:announcesPlannedProcurementPart -> epo:PlannedProcurementPart
-|epo-not:announcesPlannedProcurementPart -> epo:PlannedProcurementPart
+|epo:announcesPlanned-ProcurementPart -> epo:PlannedProcurementPart
+|epo-not:announcesPlanned-ProcurementPart -> epo:PlannedProcurementPart
 
 |
 |epo-not:PlanningNotice
@@ -2241,7 +2242,7 @@ s|module|class|added property|deleted property
 |
 
 |
-|epo-not:PreMarketConsultationNotice
+|epo-not:PreMarket-ConsultationNotice
 |generalisation -> epo:Notice
 |
 |===
