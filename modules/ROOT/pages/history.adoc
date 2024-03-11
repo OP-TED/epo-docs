@@ -19,7 +19,7 @@ The ultimate objective of the ePO was (and still is) to conceptualise and formal
 
 To achieve this, the EU Publications Office (OP) engaged a working group of experts (WG) with the mission of building consensus on the analysis, results, and deliverables developed by the OP teams. The working group continues to work with the OP on the ePO.
 
-== *methodology*
+== *Methodology*
 
 The Working Group and the Publications Office work together to draft competency questions, which are then used to develop different transactions. These transactions lead to the definition of an Ontology Requirements and Specifications Document (OSDR) for each module and the creation of SPARQL (database) queries for testing.
 ////
