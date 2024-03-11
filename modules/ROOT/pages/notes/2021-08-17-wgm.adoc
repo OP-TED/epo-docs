@@ -2,7 +2,7 @@
 
 
 *Date:* 17/08/2021 +
-*Participants:* Paloma Arillo Aranda (OP), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP) and Giampaolo Sellitto (ANAC).
+*Participants:* Paloma Arillo Aranda (OP), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP) and Giampaolo Sellitto (ANAC).  +
 *Model editor:* Eugeniu Costetchi  +
 *Note editor:* Andreea Pasăre
 

@@ -2,7 +2,7 @@
 
 
 *Date:* 02/09/2021 +
-*Participants:* Paloma Arillo Aranda (OP), Eugeniu COSTETZKI (Meaningfy), Cécile Guasch (ISA2 - DIGIT), Hilde Kjolset (dfø), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP), Andrea PASARE (xx) and Giampaolo Sellitto (ANAC)
+*Participants:* Paloma Arillo Aranda (OP), Eugeniu COSTETZKI (Meaningfy), Cécile Guasch (ISA2 - DIGIT), Hilde Kjolset (dfø), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP), Andrea PASARE (xx) and Giampaolo Sellitto (ANAC)  +
 *Model editor:* Eugeniu Costetchi  +
 *Note editor:* Andreea Pasăre
 

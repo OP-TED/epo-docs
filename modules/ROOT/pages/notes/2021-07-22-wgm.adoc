@@ -2,7 +2,7 @@
 
 
 *Date:* 22/07/2021 +
-*Participants:* Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Giorgia Lodi (ISTC-CNR) and Giampaolo Sellitto (ANAC)
+*Participants:* Paloma Arillo Aranda (OP), Cécile Guasch (ISA2 - DIGIT), Giorgia Lodi (ISTC-CNR) and Giampaolo Sellitto (ANAC)  +
 *Model editor:* Eugeniu Costetchi  +
 *Note editor:* Andreea Pasăre
 
