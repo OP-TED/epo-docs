@@ -9,6 +9,7 @@
 The ePO development and maintenance methodology is an adaptation of the https://lot.linkeddata.es/[Linked Open Terms (LOT)] methodology, and applies both to the development of the ePO Ontology as a whole, and to its modules:
 
 image::metho1.png[LOT Methodology]
+#Image
 
 The above diagram demonstrates that the approach is cyclical and includes the following high-level activities:
 
@@ -57,6 +58,7 @@ The ontology is implemented as a https://www.uml.org/[UML conceptual model], whi
 The workflow of this stage, depicted below, different from the one provided in the LOT.
 
 image::metho3.png[Ontology Implementation]
+_Image source: 
 
 Conceptual model proposal activity results in an (early stage) conceptual model expressed in UML that respects the ePO UML conventions . In this step, the ontology editors encode the requirements as UML class diagrams.
 
@@ -102,5 +104,9 @@ Any new requirements can be raised either in the working group meetings or via t
 
 The use of GitHub is foreseen to openly and publicly discuss requests that have been submitted. The workflow of the request management is therefore seen as a cycle that starts with each new release.
 
+=== References
 
+. _Image Source: https://lot.linkeddata.es/_
+
+. _Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications of Artificial Intelligence, 111, 104755. https://doi.org/10.1016/j.engappai.2022.104755_
 
