@@ -22,7 +22,7 @@ The above diagram demonstrates that the approach is cyclical and includes the fo
 
 Each activity has a more detailed internal description.
 
-=== Requirement Specifications
+== Requirement Specifications
 
 The Ontology Requirements Specification activity refers to the collection of the requirements the ontology should fulfil, such as:
 
@@ -50,7 +50,7 @@ The specification of a use case consists of the narration of a scenario, in whic
 
 ●	The Ontology Requirements Specification Document (ORSD), which is the final artifact produced. This contains all the functional and non-functional requirements identified in the process and the information associated to them. LOT provides a template for the ORSD.
 
-=== Ontology Implementation
+== Ontology Implementation
 
 The ontology is implemented as a https://www.uml.org/[UML conceptual model], which is automatically transformed into formal representations, namely https://www.w3.org/TR/owl2-overview/[OWL2] and https://www.w3.org/TR/shacl/[SHACL]. The rationale for this is explained in the ePO architecture specification  and in the SEMIC style guide.
 
@@ -76,7 +76,7 @@ Ontology evaluation is a manual step as detailed in the LOT methodology and invo
 ** Logical consistency checking
 * Verification, which compares the ontology against the ontology specification document (ontology requirements and competency questions), ensuring that the ontology is built correctly (in compliance with the ontology specification requirements collected in the ORSD). 
 
-=== Ontology Publication
+== Ontology Publication
 
 The ontology publication stage is very similar to the one defined in the LOT methodology. The workflow is presented in the figure below. The main difference is that the documentation is maintained in https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc] (source) format and then transformed into HTML format.
 
@@ -90,7 +90,7 @@ The documentation is prepared in accordance with the https://www.go-fair.org/fai
 
 Once the documentation of the ontology has been generated, it is published online. The ontology is published on the Web following the https://www.bing.com/search?q=w3c+for+publishing+vocabularies+on+the+web&gs_lcrp=EgZjaHJvbWUqBwgAEEUYwgMyBwgAEEUYwgMyBwgBEEUYwgMyBwgCEEUYwgMyBwgDEEUYwgMyBwgEEEUYwgMyBwgFEEUYwgMyBwgGEEUYwgMyBwgHEEUYwgPSAQkyMTM3M2owajSoAgiwAgE&FORM=ANAB01&PC=U531[practices provided by the W3C for publishing vocabularies on the Web]. It is accessible via its URI as a file in a formal language and as human-readable documentation using content negotiation.
 
-=== Ontology Maintenance
+== Ontology Maintenance
 
 The goal of this activity is to update the ontology as required during its life cycle. The ontology maintenance stage is described in the LOT methodology.
 
