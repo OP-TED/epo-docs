@@ -8,7 +8,7 @@
 
 The ePO development and maintenance methodology is an adaptation of the https://lot.linkeddata.es/[Linked Open Terms (LOT)] methodology, and applies both to the development of the ePO Ontology as a whole, and to its modules:
 
-image::metho1.jpg[LOT Methodology]
+image::metho1.png[LOT Methodology]
 
 The above diagram demonstrates that the approach is cyclical and includes the following high-level activities:
 
