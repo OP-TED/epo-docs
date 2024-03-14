@@ -12,9 +12,9 @@
 * xref:epo-home::stories.adoc[User Stories and Natural Language Statements]
 ** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
 ** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
-* xref:3.1@EP::conceptual.adoc[Conceptual Models]
-* xref:3.1@EP::glossaries.adoc[Glossaries]
-* xref:3.1@EP::release-notes.adoc[Release Notes]
+* xref:3.1@EPO::conceptual.adoc[Conceptual Models]
+* xref:3.1@EPO::glossaries.adoc[Glossaries]
+* xref:3.1@EPO::release-notes.adoc[Release Notes]
 
 * [.separated]#**Reference Documentation**#
 * xref:epo-home::references.adoc[Reference Documents]
