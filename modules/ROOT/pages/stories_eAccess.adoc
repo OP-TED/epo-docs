@@ -26,7 +26,7 @@ The eAccess Ontology Requirements Specification Document (ORSD) covers the https
 
 image:eAccess1.png[]
 
-https://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.2?preview=/50202899/50202902/worddavfb2663b152365ec41613fa960a2c498d.png[source: https://wiki.ds.unipi.gr]
+https://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.2?preview=/50202899/50202902/worddavfb2663b152365ec41613fa960a2c498d.png[_https://wiki.ds.unipi.gr_]
 
 === ESPD request transaction
 
