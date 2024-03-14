@@ -44,7 +44,7 @@ The specification of a use case consists of the narration of a scenario, in whic
 
 * Data documentation and examples that provide the ontology development team with the necessary documentation about the domain to be modelled. The documentation could include datasets, regulations, standards, data formats, APIs specifications, database schemas, etc.
 
-* The Ontology purpose and scope specification document
+* The Ontology purpose and scope specification document.
 
 * Functional ontology requirements that contain, among others, Competency questions (CQs) and Natural language statements, where each requirement unambiguously defines a need that must be included in the ontology.
 
@@ -52,7 +52,7 @@ The specification of a use case consists of the narration of a scenario, in whic
 
 == Ontology Implementation
 
-The ontology is implemented as a https://www.uml.org/[UML conceptual model], which is automatically transformed into formal representations, namely https://www.w3.org/TR/owl2-overview/[OWL2] and https://www.w3.org/TR/shacl/[SHACL]. The rationale for this is explained in the xref:ePO_Arch_Design.adoc[eProcurement ontology architecture and formalisation specifications] and in the https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC style guid.
+The ontology is implemented as a https://www.uml.org/[UML conceptual model], which is automatically transformed into formal representations, namely https://www.w3.org/TR/owl2-overview/[OWL2] and https://www.w3.org/TR/shacl/[SHACL]. The rationale for this is explained in the xref:ePO_Arch_Design.adoc[eProcurement ontology architecture and formalisation specifications] and in the https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC style guide].
 
 The workflow of this stage, depicted below, is different from the one provided in the LOT.
 
