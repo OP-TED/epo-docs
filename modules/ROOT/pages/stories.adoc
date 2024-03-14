@@ -22,8 +22,8 @@ In the LOT methodology, the first step in developing an ontology is to collect t
 
 The Ontology Requirements Specification Documents (ORSDs) for the following modules can be accessed here:
 
-* xref:stories_eAccess.adoc[The eAccess Module that covers the ESPD-Request]
+* xref:stories_eAccess.adoc[The eAccess Module that covers the ESPD Request]
 
-* xref:stories_eSubmission.adoc[The eSubmission Module that covers the ESPD-Response]
+* xref:stories_eSubmission.adoc[The eSubmission Module that covers the ESPD Response]
 
 Further modules will be added as they become available
