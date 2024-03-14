@@ -6,7 +6,7 @@
 
 == Introduction
 
-As explained in more detail on the xref:methodology2024.adoc[ePO Methodology page], the methodology used when expanding the eProcurement Ontology with new modules is the https://lot.linkeddata.es/[Linked Open Terms or "LOT" methodology].
+As explained in more detail on the xref:methodology2024.adoc[Methodology page], the methodology used when expanding the eProcurement Ontology with new modules is the https://lot.linkeddata.es/[Linked Open Terms or "LOT" methodology].
 
 image::metho1a.png[LOT Methodology]
 _Image Source: https://lot.linkeddata.es/_
