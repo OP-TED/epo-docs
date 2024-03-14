@@ -18,7 +18,7 @@ In the LOT methodology, the first step in developing an ontology is to collect t
 ** Who is the beneficiary of an action (who benefits from it)? 
 ** What is the need? 
 ** What is the benefit? 
-*Natural Language Statements can be affirmative or negative statements where each statement defines a requirement that must be included in the ontology. 
+* Natural Language Statements can be affirmative or negative statements where each statement defines a requirement that must be included in the ontology. 
 
 The Ontology Requirements Specification Documents (ORSDs) for the following modules can be accessed here:
 
