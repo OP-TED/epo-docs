@@ -79,7 +79,7 @@ Ontology evaluation is a manual step as detailed in the LOT methodology and invo
 
 == Ontology Publication
 
-The ontology publication stage is very similar to the one defined in the LOT methodology. The workflow is presented in the figure below. The main difference is that the documentation is maintained in https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc] (source) format and then transformed into HTML format.
+The ontology publication stage is very similar to the one defined in the LOT methodology. The workflow is presented in the figure below.
 
 image::metho4.png[Ontology Publication]
 _Image Source: https://lot.linkeddata.es/_
@@ -88,9 +88,12 @@ Publication starts with a proposed release candidate. Once the ontology develope
 
 In the Ontology documentation step detailed in the LOT methodology, the ontology development team (together with the domain experts) generate the ontology documentation, using the ontology code and potentially other artefacts as input. These include glossaries, conceptual model diagram documentation, requirements specification, tests, and examples. 
 
-The documentation is prepared in accordance with the https://www.go-fair.org/fair-principles/[FAIR principles] (Findable, Accessible, Interoperable and Reusable).
+//The documentation is prepared in accordance with the https://www.go-fair.org/fair-principles/[FAIR principles] (Findable, Accessible, Interoperable and Reusable).
 
-Once the documentation of the ontology has been generated, it is published online. The ontology is published on the Web following the https://www.w3.org/2013/dwbp/wiki/BP_Data_Vocabularies[practices provided by the W3C for publishing vocabularies on the Web]. It is accessible via its URI as a file in a formal language and as human-readable documentation using content negotiation.
+The ontology is published on the Web following the https://www.w3.org/2013/dwbp/wiki/BP_Data_Vocabularies[practices provided by the W3C for publishing vocabularies on the Web]. It is accessible via its URI as a file in a formal language and as human-readable documentation using content negotiation.
+
+The documentation of the ontology is maintained in https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc] (source) format and then transformed into HTML format. Once it has been generated, it is published online. 
+
 
 == Ontology Maintenance
 
