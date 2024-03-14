@@ -13,7 +13,7 @@ _Image Source: https://lot.linkeddata.es/_
 
 The above diagram demonstrates that the approach is cyclical and includes the following high-level activities:
 
-* Requirements specification
+* Requirements Specification
 
 * Ontology Implementation
 
