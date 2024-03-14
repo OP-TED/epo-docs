@@ -1,8 +1,8 @@
-:doctitle: The Ontology Methodology Explained
+:doctitle: The eProcurement Ontology Methodology
 :doccode: epo-main-prod-003
 :author: PWC adapted by NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: June 2023
+:docdate: March 2024
 
 The initial stage of the project covered the following tasks:
 
@@ -24,7 +24,7 @@ Use cases are then developed to create user stories.
 User stories are a method of helping identify information requirements. The method consists in drafting very simple sentences structured around three main questions:
 
 *  Who is the beneficiary of an action? <role of the user>
-*  What is the need? <something> 
+*  What is the need? <something>
 *  What is the benefit? <the benefit>
 
 The structure of the sentence is always as follows:

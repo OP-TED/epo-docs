@@ -26,6 +26,10 @@ The release notes as on GitHub
 Useful reference documents in the development of the ePO
 * xref:epo-home::history.adoc[History and Planned Developments] +
 Milestones in the project and future development plans
+* xref:epo-home::methodology2024.adoc[ePO Methodology] +
+The ePO Methodology
+* xref:epo-home::stories.adoc[User Stories and Natural Language Statements] +
+User Stories and Natural Language Statements used when developing new modules
 * xref:epo-home::versioning.adoc[ePO Versioning Rules] +
 An overview of the versioning rules for releases
 

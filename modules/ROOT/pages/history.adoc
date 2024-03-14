@@ -17,8 +17,35 @@ This project was in conjunction with a parallel project to develop the associate
 
 The ultimate objective of the ePO was (and still is) to conceptualise and formally encode eProcurement data, and to make it available in an open, structured, and machine-readable format. This data would cover the process from end-to-end, i.e., from notification, through tendering, awarding, ordering, invoicing, and finally to payment.
 
-
 To achieve this, the EU Publications Office (OP) engaged a working group of experts (WG) with the mission of building consensus on the analysis, results, and deliverables developed by the OP teams. The working group continues to work with the OP on the ePO.
+
+////
+== *Methodology*
+
+The Working Group and the Publications Office work together to draft competency questions, which are then used to develop different transactions. These transactions lead to the definition of an Ontology Requirements and Specifications Document (OSDR) for each module and the creation of SPARQL (database) queries for testing.
+
+The methodology was used as illustrated below to develop competency questions:
+
+image::TransMonit.png[Use Cases: Transparency and Monitoring]
+
+
+Use cases are then developed to create user stories. 
+User stories are a method of helping identify information requirements. The method consists in drafting very simple sentences structured around three main questions:
+
+*  Who is the beneficiary of an action? <role of the user>
+*  What is the need? <something>
+*  What is the benefit? <the benefit>
+
+The structure of the sentence is always as follows:
+
+ As a <role of user>, I need <something> in order to gain <the benefit>
+
+.Examples
+As a contracting authority <role of the user> I need to know the number of tenderers that have submitted a tender <something> so that I can add it to the award notice <the benefit>.
+
+More information on the Ontology Requirements and Specifications Document per module can be found xref:stories.adoc[here]
+image::UserStoriesExamplesTable.png[More examples of user stories]
+////
 
 == *Timeline*
 
