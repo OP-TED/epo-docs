@@ -9,7 +9,7 @@
 The ePO development and maintenance methodology is an adaptation of the https://lot.linkeddata.es/[Linked Open Terms (LOT)] methodology, and applies both to the development of the ePO Ontology as a whole, and to its modules:
 
 image::metho1.png[LOT Methodology]
-#Image
+_Image Source: https://lot.linkeddata.es/_
 
 The above diagram demonstrates that the approach is cyclical and includes the following high-level activities:
 
@@ -21,9 +21,8 @@ The above diagram demonstrates that the approach is cyclical and includes the fo
 
 * Ontology Maintenance
 
-Each activity has a more detailed internal description.
 
-== Requirement Specifications
+== Requirements Specification
 
 The Ontology Requirements Specification activity refers to the collection of the requirements the ontology should fulfil, such as:
 
@@ -33,32 +32,32 @@ The Ontology Requirements Specification activity refers to the collection of the
 
 * the technical details of the ontology
 
-In the Working Group, ontology developers, domain experts, and ontology users go through a process of requirement elecitation, requirement capture, and requirement documentation together, as illustrated in the detailed workflow below:
+Collectively in the Working Group, ontology developers, domain experts, and ontology users go through a process of requirement elecitation, requirement capture, and requirement documentation, as illustrated in the detailed workflow below:
 
 image::metho2.png[Requirements specification]
+_Image Source: https://lot.linkeddata.es/_
 
 The outputs of the requirements specification step are:
 
-* Use case specifications that provide a view of the ontology's potential use. They describe the desired situations to be reached with the data described by the vocabulary. Their objective is to guide the collecting of the requirements. 
-
+* Use case specifications that provide a view of the ontology's potential use. They describe the desired situations to be reached with the data described by the vocabulary. Their objective is to guide the collecting of the requirements. +
 The specification of a use case consists of the narration of a scenario, in which one or several actors intervene, and the interactions necessary to obtain an expected result or benefit.
 
-●	Data documentation and examples that provide the ontology development team with the necessary documentation about the domain to be modelled. The documentation could include datasets, regulations, standards, data formats, APIs specifications, database schemas, etc.
+* Data documentation and examples that provide the ontology development team with the necessary documentation about the domain to be modelled. The documentation could include datasets, regulations, standards, data formats, APIs specifications, database schemas, etc.
 
-●	The Ontology purpose and scope specification document
+* The Ontology purpose and scope specification document
 
-●	Functional ontology requirements that contain, among others, Competency questions (CQs) and Natural language statements, where each requirement unambiguously defines a need that must be included in the ontology.
+* Functional ontology requirements that contain, among others, Competency questions (CQs) and Natural language statements, where each requirement unambiguously defines a need that must be included in the ontology.
 
-●	The Ontology Requirements Specification Document (ORSD), which is the final artifact produced. This contains all the functional and non-functional requirements identified in the process and the information associated to them. LOT provides a template for the ORSD.
+* The Ontology Requirements Specification Document (ORSD), which is the final artifact produced. This contains all the functional and non-functional requirements identified in the process and the information associated to them. LOT provides a template for the ORSD.
 
 == Ontology Implementation
 
-The ontology is implemented as a https://www.uml.org/[UML conceptual model], which is automatically transformed into formal representations, namely https://www.w3.org/TR/owl2-overview/[OWL2] and https://www.w3.org/TR/shacl/[SHACL]. The rationale for this is explained in the ePO architecture specification  and in the SEMIC style guide.
+The ontology is implemented as a https://www.uml.org/[UML conceptual model], which is automatically transformed into formal representations, namely https://www.w3.org/TR/owl2-overview/[OWL2] and https://www.w3.org/TR/shacl/[SHACL]. The rationale for this is explained in the xref:ePO_Arch_Design.adoc[eProcurement ontology architecture and formalisation specifications] and in the https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC style guid.
 
-The workflow of this stage, depicted below, different from the one provided in the LOT.
+The workflow of this stage, depicted below, is different from the one provided in the LOT.
 
 image::metho3.png[Ontology Implementation]
-_Image source: 
+_Image Source: https://lot.linkeddata.es/_
 
 Conceptual model proposal activity results in an (early stage) conceptual model expressed in UML that respects the ePO UML conventions . In this step, the ontology editors encode the requirements as UML class diagrams.
 
@@ -70,12 +69,12 @@ Ontology formalisation is an automated step that results in the formal ontology 
 
 Ontology evaluation is a manual step as detailed in the LOT methodology and involves
 
-* Validation that addresses the
-** Checking the conformance of the conceptual model to the UML conventions;
-** Formal correctness checks: is the OWL and SHACL code correct?
+* Validation, that addresses the following:
+** Conformance of the conceptual model to the UML conventions;
+** Formal correctness: is the OWL and SHACL code correct?
 ** Glossary completeness: do we have all the definitions for classes and properties? 
 ** Detection of bad practices or suboptimal modelling choices
-** Logical consistency checking
+** Logical consistency
 * Verification, which compares the ontology against the ontology specification document (ontology requirements and competency questions), ensuring that the ontology is built correctly (in compliance with the ontology specification requirements collected in the ORSD). 
 
 == Ontology Publication
@@ -83,6 +82,7 @@ Ontology evaluation is a manual step as detailed in the LOT methodology and invo
 The ontology publication stage is very similar to the one defined in the LOT methodology. The workflow is presented in the figure below. The main difference is that the documentation is maintained in https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc] (source) format and then transformed into HTML format.
 
 image::metho4.png[Ontology Publication]
+_Image Source: https://lot.linkeddata.es/_
 
 Publication starts with a proposed release candidate. Once the ontology developers have implemented and evaluated the ontology, the next task is to decide whether the current version will be published on the Web. A version considered worthy of publication is stable, verified, and complete with regard to the established release objectives and coverage. The xref:epo-home::versioning.adoc[ePO Versioning methodology and principles] are published elsewhere.
 
@@ -90,13 +90,14 @@ In the Ontology documentation step detailed in the LOT methodology, the ontology
 
 The documentation is prepared in accordance with the https://www.go-fair.org/fair-principles/[FAIR principles] (Findable, Accessible, Interoperable and Reusable).
 
-Once the documentation of the ontology has been generated, it is published online. The ontology is published on the Web following the https://www.bing.com/search?q=w3c+for+publishing+vocabularies+on+the+web&gs_lcrp=EgZjaHJvbWUqBwgAEEUYwgMyBwgAEEUYwgMyBwgBEEUYwgMyBwgCEEUYwgMyBwgDEEUYwgMyBwgEEEUYwgMyBwgFEEUYwgMyBwgGEEUYwgMyBwgHEEUYwgPSAQkyMTM3M2owajSoAgiwAgE&FORM=ANAB01&PC=U531[practices provided by the W3C for publishing vocabularies on the Web]. It is accessible via its URI as a file in a formal language and as human-readable documentation using content negotiation.
+Once the documentation of the ontology has been generated, it is published online. The ontology is published on the Web following the https://www.w3.org/2013/dwbp/wiki/BP_Data_Vocabularies[practices provided by the W3C for publishing vocabularies on the Web]. It is accessible via its URI as a file in a formal language and as human-readable documentation using content negotiation.
 
 == Ontology Maintenance
 
 The goal of this activity is to update the ontology as required during its life cycle. The ontology maintenance stage is described in the LOT methodology.
 
 image::metho5.png[Ontology Maintenance]
+_Image Source: https://lot.linkeddata.es/_
 
 Any ePO bugs detected are reported and documented via the https://github.com/OP-TED/epo-docs/issues[ePO GitHub Issues].
 
@@ -106,7 +107,7 @@ The use of GitHub is foreseen to openly and publicly discuss requests that have 
 
 === References
 
-. _Image Source: https://lot.linkeddata.es/_
+. _Images: https://lot.linkeddata.es/_
 
 . _Poveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications of Artificial Intelligence, 111, 104755. https://doi.org/10.1016/j.engappai.2022.104755_
 
