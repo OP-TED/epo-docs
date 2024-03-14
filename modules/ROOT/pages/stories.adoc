@@ -6,18 +6,24 @@
 
 == Introduction
 
-When expanding the eProcurement Ontology with new modules, the https://lot.linkeddata.es/[Linked Open Terms or "LOT"] methodology is used. 
+As explained in more detail in the xref:methodology2024.adoc[Methodology page] the methodology used when expanding the eProcurement Ontology with new modules is the https://lot.linkeddata.es/[Linked Open Terms or "LOT" methodolody].
 
-According to LOT, the first step in developing an ontology is to collect the requirements the ontology should fulfill. The outcome is then an Ontology Requirements Specification which is made up of Use Cases, User Stories, and Natural Language Statements:
+image::metho1.png[LOT Methodology]
+_Image Source: https://lot.linkeddata.es/_
+
+In the LOT methodology, the first step in developing an ontology is to collect the requirements the ontology should fulfill. The outcome is then an Ontology Requirements Specification which is made up of Use Cases, User Stories, and Natural Language Statements:
  
 * Use cases describe situations that need to be covered by the ontology. 
 * User Stories are created from use cases and are structured around three main questions: 
 ** Who is the beneficiary of an action (who benefits from it)? 
 ** What is the need? 
 ** What is the benefit? 
+*Natural Language Statements can be affirmative or negative statements where each statement defines a requirement that must be included in the ontology. 
 
-Natural Language Statements can be affirmative or negative statements where each statement defines a requirement that must be included in the ontology. 
+The Ontology Requirements Specification Documents (ORSDs) for the following modules can be accessed here:
 
-include::stories_eAccess.adoc[]
+* xref:stories_eAccess.adoc[The eAccess Module that covers the ESPD-Request]
 
-include::stories_eSubmission.adoc[]
+* xref:stories_eSubmission.adoc[The eSubmission Module that covers the ESPD-Response]
+
+Further modules will be added as they become available
