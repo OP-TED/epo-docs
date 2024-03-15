@@ -1,0 +1,48 @@
+== Working Group meeting 06/07/2021
+
+
+*Date:* 06/07/2021 +
+*Participants:* Paloma Arillo Aranda (OP), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP) and Giampaolo Sellitto (ANAC).
+*Model editor:* Eugeniu Costetchi  +
+*Note editor:* Andreea Pasăre
+
+=== Topic: The Italian Model
+
+==== Work: 
+
+Within the context of works pertaining to environment related tenders such as extreme event interventions, for example, preventing fires, the Italian colleagues would like to use the ePO data to harmonize the terminology. For example, “procedure contract nature’ corresponds to the ePO ‘work’. The right mapping is ‘procurement project’. The ‘project’ class was discarded by the ePO WG in the past because a project has different procedures with different lots.
+
+==== Supervisor authority: 
+
+In the procedures mentioned above there is a authority tthat controls the way these works are executed. This does not correspond to any role in our ontology because it is not a ‘reviewer’ but rather a controlling role that ensures that the work has been carried out properly. The ePO model does not need this role because the scope is the notice and not the frame of administrative matters.
+
+==== Unique responsiblity for the procedure: 
+
+This belongs to the buyer, correspondings to the buyer contact point in the ePO. The buyer has a contact point meaning a person. It is not the buyer profile, because this is the web page. In the Italian procedures the buyer is an organisation while the role of contact point is played by a person. In ePO model version 2.0.1 there is a ‘buyer’ who has a ‘contact point’, but the contact is a channel but not the name of the person.
+
+In Italy the buyer is a juridical person, the contact is a natural person. TED has a contact point in the contact data but not in the eForms. 
+
+==== Agent: 
+
+ePO agent class – the agent is connected to the role, a person inherits from agent. In Italy an agent can act on behalf of another agent and it can be mapped to the ePO.
+
+===== CPV example: 
+
+there are many buyers but only one responsible for the procedure. The problem comes from the definition of ‘buyer’ in the directives. The one that publishes the procedure does not necessary buy.
+
+In the current forms, ‘buyer’ is responsible for the procedure while in eForms their ‘buyer’ is not necessarily responsible for the procedure. Italy will try to explain whata buyer and other roles are, and will add a join procurement indicator, for example when the contracting authorities cannot buy by themselves but together.
+
+It is possible that one specific beneficiary body proposes the procedure but then another authority implements the procedure. This does not exist in the ePO. Kind of ‘acts on behalf of’. We should have 2 arrows in the ePO model as we have in the OWL: ‘acts on behalf of’ is the inverse of ‘delegatesAncilliaryActivitiesOn’.
+
+==== Service provider: 
+
+for example receives the tenders, it helps the buyer. The other agent delegates on the service provider.
+
+==== Interventions: 
+
+are they in the data set? The Italian colleagues could try to extract the procedures of the example of contracting authority provided by Giorgia and check the data. Attention should be paid when importing data into Excel because the figures are not always well imported in csv. Concerning the Italian identifiers there is no always a mapping between the CUP and the CIG (both used in Italy) These CUP is only mandatory for contracts that produce value. Some countries have an identifier similar to the Italian CIG
+It is possible toassociate the CIG to the lot number given in TED. In TED there is one code to send something to publication, a kind of tender number, and one code that is use more like a CIG.
+
+==== Execution: 
+
+OP has to publish what is in the forms. To cover the actual ‘execution’ the Directive should have to adapt to the registry for example.

@@ -1,5 +1,4 @@
-== Please find below the minutes of the joint meeting of the eProcurement Ontology and TC 440 of 8 September 2020:
-
+== Working Group and TC 440 joint meeting 29/09/2020
 Participants: Working group members of eProcurement Ontology and TC 440
 
 TTC440 explains it was in the early process of establishing an eProcurement terminology  to be used by each specification that needed  a term. TC440 recognizes the eProcurement ontology and therefore their deliverables  intend to align with the eProcurement Ontology. This meeting aimst to set an organization that ensures this alignment. The proposed idea is to reuse the definitions developed by the eProcurement Ontology instead of creating a competing activity to establish a competing terminology.

@@ -1,0 +1,37 @@
+== Working Group meeting 17/08/2021
+
+
+*Date:* 17/08/2021 +
+*Participants:* Paloma Arillo Aranda (OP), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP) and Giampaolo Sellitto (ANAC).  +
+*Model editor:* Eugeniu Costetchi  +
+*Note editor:* Andreea Pasăre
+
+=== Issues
+
+==== GitHub Issues Update
+
+The following issues have been discussed and updated:
+
+Issue 187: Cardinalities properties and attributes – updated & closed
+
+Issue 185: Agent – updated
+
+Issue 184: Class create class "CV template" – updated & closed
+
+Issue 177: ESPD documents and criteria – updated with label
+
+Issue 174: ESPD Candidate short list – updated
+
+Issue 173: Economic operator short list – updated
+
+Issue 171: Subcontracting obligations and requirements – updated
+
+Issue 170: Rename ‘Purchase Contract’ as ‘Specific Contract’ – updated
+
+Issue 165: Codelist MULTIPLE Make authority codes human-readable – updated
+
+Issue 164: Codelist; economic-operator-size; No single code for SME? – closed
+
+Issue 161: Technique Validity Period and Contract hasDuration Period – updated
+
+Issue 103: Glossary - Change – updated

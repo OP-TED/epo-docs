@@ -1,0 +1,47 @@
+== Working Group meeting 31/08/2021
+
+
+*Date:* 31/08/2021 +
+*Participants:* Paloma Arillo Aranda (OP), Eugeniu COSTETZKI (Meaningfy), Giorgia Lodi (ISTC-CNR), Natalie Muric (OP), Andrea PASARE (Meaningfy) and Giampaolo Sellitto (ANAC)  +
+*Model editor:* Eugeniu Costetchi  +
+*Note editor:* Andreea Pasăre
+
+=== Topics
+
+==== Comments in EA
+
+Could the additional info and the date added in the descriptions of the ePO be transformed and added as part of the element? (To be checked).
+
+==== Queries
+
+The ePO is the Ontology for Public Procurement. The BDTI is a pilot project set up with ISA2 in order to enable linking open data: to be able launch SPARQL queries from different databases. The goal is to transform the ePO into RDF as are other ontologies. The main issue is the transformation: respect data format, do the mapping, try to connect and link the data from the three countries participating in the BDTI project (Italy, Portugal and Norway).
+
+Giorgia has tested launching a query in the BDTI. The WG has also tried to launch a query in GraphDB. These tests should be repeated when the data is updated.
+
+The WG updated the query live and ran a test:
+
+* In the EPO “isResponsiblityOf’ should be corrected to ‘isResponsibilityOf’
+
+* Amount: in the ePO data, ’Amoun’t uses ‘ctts’ instead of ‘epo’; that should be considered in the query
+
+* In the TED data lot it should be ‘hasContractAwardedValue’ not ‘LotAwardedValue’.
+
+* It should be noted when the ePO uses data different to the that used in the queries.
+
+* currencyCode was added to the query
+
+The date was also added
+
+If we want the indicator, ‘hasAcceleratedProcedure’ should be used
+
+The query launched will belong to the BDTI queries, as does this project, which will use it.  In the ideal world, the query could be used by other datasets.
+
+==== GitHub issues update
+
+The following issues were discussed and updated
+
+Issue 105: Combination Lot –Tender type – updated and closed.
+
+Issue 104: Glossary Change description code – closed.
+
+Issue 103: closed.
