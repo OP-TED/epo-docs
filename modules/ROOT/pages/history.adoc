@@ -71,13 +71,13 @@ image:2023-2025.png[]
 |ePO version 3.0.0
 |eNotice module released in v3.0.1 and eOrdering module released in v3.1.0. Going forward, the ePO project funded by the link:https://digital-strategy.ec.europa.eu/en/activities/digital-programme[Digital Europe Project] (DEP).
 
-|July 2023 and September 2023
+|July 2023 and December 2023
 |ePO versions v4.0.0-rc.1 and v4.0.0
-|eFulfilment module in v4.0.0
+|eFulfilment and eContract modules released in v4.0.0
 
 |November 2023 and January 2024
 |ePO versions 4.1.0-rc.1 and 4.1.0
-|eAccess module in v4.1.0
+|eAccess module released in v4.1.0
 
 |March 2024
 |ePO version 4.2.0-rc.1
