@@ -9,12 +9,23 @@ ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 4.0.0@release-notes.adoc,4.0@release-notes.adoc
 endif::[]
 
+
+
+=== Patch 4.0.2
+
+* epo:hasOJSIssueNumber:xsd:integer data type changed to rdf:PlainLiteral
+
+=== Patch 4.0.1
+* Removed at-voc-new references.
+
+* Fixed URIs for cpv and nuts.
+
+== 4.0.0
 The release v4.0.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0[here].
 
 The release notes provide the global changes since the last version (3.1.0). The change notes show each individual semantic
 modification.
 
-== Release notes
 == Release notes
 
 * Modeling Procedure in the context of a Mini-Competition:
