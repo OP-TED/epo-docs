@@ -13,12 +13,12 @@ endif::[]
 
 === Patch 4.0.2
 
-* epo:hasOJSIssueNumber:xsd:integer data type changed to rdf:PlainLiteral
+* epo:hasOJSIssueNumber: data type changed from xsd:integer to rdf:PlainLiteral.
 
 === Patch 4.0.1
-* Removed at-voc-new references.
+* Removed at-voc-new references from the .owl files.
 
-* Fixed URIs for cpv and nuts.
+* Fixed URIs for cpv and nuts codes.
 
 == 4.0.0
 The release v4.0.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0[here].
