@@ -16,9 +16,9 @@ endif::[]
 * epo:hasOJSIssueNumber: data type changed from xsd:integer to rdf:PlainLiteral.
 
 === Patch 4.0.1
-* Removed at-voc-new references from the .owl files.
+* Removed references to controlled lists that are not yet implemented in EU Vocabularies (those with at-voc-new prefix).
 
-* Fixed URIs for cpv and nuts codes.
+* Fixed URIs for cpv and nuts code lists.
 
 == 4.0.0
 The release v4.0.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.0.0[here].
