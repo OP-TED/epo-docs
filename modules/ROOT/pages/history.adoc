@@ -50,7 +50,7 @@ image::UserStoriesExamplesTable.png[More examples of user stories]
 == *Timeline*
 
 === 2017 - 2023:
-image:2017-2023.jpg[]
+image:2017-2023.png[]
 
 === 2024 - 2025:
 image:2024-2025.png[]
