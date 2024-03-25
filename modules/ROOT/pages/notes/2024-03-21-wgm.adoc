@@ -1,0 +1,22 @@
+== Working Group meeting
+
+*Date*: 21/03/2024    +
+*Participants:* Natalie Muric, Pietro Palermo   +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
+== Agenda
+
+* Discuss about https://github.com/OP-TED/ePO/issues/443[issue 443]
+* eOrder data model update.
+
+== Discussion
+
+
+* Issue 443 was discussed.  It was agreed that PEPOL will come up with a clear solution to the matter.
+* The Definitions of fields in eOrder data model were discussed and updated.
+
+== Action Points
+
+* Map the business terms to the appropriate ePO concepts.
+
