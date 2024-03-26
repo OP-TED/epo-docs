@@ -12,30 +12,35 @@ endif::[]
 
 *The Conceptual Models can be viewed via the following links*
 
-* The ePO core Conceptual Module: link:{attachmentsdir}/html_reports/ePO/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v4.1.0-rc.1/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eCatalogue Conceptual Module: link:{attachmentsdir}/html_reports/eCatalogue/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v4.1.0-rc.1/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eOrdering Conceptual Module: link:{attachmentsdir}/html_reports/eOrdering/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v4.1.0-rc.1/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eFulfilment Conceptual Module: link:{attachmentsdir}/html_reports/eFulfilment/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v4.1.0-rc.1/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eContract Conceptual Module: link:{attachmentsdir}/html_reports/eContract/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v4.1.0-rc.1/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eAccess Conceptual Module: link:{attachmentsdir}/html_reports/eAccess/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v4.1.0-rc.1/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
-* The eNotice Conceptual Module: link:{attachmentsdir}/html_reports/eNotice/index.html[HTML] and link:https://github.com/OP-TED/ePO/blob/v4.1.0-rc.1/analysis_and_design/conceptual_model/ePO_CM.eap[eap] (Enterprise Architecture format)
+* The ePO core Conceptual Module: link:{attachmentsdir}/html_reports/ePO/index.html[HTML]
+* The eCatalogue Conceptual Module: link:{attachmentsdir}/html_reports/eCatalogue/index.html[HTML]
+* The eOrdering Conceptual Module: link:{attachmentsdir}/html_reports/eOrdering/index.html[HTML]
+* The eFulfilment Conceptual Module: link:{attachmentsdir}/html_reports/eFulfilment/index.html[HTML]
+* The eContract Conceptual Module: link:{attachmentsdir}/html_reports/eContract/index.html[HTML]
+* The eAccess Conceptual Module: link:{attachmentsdir}/html_reports/eAccess/index.html[HTML]
+* The eSubmission Conceptual Module: link:{attachmentsdir}/html_reports/eSubmission/index.html[HTML]
+* The eNotice Conceptual Module: link:{attachmentsdir}/html_reports/eNotice/index.html[HTML]
 
+
+Alternatively, all the conceptual modules can be viewed in https://github.com/OP-TED/ePO/blob/4.1.0-rc.2/analysis_and_design/conceptual_model/ePO_CM.eap[.eap] (Enterprise Architect format)
 
 '''
 === *RDF Representations*
-RDF representation of the eProcurement ontology can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0-rc.1/implementation/ePO_core[here].
+RDF representation of the eProcurement ontology can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/ePO_core[here].
 
-RDF representation of the eCatalogue module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0-rc.1/implementation/eCatalogue[here].
+RDF representation of the eCatalogue module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eCatalogue[here].
 
-RDF representation of the eOrdering module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0-rc.1/implementation/eOrdering[here].
+RDF representation of the eOrdering module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eOrdering[here].
 
-RDF representation of the eFulfilment module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0-rc.1/implementation/eFulfilment[here].
+RDF representation of the eFulfilment module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eFulfilment[here].
 
-RDF representation of the eContract module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0-rc.1/implementation/eContract[here].
+RDF representation of the eContract module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eContract[here].
 
-RDF representation of the eAccess module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0-rc.1/implementation/eAccess[here].
+RDF representation of the eAccess module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eAccess[here].
 
-RDF representation of the eNotice module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0-rc.1/implementation/eNotice[here].
+RDF representation of the eSubmission module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eSubmission[here].
+
+RDF representation of the eNotice module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eNotice[here].
 
 
 
