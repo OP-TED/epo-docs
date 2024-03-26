@@ -1,113 +1,265 @@
-:doctitle: eProcurement Ontology v4.1.0-rc.1
-:page-code: epo-v4.1.0-rc.1-prod-002
+:doctitle: eProcurement Ontology v4.1.0-rc.2
+:page-code: epo-v4.1.0-rc.2-prod-002
 :page-name: release-notes
-:docdate: December 2023
+:docdate: March 2024
 
 ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 4.1.0@release-notes.adoc,4.1@release-notes.adoc
 endif::[]
 
-The release v4.1.0-rc.1 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.1.0-rc.1[here].
-
+The release v4.1.0-rc.2 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2[here].
 
 === Release notes
 
-* eCatalogue - Catalogue Response development
-* eAccess module development
-* Minor updates for the following modules:
+*  eAccess module was released.
+*  eSubmission module was released.
+*  Updates for the following modules were made:
 ** ePO core
 ** eCatalogue
-** eFulfilment
 ** eOrdering
+** eFulfilment
+** eContract
+** eNotice.
 
+== ePO core
 
+=== Metadata
 |===
-|*Metadata*|*Value*
-
-|Reference ePO version|4.1.0-rc.1
-|Target ePO version|4.0.0
-|Authors|Andreea Pasăre
-|Date|2023-12-20
-|===
-
-=== Change notes
-
-==== New classes
-
-*ePO core*
-
-* cccev:InformationRequirement
-* time:Duration
-
-*eCatalogue*
-
-* epo-cat:CatalogueResponseInformation
-* epo-cat:CatalogueResponseLine
-* epo-cat:CatalogueResponse
-
-*eFulfilment*
-
-* epo-ful:ReceiptAdviceLine
-* epo-ful:ReceiptAdvice
-
-==== Changed classes
-
-
-|===
-|*module*|*class*|*added attributes*|*deleted attributes*
-
-|*ePO Core*|epo:ProcurementCriterion|epo:hasAdditionalInformation|
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from ePO_core.xml on 2024-02-12	|This version is automatically generated from ePO_core.xml on 2024-03-21
+| owl:versionInfo |	4.0.2 |	4.1.0
+| owl:priorVersion |	epo:core-4.0.1	| epo:core-4.0.2
+| dct:issued |	2024-02-12	|2024-03-21
 |===
 
-
-
+=== Added Imports
 |===
-|*module*|*class*|*added property*|*deleted property*
-
-|*ePO Core*|cccev:InformationRequirement|cccev:hasConcept -> cccev:InformationConcept|
-||cccev:InformationRequirement|generalisation -> cccev:Requirement|
-||cccev:Requirement|cccev:hasConcept -> cccev:InformationConcept|
-||cccev:Requirement|cccev:isDerivedFrom -> eli:LegalResource|
-||epo:Duration|generalisation -> time:Duration|
-||epo:Procedure|epo:specifiesExclusionGround -> epo:ExclusionGround|
-||epo:ProcurementCriterion|epo-acc:containsRequirementGroup -> epo-acc:RequirementGroup|
-||epo:ProcurementCriterion|epo-acc:containsQuestionGroup -> epo-acc:QuestionGroup|
-||epo:QualificationCriterion|epo:includesNationalCriterion -> epo:QualificationCriterion|
-|*eCatalogue*|epo-cat:CatalogueLine|epo-cat:foreseesPackage -> epo-ful:Package|
-||epo-cat:Catalogue|epo:hasValidityPeriod -> epo:Period|
-||epo-cat:CatalogueResponseInformation|generalisation -> epo-cat:InformationHub|
-||epo-cat:CatalogueResponseInformation|epo-cat:isSpecificToCatalogueResponseLine -> epo-cat:CatalogueResponseLine|
-||epo-cat:CatalogueResponseInformation|epo-ord:hasAcceptanceStatus -> at-voc-new:ResponseStatus|
-||epo-cat:CatalogueResponseLine|epo:hasUUID -> adms:Identifier|
-||epo-cat:CatalogueResponseLine|epo-cat:refersToCatalogueLine -> epo-cat:CatalogueLine|
-||epo-cat:CatalogueResponse|epo-cat:specifiesCatalogueResponseInformation -> epo-cat:CatalogueResponseInformation|
-||epo-cat:CatalogueResponse|generalisation -> epo-cat:PostAwardDocument|
-||epo-cat:CatalogueResponse|epo-cat:comprisesCatalogueResponseLine -> epo-cat:CatalogueResponseLine|
-||epo-cat:CatalogueResponse|epo-cat:refersToCatalogue -> epo-cat:Catalogue|
-||epo-cat:CatalogueResponse|epo:specifiesCatalogueProvider -> epo:CatalogueProvider|
-||epo-cat:CatalogueResponse|epo:specifiesCatalogueReceiver -> epo:CatalogueReceiver|
-|*eFulfilment*|epo-ful:ReceiptAdviceLine|epo-ful:hasOversupplyQuantity -> epo:Quantity|
-||epo-ful:ReceiptAdviceLine|epo-ful:hasReceivedQuantity -> epo:Quantity|
-||epo-ful:ReceiptAdviceLine|epo-ful:hasShortQuantity -> epo:Quantity|
-||epo-ful:ReceiptAdviceLine|epo-ful:hasShortageAction -> at-voc-new:action-code|
-||epo-ful:ReceiptAdviceLine|generalisation -> epo-cat:Line|
-||epo-ful:ReceiptAdviceLine|epo-ful:hasRejectReason -> at-voc-new:reject-reason|
-||epo-ful:ReceiptAdviceLine|epo:hasRejectedQuantity -> epo:Quantity|
-||epo-ful:ReceiptAdviceLine|epo-ful:isSubmittedForDespatchLine -> epo-ful:DespatchLine|
-||epo-ful:ReceiptAdviceLine|epo-ful:RejectionAction -> at-voc-new:action-code|
-||epo-ful:ReceiptAdvice|epo-ful:specifiesBuyer -> epo:Buyer|
-||epo-ful:ReceiptAdvice|epo-ful:specifiesDespatcher -> epo-ful:Despatcher|
-||epo-ful:ReceiptAdvice|epo-ful:hasAssociatedDocument -> epo:Document|
-||epo-ful:ReceiptAdvice|generalisation -> epo-cat:PostAwardDocument|
-||epo-ful:ReceiptAdvice|epo-ful:specifiesSeller -> epo-ord:Seller|
-||epo-ful:ReceiptAdvice|epo-ful:isSubmittedForDespatchAdvice -> epo-ful:DespatchAdvice|
-||epo-ful:ReceiptAdvice|epo-ful:specifiesConsignee -> epo-ord:Consignee|
-||epo-ful:ReceiptAdvice|epo-ful:isSubmittedForShipment -> epo-ful:ShipmentInformation|
-||epo-ful:ReceiptAdvice|epo-ful:comprisesReceiptAdviceLine -> epo-ful:ReceiptAdviceLine|
-|*eOrdering*|epo-ord:Order|epo-ord:hasSellerOrderID -> adms:Identifier|
+|*Property*|*Value*
+|owl:imports	|http://data.europa.eu/eli/ontology#
+|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
 |===
 
+=== Added Classes
+|===
+|*Class*
+|epo:TechnicalSpecification
+|cccev:InformationRequirement
+|===
 
+=== Added subClassOf
+|===
+| *instance* | *property* |	 *value*
+|epo:TechnicalSpecification|	rdfs:subClassOf|	epo:ProcurementDocument
+|cccev:InformationRequirement|	rdfs:subClassOf|	cccev:Requirement
+|===
 
+=== Added Object Properties
+|===
+|*property*
+|epo:answersExclusionGround
+|epo:answersQuestion
+|epo:answersSelectionCriteria
+|epo:canProvideNonDiscriminatoryEvidence
+|epo:canProvideTaxAndSocialSecuritiesEvidence
+|epo:concernsOrganisation
+|epo:hasAssociatedDocument
+|epo:hasOversupplyQuantity
+|epo:hasReceivedQuantity
+|epo:hasRejectedQuantity
+|epo:hasSellerOrderID
+|epo:hasShortQuantity
+|epo:includesNationalCriterion
+|epo:isReinforcedBy
+|epo:isSupportedBy
+|epo:providesInformationOn
+|epo:providesOrganisationEmployeeQuantity
+|epo:providesOrganisationFinancialCapability
+|epo:providesOrganisationPreQualificationListingIdentifier
+|epo:refersToApplicablePeriod
+|epo:summarisesInformationAboutCertificate
+|eli:uri_schema
+|cccev:hasConcept
+|cccev:hasEvidenceTypeList
+|cccev:isDerivedFrom
+|cccev:providesValueFor
+|cccev:supportsValue
+|cccev:validityPeriodConstraint
+|dct:conformsTo
+|dct:language
+|===
+
+=== Deleted subPropertyOf
+|===
+| *instance* | *property* |	 *value*
+|epo:hasConstraint|	rdfs:subPropertyOf|	cccev:hasRequirement
+|epo:isResponsibilityOfBuyer|	rdfs:subPropertyOf|	epo:involvesBuyer
+|===
+
+=== Added Datatype Properties
+|===
+|*Property*
+|epo:hasSMEReceivedTendersExcludingSubcontractors
+|===
+
+== eCatalogue
+
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eCatalogue.xml on 2024-02-12	|This version is automatically generated from eCatalogue.xml on 2024-03-21
+| owl:versionInfo |	4.0.2 |	4.1.0
+| owl:priorVersion |	epo:cat-4.0.1	| epo:cat-4.0.2
+| dct:issued |	2024-02-12	|2024-03-21
+|===
+
+=== Added Imports
+|===
+|*Property*|*Value*
+|owl:imports	|http://data.europa.eu/eli/ontology#
+|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
+|===
+
+=== Added Classes
+|===
+|*Class*
+|epo-cat:CatalogueResponse
+|epo-cat:CatalogueResponseInformation
+|epo-cat:CatalogueResponseLine
+|===
+
+=== Added subClassOf
+|===
+| *instance* | *property* |	 *value*
+|epo-cat:CatalogueResponse|	rdfs:subClassOf	|epo-cat:PostAwardDocument
+|===
+
+=== Added Object Properties
+|===
+|*property*
+|epo:comprisesCatalogueResponseLine
+|epo:foreseesPackage
+|epo:hasAcceptanceStatus
+|epo:hasUUID
+|epo:hasValidityPeriod
+|epo:isSpecificToCatalogueResponseLine
+|epo:specifiesCatalogueResponseInformation
+|===
+
+=== Deleted Object Properties
+|===
+|*Property*
+|epo-cat:hasAssociatedDocument
+|===
+
+== eOrdering
+
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eOrdering.xml on 2024-02-12	|This version is automatically generated from eOrdering.xml on 2024-03-21
+| owl:versionInfo |	4.0.2 |	4.1.0
+| owl:priorVersion |	epo:ord-4.0.1	| epo:ord-4.0.2
+| dct:issued |	2024-02-12	|2024-03-21
+|===
+
+=== Added Imports
+|===
+|*Property*|*Value*
+|owl:imports	|http://data.europa.eu/eli/ontology#
+|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
+|===
+
+=== Added Object Properties
+|===
+|*property*
+|epo-ord:hasSellerOrderID
+|===
+
+== eFulfilment
+
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eFulfilment.xml on 2024-02-12	|This version is automatically generated from eFulfilment.xml on 2024-03-21
+| owl:versionInfo |	4.0.2 |	4.1.0
+| owl:priorVersion |	epo:ful-4.0.1	| epo:ful-4.0.2
+| dct:issued |	2024-02-12	|2024-03-21
+|===
+
+=== Added Imports
+|===
+|*Property*|*Value*
+|owl:imports	|http://data.europa.eu/eli/ontology#
+|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
+|===
+
+=== Added Classes
+|===
+|*Class*
+|epo-ful:ReceiptAdvice
+|epo-ful:ReceiptAdviceLine
+|===
+
+=== Added subClassOf
+|===
+| *instance* | *property* |	 *value*
+|epo-ful:ReceiptAdvice |rdfs:subClassOf|epo-cat:PostAwardDocument
+|epo-ful:ReceiptAdviceLine|rdfs:subClassOf|epo-cat:Line
+|===
+
+=== Added Object Properties
+|===
+|*property*
+|epo:RejectionAction
+|epo:comprisesReceiptAdviceLine
+|epo:foreseesPackage
+|epo:hasOversupplyQuantity
+|epo:hasReceivedQuantity
+|epo:hasRejectReason
+|epo:hasRejectedQuantity
+|epo:hasShortQuantity
+|epo:hasShortageAction
+|epo:isSubmittedForDespatchAdvice
+|epo:isSubmittedForDespatchLine
+|epo:isSubmittedForShipment
+|epo:specifiesBuyer
+|epo:specifiesSeller
+|===
+
+== eContract
+
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eContract.xml on 2024-02-12	|This version is automatically generated from eContract.xml on 2024-03-21
+| owl:versionInfo |	4.0.2 |	4.1.0
+| owl:priorVersion |	epo:con-4.0.1	| epo:con-4.0.2
+| dct:issued |	2024-02-12	|2024-03-21
+|===
+
+=== Added Imports
+|===
+|*Property*|*Value*
+|owl:imports	|http://data.europa.eu/eli/ontology#
+|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
+|===
+
+== eNotice
+
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eNotice.xml on 2024-02-12	|This version is automatically generated from eNotice.xml on 2024-03-21
+| owl:versionInfo |	4.0.2 |	4.1.0
+| owl:priorVersion |	epo:not-4.0.1	| epo:not-4.0.2
+| dct:issued |	2024-02-12	|2024-03-21
+|===
+
+=== Added Imports
+|===
+|*Property*|*Value*
+|owl:imports	|http://data.europa.eu/eli/ontology#
+|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
+|===
 
 include::partial$feedback.adoc[]
