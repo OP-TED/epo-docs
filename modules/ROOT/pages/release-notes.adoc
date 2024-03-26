@@ -11,6 +11,7 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 
 === Release notes
 
+
 *  eAccess module was released.
 *  eSubmission module was released.
 *  Updates for the following modules were made:
@@ -20,6 +21,7 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 ** eFulfilment
 ** eContract
 ** eNotice.
+* The (closed) github issues justifying these updates can be found https://github.com/OP-TED/ePO/milestone/9[here]
 
 == ePO core
 
