@@ -1,7 +1,7 @@
 :doctitle: Navigation
-:doccode: epo-v4.1.0-rc.1-prod-004
+:doccode: epo-v4.1.0-rc.2-prod-004
 :page-name: nav
-:docdate: December 2023
+:docdate: March 2024
 
 * xref:epo-home::index.adoc[Home]
 
