@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="updates user stories pages typo">
+    <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="corrected image colour">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/methodology.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/methodology.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +17,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2UeuLUYQ5Vs7wqQ76gi3sh29hsS" />
@@ -280,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709210364236</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="corrected image colour">
+      <created>1711377206505</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1711377206505</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,6 +332,7 @@
     <MESSAGE value="updated links" />
     <MESSAGE value="updates user stories pages" />
     <MESSAGE value="updates user stories pages typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates user stories pages typo" />
+    <MESSAGE value="corrected image colour" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected image colour" />
   </component>
 </project>
