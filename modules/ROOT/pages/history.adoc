@@ -49,15 +49,15 @@ image::UserStoriesExamplesTable.png[More examples of user stories]
 
 == *Timeline*
 
-=== 2017 - 2022:
-image:2017-2022.png[]
+=== 2017 - 2023:
+image:2017-2023.png[]
 
-=== 2023 - 2025:
-image:2023-2025.png[]
+=== 2024 - 2025:
+image:2024-2025.png[]
 
 [cols="1,2,2"]
 |===
-|Date|Version|Notes
+|Date Published|Version|Notes
 
 |Mid-2017
 |ePO version 1.0.0
@@ -72,38 +72,34 @@ image:2023-2025.png[]
 |eNotice module released in v3.0.1 and eOrdering module released in v3.1.0. Going forward, the ePO project funded by the link:https://digital-strategy.ec.europa.eu/en/activities/digital-programme[Digital Europe Project] (DEP).
 
 |July 2023 and December 2023
-|ePO versions v4.0.0-rc.1 and v4.0.0
+|ePO version 4.0.0
 |eFulfilment and eContract modules released in v4.0.0
 
-|November 2023 and January 2024
-|ePO versions 4.1.0-rc.1 and 4.1.0
-|eAccess module released in v4.1.0
-
 |March 2024
-|ePO version 4.2.0-rc.1
-|eSubmission module in v4.2.0-rc.1
+|ePO version 4.1.0-rc.1
+|eAccess & eSubmission modules released in v4.1.0-rc.1
 
-| May 2024
+| 
 |ePO version 4.2.0
 |eInvoicing module in v4.2.0
 
-|September 2024
+|
 |ePO version 4.3.0
 |eEvaluation in v4.3.0
 
-|January 2025
+|
 |Contracts Registry
 |Contracts Registry
 
-|March 2025
+|
 |ePO version 4.4.0
 |eAwarding module in v4.4.0
 
-|May 2025
+|
 |ePO version 4.5.0-rc.1
 |eRequest module in v4.5.0-rc.1
 
-|July 2025
+|
 |ePO version 4.5.0
 |ePayment module in v4.5.0
 |===
