@@ -1,12 +1,10 @@
 target
-build
 node_modules
 .vscode
 .node
 .yarn
 yarn.lock
-branches
-scripts
-.idea
 /modules/ROOT/pages/archive/
-/scripts/
+.idea
+workspace.xml
+
