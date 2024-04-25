@@ -11,7 +11,7 @@ The vocabularies and the semantics that they introduced, the phases of public pr
 
 The situation created a need for a common representation of the knowledge around eProcurement as it is practiced in the European Union. This meant that a common vocabulary, and both common axioms and rules were needed. 
 
-In 2016 the Publications Office of the European Union (Publications Office or OP) initiated a project to manage and support the development of an electronic Procurement Ontology (ePO), funded by the link:https://ec.europa.eu/isa2/home_en/[ISA^2^ Programme]. The aim of the project was to develop an eProcurement Ontology based on the open-source link:https://www.w3.org/OWL/[OWL] (Web Ontology Language) standard, and make it available to EU member states.
+In 2016 the Publications Office of the European Union (Publications Office or OP) initiated a project to manage and support the development of an electronic Procurement Ontology (ePO), funded by the link:https://ec.europa.eu/isa2/home_en/[ISA^2^ Programme]. The aim of the project was to develop an eProcurement Ontology based on the open-source link:https://www.w3.org/OWL/[OWL] (Web Ontology Language) standard, and make it available to EU member states. Since 2021, the project has been funded by the https://commission.europa.eu/funding-tenders/find-funding/eu-funding-programmes/digital-europe-programme_en#about-the-programme[Digital Europe programme].
 
 This project was in conjunction with a parallel project to develop the associated eForms.
 
@@ -83,29 +83,32 @@ image:2023-2025.png[]
 |ePO version 4.2.0-rc.1
 |eSubmission module in v4.2.0-rc.1
 
-| May 2024
-|ePO version 4.2.0
-|eInvoicing module in v4.2.0
+////
+|
+|
+|eInvoicing
 
-|September 2024
-|ePO version 4.3.0
-|eEvaluation in v4.3.0
+|
+|
+|eEvaluation
 
-|January 2025
+|
+|
 |Contracts Registry
-|Contracts Registry
 
-|March 2025
-|ePO version 4.4.0
-|eAwarding module in v4.4.0
+|
+|
+|eAwarding
 
-|May 2025
-|ePO version 4.5.0-rc.1
-|eRequest module in v4.5.0-rc.1
+|
+|
+|eRequest module
 
-|July 2025
-|ePO version 4.5.0
-|ePayment module in v4.5.0
+|
+|
+|ePayment module
+
+////
 |===
 
 include::partial$feedback.adoc[]
