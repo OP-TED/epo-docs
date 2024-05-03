@@ -34,6 +34,10 @@ This does not mean necessarily that this was the only topic addressed in the mee
 
 [#2024]
 === 2024
+
+xref:notes/2024-05-02-wgm.adoc[2024-05-02 (Core)]
+
+
 xref:notes/2024-03-26-wgm.adoc[2024-03-26 (Core)]
 
 xref:notes/2024-03-21-wgm.adoc[2024-03-21 (eOrdering)]

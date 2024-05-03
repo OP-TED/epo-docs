@@ -1,0 +1,85 @@
+== Working Group meeting
+
+*Date*: 02/05/2024    +
+*Participants:*  Ansgar Mondorf, Natalie Muric, Giovanni Paolo Sellitto, Dragos Stoica.  +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
+== Agenda
+
+* ePO attributes definitions (standard forms related)
+
+== Discussion  +
+* Definitions for the following ePO concepts were added:
+
+|===
+|epo:describesObjectiveParticipationRules |General explanatory text on the rules and criteria to be fulfilled by the Tender.
+
+WG approval 02/05/2024
+
+|epo:describesVerificationMethod |General explanatory text on the means used to validate the Participation Conditions.
+
+WG approval 02/05/2024
+|epo:hasNationalProcedureRules |The resource identifier where the information about the national rules applicable to the procedure can be found.
+
+WG approval 02/05/2024
+|epo:indicatesPerformingStaffInformationRequirement |Obligation to indicate the names and professional qualifications of the staff assigned to performing the contract.
+
+WG approval 02/05/2024
+|epo:hasLegalBasisDescription |Explanatory text about the legal basis.
+
+WG approval 02/05/2024
+|epo:describesProfession |Explanatory text about the profession.
+
+WG approval 02/05/2024
+|epo:describesProfessionRelevantLaw |Explanatory text about the law concerning the profession.
+
+WG approval 02/05/2024
+|epo:hasServiceReservedToParticularProfession |Execution of the contract is limited to a particular profession.
+
+WG approval 02/05/2024
+|epo:hasConditionVerificationMethod |Means used to validate the qualification requirements.
+
+WG approval 02/05/2024
+|epo:hasQualificationCondition |Requirements to be fulfilled by tenders in view of their qualification.
+
+WG approval 02/05/2024
+|epo:isSecurityClearanceRequired |Means used to validate the qualification requirements.
+
+WG approval 02/05/2024
+|epo:describesMinimumLevelOfStandards |Explanatory text regarding the minimum level of standards required.
+
+WG approval 02/05/2024
+|epo:hasSelectionCriteriaStatedInProcurementDocuments |The Selection Criteria are present in the Procurement Documents.
+
+WG approval 02/05/2024
+|epo:hasOtherCountriesReceivedTenders |The amount of Tenders received from countries other than that of the Buyer.
+
+WG approval 02/05/2024
+|epo:hasReceiptParticipationRequestDeadline |The time limit until which requests to participate can be received.
+
+WG approval 02/05/2024
+|epo:hasReceiptPreliminaryMarketConsultationDeadline |The time limit until which answers to the Preliminary Market Consultation can be received.
+
+WG approval 02/05/2024
+|epo:hasReceiptTenderDeadline |The time limit until which the Tenders can be received.
+
+WG approval 02/05/2024
+|epo:hasSubmissionURL |Additional Information: This corresponds to the eForms BT-18 Submission URL. This corresponds in eForms to BT-509 Organisation eDelivery Gateway.
+|epo:hasActivityDescription |In the ePO ontology a taxonomy with all activities, based on different classifications (COFOG, UTILITIES, NACE), will be provided. In ePO this field is to be used exclusively to complement the definition attached to the MainActivityCode. However, in eForms there is the code "other" to cover undefined activities. For mapping to this eForms feature one could also use this property.
+|epo:hasStrategicProcurementDescription |Self-explanatory text about a concept.
+|===
+
+
+
+* Class epo:SecurityClearanceTerm  Attribute epo:hasDeadline *definition*: "The deadline by which the security clearance must be submitted to the buyer.WG Approval 12/09/2019", *was changed to: *"The time limit by which the security clearance must be submitted to the buyer. WG Approval 02/05/2024."
+* Class epo-not:PreMarketConsultationNotice *definition was added*: "Announcement of a pre-market consultation. Additional information: A pre-market consultation is not a call for competition and no procurement documents are available at the time of consultation. A consultation may or may not be followed by a future competition.WG approval 02/05/2024.
+* It was also discussed that https://github.com/OP-TED/model2owl/issues/199[Inheritance connections between Classes should be somehow visible] in the glossary (for model2owl).
+
+== Action Points
+
+* Create a ticket: The  attribute epo:hasOJSIssueNumber should be avoided and use adms:identifier from document instead. Eventually  (in ePO 5.0.0) the epo:hasOJSIssueNumber attribute should be removed.  Do the same for attribute epo:hasOJSType.
+* Create a ticket : Harmonize the definitions of deadlines.
+* Create a ticket: Harmonize the definitions of all notices taking into consideration the codelists.
+
+
