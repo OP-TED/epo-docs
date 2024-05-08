@@ -1,0 +1,59 @@
+== Working Group meeting
+
+*Date*: 02/05/2024    +
+*Participants:*  Natalie Muric, Dragos Stoica, Peter Borresen.  +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
+== Agenda
+
+* eInvoicing
+* Evolution of the ePO modules
+* eFulfilment dataModel.
+
+== Discussion
+
+* The following points related to eInvoicing were discussed:
+** The Structure of eInvoicing can be quite complex :
+*** For example, an invoice may create other invoices.
+** The core of the eInvoicing module should be  an invoice from an Awarded contract.
+** It was discussed that there  should be a clear eInvoicing process on the module.
+** Most important concept in the invoice: VAT.
+** PEPOL model should be referenced as a resource, but material taken from it  should not be used.
+*  EPO concept definitions:
+
+** Epo:VechicleInformation definition was updated:
+*** "Information related to clean vehicles legislation.
+** Additional information:
+In the European Union, the legislation concerned is the European Parliament and Council 2009/33/EC (Clean Vehicles Directive – CVD).
+WG approval 07/05/2024"
+
+
+|===
+|*Predicate name* |*Definition* |*Domain, Range and Cardinality*
+
+|epo:concernsGreenProcurement |Relates to Green Procurement.
+
+WG approval 07/05/2024 |epo:VehicleInformation -> epo:GreenProcurement [1]
+|===
+The cardinality of epo:concernsGreenProcurement was also changed to 0 ->1
+
+
+
+* The alignment between PEPPOL business term requirements and ePO eFulfilment continued from where it left off in the last working group meeting on the eFulfilment module (see https://docs.ted.europa.eu/epo-wgm/notes/2024-03-07-wgm.html[WG meeting]). During the meeting the following concepts were covered from the Dispatch advice data model:
+** Transport means
+*** Air Transport
+*** Road Transport
+*** Rail Transport
+*** Maritime Transport
+*** Measurement Dimension
+*** Fuel Consumption
+*  It was also noted that there may be more than one vehicleSegment on road transports.
+
+== Action Points
+
+
+* Create a ticket: change the name of epo:VehicleInformation in ePO 5.0.0
+
+
+
