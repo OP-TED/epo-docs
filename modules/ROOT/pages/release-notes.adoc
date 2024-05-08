@@ -11,11 +11,11 @@ endif::[]
 
 
 
-=== Patch 4.0.2
+== Patch 4.0.2
 
 * epo:hasOJSIssueNumber: data type changed from xsd:integer to rdf:PlainLiteral.
 
-=== Patch 4.0.1
+== Patch 4.0.1
 * Removed references to controlled lists that are not yet implemented in EU Vocabularies (those with at-voc-new prefix).
 
 * Fixed URIs for cpv and nuts code lists.

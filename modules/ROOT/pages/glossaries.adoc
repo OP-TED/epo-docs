@@ -9,7 +9,7 @@ ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 4.0.0@glossaries.adoc,4.0@glossaries.adoc
 endif::[]
 
-=== Glossaries
+== Glossaries
 *The Glossaries for the following entities can be downloaded via the following links:*
 
 * link:{attachmentsdir}/html_reports/glossary/ePO_core_glossary.html[The ePO core Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO_core_glossary.html[here]
