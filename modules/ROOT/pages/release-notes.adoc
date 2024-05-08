@@ -9,7 +9,7 @@ endif::[]
 
 The release v4.1.0-rc.2 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2[here].
 
-=== Release notes
+== Release notes
 
 
 *  eAccess module was released.
