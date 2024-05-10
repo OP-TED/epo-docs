@@ -1,4 +1,4 @@
-= Working Group meeting 30/05/2023
+:doctitle: Working Group meeting 30/05/2023
 
 *Date:* 30/05/2023    +
 *Participants:* Natalie Muric, Giampaolo Sellitto.    +
