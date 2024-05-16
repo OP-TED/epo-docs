@@ -11,6 +11,9 @@ The eProcurement Ontology (ePO) is a semantic ontology related to EU public proc
 ePO is a tool that conceptualizes and formally encodes structured data about public procurement in both human and machine-readable formats according to EU regulations and directives.
 
 
+[underline]#Where to start from:#
+xref:epo-home::guide.adoc[User's Guide to ePO]
+
 The following topics are included in this version of the eProcurement Ontology documentation:
 
 
