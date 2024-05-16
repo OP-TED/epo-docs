@@ -16,10 +16,11 @@
 * xref:EPO::release-notes.adoc[Release Notes]
 
 * [.separated]#**Reference Documentation**#
-* xref:epo-home::references.adoc[Reference Documents]
-* xref:epo-home::history.adoc[History and Planned Developments]
 * xref:epo-home::methodology2024.adoc[Methodology]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
+* xref:epo-home::governance.adoc[ePO Governance]
+* xref:epo-home::history.adoc[History and Future Plans]
+* xref:epo-home::references.adoc[Other Reference Documents]
 
 * [.separated]#**Working Group Documents**#
 * xref:epo-wgm::wider.adoc[Quarterly Meetings]
