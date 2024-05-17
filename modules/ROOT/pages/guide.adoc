@@ -39,4 +39,9 @@ This document is a guide to how the eProcurement Ontology can be used.
 == The ePO Implemetation
 
 === The OP-TED/ ePO Github repository
+==== ePO modules
+==== SHACL shapes
+
+== Querying the Ontology
+=== ePO SPARQL endpoint
 
