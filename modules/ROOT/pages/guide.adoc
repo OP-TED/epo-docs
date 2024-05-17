@@ -1,4 +1,4 @@
-:doctitle: User's Guide to ePO 1.0
+:doctitle: User's Guide to ePO
 :doccode: epo-main-prod-008
 :author: AD
 :authoremail: achilles.dougalis@meaningfy.ws
@@ -40,6 +40,8 @@ This document is a guide to how the eProcurement Ontology can be used.
 
 === The OP-TED/ ePO Github repository
 ==== ePO modules
+Mention the rest of the artefacts here and how they interelate. (restrictions)
+
 ==== SHACL shapes
 
 == Querying the Ontology
