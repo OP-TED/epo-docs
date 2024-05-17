@@ -1,0 +1,84 @@
+= Working Group meeting
+
+*Date*: 14/05/2024    +
+*Participants:*  Natalie Muric, Dragos Stoica, Peter Borresen.  +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
+== Agenda
+
+* Evolution of the ePO modules.
+* eFulfilment definitions
+
+== Discussion
+
+
+* The definitions of the following ePO core concepts were added/updated:
+
+
+|===
+|epo:concernsNotice |Relates to Notice.
+
+WG approval 14/05/2024 |epo:ChangeInformation -> epo:Notice [1]
+
+| | |epo:NonPublishedInformation -> epo:Notice [1]
+|epo:concernsTender |Relates to Tender.
+
+WG approval 14/05/2024 |epo:TenderAwardOutcome -> epo:Tender [1]
+|epo:containsCandidate |Includes Candidate.
+
+WG approval 14/05/2024 |epo:SelectedCandidateList -> epo:Candidate [0..*]
+|===
+
+
+* The definitions of the following ePO concepts specific to the eFulfilment module were added/updated:
+
+|===
+|*epo-ful:Carrier* |The Role of an Agent who handles the physical Delivery/Transportation of the (Despatched) Shipment.
+
+Additional Information:
+This Role is often referred as the deliverer.
+
+WG approval 14/05/2024
+
+|*epo-ful:Consignment* |A batch of goods destined for or delivered to someone.
+
+Additional information:
+Consignment is a Transport Agreement between the Despatcher and the Consignee as to who and how the goods are despatched and received.
+
+WG approval 14/05/2024
+
+|*epo-ful:AbstractContainer* |Gathering class for Packages and Transport Handling Units.
+
+WG approval 14/05/2024
+
+|*epo-ful:DespatchAdvice* |A document notifying the sending of goods or the execution of works or services.
+
+WG approval 14/05/2024
+
+|*epo-ful:Package* |Container used for transportation.
+
+WG approval 14/05/2024
+
+|*epo-ful:TransportHandlingUnit* |The outermost Package that the Carrier is handling.
+
+WG approval 14/05/2024
+
+|*epo-ful:Package* |Container used for transportation.
+
+WG approval 14/05/2024
+
+|===
+
+
+* Also, It was noted that the property from package to epo-ful:GoodsItem should have cardinality 0..*. So it was changed from 1..pass:[*].
+
+
+
+== Action Points
+
+
+* Enquire about the validity of the epo-ful:DespatchAdvice concept definition in next eFulfilment meeting.
+
+
+

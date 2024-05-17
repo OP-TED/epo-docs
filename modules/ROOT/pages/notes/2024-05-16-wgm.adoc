@@ -1,0 +1,105 @@
+= Working Group meeting
+
+*Date*: 16/05/2024    +
+*Participants:*  Paloma Arillo, Ioannis Fountoukidis, Natalie Muric, Dragos Stoica.  +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
+== Agenda
+
+* eInvoicing
+
+== Discussion
+
+* A draft of the eInvoicing ORSD document was presented and edited by the Working Group.
+** The concepts of roles that participate in eInvoicing were discussed:
+*** Buyer
+*** Seller
+*** Payee (if it is different than the Seller)
+*** Seller Tax representative
+** Specifically, it was mentioned that the eInvoicing model does not explicitly show who is the service provider or/nor any checks made on who the service provider is.
+*** It was also noted that the Invoice should be linked to the Buyer.
+** The Activity description part of the draft was discussed. The following statements were compiled:
+*** The Seller generates an invoice and the additional supporting documents.
+*** The Seller sends the invoice to the Buyer.
+*** The Buyer receives and processes the invoice.
+*** The Buyer pays the Seller/Payee the amount of the invoice before the due date.
+*** It was decided that the scope of the module will not include penalties, fraudulent charges, and unpaid invoices after their due date at this stage of the module.
+** The user stories part of the ORSD was presented and discussed.
+
+|===
+|*Code* |*Role*  |*User Story*
+
+|INV-1 |Buyer |As a Buyer, I want to know the Seller's identification information at the invoice (document) level.
+|INV-2 |Buyer |As a Buyer, I want to know the Payee identification information at invoice (document) level, if different from the Seller.
+|INV-3 |Buyer |As a Buyer I want to know the information about payment at invoice (document) level.
+|INV-4 |Seller |As a Seller, I want to know the Buyer's financial account information.
+|INV-5 |Buyer |As a Buyer I want to know the information to trace back to the related order at the invoice (document) level.
+|INV-6 |Buyer |As a Buyer I want to know the information to trace back to the related order line at the invoice line level.
+|INV-7 |Buyer |As a Buyer I want to know the information to trace back to the related contract from the invoice (document) level.
+|INV-8 |Buyer |As a Buyer I want to know the information to trace back to the related despatch advice from the invoice (document) level.
+|INV-9 |Buyer |As a Buyer I want to know the information to trace back to the related receiving advice from the invoice (document) level.
+|===
+
+** The natural language statements that will be included in the ORSD were presented.And modified.
+
+|===
+|*Natural Language Statements*
+
+|An invoice has an unique identifier.
+|An invoice has a date of issuance.
+|An invoice can have a payment due date.
+|An invoice must have a currency of all the amounts (except for the total VAT amount in accounting currency).
+|An invoice can refer to the procurement project.
+|An invoice can refer to the contract.
+|An invoice can refer to an order.
+|An invoice can refer to a despatch advice.
+|An invoice can refer to a receipt advice.
+|An invoice can refer to a lot.
+|An invoice can have a textual note.
+|An invoice can have payment terms.
+|An invoice can refer to previous invoices.
+|An invoice has to specify information about the Seller.
+|An invoice has to specify information about the address of the Seller.
+|An invoice can specify the contact point information of the Seller.
+|An invoice has to specify information about the Buyer.
+|An invoice has to specify information about the address of the Buyer.
+|An invoice can specify the contact point information of the Buyer.
+|An invoice can specify information about the Payee, if different than the Seller.
+|An invoice can specify information about the Seller's tax representative.
+|An invoice can specify information about where and when the goods and services invoiced are delivered.
+|An invoice can specify information about it's delivery period.
+|An invoice can specify information about the address to which goods and services invoiced were or are delivered.
+|An invoice can specify the payment instructions.
+|An invoice can specify the credit transfer payments.
+|An invoice can specify information about card used for payment contemporaneous with invoice issuance.
+|An invoice can specify a direct debit.
+|An invoice can specify information about allowances applicable to the Invoice as a whole.
+|An invoice can specify information about charges and taxes other than VAT, applicable to the invoice as a whole.
+|An invoice has to specify the monetary totals for the invoice.
+|An invoice has to specify information about VAT breakdown by different categories, rates and exemption reasons.
+|An invoice may refer to one or many additional supporting documents.
+|An invoice has to refer to one or many invoice lines.
+|An invoice line may specify information about it's delivery period.
+|An invoice line may specify information about allowances applicable to the Invoice as a whole.
+|An invoice line may specify information about charges and taxes other than VAT, applicable to the invoice as a whole.
+|An invoice line has to specify information about the price applied for the goods and services invoiced on the invoice line.
+|An invoice line has to specify information about the VAT applicable for the goods and services invoiced on the invoice line.
+|An invoice line has to specify information about the goods and services invoiced on the invoice line.
+|An invoice line may provide information about properties of the goods and services invoiced.
+|===
+
+
+** It was decided that  the terms providing information on the Business Process will not be covered in ePO, because it is out of the Ontology's scope.
+
+
+Action Points
+
+* Need to check cardinality for payment instructions  in the latest version of the standard, for the Natural Language Statements.
+* Need to check if the payment terms should be mandatory.
+* Need to check what is Receiving advice. Is it receipt advice?
+
+
+
+
+
