@@ -1,0 +1,42 @@
+:doctitle: User's Guide to ePO 1.0
+:doccode: epo-main-prod-008
+:author: AD
+:authoremail: achilles.dougalis@meaningfy.ws
+:docdate: May 2024
+:sectnums:
+:toc:
+:toclevels: 4
+:toc-title: Contents
+
+= Git usage methodology
+
+:toc:
+:toc-placement: preamble
+:toclevels: 1
+:showtitle:
+
+toc::[]
+
+This document is a guide to how the eProcurement Ontology can be used.
+
+== Introduction
+
+== The ePO modules
+
+== The ePO conceptual model
+
+=== UML diagrams
+==== What is UML
+==== Ontology Representation
+==== Conceptual model usage (HTML)
+==== Enterprise Architect usage
+==== Examples
+
+=== Glossaries
+==== Glossaries overview
+==== Examples
+
+== The ePO Implemetation
+
+=== The OP-TED/ ePO Github repository
+
