@@ -93,7 +93,7 @@
 ** It was decided that  the terms providing information on the Business Process will not be covered in ePO, because it is out of the Ontology's scope.
 
 
-Action Points
+== Action Points
 
 * Need to check cardinality for payment instructions  in the latest version of the standard, for the Natural Language Statements.
 * Need to check if the payment terms should be mandatory.
