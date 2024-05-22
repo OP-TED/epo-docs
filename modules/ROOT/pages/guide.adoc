@@ -21,6 +21,22 @@ This document is a guide to how the eProcurement Ontology can be used.
 
 == Introduction
 
+The ePO Ontology describes the data used in the EU public procurement process and is a
+semantic data specification. The ultimate objective of the ontology is to put forth a
+commonly agreed OWL ontology that will conceptualise, formally encode and make available
+in an open, structured and machine-readable format data about public procurement, covering
+it from end to end, i.e. from notification, through tendering to awarding, ordering,
+invoicing and payment. With this goal in mind the OP engaged a Working Group (WG) of
+experts with the mission of building consensus on the analysis results and deliverables
+developed by the OP’s teams.
+
+
+Specifically, ePO describes a set of concepts and their relations. ePO concepts can be:
+Classes (objects).
+Class hierarchies and dependencies.
+Roles, attributes, properties, relationships, and actions.
+
+
 == The ePO modules
 
 == The ePO conceptual model

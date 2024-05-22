@@ -6,21 +6,21 @@
 
 * xref:epo-home::index.adoc[Home]
 
-* [.separated]#**General Documentation**#
-* xref:EPO::business.adoc[Business Overview]
-* xref:epo-home::stories.adoc[User Stories and Natural Language Statements]
-** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
-** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
+* xref:EPO::guide.adoc[ePO Guide]
 * xref:EPO::conceptual.adoc[Conceptual Models]
 * xref:EPO::glossaries.adoc[Glossaries]
 * xref:EPO::release-notes.adoc[Release Notes]
+* SPARQL EndPoint
 
-* [.separated]#**Reference Documentation**#
+* [.separated]#**Reference Documents**#
+
 * xref:epo-home::methodology2024.adoc[Methodology]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
-* xref:epo-home::governance.adoc[ePO Governance]
+* xref:epo-home::stories.adoc[User Stories and Natural Language Statements]
+** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
+** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
+* xref:epo-home::governance.adoc[Governance]
 * xref:epo-home::history.adoc[History and Future Plans]
-* xref:epo-home::references.adoc[Other Reference Documents]
 
 * [.separated]#**Working Group Documents**#
 * xref:epo-wgm::wider.adoc[Quarterly Meetings]
