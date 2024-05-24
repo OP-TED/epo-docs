@@ -1,0 +1,118 @@
+== Working Group meeting
+
+*Date*: 21/05/2024    +
+*Participants:*  Peter Borresen, Ioannis Fountoukidis, Natalie Muric, Giovanni Paolo Sellitto, Dragos Stoica   +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
+=== Agenda
+
+* eFulfillment
+* Enquire about the validity of the epo-ful:DespatchAdvice concept definition
+
+=== Discussion
+
+* It was confirmed that the epo-ful:DespatchAdvice concept definition is valid.
+
+
+* The following definitions of eFulfilment concepts were added or updated
+
+Classes:
+
+
+|===
+|*epo-ful:DespatchLine* |Details concerning the fulfilment of an Order Line.
+
+WG approval 21/05/2024 |
+
+|*epo-ful:FreightForwarder* |The Role of an Agent who organise the logistic operations need for a fulfilment.
+
+WG approval 21/05/2024 |
+|*epo-ful:GoodsItem* |An Item including its initial packaging during transportation. Additional information: For example, the Item being bought is the computer. The weight of the computer is X. The weight of the Goods Item is the weight of the computer plus the weight of the initial packaging. During transportation you have for example trace ID which is applied to the GoodsItem, rather than on the Item itself. The declared statistical value can only apply once you have a GoodsItem. WG approval 30/03/2023 |
+|*epo-ful:Notifier* |+++<s>+++The party to be notified upon arrival of goods and when special occurrences (usually pre-defined) take place during a transportation service. (UBL)+++</s>+++ |This class was wrongly named and has been replaced by epo-ful:NotificationReceiver. It will be removed in the next major release.
+|*epo-ful:ShipmentAgreement* |+++<s>+++The Commercial Agreement between the Commercial Parties. Additional Information: It describes items being shipped. What is being moved.+++</s>+++ |The commercial agreement between the Buyer and the Seller.
+
+Additional Information:
+The Shipment Agreement describes the items being shipped.
+
+WG approval 21/05/2024
+
+|*epo-ful:ShipmentInformation* |+++<s>+++The Transportation of an identifiable collection of Goods Items from one party (the Despatch Party) to another party (the Consignee) via one or more modes of transport. Addition Information This represents the "where" and "when".+++</s>+++ |Information about the transportation of an identifiable collection of Goods Items from the Despatcher to the Consignee.
+
+WG approval 21/05/2024
+|*epo-ful:ShipmentStage* |Part of the itinerary of a shipment.
+
+Additional information:
+In the context of fulfilment only the last part of the itinerary is taken into consideration.
+
+WG approval 21/05/2024 |
+|*epo-ful:TemperatureSpecification* |Description of the temperature requirements during shipment.
+
+WG approval 21/05/2024 |
+|*epo-ful:TransportEquipment* |Description of the apparatus used during transportation.
+
+Additional information:
+The equipment may be a container, a trailer, means of assistance to load or unload the Goods Items.
+
+WG approval 21/05/2024 |
+|*epo-ful:TransportEquipmentSeal* |Means used to ensure that the Transport Equipment is not tampered during transportation.
+
+WG approval 21/05/2025 |
+|*epo-ful:TransportMeans* |Description of a particular vehicle or vessel used for the conveyance of goods or persons.
+
+WG approval 21/05/2024 |
+|*epo-ful:TransportMeansOperator* |The Role of an Agent who is responsible for controlling the Transport Means.
+
+WG approval 21/05/2024  |
+|*epo-ful:NotificationReceiver* |The Role of an Agent that is informed about the arrival of a Shipment at a destination.
+
+Additional information:
+This could be for example customs and excise.
+
+WG approval 21/05/2024 |this concept was newly added as an auxiliary party
+|===
+
+Attributes:
+|===
+|epo-ful:AbstractContainer |epo-ful:isReturnableMaterial |Indicates whether the container or part of the container is to be sent back.
+
+WG approval 21/05/2024 |xsd:boolean [0..1]
+
+|epo-ful:AbstractContainer |epo-ful:isHazardousRisk |Indicates whether some of the contained Goods Items are hazardous.
+
+WG approval 21/05/2024 |xsd:boolean [0..1]
+|epo-ful:ShipmentStage | | |
+|epo-ful:Consignment | | |
+|epo-ful:Consignment |epo-ful:hasSpecialServiceInstruction |Description about special services needed for loading or unloading the Goods Items.
+
+WG approval 21/05/2024  |rdf:PlainLiteral [0..*]
+|===
+
+
+
+* The following Cardinalities of eFulfilment concepts were updated
+** epo-full:refersToOrderLine Cardinality changed to 1-1.
+
+
+* The following concepts were created. To be added to the next ePO release.
+** Class epo-full:NotificationReceiver
+** Property epo:specifiesNotificationReceiver
+
+
+
+== Action Points
+
+
+* Create a github ticket to remove epo-ful:Notifier. We do not need this concept because we have the epo:FreightForwarder responsible . It will be removed in the next major release.
+* Create a github ticket to remove epo-ful:isHazardousRisk after confirmation from the WG
+because it is covered at the level of consignment. If it is to be removed.  It will be removed in the next major release.
+
+
+
+* Create a ticket to remove the following attributes from  epo-ful:Consignment.
+** epo-ful:hasCarrierServiceInstruction attribute should be removed from epo-ful:Consignment.
+** epo-ful:hasDeliveryInstruction attribute should be removed from epo-ful:Consignment.
+** epo-ful:hasSpecialInstruction attribute should be removed from epo-ful:Consignment.
+
+
+
