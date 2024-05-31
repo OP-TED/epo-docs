@@ -21,7 +21,7 @@ This document is a guide to how the eProcurement Ontology can be used.
 
 == Introduction
 
-The ePO Ontology describes the data used in the EU public procurement process and is a
+The ePO Ontology is a structure knowledge model that describes the data used in the EU public procurement process and is a
 semantic data specification. The ultimate objective of the ontology is to put forth a
 commonly agreed OWL ontology that will conceptualise, formally encode and make available
 in an open, structured and machine-readable format data about public procurement, covering
@@ -37,13 +37,66 @@ Class hierarchies and dependencies.
 Roles, attributes, properties, relationships, and actions.
 
 
-== The ePO modules
 
 == The ePO conceptual model
 
 === UML diagrams
+
+In this chapter, we describe the UML diagrams that represent the conceptual model of the Ontology.
+
+
 ==== What is UML
-==== Ontology Representation
+
+Unified Modeling Language (UML) is a standardized visual language used to describe, specify, design, and document
+the structure, relationships, and behaviors within a knowledge domain. Although originally designed to model software,
+It can also be used for business modeling as well as Ontology modeling.
+
+
+==== Classes and Attributes:
+
+Figure 1 below depicts  a Class in the Ontology.
+A Class represents a category or a type of entities within a domain. It is a collection of objects that share common
+characteristics or properties. A Class can be thought of as blueprint  with specifications that an individual
+must cover in order to be a member of that Class. Individuals that uphold these specifications.
+are called _Instances_.
+
+Figure 1 specifically represents the Class epo:ReviewRequest. The prefix _epo_ specifies the actual ontology that this
+Class was created from. In this particular case, _epo_  signifies that ReviewRequest is a member of the ePO core module.
+
+
+Underneath the Class, one can see its  _Datatype properties_, commonly referred to as _Attributes_.
+Each Attribute Specifies a  constant, which indicates the data type of the value that an object can hold. Each Attribute
+also has a prefix, a written definition describing it, (not seen in the picture), and a cardinality. A cardinality
+specifies the minimum and maximum number of values that an attribute can have.
+
+For example, Attribute epo:hasNumberOfReviewRequests is a constant of type integer (it can take the value of any integer),
+while Attribute:is Withdrawn is of type boolean ()
+
+
+image::docUpdateImages/UML/class.png[]
+__ Figure 1: UML visual notation for Class epo:ReviewRequest
+__
+
+
+
+
+
+
+
+
+==== Data types and enumerations:
+
+
+
+
+==== Association, generalisation, and dependency:
+
+.Figure 3: UML visual notation for association, generalisation, and dependency
+
+Figure 3 depicts association, generalisation and dependency connectors as the only
+ones necessary to model the eProcurement conceptual model.
+
+
 ==== Conceptual model usage (HTML)
 ==== Enterprise Architect usage
 ==== Examples
