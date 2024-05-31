@@ -69,24 +69,19 @@ Each Attribute Specifies a  constant, which indicates the data type of the value
 also has a prefix, a written definition describing it, (not seen in the picture), and a cardinality. A cardinality
 specifies the minimum and maximum number of values that an attribute can have.
 
-For example, Attribute epo:hasNumberOfReviewRequests is a constant of type integer (it can take the value of any integer),
-while Attribute:is Withdrawn is of type boolean ()
+For example:
 
+* Attribute _epo:hasNumberOfReviewRequests_ is a constant of type integer (it can take the value of any integer).
+
+* Attribute _epo:isWithdrawn_ is of type boolean (It can only take the values of _truth_ or _false_), and has a cardinality
+of [0..1] (this attribute can only have 1 or 0 values).
 
 image::docUpdateImages/UML/class.png[]
 __ Figure 1: UML visual notation for Class epo:ReviewRequest
 __
 
 
-
-
-
-
-
-
 ==== Data types and enumerations:
-
-
 
 
 ==== Association, generalisation, and dependency:
@@ -95,6 +90,9 @@ __
 
 Figure 3 depicts association, generalisation and dependency connectors as the only
 ones necessary to model the eProcurement conceptual model.
+
+
+
 
 
 ==== Conceptual model usage (HTML)
