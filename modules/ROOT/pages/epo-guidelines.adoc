@@ -1,10 +1,10 @@
 == *eProcurement Ontology guidelines*
 
 //2017-08-03
-xref:epo-home::specification.adoc[Specification of the process and methodology]
+xref:epo-home:specification.adoc[Specification of the process and methodology]
 
 //2017-08-03
-xref:epo-home::charter.adoc[Project charter proposal]
+xref:epo-home:charter.adoc[Project charter proposal]
 
 //2016-09-20
-xref:epo-home::landscaping.adoc[Landscaping document]
+xref:epo-home:landscaping.adoc[Landscaping document]
