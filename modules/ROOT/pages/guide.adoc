@@ -61,12 +61,13 @@ must cover in order to be a member of that Class. Individuals that uphold these 
 are called _Instances_.
 
 Figure 1 specifically represents the Class epo:ReviewRequest. The prefix _epo_ specifies the actual ontology that this
-Class was created from. In this particular case, _epo_  signifies that ReviewRequest is a member of the ePO core module.
+Class was created from. In this particular case, _epo_ signifies that ReviewRequest is a member of the ePO core module.
 
 
 Underneath the Class, one can see its  _Datatype properties_, commonly referred to as _Attributes_.
-Each Attribute Specifies a  constant, which indicates the data type of the value that an object can hold. Each Attribute
-also has a prefix, a written definition describing it, (not seen in the picture), and a cardinality. A cardinality
+Each Attribute Specifies a  constant, which indicates the data type of the value that an object can hold (for example a
+type of number, a type of text, a representation of time, wether a statement is true or false,etc). Each Attribute
+also has a prefix, a definition describing it (not seen in the picture), and a cardinality. A cardinality
 specifies the minimum and maximum number of values that an attribute can have.
 
 For example:
@@ -76,12 +77,22 @@ For example:
 * Attribute _epo:isWithdrawn_ is of type boolean (It can only take the values of _truth_ or _false_), and has a cardinality
 of [0..1] (this attribute can only have 1 or 0 values).
 
-image::docUpdateImages/UML/class.png[]
+image::docUpdateImages/UML/figure1.png[]
 __ Figure 1: UML visual notation for Class epo:ReviewRequest
 __
 
 
-==== Data types and enumerations:
+
+==== Data types
+
+The datatypes that are currently used in EPO (EPO 4.1.0) are the following:
+
+image::docUpdateImages/UML/figure2.png[]
+__ Figure 2: UML visual notation for Datatypes of the Ontology.
+__
+
+
+
 
 
 ==== Association, generalisation, and dependency:

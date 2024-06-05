@@ -12,15 +12,17 @@ ePO is a tool that conceptualizes and formally encodes structured data about pub
 
 
 [underline]#Where to start from:#
-xref:epo-home::guide.adoc[User's Guide to ePO]
+
+* Introductory course on EPO
+* xref:epo-home::guide.adoc[User's Guide to ePO]
 
 The following topics are included in this version of the eProcurement Ontology documentation:
 
 
 == General Documentation
 
-* xref:EPO::business.adoc[Business Overview] +
-A short Business Overview of the ePO project
+* xref:epo-home::guide.adoc[User's Guide to ePO] +
+A short user's guide of the ePO project
 * xref:EPO::conceptual.adoc[Conceptual Models] +
 The release specific conceptual Model(s) of the ontology.
 * xref:EPO::glossaries.adoc[Glossaries] +
