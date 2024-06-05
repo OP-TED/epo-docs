@@ -91,21 +91,26 @@ image::docUpdateImages/UML/figure2.png[]
 __ Figure 2: UML visual notation for Datatypes of the Ontology.
 __
 
-* TODO: what are URIs?
-* TODO: what is literal?
-* TODO: Difference between date and time?
+* The prefix XSD (XML Schema Definition) specifies how to formally describe the elements in an Extensible Markup Language
+document (XML). EPO makes use of the data types that are shown in Figure 2.
+* Plain Literals represent text and can also include a language tag indicating the language of that specific text.
 
+* URI (short for Uniform Resource Identifier) is a character sequence that identifies a logical or physical resource
+that is usually, connected to the internet. URLs (web addresses) are the most common URIs.
 
+* Decimals are numbers that consists of a whole and a fractional part, while integers represent whole numbers.
 
+* Date is used to represent a certain date, while dateTime is used to represent a certain time point during a day.
+
+* Boolean is used to represent 2 possible values, usually "true" and "false".
 
 
 ==== Associations: Predicates (Object properties), Class generalisations and dependency relationships
 
 There are 3 types of associations between the various concepts of ePO:
 
-* Predicates
-
-
+* Predicates (or object Properties) drawn in UML as arrows are used to represent relations between 2 classes.
+For example, Figure 3 ...
 
 
 image::docUpdateImages/UML/figure3.png[]
@@ -113,10 +118,9 @@ __ Figure 3: Object Property epo:playedBy
 __
 
 
-.Figure 3: UML visual notation for association, generalisation, and dependency
+* Class generalisations
+* Dependency relationships.
 
-Figure 3 depicts association, generalisation and dependency connectors as the only
-ones necessary to model the eProcurement conceptual model.
 
 ==== Controlled vocabularies
 
