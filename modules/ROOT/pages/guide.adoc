@@ -72,7 +72,7 @@ specifies the minimum and maximum number of values that an attribute can have.
 
 For example:
 
-* Attribute _epo:hasNumberOfReviewRequests_ is a constant of type integer (it can take the value of any integer).
+* Attribute _epo:hasNumberOfReviewRequests_ is a constant of type integer (it can take the value of any integer number).
 
 * Attribute _epo:isWithdrawn_ is of type boolean (It can only take the values of _truth_ or _false_), and has a cardinality
 of [0..1] (this attribute can only have 1 or 0 values).
@@ -91,23 +91,39 @@ image::docUpdateImages/UML/figure2.png[]
 __ Figure 2: UML visual notation for Datatypes of the Ontology.
 __
 
+* TODO: what are URIs?
+* TODO: what is literal?
+* TODO: Difference between date and time?
 
 
 
 
-==== Association, generalisation, and dependency:
+
+==== Associations: Predicates (Object properties), Class generalisations and dependency relationships
+
+There are 3 types of associations between the various concepts of ePO:
+
+* Predicates
+
+
+
+
+image::docUpdateImages/UML/figure3.png[]
+__ Figure 3: Object Property epo:playedBy
+__
+
 
 .Figure 3: UML visual notation for association, generalisation, and dependency
 
 Figure 3 depicts association, generalisation and dependency connectors as the only
 ones necessary to model the eProcurement conceptual model.
 
-
+==== Controlled vocabularies
 
 
 
 ==== Conceptual model usage (HTML)
-==== Enterprise Architect usage
+
 ==== Examples
 
 === Glossaries
