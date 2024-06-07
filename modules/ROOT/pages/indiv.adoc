@@ -35,6 +35,9 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2024]
 === 2024
 
+xref:notes/2024-06-06-wgm.adoc[2024-06-06 (eInvoicing)]
+
+xref:notes/2024-05-30-wgm.adoc[2024-05-30 (eInvoicing)]
 
 xref:notes/2024-05-23-wgm.adoc[2024-05-23 (eInvoicing)]
 
