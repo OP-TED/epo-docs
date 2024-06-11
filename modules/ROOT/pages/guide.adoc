@@ -45,14 +45,14 @@ Roles, attributes, properties, relationships, and actions.
 In this chapter, we describe the UML diagrams that represent the conceptual model of the Ontology.
 
 
-==== What is UML
+==== Understanding  UML
 
 Unified Modeling Language (UML) is a standardized visual language used to describe, specify, design, and document
 the structure, relationships, and behaviors within a knowledge domain. Although originally designed to model software,
 It can also be used for business modeling as well as Ontology modeling.
 
 
-==== Classes and Attributes:
+===== Classes and Attributes:
 
 Figure 1 below depicts  a Class in the Ontology.
 A Class represents a category or a type of entities within a domain. It is a collection of objects that share common
@@ -83,7 +83,7 @@ __
 
 
 
-==== Data types
+===== Data types
 
 The datatypes that are currently used in EPO (EPO 4.1.0) are the following:
 
@@ -105,7 +105,7 @@ that usually connected to the internet. URLs (web addresses) are the most common
 * Boolean is used to represent 2 possible values, usually "true" and "false".
 
 
-==== Associations: Predicates (Object properties), Class generalisations and dependency relationships
+===== Associations: Predicates (Object properties), Class generalisations and dependency relationships
 
 There are 3 types of associations between the various concepts of ePO:
 
@@ -115,27 +115,55 @@ predicate should be read as: "AgentInRole playedBy Agent". Also note that The ca
 that each instance of epo:AgentInRole must be played by exactly 1 instance of foaf:Agent.
 
 
-
 image::docUpdateImages/UML/figure3.png[]
 __ Figure 3: Object Property epo:playedBy
 __
 
 
-* Class generalisations
-
+* Class generalizations / specializations drawn in UML as arrows with a triangle on top, are similar to the Inheritance
+concept of object-oriented programming (OOP). Class generalizations are used to define classes that represent similar
+concepts with other existing classes, with the only difference being a number of extra attributes or predicates.
+Each class can have many specializations (incoming arrows) but only one generalization (outgoing arrow). For example,
+in Figure 4, org:Organization is a specialization of foaf:Agent, and foaf:Agent is a generalization of org:Organization.
+org:Organization inherits all attributes and predicates of foaf:Agent (such as dct:title), and on top of that, has a number
+of predicates that are unique to that class, such as attribute epo:hasMainActivityDescription.
 
 image::docUpdateImages/UML/figure4.png[]
 __ Figure 4: foaf:Agent is the generalisation of org:Organization
 __
 
-* Dependency relationships.
+* Dependency relationships, drawn in UML as dashed lines, are predicates that connect a Class with an enumeration. For
+example, in figure 5, vocabulary at-voc:country is connected to Class person:Person by dependencies epo:hasNationality
+and epo:hasCountryOfBirth. The distinction between predicates and dependencies exists for 2 reasons:
+** Unlike a class, an enumeration cannot exist alone in an Ontology, but requires a connection to a Class.
+** Enumerations contain vocabularies that exist outside of the Ontology and are not maintained by EPO.
 
+image::docUpdateImages/UML/figure5.png[]
+__ Figure 5: foaf:Agent is the generalisation of org:Organization
+__
 
-==== Controlled vocabularies
-
+===== Controlled vocabularies
+Controlled Vocabularies, also known as taxonomies, are controlled lists of terms used by the Ontology. All controlled
+vocabularies in the Ontology, use the prefix __ at:voc __ .
+For example, a Controlled vocabulary could be a list of countries (at:voc:country) or  a set of time periods (at-voc:timeperiod)
 
 
 ==== Conceptual model usage (HTML)
+
+* The conceptual model of the Ontology can be found https://docs.ted.europa.eu/EPO/latest/conceptual.html[here]
+
+* As of EPO version 4.1.0-rc2,  The Conceptual model can be viewed either as an HTML page, or in its original form in an
+Enterprise Architect file (*.EA).
+
+* As seen in Figure 6, the conceptual model consists of modules, where each module represents a specific part of the
+procurement process.
+
+* In this guide, we are going to focus on the main part of the ontology, __ePO core__ .
+
+image::docUpdateImages/UML/figure6.png[]
+__ Figure 6: The Conceptual model website. Note the version selector on the top right.
+__
+
 
 ==== Examples
 
