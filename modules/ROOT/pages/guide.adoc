@@ -211,14 +211,26 @@ image::docUpdateImages/UML/Conceptual model queries/q1e.png[]
 __ Figure q1e: On the "award decision outcome relations" diagram  we can see that there is a connection from epo:Tender
 to epo:Winner through epo:TenderAwardOutcome __
 
-* As we can see in figure q1f, (role hierarchy diagram) epo:Winner is a specialization of epo:OfferingParty, which in turn is a specialization
-of epo:AgentInRole.
+* As we can see in figure q1f, (role hierarchy diagram) epo:Winner is a specialization of epo:OfferingParty, which in turn
+is a specialization of epo:AgentInRole.
 
 image::docUpdateImages/UML/Conceptual model queries/q1f.png[]
 __ Figure q1f: Generalization of the epo:Winner role on the "role hierarchy diagram" __
 
+
+* As seen on figure q1g, epo:AgentInRole is played by an agent of class foaf:Agent, which is a generalization of
+org:Organization class which in turn is a generalization of class epo:Business. Here, in order to find the size of
+the business, we use the epo:hasBusinessSize dependency to access the at-voc:economic-operator-size codeList.
+This list provides the different categories in which the Tenderers to whom a Contract can be awarded are classified,
+according to their size (using as Criteria the number of employees).
+
+
 image::docUpdateImages/UML/Conceptual model queries/q1g.png[]
-__ Figure q1g:  __
+__ Figure q1g: Connection from epo:Agent InRole to org:Organization and epo:Business classes on the "agent relations" diagram  __
+
+
+* Finally, in order to find the country of the Business, we go back to the org:Organization class, and look at the location
+diagram (figure q1h). We
 
 image::docUpdateImages/UML/Conceptual model queries/q1h.png[]
 __ Figure q1h:  __
