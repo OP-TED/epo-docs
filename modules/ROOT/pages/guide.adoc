@@ -230,10 +230,12 @@ __ Figure q1g: Connection from epo:Agent InRole to org:Organization and epo:Busi
 
 
 * Finally, in order to find the country of the Business, we go back to the org:Organization class, and look at the location
-diagram (figure q1h). We
+diagram (figure q1h). There are 2 ways to access the country: The first is the locn:adminUnitL1 attribute of locn:Address,
+and the second is to use the codelist at:voc:country, which is linked to locn:Address through the epo:hasCountryCode
+dependency.
 
 image::docUpdateImages/UML/Conceptual model queries/q1h.png[]
-__ Figure q1h:  __
+__ Figure q1h: Connection from org:Organization to at-voc:country via the Location diagram  __
 
 
 
