@@ -148,15 +148,14 @@ vocabularies in the Ontology, use the prefix __ at:voc __ .
 For example, a Controlled vocabulary could be a list of countries (at:voc:country) or  a set of time periods (at-voc:timeperiod)
 
 
-===== Conceptual model usage (HTML)
+=== Conceptual model usage (HTML)
 
 * The conceptual model of the Ontology can be found https://docs.ted.europa.eu/EPO/latest/conceptual.html[here]
 
 * As of EPO version 4.1.0-rc2,  The Conceptual model can be viewed either as an HTML page, or in its original form in an
 Enterprise Architect file (*.EA).
 
-* As seen in Figure 6, the conceptual model consists of modules, where each module represents a specific part of the
-procurement process.
+* As seen in Figure 6, the conceptual model consists of modules, where each module represents a specific part of the procurement process.
 
 * In this guide, we are going to focus on the main part of the ontology, __ePO core__ .
 
@@ -164,7 +163,26 @@ image::docUpdateImages/UML/figure6.png[]
 __ Figure 6: The Conceptual model website. Note the version selector on the top right.
 __
 
-HERE EXPLAIN HOW TO NAVIGATE THE HTML FILES. GIVE COMPREHENSIVE EXAMPLES
+
+In figure 7, we see the epo core HTML conceptual model menu .
+
+* On the right, there is a collection of diagrams that can provide an
+overview of the Ontology, such as the diagrams for the different procurement phases and diagrams about monetary values.
+
+* On the left, the file structure of the conceptual model can be browsed. Specifically the following files and folders exist:
+
+**  epo overview diagram that offers an outline of the ontology.
+**  The diagrams folder that contains all diagrams in a hierarchical structure.
+** The classes folder that contains a list of all the classes in the module.
+** The empirical types folder that contains utility classes that the ontology uses as well as a diagram depicting them.
+**  The controlled vocabularies folder containing all the vocabularies used in the module.
+**  The datatype folder that contains all datatypes that the ontology uses, also described on the <<Data types>> section of the guide.
+
+
+image::docUpdateImages/UML/figure7.png[]
+__ Figure 7: The Conceptual model menu.
+__
+
 
 
 ==== Examples
@@ -177,7 +195,7 @@ Lets translate that question to a query that aims to connect the buyer with the 
 outcome, who was awarded that lot.
 
 Specifically, in order to find this query we need to connect the name of the buyer with the  Lot,
-and then find the name of the winner of the tender award outcome.
+and then find the winner of the tender award outcome.
 
 * First we need to locate the Buyer class in epo core conceptual model (Fig.A1).
 
@@ -198,6 +216,16 @@ award decision outcome relations diagram (A3).
 
 image::docUpdateImages/UML/Conceptual model queries/qa3.png[]
 __ Figure A3: Connection from epo:Buyer to epo:Lot using the award decision outcome relations diagram
+__
+
+* Now we need to find a connection between epo:Winner and one of the concepts we already visited. As seen in figure A4,
+there are 2 connections to epo:Winner from the classes we already visited on the the award decision outcome relations
+diagram
+
+image::docUpdateImages/UML/Conceptual model queries/qa4.png[]
+__ Figure A4: We can connect to the epo:Winner class from epo:Lot via the epo:Tender and epo:TenderAwardOutcome classes or from
+epo:AwardOutcome through the class epo:TenderAwardOutcome.
+
 __
 
 ===== Query B: How many contractors are SMEs for a given country and given date ?
@@ -272,6 +300,8 @@ __ Figure b8: Connection from org:Organization to at-voc:country via the Locatio
 === Glossaries
 ==== Glossaries overview
 ==== Examples
+
+=== Best practices (How to use the glossaries combined with the Conceptual model)
 
 == The ePO Implemetation
 
