@@ -183,6 +183,11 @@ image::docUpdateImages/UML/figure7.png[]
 __ Figure 7: The Conceptual model menu.
 __
 
+==== Diagrams of note
+
+==== Browsing Classes
+
+
 
 
 ==== Examples
