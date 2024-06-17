@@ -61,24 +61,16 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 |epo:canProvideNonDiscriminatoryEvidence | org:Organization -> cccev:Evidence [0..*]
 |epo:canProvideTaxAndSocialSecuritiesEvidence | org:Organization -> cccev:Evidence [0..*]
 |epo:includesNationalCriterion |epo:QualificationCriterion -> epo:QualificationCriterion [0..*]
-|epo:isReinforcedBy |
-|epo:isSupportedBy |
-|epo:providesInformationOn |
-|epo:providesOrganisationEmployeeQuantity |
-|epo:providesOrganisationFinancialCapability |
-|epo:providesOrganisationPreQualificationListingIdentifier |
-|epo:refersToApplicablePeriod |
-|epo:summarisesInformationAboutCertificate |
-|eli:uri_schema |
-|cccev:hasConcept |
-|cccev:hasEvidenceTypeList |
-|cccev:isDerivedFrom |
-|cccev:providesValueFor |
-|cccev:supportsValue |
-|cccev:validityPeriodConstraint |
-|dct:conformsTo |
-|dct:language |
+|cccev:hasConcept | cccev:Requirement -> cccev:InformationConcept [0..*]
 |===
+
+=== Modified Object Properties
+|===
+|*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
+|epo:attestedByLabel |epo:Certificate -> epo:CertificationLabel [1]|epo:Certificate -> epo:CertificationLabel [0..1]
+|===
+
+
 
 === Deleted subPropertyOf
 |===
@@ -89,9 +81,16 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 
 === Added Datatype Properties
 |===
-|*Property*
-|epo:hasSMEReceivedTendersExcludingSubcontractors
+|*Property* | *Class* | *datatype/cardinality*
+|epo:hasAdditionalInformation |epo:ProcurementCriterion | rdf:PlainLiteral [0..1]
+|epo:hasSMEReceivedTendersExcludingSubcontractors|epo:SubmissionStatisticalInformation|xsd:integer [0..1]
 |===
+
+=== Modified Datatype Properties
+|===
+|*Property* | *Class* | *old datatype/cardinality* | *new datatype/cardinality*
+|===
+
 
 == eCatalogue
 
