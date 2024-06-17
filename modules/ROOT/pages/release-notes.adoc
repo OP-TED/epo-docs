@@ -57,37 +57,27 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 
 === Added Object Properties
 |===
-|*property*
-|epo:answersExclusionGround
-|epo:answersQuestion
-|epo:answersSelectionCriteria
-|epo:canProvideNonDiscriminatoryEvidence
-|epo:canProvideTaxAndSocialSecuritiesEvidence
-|epo:concernsOrganisation
-|epo:hasAssociatedDocument
-|epo:hasOversupplyQuantity
-|epo:hasReceivedQuantity
-|epo:hasRejectedQuantity
-|epo:hasSellerOrderID
-|epo:hasShortQuantity
-|epo:includesNationalCriterion
-|epo:isReinforcedBy
-|epo:isSupportedBy
-|epo:providesInformationOn
-|epo:providesOrganisationEmployeeQuantity
-|epo:providesOrganisationFinancialCapability
-|epo:providesOrganisationPreQualificationListingIdentifier
-|epo:refersToApplicablePeriod
-|epo:summarisesInformationAboutCertificate
-|eli:uri_schema
-|cccev:hasConcept
-|cccev:hasEvidenceTypeList
-|cccev:isDerivedFrom
-|cccev:providesValueFor
-|cccev:supportsValue
-|cccev:validityPeriodConstraint
-|dct:conformsTo
-|dct:language
+|*property* | *Domain, Range and cardinality*
+|epo:canProvideNonDiscriminatoryEvidence | org:Organization -> cccev:Evidence [0..*]
+|epo:canProvideTaxAndSocialSecuritiesEvidence | org:Organization -> cccev:Evidence [0..*]
+|epo:includesNationalCriterion |epo:QualificationCriterion -> epo:QualificationCriterion [0..*]
+|epo:isReinforcedBy |
+|epo:isSupportedBy |
+|epo:providesInformationOn |
+|epo:providesOrganisationEmployeeQuantity |
+|epo:providesOrganisationFinancialCapability |
+|epo:providesOrganisationPreQualificationListingIdentifier |
+|epo:refersToApplicablePeriod |
+|epo:summarisesInformationAboutCertificate |
+|eli:uri_schema |
+|cccev:hasConcept |
+|cccev:hasEvidenceTypeList |
+|cccev:isDerivedFrom |
+|cccev:providesValueFor |
+|cccev:supportsValue |
+|cccev:validityPeriodConstraint |
+|dct:conformsTo |
+|dct:language |
 |===
 
 === Deleted subPropertyOf
@@ -173,8 +163,9 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 
 === Added Object Properties
 |===
-|*property*
-|epo-ord:hasSellerOrderID
+|*property* | *Domain, Range and cardinality*
+|epo-ord:hasSellerOrderID | epo-ord:Order -> adms:Identifier (external) [0..1]
+
 |===
 
 == eFulfilment
@@ -211,21 +202,22 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 
 === Added Object Properties
 |===
-|*property*
-|epo:RejectionAction
-|epo:comprisesReceiptAdviceLine
-|epo:foreseesPackage
-|epo:hasOversupplyQuantity
-|epo:hasReceivedQuantity
-|epo:hasRejectReason
-|epo:hasRejectedQuantity
-|epo:hasShortQuantity
-|epo:hasShortageAction
-|epo:isSubmittedForDespatchAdvice
-|epo:isSubmittedForDespatchLine
-|epo:isSubmittedForShipment
-|epo:specifiesBuyer
-|epo:specifiesSeller
+|*property* | *Domain, Range and cardinality*
+|epo-ful:hasAssociatedDocument | epo-ful:ReceiptAdvice -> epo:Document (external) [0..1]
+|epo:RejectionAction|
+|epo:comprisesReceiptAdviceLine|
+|epo:foreseesPackage|
+|epo-ful:hasOversupplyQuantity | epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
+|epo-ful:hasReceivedQuantity | epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
+|epo:hasRejectReason|
+|epo:hasRejectedQuantity | epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
+|epo-ful:hasShortQuantity| epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
+|epo:hasShortageAction|
+|epo:isSubmittedForDespatchAdvice|
+|epo:isSubmittedForDespatchLine|
+|epo:isSubmittedForShipment|
+|epo:specifiesBuyer|
+|epo:specifiesSeller|
 |===
 
 == eContract
