@@ -134,20 +134,26 @@ epo:hasCertificationNumber|epo:Certificate|rdf:PlainLiteral [1..1]|rdf:PlainLite
 
 === Added Object Properties
 |===
-|*property*
-|epo:comprisesCatalogueResponseLine
-|epo:foreseesPackage
-|epo:hasAcceptanceStatus
-|epo:hasUUID
-|epo:hasValidityPeriod
-|epo:isSpecificToCatalogueResponseLine
-|epo:specifiesCatalogueResponseInformation
+|*property* | *Domain, Range and cardinality*
+|epo:comprisesCatalogueResponseLine|epo-cat:CatalogueResponse -> epo-cat:CatalogueResponseLine [0..*]
+|epo-cat:foreseesPackage|epo-cat:CatalogueLine -> epo-ful:Package (external) [0..1]
+|epo-cat:isSpecificToCatalogueResponseLine|epo-cat:CatalogueResponseInformation -> epo-cat:CatalogueResponseLine [0..1]
+|epo-cat:refersToCatalogue|epo-cat:CatalogueResponse -> epo-cat:Catalogue [1]
+|epo-cat:refersToCatalogueLine|epo-cat:CatalogueResponseLine -> epo-cat:CatalogueLine [1]
+|epo-cat:specifiesCatalogueResponseInformation|epo-cat:CatalogueResponse -> epo-cat:CatalogueResponseInformation [1]
+|epo-ord:hasAcceptanceStatus|epo-cat:CatalogueResponseInformation -> at-voc-new:ResponseStatus (external) [1]
+|epo:hasUUID|epo-cat:CatalogueResponseLine -> adms:Identifier (external) [1]
+|epo:hasValidityPeriod|epo-cat:Catalogue -> epo:Period (external) [0..1]
+|epo:specifiesCatalogueProvider|epo-cat:CatalogueResponse -> epo:CatalogueProvider (external) [1]
+|epo:specifiesCatalogueReceiver|epo-cat:CatalogueResponse -> epo:CatalogueReceiver (external) [1]
 |===
 
 === Deleted Object Properties
 |===
-|*Property*
-|epo-cat:hasAssociatedDocument
+|*Property*| *Domain, Range and cardinality*
+|epo-ful:hasAssociatedDocument	|epo-ful:DespatchAdvice (external) -> epo-cat:PostAwardDocument [0..1]
+     epo-ful:DespatchLine (external) -> epo-cat:PostAwardDocument [0..1]
+
 |===
 
 == eOrdering
