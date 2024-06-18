@@ -178,7 +178,9 @@ epo:hasCertificationNumber|epo:Certificate|rdf:PlainLiteral [1..1]|rdf:PlainLite
 |===
 |*property* | *Domain, Range and cardinality*
 |epo-ord:hasSellerOrderID | epo-ord:Order -> adms:Identifier (external) [0..1]
-
+|epo-ful:specifiesConsignee|epo-ful:ReceiptAdvice (external) -> epo-ord:Consignee [1..*]
+|epo-ful:specifiesSeller|epo-ful:ReceiptAdvice (external) -> epo-ord:Seller [0..1]
+|epo-ord:hasAcceptanceStatus|epo-cat:CatalogueResponseInformation (external) -> at-voc-new:ResponseStatus [1]
 |===
 
 == eFulfilment
