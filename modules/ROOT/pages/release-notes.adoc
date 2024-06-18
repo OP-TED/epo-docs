@@ -58,25 +58,22 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 === Added Object Properties
 |===
 |*property* | *Domain, Range and cardinality*
+|adms:identifier|cccev:Evidence -> adms:Identifier [1]
 |epo:canProvideNonDiscriminatoryEvidence | org:Organization -> cccev:Evidence [0..*]
 |epo:canProvideTaxAndSocialSecuritiesEvidence | org:Organization -> cccev:Evidence [0..*]
 |epo:includesNationalCriterion |epo:QualificationCriterion -> epo:QualificationCriterion [0..*]
 |cccev:hasConcept | cccev:Requirement -> cccev:InformationConcept [0..*]
+|epo:hasConstraint|cccev:InformationRequirement -> cccev:Constraint [0..*]
+|epo:includesNationalCriterion	|epo:QualificationCriterion -> epo:QualificationCriterion [0..*]
 |===
 
 === Modified Object Properties
 |===
 |*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
 |epo:attestedByLabel |epo:Certificate -> epo:CertificationLabel [1]|epo:Certificate -> epo:CertificationLabel [0..1]
-|===
-
-
-
-=== Deleted subPropertyOf
-|===
-| *instance* | *property* |	 *value*
-|epo:hasConstraint|	rdfs:subPropertyOf|	cccev:hasRequirement
-|epo:isResponsibilityOfBuyer|	rdfs:subPropertyOf|	epo:involvesBuyer
+|cccev:confidentialityLevelType|cccev:Evidence -> at-voc:confidentiality-level [0..1]|cccev:Evidence -> at-voc:access-rights [0..1]
+|epo:hasPrimaryContactPoint	|org:Organization -> cpov:ContactPoint [0..*]
+|org:Organization -> cpov:ContactPoint [0..1]
 |===
 
 === Added Datatype Properties
@@ -84,11 +81,22 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 |*Property* | *Class* | *datatype/cardinality*
 |epo:hasAdditionalInformation |epo:ProcurementCriterion | rdf:PlainLiteral [0..1]
 |epo:hasSMEReceivedTendersExcludingSubcontractors|epo:SubmissionStatisticalInformation|xsd:integer [0..1]
+|dct:description|cccev:Evidence|rdf:PlainLiteral [0..1]
+|epo:hasURL|cccev:Evidence|xsd:anyURI [0..1]
+|epo:hasAdditionalInformation|epo:ProcurementCriterion|rdf:PlainLiteral [0..1]
 |===
+
+=== Deleted Datatype Properties
+|===
+|*Property* | *Class* | *datatype/cardinality*
+|epo:hasURL	|epo:Certificate|xsd:anyURI [0..1]
+|===
+
 
 === Modified Datatype Properties
 |===
 |*Property* | *Class* | *old datatype/cardinality* | *new datatype/cardinality*
+epo:hasCertificationNumber|epo:Certificate|rdf:PlainLiteral [1..1]|rdf:PlainLiteral [0..1]
 |===
 
 
