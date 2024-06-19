@@ -1,0 +1,22 @@
+:doctitle: Guide to the ePO glossaries
+:author: AD
+:authoremail: achilles.dougalis@meaningfy.ws
+:docdate: June 2024
+:sectnums:
+:toc:
+:toclevels: 4
+:toc-title: Contents
+
+= Guide to the ePO glossaries
+
+:toc:
+:toc-placement: preamble
+:toclevels: 1
+:showtitle:
+
+toc::[]
+
+
+=== Glossaries
+==== Glossaries overview
+==== Examples

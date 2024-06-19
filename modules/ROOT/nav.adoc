@@ -12,7 +12,7 @@
 * xref:EPO::release-notes.adoc[Release Notes]
 * SPARQL EndPoint
 
-* [.separated]#**Reference Documents**#
+[.separated]#**Reference Documents**#
 
 * xref:epo-home::methodology2024.adoc[Methodology]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
@@ -22,7 +22,8 @@
 * xref:epo-home::governance.adoc[Governance]
 * xref:epo-home::history.adoc[History and Future Plans]
 
-* [.separated]#**Working Group Documents**#
+[.separated]#**Working Group Documents**#
+
 * xref:epo-wgm::wider.adoc[Quarterly Meetings]
 * xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)]
 * xref:epo-wgm::indiv.adoc[Individual Meeting Reports]

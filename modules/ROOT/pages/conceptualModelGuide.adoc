@@ -1,0 +1,312 @@
+:doctitle: Guide to the ePO Conceptual Model
+:author: AD
+:authoremail: achilles.dougalis@meaningfy.ws
+:docdate: June 2024
+:sectnums:
+:toc:
+:toclevels: 4
+:toc-title: Contents
+
+= Guide to the ePO Conceptual Model
+
+:toc:
+:toc-placement: preamble
+:toclevels: 1
+:showtitle:
+
+toc::[]
+
+
+== The ePO conceptual model
+
+=== UML diagrams
+
+In this Guide, we describe the UML diagrams that represent the conceptual model of the Ontology.
+
+
+==== Understanding  UML
+
+Unified Modeling Language (UML) is a standardized visual language used to describe, specify, design, and document
+the structure, relationships, and behaviors within a knowledge domain. Although originally designed to model software,
+It can also be used for business modeling as well as Ontology modeling.
+
+
+===== Classes and Attributes:
+
+Figure 1 below depicts  a Class in the Ontology.
+A Class represents a category or a type of entities within a domain. It is a collection of objects that share common
+characteristics or properties. A Class can be thought of as blueprint  with specifications that an individual
+must cover in order to be a member of that Class. Individuals that uphold these specifications.
+are called _Instances_.
+
+Figure 1 specifically represents the Class epo:ReviewRequest. The prefix _epo_ specifies the actual ontology that this
+Class was created from. In this particular case, _epo_ signifies that ReviewRequest is a member of the ePO core module.
+
+
+Underneath the Class, one can see its  _Datatype properties_, commonly referred to as _Attributes_.
+Each Attribute Specifies a  constant, which indicates the data type of the value that an object can hold (for example a
+type of number, a type of text, a representation of time, wether a statement is true or false,etc). Each Attribute
+also has a prefix, a definition describing it (not seen in the picture), and a cardinality. A cardinality
+specifies the minimum and maximum number of values that an attribute can have.
+
+For example:
+
+* Attribute _epo:hasNumberOfReviewRequests_ is a constant of type integer (it can take the value of any integer number).
+
+* Attribute _epo:isWithdrawn_ is of type boolean (It can only take the values of _truth_ or _false_), and has a cardinality
+of [0..1] (this attribute can only have 1 or 0 values).
+
+image::docUpdateImages/UML/figure1.png[]
+__ Figure 1: UML visual notation for Class epo:ReviewRequest
+__
+
+
+
+===== Data types
+
+The datatypes that are currently used in EPO (EPO 4.1.0) are the following:
+
+image::docUpdateImages/UML/figure2.png[]
+__ Figure 2: UML visual notation for Datatypes of the Ontology.
+__
+
+* The prefix XSD (XML Schema Definition) specifies how to formally describe the elements in an Extensible Markup Language
+document (XML). EPO makes use of the data types that are shown in Figure 2.
+* Plain Literals represent text and can also include a language tag indicating the language of that specific text.
+
+* URI (short for Uniform Resource Identifier) is a character sequence that identifies a logical or physical resource
+that usually connected to the internet. URLs (web addresses) are the most common URIs.
+
+* Decimals are numbers that consist of a whole and a fractional part, while integers represent whole numbers.
+
+* Date is used to represent a certain date, while dateTime is used to represent a certain time point during a day.
+
+* Boolean is used to represent 2 possible values, usually "true" and "false".
+
+
+===== Associations: Predicates (Object properties), Class generalisations and dependency relationships
+
+There are 3 types of associations between the various concepts of ePO:
+
+* Predicates (or object Properties) drawn in UML as arrows are used to represent relations between 2 classes.
+For example, Figure 3 depicts predicate epo:playedBy, that connects classes epo:AgentInRole and foaf:Agent. This specific
+predicate should be read as: "AgentInRole playedBy Agent". Also note that The cardinality of epo:playedBy is 1. This means
+that each instance of epo:AgentInRole must be played by exactly 1 instance of foaf:Agent.
+
+
+image::docUpdateImages/UML/figure3.png[]
+__ Figure 3: Object Property epo:playedBy
+__
+
+
+* Class generalizations / specializations drawn in UML as arrows with a triangle on top, are similar to the Inheritance
+concept of object-oriented programming (OOP). Class generalizations are used to define classes that represent similar
+concepts with other existing classes, with the only difference being a number of extra attributes or predicates.
+Each class can have many specializations (incoming arrows) but only one generalization (outgoing arrow). For example,
+in Figure 4, org:Organization is a specialization of foaf:Agent, and foaf:Agent is a generalization of org:Organization.
+org:Organization inherits all attributes and predicates of foaf:Agent (such as dct:title), and on top of that, has a number
+of predicates that are unique to that class, such as attribute epo:hasMainActivityDescription.
+
+image::docUpdateImages/UML/figure4.png[]
+__ Figure 4: foaf:Agent is the generalisation of org:Organization
+__
+
+* Dependency relationships, drawn in UML as dashed lines, are predicates that connect a Class with an enumeration. For
+example, in figure 5, vocabulary at-voc:country is connected to Class person:Person by dependencies epo:hasNationality
+and epo:hasCountryOfBirth. The distinction between predicates and dependencies exists for 2 reasons:
+** Unlike a class, an enumeration cannot exist alone in an Ontology, but requires a connection to a Class.
+** Enumerations contain vocabularies that exist outside of the Ontology and are not maintained by EPO.
+
+image::docUpdateImages/UML/figure5.png[]
+__ Figure 5: foaf:Agent is the generalisation of org:Organization
+__
+
+===== Controlled vocabularies
+Controlled Vocabularies, also known as taxonomies, are controlled lists of terms used by the Ontology. All controlled
+vocabularies in the Ontology, use the prefix __ at:voc __ .
+For example, a Controlled vocabulary could be a list of countries (at:voc:country) or  a set of time periods (at-voc:timeperiod)
+
+
+=== Conceptual model usage (HTML)
+
+* The conceptual model of the Ontology can be found https://docs.ted.europa.eu/EPO/latest/conceptual.html[here]
+
+* As of EPO version 4.1.0-rc2,  The Conceptual model can be viewed either as an HTML page, or in its original form in an
+Enterprise Architect file (*.EA).
+
+* As seen in Figure 6, the conceptual model consists of modules, where each module represents a specific part of the procurement process.
+
+* In this guide, we are going to focus on the main part of the ontology, __ePO core__ .
+
+image::docUpdateImages/UML/figure6.png[]
+__ Figure 6: The Conceptual model website. Note the version selector on the top right.
+__
+
+
+In figure 7, we see the epo core HTML conceptual model menu .
+
+* On the right, there is a collection of diagrams that can provide an
+overview of the Ontology, such as the diagrams for the different procurement phases and diagrams about monetary values.
+
+* On the left, the file structure of the conceptual model can be browsed. Specifically the following files and folders exist:
+
+**  epo overview diagram that offers an outline of the ontology.
+**  The diagrams folder that contains all diagrams in a hierarchical structure.
+** The classes folder that contains a list of all the classes in the module.
+** The empirical types folder that contains utility classes that the ontology uses as well as a diagram depicting them.
+**  The controlled vocabularies folder containing all the vocabularies used in the module.
+**  The datatype folder that contains all datatypes that the ontology uses, also described on the <<Data types>> section of the guide.
+
+
+image::docUpdateImages/UML/figure7.png[]
+__ Figure 7: The Conceptual model menu.
+__
+
+==== Diagrams of note in ePO core
+
+===== Μain objects over time and phase oriented diagrams
+
+The Μain objects over time diagram (fig. 8) depicts the most important Classes of each procurement phase and their relations.
+The diagrams under the "phase oriented" directory (fig. 9) offer a more detailed view for each phase.
+
+image::docUpdateImages/UML/conceptualModelDiagrams/mainObjects.png[]
+[]
+__ Figure 8: The Μain objects over time diagram.
+__
+
+image::docUpdateImages/UML/figure9.png[]
+__ Figure 9: The Planning diagram under the "phase oriented" directory.
+__
+
+===== Agent hierarchy and agent relations  diagrams
+
+As seen in figure 10, An epo:Agent can either be a person (foaf:Person) an organization (org:Organization) or a system (epo:system). Classes foaf:Person and org:Organization are themselves generalizations of more specific concepts. The prefixes foaf and org signify that these classes were reused by ePO from other ontologies and taxonomies.
+Also, on the left of the diagram we see the directory tree containing the other diagrams of the ontology. Each directory follows more or less the same format. There is one or more key concepts for that directory, agent for example and for each concept there is a hierarchy diagram depicting the hierarchy of the concept, and a relations diagram depicting the concept's relationship with other classes, or vocabularies.
+
+image::docUpdateImages/UML/figure10.png[]
+__ Figure 10: The agent hierarchy diagram
+__
+
+==== Browsing Classes on the conceptual model
+
+All classes of a conceptual model are located under the "classes" directory. Figure 11, depicting class cv:Channel offers an example of what a Class looks like on the model. As seen on the figure, besides the description of the class, there is a number of tabs where each tab provides information on concepts related to that class. For example, the "Attributes" tab lists all attributes of cv:Channel.
+
+A very useful feature of the conceptual model is that each class lists all diagrams that it appears on. To access that list, press "+" next to the "advanced" indicator, under the Class title. For example, we see that on figure 11, there are links for "role relations", "agent relations", and "communication means" diagrams. There is no link for the Order invoicee diagram, as it is part of the eOrdering conceptual model and not the epo core model.
+
+image::docUpdateImages/UML/figure11.png[]
+__ Figure 11 The cv:Channel class on the conceptual model. All diagrams containing it  can be found under the "advanced" text.
+__
+
+
+
+
+==== Examples
+
+===== Query: Who buys what from whom?
+
+This is a very generic question, so we need to make it more specific.
+
+Lets translate that question to a query that aims to connect the buyer with the lot and the winner of the tender award
+outcome, who was awarded that lot.
+
+Specifically, in order to find this query we need to connect the name of the buyer with the  Lot,
+and then find the winner of the tender award outcome.
+
+* First we need to locate the Buyer class in epo core conceptual model (Fig.A1).
+
+image::docUpdateImages/UML/Conceptual model queries/qa1.png[]
+__ Figure A1: epo:Buyer in epo core.
+__
+
+* Now we need to find an attribute to identify that buyer. Searching the ontology, we find the role hierarchy diagram (Fig.A2),
+  and decide to use the dct:title attribute of class epo:AgentInRole which is a generalization of class epo:AcquiringParty
+ which in turn is a generalization of epo:Buyer.
+
+image::docUpdateImages/UML/Conceptual model queries/qa2.png[]
+__ Figure A2: epo:Buyer can use the dct:title attribute of epo:AgentInRole as it is connected to it using generalization relations.
+__
+
+* Next step, is to find a connection between the buyer to the Lot through the tender award outcome. To do this we use the
+award decision outcome relations diagram (A3).
+
+image::docUpdateImages/UML/Conceptual model queries/qa3.png[]
+__ Figure A3: Connection from epo:Buyer to epo:Lot using the award decision outcome relations diagram
+__
+
+* Now we need to find a connection between epo:Winner and one of the concepts we already visited. As seen in figure A4,
+there are 2 connections to epo:Winner from the classes we already visited on the the award decision outcome relations
+diagram
+
+image::docUpdateImages/UML/Conceptual model queries/qa4.png[]
+__ Figure A4: We can connect to the epo:Winner class from epo:Lot via the epo:Tender and epo:TenderAwardOutcome classes or from
+epo:AwardOutcome through the class epo:TenderAwardOutcome.
+
+__
+
+===== Query B: How many contractors are SMEs for a given country and given date ?
+
+This query aims to find the procurement notices specific to publication
+date, country code (Germany), and business size (SME - Small Medium Enterprises).
+
+* Publication date can be found on the Notice Class, and country code and business size can be found on the Organization
+class, that is also the winner for that notice.
+
+* First we need to locate the Notice class in epo core conceptual model.
+
+image::docUpdateImages/UML/Conceptual model queries/qb1.png[]
+__ Figure b1: epo:Notice in epo core.
+__
+
+* Then we need to locate an attribute or predicate that will give us the publication
+date. After some searching, we find the information we seek on the "documents hierarchy" diagram.
+
+image::docUpdateImages/UML/Conceptual model queries/qb2.png[]
+__ Figure b2: Searching for the correct diagram.
+__
+
+* As seen in figure b3, epo:hasPublicationDate is an attribute of Class epo:Document which is a generalization of Class
+ epo:Notice.
+
+image::docUpdateImages/UML/Conceptual model queries/qb3.png[]
+__ Figure b3: epo:hasPublicationDate is an attribute of epo:Document
+__
+
+* Now we need to find a connection between epo:Notice and epo:Winner. There are many ways to tackle the problem. Here we
+are going to find a connection from epo:Notice to epo:Tender through the "procedure and lot relations" diagram (figure b4),
+and then from epo:Tender to epo:Winner through the "award decision outcome relations" diagram (figure b5).
+
+image::docUpdateImages/UML/Conceptual model queries/qb4.png[]
+__ Figure b4: On the "procedure and lot relations" diagram we can see that there is a connection from epo:Notice to
+epo:Tender through epo:Lot
+__
+
+image::docUpdateImages/UML/Conceptual model queries/qb5.png[]
+__ Figure b5: On the "award decision outcome relations" diagram  we can see that there is a connection from epo:Tender
+to epo:Winner through epo:TenderAwardOutcome __
+
+* As we can see in figure b6, (role hierarchy diagram) epo:Winner is a specialization of epo:OfferingParty, which in turn
+is a specialization of epo:AgentInRole.
+
+image::docUpdateImages/UML/Conceptual model queries/qb6.png[]
+__ Figure b6: Generalization of the epo:Winner role on the "role hierarchy diagram" __
+
+
+* As seen on figure b7, epo:AgentInRole is played by an agent of class foaf:Agent, which is a generalization of
+org:Organization class which in turn is a generalization of class epo:Business. Here, in order to find the size of
+the business, we use the epo:hasBusinessSize dependency to access the at-voc:economic-operator-size codeList.
+This list provides the different categories in which the Tenderers to whom a Contract can be awarded are classified,
+according to their size (using as Criteria the number of employees).
+
+
+image::docUpdateImages/UML/Conceptual model queries/qb7.png[]
+__ Figure b7: Connection from epo:Agent InRole to org:Organization and epo:Business classes on the "agent relations" diagram  __
+
+
+* Finally, in order to find the country of the Business, we go back to the org:Organization class, and look at the location
+diagram (figure b8). There are 2 ways to access the country: The first is the locn:adminUnitL1 attribute of locn:Address,
+and the second is to use the codelist at:voc:country, which is linked to locn:Address through the epo:hasCountryCode
+dependency.
+
+image::docUpdateImages/UML/Conceptual model queries/qb8.png[]
+__ Figure b8: Connection from org:Organization to at-voc:country via the Location diagram  __
+
