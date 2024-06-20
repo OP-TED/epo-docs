@@ -41,16 +41,27 @@ The release notes as on GitHub
 
 
 == Reference Documentation
-* xref:epo-home::references.adoc[Reference Documentation] +
-Useful reference documents in the development of the ePO
-* xref:epo-home::history.adoc[History and Planned Developments] +
-Milestones in the project and future development plans
-* xref:epo-home::methodology2024.adoc[ePO Methodology] +
+
+
+* xref:epo-home::methodology2024.adoc[Methodology] +
 The ePO Methodology
-* xref:epo-home::stories.adoc[User Stories and Natural Language Statements] +
-User Stories and Natural Language Statements used when developing new modules
+
 * xref:epo-home::versioning.adoc[ePO Versioning Rules] +
 An overview of the versioning rules for releases
+
+* xref:epo-home::stories.adoc[User Stories and Natural Language Statements] +
+Ontology Requirements Specification Documents (ORSD), containing user stories and natural language statements used when developing new modules.
+
+** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)] +
+ORSD for eAccess module
+** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)] +
+ORSD for eSubmission module
+
+* xref:epo-home::governance.adoc[Other Reference Documents] +
+Useful reference documents in the development of the ePO
+
+* xref:epo-home::history.adoc[History and Planned Developments] +
+Milestones in the project and future development plans
 
 == Working Group Documents
 * xref:epo-wgm::wider.adoc[Quarterly Meetings] +
