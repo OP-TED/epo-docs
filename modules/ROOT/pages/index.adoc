@@ -57,7 +57,7 @@ ORSD for eAccess module
 ** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)] +
 ORSD for eSubmission module
 
-* xref:epo-home::governance.adoc[Other Reference Documents] +
+* xref:epo-home::REFreferences.adoc[Other Reference Documents] +
 Useful reference documents in the development of the ePO
 
 * xref:epo-home::history.adoc[History and Planned Developments] +
