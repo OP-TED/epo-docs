@@ -1,0 +1,72 @@
+:doctitle: User's guide to ePO example 2:How many contractors are SMEs for a given country and given date?
+:doccode: epo-guide-ex2
+:author: AD
+:docdate: June 2024
+
+Before reading this example, please visit the xref:epo-home::conceptualModelGuide.adoc[Conceptual Model] and xref:epo-home::glossaryGuide.adoc[Glossary] guides.
+
+
+This query aims to find the procurement notices specific to publication
+date, country code (Germany), and business size (SME - Small Medium Enterprises).
+
+* Publication date can be found on the Notice Class, and country code and business size can be found on the Organization
+class, that is also the winner for that notice.
+
+* First we need to locate the Notice class in epo core conceptual model.
+
+image::docUpdateImages/UML/Conceptual model queries/qb1.png[]
+__ Figure b1: epo:Notice in epo core.
+__
+
+* Then we need to locate an attribute or predicate that will give us the publication
+date. After some searching, we find the information we seek on the "documents hierarchy" diagram.
+
+image::docUpdateImages/UML/Conceptual model queries/qb2.png[]
+__ Figure b2: Searching for the correct diagram.
+__
+
+* As seen in figure b3, epo:hasPublicationDate is an attribute of Class epo:Document which is a generalization of Class
+ epo:Notice.
+
+image::docUpdateImages/UML/Conceptual model queries/qb3.png[]
+__ Figure b3: epo:hasPublicationDate is an attribute of epo:Document
+__
+
+* Now we need to find a connection between epo:Notice and epo:Winner. There are many ways to tackle the problem. Here we
+are going to find a connection from epo:Notice to epo:Tender through the "procedure and lot relations" diagram (figure b4),
+and then from epo:Tender to epo:Winner through the "award decision outcome relations" diagram (figure b5).
+
+image::docUpdateImages/UML/Conceptual model queries/qb4.png[]
+__ Figure b4: On the "procedure and lot relations" diagram we can see that there is a connection from epo:Notice to
+epo:Tender through epo:Lot
+__
+
+image::docUpdateImages/UML/Conceptual model queries/qb5.png[]
+__ Figure b5: On the "award decision outcome relations" diagram  we can see that there is a connection from epo:Tender
+to epo:Winner through epo:TenderAwardOutcome __
+
+* As we can see in figure b6, (role hierarchy diagram) epo:Winner is a specialization of epo:OfferingParty, which in turn
+is a specialization of epo:AgentInRole.
+
+image::docUpdateImages/UML/Conceptual model queries/qb6.png[]
+__ Figure b6: Generalization of the epo:Winner role on the "role hierarchy diagram" __
+
+
+* As seen on figure b7, epo:AgentInRole is played by an agent of class foaf:Agent, which is a generalization of
+org:Organization class which in turn is a generalization of class epo:Business. Here, in order to find the size of
+the business, we use the epo:hasBusinessSize dependency to access the at-voc:economic-operator-size codeList.
+This list provides the different categories in which the Tenderers to whom a Contract can be awarded are classified,
+according to their size (using as Criteria the number of employees).
+
+
+image::docUpdateImages/UML/Conceptual model queries/qb7.png[]
+__ Figure b7: Connection from epo:Agent InRole to org:Organization and epo:Business classes on the "agent relations" diagram  __
+
+
+* Finally, in order to find the country of the Business, we go back to the org:Organization class, and look at the location
+diagram (figure b8). There are 2 ways to access the country: The first is the locn:adminUnitL1 attribute of locn:Address,
+and the second is to use the codelist at:voc:country, which is linked to locn:Address through the epo:hasCountryCode
+dependency.
+
+image::docUpdateImages/UML/Conceptual model queries/qb8.png[]
+__ Figure b8: Connection from org:Organization to at-voc:country via the Location diagram  __

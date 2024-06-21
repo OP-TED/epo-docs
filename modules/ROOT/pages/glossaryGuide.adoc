@@ -17,6 +17,9 @@
 toc::[]
 
 
-=== Glossaries
-==== Glossaries overview
-==== Examples
+=== Introduction
+
+In this Guide, we describe the UML diagrams that represent the conceptual model of the Ontology.
+
+=== Glossaries overview
+

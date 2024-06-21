@@ -7,3 +7,8 @@ Below are user guides on how to use the epo Ontology
 
 * xref:epo-home::conceptualModelGuide.adoc[Guide to the Conceptual models]
 * xref:epo-home::glossaryGuide.adoc[Guide to the Glossaries]
+
+
+== Examples
+* xref:epo-home::ex1.adoc[Example 1: Who buys what from whom?]
+* xref:epo-home::ex2.adoc[Example 2: How many contractors are SMEs for a given country and given date?]
