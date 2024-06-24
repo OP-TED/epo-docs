@@ -1,0 +1,72 @@
+= Working Group meeting
+
+*Date*: 18/06/2024    +
+*Participants:* Peter Borresen, Ioannis Fountoukidis, Natalie Muric, Dragos Stoica, Peter Borresen.  +
+*Model editor:* Andreea Pasăre   +
+*Note editor:* Achilles Dougalis
+
+== Agenda
+
+* Evolution of the ePO modules
+* eFulfilment dataModel.
+
+
+== Discussion
+
+
+* It was decided that the following predicates will be removed from the eFulfilment module of future ePO versions:
+
+|===
+|epo-ful:hasConsignmentDeclaredStatisticsValue
+
+|epo-ful:hasConsignmentFreeOnBoardValue
+|epo-ful:hasConsignmentInvoiceValue
+|epo-ful:hasFreightAllowanceCharge
+|epo-ful:hasFreightForwarderConsignmentID
+|epo-ful:hasLoadingLength
+|epo-ful:hasOnCarriageShipmentStage
+|epo-ful:hasPreCarriageShipmentStage
+|===
+
+* It was decided that the following predicates will be added from the eFulfilment module of future ePO versions:
+
+|===
+|epo-ful:hasFreightCharge
+
+|epo-ful:hasLoadingMeter
+|===
+
+
+
+* Definitions for the following predicates of the efulfilment module were filled:
+** epo-ful:hasDepartureShipmentInformation: Information about the place the consignment is leaving from in a given shipment stage
+** epo-ful:hasDepartureShipmentInformation : ment Information about the place the Consignment is leaving from in a given Shipment Stage.
+** epo-ful:hasDespatchAdviceType: Classification of a Despatch Advice.
+** epo-ful:hasDespatchedQuantity: The quantity that hass been sent.
+** epo-ful:hasEstimatedDeliveryPeriod: The forecasted time period given by the Despatcher to provide the goods and services.
+** epo-ful:hasFreightCharge: "The total cost for moving the goods. WG approval 18/06/2024"
+** epo-ful:hasGrossVolume: The amount of space that is required including the packaging.
+** epo-ful:hasNetVolume: The amount of space that is required without the packaging.
+** epo-ful:hasGrossWeight: The total mass of goods including the packaging.
+** epo-ful:hasNetWeight: The total mass of goods without the packaging.
+** epo-ful:hasHandlingInstructionCode: Instruction on how to handle the Goods Items during transportation, expressed as a code.
+** epo-ful:hasHeight: The vertical measurement.
+** epo-ful:hasLength:The horizontal measurement. Additional Information: The length is the longer side between the length and the width.
+** epo-ful:hasWidth:The measurement of the depth. Additional Information:The width is the shorter side between the length and the width.
+** epo-ful:hasLoadingMeter: The area of the Consignment in meters divided by the width of the truck which is concidered to be 2.4 meters.
+** epo:ful:hasMainCarriage:The Shipment Stage for the longest distance covered in a transport chain.
+** epo-ful:hasOnCarriageShipmentStage: "Any Shipment Stage between the main carriage arrival point and the ultimate receiver in a transport chain.
+** epo-ful:hasPreCarriageShipmentStage: Any Shipment Stage between the Dispatcher and the departure point of the main carriage in a transport chain.
+** epo-ful:hasMaximumTemperature: The highest tolerated temperature.
+** epo-ful:hasMinimumTemperature: The lowest tolerated temperature.
+
+
+
+
+* Next time the WG will continue adding definitions from the predicate epo-ful:hasPackagingType concept.
+
+== Action Points
+
+
+* epo-ful:hasMainCarriageShipmentStage predicate will stay as it is . We are still expecting a decision from PEPPOL regarding issue https://github.com/OP-TED/ePO/issues/575[575]
+
