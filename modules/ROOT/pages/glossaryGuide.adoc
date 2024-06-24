@@ -19,7 +19,8 @@ toc::[]
 
 === Introduction
 
-In this Guide, we describe the UML diagrams that represent the conceptual model of the Ontology.
+In this Guide, we describe the Glossaries of ePO.
 
 === Glossaries overview
 
+As seen in figure 1, there is one glossary per module.
