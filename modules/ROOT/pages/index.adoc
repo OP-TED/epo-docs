@@ -39,6 +39,14 @@ The release specific glossaries
 * xref:EPO::release-notes.adoc[Release Notes] +
 The release notes as on GitHub
 
+== Info Sessions
+
+* xref:epo-home:attachment$LOD/index.html[Linked Open Data] +
+A short info session on Linked Open Data
+* xref:epo-home:attachment$ePO/index.html[The ePO] +
+A short info session on the ePO
+* xref:epo-home:attachment$RDF/index.html[RDF and SPARQL] +
+A short info session on RDF and SPARQL
 
 == Reference Documentation
 
