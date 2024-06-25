@@ -1476,7 +1476,7 @@ efph:{
 eflh:[],
 iflbx:false,
 ipflbx:true,
-text:'{"blocks":[{"key":"8gh4u","text":"At the end of this lesson you should be able to","type":"unstyled","depth":0,"inlineStyleRanges":[{"offset":0,"length":47,"style":"hlnk:"},{"offset":0,"length":47,"style":"hlnkt:wp"},{"offset":0,"length":47,"style":"textOutlineEnable:false"},{"offset":0,"length":47,"style":"opacity:1"},{"offset":0,"length":47,"style":"hlnke:true"},{"offset":0,"length":47,"style":"backgroundColor:unset"},{"offset":0,"length":47,"style":"defaultBackgroundColor:#E8D01B"},{"offset":0,"length":47,"style":"textHighlightEnable:false"},{"offset":0,"length":47,"style":"textShadowEnable:false"},{"offset":0,"length":47,"style":"overridden:false"}],"entityRanges":[],"data":{"presetId":"text-subheading-5","listDepth":"0","listType":"S_Bullets08","listIndent":"100%","listSize":"100%","listColor":"#666666","overridden":"false"}}],"entityMap":{}}',
+text:'{"blocks":[{"key":"8gh4u","text":"At the end of this info session you should be able to","type":"unstyled","depth":0,"inlineStyleRanges":[{"offset":0,"length":53,"style":"hlnkt:wp"},{"offset":0,"length":53,"style":"textOutlineEnable:false"},{"offset":0,"length":53,"style":"opacity:1"},{"offset":0,"length":53,"style":"hlnke:true"},{"offset":0,"length":53,"style":"backgroundColor:unset"},{"offset":0,"length":53,"style":"defaultBackgroundColor:#E8D01B"},{"offset":0,"length":53,"style":"textHighlightEnable:false"},{"offset":0,"length":53,"style":"textShadowEnable:false"},{"offset":0,"length":53,"style":"overridden:false"},{"offset":0,"length":53,"style":"hlnk:"}],"entityRanges":[],"data":{"presetId":"text-subheading-5","listDepth":"0","listType":"S_Bullets08","listIndent":"100%","listSize":"100%","listColor":"#666666","overridden":"false"}}],"entityMap":{}}',
 autoGrow:false,
 tbqt:0,
 trin:0,
@@ -21000,11 +21000,11 @@ bookmarks:[]
 ,
 qs:'',
 iph:{
-2374:{
+2352:{
 ts:''
 }
 ,
-2352:{
+2374:{
 ts:''
 }
 
@@ -40710,11 +40710,11 @@ bookmarks:[]
 ,
 qs:'',
 iph:{
-4086:{
+4064:{
 ts:''
 }
 ,
-4064:{
+4086:{
 ts:''
 }
 
