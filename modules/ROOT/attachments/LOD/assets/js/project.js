@@ -1447,7 +1447,7 @@ efph:{
 eflh:[],
 iflbx:false,
 ipflbx:true,
-text:'{"blocks":[{"key":"8gh4u","text":"At the end of this Session you should be able to","type":"unstyled","depth":0,"inlineStyleRanges":[{"offset":0,"length":48,"style":"hlnk:"},{"offset":0,"length":48,"style":"hlnkt:wp"},{"offset":0,"length":48,"style":"textOutlineEnable:false"},{"offset":0,"length":48,"style":"opacity:1"},{"offset":0,"length":48,"style":"hlnke:true"},{"offset":0,"length":48,"style":"backgroundColor:unset"},{"offset":0,"length":48,"style":"defaultBackgroundColor:#E8D01B"},{"offset":0,"length":48,"style":"textHighlightEnable:false"},{"offset":0,"length":48,"style":"textShadowEnable:false"},{"offset":0,"length":48,"style":"overridden:false"}],"entityRanges":[],"data":{"presetId":"text-subheading-5","listDepth":"0","listType":"S_Bullets08","listIndent":"100%","listSize":"100%","listColor":"#666666","overridden":"false"}}],"entityMap":{}}',
+text:'{"blocks":[{"key":"8gh4u","text":"At the end of this info session you should be able to","type":"unstyled","depth":0,"inlineStyleRanges":[{"offset":0,"length":53,"style":"hlnk:"},{"offset":0,"length":53,"style":"hlnkt:wp"},{"offset":0,"length":53,"style":"textOutlineEnable:false"},{"offset":0,"length":53,"style":"opacity:1"},{"offset":0,"length":53,"style":"hlnke:true"},{"offset":0,"length":53,"style":"backgroundColor:unset"},{"offset":0,"length":53,"style":"defaultBackgroundColor:#E8D01B"},{"offset":0,"length":53,"style":"textHighlightEnable:false"},{"offset":0,"length":53,"style":"textShadowEnable:false"},{"offset":0,"length":53,"style":"overridden:false"}],"entityRanges":[],"data":{"presetId":"text-subheading-5","listDepth":"0","listType":"S_Bullets08","listIndent":"100%","listSize":"100%","listColor":"#666666","overridden":"false"}}],"entityMap":{}}',
 autoGrow:false,
 tbqt:0,
 trin:0,
@@ -27294,8 +27294,8 @@ vb:[-1,-1,2,2]
 Slide3845:{
 lb:'End',
 id:3845,
-from:91657,
-to:91962,
+from:91351,
+to:91656,
 iols:0,
 i360qs:false,
 sdu:10.2,
@@ -28077,14 +28077,7 @@ resources:['dr/04098.png']
 ,{
 slideID:3,
 ResourceList:{
-resources:['dr/01017.png','dr/01041.png','dr/01168.png','dr/01292.png','dr/01416.png','dr/01540.png','dr/01664.png','dr/01787.svg']
-}
-
-}
-,{
-slideID:8,
-ResourceList:{
-resources:['dr/04098.png']
+resources:['dr/01017.png','dr/01041.png','dr/01168.png','dr/01292.png','dr/01416.png','dr/01540.png','dr/01664.png']
 }
 
 }

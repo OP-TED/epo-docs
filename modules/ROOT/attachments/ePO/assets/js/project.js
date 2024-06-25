@@ -1476,7 +1476,7 @@ efph:{
 eflh:[],
 iflbx:false,
 ipflbx:true,
-text:'{"blocks":[{"key":"8gh4u","text":"At the end of this sesson you should understand","type":"unstyled","depth":0,"inlineStyleRanges":[{"offset":0,"length":47,"style":"hlnk:"},{"offset":0,"length":47,"style":"hlnkt:wp"},{"offset":0,"length":47,"style":"textOutlineEnable:false"},{"offset":0,"length":47,"style":"opacity:1"},{"offset":0,"length":47,"style":"hlnke:true"},{"offset":0,"length":47,"style":"backgroundColor:unset"},{"offset":0,"length":47,"style":"defaultBackgroundColor:#E8D01B"},{"offset":0,"length":47,"style":"textHighlightEnable:false"},{"offset":0,"length":47,"style":"textShadowEnable:false"},{"offset":0,"length":47,"style":"overridden:false"}],"entityRanges":[],"data":{"presetId":"text-subheading-5","listDepth":"0","listType":"S_Bullets08","listIndent":"100%","listSize":"100%","listColor":"#666666","overridden":"false"}}],"entityMap":{}}',
+text:'{"blocks":[{"key":"8gh4u","text":"At the end of this info sesson you should understand","type":"unstyled","depth":0,"inlineStyleRanges":[{"offset":0,"length":52,"style":"hlnkt:wp"},{"offset":0,"length":52,"style":"textOutlineEnable:false"},{"offset":0,"length":52,"style":"opacity:1"},{"offset":0,"length":52,"style":"hlnke:true"},{"offset":0,"length":52,"style":"backgroundColor:unset"},{"offset":0,"length":52,"style":"defaultBackgroundColor:#E8D01B"},{"offset":0,"length":52,"style":"textHighlightEnable:false"},{"offset":0,"length":52,"style":"textShadowEnable:false"},{"offset":0,"length":52,"style":"overridden:false"},{"offset":0,"length":52,"style":"hlnk:"}],"entityRanges":[],"data":{"presetId":"text-subheading-5","listDepth":"0","listType":"S_Bullets08","listIndent":"100%","listSize":"100%","listColor":"#666666","overridden":"false"}}],"entityMap":{}}',
 autoGrow:false,
 tbqt:0,
 trin:0,
@@ -35505,11 +35505,11 @@ bookmarks:[]
 ,
 qs:'',
 iph:{
-2991:{
+2969:{
 ts:''
 }
 ,
-2969:{
+2991:{
 ts:''
 }
 
@@ -52773,35 +52773,28 @@ resources:['dr/0791.png','dr/0849.png']
 ,{
 slideID:3,
 ResourceList:{
-resources:['dr/04381.png','dr/04430.svg','dr/04451.svg']
+resources:['dr/04381.png']
 }
 
 }
 ,{
 slideID:4,
 ResourceList:{
-resources:['dr/01088.svg','dr/01101.svg','dr/01123.png','dr/01250.png','dr/01374.png','dr/01498.png','dr/01622.png','dr/01746.png','dr/01869.svg']
+resources:['dr/01123.png','dr/01250.png','dr/01374.png','dr/01498.png','dr/01622.png','dr/01746.png']
 }
 
 }
 ,{
 slideID:5,
 ResourceList:{
-resources:['dr/02099.png','dr/02226.png','dr/02350.png','dr/02474.png','dr/02598.png','dr/02722.png','dr/02845.svg','dr/0422.png']
+resources:['dr/02099.png','dr/02226.png','dr/02350.png','dr/02474.png','dr/02598.png','dr/02722.png','dr/0422.png']
 }
 
 }
 ,{
 slideID:6,
 ResourceList:{
-resources:['dr/02099.png','dr/02226.png','dr/02350.png','dr/02474.png','dr/02598.png','dr/02722.png','dr/02845.svg','dr/03084.png']
-}
-
-}
-,{
-slideID:8,
-ResourceList:{
-resources:['dr/0422.png']
+resources:['dr/02099.png','dr/02226.png','dr/02350.png','dr/02474.png','dr/02598.png','dr/02722.png','dr/03084.png']
 }
 
 }
