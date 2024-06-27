@@ -7,9 +7,9 @@ Below are user guides on how to use the epo Ontology
 
 * xref:epo-home::conceptualModelGuide.adoc[Guide to the Conceptual models]
 * xref:epo-home::glossaryGuide.adoc[Guide to the Glossaries]
-* Guide to the epo Modules
-* Guide to the Technical Model
-* Querying the Ontology
+* Guide to the epo Modules (TBD)
+* Guide to the Technical Model (TBD)
+* Querying the Ontology (TBD)
 
 
 == Examples (Conceptual model)
