@@ -7,6 +7,14 @@
 
 == Why a Modular Approach
 
+The Modularization of the Ontology offers three advantages as opposed to just having one Ontology file:
+
+* Better Maintenance
+
+* Reusability
+
+* Better Management
+
 == ePO Core
 
 == eCatalogue
