@@ -29,7 +29,7 @@ As seen in figure 1, there is one glossary per module for each specific ePO vers
 There is also the link:{attachmentsdir}/html_reports/glossary/ePO_combined_glossary.html[The ePO combined Glossary] that contains the concepts of all the modules combined.
 
 
-image::docUpdateImages/Glossary/Glossary1.png[]
+image::docUpdateImages/Glossary/glossary1.png[]
 __ Figure 1: xref:EPO::glossaries.adoc[Module Glossaries]. Note the 4.0.1-rc2 version field on the top right.
 __
 
