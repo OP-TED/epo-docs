@@ -20,7 +20,7 @@ image::docUpdateImages/UML/Conceptual model queries/qa1.png[]
 __ Figure A1: epo:Buyer in epo core.
 __
 
-* Now we need to find an attribute to identify that buyer. Searching the ontology, we find the role hierarchy diagram (Fig.A2),
+* Now we need to find an attribute to identify that buyer. Searching the glossary for the attributes of epo:Buyer does not yeld a suitable attribute, so we need to look for another class that is a generalization of epo:Buyer.    Searching the ontology, we find the role hierarchy diagram (Fig.A2),
   and decide to use the dct:title attribute of class epo:AgentInRole which is a generalization of class epo:AcquiringParty
  which in turn is a generalization of epo:Buyer.
 

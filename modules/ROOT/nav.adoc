@@ -6,13 +6,13 @@
 
 * xref:epo-home::index.adoc[Home]
 
-* xref:EPO::guide.adoc[ePO Guide]
+* [.separated]#**General Documentation**#
+* xref:epo-home::guide.adoc[ePO Guide]
 * xref:EPO::conceptual.adoc[Conceptual Models]
 * xref:EPO::glossaries.adoc[Glossaries]
 * xref:EPO::release-notes.adoc[Release Notes]
 
-[.separated]#**Reference Documents**#
-
+* [.separated]#**Reference Documents**#
 * xref:epo-home::methodology2024.adoc[Methodology]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
 * xref:epo-home::stories.adoc[User Stories and Natural Language Statements]
@@ -21,8 +21,7 @@
 * xref:epo-home::REFreferences.adoc[Other Reference Documents]
 * xref:epo-home::history.adoc[History and Planned Developments]
 
-[.separated]#**Working Group Documents**#
-
+* [.separated]#**Working Group Documents**#
 * xref:epo-wgm::wider.adoc[Quarterly Meetings]
 * xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)]
 * xref:epo-wgm::indiv.adoc[Individual Meeting Reports]
