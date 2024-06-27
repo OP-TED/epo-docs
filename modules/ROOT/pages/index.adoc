@@ -19,7 +19,7 @@ In order to build and maintain the ontology, OP engaged a Working Group (WG) of 
 
 [underline]#Where to start from:#
 
-* Motivation
+* Motivation (under construction)
 * Introductory course on EPO
 ** xref:attachment$LOD/index.html[Linked Open Data] +
 A short info session on Linked Open Data
