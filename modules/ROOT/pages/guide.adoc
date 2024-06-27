@@ -7,6 +7,8 @@ Below are user guides on how to use the epo Ontology
 
 * xref:epo-home::conceptualModelGuide.adoc[Guide to the Conceptual models]
 * xref:epo-home::glossaryGuide.adoc[Guide to the Glossaries]
+* Guide to the epo Modules
+* Guide to the technical model
 
 
 == Examples
