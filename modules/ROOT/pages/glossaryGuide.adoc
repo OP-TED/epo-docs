@@ -19,8 +19,25 @@ toc::[]
 
 === Introduction
 
-In this Guide, we describe the Glossaries of ePO.
+In this Guide, we describe xref:EPO::glossaries.adoc[the Glossaries of ePO]. A glossary is an alphabetical list of terms in a particular domain of knowledge with the definitions for those terms. Specifically, the ePO glossaries contain all the Classes, predicates and Attributes of the Ontology along with their definitions.
+
+
 
 === Glossaries overview
 
-As seen in figure 1, there is one glossary per module.
+As seen in figure 1, there is one glossary per module for each specific ePO version. Each module is used to describe one specific procurement phase except for the ePO module that contains all the basic concepts that are common to all the other modules.
+
+There is also the xref:EPO::glossaries.adoc[combined glossary] that contains the concepts of all the modules combined.
+
+
+image::docUpdateImages/Glossary/Glossary1.png[]
+__ Figure 1: Module Glossaries. Note the 4.0.1-rc2 version field on the top right.
+__
+
+Although all the glossaries are similar in structure, for the purposes of this guide we are going to concentrate on the combined glossary.
+
+Each glossary contains three tables
+
+image::docUpdateImages/Glossary/Glossary2.png[]
+__ Figure 2: Searching for a Class or Class description containing the text "Certif".
+__
