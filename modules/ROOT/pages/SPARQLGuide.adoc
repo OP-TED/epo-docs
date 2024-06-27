@@ -4,3 +4,6 @@
 :docdate: June 2024
 
 == Introduction
+
+Make sure that for each query example it is mentioned which epo version is being queried.
+

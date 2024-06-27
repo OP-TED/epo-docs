@@ -3,7 +3,7 @@
 :author: AD
 :docdate: June 2024
 
-Below are user guides on how to use the epo Ontology
+The pages below  are User Guides that provide information on different aspects of the Ontology and
 
 * xref:epo-home::conceptualModelGuide.adoc[Guide to the Conceptual models]
 * xref:epo-home::glossaryGuide.adoc[Guide to the Glossaries]
@@ -13,5 +13,7 @@ Below are user guides on how to use the epo Ontology
 
 
 == Examples (Conceptual model)
+The following examples
+
 * xref:epo-home::ex1.adoc[Example 1: Who buys what from whom?]
 * xref:epo-home::ex2.adoc[Example 2: How many contractors are SMEs for a given country and given date?]
