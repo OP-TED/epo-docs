@@ -1,0 +1,24 @@
+:doctitle: Guide to the ePO Modules
+:doccode: epo-modguide-menu
+:author: AD
+:docdate: June 2024
+
+== Introduction
+
+== Why a Modular Approach
+
+== ePO Core
+
+== eCatalogue
+
+== eOrdering
+
+== eFulfilment
+
+== eContract
+
+== eAccess
+
+== eSubmission
+
+== eNotice
