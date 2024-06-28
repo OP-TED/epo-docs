@@ -29,7 +29,7 @@ As seen in figure 1, there is one glossary per module for each specific ePO vers
 There is also the link:{attachmentsdir}/html_reports/glossary/ePO_combined_glossary.html[The ePO combined Glossary] that contains the concepts of all the modules combined.
 
 
-image::docUpdateImages/Glossary/glossary1.png[]
+image::docUpdateGuideImages/Glossary/glossary1.png[]
 __ Figure 1: xref:EPO::glossaries.adoc[Module Glossaries]. Note the 4.0.1-rc2 version field on the top right.
 __
 
@@ -58,7 +58,7 @@ The definition of each ePO concept is filled in or updated by the ePO Working Gr
 
 
 
-image::docUpdateImages/Glossary/glossary2.png[]
+image::docUpdateGuideImages/Glossary/glossary2.png[]
 __ Figure 2: Searching for a Class or Class description containing the string "certifi".
 __
 
@@ -69,7 +69,7 @@ The second table as seen of figure 3, contains information related to the attrib
 
 In this particular example, since the search field is empty, the table lists all the attributes of the glossary shorted alphabetically per Class name. Specifically, the first elements of the table are the attributes of the Class adms:Identifier taken from the https://www.w3.org/TR/vocab-adms/[ADMS vocabulary]. A class used to represent unique identifiers of instances of ePO concepts.
 
-image::docUpdateImages/Glossary/glossary3.png[]
+image::docUpdateGuideImages/Glossary/glossary3.png[]
 __ Figure 3: The Attributes table
 __
 
@@ -83,6 +83,6 @@ for example, in figure 4, predicate epo:hasVariantPermission has the class epo:S
 
 Also note that the predicate epo:hasValidityPeriod can be used by a number of classes, such as cccev:Evidence, epo:Technique and epo-cat:Catalogue in order to connect to class epo:Period.
 
-image::docUpdateImages/Glossary/glossary4.png[]
+image::docUpdateGuideImages/Glossary/glossary4.png[]
 __ Figure 4: Searching the Predicates table for the string "hasVa".
 __

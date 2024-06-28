@@ -56,7 +56,7 @@ For example:
 * Attribute _epo:isWithdrawn_ is of type boolean (It can only take the values of _truth_ or _false_), and has a cardinality
 of [0..1] (this attribute can only have 1 or 0 values).
 
-image::docUpdateImages/UML/figure1.png[]
+image::docUpdateGuideImages/UML/figure1.png[]
 __ Figure 1: UML visual notation for Class epo:ReviewRequest
 __
 
@@ -66,7 +66,7 @@ __
 
 The datatypes that are currently used in EPO (EPO 4.1.0) are the following:
 
-image::docUpdateImages/UML/figure2.png[]
+image::docUpdateGuideImages/UML/figure2.png[]
 __ Figure 2: UML visual notation for Datatypes of the Ontology.
 __
 
@@ -94,7 +94,7 @@ predicate should be read as: "AgentInRole playedBy Agent". Also note that The ca
 that each instance of epo:AgentInRole must be played by exactly 1 instance of foaf:Agent.
 
 
-image::docUpdateImages/UML/figure3.png[]
+image::docUpdateGuideImages/UML/figure3.png[]
 __ Figure 3: Object Property epo:playedBy
 __
 
@@ -107,7 +107,7 @@ in Figure 4, org:Organization is a specialization of foaf:Agent, and foaf:Agent 
 org:Organization inherits all attributes and predicates of foaf:Agent (such as dct:title), and on top of that, has a number
 of predicates that are unique to that class, such as attribute epo:hasMainActivityDescription.
 
-image::docUpdateImages/UML/figure4.png[]
+image::docUpdateGuideImages/UML/figure4.png[]
 __ Figure 4: foaf:Agent is the generalisation of org:Organization
 __
 
@@ -117,7 +117,7 @@ and epo:hasCountryOfBirth. The distinction between predicates and dependencies e
 ** Unlike a class, an enumeration cannot exist alone in an Ontology, but requires a connection to a Class.
 ** Enumerations contain vocabularies that exist outside of the Ontology and are not maintained by EPO.
 
-image::docUpdateImages/UML/figure5.png[]
+image::docUpdateGuideImages/UML/figure5.png[]
 __ Figure 5: foaf:Agent is the generalisation of org:Organization
 __
 
@@ -138,7 +138,7 @@ Enterprise Architect file (*.EA).
 
 * In this guide, we are going to focus on the main part of the ontology, __ePO core__ .
 
-image::docUpdateImages/UML/figure6.png[]
+image::docUpdateGuideImages/UML/figure6.png[]
 __ Figure 6: The Conceptual model website. Note the version selector on the top right.
 __
 
@@ -158,7 +158,7 @@ overview of the Ontology, such as the diagrams for the different procurement pha
 **  The datatype folder that contains all datatypes that the ontology uses, also described on the <<Data types>> section of the guide.
 
 
-image::docUpdateImages/UML/figure7.png[]
+image::docUpdateGuideImages/UML/figure7.png[]
 __ Figure 7: The Conceptual model menu.
 __
 
@@ -169,12 +169,12 @@ __
 The Μain objects over time diagram (fig. 8) depicts the most important Classes of each procurement phase and their relations.
 The diagrams under the "phase oriented" directory (fig. 9) offer a more detailed view for each phase.
 
-image::docUpdateImages/UML/conceptualModelDiagrams/mainObjects.png[]
+image::docUpdateGuideImages/UML/conceptualModelDiagrams/mainObjects.png[]
 []
 __ Figure 8: The Μain objects over time diagram.
 __
 
-image::docUpdateImages/UML/figure9.png[]
+image::docUpdateGuideImages/UML/figure9.png[]
 __ Figure 9: The Planning diagram under the "phase oriented" directory.
 __
 
@@ -183,7 +183,7 @@ __
 As seen in figure 10, An epo:Agent can either be a person (foaf:Person) an organization (org:Organization) or a system (epo:system). Classes foaf:Person and org:Organization are themselves generalizations of more specific concepts. The prefixes foaf and org signify that these classes were reused by ePO from other ontologies and taxonomies.
 Also, on the left of the diagram we see the directory tree containing the other diagrams of the ontology. Each directory follows more or less the same format. There is one or more key concepts for that directory, agent for example and for each concept there is a hierarchy diagram depicting the hierarchy of the concept, and a relations diagram depicting the concept's relationship with other classes, or vocabularies.
 
-image::docUpdateImages/UML/figure10.png[]
+image::docUpdateGuideImages/UML/figure10.png[]
 __ Figure 10: The agent hierarchy diagram
 __
 
@@ -193,6 +193,6 @@ All classes of a conceptual model are located under the "classes" directory. Fig
 
 A very useful feature of the conceptual model is that each class lists all diagrams that it appears on. To access that list, press "+" next to the "advanced" indicator, under the Class title. For example, we see that on figure 11, there are links for "role relations", "agent relations", and "communication means" diagrams. There is no link for the Order invoicee diagram, as it is part of the eOrdering conceptual model and not the epo core model.
 
-image::docUpdateImages/UML/figure11.png[]
+image::docUpdateGuideImages/UML/figure11.png[]
 __ Figure 11 The cv:Channel class on the conceptual model. All diagrams containing it  can be found under the "advanced" text.
 __

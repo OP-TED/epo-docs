@@ -16,7 +16,7 @@ and then find the winner of the tender award outcome.
 
 * First we need to locate the Buyer class in epo core conceptual model (Fig.A1).
 
-image::docUpdateImages/UML/Conceptual model queries/qa1.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qa1.png[]
 __ Figure A1: epo:Buyer in epo core.
 __
 
@@ -24,14 +24,14 @@ __
   and decide to use the dct:title attribute of class epo:AgentInRole which is a generalization of class epo:AcquiringParty
  which in turn is a generalization of epo:Buyer.
 
-image::docUpdateImages/UML/Conceptual model queries/qa2.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qa2.png[]
 __ Figure A2: epo:Buyer can use the dct:title attribute of epo:AgentInRole as it is connected to it using generalization relations.
 __
 
 * Next step, is to find a connection between the buyer to the Lot through the tender award outcome. To do this we use the
 award decision outcome relations diagram (A3).
 
-image::docUpdateImages/UML/Conceptual model queries/qa3.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qa3.png[]
 __ Figure A3: Connection from epo:Buyer to epo:Lot using the award decision outcome relations diagram
 __
 
@@ -39,7 +39,7 @@ __
 there are 2 connections to epo:Winner from the classes we already visited on the the award decision outcome relations
 diagram
 
-image::docUpdateImages/UML/Conceptual model queries/qa4.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qa4.png[]
 __ Figure A4: We can connect to the epo:Winner class from epo:Lot via the epo:Tender and epo:TenderAwardOutcome classes or from
 epo:AwardOutcome through the class epo:TenderAwardOutcome.
 __

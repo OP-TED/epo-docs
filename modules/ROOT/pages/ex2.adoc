@@ -14,21 +14,21 @@ class, that is also the winner for that notice.
 
 * First we need to locate the Notice class in epo core conceptual model.
 
-image::docUpdateImages/UML/Conceptual model queries/qb1.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qb1.png[]
 __ Figure b1: epo:Notice in epo core.
 __
 
 * Then we need to locate an attribute or predicate that will give us the publication
 date. After some searching, we find the information we seek on the "documents hierarchy" diagram.
 
-image::docUpdateImages/UML/Conceptual model queries/qb2.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qb2.png[]
 __ Figure b2: Searching for the correct diagram.
 __
 
 * As seen in figure b3, epo:hasPublicationDate is an attribute of Class epo:Document which is a generalization of Class
  epo:Notice.
 
-image::docUpdateImages/UML/Conceptual model queries/qb3.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qb3.png[]
 __ Figure b3: epo:hasPublicationDate is an attribute of epo:Document
 __
 
@@ -36,19 +36,19 @@ __
 are going to find a connection from epo:Notice to epo:Tender through the "procedure and lot relations" diagram (figure b4),
 and then from epo:Tender to epo:Winner through the "award decision outcome relations" diagram (figure b5).
 
-image::docUpdateImages/UML/Conceptual model queries/qb4.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qb4.png[]
 __ Figure b4: On the "procedure and lot relations" diagram we can see that there is a connection from epo:Notice to
 epo:Tender through epo:Lot
 __
 
-image::docUpdateImages/UML/Conceptual model queries/qb5.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qb5.png[]
 __ Figure b5: On the "award decision outcome relations" diagram  we can see that there is a connection from epo:Tender
 to epo:Winner through epo:TenderAwardOutcome __
 
 * As we can see in figure b6, (role hierarchy diagram) epo:Winner is a specialization of epo:OfferingParty, which in turn
 is a specialization of epo:AgentInRole.
 
-image::docUpdateImages/UML/Conceptual model queries/qb6.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qb6.png[]
 __ Figure b6: Generalization of the epo:Winner role on the "role hierarchy diagram" __
 
 
@@ -59,7 +59,7 @@ This list provides the different categories in which the Tenderers to whom a Con
 according to their size (using as Criteria the number of employees).
 
 
-image::docUpdateImages/UML/Conceptual model queries/qb7.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qb7.png[]
 __ Figure b7: Connection from epo:Agent InRole to org:Organization and epo:Business classes on the "agent relations" diagram  __
 
 
@@ -68,5 +68,5 @@ diagram (figure b8). There are 2 ways to access the country: The first is the lo
 and the second is to use the codelist at:voc:country, which is linked to locn:Address through the epo:hasCountryCode
 dependency.
 
-image::docUpdateImages/UML/Conceptual model queries/qb8.png[]
+image::docUpdateGuideImages/UML/Conceptual model queries/qb8.png[]
 __ Figure b8: Connection from org:Organization to at-voc:country via the Location diagram  __
