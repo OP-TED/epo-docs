@@ -2,7 +2,11 @@
 :doccode: epo-wgm-prod-036
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: May 2024
+:docdate: July 2024
+
+include::notes/2024-06-26-wgm.adoc[]
+
+include::notes/2024-06-25-wgm.adoc[]
 
 include::notes/2024-06-20-wgm.adoc[]
 
