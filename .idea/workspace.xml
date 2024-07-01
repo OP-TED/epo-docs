@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="Started explaining the HTML conceptual models">
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/docUpdateImages/UML/Conceptual model queries/q1a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/docUpdateImages/UML/Conceptual model queries/q1b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/docUpdateImages/UML/Conceptual model queries/q1c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/docUpdateImages/UML/Conceptual model queries/q1d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/docUpdateImages/UML/Conceptual model queries/q1e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/docUpdateImages/UML/Conceptual model queries/q1f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/docUpdateImages/UML/Conceptual model queries/q1g.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/docUpdateImages/UML/Conceptual model queries/q1h.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/SPARQLGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/SPARQLGuide.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/guide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/guide.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/index.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/moduleGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/moduleGuide.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/motivation.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/motivation.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/technicalModelGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/technicalModelGuide.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

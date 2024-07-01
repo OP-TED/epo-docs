@@ -3,12 +3,18 @@
 :author: AD
 :docdate: June 2024
 
-The pages below  are User Guides that provide information on different aspects of the Ontology and
+The pages below contain User Guides that provide information on different aspects of the Ontology
 
 * xref:epo-home::conceptualModelGuide.adoc[Guide to the Conceptual models]
 * xref:epo-home::glossaryGuide.adoc[Guide to the Glossaries]
 * xref:epo-home::moduleGuide.adoc[Guide to the epo Modules] (TBD)
 * xref:epo-home::technicalModelGuide.adoc[Guide to the Technical Model] (TBD)
+
+* How to create data using the ontology
+    something high level giving information to people on how to do this
+how is this done? what are the requirements? Give examples of the already existing epo datasets.
+    How using the eforms we can create linked data...
+
 * xref:epo-home::SPARQLGuide.adoc[Querying the Ontology] (TBD)
 
 

@@ -4,11 +4,14 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
-=== What it is:
+=== What ePO is:
 https://github.com/OP-TED/ePO[The eProcurement Ontology (ePO)] is a semantic ontology related to EU public procurement.
 
-=== What it does:
+=== What ePO does:
 ePO is a tool that conceptualizes, formally encodes and provides structured data about public procurement in both human and machine-readable formats according to EU regulations and directives.
+
+=== Why ePo:
+(put link to motivation here)
 
 === Scope:
 ePO covers public Procurement from end to end, i.e. from notification, to tendering to awarding, ordering, invoicing and payment.

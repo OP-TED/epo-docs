@@ -3,29 +3,33 @@
 :author: AD
 :docdate: June 2024
 
+== Introduction
+
 Public procurement represents around the 20% of GDP in Europe. This big buying volume offers a high economic potential to enhance efficiency of European procurement.
 
 The EU is investing significantly on the digitalisation of the public procurement process (referred to as e-Procurement). This goes beyond simply moving to electronic tools; it rethinks various pre-award and post-award phases with the aim of making them simpler for businesses to participate in, and for the public sector to manage. It also allows for the integration of data-based approaches at various stages of the procurement process.
 
 With e-Procurement, public spending should become more transparent, evidence-oriented, optimised, streamlined and integrated with market conditions. More specifically, e-Procurement offers a range of benefits such as:
 
-significant savings for all parties, both businesses and the public sector;
+* significant savings for all parties, both businesses and the public sector;
 
-simplified and shortened processes;
+* simplified and shortened processes;
 
-reductions in red-tape and administrative burdens;
+* reductions in red-tape and administrative burdens;
 
-increased transparency;
+* increased transparency;
 
-greater innovation;
+* greater innovation;
 
-new business opportunities by improving the access of all enterprises, including small and medium-sized enterprises (SMEs), to public procurement markets.
+* new business opportunities by improving the access of all enterprises, including small and medium-sized enterprises (SMEs), to public procurement markets.
 
 To deliver the aforementioned benefits, e-Procurement relies heavily on the exchange of data between the different systems supporting the procurement processes i.e., achieving end-to-end interoperability of public procurement processes and underlying systems, and on the availability and dissemination of procurement data to the wider public i.e., improving transparency and stimulating innovation and new business opportunities.
 
 As stated in the Commission Regulation 2015/1986 (EU), contracting authorities in the EU are legally required to publish notices above certain capital thresholds. Article 6 of that Regulation states that either the online eNotices application or the TED eSender systems should be used for electronic transmition of notices to the Publications Office of the European Union. From a different angle, the implementation of the/ a revised PSI directive across the EU is calling for open, unobstructed access to public data to improve transparency, and to boost innovation, via the reuse of public data. Procurement data has been identified as data with a high-reuse potential. Making this data available in machine-readable formats, following on from the "data as a service" paradigm, is required to maximise its reuse.
 
 Data exchange, access, and reuse are key requirements for efficient and transparent end-to-end public procurement. Because of this, we observe a shift in focus from the definition of procurement process standards for system-to-system exchange, to the development of data standards for publishing e-Procurement data in open, machine-readable formats (see Chapter 4 Related Ontologies/Vocabularies and Projects).
+
+== Problem Statement
 
 The key challenge is that procurement data exists in different systems across the European Union:
 

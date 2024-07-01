@@ -13,7 +13,7 @@ In general, the Ontology is compartmentalized into the primary  ePO core module 
 
 The Modularization of the Ontology per domain/procurement phase offers two advantages as opposed to just having one Ontology file:
 
-====  Better Maintenance +
+====  Maintenance +
 Splitting the Ontology into Modules  reduces the complexity of the Ontology and consequently, makes the individual modules
 easier to maintain and manage. https://docs.ted.europa.eu/epo-wgm/notes/2021-01-07-wgm.html[WG meeting 7/1/21], https://docs.ted.europa.eu/epo-wgm/notes/2021-12-14-wgm.html[WG meeting 14/12/21]
 
@@ -56,17 +56,51 @@ The imports of the core module are listed below:
 
 == eCatalogue
 
+=== Description
+
+=== Imports
+The imports of the eCatalogue module are listed below:
+
 == eOrdering
+
+=== Description
+
+=== Imports
+The imports of the eOrdering module are listed below:
 
 == eFulfilment
 
+=== Description
+
+=== Imports
+The imports of the eFulfilment module are listed below:
+
 == eContract
+
+=== Description
+
+=== Imports
+The imports of the eContract module are listed below:
 
 == eAccess
 
+=== Description
+
+=== Imports
+The imports of the eAccess module are listed below:
+
 == eSubmission
+
+=== Description
+
+=== Imports
+The imports of the eSubmission module are listed below:
 
 == eNotice
 
-The eNotice module contains classes related to eNotices. It is structured in three packages: notice core, eForms standardisation, and standard Forms standardisation. The standardisation of the notices was done taking into account the notice types: planning, competition, direct award prenotification, result, contract modification and completion. This is the so-called “phase organisation of the notices”.
+=== Description
 
+The eNotice module contains classes related to eNotices and eForms . It is structured in three packages: notice core, eForms standardisation, and standard Forms standardisation. The standardisation of the notices was done taking into account the notice types: planning, competition, direct award prenotification, result, contract modification and completion. This is the so-called “phase organisation of the notices”.
+
+=== Imports
+The imports of the eNotice module are listed below:

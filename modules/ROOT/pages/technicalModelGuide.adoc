@@ -4,7 +4,7 @@
 :docdate: June 2024
 
 == Introduction
-
+This guide is meant to be a resource to
 
 == Explain the structure of each module. (similar to the github readme files)
 
