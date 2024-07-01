@@ -5,9 +5,9 @@
 
 == Introduction
 
-The guide below explains the division of the Ontology into modules, and what is the purpose of each module.
+The guide below explains the reasoning behind the division of the Ontology into modules, explains the purpose of each module and lists their content.
 
-In general, the Ontology is compartmentalized into the primary  ePO core module that contains the majority of concepts found in the Ontology, and a number of smaller specialized modules, where each of these modules represents a different phase of e-Proccurement.
+In general, the Ontology is compartmentalized into the primary  ePO core module that contains the majority of concepts found in the Ontology, and a number of smaller specialized modules. Each of these modules builds upon the concepts of the core module in order to represent a different part of the e-Procurement process.
 
 == Why a Modular Approach
 
