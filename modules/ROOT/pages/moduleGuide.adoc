@@ -171,10 +171,25 @@ The The https://github.com/OP-TED/ePO/blob/a541adfa077c6def2f8237d89a91a6f2abeb4
 == eSubmission
 
 === Description
-The eSubmission module models The ESPD Request document
+The eSubmission module models The ESPD Response document
 
 === Imports
-The [imports] of the eSubmission module (https://github.com/OP-TED/ePO/tree/4.1.0-rc.2[ePO 4.1.0-rc.2]) are listed below:
+The https://github.com/OP-TED/ePO/blob/c13a09847736b992cb4fa190305610a5279fce5a/implementation/eSubmission/owl_ontology/eSubmission.ttl#L211C4-L224C15[imports] of the eSubmission module (https://github.com/OP-TED/ePO/tree/4.1.0-rc.2[ePO 4.1.0-rc.2]) are listed below:
+
+  owl:imports eli:,
+        cccev:,
+        frbroo:,
+        dcterms:,
+        vann:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf:,
+        :core,
+        :acc ;
 
 == eNotice
 
