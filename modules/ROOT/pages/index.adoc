@@ -10,8 +10,8 @@ https://github.com/OP-TED/ePO[The eProcurement Ontology (ePO)] is a semantic ont
 === What ePO does:
 ePO is a tool that conceptualizes, formally encodes and provides structured data about public procurement in both human and machine-readable formats according to EU regulations and directives.
 
-=== Why ePo:
-(put link to motivation here)
+=== Why ePO:
+xref:epo-home::motivation.adoc[Motivation]
 
 === Scope:
 ePO covers public Procurement from end to end, i.e. from notification, to tendering to awarding, ordering, invoicing and payment.
@@ -22,7 +22,6 @@ In order to build and maintain the ontology, OP engaged a Working Group (WG) of 
 
 === Where to start:
 
-*  xref:epo-home::motivation.adoc[Motivation] (under construction)
 * Introductory course on EPO
 ** xref:attachment$LOD/index.html[Linked Open Data] +
 A short info session on Linked Open Data
@@ -37,23 +36,12 @@ The following topics are included in this version of the eProcurement Ontology d
 
 == General Documentation
 
-* xref:epo-home::guide.adoc[User's Guide to ePO] +
-A short user's guide of the ePO project
 * xref:EPO::conceptual.adoc[Conceptual Models] +
 The release specific conceptual Model(s) of the ontology.
 * xref:EPO::glossaries.adoc[Glossaries] +
 The release specific glossaries
 * xref:EPO::release-notes.adoc[Release Notes] +
 The release notes as on GitHub
-
-== Info Sessions
-
-* xref:attachment$LOD/index.html[Linked Open Data] +
-A short info session on Linked Open Data
-* xref:attachment$ePO/index.html[The ePO] +
-A short info session on the ePO
-* xref:attachment$RDF/index.html[RDF and SPARQL] +
-A short info session on RDF and SPARQL
 
 == Reference Documentation
 

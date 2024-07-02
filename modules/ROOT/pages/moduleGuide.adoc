@@ -11,7 +11,7 @@ In general, the Ontology is compartmentalized into the primary  ePO core module 
 
 == Why a Modular Approach
 
-The Modularization of the Ontology per domain/procurement phase offers two advantages as opposed to just having one Ontology file:
+The Modularization of the Ontology per domain/procurement phase offers two advantages as opposed to just having one Ontology file: Maintenance and reusability.
 
 ====  Maintenance +
 Splitting the Ontology into Modules  reduces the complexity of the Ontology and consequently, makes the individual modules
@@ -22,7 +22,7 @@ easier to maintain and manage. https://docs.ted.europa.eu/epo-wgm/notes/2021-01-
 
 ** By ePO: When developing a new ePO module, that module should only reuse the common concepts found on ePO Module, thus facilitating the development process.
 
-=== Criticism on the approach
+==== Criticism on the approach
 
 * Numerous modules make identifying which parts of the Ontology to use difficult for users. A solution to that would be clearer documentation and other ways to direct users to the correct modules.
 * When developing new modules, there are cases when it is required to reuse concepts found in modules other than that of the core module. There is not a clear guideline on how to classify such concepts.
@@ -41,7 +41,7 @@ No there is not. It depends on how someone plans to use the Ontology. For exampl
 ePO core is the main module of ePO ontology containing the fundamental parts of ePO. All the other ePO modules import the core module in order to use its concepts.
 
 === Imports
-The imports of the core module are listed below:
+The https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/ePO_core/owl_ontology/ePO_core.ttl#L3520C4-L3529C16[imports] of the core module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
 
   owl:imports cccev:,
         dcterms:,
@@ -57,44 +57,124 @@ The imports of the core module are listed below:
 == eCatalogue
 
 === Description
+The eCatalogue module contains classes related to the concept of an eCatalogue. It covers the needs for post-award and some of the needs for pre-award.
+
 
 === Imports
-The imports of the eCatalogue module are listed below:
+The https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/eCatalogue/owl_ontology/eCatalogue.ttl#L556C4-L568C15[imports] of the eCatalogue module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
+
+   owl:imports cccev:,
+        dcterms:,
+        vann:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf:,
+        :core,
+        :ord,
+        :ful ;
+
 
 == eOrdering
-
 === Description
+The eOrdering module contains classes specific to the Ordering phase of procurement, including order response.
 
 === Imports
-The imports of the eOrdering module are listed below:
+The https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/eOrdering/owl_ontology/eOrdering.ttl#L400C4-L412C15[imports] of the eOrdering module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
+
+
+  owl:imports cccev:,
+        dcterms:,
+        vann:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf:,
+        :core,
+        :cat,
+        :ful ;
 
 == eFulfilment
 
 === Description
+The eFulfilment module contains classes specific to the handling, storage, packing, and shipping of orders.
+
 
 === Imports
-The imports of the eFulfilment module are listed below:
+The https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/eFulfilment/owl_ontology/eFulfilment.ttl#L506C4-L518C15[imports] of the eFulfilment module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
+
+ owl:imports cccev:,
+        dcterms:,
+        vann:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf:,
+        :core,
+        :cat,
+        :ord ;
 
 == eContract
 
 === Description
+The eContract module contains classes related to the concept of a Contract, used in the contract phase of eProcurement
+
 
 === Imports
-The imports of the eContract module are listed below:
+The https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/eContract/owl_ontology/eContract.ttl#L113C4-L125C15[imports] of the eContract module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
+
+  owl:imports cccev:,
+        dcterms:,
+        vann:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf:,
+        :core,
+        :cat,
+        :not ;
 
 == eAccess
 
 === Description
+The eAccess module models The ESPD Request document, which is used by Buyers to express the Exclusion and Selection criteria, as well as particular requirements, that the Economic Operators will need to fulfil in the context of a tender;
 
 === Imports
-The imports of the eAccess module are listed below:
+The The https://github.com/OP-TED/ePO/blob/a541adfa077c6def2f8237d89a91a6f2abeb48b7/implementation/eAccess/owl_ontology/eAccess.ttl#L170C5-L182C16[imports] of the eAccess module (https://github.com/OP-TED/ePO/tree/4.1.0-rc.2[ePO 4.1.0-rc.2]) are listed below:
+
+  owl:imports eli:,
+        cccev:,
+        frbroo:,
+        dcterms:,
+        vann:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf:,
+        :core ;
 
 == eSubmission
 
 === Description
+The eSubmission module models The ESPD Request document
 
 === Imports
-The imports of the eSubmission module are listed below:
+The [imports] of the eSubmission module (https://github.com/OP-TED/ePO/tree/4.1.0-rc.2[ePO 4.1.0-rc.2]) are listed below:
 
 == eNotice
 
@@ -103,4 +183,17 @@ The imports of the eSubmission module are listed below:
 The eNotice module contains classes related to eNotices and eForms . It is structured in three packages: notice core, eForms standardisation, and standard Forms standardisation. The standardisation of the notices was done taking into account the notice types: planning, competition, direct award prenotification, result, contract modification and completion. This is the so-called “phase organisation of the notices”.
 
 === Imports
-The imports of the eNotice module are listed below:
+The https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/eNotice/owl_ontology/eNotice.ttl#L747[imports] of the eNotice module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
+
+    owl:imports cccev:,
+        dcterms:,
+        vann:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf:,
+        :core,
+        :con ;

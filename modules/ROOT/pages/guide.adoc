@@ -3,11 +3,11 @@
 :author: AD
 :docdate: June 2024
 
-The pages below contain User Guides that provide information on different aspects of the Ontology
+The pages below contain user guides that provide information on different aspects of the Ontology
 
 * xref:epo-home::conceptualModelGuide.adoc[Guide to the Conceptual models]
 * xref:epo-home::glossaryGuide.adoc[Guide to the Glossaries]
-* xref:epo-home::moduleGuide.adoc[Guide to the epo Modules] (TBD)
+* xref:epo-home::moduleGuide.adoc[Guide to the epo Modules] (Under Construction)
 * xref:epo-home::technicalModelGuide.adoc[Guide to the Technical Model] (TBD)
 
 * How to create data using the ontology
@@ -16,7 +16,8 @@ how is this done? what are the requirements? Give examples of the already existi
     How using the eforms we can create linked data...
 
 * xref:epo-home::SPARQLGuide.adoc[Querying the Ontology] (TBD)
-
+* xref:attachment$RDF/index.html[RDF and SPARQL] +
+A short info session on RDF and SPARQL
 
 == Examples (Conceptual model)
 The following examples
