@@ -3,7 +3,7 @@
 :author: AD
 :docdate: June 2024
 
-Before reading this example, please visit the xref:epo-home::conceptualModelGuide.adoc[Conceptual Model] and xref:epo-home::glossaryGuide.adoc[Glossary] guides.
+Before reading this example, please visit the xref:guides/conceptualModelGuide.adoc[Conceptual Model] and xref:guides/glossaryGuide.adoc[Glossary] guides.
 
 
 This query aims to find the procurement notices specific to publication

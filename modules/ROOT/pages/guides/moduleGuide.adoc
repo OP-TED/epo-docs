@@ -11,6 +11,9 @@ In general, the Ontology is compartmentalized into the primary  ePO core module 
 
 == Why a Modular Approach
 
+also  add information about namespaces being the same
+explain why it is easier for business people to have the modular approach.
+
 The Modularization of the Ontology per domain/procurement phase offers two advantages as opposed to just having one Ontology file: Maintenance and reusability.
 
 ====  Maintenance +
@@ -30,17 +33,21 @@ easier to maintain and manage. https://docs.ted.europa.eu/epo-wgm/notes/2021-01-
 
 == FAQ
 
+This point there is no file containing all imports of the ontology.
 ===== Q: Is there a single file that contains all owl:imports needed to compose the full ePO?
 
 No there is not. It depends on how someone plans to use the Ontology. For example, if someone wants to use the Ontology for querying information on eForms, they should use the eNotice module. If someone wants to query information about the ESPD request, they should use the eAccess module,et cetera.
-.
 
 == ePO core
 
 === Description
 ePO core is the main module of ePO ontology containing the fundamental parts of ePO. All the other ePO modules import the core module in order to use its concepts.
 
+=== Prefixes
+
 === Imports
+We need to import classes from other ontologies ... add more explanations here...
+
 The https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/ePO_core/owl_ontology/ePO_core.ttl#L3520C4-L3529C16[imports] of the core module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
 
   owl:imports cccev:,
@@ -57,7 +64,16 @@ The https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/
 == eCatalogue
 
 === Description
-The eCatalogue module contains classes related to the concept of an eCatalogue. It covers the needs for post-award and some of the needs for pre-award.
+The eCatalogue module contains classes related to the concept of an eCatalogue. It covers the needs for e Catalogue in post-award and some of the needs of eCatalogue for pre-award.
+
+=== Conceptual Model
+
+this is the main diagram. To be able to understand the different parts  of this diagram and how to read it please read... link to conceptual model guide.
+
+
+image::docUpdateGuideImages/Modules/catalogue.png[]
+__ Figure 1: xref:EPO::glossaries.adoc[]. Note the 4.0.1-rc2 version field on the top right.
+__
 
 
 === Imports
