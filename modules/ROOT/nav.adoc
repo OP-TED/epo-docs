@@ -5,6 +5,7 @@
 :docdate: June 2023
 
 * xref:epo-home::index.adoc[Home]
+* xref:epo-showcase:showcase/index.adoc[Showcasing the eProcurement Ontology]
 
 * [.separated]#**General Documentation**#
 * xref:epo-home::guide.adoc[User guides to ePO]
