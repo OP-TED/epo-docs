@@ -1,0 +1,15 @@
+:doctitle: The Use of the ePO in the ESPD
+:doccode: epo-main-prod-043
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2024
+
+Two ePO modules define the classes for the ESPD, eAccess that covers the ESPD Request, and eSubmission, which covers the ESPD Response.
+
+These classes used by developers when creating an ESPD service and form part of the tools offered to developers for this purpose. #link to ESPD github#
+
+The documentation around the ESPD can be found here #link to espd-docs#
+
+ePO Modules are: eAccess (Request) & eSubmission (Response)
+
+#Speak to Dragos re details#

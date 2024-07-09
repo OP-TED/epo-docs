@@ -1,0 +1,13 @@
+:doctitle: The use of ePO in SPARQL Queries
+:doccode: epo-main-prod-041
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2024
+
+Process of building a query (concepts to classes, triples, query) - overview of the process described in Achilles' section.
+
+. Question
+. Concepts
+. Classes (glossary)
+. Relationships (conceptual model)
+. Query WHERE statements

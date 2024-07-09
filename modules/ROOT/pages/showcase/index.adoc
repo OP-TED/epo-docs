@@ -1,0 +1,23 @@
+:doctitle: How the eProcurement Ontology is used by other projects and tools
+:doccode: epo-main-prod-040
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2024
+
+
+The eProcurement Ontology underpins several projects in the EU public procurement space which ensures semantic consistency as well as providing a semantic basis upon which public procurement open data is queried. A few of the uses of the eProcurement Ontology are showcased below. Click on the links to each project to read more about the eProcurement Ontology's role in them.
+
+=== The Open Data Service 
+The Open Data Service is a service that continuously converts TED notice data, in xml format, into RDF format so that it can be queried using the SPARQL query language. Click xref:/showcase/sc_pipeline.adoc[here] to read more.
+
+=== Querying RDF Data 
+Querying eProcurement data in RDF format using the SPARQL query language. Click xref:/showcase/sc_queries.adoc[here] to read more. (queries pages Achillies writing)
+
+=== Defining the ESPD 
+Defining the classes and relationships used in the https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[ESPD]. Read more about the xref:/showcase/sc_espd.adoc[The ePO's role in the ESPD].
+
+=== The model2owl project 
+https://docs.ted.europa.eu/docs-staging/m2o-home/index.html[model2owl] is an automated technical tool that generates the artifacts of the eProcurement ontology before the release of a new version. xref:/showcase/sc_m2o.adoc[Read more] about the model2owl project.
+
+=== xref:/showcase/sc_ppds.adoc[The Public Procurement Data Space]
+Used in the https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/public-procurement-data-space-ppds_en[Public procurement Data Space (PPDS)] to link EU procurement data to national procurement databases so that more comprehensive queries can be performed on the data. Read more xref:/showcase/sc_ppds.adoc[here].
