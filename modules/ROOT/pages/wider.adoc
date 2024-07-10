@@ -5,6 +5,13 @@
 :docdate: June 2023
 
 
+
+
+'''
+link:{attachmentsdir}/work_group_meetings_reports/2024_WGM_July/eProcurementOntology-July2024.pptx[2024 July WGM presentation]
+
+'''
+
 xref:ePO_Q2_2023_WGM.adoc[Report from the Q2 2023 Working Group General Meeting: 27 June 2023]
 
 link:{attachmentsdir}/work_group_meetings_reports/Q2_2023_WGM/eProcurementOntology-2023-Q2.pptx[Q2 2023 WGM presentation]
