@@ -11,7 +11,7 @@ The eProcurement Ontology underpins several projects in the EU public procuremen
 The Open Data Service is a service that continuously converts TED notice data, in xml format, into RDF format so that it can be queried using the SPARQL query language. Click xref:/showcase/sc_pipeline.adoc[here] to read more.
 
 ===== Querying RDF Data
-Querying eProcurement data in RDF format using the SPARQL query language. Click xref:/showcase/sc_queries.adoc[here] to read more. (queries pages Achillies writing)
+Querying eProcurement data in RDF format using the SPARQL query language. Click xref:/guides/SPARQLGuide.adoc[here] to read more.
 
 === Defining the ESPD 
 Defining the classes and relationships used in the https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[ESPD]. Read more about the xref:/showcase/sc_espd.adoc[The ePO's role in the ESPD].

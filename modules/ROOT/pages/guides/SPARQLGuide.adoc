@@ -5,5 +5,13 @@
 
 == Introduction
 
+Process of building a query (concepts to classes, triples, query)
+
+. Question
+. Concepts
+. Classes (glossary)
+. Relationships (conceptual model)
+. Query WHERE statements
+
 Make sure that for each query example it is mentioned which epo version is being queried.
 
