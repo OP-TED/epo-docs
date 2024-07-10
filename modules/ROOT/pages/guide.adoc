@@ -9,19 +9,13 @@ The pages below contain user guides that provide information on different aspect
 * xref:guides/glossaryGuide.adoc[Guide to the Glossaries]
 * xref:guides/moduleGuide.adoc[Guide to the epo Modules] (Under Construction)
 * xref:guides/technicalModelGuide.adoc[Guide to the Technical Model] (TBD)
-* xref:guides/technicalModelGuide.adoc[Guide to the Technical Model] (TBD)
-
-* How to create data using the ontology
-    something high level giving information to people on how to do this
-how is this done? what are the requirements? Give examples of the already existing epo datasets.
-    How using the eforms we can create linked data...
-
-* xref:guides/SPARQLGuide.adoc[Querying the Ontology] (TBD)
-* xref:attachment$RDF/index.html[RDF and SPARQL] +
+* xref:guides/CreatingDataGuide.adoc[Guide to creating data using the Ontology] (TBD)
+* xref:guides/SPARQLGuide.adoc[Guide to querying the Ontology] (TBD)
+**  xref:attachment$RDF/index.html[RDF and SPARQL] +
 A short info session on RDF and SPARQL
 
 == Examples (Conceptual model)
-The following examples
+The following examples demonstrate how the ePO conceptual models and glossaries can be used to navigate the ontology in order to locate key concepts that can be used for queries.
 
 * xref:examples/ex1.adoc[Example 1: Who buys what from whom?]
 * xref:examples/ex2.adoc[Example 2: How many contractors are SMEs for a given country and given date?]

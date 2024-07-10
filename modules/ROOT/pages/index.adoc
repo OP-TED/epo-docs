@@ -27,21 +27,27 @@ In order to build and maintain the ontology, OP engaged a Working Group (WG) of 
 A short info session on Linked Open Data
 ** xref:attachment$ePO/index.html[The ePO] +
 A short info session on the ePO
-* xref:epo-home::guide.adoc[User's Guide to ePO] +
-A collection of pages describing how to use ePO and its features.
 * https://github.com/OP-TED/ePO[Github page]
 
 The following topics are included in this version of the eProcurement Ontology documentation:
 
 
+== eProcurement Ontology
+* Home (current page)
+
 == General Documentation
+
+
+* xref:epo-home::guide.adoc[User guides to ePO] +
+A collection of pages describing how to use ePO and its features.
 
 * xref:EPO::conceptual.adoc[Conceptual Models] +
 The release specific conceptual Model(s) of the ontology.
 * xref:EPO::glossaries.adoc[Glossaries] +
 The release specific glossaries
 * xref:EPO::release-notes.adoc[Release Notes] +
-The release notes as on GitHub
+* xref:showcase/index.adoc[How the eProcurement Ontology is used by other projects and tools]
+
 
 == Reference Documentation
 

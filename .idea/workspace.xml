@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="Started explaining the HTML conceptual models">
+    <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="moved files from showcase">
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/pages/guides/CreatingDataGuide.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/SPARQLGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/SPARQLGuide.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/guide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/guide.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/index.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/moduleGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/moduleGuide.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/motivation.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/motivation.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/technicalModelGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/technicalModelGuide.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/showcase/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/showcase/index.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +45,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/docUpdate&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/docUpdate",
+    "last_opened_file_path": "C:/Users/achid/OneDrive/Documents/GitHub/epo-docs/modules/ROOT/pages/guides"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\achid\OneDrive\Documents\GitHub\epo-docs\modules\ROOT\pages\guides" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\achid\OneDrive\Documents\GitHub\epo-docs\modules\ROOT\pages" />
       <recent name="C:\Users\achid\OneDrive\Documents\GitHub\epo-docs\modules\ROOT\images\docUpdateImages\UML\Conceptual model queries" />
       <recent name="C:\Users\achid\OneDrive\Documents\GitHub\epo-docs\modules\ROOT\images\docUpdateImages\UML" />
       <recent name="C:\Users\paterni\Code\epo-docs\modules\ROOT\pages\archive" />
@@ -331,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718116105170</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="moved files from showcase">
+      <option name="closed" value="true" />
+      <created>1720516672526</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1720516672526</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,6 +358,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/scripts" />
       <path value="$PROJECT_DIR$/scripts/content" />
@@ -374,6 +387,7 @@
     <MESSAGE value="corrected image colour" />
     <MESSAGE value="added class generalisation" />
     <MESSAGE value="Started explaining the HTML conceptual models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started explaining the HTML conceptual models" />
+    <MESSAGE value="moved files from showcase" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved files from showcase" />
   </component>
 </project>
