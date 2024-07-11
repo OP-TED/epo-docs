@@ -88,7 +88,7 @@ that usually connected to the internet. URLs (web addresses) are the most common
 
 There are 3 types of associations between the various concepts of ePO:
 
-* Predicates (or object Properties) drawn in UML as arrows are used to represent relations between 2 classes.
+* Predicates (or object Properties) drawn in UML as arrows are used to represent relations between 2 classes. Like attributes, predicates also have cardinalities.
 For example, Figure 3 depicts predicate epo:playedBy, that connects classes epo:AgentInRole and foaf:Agent. This specific
 predicate should be read as: "AgentInRole playedBy Agent". Also note that The cardinality of epo:playedBy is 1. This means
 that each instance of epo:AgentInRole must be played by exactly 1 instance of foaf:Agent.
