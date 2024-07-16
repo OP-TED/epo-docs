@@ -1,0 +1,61 @@
+:doctitle: REPORT ON THE FIRST 2024 BIANNUAL WORKING GROUP MEETING OF THE EPROCUREMENT ONTOLOGY
+:doccode: epo_wgm_july_2024
+:author: AD
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: July 2024
+
+**Online meeting: 10/07/2024**
+
+== Meeting Agenda
+
+* Welcome
+* Review of 2024
+* ePO 4.1.0-rc.2 (published)
+* ePO 4.1.0-rc.3 (in progress)
+* ePO 4.2.0-rc.1 (in progress)
+* Pre-Award updates
+* Future work
+* Updates to the documentation
+* Open discussion
+* Closing
+
+== Welcome:
+
+Natalie Muric explained the aim of the meeting is to present the work carried out since the last meeting in December 2023 and to present the  plan for the second half of 2024.  Stakeholders’ attention was drawn to the release of eAccess and eSubmission modules as well as the  Publication of ePO 4.1.0 and the first candidate of ePO 4.2.0-rc.2
+
+The following sections provide a summary of what was presented by Andrea Pasare  and discussed.
+
+== Review of 2024
+
+=== Publication of ePO 4.1.0-rc.2
+
+The release candidate 4.1.0-rc.2 and its corresponding technical files can be found at https://github.com/OP-TED/ePO/tree/4.1.0-rc.2 .
+
+Release notes:
+
+eAccess module was released.
+eSubmission module was released.
+Updates for the following modules were made:
+    - ePO core
+    - eCatalogue: Catalogue Response
+    - eOrdering
+    - eFulfilment: Receipt advice
+    - eContract
+    - eNotice.
+
+
+
+==== eAccess module
+
+==== eSubmission module
+
+
+=== Work in progress
+==== ePO 4.1.0-rc.3
+GitHub issue fixes
+
+==== ePO 4.2.0-rc.1
+      eInvoicing module development
+Towards the publication of ePO 4.2.0:
+ePO 4.2.0-rc.1
+
