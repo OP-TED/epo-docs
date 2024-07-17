@@ -1,18 +1,16 @@
 :doctitle: Guide to the ePO Conceptual Model
+:page-code: epo-concept-guide
 :author: AD
 :authoremail: achilles.dougalis@meaningfy.ws
-:docdate: June 2024
+:docdate: July 2024
 :sectnums:
+:showtitle:
 :toc:
+:toc-placement: preamble
 :toclevels: 4
 :toc-title: Contents
 
 = Guide to the ePO Conceptual Model
-
-:toc:
-:toc-placement: preamble
-:toclevels: 1
-:showtitle:
 
 toc::[]
 
@@ -84,7 +82,7 @@ that usually connected to the internet. URLs (web addresses) are the most common
 * Boolean is used to represent 2 possible values, usually "true" and "false".
 
 
-===== Associations: Predicates (Object properties), Class generalisations and dependency relationships
+===== Associations: Predicates (Object properties), Class generalisations and dependency relationships[[arrows]]
 
 There are 3 types of associations between the various concepts of ePO:
 

@@ -1,0 +1,6 @@
+
+== FAQ
+
+===== Q: Is there a single file that contains all owl:imports needed to compose the full ePO?
+
+No there is not. It depends on how someone plans to use the Ontology. For example, if someone wants to use the Ontology for querying information on eForms, they should use the eNotice module. If someone wants to query information about the ESPD request, they should use the eAccess module,et cetera.

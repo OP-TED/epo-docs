@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="moved files from showcase">
-      <change afterPath="$PROJECT_DIR$/modules/ROOT/pages/guides/CreatingDataGuide.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/pages/TBDFAQ.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/guide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/guide.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/index.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/showcase/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/showcase/index.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/guides/conceptualModelGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/guides/conceptualModelGuide.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/guides/moduleGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/guides/moduleGuide.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,15 +44,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/docUpdate",
-    "last_opened_file_path": "C:/Users/achid/OneDrive/Documents/GitHub/epo-docs/modules/ROOT/pages/guides"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/docUpdate&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/achid/OneDrive/Documents/GitHub/epo-docs/modules/ROOT/pages/guides&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\achid\OneDrive\Documents\GitHub\epo-docs\modules\ROOT\pages\guides" />
