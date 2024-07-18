@@ -19,9 +19,15 @@ This guide  offers an overview of the ePO modules including the reasoning behind
 
 In general, the Ontology is compartmentalized into the primary  ePO core module that contains the majority of concepts found in the Ontology, and a number of smaller specialized modules. Each of these modules builds upon the concepts of the core module in order to represent a different part of the e-Procurement process.
 
-Concepts that belong to a specific module also share a specific prefix. For example, all the concepts that belong to the ePO core module use the prefix  *epo* while all the concepts belonging to the eCatalogue use the prefix *epo-cat*. Please note however that all ePO concepts regardless of module (and prefix) use the same URI namespace:
+As a convention, concepts that belong to a specific module also share a specific prefix. For example, all the concepts that belong to the ePO core module use the prefix  *epo* while all the concepts belonging to the eCatalogue use the prefix *epo-cat*. Please note however that all ePO concepts regardless of module (and prefix) use the same URI namespace:
 
  http://data.europa.eu/a4g/ontology#
+
+
+Reuse of other ontologies and vocabularies. add more... Link.. to systems using the ontology.
+
+
+
 
 The Modularization of the Ontology per domain/procurement phase offers the following advantages as opposed to just having one Ontology file:
 
@@ -40,14 +46,14 @@ The Modularization of the Ontology per domain/procurement phase offers the follo
 ePO core is the main module of ePO ontology containing the fundamental parts of ePO. All the other ePO modules import the core module in order to use its concepts.
 
 === Conceptual Model
-this is the main diagram. To be able to understand the different parts of this diagram and how to read it please refer to the xref:guides/conceptualModelGuide.adoc#arrows[guide to the ePO Conceptual Model]
+This is the main diagram. To be able to understand the different parts of this diagram and how to read it please refer to the xref:guides/conceptualModelGuide.adoc#arrows[guide to the ePO Conceptual Model]
 
 
 
 
 === Prefixes and Imports
 All concepts that were created for the Ontology use the *epo* prefix.
-except the concepts imported by other ontologies including:
+The concepts imported by other ontologies use the following prefixes:
 
 * adms:
 * cccev:
@@ -61,7 +67,6 @@ except the concepts imported by other ontologies including:
 * xsd:
 
 
-=== Imports
 
 The prefixes and https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/ePO_core/owl_ontology/ePO_core.ttl#L3520C4-L3529C16[imports] of the core module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
 
