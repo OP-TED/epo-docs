@@ -35,6 +35,11 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2024]
 === 2024
 
+
+xref:notes/2024-07-18-wgm.adoc[2024-07-18 (core, eNotice)]
+
+xref:notes/2024-07-16-wgm.adoc[2024-07-16 (eFulfilment)]
+
 xref:notes/2024-07-11-wgm.adoc[2024-07-11 (eInvoicing)]
 
 xref:notes/2024-07-09-wgm.adoc[2024-07-09 (ePO 4.1.0-rc3 - 4.2.0 -rc1 github issues)]
