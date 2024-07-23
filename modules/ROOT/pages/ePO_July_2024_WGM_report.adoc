@@ -6,12 +6,17 @@
 
 **Online meeting: 10/07/2024**
 
+*Participants:*  Paloma Arillo (OP), Wim Kok (loginus.nl), Natalie Muric(OP), Gonçalo Negrão, Nicole Paterson-Jones (OP), Giovanni Paolo Sellitto (ANAC IT), Dragos Stoica (OP), Volodymyr Tarnay (OCP), Pascaline Laure Tchienehom (NTTDATA France) +
+*Presenter:* Andreea Pasare (Meaningfy/Infeurope), +
+*Note editor:* Achilles Dougalis (Meaningfy/Infeurope)
+
 == Meeting Agenda
 
 * Welcome
 * Review of 2024
 * ePO 4.1.0-rc.2 (published)
 * ePO 4.1.0-rc.3 (in progress)
+* 5 minute break
 * ePO 4.2.0-rc.1 (in progress)
 * Pre-Award updates
 * Future work
@@ -21,41 +26,73 @@
 
 == Welcome:
 
-Natalie Muric explained the aim of the meeting is to present the work carried out since the last meeting in December 2023 and to present the  plan for the second half of 2024.  Stakeholders’ attention was drawn to the release of eAccess and eSubmission modules as well as the  Publication of ePO 4.1.0 and the first candidate of ePO 4.2.0-rc.2
+Natalie Muric explained the aim of the meeting is to present the work carried out since the last meeting in December 2023 and to present the  plan for the second half of 2024.  Stakeholders’ attention was drawn to the release of eAccess, eSubmission and eInvoicing modules as well as the  Publication of ePO 4.1.0 and the first candidate of ePO 4.2.0
 
-The following sections provide a summary of what was presented by Andrea Pasare  and discussed.
-
-== Review of 2024
-
-=== Publication of ePO 4.1.0-rc.2
-
-The release candidate 4.1.0-rc.2 and its corresponding technical files can be found at https://github.com/OP-TED/ePO/tree/4.1.0-rc.2 .
-
-Release notes:
-
-eAccess module was released.
-eSubmission module was released.
-Updates for the following modules were made:
-    - ePO core
-    - eCatalogue: Catalogue Response
-    - eOrdering
-    - eFulfilment: Receipt advice
-    - eContract
-    - eNotice.
+The following sections provide a summary of what was presented by Andrea Pasare  and discussed by the Working Group.
 
 
+== Publication of ePO 4.1.0-rc.2
 
-==== eAccess module
+The release candidate 4.1.0-rc.2 was presented.
+This release and its corresponding technical files can be found at https://github.com/OP-TED/ePO/tree/4.1.0-rc.2 .
+ePO 4.1.0-rc.2 includes the new modules of eAccess and eSubmission modules as well as updates to the other modules. For more information on what has changed, please consult the https://docs.ted.europa.eu/EPO/4.1/release-notes.html[corresponding release notes].
 
-==== eSubmission module
+=== eAccess module
+The https://docs.ted.europa.eu/EPO/4.1/_attachments/html_reports/eAccess/index.htm[eAccess module conceptual model diagrams] were presented.
+
+=== eSubmission module
+The https://docs.ted.europa.eu/EPO/4.1/_attachments/html_reports/eSubmission/index.htm[eSubmission module conceptual model diagrams] were presented.
+
+== Work in progress
+
+=== ePO 4.1.0-rc.3
+The upcoming release candidate 4.1.0-rc.3 was discussed. This particular version contains https://github.com/OP-TED/ePO/milestone/9[fixes of Github issues related to ePO 4.1.0-rc.2].
 
 
-=== Work in progress
-==== ePO 4.1.0-rc.3
-GitHub issue fixes
+=== ePO 4.2.0-rc.1
 
-==== ePO 4.2.0-rc.1
-      eInvoicing module development
-Towards the publication of ePO 4.2.0:
-ePO 4.2.0-rc.1
+The upcoming release candidate 4.2.0-rc.1 was Presented. This  version contains the eInvoicing module. Andreea Pasare presented the  module, including the Conceptual Model diagrams (found on the link:{attachmentsdir}/work_group_meetings_reports/2024_WGM_July/eProcurementOntology-July2024.pptx[2024 July WGM presentation]), the Roles involved in the eInvoicing phase, and the use cases and user stories that were used in order to develop the module. During the presentation, it was mentioned that the eInvoicing model was based on PEPPOL's einvoicing data model standard.
 
+== Future Work
+
+Future work for 2024 includes the publication of ePO 4.1.0-rc.3, and ePO 4.2.0-rc.2 release candidates, as well as the actual release of  ePO 4.1.0. Other activities include the continuation of the alignment with PEPPOL on Post-Award and Pre-Award ePO module updates as well as Concept definition updates. Furthermore, the working group will continue addressing the existing GitHub issues.
+
+== Updates to the documentation
+
+Achilles Dougalis presented the documentation updates on Github repository including Readme files  on all https://github.com/OP-TED/ePO/tree/master/implementation[Implementation subfolders], and the addition of the https://github.com/OP-TED/ePO/tree/master/implementation[Discussions] section.
+Also, a short presentation of the updated Documentation Page including  User Guides to the ePO Conceptual model was made.
+
+
+
+== Open Discussion
+
+There was a question regarding the existing data using the structure of the Ontology. Natalie Muric replied that Contact award Notice data are available on Cellar, and that soon eforms data will be available. It was also noted that the harmonization of Post award and pre award ePO concepts will facilitate the usage of ePO.
+
+== Closing:
+
+Natalie Muric of the Publications Office presented the next meeting schedule for ePO:
+They take place twice a week from 14:30 to 16:30 (EET) during the year on Microsoft Teams. Everybody is welcome. https://teams.microsoft.com/l/meetup-join/19%3aDMvE-SiUhrvRHl0n1XSaOl_adGlaZyf1TKNnDtSvMbg1%40thread.tacv2/1714637816259?context=%7b%22Tid%22%3a%22b24c8b06-522c-46fe-9080-70926f8dddb1%22%2c%22Oid%22%3a%222ef4eadd-c92c-43ac-9729-2cbd2f911346%22%7d[Tuesday] meetings are more about ePO core development. https://teams.microsoft.com/l/meetup-join/19%3aDMvE-SiUhrvRHl0n1XSaOl_adGlaZyf1TKNnDtSvMbg1%40thread.tacv2/1714637500226?context=%7b%22Tid%22%3a%22b24c8b06-522c-46fe-9080-70926f8dddb1%22%2c%22Oid%22%3a%222ef4eadd-c92c-43ac-9729-2cbd2f911346%22%7d[Thursday] meetings are more specific for different modules: eCatalogue, eOrdering, etc.
+ Users do not need to follow on a weekly basis and any doubt can be put also in a GitHub issue.
+
+We would like to release version 4.1.0 by mid of September and we would appreciate any feedback even if it is sent late. The suggestions will be taken into consideration for a future release. All addresses to contact the ePO team are provided in the last slide:
+
+
+* GitHub discussions: https://github.com/OP-TED/ePO/discussions
+* GitHub issues: https://github.com/OP-TED/ePO/issues
+
+or alternatively via:
+
+* Email: OP-EPROCUREMENT-ONTOLOGY@publications.europa.eu
+* Email: natalie.muric@publications.europa.eu
+
+
+ePO Working Group meetings:
+
+      - every Tuesday from 14:30 to 16:30 (EET)
+                 - https://teams.microsoft.com/l/meetup-join/19%3aDMvE-SiUhrvRHl0n1XSaOl_adGlaZyf1TKNnDtSvMbg1%40thread.tacv2/1714637816259?context=%7b%22Tid%22%3a%22b24c8b06-522c-46fe-9080-70926f8dddb1%22%2c%22Oid%22%3a%222ef4eadd-c92c-43ac-9729-2cbd2f911346%22%7d[meeting link]
+
+      - every Thursday from 14:30 to 16:30 (EET)
+                 - https://teams.microsoft.com/l/meetup-join/19%3aDMvE-SiUhrvRHl0n1XSaOl_adGlaZyf1TKNnDtSvMbg1%40thread.tacv2/1714637816259?context=%7b%22Tid%22%3a%22b24c8b06-522c-46fe-9080-70926f8dddb1%22%2c%22Oid%22%3a%222ef4eadd-c92c-43ac-9729-2cbd2f911346%22%7d[meeting link]
+
+
+include::partial$feedback.adoc[]
