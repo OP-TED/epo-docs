@@ -185,7 +185,7 @@ __
 
 ===== Agent hierarchy and agent relations  diagrams
 
-As seen in figure 11, An epo:Agent can either be a person (foaf:Person) an organization (org:Organization) or a system (epo:system). Classes foaf:Person and org:Organization are themselves generalizations of more specific concepts. The prefixes foaf and org signify that these classes were reused by ePO from other ontologies and taxonomies.
+As seen in figure 11, An epo:Agent can either be a person (foaf:Person) an organisation (org:Organization) or a system (epo:system). Classes foaf:Person and org:Organization are themselves generalizations of more specific concepts. The prefixes foaf and org signify that these classes were reused by ePO from other ontologies and taxonomies.
 Also, on the left of the diagram we see the directory tree containing the other diagrams of the ontology. Each directory follows more or less the same format. There is one or more key concepts for that directory, agent for example and for each concept there is a hierarchy diagram depicting the hierarchy of the concept, and a relations diagram depicting the concept's relationship with other classes, or vocabularies.
 
 image::docUpdateGuideImages/UML/figure11.png[]
