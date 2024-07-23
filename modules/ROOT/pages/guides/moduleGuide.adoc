@@ -23,8 +23,8 @@ As a convention, concepts that belong to a specific module also share a specific
 
  http://data.europa.eu/a4g/ontology#
 
+ePO also reuses concepts from other ontologies and vocabularies, using their own prefix. For example, all the ePO modules use the class adms:Identifier (along with specific attributes and properties) from the https://www.w3.org/TR/vocab-adms/[Asset Description Metadata Schema (ADMS)] in order to represent the identification of different ePO concepts. Another example is the reuse of a number of concepts from the https://github.com/SEMICeu/CCCEV[Core Criterion and Core Evidence Vocabulary (CCCEV)]
 
-Reuse of other ontologies and vocabularies. add more... Link.. to systems using the ontology.
 
 
 

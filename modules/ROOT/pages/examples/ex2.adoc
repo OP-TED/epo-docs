@@ -9,7 +9,7 @@ Before reading this example, please visit the xref:guides/conceptualModelGuide.a
 This query aims to find the procurement notices specific to publication
 date, country code (Germany), and business size (SME - Small Medium Enterprises).
 
-* Publication date can be found on the Notice Class, and country code and business size can be found on the Organization
+* Publication date can be found on the Notice Class, and country code and business size can be found on the Organisation
 class, that is also the winner for that notice.
 
 * First we need to locate the Notice class in epo core conceptual model.
