@@ -700,7 +700,7 @@ In 2015, CEN established a new technical committee (TC) whose purpose is to deve
 
 ==== Open Contracting Data Standard
 
-The Open Contracting Data Standard (OCDS)  was developed for the Open Contracting Partnership (OCP) by the World Wide Web Foundation . The OCDS enables disclosure of data and documents at all stages of the contracting process by defining a common data model. It was created to support organizations to increase contracting transparency, and allow deeper analysis of contracting data by a wide range of users <<_10>>.
+The Open Contracting Data Standard (OCDS)  was developed for the Open Contracting Partnership (OCP) by the World Wide Web Foundation . The OCDS enables disclosure of data and documents at all stages of the contracting process by defining a common data model. It was created to support organisations to increase contracting transparency, and allow deeper analysis of contracting data by a wide range of users <<_10>>.
 
 The Open Contracting Data Standard (OCDS) is maintained using JSON Schema. Table 7 displays the main sections and common objects used in the schema.
 
