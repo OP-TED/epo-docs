@@ -60,7 +60,7 @@ __
 
 
 
-===== Data types
+===== Data types[[datatypes]]
 
 The datatypes that are currently used in EPO (EPO 4.1.0) are the following:
 
