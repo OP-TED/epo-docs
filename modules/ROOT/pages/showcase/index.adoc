@@ -1,4 +1,4 @@
-:doctitle: How the eProcurement Ontology is used by other projects and tools
+:doctitle: The ePO in other projects
 :doccode: epo-main-prod-040
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
@@ -10,8 +10,8 @@ The eProcurement Ontology underpins several projects in the EU public procuremen
 === The Open Data Service 
 The Open Data Service is a service that continuously converts TED notice data, in xml format, into RDF format so that it can be queried using the SPARQL query language. Click xref:/showcase/sc_pipeline.adoc[here] to read more.
 
-===== Querying RDF Data
-Querying eProcurement data in RDF format using the SPARQL query language. Click xref:/guides/SPARQLGuide.adoc[here] to read more.
+//===== Querying RDF Data
+//Querying eProcurement data in RDF format using the SPARQL query language. Click xref:/guides/SPARQLGuide.adoc[here] to read more.
 
 === Defining the ESPD 
 Defining the classes and relationships used in the https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[ESPD]. Read more about the xref:/showcase/sc_espd.adoc[The ePO's role in the ESPD].
@@ -19,5 +19,8 @@ Defining the classes and relationships used in the https://docs.ted.europa.eu/ES
 === The model2owl project 
 https://docs.ted.europa.eu/docs-staging/m2o-home/index.html[model2owl] is an automated technical tool that generates the artifacts of the eProcurement ontology before the release of a new version. xref:/showcase/sc_m2o.adoc[Read more] about the model2owl project.
 
-=== xref:/showcase/sc_ppds.adoc[The Public Procurement Data Space]
-Used in the https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/public-procurement-data-space-ppds_en[Public procurement Data Space (PPDS)] to link EU procurement data to national procurement databases so that more comprehensive queries can be performed on the data. Read more xref:/showcase/sc_ppds.adoc[here].
+//=== xref:/showcase/sc_ppds.adoc[The Public Procurement Data Space]
+//tbd
+=== The Public Procurement Data Space
+Used in the https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/public-procurement-data-space-ppds_en[Public procurement Data Space (PPDS)] to link EU procurement data to national procurement databases so that more comprehensive queries can be performed on the data.
+//Read more xref:/showcase/sc_ppds.adoc[here].

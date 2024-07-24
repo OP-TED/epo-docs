@@ -11,7 +11,7 @@
 
 :toc:
 :toc-placement: preamble
-:toclevels: 1
+:toclevels: 4
 :showtitle:
 
 toc::[]

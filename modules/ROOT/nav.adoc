@@ -11,7 +11,7 @@
 * xref:EPO::conceptual.adoc[Conceptual Models]
 * xref:EPO::glossaries.adoc[Glossaries]
 * xref:EPO::release-notes.adoc[Release Notes]
-* xref:epo-showcase::showcase/index.adoc[How the eProcurement Ontology is used by other projects and tools]
+* xref:epo-home::showcase/index.adoc[The ePO in other projects]
 
 * [.separated]#**Reference Documents**#
 * xref:epo-home::methodology2024.adoc[Methodology]

@@ -23,7 +23,7 @@ As a convention, concepts that belong to a specific module also share a specific
 
  http://data.europa.eu/a4g/ontology#
 
-ePO also reuses concepts from other ontologies and vocabularies, using their own prefix. For example, all the ePO modules use the class adms:Identifier (along with specific attributes and properties) from the https://www.w3.org/TR/vocab-adms/[Asset Description Metadata Schema (ADMS)] in order to represent the identification of different ePO concepts. Another example is the reuse of a number of concepts from the https://github.com/SEMICeu/CCCEV[Core Criterion and Core Evidence Vocabulary (CCCEV)] In order for the ePO modules to use these concepts, they have to be imported to each of the  https://github.com/OP-TED/ePO/blob/master/implementation/ePO_core/owl_ontology/ePO_core.ttl[turtle] and https://github.com/OP-TED/ePO/blob/master/implementation/ePO_core/owl_ontology/ePO_core.rdf[XML/RDF] files that represent each module.
+ePO also reuses concepts from other ontologies and vocabularies, using their own prefix. For example, all the ePO modules use the class adms:Identifier (along with specific attributes and properties) from the https://www.w3.org/TR/vocab-adms/[Asset Description Metadata Schema (ADMS)] in order to represent the identification of different ePO concepts. Another example is the reuse of a number of concepts from the https://github.com/SEMICeu/CCCEV[Core Criterion and Core Evidence Vocabulary (CCCEV)]. In order for the ePO modules to use these concepts, they have to be imported to each of the  https://github.com/OP-TED/ePO/blob/master/implementation/ePO_core/owl_ontology/ePO_core.ttl[turtle] and https://github.com/OP-TED/ePO/blob/master/implementation/ePO_core/owl_ontology/ePO_core.rdf[XML/RDF] files that represent each module. <<change links to turtle and rdf/xml sites>>
 
 The Modularization of the Ontology per domain/procurement phase offers the following advantages as opposed to just having one Ontology file:
 
@@ -42,7 +42,7 @@ The Modularization of the Ontology per domain/procurement phase offers the follo
 ePO core is the main module of ePO ontology containing the fundamental parts of ePO. All the other ePO modules import the core module in order to use its concepts.
 
 === Conceptual Model
-The Μain objects over time diagram (fig. 1) depicts the most important Classes of each procurement phase and their relations. The agent hierarchy diagram (fig. 2) depicts the different agents represented in ePO.
+The Μain objects over time diagram (Fig. 1) depicts the most important Classes of each procurement phase and their relations. The agent hierarchy diagram (fig. 2) depicts the different agents represented in ePO.
 
 image::docUpdateGuideImages/UML/conceptualModelDiagrams/mainObjects.png[]
 []
@@ -53,7 +53,7 @@ image::docUpdateGuideImages/Modules/agentHierarchy.png[]
 __ Figure 2: The agent hierarchy diagram.
 __
 
-In order to be able to understand the different parts of these diagrams and how to read them please refer to the xref:guides/conceptualModelGuide.adoc#arrows[guide to the ePO Conceptual Model]. The ePO core conceptual model can be found https://xxx[here], and the ePO core glossary https://docs.ted.europa.eu/EPO/4.1/_attachments/html_reports/glossary/ePO_core_glossary.html[here].
+In order to be able to understand the different parts of these diagrams and how to read them please refer to the xref:guides/conceptualModelGuide.adoc#arrows[guide to the ePO Conceptual Model]. The ePO core conceptual model itself can be found https://xxx[here], and the ePO core glossary https://docs.ted.europa.eu/EPO/4.1/_attachments/html_reports/glossary/ePO_core_glossary.html[here].
 
 
 
@@ -62,7 +62,7 @@ All concepts that were created for the core module use the *epo* prefix.
 The concepts imported by other ontologies use the following prefixes:
 
 * https://www.w3.org/TR/vocab-adms/[adms]: Used for Identifiers
-* https://github.com/SEMICeu/CCCEV[cccev]: Used for classes such as cccev:Criterion, cccev:InformationConcept, cccev:Requirement, and others, with associated predicates and attributes.
+* https://github.com/SEMICeu/CCCEV[cccev]: Used for classes such as cccev:Criterion, cccev:InformationConcept, cccev:Requirement, with associated predicates and attributes.
 * https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[dcterms]: Used for the dct:Location class, attributes dct:description, dct:title, and other concepts.
 * http://xmlns.com/foaf/spec/[foaf]: Used to represent individuals such as foaf:Agent and foaf:Person.
 * http://www.w3.org/ns/org[org]: Used for the org:Organization class.
@@ -117,16 +117,20 @@ __
 
 === Prefixes and Imports
 All concepts that were created for the eCatalogue module use the *epo-cat* prefix.
+
+The eCatalogue module also makes use of the following ePO modules:
+
+* xref:guides/moduleGuide.adoc#core[epo]: Required concepts taken from the ePO core module.
+* xref:guides/moduleGuide.adoc#ful[ful]: Required concepts taken from the ePO eFulfilment module.
+* xref:guides/moduleGuide.adoc#ord[ord]: Required concepts taken from the ePO Ordering module.
+
 The concepts imported by other ontologies use the following prefixes:
 
 * https://www.w3.org/TR/vocab-adms/[adms]: Used for Identifiers
 * https://github.com/SEMICeu/CCCEV[cccev]: Used for classes such as cccev:Criterion,
   cccev:InformationConcept, cccev:Requirement, and others, with associated predicates and attributes.
 https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[dcterms]: Used for the dct:Location class, attributes dct:description, dct:title, and other concepts.
-* xref:guides/moduleGuide.adoc#core[epo]: Required concepts taken from the ePO core module.
 * http://xmlns.com/foaf/spec/[foaf]: Used to represent individuals such as foaf:Agent and foaf:Person.
-* xref:guides/moduleGuide.adoc#ful[ful]: Required concepts taken from the ePO eFulfilment module.
-* xref:guides/moduleGuide.adoc#ord[ord]: Required concepts taken from the ePO Ordering module.
 * http://www.w3.org/ns/org[org]: Used for the org:Organization class.
 * http://www.w3.org/1999/02/22-rdf-syntax-ns#[rdf]: Used for rdf:PlainLiteral datatype, and to define all the concepts of the Ontology in the https://github.com/OP-TED/ePO/blob/master/implementation/eCatalogue/owl_ontology/eCatalogue.ttl[turtle] and https://github.com/OP-TED/ePO/blob/master/implementation/eCatalogue/owl_ontology/eCatalogue.rdf[XML/RDF] files.
 * http://www.w3.org/2000/01/rdf-schema[rdfs]: Used to define all the concepts of the Ontology in the https://github.com/OP-TED/ePO/blob/master/implementation/eCatalogue/owl_ontology/eCatalogue.ttl[turtle] and https://github.com/OP-TED/ePO/blob/master/implementation/eCatalogue/owl_ontology/eCatalogue.rdf[XML/RDF] files.

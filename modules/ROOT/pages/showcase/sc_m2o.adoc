@@ -18,4 +18,7 @@ Using the model2owl tool, the ePO technical team  produces the ePO core and othe
 
 A machine-readable form of the conceptual model must be produced as part of the digitisation of eProcurement. The tool therefore relies on the eProcurement ontology, as represented in the conceptual models, as input to facilitate this.
 
-More information on the tool can be found in the https://docs.ted.europa.eu/docs-staging/m2o-home/index.html[documentation here].
+
+<<Add github link here>>
+
+//More information on the tool can be found in the https://docs.ted.europa.eu/docs-staging/m2o-home/index.html[documentation here].

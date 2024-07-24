@@ -49,7 +49,7 @@ The release specific conceptual Model(s) of the ontology.
 * xref:EPO::glossaries.adoc[Glossaries] +
 The release specific glossaries
 * xref:EPO::release-notes.adoc[Release Notes] +
-* xref:showcase/index.adoc[How the eProcurement Ontology is used by other projects and tools]
+* xref:showcase/index.adoc[The ePO in other projects]
 
 
 == Reference Documentation
