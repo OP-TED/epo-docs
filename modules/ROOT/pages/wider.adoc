@@ -8,6 +8,8 @@
 
 
 '''
+xref:ePO_July_2024_WGM_report.adoc[Report from the July 2024 Working Group General Meeting: 10 July 2024]
+
 link:{attachmentsdir}/work_group_meetings_reports/2024_WGM_July/eProcurementOntology-July2024.pptx[2024 July WGM presentation]
 
 '''
