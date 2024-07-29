@@ -62,7 +62,7 @@ How the ePO underpins other projects
 
 
 * xref:epo-home::methodology2024.adoc[Methodology] +
-How the ePO is developed and Maintained
+How the ePO is developed and maintained
 
 * xref:epo-home::versioning.adoc[ePO Versioning Rules] +
 An overview of the versioning rules for releases
