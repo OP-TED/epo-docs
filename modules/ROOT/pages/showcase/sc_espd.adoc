@@ -4,12 +4,10 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2024
 
-Two ePO modules define the classes for the ESPD, eAccess that covers the ESPD Request, and eSubmission, which covers the ESPD Response.
+* Two ePO modules define the concepts for the ESPD:
+** xref:guides/moduleGuide.adoc#acc[eAccess], covering the ESPD Request.
+** xref:guides/moduleGuide.adoc#sub[eSubmission], covering the ESPD Response.
 
-These classes used by developers when creating an ESPD service and form part of the tools offered to developers for this purpose. #link to ESPD github#
+* These concepts can be used by developers working on the https://github.com/OP-TED/ESPD-EDM[ESPD Exchange Data Model (EDM)] in order to develop an ESPD service.
 
-The documentation around the ESPD can be found here #link to espd-docs#
-
-ePO Modules are: eAccess (Request) & eSubmission (Response)
-
-#Speak to Dragos re details#
+* The documentation around the ESPD can be found https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[here].
