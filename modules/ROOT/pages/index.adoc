@@ -45,7 +45,7 @@ The following topics are included in this version of the eProcurement Ontology d
 == General Documentation
 
 
-* xref:epo-home::guide.adoc[User guides] +
+* xref:epo-home::guide.adoc[User Guides] +
 Guides to using the ePO and its features.
 
 * xref:EPO::conceptual.adoc[Conceptual Models] +
@@ -54,7 +54,7 @@ The release specific conceptual Model(s) of the ontology.
 The release specific glossaries
 * xref:EPO::release-notes.adoc[Release Notes] +
 Release notes for the specific ePO version
-* xref:showcase/index.adoc[The ePO in other projects]
+* xref:showcase/index.adoc[The ePO in other Projects] +
 How the ePO underpins other projects
 
 
