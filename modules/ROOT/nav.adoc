@@ -7,11 +7,11 @@
 * xref:epo-home::index.adoc[Home]
 
 * [.separated]#**General Documentation**#
-* xref:epo-home::guide.adoc[User guides to ePO]
+* xref:epo-home::guide.adoc[User Guides]
 * xref:EPO::conceptual.adoc[Conceptual Models]
 * xref:EPO::glossaries.adoc[Glossaries]
 * xref:EPO::release-notes.adoc[Release Notes]
-* xref:epo-home::showcase/index.adoc[The ePO in other projects]
+* xref:epo-home::showcase/index.adoc[The ePO in Other Projects]
 
 * [.separated]#**Reference Documents**#
 * xref:epo-home::methodology2024.adoc[Methodology]

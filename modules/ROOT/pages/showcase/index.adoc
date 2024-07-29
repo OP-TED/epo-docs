@@ -1,4 +1,4 @@
-:doctitle: The ePO in other projects
+:doctitle: The ePO in Other Projects
 :doccode: epo-main-prod-040
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
@@ -16,7 +16,7 @@ The Open Data Service is a service that continuously converts TED notice data, i
 === Defining the ESPD 
 Defining the classes and relationships used in the https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[ESPD]. Read more about the xref:/showcase/sc_espd.adoc[The ePO's role in the ESPD].
 
-=== The model2owl project 
+=== The model2owl Project 
 https://docs.ted.europa.eu/docs-staging/m2o-home/index.html[model2owl] is an automated technical tool that generates the artifacts of the eProcurement ontology before the release of a new version. xref:/showcase/sc_m2o.adoc[Read more] about the model2owl project.
 
 //=== xref:/showcase/sc_ppds.adoc[The Public Procurement Data Space]

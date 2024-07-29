@@ -1,4 +1,4 @@
-:doctitle: Motivation For The eProcurement Ontology Methodology
+:doctitle: Motivation for the eProcurement Ontology Methodology
 :doccode: epo-main-motivation
 :author: AD
 :docdate: June 2024
@@ -29,21 +29,21 @@ As stated in the Commission Regulation 2015/1986 (EU), contracting authorities i
 
 Data exchange, access, and reuse are key requirements for efficient and transparent end-to-end public procurement. Because of this, we observe a shift in focus from the definition of procurement process standards for system-to-system exchange, to the development of data standards for publishing e-Procurement data in open, machine-readable formats (see Chapter 4 Related Ontologies/Vocabularies and Projects).
 
-== Problem Statement
+== The Challenges
 
 The key challenge is that procurement data exists in different systems across the European Union:
 
-the relations between the different concepts in the procurement chain and data flow are not fully documented, therefore data and data relationships cannot be reused directly in a flexible and comparable manner;
+* the relations between the different concepts in the procurement chain and data flow are not fully documented, therefore data and data relationships cannot be reused directly in a flexible and comparable manner;
 
-some data has inherited formats from its paper origins leading to illogical business processes and incorrect conceptual models;
+* some data has inherited formats from its paper origins leading to illogical business processes and incorrect conceptual models;
 
-different systems use different data formats therefore reuse of information is not always efficient; and
+* different systems use different data formats therefore reuse of information is not always efficient; and
 
-taxonomies like CPV are often not used correctly which creates serious problems e.g., making it very difficult for SMEs to find suitable business opportunities.
+* taxonomies like the CPV are often not used correctly which creates serious problems e.g., making it very difficult for SMEs to find suitable business opportunities.
 
 Given the increasing importance of data standards for e-Procurement, a number of initiatives driven by the public sector, industry, and academia have been initiated in recent years. Some have grown organically, while others are the result of standardisation work. The vocabularies and the semantics that they introduce, the phases of public procurement that they cover, and the technologies that they use all differ. These differences hamper data interoperability and reuse. This creates the need for a common data standard for publishing procurement data, hence allowing data from different sources to be easily accessed and linked, and consequently reused. The e-Procurement ontology (henceforth referred to as the ePO) introduced by this study attempts to address this.
 
-=== Proposed solution
+== The Solution
 
 The ultimate objective of the ePO is to deliver a common and agreed OWL ontology that will conceptualise, formally encode, and make available in an open, structured, and machine-readable format, data about public procurement. The ontology will cover the public procurement process from end to end, i.e. from notification, through tendering to awarding, ordering, invoicing and finally payment.
 
@@ -52,9 +52,9 @@ It is not the intention of the ePO to reinvent the wheel by redefining existing 
 Process, Methodology and Technology discuss in detail the open process and methodology that will be followed for developing the ePO.
 
 
-== TARGET AUDIENCE & USE CASES
+== The Target Audience and Use Cases
 
-=== Target audience
+=== The Target Audience
 
 The target audience of the ePO is made up of the following groups of stakeholders:
 
@@ -68,7 +68,7 @@ The target audience of the ePO is made up of the following groups of stakeholder
 * NGOs; and
 * Citizens
 
-=== Use cases
+=== Use Cases
 
 The ePO is designed to meet specific needs of the aforementioned stakeholders. These needs are described in the use cases below. The use cases are organised around the following categories:
 
@@ -84,7 +84,7 @@ The ePO is designed to meet specific needs of the aforementioned stakeholders. T
 |1.1
 |Public Understandability
 
-_In order to facilitate the understandability of the public procurement process, the parties involved in procurement processes, as well as citizens, journalists, and regulators, should be able to access procurement data easily in a structured and machine-readable format. Many stakeholders aim at gaining a quick understanding of the  information provided rather than performing an in-depth analysis of the published documentation. Currently, two main challenges exists. Firstly, data coming from different e-Procurement systems are often fragmented, reflecting the compatibility challenges between  source systems. Second, the data is available in different formats and representations, which are not always consistent and interoperable, and are therefore hard to connect and interlink. By providing a common view over e-Procurement data, the ePO will allow providers of procurement data to link their data and make it available in ways which will be easier for the non-technical consumer to interpret and reuse, in order to create a complete view of the public procurement process._
+_To facilitate the understandability of the public procurement process, the parties involved in procurement processes, as well as citizens, journalists, and regulators, should be able to access procurement data easily in a structured and machine-readable format. Many stakeholders aim at gaining a quick understanding of the  information provided rather than performing an in-depth analysis of the published documentation. Currently, two main challenges exists. Firstly, data coming from different e-Procurement systems are often fragmented, reflecting the compatibility challenges between  source systems. Second, the data is available in different formats and representations, which are not always consistent and interoperable, and are therefore hard to connect and interlink. By providing a common view over e-Procurement data, the ePO will allow providers of procurement data to link their data and make it available in ways which will be easier for the non-technical consumer to interpret and reuse, in order to create a complete view of the public procurement process._
 
 *Example:*
 
@@ -123,7 +123,7 @@ In this case, it is required that:
 |1.3
 |*Monitor the money flow*
 
-_In order to obtain an exhaustive and unified view of the flow of public money, from tax collection and budget through to procurement and spending, e-Procurement data should be integrated with other datasets such as budget, spending and location data. A common ontology such as the ePO is necessary in order to interlink such datasets, and help with the creation of a unified view of the flow of public money._
+_To obtain an exhaustive and unified view of the flow of public money, from tax collection and budget through to procurement and spending, e-Procurement data should be integrated with other datasets such as budget, spending and location data. A common ontology such as the ePO is necessary in order to interlink such datasets, and help with the creation of a unified view of the flow of public money._
 
 *Example:*
 
@@ -161,7 +161,7 @@ In this case it would be required that:
 |1.5
 |*Audit procurement process*
 
-_In order to monitor the correct use of funds it is necessary to cross-check data from different sources. In the case of public procurement, when the payment and invoice data is represented as linked data through the ePO, it is possible to link it with budget data. In this way one can check if the amounts resulting from the invoices do correspond to the initially budgeted amounts._
+_To monitor the correct use of funds it is necessary to cross-check data from different sources. In the case of public procurement, when the payment and invoice data is represented as linked data through the ePO, it is possible to link it with budget data. In this way one can check if the amounts resulting from the invoices do correspond to the initially budgeted amounts._
 
 *Example:*
 

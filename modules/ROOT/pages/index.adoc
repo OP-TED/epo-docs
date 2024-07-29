@@ -11,7 +11,9 @@ It does not represent the process as such, but the concepts used in the differen
 The ePO conceptualizes, formally encodes and provides structured data about public procurement in both human and machine-readable formats. The ePO is modelled in alignment with EU Directives and Regulations.
 
 == Why do we need an eProcurement Ontology?
-xref:epo-home::motivation.adoc[Motivation]
+The eProcurement Ontology ensures that every participant in the procurment process is speaking the same language i.e., that the concepts and definitions are the same and have the same meaning for all parties. The eProcurement Ontology is a formal standard.
+
+More information can be found in the  xref:epo-home::motivation.adoc[Motivation] here.
 
 == The Scope of the eProcurement Ontology
 ePO covers public Procurement from end to end, i.e. from notification, to tendering to awarding, ordering, invoicing and payment.
