@@ -1,29 +1,31 @@
-:doctitle: eProcurement Ontology Documentation
+:doctitle: The eProcurement Ontology
 :doccode: epo-main-prod-001
 :author: PWC adapted by NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
-=== What ePO is:
+== What is the eProcurement Ontology?
 https://github.com/OP-TED/ePO[The eProcurement Ontology (ePO)] is a vocabulary that models the concepts used in EU public procurement.
 It does not represent the process as such, but the concepts used in the different parts of the Public Procurement Lifecycle.
 
 The ePO conceptualizes, formally encodes and provides structured data about public procurement in both human and machine-readable formats. The ePO is modelled in alignment with EU Directives and Regulations.
 
-=== Why ePO:
+== Why do we need an eProcurement Ontology?
 xref:epo-home::motivation.adoc[Motivation]
 
-=== Scope:
+== The Scope of the eProcurement Ontology
 ePO covers public Procurement from end to end, i.e. from notification, to tendering to awarding, ordering, invoicing and payment.
 
 image::charter1.png[]
 
 
-=== How:
+== How the eProcurement Ontology is created and developed
 In order to build and maintain the ontology, OP formed a Working Group (WG) of experts with the mission of building consensus on the analysis results and deliverables developed by the OP’s teams.
 
 
-=== Where to start:
+== New to the eProcurement Ontology?
+
+Start here for an introduction:
 
 * Introductory course on EPO
 ** xref:attachment$LOD/index.html[Linked Open Data] +
@@ -35,7 +37,7 @@ A short info session on the ePO
 The following topics are included in this version of the eProcurement Ontology documentation:
 
 
-== eProcurement Ontology
+== The eProcurement Ontology
 * Home (current page)
 
 == General Documentation
