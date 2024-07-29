@@ -17,7 +17,7 @@ This guide  offers an overview of the ePO modules including the reasoning behind
 
 == Modular Approach
 
-In general, the Ontology is compartmentalized into the primary  ePO core module that contains the majority of concepts found in the Ontology, and a number of smaller specialized modules. Each of these modules builds upon the concepts of the core module in order to represent a different part of the e-Procurement process.
+In general, the Ontology is compartmentalised into the primary  ePO core module that contains the majority of concepts found in the Ontology, and a number of smaller specialized modules. Each of these modules builds upon the concepts of the core module in order to represent a different part of the e-Procurement process.
 
 As a convention, concepts that belong to a specific module also share a specific prefix. For example, all the concepts that belong to the ePO core module use the prefix  *epo* while all the concepts belonging to the eCatalogue use the prefix *epo-cat*. Please note however that all ePO concepts regardless of module (and prefix) use the same URI namespace:
 
@@ -34,7 +34,7 @@ The Modularization of the Ontology per domain/procurement phase offers the follo
 
 * Reusability
 ** When developing a new ePO module, that module should only reuse the common concepts found on ePO Module, thus facilitating the development process.
-** In order for ePO concepts to be reusable by other ontologies, they should be as generalized and uncoupled as possible.
+** In order for ePO concepts to be reusable by other ontologies, they should be as generalised and uncoupled as possible.
 
 == ePO core[[core]]
 
