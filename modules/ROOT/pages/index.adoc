@@ -45,22 +45,24 @@ The following topics are included in this version of the eProcurement Ontology d
 == General Documentation
 
 
-* xref:epo-home::guide.adoc[User guides to ePO] +
-A collection of pages describing how to use ePO and its features.
+* xref:epo-home::guide.adoc[User guides] +
+Guides to using the ePO and its features.
 
 * xref:EPO::conceptual.adoc[Conceptual Models] +
 The release specific conceptual Model(s) of the ontology.
 * xref:EPO::glossaries.adoc[Glossaries] +
 The release specific glossaries
 * xref:EPO::release-notes.adoc[Release Notes] +
+Release notes for the specific ePO version
 * xref:showcase/index.adoc[The ePO in other projects]
+How the ePO underpins other projects
 
 
 == Reference Documentation
 
 
 * xref:epo-home::methodology2024.adoc[Methodology] +
-The ePO Methodology
+How the ePO is developed and Maintained
 
 * xref:epo-home::versioning.adoc[ePO Versioning Rules] +
 An overview of the versioning rules for releases
@@ -81,8 +83,8 @@ Milestones in the project and future development plans
 
 == Working Group Documents
 * xref:epo-wgm::wider.adoc[Quarterly Meetings] +
-Minutes, Presentations etc from the quarterly Working Group Meetings
+Minutes, Presentations, etc from the quarterly Working Group Meetings
 * xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)] +
 All weekly meetings minutes collated into yearly documents
 * xref:epo-wgm::indiv.adoc[Individual Meeting Reports] +
-All the weekly meeting minutes and documents saved individually
+All weekly meeting minutes and documents saved individually
