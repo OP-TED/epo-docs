@@ -21,7 +21,7 @@ In this Guide, we describe the UML diagrams that represent the conceptual model 
 
 === Understanding  UML
 
-Unified Modeling Language (UML) is a standardized visual language used to describe, specify, design, and document
+Unified Modeling Language (UML) is a standardised visual language used to describe, specify, design, and document
 the structure, relationships, and behaviors within a knowledge domain. Although originally designed to model software,
 It can also be used for business modeling as well as Ontology modeling.
 
