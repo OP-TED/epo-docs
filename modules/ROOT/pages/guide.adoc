@@ -5,9 +5,9 @@
 
 The pages below contain user guides that provide information on different aspects of the Ontology
 
-* xref:guides/conceptualModelGuide.adoc[Guide to the Conceptual models]
-* xref:guides/glossaryGuide.adoc[Guide to the Glossaries]
-* xref:guides/moduleGuide.adoc[Guide to the epo Modules]
+=== xref:guides/conceptualModelGuide.adoc[Guide to the Conceptual models]
+=== xref:guides/glossaryGuide.adoc[Guide to the Glossaries]
+=== xref:guides/moduleGuide.adoc[Guide to the epo Modules]
 //* xref:guides/technicalModelGuide.adoc[Guide to the Technical Model] (TBD)
 //* xref:guides/CreatingDataGuide.adoc[Guide to creating data using the Ontology] (TBD)
 //* xref:guides/SPARQLGuide.adoc[Guide to querying the Ontology] (TBD)
@@ -17,5 +17,5 @@ The pages below contain user guides that provide information on different aspect
 == Examples (Conceptual model)
 The following examples demonstrate how the ePO conceptual models and glossaries can be used to navigate the ontology in order to locate key concepts that can be used for queries.
 
-* xref:examples/ex1.adoc[Example 1: Who buys what from whom?]
-* xref:examples/ex2.adoc[Example 2: How many contractors are SMEs for a given country and given date?]
+=== xref:examples/ex1.adoc[Example 1: Who buys what from whom?]
+=== xref:examples/ex2.adoc[Example 2: How many contractors are SMEs for a given country and given date?]
