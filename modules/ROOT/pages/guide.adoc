@@ -7,7 +7,7 @@ The pages below contain user guides that provide information on different aspect
 
 * xref:guides/conceptualModelGuide.adoc[Guide to the Conceptual models]
 * xref:guides/glossaryGuide.adoc[Guide to the Glossaries]
-* xref:guides/moduleGuide.adoc[Guide to the epo Modules] (Under Construction)
+* xref:guides/moduleGuide.adoc[Guide to the epo Modules]
 //* xref:guides/technicalModelGuide.adoc[Guide to the Technical Model] (TBD)
 //* xref:guides/CreatingDataGuide.adoc[Guide to creating data using the Ontology] (TBD)
 //* xref:guides/SPARQLGuide.adoc[Guide to querying the Ontology] (TBD)
