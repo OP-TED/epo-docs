@@ -3,6 +3,7 @@
 :author: AD
 :docdate: June 2024
 
+== Guides
 The pages below contain user guides that provide information on different aspects of the Ontology
 
 === xref:guides/conceptualModelGuide.adoc[Guide to the Conceptual models]
@@ -14,7 +15,7 @@ The pages below contain user guides that provide information on different aspect
 //**  xref:attachment$RDF/index.html[RDF and SPARQL] +
 //A short info session on RDF and SPARQL
 
-= Examples (Conceptual model)
+== Examples (Conceptual model & Glossary usage)
 The following examples demonstrate how the ePO conceptual models and glossaries can be used to navigate the ontology in order to locate key concepts that can be used for queries.
 
 === xref:examples/ex1.adoc[Example 1: Who buys what from whom?]
