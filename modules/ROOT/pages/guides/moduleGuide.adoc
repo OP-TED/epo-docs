@@ -3,14 +3,6 @@
 :author: AD
 :docdate: June 2024
 
-:sectnums:
-:showtitle:
-:toc:
-:toc-placement: right
-:toclevels: 4
-:toc-title: Contents
-
-toc::[]
 == Introduction
 
 This guide  offers an overview of the ePO modules including the reasoning behind the division of the Ontology into modules, their purpose, and the contents of each module.
