@@ -1,13 +1,13 @@
-:doctitle: eProcurement Ontology v4.1.0-rc.2
-:page-code: epo-v4.1.0-rc.2-prod-002
+:doctitle: eProcurement Ontology v4.1.0
+:page-code: epo-v4.1.0
 :page-name: release-notes
-:docdate: March 2024
+:docdate: July 2024
 
 ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 4.1.0@release-notes.adoc,4.1@release-notes.adoc
 endif::[]
 
-The release v4.1.0-rc.2 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2[here].
+The release v4.1.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.1.0-rc.3[here].
 
 == Release notes
 
@@ -28,10 +28,10 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 === Metadata
 |===
 |*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from ePO_core.xml on 2024-02-12	|This version is automatically generated from ePO_core.xml on 2024-03-21
+| rdfs:comment |	This version is automatically generated from ePO_core.xml on 2024-02-12	|This version is automatically generated from ePO_core.xml on 2024-07-10
 | owl:versionInfo |	4.0.2 |	4.1.0
 | owl:priorVersion |	epo:core-4.0.1	| epo:core-4.0.2
-| dct:issued |	2024-02-12	|2024-03-21
+| dct:issued |	2024-02-12	|2024-07-10
 |===
 
 === Added Imports
@@ -105,10 +105,10 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 === Metadata
 |===
 |*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eCatalogue.xml on 2024-02-12	|This version is automatically generated from eCatalogue.xml on 2024-03-21
+| rdfs:comment |	This version is automatically generated from eCatalogue.xml on 2024-02-12	|This version is automatically generated from eCatalogue.xml on 2024-07-10
 | owl:versionInfo |	4.0.2 |	4.1.0
 | owl:priorVersion |	epo:cat-4.0.1	| epo:cat-4.0.2
-| dct:issued |	2024-02-12	|2024-03-21
+| dct:issued |	2024-02-12	|2024-07-10
 |===
 
 === Added Imports
@@ -161,10 +161,10 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 === Metadata
 |===
 |*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eOrdering.xml on 2024-02-12	|This version is automatically generated from eOrdering.xml on 2024-03-21
+| rdfs:comment |	This version is automatically generated from eOrdering.xml on 2024-02-12	|This version is automatically generated from eOrdering.xml on 2024-07-10
 | owl:versionInfo |	4.0.2 |	4.1.0
 | owl:priorVersion |	epo:ord-4.0.1	| epo:ord-4.0.2
-| dct:issued |	2024-02-12	|2024-03-21
+| dct:issued |	2024-02-12	|2024-07-10
 |===
 
 === Added Imports
@@ -188,10 +188,10 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 === Metadata
 |===
 |*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eFulfilment.xml on 2024-02-12	|This version is automatically generated from eFulfilment.xml on 2024-03-21
+| rdfs:comment |	This version is automatically generated from eFulfilment.xml on 2024-02-12	|This version is automatically generated from eFulfilment.xml on 2024-07-10
 | owl:versionInfo |	4.0.2 |	4.1.0
 | owl:priorVersion |	epo:ful-4.0.1	| epo:ful-4.0.2
-| dct:issued |	2024-02-12	|2024-03-21
+| dct:issued |	2024-02-12	|2024-07-10
 |===
 
 === Added Imports
@@ -221,11 +221,11 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 |epo-ful:hasAssociatedDocument | epo-ful:ReceiptAdvice -> epo:Document (external) [0..1]
 |epo-ful:RejectionAction|epo-ful:ReceiptAdviceLine -> at-voc-new:action-code [0..1]
 |epo-ful:comprisesReceiptAdviceLine|epo-ful:ReceiptAdvice -> epo-ful:ReceiptAdviceLine [0..*]
-|epo-cat:foreseesPackage|epo-cat:CatalogueLine (external) -> epo-ful:Package [0..1]
+|epo-ful:foreseesPackage|epo-cat:CatalogueLine (external) -> epo-ful:Package [0..1]
 |epo-ful:hasOversupplyQuantity | epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
 |epo-ful:hasReceivedQuantity | epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
 |epo-ful:hasRejectReason|epo-ful:ReceiptAdviceLine -> at-voc-new:reject-reason [0..1]
-|epo:hasRejectedQuantity | epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
+|epo-ful:hasRejectedQuantity | epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
 |epo-ful:hasShortQuantity| epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
 |epo-ful:hasShortageAction|epo-ful:ReceiptAdviceLine -> at-voc-new:action-code [0..1]
 |epo-ful:isSubmittedForDespatchAdvice|epo-ful:ReceiptAdvice -> epo-ful:DespatchAdvice [0..1]
@@ -242,10 +242,10 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 === Metadata
 |===
 |*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eContract.xml on 2024-02-12	|This version is automatically generated from eContract.xml on 2024-03-21
+| rdfs:comment |	This version is automatically generated from eContract.xml on 2024-02-12	|This version is automatically generated from eContract.xml on 2024-07-10
 | owl:versionInfo |	4.0.2 |	4.1.0
 | owl:priorVersion |	epo:con-4.0.1	| epo:con-4.0.2
-| dct:issued |	2024-02-12	|2024-03-21
+| dct:issued |	2024-02-12	|2024-07-10
 |===
 
 === Added Imports
@@ -260,10 +260,10 @@ The release v4.1.0-rc.2 and its corresponding technical files can be found link:
 === Metadata
 |===
 |*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eNotice.xml on 2024-02-12	|This version is automatically generated from eNotice.xml on 2024-03-21
+| rdfs:comment |	This version is automatically generated from eNotice.xml on 2024-02-12	|This version is automatically generated from eNotice.xml on 2024-07-10
 | owl:versionInfo |	4.0.2 |	4.1.0
 | owl:priorVersion |	epo:not-4.0.1	| epo:not-4.0.2
-| dct:issued |	2024-02-12	|2024-03-21
+| dct:issued |	2024-02-12	|2024-07-10
 |===
 
 === Added Imports
