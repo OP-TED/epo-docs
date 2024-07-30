@@ -13,7 +13,7 @@ The xml data in notices is based on business terms defined in the legislative di
 
 The "pipeline" refers to the fact that the conversion process is continuously performing the conversion of TED notices in xml form into RDF format and storing them in the OP's RDf database, or triplestore, the CELLAR.
 
-<insert simple diagramme>
+//<insert simple diagramme>
 
 It is only by translating the data into RDF format that they become usable as linked open data that can be queried from CELLAR's SPARQL endpoint using SPARQL query language.
 
