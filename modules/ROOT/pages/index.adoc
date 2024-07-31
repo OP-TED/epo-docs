@@ -22,19 +22,20 @@ image::charter1.png[]
 
 
 == How the eProcurement Ontology is created and developed
-In order to build and maintain the ontology, OP formed a Working Group (WG) of experts with the mission of building consensus on the analysis results and deliverables developed by the OP’s teams.
+In order to build and maintain the ontology, The EC Publications Office (OP) formed a Working Group (WG) of experts with the mission of building consensus on the analysis results and deliverables developed by the OP’s teams.
 
 
 == New to the eProcurement Ontology?
 
 Start here for an introduction:
 
-* Introductory course on EPO
+* Introductory info sessions on the ePO and Linked Open Data
 ** xref:attachment$LOD/index.html[Linked Open Data] +
 A short info session on Linked Open Data
 ** xref:attachment$ePO/index.html[The ePO] +
 A short info session on the ePO
-* https://github.com/OP-TED/ePO[Github page]
+* https://github.com/OP-TED/ePO[Github page] +
+The ePO resources on GitHub
 
 The following topics are included in this version of the eProcurement Ontology documentation:
 
