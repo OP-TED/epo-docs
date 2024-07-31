@@ -26,21 +26,21 @@ Alternatively, all the conceptual modules can be viewed in .eap (Enterprise Arch
 
 '''
 === *RDF Representations*
-RDF representation of the eProcurement ontology can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/ePO_core[here].
+RDF representation of the eProcurement ontology can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0/implementation/ePO_core[here].
 
-RDF representation of the eCatalogue module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eCatalogue[here].
+RDF representation of the eCatalogue module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0/implementation/eCatalogue[here].
 
-RDF representation of the eOrdering module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eOrdering[here].
+RDF representation of the eOrdering module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0/implementation/eOrdering[here].
 
-RDF representation of the eFulfilment module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eFulfilment[here].
+RDF representation of the eFulfilment module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0/implementation/eFulfilment[here].
 
-RDF representation of the eContract module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eContract[here].
+RDF representation of the eContract module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0/implementation/eContract[here].
 
-RDF representation of the eAccess module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eAccess[here].
+RDF representation of the eAccess module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0/implementation/eAccess[here].
 
-RDF representation of the eSubmission module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eSubmission[here].
+RDF representation of the eSubmission module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0/implementation/eSubmission[here].
 
-RDF representation of the eNotice module can be downloaded link:https://github.com/OP-TED/ePO/tree/4.1.0-rc.2/implementation/eNotice[here].
+RDF representation of the eNotice module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.1.0/implementation/eNotice[here].
 
 
 

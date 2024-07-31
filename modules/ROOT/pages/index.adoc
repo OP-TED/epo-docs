@@ -1,5 +1,5 @@
 :doctitle: eProcurement Ontology Documentation
-:page-code: epo-v4.1.0-rc.2-prod-001
+:page-code: epo-v4.1.0-prod-001
 :page-name: index
 :docdate: March 2024
 
