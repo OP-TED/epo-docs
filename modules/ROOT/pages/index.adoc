@@ -6,9 +6,9 @@
 
 == What is the eProcurement Ontology?
 https://github.com/OP-TED/ePO[The eProcurement Ontology (ePO)] is a vocabulary that models the concepts used in EU public procurement.
-It does not represent the process as such, but the concepts used in the different parts of the Public Procurement Lifecycle.
+It does not represent the eProcurement process as such, it defines the concepts used in the different parts of the Public Procurement Lifecycle.
 
-The ePO conceptualises, formally encodes and provides structured data about public procurement in both human and machine-readable formats. The ePO is modelled in alignment with EU Directives and Regulations.
+The ePO conceptualises, formally encodes, and provides structured data about public procurement in both human and machine-readable formats. The ePO is modelled in alignment with EU Directives and Regulations.
 
 == Why do we need an eProcurement Ontology?
 The eProcurement Ontology ensures that every participant in the procurement process is speaking the same language i.e., that the concepts and definitions are the same and have the same meaning for all parties. The eProcurement Ontology is a formal standard.
@@ -16,13 +16,13 @@ The eProcurement Ontology ensures that every participant in the procurement proc
 More information can be found on the xref:epo-home::motivation.adoc[Motivation page] here.
 
 == The Scope of the eProcurement Ontology
-ePO covers public Procurement from end to end, i.e. from notification, to tendering to awarding, ordering, invoicing and payment.
+ePO covers public Procurement from end to end i.e., from notification, to tendering, to awarding, ordering, invoicing and payment.
 
 image::charter1.png[]
 
 
 == How the eProcurement Ontology is created and developed
-In order to build and maintain the ontology, The EC Publications Office (OP) formed a Working Group (WG) of experts with the mission of building consensus on the analysis results and deliverables developed by the OP’s teams.
+To build and maintain the ontology, The European Commission's Publications Office (OP) formed a Working Group (WG) of experts with the mission of building consensus on the analysis results and deliverables developed by the OP’s teams.
 
 
 == New to the eProcurement Ontology?
