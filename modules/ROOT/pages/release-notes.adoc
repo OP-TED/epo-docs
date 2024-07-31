@@ -193,6 +193,40 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
 
+=== Added Classes
+|===
+|*Class*
+|epo-not:NoticeCEI
+|epo-not:NoticeE1
+|epo-not:NoticeE2
+|epo-not:NoticeE3
+|epo-not:NoticeE4
+|epo-not:NoticeE5
+|epo-not:NoticeT01
+|epo-not:NoticeT02
+|===
+
+=== Added subClassOf
+|===
+| *instance* | *property* |	 *value*
+|epo-not:eFormsNotice|rdfs:subClassOf|epo-not:NoticeCEI
+|epo-not:eFormsNotice|rdfs:subClassOf|epo-not:NoticeE1
+|epo-not:eFormsNotice|rdfs:subClassOf|epo-not:NoticeE2
+|epo-not:eFormsNotice|rdfs:subClassOf|epo-not:NoticeE3
+|epo-not:eFormsNotice|rdfs:subClassOf|epo-not:NoticeE4
+|epo-not:eFormsNotice|rdfs:subClassOf|epo-not:NoticeE5
+|epo-not:eFormsNotice|rdfs:subClassOf|epo-not:NoticeT01
+|epo-not:eFormsNotice|rdfs:subClassOf|epo-not:NoticeT02
+|epo-not:CANSocialNotice|rdfs:subClassOf|epo-not:NoticeT02
+|epo-not:CANStandardNotice|rdfs:subClassOf|epo-not:NoticeE4
+|epo-not:CNStandardNotice|rdfs:subClassOf|epo-not:NoticeE3
+|epo-not:CompletionNotice|rdfs:subClassOf|epo-not:NoticeE5
+|epo-not:PINOnlyNotice|rdfs:subClassOf|epo-not:NoticeE2
+|epo-not:PINTimeLimitNotice|rdfs:subClassOf|epo-not:NoticeT01
+|epo-not:PIN_CFCStandardNotice|rdfs:subClassOf|epo-not:NoticeCEI
+|epo-not:PreMarketConsultationNotice|rdfs:subClassOf|epo-not:NoticeE1
+|===
+
 == eAccess
 
 === Metadata
@@ -215,6 +249,12 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | owl:priorVersion |	epo:sub-4.0.2	| epo:sub-4.1.0
 | version:IRI | sub-4.1.0 | sub-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
+|===
+
+=== Added Object Properties
+|===
+|*property* | *Domain, Range and cardinality*
+|epo-sub:refersToOtherESPDResponse|epo-sub:ESPD -> epo-sub:ESPD [0..*]
 |===
 
 
