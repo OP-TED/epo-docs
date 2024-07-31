@@ -5,9 +5,9 @@
 :toc-title: Contents
 
 :doctitle: Business Overview
-:page-code: epo-v4.1.0-rc.1-prod-003
+:page-code: epo-v4.2.0-rc.1-prod-003
 :page-name: business
-:docdate: December 2023
+:docdate: July 2024
 
 ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 4.0.0@business.adoc,4.0@business.adoc
