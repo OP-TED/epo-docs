@@ -73,43 +73,29 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
 
-=== Added Classes
-|===
-|*Class*
-|epo-cat:CatalogueResponse
-|epo-cat:CatalogueResponseInformation
-|epo-cat:CatalogueResponseLine
-|===
-
-=== Added subClassOf
-|===
-| *instance* | *property* |	 *value*
-|epo-cat:CatalogueResponse|	rdfs:subClassOf	|epo-cat:PostAwardDocument
-|===
-
 === Added Object Properties
 |===
 |*property* | *Domain, Range and cardinality*
-|epo:comprisesCatalogueResponseLine|epo-cat:CatalogueResponse -> epo-cat:CatalogueResponseLine [0..*]
-|epo-cat:foreseesPackage|epo-cat:CatalogueLine -> epo-ful:Package (external) [0..1]
-|epo-cat:isSpecificToCatalogueResponseLine|epo-cat:CatalogueResponseInformation -> epo-cat:CatalogueResponseLine [0..1]
-|epo-cat:refersToCatalogue|epo-cat:CatalogueResponse -> epo-cat:Catalogue [1]
-|epo-cat:refersToCatalogueLine|epo-cat:CatalogueResponseLine -> epo-cat:CatalogueLine [1]
-|epo-cat:specifiesCatalogueResponseInformation|epo-cat:CatalogueResponse -> epo-cat:CatalogueResponseInformation [1]
-|epo-ord:hasAcceptanceStatus|epo-cat:CatalogueResponseInformation -> at-voc-new:ResponseStatus (external) [1]
-|epo:hasUUID|epo-cat:CatalogueResponseLine -> adms:Identifier (external) [1]
-|epo:hasValidityPeriod|epo-cat:Catalogue -> epo:Period (external) [0..1]
-|epo:specifiesCatalogueProvider|epo-cat:CatalogueResponse -> epo:CatalogueProvider (external) [1]
-|epo:specifiesCatalogueReceiver|epo-cat:CatalogueResponse -> epo:CatalogueReceiver (external) [1]
+|epo-inv:isSpecificToInvoiceLine|epo-cat:ChargeInformation -> epo-inv:InvoiceLine [0..*]
+|epo-inv:hasItemClassificationIdentifier|epo-cat:Item -> adms:Identifier [0..*]
+|epo-ord:hasGrossMonetaryValue|epo:Price -> epo:MonetaryValue [0..1]
 |===
 
-=== Deleted Object Properties
+=== Added Datatype Properties
 |===
-|*Property*| *Domain, Range and cardinality*
-|epo-ful:hasAssociatedDocument	|epo-ful:DespatchAdvice (external) -> epo-cat:PostAwardDocument [0..1]
-     epo-ful:DespatchLine (external) -> epo-cat:PostAwardDocument [0..1]
+|*Property* | *Class* | *datatype/cardinality*
+|dct:title|epo-cat:ItemProperty|rdf:PlainLiteral [0..1]
+|epo:hasAdditionalInformation|epo-cat:Line|rdf:PlainLiteral [0..1]
+|===
+
+=== Modified Datatype Properties
+|===
+|*Property* | *Class* | *old datatype/cardinality* | *new datatype/cardinality*
+|epo-cat:hasAttributeType|epo-cat:ItemProperty|rdf:PlainLiteral [1..1]|rdf:PlainLiteral [0..1]
+|epo-cat:hasClassificationScheme|epo-cat:ItemProperty|rdf:PlainLiteral [1..1]|rdf:PlainLiteral [0..1]
 
 |===
+
 
 == eOrdering
 
