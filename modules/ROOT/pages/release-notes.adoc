@@ -11,7 +11,6 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 
 == Release notes
 
-
 *  eInvoicing module was released.
 *  Updates for the following modules were made:
 ** ePO core
@@ -34,71 +33,33 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
 
-=== Added Imports
-|===
-|*Property*|*Value*
-|owl:imports	|http://data.europa.eu/eli/ontology#
-|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
-|===
-
-=== Added Classes
-|===
-|*Class*
-|epo:TechnicalSpecification
-|cccev:InformationRequirement
-|===
-
-=== Added subClassOf
-|===
-| *instance* | *property* |	 *value*
-|epo:TechnicalSpecification|	rdfs:subClassOf|	epo:ProcurementDocument
-|cccev:InformationRequirement|	rdfs:subClassOf|	cccev:Requirement
-|===
-
 === Added Object Properties
 |===
 |*property* | *Domain, Range and cardinality*
-|adms:identifier|cccev:Evidence -> adms:Identifier [1]
-|epo:canProvideNonDiscriminatoryEvidence | org:Organization -> cccev:Evidence [0..*]
-|epo:canProvideTaxAndSocialSecuritiesEvidence | org:Organization -> cccev:Evidence [0..*]
-|epo:includesNationalCriterion |epo:QualificationCriterion -> epo:QualificationCriterion [0..*]
-|cccev:hasConcept | cccev:Requirement -> cccev:InformationConcept [0..*]
-|epo:hasConstraint|cccev:InformationRequirement -> cccev:Constraint [0..*]
-|epo:includesNationalCriterion	|epo:QualificationCriterion -> epo:QualificationCriterion [0..*]
+|epo:foreseesSubcontractor|epo:Contractor -> epo:Subcontractor [0..1]
+|epo:hasSubcontractor|epo:Contractor -> epo:Subcontractor [0..1]
+|epo:concernsProcedure|epo:ExpressionOfInterest -> epo:Procedure [1]
+|epo:hasPreferredLanguageForProcurementDocument|epo:ExpressionOfInterest -> at_voc:language [0..*]
+|epo:specifiesEconomicOperator|epo:ExpressionOfInterest -> epo:OfferingParty [0..*]
+|epo:fulfillsStrategicProcurement|epo:LotAwardOutcome -> epo:StrategicProcurement [0..*]
+|epo:isSubjectToLotSpecificTerm|epo:LotGroup -> epo:LotSpecificTerm [0..*]
+|epo:hasApproximateGroupFrameworkAgreementValue|epo:LotGroupAwardInformation -> epo:MonetaryValue [0..1]
+|epo:foreseesSubcontractor|epo:Tender -> epo:Subcontractor [0..*]
 |===
 
 === Modified Object Properties
 |===
 |*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
-|epo:attestedByLabel |epo:Certificate -> epo:CertificationLabel [1]|epo:Certificate -> epo:CertificationLabel [0..1]
-|cccev:confidentialityLevelType|cccev:Evidence -> at-voc:confidentiality-level [0..1]|cccev:Evidence -> at-voc:access-rights [0..1]
-|epo:hasPrimaryContactPoint	|org:Organization -> cpov:ContactPoint [0..*]
-|org:Organization -> cpov:ContactPoint [0..1]
+|epo:concernsGreenProcurement|epo:VehicleInformation -> epo:GreenProcurement [1]|epo:VehicleInformation -> epo:GreenProcurement [0..1]
 |===
 
 === Added Datatype Properties
 |===
 |*Property* | *Class* | *datatype/cardinality*
-|epo:hasAdditionalInformation |epo:ProcurementCriterion | rdf:PlainLiteral [0..1]
-|epo:hasSMEReceivedTendersExcludingSubcontractors|epo:SubmissionStatisticalInformation|xsd:integer [0..1]
-|dct:description|cccev:Evidence|rdf:PlainLiteral [0..1]
-|epo:hasURL|cccev:Evidence|xsd:anyURI [0..1]
-|epo:hasAdditionalInformation|epo:ProcurementCriterion|rdf:PlainLiteral [0..1]
+|epo:isSMESuitable|epo:LotGroup|xsd:boolean [0..1]
+|epo:isSubcontractingPercentageKnown|epo:SubcontractingEstimate|rdf:PlainLiteral [0..1]
+|po:isSubcontractingValueKnown|epo:SubcontractingEstimate|xsd:boolean [0..1]
 |===
-
-=== Deleted Datatype Properties
-|===
-|*Property* | *Class* | *datatype/cardinality*
-|epo:hasURL	|epo:Certificate|xsd:anyURI [0..1]
-|===
-
-
-=== Modified Datatype Properties
-|===
-|*Property* | *Class* | *old datatype/cardinality* | *new datatype/cardinality*
-|epo:hasCertificationNumber|epo:Certificate|rdf:PlainLiteral [1..1]|rdf:PlainLiteral [0..1]
-|===
-
 
 == eCatalogue
 
@@ -110,13 +71,6 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | owl:priorVersion |	epo:cat-4.0.2	| epo:cat-4.1.0
 | version:IRI | cat-4.1.0 | cat-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
-|===
-
-=== Added Imports
-|===
-|*Property*|*Value*
-|owl:imports	|http://data.europa.eu/eli/ontology#
-|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
 |===
 
 === Added Classes
@@ -169,13 +123,6 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
 
-=== Added Imports
-|===
-|*Property*|*Value*
-|owl:imports	|http://data.europa.eu/eli/ontology#
-|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
-|===
-
 === Added Object Properties
 |===
 |*property* | *Domain, Range and cardinality*
@@ -195,13 +142,6 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | owl:priorVersion |	epo:ful-4.0.2	| epo:ful-4.1.0
 | version:IRI | ful-4.1.0 | ful-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
-|===
-
-=== Added Imports
-|===
-|*Property*|*Value*
-|owl:imports	|http://data.europa.eu/eli/ontology#
-|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
 |===
 
 === Added Classes
@@ -252,13 +192,6 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
 
-=== Added Imports
-|===
-|*Property*|*Value*
-|owl:imports	|http://data.europa.eu/eli/ontology#
-|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
-|===
-
 == eNotice
 
 === Metadata
@@ -270,14 +203,6 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | version:IRI | not-4.1.0 | not-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
-
-=== Added Imports
-|===
-|*Property*|*Value*
-|owl:imports	|http://data.europa.eu/eli/ontology#
-|owl:imports	|http://iflastandards.info/ns/fr/frbr/frbroo/
-|===
-
 
 == eAccess
 
