@@ -142,37 +142,31 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 === Added Classes
 |===
 |*Class*
-|epo-ful:ReceiptAdvice
-|epo-ful:ReceiptAdviceLine
+|epo-ful:NotificationReceiver
 |===
 
 === Added subClassOf
 |===
 | *instance* | *property* |	 *value*
-|epo-ful:ReceiptAdvice |rdfs:subClassOf|epo-cat:PostAwardDocument
-|epo-ful:ReceiptAdviceLine|rdfs:subClassOf|epo-cat:Line
+|epo:AuxiliaryParty |rdfs:subClassOf|epo-ful:NotificationReceiver
 |===
 
 === Added Object Properties
 |===
 |*property* | *Domain, Range and cardinality*
-|epo-ful:hasAssociatedDocument | epo-ful:ReceiptAdvice -> epo:Document (external) [0..1]
-|epo-ful:RejectionAction|epo-ful:ReceiptAdviceLine -> at-voc-new:action-code [0..1]
-|epo-ful:comprisesReceiptAdviceLine|epo-ful:ReceiptAdvice -> epo-ful:ReceiptAdviceLine [0..*]
-|epo-ful:foreseesPackage|epo-cat:CatalogueLine (external) -> epo-ful:Package [0..1]
-|epo-ful:hasOversupplyQuantity | epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
-|epo-ful:hasReceivedQuantity | epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
-|epo-ful:hasRejectReason|epo-ful:ReceiptAdviceLine -> at-voc-new:reject-reason [0..1]
-|epo-ful:hasRejectedQuantity | epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
-|epo-ful:hasShortQuantity| epo-ful:ReceiptAdviceLine -> epo:Quantity (external) [0..1]
-|epo-ful:hasShortageAction|epo-ful:ReceiptAdviceLine -> at-voc-new:action-code [0..1]
-|epo-ful:isSubmittedForDespatchAdvice|epo-ful:ReceiptAdvice -> epo-ful:DespatchAdvice [0..1]
-|epo-ful:isSubmittedForDespatchLine|epo-ful:ReceiptAdviceLine -> epo-ful:DespatchLine [1]
-|epo-ful:isSubmittedForShipment|epo-ful:ReceiptAdvice -> epo-ful:ShipmentInformation [0..1]
-|epo-ful:specifiesBuyer|epo-ful:ReceiptAdvice -> epo:Buyer (external) [0..1]
-|epo-ful:specifiesConsignee	|epo-ful:ReceiptAdvice -> epo-ord:Consignee (external) [1..*]
-|epo-ful:specifiesDespatcher|epo-ful:ReceiptAdvice -> epo-ful:Despatcher [1]
-|epo-ful:specifiesSeller|epo-ful:ReceiptAdvice -> epo-ord:Seller (external) [0..1]
+|epo-ful:hasDeclaredStatisticalValue|epo-ful:Consignment -> epo:MonetaryValue [0..1]
+|epo-ful:hasDespatcherConsignmentID|epo-ful:Consignment -> adms:Identifier [0..1]
+|epo-ful:hasFreightCharge|epo-ful:Consignment -> epo_cat:ChargeInformation [0..*]
+|epo-ful:hasLoadingMeter|epo-ful:Consignment -> epo:Quantity [0..1]
+|epo:specifiesNotificationReceiver|epo-ful:Consignment -> epo-ful:NotificationReceiver [0..*]
+|epo-ful:hasDespatchPeriod|epo-ful:ShipmentInformation -> epo:Period [0..1]
+|===
+
+=== Modified Object Properties
+|===
+|*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
+|epo-ful:refersToOrderLine|epo-ful:DespatchLine -> epo-ord:OrderLine [0..1]|epo-ful:DespatchLine -> epo-ord:OrderLine [1]
+|epo-ful:containsGoodsItem|epo-ful:Package -> epo-ful:GoodsItem [1..*]|epo-ful:Package -> epo-ful:GoodsItem [0..*]
 |===
 
 == eContract
