@@ -45,6 +45,9 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |epo:isSubjectToLotSpecificTerm|epo:LotGroup -> epo:LotSpecificTerm [0..*]
 |epo:hasApproximateGroupFrameworkAgreementValue|epo:LotGroupAwardInformation -> epo:MonetaryValue [0..1]
 |epo:foreseesSubcontractor|epo:Tender -> epo:Subcontractor [0..*]
+|epo:concernsLot|cccev:InformationRequirement -> epo:Lot [0..*]
+|epo:concernsLotGroup|cccev:InformationRequirement -> epo:LotGroup [0..*]
+|epo:concernsProcedure|cccev:InformationRequirement -> epo:Procedure [0..1]
 |===
 
 === Modified Object Properties
