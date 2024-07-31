@@ -93,9 +93,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property* | *Class* | *old datatype/cardinality* | *new datatype/cardinality*
 |epo-cat:hasAttributeType|epo-cat:ItemProperty|rdf:PlainLiteral [1..1]|rdf:PlainLiteral [0..1]
 |epo-cat:hasClassificationScheme|epo-cat:ItemProperty|rdf:PlainLiteral [1..1]|rdf:PlainLiteral [0..1]
-
 |===
-
 
 == eOrdering
 
@@ -112,11 +110,22 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 === Added Object Properties
 |===
 |*property* | *Domain, Range and cardinality*
-|epo-ord:hasSellerOrderID | epo-ord:Order -> adms:Identifier (external) [0..1]
-|epo-ful:specifiesConsignee|epo-ful:ReceiptAdvice (external) -> epo-ord:Consignee [1..*]
-|epo-ful:specifiesSeller|epo-ful:ReceiptAdvice (external) -> epo-ord:Seller [0..1]
-|epo-ord:hasAcceptanceStatus|epo-cat:CatalogueResponseInformation (external) -> at-voc-new:ResponseStatus [1]
+|epo-inv:isSpecificToInvoiceLine|epo-ord:AllowanceInformation -> epo-inv:InvoiceLine [0..*]
+|epo:hasValidityPeriod|epo-ord:Order -> epo:Period [0..1]
 |===
+
+=== Modified Object Properties
+|===
+|*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
+|epo_cat:hasPrice|epo-ord:OrderLine -> epo-cat:Price [0..1]|epo-ord:OrderLine -> epo-cat:Price [0..*]
+|===
+
+=== Added Datatype Properties
+|===
+|*Property* | *Class* | *datatype/cardinality*
+|epo-inv:hasActualDeliveryDate|epo-ord:DeliveryInformation|xsd:date [0..1]
+|===
+
 
 == eFulfilment
 
