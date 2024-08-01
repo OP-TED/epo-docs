@@ -3,7 +3,9 @@
 :page-name: index
 :docdate: March 2024
 
-
+ifeval::[{epo_latest_version} == {page-component-version}]
+:page-aliases: 4.1.0@index.adoc, 4.1@index.adoc
+endif::[]
 
 The eProcurement Ontology (ePO) defines and develops the semantic ontology related to EU public procurement. It creates and maintains the ontology according to EU regulations and directives.
 
@@ -12,13 +14,13 @@ The following topics are included in this version of the eProcurement Ontology d
 
 == General Documentation
 
-* xref:4.1@EPO::business.adoc[Business Overview] +
+* xref:business.adoc[Business Overview] +
 Business Overview of this release
-* xref:4.1@EPO::conceptual.adoc[Conceptual Models] +
+* xref:conceptual.adoc[Conceptual Models] +
 The release specific conceptual Model(s)
-* xref:4.1@EPO::glossaries.adoc[Glossaries] +
+* xref:glossaries.adoc[Glossaries] +
 The release specific glossaries
-* xref:4.1@EPO::release-notes.adoc[Release Notes] +
+* xref:release-notes.adoc[Release Notes] +
 The release notes as on GitHub
 
 
