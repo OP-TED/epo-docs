@@ -1,5 +1,5 @@
 name: EPO
-version: 4.2
+version:
 title: eProcurement Ontology
 prerelease: -rc.1
 display_version: 4.2.0-rc.1
