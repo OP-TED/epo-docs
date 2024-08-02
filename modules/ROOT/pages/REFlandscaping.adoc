@@ -1240,7 +1240,7 @@ Besides defining classes and properties, the CDM also defines relationships betw
 The CDM can help us understand how different metadata concepts of e-Procurement relate to each other. The ePO will respect the naming and design rules of the CDM. Moreover, as the CDM is available in OWL, its elements can be reused by the e-Procurement Ontology wherever possible.
 
 ==== Standard forms for public procurement (TED)
-Following the adoption of the revised e-Procurement Directives, a new set of standard forms for public procurement was introduced. With the new directives, the forms are meant to be used in an electronic format only, which allows for automatic checking of mandatory fields. Moreover, the clear structure of electronic notices ensure consistency with the European Directives and minimize the risk of encoding errors. The forms, which are available via SIMAP, impose a structure for submitting the following information:
+Following the adoption of the revised e-Procurement Directives, a new set of standard forms for public procurement was introduced. With the new directives, the forms are meant to be used in an electronic format only, which allows for automatic checking of mandatory fields. Moreover, the clear structure of electronic notices ensure consistency with the European Directives and minimise the risk of encoding errors. The forms, which are available via SIMAP, impose a structure for submitting the following information:
 
 * Prior information notice;
 * Contract notice;
@@ -1348,7 +1348,7 @@ Codelists and named authority lists are also easy to and should be reused. Espec
 Other existing works, which are merely standards or non-RDF models, can be reused in the sense that they can provide useful information for the modelling of the ePO and inform on important things to consider during its creation.
 
 == CONCLUSION AND NEXT STEPS
-The objective of this deliverable was to collect the necessary information for starting the development of the e-Procurement Ontology, whicjh is a commonly agreed OWL ontology that will conceptualize and formally encode information describing public procurement in a structured and machine readable format.
+The objective of this deliverable was to collect the necessary information for starting the development of the e-Procurement Ontology, whicjh is a commonly agreed OWL ontology that will conceptualise and formally encode information describing public procurement in a structured and machine readable format.
 
 Towards achieving this goal, this document has identified use cases for the ePO. The use cases demonstrate how the ePO can foster transparency and help monitor public procurement, how it can promote innovation, and how it can interconnect different public procurement systems. Moreover, the target audience of the ePO has been identified. The target audience includes, but is not limited to, contracting authorities, economic operators, regulators and the media.
 

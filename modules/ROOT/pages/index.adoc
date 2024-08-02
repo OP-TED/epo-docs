@@ -6,23 +6,23 @@
 
 == What is the eProcurement Ontology?
 https://github.com/OP-TED/ePO[The eProcurement Ontology (ePO)] is a vocabulary that models the concepts used in EU public procurement.
-It does not represent the eProcurement process as such, it defines the concepts used in the different parts of the Public Procurement Lifecycle.
+It does not represent the eProcurement process itself, it defines the concepts used in the different parts of the public procurement lifecycle.
 
-The ePO conceptualises, formally encodes, and provides structured data about public procurement in both human and machine-readable formats. The ePO is modelled in alignment with EU Directives and Regulations.
+The ePO conceptualises, formally encodes, and provides structured data about public procurement in both human and machine-readable formats. The ePO is modelled in alignment with EU Directives and Regulations and is a formal standard.
 
 == Why do we need an eProcurement Ontology?
-The eProcurement Ontology ensures that every participant in the procurement process is speaking the same language i.e., that the concepts and definitions are the same and have the same meaning for all parties. The eProcurement Ontology is a formal standard.
+The eProcurement Ontology ensures that every participant in the procurement process is speaking the same language i.e., that the concepts and definitions are the same and have the same meaning for all parties. 
 
-More information can be found on the xref:epo-home::motivation.adoc[Motivation page] here.
+More detail and background can be found in the xref:epo-home::motivation.adoc[Motivation for the development of an ePO].
 
 == The Scope of the eProcurement Ontology
-ePO covers public Procurement from end to end i.e., from notification, to tendering, to awarding, ordering, invoicing and payment.
+ePO covers public Procurement from end to end i.e., from notification, through tendering, awarding, ordering, invoicing, and payment.
 
 image::charter1.png[]
 
 
 == How the eProcurement Ontology is created and developed
-To build and maintain the ontology, The European Commission's Publications Office (OP) formed a Working Group (WG) of experts with the mission of building consensus on the analysis results and deliverables developed by the OP’s teams.
+To build and maintain the ontology, The European Commission's Publications Office (OP) formed a Working Group (WG) of experts with the mission of building consensus on the analysis, results, and deliverables developed by the OP’s teams.
 
 
 == New to the eProcurement Ontology?
@@ -47,7 +47,7 @@ The following topics are included in this version of the eProcurement Ontology d
 
 
 * xref:epo-home::guide.adoc[User Guides] +
-Guides to using the ePO and its features.
+Guides for using the ePO and its features.
 
 * xref:EPO::conceptual.adoc[Conceptual Models] +
 The release specific conceptual Model(s) of the ontology.
@@ -69,7 +69,7 @@ How the ePO is developed and maintained
 An overview of the versioning rules for releases
 
 * xref:epo-home::stories.adoc[User Stories and Natural Language Statements] +
-Ontology Requirements Specification Documents (ORSD), containing user stories and natural language statements used when developing new modules.
+Ontology Requirements Specification Documents (ORSD), containing user stories and natural language statements used when developing new modules
 
 ** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)] +
 ORSD for eAccess module

@@ -75,9 +75,10 @@ image:2024-2025.png[]
 |ePO version 4.0.0
 |eFulfilment and eContract modules released in v4.0.0
 
-|March 2024
-|ePO version 4.1.0-rc.1
-|eAccess & eSubmission modules released in v4.1.0-rc.1
+|July 2024
+|ePO version 4.1.0
+|eAccess & eSubmission modules released in v4.1.0
+
 |===
 ////
 |

@@ -56,6 +56,8 @@ The ontology is implemented as a https://www.uml.org/[UML conceptual model], whi
 
 The workflow of this stage, depicted below, is different from the one provided in the LOT.
 
+minimize minimise 
+
 image::metho3.png[Ontology Implementation]
 _Image Source: https://lot.linkeddata.es/_
 
