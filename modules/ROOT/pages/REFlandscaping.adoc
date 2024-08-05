@@ -1177,7 +1177,7 @@ In the case of ePO, the LOTED2 vocabulary could be useful as a means of enrichin
 
 The Linked Open Economy (LOE) ontology was developed for the purposes of the EU funded project YourDataStories.eu. It was created to address the problem of the poor quality of open economic data becoming available as more governments around the world open their data to the public.
 
-The Linked Open Economy ontology is a top-level, generic conceptualization that aims to enrich and interlink the publicly available economic open data by modelling the flows incorporated in public procurement along with the market process to address complex policy issues.
+The Linked Open Economy ontology is a top-level, generic conceptualisation that aims to enrich and interlink the publicly available economic open data by modelling the flows incorporated in public procurement along with the market process to address complex policy issues.
 
 The Linked Open Economy approach is a simple scalable model designed to describe data ranging from public procurement, budgets and spending to market prices. As such it can be easily tailored to a multitude of individual project needs. It also extensively uses existing vocabularies to make integration of heterogeneous data easier.
 

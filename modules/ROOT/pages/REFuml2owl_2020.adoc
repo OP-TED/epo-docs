@@ -982,7 +982,7 @@ The UML dependency connectors should be transformed by the rules specified for U
 '''
 === Class generalisation
 
-Generalisation [5] defines specialization relationship between Classifiers. In case of UML classes it relates a more specific Class to a more general Class. UML generalisation set [5] groups generalizations; incomplete and disjoint constraints indicate that the set is not complete and its specific Classes have no common instances. The UML conventions [7] specify that all sibling classes are by default disjoint, therefore even if no generalisation set is provided it is assumed to be implicit.
+Generalisation [5] defines specialisation relationship between Classifiers. In case of UML classes it relates a more specific Class to a more general Class. UML generalisation set [5] groups generalisations; incomplete and disjoint constraints indicate that the set is not complete and its specific Classes have no common instances. The UML conventions [7] specify that all sibling classes are by default disjoint, therefore even if no generalisation set is provided it is assumed to be implicit.
 
 image::P27F13.png[Figure 13: Visual representation of UML generalisation (on the left) and OWL subclass relation (on the right)]
 .Figure 13: Visual representation of UML generalisation (on the left) and OWL subclass relation (on the right)
@@ -1016,7 +1016,7 @@ a|
 
 === Property generalisation
 
-Generalization [5] defines specialization relationship between Classifiers. In case of the UML associations it relates a more specific Association to more general Association.
+Generalisation [5] defines specialisation relationship between Classifiers. In case of the UML associations it relates a more specific Association to more general Association.
 
 image::P28F14.png[Figure 14: Visual representation of UML property generalisation (on the left) and OWL sub-property relation (on the right)]
 .Figure 14: Visual representation of UML property generalisation (on the left) and OWL sub-property relation (on the right)

@@ -11,6 +11,6 @@ This guide is meant to be a resource to...
 
 <Write something high level giving information to people on how to do this>
 
-<how is this done? what are the requirements? Give examples of the already existing epo datasets>
+<how is this done? what are the requirements? Give examples of the already existing ePO datasets>
 
 <How we can create linked data by using the eforms...>

@@ -13,5 +13,5 @@ Process of building a query (concepts to classes, triples, query)
 . Relationships (conceptual model)
 . Query WHERE statements
 
-Make sure that for each query example it is mentioned which epo version is being queried.
+Make sure that for each query example it is mentioned which ePO version is being queried.
 

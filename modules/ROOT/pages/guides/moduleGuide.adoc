@@ -493,7 +493,7 @@ The eNotice module contains classes related to eNotices and eForms. It is struct
 
 
 === Conceptual Model
-The notice and cv mapping class diagram (Figure 9) shows some of the most important classes of the eNotice module, such as the different specialization classes of epo:eNotice. To be able to understand the different parts of this diagram and how to read it please refer to the xref:guides/conceptualModelGuide.adoc[Guide to the ePO Conceptual Model]. The eNotice conceptual model itself can be found https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eNotice/index.html[here], and the eNotice glossary https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/glossary/eNotice_glossary.html[here].
+The notice and cv mapping class diagram (Figure 9) shows some of the most important classes of the eNotice module, such as the different specialisation classes of epo:eNotice. To be able to understand the different parts of this diagram and how to read it please refer to the xref:guides/conceptualModelGuide.adoc[Guide to the ePO Conceptual Model]. The eNotice conceptual model itself can be found https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eNotice/index.html[here], and the eNotice glossary https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/glossary/eNotice_glossary.html[here].
 
 image::docUpdateGuideImages/Modules/notice.png[]
 __ Figure 9: The notice and cv mapping class diagram.

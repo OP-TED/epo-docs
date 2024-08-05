@@ -1818,7 +1818,7 @@ s|Information requirement| Definition| URI
 |http://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.html#S-CONTRACT-INFORMATION-NOTIFICATION
 
 |Contract
-|The Public Procurement Ontology specifies a class contract. An instance of this class is an abstract information entity about a public contract. It consists of all currently known information about a contract, e.g., a contracting authority, services or supplies which shall be purchased, and contract conditions (e.g. important dates, expected price, etc.). It also informs about tenders received from particular bidders and about an accepted tender. If the contract has already been realized it also informs about an actual price of realization, etc.
+|The Public Procurement Ontology specifies a class contract. An instance of this class is an abstract information entity about a public contract. It consists of all currently known information about a contract, e.g., a contracting authority, services or supplies which shall be purchased, and contract conditions (e.g. important dates, expected price, etc.). It also informs about tenders received from particular bidders and about an accepted tender. If the contract has already been realized it also informs about an actual price of realisation, etc.
 |http://contsem.unizar.es/def/sector-publico/pproc.html
 |===
 

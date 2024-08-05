@@ -5,27 +5,26 @@
 
 Before reading this example, please visit the xref:guides/conceptualModelGuide.adoc[Conceptual Model] and xref:guides/glossaryGuide.adoc[Glossary] guides.
 
+Lets translate that question to a query that aims to connect the buyer with the lot, and the winner of the tender award
+outcome, that was awarded that lot.
 
-This is a very generic question, so we need to make it more specific.
+The question we are addressing is quite general, so  we need to make it more specific.
 
-Lets translate that question to a query that aims to connect the buyer with the lot and the winner of the tender award
-outcome, who was awarded that lot.
+To build this query we need to connect the name of the buyer with the Lot, and then find the winner of the tender award outcome.
 
-Specifically, in order to find this query we need to connect the name of the buyer with the  Lot,
-and then find the winner of the tender award outcome.
-
-* First we need to locate the Buyer class in epo core conceptual model (Fig.A1).
+* First we need to locate the Buyer class in the ePO core conceptual model (Fig.A1):
 
 image::docUpdateGuideImages/UML/Conceptual model queries/qa1.png[]
-__ Figure A1: epo:Buyer in epo core.
+__ Figure A1: epo:Buyer in ePO core.
 __
 
-* Now we need to find an attribute to identify that buyer. Searching the glossary for the attributes of epo:Buyer does not yeld a suitable attribute, so we need to look for another class that is a generalization of epo:Buyer.    Searching the ontology, we find the role hierarchy diagram (Fig.A2),
-  and decide to use the dct:title attribute of class epo:AgentInRole which is a generalization of class epo:AcquiringParty
- which in turn is a generalization of epo:Buyer.
+* Now we need to find an attribute to identify that buyer. Searching the glossary for the attributes of epo:Buyer does not yield a suitable attribute, so we need to look for another class that is a generalisation of epo:Buyer.    
+
+Searching the ontology, we find the role hierarchy diagram (Fig.A2),
+  and decide to use the dct:title attribute of class epo:AgentInRole, which is a generalisation of class epo:AcquiringParty, which in turn is a generalisation of epo:Buyer.
 
 image::docUpdateGuideImages/UML/Conceptual model queries/qa2.png[]
-__ Figure A2: epo:Buyer can use the dct:title attribute of epo:AgentInRole as it is connected to it using generalization relations.
+__ Figure A2: epo:Buyer can use the dct:title attribute of epo:AgentInRole as it is connected to it using generalisation relations.
 __
 
 * Next step, is to find a connection between the buyer to the Lot through the tender award outcome. To do this we use the

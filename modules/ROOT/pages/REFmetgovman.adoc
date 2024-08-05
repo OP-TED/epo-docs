@@ -1165,7 +1165,7 @@ Schema-validity assessment has three aspects:
 As mentioned in chapter 3.4.2, structural metadata can be managed in an XML-based environment using XML Schema Definitions, or in a Linked Data environment using RDF-based formats
 
 ==== RDF Schema
-In the Resource Description Framework (RDF) data is organised in graphs around subject-predicate-object statements (called triples). RDF has come to be used as a general method for conceptual description or modelling of information that is implemented in web resources, using a variety of syntax notations and data serialization formats.
+In the Resource Description Framework (RDF) data is organised in graphs around subject-predicate-object statements (called triples). RDF has come to be used as a general method for conceptual description or modelling of information that is implemented in web resources, using a variety of syntax notations and data serialisation formats.
 
 RDF has among others the following characteristics:
 
@@ -1229,7 +1229,7 @@ _Figure 15: Tool Categories: generic tool chain_
 ==== Data model editors
 *Tool: Sparx Enterprise Architect*
 
-*Sparx Enterprise Architect* is a commercial-licensed tool for data modelling and visualisation. The built-in visualization function of Enterprise Architect can be used for representing data models in a human readable format. Enterprise Architects allows modifying the script that is used for exporting data models to HTML. By slightly adapting the script, we can link the human-readable representation with the repository of machine-readable distributions of the metadata and the code lists used, and even with the issue tracker on JIRA.
+*Sparx Enterprise Architect* is a commercial-licensed tool for data modelling and visualisation. The built-in visualisation function of Enterprise Architect can be used for representing data models in a human readable format. Enterprise Architects allows modifying the script that is used for exporting data models to HTML. By slightly adapting the script, we can link the human-readable representation with the repository of machine-readable distributions of the metadata and the code lists used, and even with the issue tracker on JIRA.
 
 *Alternatives*:
 

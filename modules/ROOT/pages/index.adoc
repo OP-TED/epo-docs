@@ -8,7 +8,7 @@
 https://github.com/OP-TED/ePO[The eProcurement Ontology (ePO)] is a vocabulary that models the concepts used in EU public procurement.
 It does not represent the eProcurement process itself, it defines the concepts used in the different parts of the public procurement lifecycle.
 
-The ePO conceptualises, formally encodes, and provides structured data about public procurement in both human and machine-readable formats. The ePO is modelled in alignment with EU Directives and Regulations and is a formal standard.
+The ePO conceptualises, formally encodes, and provides structured data about public procurement in both human and machine-readable formats. It is modelled in alignment with EU Directives and Regulations and is a formal standard.
 
 == Why do we need an eProcurement Ontology?
 The eProcurement Ontology ensures that every participant in the procurement process is speaking the same language i.e., that the concepts and definitions are the same and have the same meaning for all parties. 
@@ -30,10 +30,10 @@ To build and maintain the ontology, The European Commission's Publications Offic
 Start here for an introduction:
 
 * Introductory info sessions on the ePO and Linked Open Data
-** xref:attachment$LOD/index.html[Linked Open Data] +
-A short info session on Linked Open Data
 ** xref:attachment$ePO/index.html[The ePO] +
 A short info session on the ePO
+** xref:attachment$LOD/index.html[Linked Open Data] +
+A short info session on Linked Open Data
 * https://github.com/OP-TED/ePO[Github page] +
 The ePO resources on GitHub
 

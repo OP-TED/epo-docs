@@ -7,9 +7,9 @@
 
 Public procurement represents around the 20% of GDP in Europe. This big buying volume offers a high economic potential to enhance efficiency of European procurement.
 
-The EU is investing significantly on the digitalisation of the public procurement process (referred to as e-Procurement). This goes beyond simply moving to electronic tools; it rethinks various pre-award and post-award phases with the aim of making them simpler for businesses to participate in, and for the public sector to manage. It also allows for the integration of data-based approaches at various stages of the procurement process.
+The EU is investing significantly in the digitalisation of the public procurement process (referred to as eProcurement). Digitising public procurement goes beyond simply moving to electronic tools; it rethinks various pre-award and post-award phases with the aim of making them simpler for businesses to participate in, and for the public sector to manage. It also allows for the integration of data-based approaches at various stages of the procurement process.
 
-With e-Procurement, public spending should become more transparent, evidence-oriented, optimised, streamlined and integrated with market conditions. More specifically, e-Procurement offers a range of benefits such as:
+With eProcurement, public spending should become more transparent, evidence-oriented, optimised, streamlined and integrated with market conditions. More specifically, eProcurement offers a range of benefits such as:
 
 * significant savings for all parties, both businesses and the public sector;
 
@@ -23,15 +23,15 @@ With e-Procurement, public spending should become more transparent, evidence-ori
 
 * new business opportunities by improving the access of all enterprises, including small and medium-sized enterprises (SMEs), to public procurement markets.
 
-To deliver the aforementioned benefits, e-Procurement relies heavily on the exchange of data between the different systems supporting the procurement processes i.e., achieving end-to-end interoperability of public procurement processes and underlying systems, and on the availability and dissemination of procurement data to the wider public i.e., improving transparency and stimulating innovation and new business opportunities.
+To deliver the aforementioned benefits, eProcurement relies heavily on the exchange of data between the different systems supporting the procurement processes i.e., achieving end-to-end interoperability of public procurement processes and underlying systems, and on the availability and dissemination of procurement data to the wider public i.e., improving transparency and stimulating innovation and new business opportunities.
 
 As stated in the Commission Regulation 2015/1986 (EU), contracting authorities in the EU are legally required to publish notices above certain capital thresholds. Article 6 of that Regulation states that either the online eNotices application or the TED eSender systems should be used for electronic transmition of notices to the Publications Office of the European Union. From a different angle, the implementation of the/ a revised PSI directive across the EU is calling for open, unobstructed access to public data to improve transparency, and to boost innovation, via the reuse of public data. Procurement data has been identified as data with a high-reuse potential. Making this data available in machine-readable formats, following on from the "data as a service" paradigm, is required to maximise its reuse.
 
-Data exchange, access, and reuse are key requirements for efficient and transparent end-to-end public procurement. Because of this, we observe a shift in focus from the definition of procurement process standards for system-to-system exchange, to the development of data standards for publishing e-Procurement data in open, machine-readable formats (see Chapter 4 Related Ontologies/Vocabularies and Projects).
+Data exchange, access, and reuse are key requirements for efficient and transparent end-to-end public procurement. Because of this, a shift in focus is taking place from the definition of procurement process standards for system-to-system exchange, to the development of data standards for publishing e-Procurement data in open, machine-readable formats.
 
 == The Challenges
 
-The key challenge is that procurement data exists in different systems across the European Union:
+The main challenge is that procurement data exists in different systems across the European Union:
 
 * the relations between the different concepts in the procurement chain and data flow are not fully documented, therefore data and data relationships cannot be reused directly in a flexible and comparable manner;
 
@@ -39,15 +39,15 @@ The key challenge is that procurement data exists in different systems across th
 
 * different systems use different data formats therefore reuse of information is not always efficient; and
 
-* taxonomies like the CPV are often not used correctly which creates serious problems e.g., making it very difficult for SMEs to find suitable business opportunities.
+* taxonomies like the https://ted.europa.eu/en/simap/cpv[CPV] are often not used correctly which creates serious problems e.g., making it very difficult for SMEs to find suitable business opportunities.
 
 Given the increasing importance of data standards for e-Procurement, a number of initiatives driven by the public sector, industry, and academia have been initiated in recent years. Some have grown organically, while others are the result of standardisation work. The vocabularies and the semantics that they introduce, the phases of public procurement that they cover, and the technologies that they use all differ. These differences hamper data interoperability and reuse. This creates the need for a common data standard for publishing procurement data, hence allowing data from different sources to be easily accessed and linked, and consequently reused. The e-Procurement ontology (henceforth referred to as the ePO) introduced by this study attempts to address this.
 
 == The Solution
 
-The ultimate objective of the ePO is to deliver a common and agreed OWL ontology that will conceptualise, formally encode, and make available in an open, structured, and machine-readable format, data about public procurement. The ontology will cover the public procurement process from end to end, i.e. from notification, through tendering to awarding, ordering, invoicing and finally payment.
+The ultimate objective of the ePO is to deliver a common and agreed (machine readable) https://www.w3.org/OWL/[OWL ontology] that will conceptualise, formally encode, and make available in an open, structured, and machine-readable format, data about public procurement. The ontology will cover the public procurement process from end to end, i.e. from notification, through tendering to awarding, ordering, invoicing and finally payment.
 
-It is not the intention of the ePO to reinvent the wheel by redefining existing terms or processes, but rather to unify all existing practices, thus facilitating seamless exchange, access and reuse of data.
+The ePO does not reinvent or redefine existing terms or processes, but uses other existing ontologies and standards, thus facilitating the seamless exchange, access, and reuse of data.
 
 Process, Methodology and Technology discuss in detail the open process and methodology that will be followed for developing the ePO.
 
