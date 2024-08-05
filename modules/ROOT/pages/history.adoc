@@ -79,6 +79,10 @@ image:2024-2025.png[]
 |ePO version 4.1.0
 |eAccess & eSubmission modules released in v4.1.0
 
+|August 2024
+|ePO version 4.2.0-rc.1
+|eInvoicing module released in 4.2.0-rc.1
+
 |===
 ////
 |
