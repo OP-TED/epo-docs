@@ -1,0 +1,540 @@
+:doctitle: Guide to the ePO Modules
+:doccode: epo-modguide-menu
+:author: AD
+:docdate: June 2024
+
+== Introduction
+
+This guide  offers an overview of the ePO modules including the reasoning behind the division of the Ontology into modules, their purpose, and the contents of each module.
+
+== Modular Approach
+
+In general, the Ontology is compartmentalised into the primary  ePO core module that contains the majority of concepts found in the Ontology, and a number of smaller specialized modules. Each of these modules builds upon the concepts of the core module in order to represent a different part of the e-Procurement process.
+
+As a convention, concepts that belong to a specific module also share a specific prefix. For example, all the concepts that belong to the ePO core module use the prefix  *epo* while all the concepts belonging to the eCatalogue use the prefix *epo-cat*. Please note however that all ePO concepts regardless of module (and prefix) use the same URI namespace:
+
+ http://data.europa.eu/a4g/ontology#
+
+ePO also reuses concepts from other ontologies and vocabularies, using their own prefix. For example, all the ePO modules use the class adms:Identifier (along with specific attributes and properties) from the https://www.w3.org/TR/vocab-adms/[Asset Description Metadata Schema (ADMS)] in order to represent the identification of different ePO concepts. Another example is the reuse of a number of concepts from the https://github.com/SEMICeu/CCCEV[Core Criterion and Core Evidence Vocabulary (CCCEV)]. In order for the ePO modules to use these concepts, they have to be imported to each of the  https://www.w3.org/TR/turtle/[turtle] and https://www.w3.org/TR/rdf-syntax-grammar/[XML/RDF] files that represent each module.
+
+The Modularization of the Ontology per domain/procurement phase offers the following advantages as opposed to just having one Ontology file:
+
+* Accessibility for Business. For example, if someone wants to use the Ontology for querying information on eForms, they should only use the eNotice module. If someone wants to query information about the ESPD request, they should use the eAccess module,etc.
+
+
+* Maintenance: Splitting the Ontology into Modules  reduces the complexity of the Ontology and consequently, makes the individual modules easier to maintain and manage( https://docs.ted.europa.eu/epo-wgm/notes/2021-01-07-wgm.html[WG meeting 7/1/21], https://docs.ted.europa.eu/epo-wgm/notes/2021-12-14-wgm.html[WG meeting 14/12/21]).
+
+* Reusability
+** When developing a new ePO module, that module should only reuse the common concepts found on ePO Module, thus facilitating the development process.
+** In order for ePO concepts to be reusable by other ontologies, they should be as generalised and uncoupled as possible.
+
+== ePO core[[core]]
+
+=== Description
+ePO core is the main module of ePO ontology containing the fundamental parts of ePO. All the other ePO modules import the core module in order to use its concepts.
+
+=== Conceptual Model
+The Μain objects over time diagram (Figure 1) depicts the most important Classes of each procurement phase and their relations. The agent hierarchy diagram (Figure 2) depicts the different agents represented in ePO.
+
+image::docUpdateGuideImages/UML/conceptualModelDiagrams/mainObjects.png[]
+[]
+__ Figure 1: The Μain objects over time diagram.
+__
+
+image::docUpdateGuideImages/Modules/agentHierarchy.png[]
+__ Figure 2: The agent hierarchy diagram.
+__
+
+In order to be able to understand the different parts of these diagrams and how to read them please refer to the xref:guides/conceptualModelGuide.adoc#arrows[guide to the ePO Conceptual Model]. The ePO core conceptual model itself can be found https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/ePO/index.html[here], and the ePO glossary https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/glossary/ePO_core_glossary.html[here].
+
+
+
+=== Prefixes and Imports
+All concepts that were created for the core module use the *epo* prefix.
+The concepts imported by other ontologies use the following prefixes:
+
+* https://www.w3.org/TR/vocab-adms/[adms]: Used for Identifiers
+* https://github.com/SEMICeu/CCCEV[cccev]: Used for classes such as cccev:Criterion, cccev:InformationConcept, cccev:Requirement, with associated predicates and attributes.
+* https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[dcterms]: Used for the dct:Location class, attributes dct:description, dct:title, and other concepts.
+* http://xmlns.com/foaf/spec/[foaf]: Used to represent individuals such as foaf:Agent and foaf:Person.
+* http://www.w3.org/ns/org[org]: Used for the org:Organization class.
+* http://www.w3.org/1999/02/22-rdf-syntax-ns#[rdf]: Used for rdf:PlainLiteral datatype, and to define all the concepts of the Ontology in the https://github.com/OP-TED/ePO/blob/master/implementation/ePO_core/owl_ontology/ePO_core.ttl[turtle] and https://github.com/OP-TED/ePO/blob/master/implementation/ePO_core/owl_ontology/ePO_core.rdf[XML/RDF] files.
+* http://www.w3.org/2000/01/rdf-schema[rdfs]: Used to define all the concepts of the Ontology in the https://github.com/OP-TED/ePO/blob/master/implementation/ePO_core/owl_ontology/ePO_core.ttl[turtle] and https://github.com/OP-TED/ePO/blob/master/implementation/ePO_core/owl_ontology/ePO_core.rdf[XML/RDF] files.
+
+* https://www.w3.org/2004/02/skos/[skos]: Used for the skos:notation attribute for class adms:Identifier, and the skos:prefLabel attribute for classes cccev:InformationConcept and cccev:Requirement.
+
+* https://vocab.org/vann/[vann]: Used for annotating descriptions in the https://github.com/OP-TED/ePO/blob/master/implementation/ePO_core/owl_ontology/ePO_core.ttl[turtle] and https://github.com/OP-TED/ePO/blob/master/implementation/ePO_core/owl_ontology/ePO_core.rdf[XML/RDF] files.
+* http://www.w3.org/2001/XMLSchema[xsd]: Used to define the datatypes of the attributes in ePO. ( for information on datatypes see xref:guides/conceptualModelGuide.adoc#datatypes[this] section of the Conceptual model guide)
+
+
+
+The https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/ePO_core/owl_ontology/ePO_core.ttl#L1[prefixes] and https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/ePO_core/owl_ontology/ePO_core.ttl#L3520C4-L3529C16[imports] of the core module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
+
+ @prefix : <http://data.europa.eu/a4g/ontology#> .
+ @prefix adms: <http://www.w3.org/ns/adms#> .
+ @prefix cccev: <http://data.europa.eu/m8g/> .
+ @prefix dcterms: <http://purl.org/dc/terms/> .
+ @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+ @prefix org: <http://www.w3.org/ns/org#> .
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+ @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+ @prefix vann: <http://purl.org/vocab/vann/> .
+ @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  owl:imports cccev:,
+        dcterms:,
+        vann:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf: ;
+
+== eCatalogue[[cat]]
+
+=== Description
+The eCatalogue module contains classes related to the concept of an eCatalogue. It covers the needs for e Catalogue in post-award and some of the needs of eCatalogue for pre-award.
+
+=== Conceptual Model
+
+The main eCatalogue diagram (Figure 3) shows the most important classes of the eCatalogue module such as epo-cat:Catalogue, epo-cat:CatalogueLine, and epo-cat:Item. To be able to understand the different parts  of this diagram and how to read it please refer to the xref:guides/conceptualModelGuide.adoc[Guide to the ePO Conceptual Model] The eCatalogue conceptual model itself can be found https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eCatalogue/index.html[here], and the eCatalogue glossary https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/glossary/eCatalogue_glossary.html[here].
+
+image::docUpdateGuideImages/Modules/catalogue.png[]
+__ Figure 3: The main eCatalogue class diagram.
+__
+
+=== Prefixes and Imports
+All concepts that were created for the eCatalogue module use the *epo-cat* prefix.
+
+The eCatalogue module also makes use of the following ePO modules:
+
+* xref:guides/moduleGuide.adoc#core[epo]: Required concepts taken from the ePO core module.
+* xref:guides/moduleGuide.adoc#ful[ful]: Required concepts taken from the eFulfilment module.
+* xref:guides/moduleGuide.adoc#ord[ord]: Required concepts taken from the Ordering module.
+
+The concepts imported by other ontologies use the following prefixes:
+
+* https://www.w3.org/TR/vocab-adms/[adms]: Used for Identifiers
+* https://github.com/SEMICeu/CCCEV[cccev]: Used for classes such as cccev:Criterion,
+  cccev:InformationConcept, cccev:Requirement, and others, with associated predicates and attributes.
+https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[dcterms]: Used for the dct:Location class, attributes dct:description, dct:title, and other concepts.
+* http://xmlns.com/foaf/spec/[foaf]: Used to represent individuals such as foaf:Agent and foaf:Person.
+* http://www.w3.org/ns/org[org]: Used for the org:Organization class.
+* http://www.w3.org/1999/02/22-rdf-syntax-ns#[rdf]: Used for rdf:PlainLiteral datatype, and to define all the concepts of the Ontology in the https://github.com/OP-TED/ePO/blob/master/implementation/eCatalogue/owl_ontology/eCatalogue.ttl[turtle] and https://github.com/OP-TED/ePO/blob/master/implementation/eCatalogue/owl_ontology/eCatalogue.rdf[XML/RDF] files.
+* http://www.w3.org/2000/01/rdf-schema[rdfs]: Used to define all the concepts of the Ontology in the https://github.com/OP-TED/ePO/blob/master/implementation/eCatalogue/owl_ontology/eCatalogue.ttl[turtle] and https://github.com/OP-TED/ePO/blob/master/implementation/eCatalogue/owl_ontology/eCatalogue.rdf[XML/RDF] files.
+
+* https://www.w3.org/2004/02/skos/[skos]: Used for the skos:notation attribute for class adms:Identifier, and the skos:prefLabel attribute for classes cccev:InformationConcept and cccev:Requirement.
+
+* https://vocab.org/vann/[vann]: Used for annotating descriptions in the https://github.com/OP-TED/ePO/blob/master/implementation/eCatalogue/owl_ontology/eCatalogue.ttl[turtle] and https://github.com/OP-TED/ePO/blob/master/implementation/eCatalogue/owl_ontology/eCatalogue.rdf[XML/RDF] files.
+* http://www.w3.org/2001/XMLSchema[xsd]: Used to define the datatypes of the attributes in ePO. ( for information on datatypes see xref:guides/conceptualModelGuide.adoc#datatypes[this] section of the Conceptual model guide)
+
+
+
+The https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/eCatalogue/owl_ontology/eCatalogue.ttl#L1[prefixes] and  https://github.com/OP-TED/ePO/blob/ff440967f15132e53f823a502897f17e1ceefa54/implementation/eCatalogue/owl_ontology/eCatalogue.ttl#L556C4-L568C15[imports] of the eCatalogue module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
+
+ @prefix : <http://data.europa.eu/a4g/ontology#> .
+ @prefix adms: <http://www.w3.org/ns/adms#> .
+ @prefix cccev: <http://data.europa.eu/m8g/> .
+ @prefix dcterms: <http://purl.org/dc/terms/> .
+ @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+ @prefix org: <http://www.w3.org/ns/org#> .
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+ @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+ @prefix vann: <http://purl.org/vocab/vann/> .
+ @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+   owl:imports cccev:,
+        dcterms:,
+        vann:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf:,
+        :core,
+        :ord,
+        :ful ;
+
+
+== eOrdering[[ord]]
+=== Description
+The eOrdering module contains classes specific to the Ordering phase of procurement, including order response.
+
+=== Conceptual Model
+
+The Order diagram (Figure 4) shows the most important classes of the eOrdering module such as epo-ord:Order, epo-ord:OrderLine, epo-ord:AllowanceChargeInformation, and epo-ord:DeliveryInformation. To be able to understand the different parts  of this diagram and how to read it please refer to the xref:guides/conceptualModelGuide.adoc[Guide to the ePO Conceptual Model]. The eOrdering conceptual model itself can be found https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eOrdering/index.html[here], and the eOrdering glossary https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/glossary/eOrdering_glossary.html[here].
+
+image::docUpdateGuideImages/Modules/order.png[]
+__ Figure 4: The Order diagram.
+__
+
+=== Prefixes and Imports
+All concepts that were created for the eOrdering module use the *epo-ord* prefix.
+
+The eOrdering module also makes use of the following ePO modules:
+
+* xref:guides/moduleGuide.adoc#core[epo]: Required concepts taken from the ePO core module.
+* xref:guides/moduleGuide.adoc#ful[ful]: Required concepts taken from the eFulfilment module.
+* xref:guides/moduleGuide.adoc#cat[cat]: Required concepts taken from theeCatalogue module.
+
+The concepts imported by other ontologies use the following prefixes:
+
+* https://www.w3.org/TR/vocab-adms/[adms]: Used for Identifiers
+* https://github.com/SEMICeu/CCCEV[cccev]: Used for classes such as cccev:Criterion,
+  cccev:InformationConcept, cccev:Requirement, and others, with associated predicates and attributes.
+https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[dcterms]: Used for the dct:Location class, attributes dct:description, dct:title, and other concepts.
+* http://xmlns.com/foaf/spec/[foaf]: Used to represent individuals such as foaf:Agent and foaf:Person.
+* http://www.w3.org/ns/org[org]: Used for the org:Organization class.
+* http://www.w3.org/1999/02/22-rdf-syntax-ns#[rdf]: Used for rdf:PlainLiteral datatype, and to define all the concepts of the Ontology in the turtle and XML/RDF files.
+* http://www.w3.org/2000/01/rdf-schema[rdfs]: Used to define all the concepts of the Ontology in the turtle and XML/RDF files.
+
+* https://www.w3.org/2004/02/skos/[skos]: Used for the skos:notation attribute for class adms:Identifier, and the skos:prefLabel attribute for classes cccev:InformationConcept and cccev:Requirement.
+
+* http://www.w3.org/2001/XMLSchema[xsd]: Used to define the datatypes of the attributes in ePO. ( for information on datatypes see xref:guides/conceptualModelGuide.adoc#datatypes[this] section of the Conceptual model guide)
+
+
+
+The https://github.com/OP-TED/ePO/blob/f788e33a0fb88003883a6877e565e4e9bf0eb9f4/implementation/eOrdering/owl_ontology/eOrdering.ttl#L1-L13[prefixes] and  https://github.com/OP-TED/ePO/blob/f788e33a0fb88003883a6877e565e4e9bf0eb9f4/implementation/eOrdering/owl_ontology/eOrdering.ttl#L406-L420[imports] of the eORdering module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
+
+ @prefix : <http://data.europa.eu/a4g/ontology#> .
+ @prefix cccev: <http://data.europa.eu/m8g/> .
+ @prefix dcterms: <http://purl.org/dc/terms/> .
+ @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+ @prefix org: <http://www.w3.org/ns/org#> .
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+ @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+ @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ owl:imports :cat,
+        :core,
+        :ful,
+        cccev:,
+        dcterms:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf: ;
+
+== eFulfilment[[ful]]
+
+=== Description
+The eFulfilment module contains classes specific to the handling, storage, packing, and shipping of orders.
+
+=== Conceptual Model
+The despatch advice diagram (Figure 5) shows the most important classes of the eFulfilment module such as epo-ful:DespatchAdvice, epo-ful:Consignment, epo-ful:TransportHandlingUnit, epo-ful:ShipmentInformation, and others. To be able to understand the different parts of this diagram and how to read it please refer to the xref:guides/conceptualModelGuide.adoc[Guide to the ePO Conceptual Model]. The eFulfilment conceptual model itself can be found https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eFulfilment/index.html[here], and the eFulfilment glossary https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/glossary/eFulfilment_glossary.html[here].
+
+image::docUpdateGuideImages/Modules/despatch.png[]
+__ Figure 5: The despatch advice diagram.
+__
+
+=== Prefixes and Imports
+All concepts that were created for the eFulfilment  module use the *epo-ful* prefix.
+
+The eFulfilment module also makes use of the following ePO modules:
+
+* xref:guides/moduleGuide.adoc#core[epo]: Required concepts taken from the ePO core module.
+* xref:guides/moduleGuide.adoc#ord[ord]: Required concepts taken from the  eOrdering module.
+* xref:guides/moduleGuide.adoc#cat[cat]: Required concepts taken from the eCatalogue module.
+
+The concepts imported by other ontologies use the following prefixes:
+
+* https://www.w3.org/TR/vocab-adms/[adms]: Used for Identifiers
+* https://github.com/SEMICeu/CCCEV[cccev]: Used for classes such as cccev:Criterion,
+  cccev:InformationConcept, cccev:Requirement, and others, with associated predicates and attributes.
+https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[dcterms]: Used for the dct:Location class, attributes dct:description, dct:title, and other concepts.
+* http://xmlns.com/foaf/spec/[foaf]: Used to represent individuals such as foaf:Agent and foaf:Person.
+* http://www.w3.org/ns/org[org]: Used for the org:Organization class.
+* http://www.w3.org/1999/02/22-rdf-syntax-ns#[rdf]: Used for rdf:PlainLiteral datatype, and to define all the concepts of the Ontology in the turtle and XML/RDF files.
+* http://www.w3.org/2000/01/rdf-schema[rdfs]: Used to define all the concepts of the Ontology in the turtle and XML/RDF files.
+
+* https://www.w3.org/2004/02/skos/[skos]: Used for the skos:notation attribute for class adms:Identifier, and the skos:prefLabel attribute.
+
+* http://www.w3.org/2001/XMLSchema[xsd]: Used to define the datatypes of the attributes in ePO. ( for information on datatypes see xref:guides/conceptualModelGuide.adoc#datatypes[this] section of the Conceptual model guide)
+
+
+The https://github.com/OP-TED/ePO/blob/234f5f6ab56beef7cc1ba9b67ea26103774d8854/implementation/eFulfilment/owl_ontology/eFulfilment.ttl#L1C1-L14C51[prefixes] and  https://github.com/OP-TED/ePO/blob/234f5f6ab56beef7cc1ba9b67ea26103774d8854/implementation/eFulfilment/owl_ontology/eFulfilment.ttl#L716-L730[imports] of the eFulfilment module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
+
+ @prefix : <http://data.europa.eu/a4g/ontology#> .
+ @prefix adms: <http://www.w3.org/ns/adms#> .
+ @prefix cccev: <http://data.europa.eu/m8g/> .
+ @prefix dcterms: <http://purl.org/dc/terms/> .
+ @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+ @prefix org: <http://www.w3.org/ns/org#> .
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+ @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+ @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+   owl:imports :cat,
+        :core,
+        :ord,
+        cccev:,
+        dcterms:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf: ;
+
+
+== eContract[[con]]
+
+=== Description
+The eContract module contains classes related to the concept of a Contract, used in the contract phase of eProcurement
+
+=== Conceptual Model
+The contract class diagram (Figure 6) shows the most important classes of the eContract module. To be able to understand the different parts of this diagram and how to read it please refer to the xref:guides/conceptualModelGuide.adoc[Guide to the ePO Conceptual Model]. The eContract conceptual model itself can be found https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eContract/index.html[here], and the eContract glossary https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/glossary/eContract_glossary.html[here].
+
+image::docUpdateGuideImages/Modules/contract.png[]
+__ Figure 6: The contract class diagram.
+__
+
+=== Prefixes and Imports
+All concepts that were created for the eContract  module use the *epo-con* prefix.
+
+The eContract module also makes use of the following ePO modules:
+
+* xref:guides/moduleGuide.adoc#core[epo]: Required concepts taken from the ePO core module.
+* xref:guides/moduleGuide.adoc#not[not]: Required concepts taken from the  eNotice module.
+* xref:guides/moduleGuide.adoc#cat[cat]: Required concepts taken from the eCatalogue module.
+
+The concepts imported by other ontologies use the following prefixes:
+
+* https://www.w3.org/TR/vocab-adms/[adms]: Used for Identifiers
+* https://github.com/SEMICeu/CCCEV[cccev]: Used for classes such as cccev:Criterion,
+  cccev:InformationConcept, cccev:Requirement, and others, with associated predicates and attributes.
+https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[dcterms]: Used for the dct:Location class, attributes dct:description, dct:title, and other concepts.
+* http://xmlns.com/foaf/spec/[foaf]: Used to represent individuals such as foaf:Agent and foaf:Person.
+* http://www.w3.org/ns/org[org]: Used for the org:Organization class.
+* http://www.w3.org/1999/02/22-rdf-syntax-ns#[rdf]: Used for rdf:PlainLiteral datatype, and to define all the concepts of the Ontology in the turtle and XML/RDF files.
+* http://www.w3.org/2000/01/rdf-schema[rdfs]: Used to define all the concepts of the Ontology in the turtle and XML/RDF files.
+
+* https://www.w3.org/2004/02/skos/[skos]: Used for the skos:notation attribute for class adms:Identifier, and the skos:prefLabel attribute.
+
+* http://www.w3.org/2001/XMLSchema[xsd]: Used to define the datatypes of the attributes in ePO. ( for information on datatypes see xref:guides/conceptualModelGuide.adoc#datatypes[this] section of the Conceptual model guide)
+
+
+The https://github.com/OP-TED/ePO/blob/234f5f6ab56beef7cc1ba9b67ea26103774d8854/implementation/eContract/owl_ontology/eContract.ttl#L1C1-L13C51[prefixes] and  https://github.com/OP-TED/ePO/blob/234f5f6ab56beef7cc1ba9b67ea26103774d8854/implementation/eContract/owl_ontology/eContract.ttl#L115C4-L129C16[imports] of the eContract module (https://github.com/OP-TED/ePO/tree/master[ePO 4.0.2]) are listed below:
+
+ @prefix : <http://data.europa.eu/a4g/ontology#> .
+ @prefix cccev: <http://data.europa.eu/m8g/> .
+ @prefix dcterms: <http://purl.org/dc/terms/> .
+ @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+ @prefix org: <http://www.w3.org/ns/org#> .
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+ @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  owl:imports :cat,
+        :core,
+        :not,
+        cccev:,
+        dcterms:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf: ;
+
+== eAccess[[acc]]
+
+=== Description
+The eAccess module models The ESPD Request document, which is used by Buyers to express the Exclusion and Selection criteria, as well as particular requirements, that the Economic Operators will need to fulfil in the context of a tender;
+
+
+=== Conceptual Model
+The access class diagram (Figure 7) shows the most important classes of the eAccess module. To be able to understand the different parts of this diagram and how to read it please refer to the xref:guides/conceptualModelGuide.adoc[Guide to the ePO Conceptual Model]. The eAccess conceptual model itself can be found https://docs.ted.europa.eu/EPO/4.1/_attachments/html_reports/eAccess/index.htm[here], and the eAccess glossary https://docs.ted.europa.https://docs.ted.europa.eu/EPO/4.1/_attachments/html_reports/glossary/eAccess_glossary.html[here].
+
+image::docUpdateGuideImages/Modules/access.png[]
+__ Figure 7: The access class diagram.
+__
+
+=== Prefixes and Imports
+All concepts that were created for the eAccess  module use the *epo-acc* prefix.
+
+The eAccess module also makes use of the following ePO modules:
+
+* xref:guides/moduleGuide.adoc#core[epo]: Required concepts taken from the ePO core module.
+* xref:guides/moduleGuide.adoc#sub[sub]: Required concepts taken from the  eSubmission module.
+
+
+The concepts imported by other ontologies use the following prefixes:
+
+* https://www.w3.org/TR/vocab-adms/[adms]: Used for Identifiers
+* https://github.com/SEMICeu/CCCEV[cccev]: Used for classes such as cccev:EvidenceType	cccev:EvidenceTypeList.
+* https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[dcterms]: Used for the dct:Location class, attributes dct:description, dct:title, and other concepts.
+* https://eur-lex.europa.eu/eli-register/about.html[eli:] Used for concepts such as classes eli:LegalExpression and eli:LegalResource.
+* http://xmlns.com/foaf/spec/[foaf]: Used to represent individuals such as foaf:Agent and foaf:Person.
+* http://www.w3.org/ns/org[org]: Used for the org:Organization class.
+* http://www.w3.org/1999/02/22-rdf-syntax-ns#[rdf]: Used for rdf:PlainLiteral datatype, and to define all the concepts of the Ontology in the turtle and XML/RDF files.
+* http://www.w3.org/2000/01/rdf-schema[rdfs]: Used to define all the concepts of the Ontology in the turtle and XML/RDF files.
+
+* https://www.w3.org/2004/02/skos/[skos]: Used for the skos:notation attribute for class adms:Identifier, and the skos:prefLabel attribute.
+
+* http://www.w3.org/2001/XMLSchema[xsd]: Used to define the datatypes of the attributes in ePO. ( for information on datatypes see xref:guides/conceptualModelGuide.adoc#datatypes[this] section of the Conceptual model guide)
+
+
+The https://github.com/OP-TED/ePO/blob/234f5f6ab56beef7cc1ba9b67ea26103774d8854/implementation/eAccess/owl_ontology/eAccess.ttl#L1-L14[prefixes] and https://github.com/OP-TED/ePO/blob/234f5f6ab56beef7cc1ba9b67ea26103774d8854/implementation/eAccess/owl_ontology/eAccess.ttl#L176C5-L189C16[imports] of the eAccess module (https://github.com/OP-TED/ePO/tree/master[ePO 4.1.0]) are listed below:
+
+ @prefix : <http://data.europa.eu/a4g/ontology#> .
+ @prefix adms: <http://www.w3.org/ns/adms#> .
+ @prefix cccev: <http://data.europa.eu/m8g/> .
+ @prefix dcterms: <http://purl.org/dc/terms/> .
+ @prefix eli: <http://data.europa.eu/eli/ontology#> .
+ @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+ @prefix org: <http://www.w3.org/ns/org#> .
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+ @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+ @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  owl:imports :core,
+        :sub,
+        eli:,
+        cccev:,
+        dcterms:,
+        vann:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf: ;
+
+== eSubmission[[sub]]
+
+=== Description
+The eSubmission module models The ESPD Response document.
+
+=== Conceptual Model
+The eSubmission class diagram (Figure 8) shows the most important classes of the eSubmission module, such as epo-sub:ESPDResponse. To be able to understand the different parts of this diagram and how to read it please refer to the xref:guides/conceptualModelGuide.adoc[Guide to the ePO Conceptual Model]. The eSubmission conceptual model itself can be found https://docs.ted.europa.eu/EPO/4.1/_attachments/html_reports/eSubmission/index.htm[here], and the eSubmission glossary https://docs.ted.europa.eu/EPO/4.1/_attachments/html_reports/glossary/eSubmission_glossary.html[here].
+
+image::docUpdateGuideImages/Modules/submission.png[]
+__ Figure 8: The submission class diagram.
+__
+
+=== Prefixes and Imports
+All concepts that were created for the eSubmission  module use the *epo-sub* prefix.
+
+The eSubmission module also makes use of the following ePO modules:
+
+* xref:guides/moduleGuide.adoc#core[epo]: Required concepts taken from the ePO core module.
+* xref:guides/moduleGuide.adoc#acc[acc]: Required concepts taken from the  eAccess module.
+
+
+The concepts imported by other ontologies use the following prefixes:
+
+* https://www.w3.org/TR/vocab-adms/[adms]: Used for Identifiers
+* https://github.com/SEMICeu/CCCEV[cccev]: Used for classes such as cccev:SupportedValue.
+* https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[dcterms]: Used for the dct:Location class, attributes dct:description, dct:title, and other concepts.
+* http://xmlns.com/foaf/spec/[foaf]: Used to represent individuals such as foaf:Agent and foaf:Person.
+* http://www.w3.org/ns/org[org]: Used for the org:Organization class.
+* http://www.w3.org/1999/02/22-rdf-syntax-ns#[rdf]: Used for rdf:PlainLiteral datatype, and to define all the concepts of the Ontology in the turtle and XML/RDF files.
+* http://www.w3.org/2000/01/rdf-schema[rdfs]: Used to define all the concepts of the Ontology in the turtle and XML/RDF files.
+
+* https://www.w3.org/2004/02/skos/[skos]: Used for the skos:notation attribute for class adms:Identifier, and the skos:prefLabel attribute.
+
+* http://www.w3.org/2001/XMLSchema[xsd]: Used to define the datatypes of the attributes in ePO. ( for information on data types see xref:guides/conceptualModelGuide.adoc#datatypes[this] section of the Conceptual model guide)
+
+
+The https://github.com/OP-TED/ePO/blob/234f5f6ab56beef7cc1ba9b67ea26103774d8854/implementation/eSubmission/owl_ontology/eSubmission.ttl#L1-L13[prefixes] and https://github.com/OP-TED/ePO/blob/234f5f6ab56beef7cc1ba9b67ea26103774d8854/implementation/eSubmission/owl_ontology/eSubmission.ttl#L203-L216[imports] of the eSubmission module (https://github.com/OP-TED/ePO/tree/master[ePO 4.1.0]) are listed below:
+
+ @prefix : <http://data.europa.eu/a4g/ontology#> .
+ @prefix cccev: <http://data.europa.eu/m8g/> .
+ @prefix dcterms: <http://purl.org/dc/terms/> .
+ @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+ @prefix org: <http://www.w3.org/ns/org#> .
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+ @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+ @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+   owl:imports :acc,
+        :core,
+        cccev:,
+        dcterms:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf: ;
+
+== eNotice[[not]]
+
+=== Description
+
+The eNotice module contains classes related to eNotices and eForms. It is structured in three packages: notice core, eForms standardisation, and standard Forms standardisation. The standardisation of the notices was done taking into account the notice types: planning, competition, direct award prenotification, result, contract modification and completion. This is the so-called “phase organisation of the notices”.
+
+
+=== Conceptual Model
+The notice and cv mapping class diagram (Figure 9) shows some of the most important classes of the eNotice module, such as the different specialisation classes of epo:eNotice. To be able to understand the different parts of this diagram and how to read it please refer to the xref:guides/conceptualModelGuide.adoc[Guide to the ePO Conceptual Model]. The eNotice conceptual model itself can be found https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eNotice/index.html[here], and the eNotice glossary https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/glossary/eNotice_glossary.html[here].
+
+image::docUpdateGuideImages/Modules/notice.png[]
+__ Figure 9: The notice and cv mapping class diagram.
+__
+
+=== Prefixes and Imports
+All concepts that were created for the eNotice  module use the *epo-not* prefix.
+
+The eNotice module also makes use of the following ePO modules:
+
+* xref:guides/moduleGuide.adoc#core[epo]: Required concepts taken from the ePO core module.
+* xref:guides/moduleGuide.adoc#con[con]: Required concepts taken from the eContract module.
+
+
+The concepts imported by other ontologies use the following prefixes:
+
+* https://www.w3.org/TR/vocab-adms/[adms]: Used for Identifiers
+* http://www.w3.org/ns/org[org]: Used for the org:Organization class.
+* http://www.w3.org/1999/02/22-rdf-syntax-ns#[rdf]: Used for rdf:PlainLiteral datatype, and to define all the concepts of the Ontology in the turtle and XML/RDF files.
+* http://www.w3.org/2000/01/rdf-schema[rdfs]: Used to define all the concepts of the Ontology in the turtle and XML/RDF files.
+
+* https://www.w3.org/2004/02/skos/[skos]: Used for the skos:notation attribute for class adms:Identifier, and the skos:prefLabel attribute.
+
+* http://www.w3.org/2001/XMLSchema[xsd]: Used to define the datatypes of the attributes in ePO. ( for information on datatypes see xref:guides/conceptualModelGuide.adoc#datatypes[this] section of the Conceptual model guide)
+
+
+The https://github.com/OP-TED/ePO/blob/f788e33a0fb88003883a6877e565e4e9bf0eb9f4/implementation/eNotice/owl_ontology/eNotice.ttl#L1-L13[prefixes] and https://github.com/OP-TED/ePO/blob/f788e33a0fb88003883a6877e565e4e9bf0eb9f4/implementation/eNotice/owl_ontology/eNotice.ttl#L749C5-L762C16[imports] of the eNotice module (https://github.com/OP-TED/ePO/tree/master[ePO 4.1.0]) are listed below:
+
+ @prefix : <http://data.europa.eu/a4g/ontology#> .
+ @prefix org: <http://www.w3.org/ns/org#> .
+ @prefix owl: <http://www.w3.org/2002/07/owl#> .
+ @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+ @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+    owl:imports :con,
+        :core,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>;

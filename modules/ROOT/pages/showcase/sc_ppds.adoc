@@ -1,0 +1,9 @@
+:doctitle: The Use of the ePO in The Public procurement data Space (PPDS)
+:doccode: epo-main-prod-045
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2024
+
+Overview of ePO in PPDS and link to ppds page
+
+#Natalie and Marc Christopher#

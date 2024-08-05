@@ -104,7 +104,7 @@ s|Code|RoleS|User Story
 |US-SC-20	|Economic Operator 	|As an Economic Operator, I want to know what is the type of the professional risk indemnity insurance, so I can take part in the Procurement Procedure.
 |US-SC-21	|Economic Operator 	|As an Economic Operator, I want to know what is the minimum required amount of the professional risk indemnity insurance, so I can take part in the Procurement Procedure.
 |US-EG-1	|Economic Operator 	|As an Economic Operator, I want to see in which countries national exclusion grounds are included in the Procedure, so I can take part in the Procurement Procedure. 
-|US-EG-3	|Buyer 	|As a Buyer, I want to see if the Economic Operator was convicted for participating in a criminal organization, the reason and the period, so I can select it as a Candidate for the Procurement Procedure.
+|US-EG-3	|Buyer 	|As a Buyer, I want to see if the Economic Operator was convicted for participating in a criminal organisation, the reason and the period, so I can select it as a Candidate for the Procurement Procedure.
 |US-EG-4	|Buyer 	|As a Buyer, I want to see if the Economic Operator was convicted for corruption, the reason and the period, so I can select it as a Candidate for the Procurement Procedure.
 |US-EG-5	|Buyer 	|As a Buyer, I want to see if the Economic Operator was convicted for terrorist offences or offences linked to terrorist activities, the reason and the period, so I can select it as a Candidate for the Procurement Procedure.
 |US-EG-6	|Buyer 	|As a Buyer, I want to see if the Economic Operator was convicted for money laundering or terrorist financing, the reason and the period, so I can select it as a Candidate for the Procurement Procedure.

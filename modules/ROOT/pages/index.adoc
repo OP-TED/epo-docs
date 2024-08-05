@@ -1,42 +1,91 @@
-:doctitle: eProcurement Ontology Documentation
+:doctitle: The eProcurement Ontology
 :doccode: epo-main-prod-001
 :author: PWC adapted by NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
-The eProcurement Ontology (ePO) defines and develops the semantic ontology related to EU public procurement. It creates and maintains the ontology according to EU regulations and directives.
+== What is the eProcurement Ontology?
+https://github.com/OP-TED/ePO[The eProcurement Ontology (ePO)] is a vocabulary that models the concepts used in EU public procurement.
+It does not represent the eProcurement process itself, it defines the concepts used in the different parts of the public procurement lifecycle.
+
+The ePO conceptualises, formally encodes, and provides structured data about public procurement in both human and machine-readable formats. It is modelled in alignment with EU Directives and Regulations and is a formal standard.
+
+== Why do we need an eProcurement Ontology?
+The eProcurement Ontology ensures that every participant in the procurement process is speaking the same language i.e., that the concepts and definitions are the same and have the same meaning for all parties. 
+
+More detail and background can be found in the xref:epo-home::motivation.adoc[Motivation for the development of an ePO].
+
+== The Scope of the eProcurement Ontology
+ePO covers public Procurement from end to end i.e., from notification, through tendering, awarding, ordering, invoicing, and payment.
+
+image::charter1.png[]
+
+
+== How the eProcurement Ontology is created and developed
+To build and maintain the ontology, The European Commission's Publications Office (OP) formed a Working Group (WG) of experts with the mission of building consensus on the analysis, results, and deliverables developed by the OP’s teams.
+
+
+== New to the eProcurement Ontology?
+
+Start here for an introduction:
+
+* Introductory info sessions on the ePO and Linked Open Data
+** xref:attachment$ePO/index.html[The ePO] +
+A short info session on the ePO
+** xref:attachment$LOD/index.html[Linked Open Data] +
+A short info session on Linked Open Data
+* https://github.com/OP-TED/ePO[Github page] +
+The ePO resources on GitHub
 
 The following topics are included in this version of the eProcurement Ontology documentation:
 
 
+== The eProcurement Ontology
+* Home (current page)
+
 == General Documentation
 
-* xref:EPO::business.adoc[Business Overview] +
-Business Overview of this release
+
+* xref:epo-home::guide.adoc[User Guides] +
+Guides for using the ePO and its features.
+
 * xref:EPO::conceptual.adoc[Conceptual Models] +
-The release specific conceptual Model(s)
+The release specific conceptual Model(s) of the ontology.
 * xref:EPO::glossaries.adoc[Glossaries] +
 The release specific glossaries
 * xref:EPO::release-notes.adoc[Release Notes] +
-The release notes as on GitHub
+Release notes for the specific ePO version
+* xref:showcase/index.adoc[The ePO in other Projects] +
+How the ePO underpins other projects
 
 
 == Reference Documentation
-* xref:epo-home::references.adoc[Reference Documentation] +
-Useful reference documents in the development of the ePO
-* xref:epo-home::history.adoc[History and Planned Developments] +
-Milestones in the project and future development plans
-* xref:epo-home::methodology2024.adoc[ePO Methodology] +
-The ePO Methodology
-* xref:epo-home::stories.adoc[User Stories and Natural Language Statements] +
-User Stories and Natural Language Statements used when developing new modules
+
+
+* xref:epo-home::methodology2024.adoc[Methodology] +
+How the ePO is developed and maintained
+
 * xref:epo-home::versioning.adoc[ePO Versioning Rules] +
 An overview of the versioning rules for releases
 
+* xref:epo-home::stories.adoc[User Stories and Natural Language Statements] +
+Ontology Requirements Specification Documents (ORSD), containing user stories and natural language statements used when developing new modules
+
+** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)] +
+ORSD for eAccess module
+** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)] +
+ORSD for eSubmission module
+
+* xref:epo-home::REFreferences.adoc[Other Reference Documents] +
+Useful reference documents in the development of the ePO
+
+* xref:epo-home::history.adoc[History and Planned Developments] +
+Milestones in the project and future development plans
+
 == Working Group Documents
 * xref:epo-wgm::wider.adoc[Quarterly Meetings] +
-Minutes, Presentations etc from the quarterly Working Group Meetings
+Minutes, Presentations, etc from the quarterly Working Group Meetings
 * xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)] +
 All weekly meetings minutes collated into yearly documents
 * xref:epo-wgm::indiv.adoc[Individual Meeting Reports] +
-All the weekly meeting minutes and documents saved individually
+All weekly meeting minutes and documents saved individually

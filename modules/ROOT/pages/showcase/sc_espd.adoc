@@ -1,0 +1,13 @@
+:doctitle: The Use of the ePO in the ESPD
+:doccode: epo-main-prod-043
+:author: NPJ
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2024
+
+* Two ePO modules define the concepts for the ESPD:
+** xref:guides/moduleGuide.adoc#acc[eAccess], covering the ESPD Request.
+** xref:guides/moduleGuide.adoc#sub[eSubmission], covering the ESPD Response.
+
+* These concepts can be used by developers working on the https://github.com/OP-TED/ESPD-EDM[ESPD Exchange Data Model (EDM)] in order to develop an ESPD service.
+
+* The documentation around the ESPD can be found https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[here].
