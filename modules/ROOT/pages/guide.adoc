@@ -16,7 +16,7 @@ The pages below contain user guides that provide information on different aspect
 //A short info session on RDF and SPARQL
 
 == Examples (Conceptual model & Glossary usage)
-The following examples demonstrate how the ePO conceptual models and glossaries can be used to navigate the ontology in order to locate key concepts that can be used for queries.
+The following examples demonstrate how the ePO conceptual models and glossaries can be used to navigate the ontology. These resources can be used to locate key concepts and their relationships. This information is essential, for example, for a developer who is creating applications that use concepts from the ePO, or for people wishing to query ePO data using SPARQL query language.
 
 === xref:examples/ex1.adoc[Example 1: Who buys what from whom?]
 === xref:examples/ex2.adoc[Example 2: How many contractors are SMEs for a given country and given date?]
