@@ -17,7 +17,7 @@
 * xref:EPO::release-notes.adoc[Release Notes]
 
 * [.separated]#**Reference Documentation**#
-* xref:epo-home::REFreferences.adoc[Other Reference Documents]
+* xref:epo-home::REFreferences.adoc[Reference Documents]
 * xref:epo-home::history.adoc[History and Planned Developments]
 * xref:epo-home::methodology2024.adoc[Methodology]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
