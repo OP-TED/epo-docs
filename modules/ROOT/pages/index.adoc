@@ -27,7 +27,7 @@ The release notes as on GitHub
 
 
 == Reference Documentation
-* xref:epo-home::REFreferences.adoc[Other Reference Documents] +
+* xref:epo-home::REFreferences.adoc[Reference Documents] +
 Useful reference documents in the development of the ePO
 * xref:epo-home::history.adoc[History and Planned Developments] +
 Milestones in the project and future development plans
