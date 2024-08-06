@@ -9,9 +9,9 @@
 
 * [.separated]#**General Documentation**#
 * xref:epo-home::guide.adoc[User Guides]
-* xref:4.0@EPO::conceptual.adoc[Conceptual Models]
-* xref:4.0@EPO::glossaries.adoc[Glossaries]
-* xref:4.0@EPO::release-notes.adoc[Release Notes]
+* xref:conceptual.adoc[Conceptual Models]
+* xref:glossaries.adoc[Glossaries]
+* xref:release-notes.adoc[Release Notes]
 * xref:epo-home::showcase/index.adoc[The ePO in Other Projects]
 
 * [.separated]#**Reference Documentation**#
