@@ -6,7 +6,7 @@
 The release v4.1.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.1.0-rc.3[here].
 
 == Release notes
-
+*30 July 2024*
 
 *  eAccess module was released.
 *  eSubmission module was released.
