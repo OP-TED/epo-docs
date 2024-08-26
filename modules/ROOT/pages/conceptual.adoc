@@ -3,9 +3,9 @@
 :page-name: conceptual
 :docdate: July 2024
 
-ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: 4.0.0@conceptual.adoc,4.0@conceptual.adoc
-endif::[]
+//ifeval::[{epo_latest_version} == {page-component-version}]
+//:page-aliases: 4.0.0@conceptual.adoc,4.0@conceptual.adoc
+//endif::[]
 //== *Ontology*
 
 == Conceptual Models
@@ -13,7 +13,6 @@ endif::[]
 *The Conceptual Models can be viewed via the following links*
 
 * The ePO core Conceptual Module: link:{attachmentsdir}/html_reports/ePO/index.htm[HTML].
-* xref:attachment$/html_reports/ePO/index.htm[HTML]
 * The eCatalogue Conceptual Module: link:{attachmentsdir}/html_reports/eCatalogue/index.htm[HTML].
 * The eOrdering Conceptual Module: link:{attachmentsdir}/html_reports/eOrdering/index.htm[HTML].
 * The eFulfilment Conceptual Module: link:{attachmentsdir}/html_reports/eFulfilment/index.htm[HTML].
