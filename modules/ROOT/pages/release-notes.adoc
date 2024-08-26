@@ -10,6 +10,7 @@ endif::[]
 The release v4.2.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1[here].
 
 == Release notes
+*30 July 2024*
 
 *  eInvoicing module was released.
 *  Updates for the following modules were made:
