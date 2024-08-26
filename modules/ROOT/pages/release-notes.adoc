@@ -10,6 +10,7 @@ ifeval::[{epo_latest_version} == {page-component-version}]
 endif::[]
 
 == *Release notes 3.1.0*
+*17 December 2022*
 
 The release of version 3.1.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v3.1.0[here].
 
