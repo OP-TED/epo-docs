@@ -13,7 +13,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 *30 July 2024*
 
 *  eInvoicing module was released.
-*  Updates for the following modules were made:
+*  Updates for the following modules were made (under Change notes):
 ** ePO core
 ** eCatalogue
 ** eOrdering
@@ -21,6 +21,9 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 ** eNotice
 ** eSubmission
 * The (closed) github issues justifying these updates can be found https://github.com/OP-TED/ePO/milestone/10[here]
+
+== Change notes
+
 
 == ePO core
 
