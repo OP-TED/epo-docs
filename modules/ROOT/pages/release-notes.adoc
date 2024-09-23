@@ -10,7 +10,7 @@ The release v4.1.0 and its corresponding technical files can be found link:https
 
 *  eAccess module was released.
 *  eSubmission module was released.
-*  Updates for the following modules were made:
+*  Updates for the following modules were made (under Change notes) :
 ** ePO core
 ** eCatalogue
 ** eOrdering
@@ -18,6 +18,8 @@ The release v4.1.0 and its corresponding technical files can be found link:https
 ** eContract
 ** eNotice.
 * The (closed) github issues justifying these updates can be found https://github.com/OP-TED/ePO/milestone/9[here]
+
+== Change notes
 
 == ePO core
 
