@@ -30,5 +30,4 @@ The ORSDs for the following modules can be accessed here:
 
 * xref:stories_eInvoicing.adoc[The eInvoicing Module]
 
-
 Further modules will be added as they become available.

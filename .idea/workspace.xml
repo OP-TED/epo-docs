@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="corrected image colour">
+    <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="moved files from showcase">
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/pages/TBDFAQ.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/guides/conceptualModelGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/guides/conceptualModelGuide.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/guides/moduleGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/guides/moduleGuide.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +30,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2UeuLUYQ5Vs7wqQ76gi3sh29hsS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -32,17 +44,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultPlantUmlFileTemplate" value="Empty" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../espd-docs" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/docUpdate&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/achid/OneDrive/Documents/GitHub/epo-docs/modules/ROOT/pages/guides&quot;
+  }
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\achid\OneDrive\Documents\GitHub\epo-docs\modules\ROOT\pages\guides" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\achid\OneDrive\Documents\GitHub\epo-docs\modules\ROOT\pages" />
+      <recent name="C:\Users\achid\OneDrive\Documents\GitHub\epo-docs\modules\ROOT\images\docUpdateImages\UML\Conceptual model queries" />
+      <recent name="C:\Users\achid\OneDrive\Documents\GitHub\epo-docs\modules\ROOT\images\docUpdateImages\UML" />
       <recent name="C:\Users\paterni\Code\epo-docs\modules\ROOT\pages\archive" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -291,7 +318,31 @@
       <option name="project" value="LOCAL" />
       <updated>1711377206505</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="added class generalisation">
+      <option name="closed" value="true" />
+      <created>1718034042225</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1718034042226</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Started explaining the HTML conceptual models">
+      <option name="closed" value="true" />
+      <created>1718116105170</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1718116105170</updated>
+    </task>
+    <task id="LOCAL-00037" summary="moved files from showcase">
+      <option name="closed" value="true" />
+      <created>1720516672526</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1720516672526</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,9 +355,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/scripts" />
       <path value="$PROJECT_DIR$/scripts/content" />
@@ -333,6 +384,9 @@
     <MESSAGE value="updates user stories pages" />
     <MESSAGE value="updates user stories pages typo" />
     <MESSAGE value="corrected image colour" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected image colour" />
+    <MESSAGE value="added class generalisation" />
+    <MESSAGE value="Started explaining the HTML conceptual models" />
+    <MESSAGE value="moved files from showcase" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved files from showcase" />
   </component>
 </project>

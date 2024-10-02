@@ -82,6 +82,7 @@ image:2024-2025.png[]
 |August 2024
 |ePO version 4.2.0-rc.1
 |eInvoicing module released in 4.2.0-rc.1
+
 |===
 ////
 |
