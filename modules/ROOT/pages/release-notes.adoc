@@ -105,7 +105,7 @@ The release v4.1.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eCatalogue.xml on 2024-02-12	|This version is automatically generated from eCatalogue.xml on 2024-07-10
 | owl:versionInfo |	4.0.2 |	4.1.0
-| owl:priorVersion |	epo:cat-4.0.1	| epo:cat-4.0.2
+| owl:priorVersion |	epo-cat-4.0.1	| epo-cat-4.0.2
 | dct:issued |	2024-02-12	|2024-07-10
 |===
 
@@ -161,7 +161,7 @@ The release v4.1.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eOrdering.xml on 2024-02-12	|This version is automatically generated from eOrdering.xml on 2024-07-10
 | owl:versionInfo |	4.0.2 |	4.1.0
-| owl:priorVersion |	epo:ord-4.0.1	| epo:ord-4.0.2
+| owl:priorVersion |	epo-ord-4.0.1	| epo-ord-4.0.2
 | dct:issued |	2024-02-12	|2024-07-10
 |===
 
@@ -188,7 +188,7 @@ The release v4.1.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eFulfilment.xml on 2024-02-12	|This version is automatically generated from eFulfilment.xml on 2024-07-10
 | owl:versionInfo |	4.0.2 |	4.1.0
-| owl:priorVersion |	epo:ful-4.0.1	| epo:ful-4.0.2
+| owl:priorVersion |	epo-ful-4.0.1	| epo-ful-4.0.2
 | dct:issued |	2024-02-12	|2024-07-10
 |===
 
@@ -242,7 +242,7 @@ The release v4.1.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eContract.xml on 2024-02-12	|This version is automatically generated from eContract.xml on 2024-07-10
 | owl:versionInfo |	4.0.2 |	4.1.0
-| owl:priorVersion |	epo:con-4.0.1	| epo:con-4.0.2
+| owl:priorVersion |	epo-con-4.0.1	| epo-con-4.0.2
 | dct:issued |	2024-02-12	|2024-07-10
 |===
 
@@ -260,7 +260,7 @@ The release v4.1.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eNotice.xml on 2024-02-12	|This version is automatically generated from eNotice.xml on 2024-07-10
 | owl:versionInfo |	4.0.2 |	4.1.0
-| owl:priorVersion |	epo:not-4.0.1	| epo:not-4.0.2
+| owl:priorVersion |	epo-not-4.0.1	| epo-not-4.0.2
 | dct:issued |	2024-02-12	|2024-07-10
 |===
 
