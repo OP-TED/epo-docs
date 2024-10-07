@@ -75,7 +75,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eCatalogue.xml on 2024-07-18	| This version is automatically generated from eCatalogue.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:cat-4.0.2	| epo:cat-4.1.0
+| owl:priorVersion |	epo-cat-4.0.2	| epo-cat-4.1.0
 | version:IRI | cat-4.1.0 | cat-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -109,7 +109,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eOrdering.xml on 2024-07-18	| This version is automatically generated from eOrdering.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:ord-4.0.2	| epo:ord-4.1.0
+| owl:priorVersion |	epo-ord-4.0.2	| epo-ord-4.1.0
 | version:IRI | ord-4.1.0 | ord-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -141,7 +141,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eFulfilment.xml on 2024-07-18	| This version is automatically generated from eFulfilment.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:ful-4.0.2	| epo:ful-4.1.0
+| owl:priorVersion |	epo-ful-4.0.2	| epo-ful-4.1.0
 | version:IRI | ful-4.1.0 | ful-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -183,7 +183,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eContract.xml on 2024-07-18	| This version is automatically generated from eContract.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:con-4.0.2	| epo:con-4.1.0
+| owl:priorVersion |	epo-con-4.0.2	| epo-con-4.1.0
 | version:IRI | con-4.1.0 | con-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -195,7 +195,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eNotice.xml on 2024-07-18	| This version is automatically generated from eNotice.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:not-4.0.2	| epo:not-4.1.0
+| owl:priorVersion |	epo-not-4.0.2	| epo-not-4.1.0
 | version:IRI | not-4.1.0 | not-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -241,7 +241,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eAccess.xml on 2024-07-18	| This version is automatically generated from eAccess.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:acc-4.0.2	| epo:acc-4.1.0
+| owl:priorVersion |	epo-acc-4.0.2	| epo-acc-4.1.0
 | version:IRI | acc-4.1.0 | acc-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -253,7 +253,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eSubmission.xml on 2024-07-18	| This version is automatically generated from eSubmission.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:sub-4.0.2	| epo:sub-4.1.0
+| owl:priorVersion |	epo-sub-4.0.2	| epo-sub-4.1.0
 | version:IRI | sub-4.1.0 | sub-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
