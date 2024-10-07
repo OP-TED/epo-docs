@@ -43,7 +43,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |epo:foreseesSubcontractor|epo:Contractor -> epo:Subcontractor [0..1]
 |epo:hasSubcontractor|epo:Contractor -> epo:Subcontractor [0..1]
 |epo:concernsProcedure|epo:ExpressionOfInterest -> epo:Procedure [1]
-|epo:hasPreferredLanguageForProcurementDocument|epo:ExpressionOfInterest -> at_voc:language [0..*]
+|epo:hasPreferredLanguageForProcurementDocument|epo:ExpressionOfInterest -> at-voc:language [0..*]
 |epo:specifiesEconomicOperator|epo:ExpressionOfInterest -> epo:OfferingParty [0..*]
 |epo:fulfillsStrategicProcurement|epo:LotAwardOutcome -> epo:StrategicProcurement [0..*]
 |epo:isSubjectToLotSpecificTerm|epo:LotGroup -> epo:LotSpecificTerm [0..*]
@@ -124,7 +124,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 === Modified Object Properties
 |===
 |*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
-|epo_cat:hasPrice|epo-ord:OrderLine -> epo-cat:Price [0..1]|epo-ord:OrderLine -> epo-cat:Price [0..*]
+|epo-cat:hasPrice|epo-ord:OrderLine -> epo-cat:Price [0..1]|epo-ord:OrderLine -> epo-cat:Price [0..*]
 |===
 
 === Added Datatype Properties
@@ -163,7 +163,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*property* | *Domain, Range and cardinality*
 |epo-ful:hasDeclaredStatisticalValue|epo-ful:Consignment -> epo:MonetaryValue [0..1]
 |epo-ful:hasDespatcherConsignmentID|epo-ful:Consignment -> adms:Identifier [0..1]
-|epo-ful:hasFreightCharge|epo-ful:Consignment -> epo_cat:ChargeInformation [0..*]
+|epo-ful:hasFreightCharge|epo-ful:Consignment -> epo-cat:ChargeInformation [0..*]
 |epo-ful:hasLoadingMeter|epo-ful:Consignment -> epo:Quantity [0..1]
 |epo:specifiesNotificationReceiver|epo-ful:Consignment -> epo-ful:NotificationReceiver [0..*]
 |epo-ful:hasDespatchPeriod|epo-ful:ShipmentInformation -> epo:Period [0..1]
