@@ -84,32 +84,7 @@ image:2024-2025.png[]
 |eInvoicing module released in 4.2.0-rc.1
 
 |===
-////
-|
-|
-|eInvoicing
 
-|
-|
-|eEvaluation
-
-|
-|
-|Contracts Registry
-
-|
-|
-|eAwarding
-
-|
-|
-|eRequest module
-
-|
-|
-|ePayment module
-
-////
 
 
 include::partial$feedback.adoc[]
