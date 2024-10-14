@@ -85,6 +85,7 @@ image:2024-2025.png[]
 
 |===
 
+A contracts registry uses data from the eInvoicing and ePayment modules.  Therefore a dedicated module is not required.
 
 
 include::partial$feedback.adoc[]
