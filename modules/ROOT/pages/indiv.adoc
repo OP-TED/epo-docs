@@ -35,6 +35,10 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2024]
 === 2024
 
+xref:notes/2024-10-10-wgm.adoc[2024-10-10 (Modifications of the EA file containing the Conceptual Model)]
+
+xref:notes/2024-10-08-wgm.adoc[2024-10-08 (eEvaluation)]
+
 xref:notes/2024-10-01-wgm.adoc[2024-10-01 (Q4 2024 Overview)]
 
 xref:notes/2024-07-18-wgm.adoc[2024-07-18 (core, eNotice)]
