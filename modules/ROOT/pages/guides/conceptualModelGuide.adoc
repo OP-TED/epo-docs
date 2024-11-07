@@ -128,6 +128,8 @@ Controlled Vocabularies, also known as taxonomies, are controlled lists of terms
 vocabularies in the ontology, use the prefix __ at:voc __ .
 For example, a Controlled vocabulary could be a list of countries (at:voc:country) or  a set of time periods (at-voc:timeperiod).
 
+Please note that the values of the Controlled Vocabularies are not part of the Conceptual Model, and hence are not exported
+in the Semantic Data Specification Artifacts (.OWL files) of the Ontology.
 
 == Conceptual model usage (HTML)
 
