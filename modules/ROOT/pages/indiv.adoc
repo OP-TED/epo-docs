@@ -35,6 +35,22 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2024]
 === 2024
 
+xref:notes/2024-11-07-wgm.adoc[2024-11-07 (Github Issues related with ePO - eForms mappings)]
+
+xref:notes/2024-11-05-wgm.adoc[2024-11-05 (eEvaluation)]
+
+xref:notes/2024-10-31-wgm.adoc[2024-10-31 (Github Issues related with ePO - eForms mappings)]
+
+xref:notes/2024-10-29-wgm.adoc[2024-10-29 (eEvaluation)]
+
+xref:notes/2024-10-24-wgm.adoc[2024-10-24 (Github Issues related with ePO - eForms mappings)]
+
+xref:notes/2024-10-22-wgm.adoc[2024-10-22 (eEvaluation)]
+
+xref:notes/2024-10-17-wgm.adoc[2024-10-17 (Github Issues related with ePO - eForms mappings)]
+
+xref:notes/2024-10-15-wgm.adoc[2024-10-15 (Github Issues related with ePO - eForms mappings)]
+
 xref:notes/2024-10-10-wgm.adoc[2024-10-10 (Modifications of the EA file containing the Conceptual Model)]
 
 xref:notes/2024-10-08-wgm.adoc[2024-10-08 (eEvaluation)]
