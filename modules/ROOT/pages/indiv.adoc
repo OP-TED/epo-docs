@@ -35,6 +35,10 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2024]
 === 2024
 
+xref:notes/2024-11-21-wgm.adoc[2024-11-21 (ePO Issue #712)]
+
+xref:notes/2024-11-19-wgm.adoc[2024-11-19 (eEvaluation)]
+
 xref:notes/2024-11-07-wgm.adoc[2024-11-07 (Github Issues related with ePO - eForms mappings)]
 
 xref:notes/2024-11-05-wgm.adoc[2024-11-05 (eEvaluation)]
