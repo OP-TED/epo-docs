@@ -13,7 +13,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 *30 July 2024*
 
 *  eInvoicing module was released.
-*  Updates for the following modules were made:
+*  Updates for the following modules were made (under Change notes):
 ** ePO core
 ** eCatalogue
 ** eOrdering
@@ -21,6 +21,9 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 ** eNotice
 ** eSubmission
 * The (closed) github issues justifying these updates can be found https://github.com/OP-TED/ePO/milestone/10[here]
+
+== Change notes
+
 
 == ePO core
 
@@ -40,7 +43,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |epo:foreseesSubcontractor|epo:Contractor -> epo:Subcontractor [0..1]
 |epo:hasSubcontractor|epo:Contractor -> epo:Subcontractor [0..1]
 |epo:concernsProcedure|epo:ExpressionOfInterest -> epo:Procedure [1]
-|epo:hasPreferredLanguageForProcurementDocument|epo:ExpressionOfInterest -> at_voc:language [0..*]
+|epo:hasPreferredLanguageForProcurementDocument|epo:ExpressionOfInterest -> at-voc:language [0..*]
 |epo:specifiesEconomicOperator|epo:ExpressionOfInterest -> epo:OfferingParty [0..*]
 |epo:fulfillsStrategicProcurement|epo:LotAwardOutcome -> epo:StrategicProcurement [0..*]
 |epo:isSubjectToLotSpecificTerm|epo:LotGroup -> epo:LotSpecificTerm [0..*]
@@ -72,7 +75,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eCatalogue.xml on 2024-07-18	| This version is automatically generated from eCatalogue.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:cat-4.0.2	| epo:cat-4.1.0
+| owl:priorVersion |	epo-cat-4.0.2	| epo-cat-4.1.0
 | version:IRI | cat-4.1.0 | cat-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -106,7 +109,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eOrdering.xml on 2024-07-18	| This version is automatically generated from eOrdering.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:ord-4.0.2	| epo:ord-4.1.0
+| owl:priorVersion |	epo-ord-4.0.2	| epo-ord-4.1.0
 | version:IRI | ord-4.1.0 | ord-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -121,7 +124,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 === Modified Object Properties
 |===
 |*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
-|epo_cat:hasPrice|epo-ord:OrderLine -> epo-cat:Price [0..1]|epo-ord:OrderLine -> epo-cat:Price [0..*]
+|epo-cat:hasPrice|epo-ord:OrderLine -> epo-cat:Price [0..1]|epo-ord:OrderLine -> epo-cat:Price [0..*]
 |===
 
 === Added Datatype Properties
@@ -138,7 +141,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eFulfilment.xml on 2024-07-18	| This version is automatically generated from eFulfilment.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:ful-4.0.2	| epo:ful-4.1.0
+| owl:priorVersion |	epo-ful-4.0.2	| epo-ful-4.1.0
 | version:IRI | ful-4.1.0 | ful-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -160,7 +163,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*property* | *Domain, Range and cardinality*
 |epo-ful:hasDeclaredStatisticalValue|epo-ful:Consignment -> epo:MonetaryValue [0..1]
 |epo-ful:hasDespatcherConsignmentID|epo-ful:Consignment -> adms:Identifier [0..1]
-|epo-ful:hasFreightCharge|epo-ful:Consignment -> epo_cat:ChargeInformation [0..*]
+|epo-ful:hasFreightCharge|epo-ful:Consignment -> epo-cat:ChargeInformation [0..*]
 |epo-ful:hasLoadingMeter|epo-ful:Consignment -> epo:Quantity [0..1]
 |epo:specifiesNotificationReceiver|epo-ful:Consignment -> epo-ful:NotificationReceiver [0..*]
 |epo-ful:hasDespatchPeriod|epo-ful:ShipmentInformation -> epo:Period [0..1]
@@ -180,7 +183,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eContract.xml on 2024-07-18	| This version is automatically generated from eContract.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:con-4.0.2	| epo:con-4.1.0
+| owl:priorVersion |	epo-con-4.0.2	| epo-con-4.1.0
 | version:IRI | con-4.1.0 | con-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -192,7 +195,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eNotice.xml on 2024-07-18	| This version is automatically generated from eNotice.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:not-4.0.2	| epo:not-4.1.0
+| owl:priorVersion |	epo-not-4.0.2	| epo-not-4.1.0
 | version:IRI | not-4.1.0 | not-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -238,7 +241,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eAccess.xml on 2024-07-18	| This version is automatically generated from eAccess.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:acc-4.0.2	| epo:acc-4.1.0
+| owl:priorVersion |	epo-acc-4.0.2	| epo-acc-4.1.0
 | version:IRI | acc-4.1.0 | acc-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
@@ -250,7 +253,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eSubmission.xml on 2024-07-18	| This version is automatically generated from eSubmission.xml on 2024-07-23
 | owl:versionInfo |	4.1.0 |	4.2.0
-| owl:priorVersion |	epo:sub-4.0.2	| epo:sub-4.1.0
+| owl:priorVersion |	epo-sub-4.0.2	| epo-sub-4.1.0
 | version:IRI | sub-4.1.0 | sub-4.2.0
 | dct:issued |	2024-07-18	| 2024-07-23
 |===
