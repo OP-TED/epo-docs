@@ -22,6 +22,6 @@
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
 
 * [.separated]#**Working Group Documents**#
-* xref:epo-wgm::wider.adoc[Quarterly Meetings]
+* xref:epo-wgm::wider.adoc[Biannual Meetings]
 * xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)]
 * xref:epo-wgm::indiv.adoc[Individual Meeting Reports]
