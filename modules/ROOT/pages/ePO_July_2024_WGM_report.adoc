@@ -41,10 +41,8 @@ ePO 4.1.0-rc.2 includes the new modules of eAccess and eSubmission modules as we
 The https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eAccess/index.htm[eAccess module conceptual model diagrams] were presented.
 
 
-link:epo:{attachmentsdir}/html_reports/eAccess/index.htm[eAccess module conceptual model diagrams]
-
 === eSubmission module
-The https://docs.ted.europa.eu/EPO/4.1/_attachments/html_reports/eSubmission/index.htm[eSubmission module conceptual model diagrams] were presented.
+The https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eSubmission/index.htm[eSubmission module conceptual model diagrams] were presented.
 
 == Work in progress
 
