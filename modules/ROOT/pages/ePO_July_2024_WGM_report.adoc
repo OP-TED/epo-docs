@@ -35,13 +35,14 @@ The following sections provide a summary of what was presented by Andrea Pasare 
 
 The release candidate 4.1.0-rc.2 was presented.
 This release and its corresponding technical files can be found at https://github.com/OP-TED/ePO/tree/4.1.0-rc.2 .
-ePO 4.1.0-rc.2 includes the new modules of eAccess and eSubmission modules as well as updates to the other modules. For more information on what has changed, please consult the https://docs.ted.europa.eu/EPO/4.1/release-notes.html[corresponding release notes].
+ePO 4.1.0-rc.2 includes the new modules of eAccess and eSubmission modules as well as updates to the other modules. For more information on what has changed, please consult the https://docs.ted.europa.eu/EPO/latest/release-notes.html[corresponding release notes].
 
 === eAccess module
-The https://docs.ted.europa.eu/EPO/4.1/_attachments/html_reports/eAccess/index.htm[eAccess module conceptual model diagrams] were presented.
+The https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eAccess/index.htm[eAccess module conceptual model diagrams] were presented.
+
 
 === eSubmission module
-The https://docs.ted.europa.eu/EPO/4.1/_attachments/html_reports/eSubmission/index.htm[eSubmission module conceptual model diagrams] were presented.
+The https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eSubmission/index.htm[eSubmission module conceptual model diagrams] were presented.
 
 == Work in progress
 
