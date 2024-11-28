@@ -3,9 +3,11 @@
 :page-name: glossaries
 :docdate: July 2024
 
+////
 ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 4.1.0@glossaries.adoc,4.1@glossaries.adoc
 endif::[]
+////
 
 === Glossaries
 *The Glossaries for the following entities can be downloaded via the following links:*
