@@ -10,7 +10,7 @@
 
 ////
 ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: 4.1.0@business.adoc,4.1@business.adoc
+:page-aliases: 4.1.0@business.adoc
 endif::[]
 ////
 
