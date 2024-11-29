@@ -23,7 +23,7 @@ Querying eProcurement data in RDF format using the SPARQL query language. Click 
 tbd
 //// 
 === The model2owl Project 
-https://docs.ted.europa.eu/docs-staging/m2o-home/index.html[model2owl] is an automated technical tool that generates the artifacts of the eProcurement ontology before the release of a new version. xref:/showcase/sc_m2o.adoc[Read more] about the model2owl project.
+https://docs.ted.europa.eu/M2O/latest/index.html[model2owl] is an automated technical tool that generates the artifacts of the eProcurement ontology before the release of a new version. xref:/showcase/sc_m2o.adoc[Read more] about the model2owl project.
 
 
 
