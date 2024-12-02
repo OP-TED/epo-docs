@@ -4,7 +4,7 @@
 :docdate: July 2024
 
 //ifeval::[{epo_latest_version} == {page-component-version}]
-//:page-aliases: 4.0.0@conceptual.adoc,4.0@conceptual.adoc
+//:page-aliases: 4.2.0@conceptual.adoc,4.2@conceptual.adoc
 //endif::[]
 //== *Ontology*
 

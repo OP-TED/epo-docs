@@ -1,8 +1,8 @@
 name: EPO
 version: 4.2
 title: eProcurement Ontology
-prerelease: -rc.1
-display_version: 4.2.0-rc.1
+prerelease: 
+display_version: 4.2.0
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc
