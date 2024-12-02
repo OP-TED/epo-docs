@@ -1,16 +1,16 @@
 :doctitle: eProcurement Ontology v4.2.0
 :page-code: epo-v4.2.0
 :page-name: release-notes
-:docdate: July 2024
+:docdate: December 2024
 
 ifeval::[{epo_latest_version} == {page-component-version}]
 :page-aliases: 4.2.0@release-notes.adoc,4.2@release-notes.adoc
 endif::[]
 
-The release v4.2.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1[here].
+The release v4.2.0 and its corresponding technical files can be found link:https://github.com/OP-TED/ePO/tree/v4.2.0[here].
 
 == Release notes
-*30 July 2024*
+*2 December 2024*
 
 *  eInvoicing module was released.
 *  Updates for the following modules were made (under Change notes):
@@ -21,6 +21,15 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 ** eNotice
 ** eSubmission
 * The (closed) github issues justifying these updates can be found https://github.com/OP-TED/ePO/milestone/10[here]
+
+* The following Modifications were done in all modules:
+** Conventions used for both internal and external concepts:
+*** skos:historyNote: Contains the date that the concept was approved by the Working Group as a rdf:plainLiteral datatype using the following notation: “WG Approval DD/MM/YYYY”. For example, “WG Approval 28/04/20.”
+*** skos:editorialNote: Contains the business term used by a specific data model that can be mapped to the concept. Its value is a rdf:plainLiteral datatype using the following notation: “Used by X BT/BG-Y, Z BT/BG-H..” where X and Z are the data models, and Y and H the number of the Business Term (BT) or Business Group (BG) that this concept represents. For example, “Used by eForms BT-724".
+*** dct:source: Contains the reference from where this definition was taken.
+** Conventions used for external concepts.
+*** The definition of each external concept, contains a hyperlink to a human-readable website that provides the original definition of the concept.
+These definitions appear in the https://docs.ted.europa.eu/EPO/4.2/glossaries.html[glossaries] and https://docs.ted.europa.eu/EPO/4.2/conceptual.html[the Conceptual Model] of the Ontology.
 
 == Change notes
 
@@ -34,7 +43,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | owl:versionInfo |	4.1.0 |	4.2.0
 | owl:priorVersion |	epo:core-4.0.2	| epo:core-4.1.0
 | version:IRI | core-4.1.0 | core-4.2.0
-| dct:issued |	2024-07-18	| 2024-07-23
+| dct:issued |	2024-07-18	| 2024-12-02
 |===
 
 === Added Object Properties
@@ -49,9 +58,6 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |epo:isSubjectToLotSpecificTerm|epo:LotGroup -> epo:LotSpecificTerm [0..*]
 |epo:hasApproximateGroupFrameworkAgreementValue|epo:LotGroupAwardInformation -> epo:MonetaryValue [0..1]
 |epo:foreseesSubcontractor|epo:Tender -> epo:Subcontractor [0..*]
-|epo:concernsLot|cccev:InformationRequirement -> epo:Lot [0..*]
-|epo:concernsLotGroup|cccev:InformationRequirement -> epo:LotGroup [0..*]
-|epo:concernsProcedure|cccev:InformationRequirement -> epo:Procedure [0..1]
 |===
 
 === Modified Object Properties
@@ -64,8 +70,8 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 |===
 |*Property* | *Class* | *datatype/cardinality*
 |epo:isSMESuitable|epo:LotGroup|xsd:boolean [0..1]
-|epo:isSubcontractingPercentageKnown|epo:SubcontractingEstimate|rdf:PlainLiteral [0..1]
-|po:isSubcontractingValueKnown|epo:SubcontractingEstimate|xsd:boolean [0..1]
+|epo:isSubcontractingPercentageKnown|epo:SubcontractingEstimate|xsd:boolean [0..1]
+|epo:isSubcontractingValueKnown|epo:SubcontractingEstimate|xsd:boolean [0..1]
 |===
 
 == eCatalogue
@@ -77,7 +83,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | owl:versionInfo |	4.1.0 |	4.2.0
 | owl:priorVersion |	epo-cat-4.0.2	| epo-cat-4.1.0
 | version:IRI | cat-4.1.0 | cat-4.2.0
-| dct:issued |	2024-07-18	| 2024-07-23
+| dct:issued |	2024-07-18	| 2024-12-02
 |===
 
 === Added Object Properties
@@ -111,7 +117,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | owl:versionInfo |	4.1.0 |	4.2.0
 | owl:priorVersion |	epo-ord-4.0.2	| epo-ord-4.1.0
 | version:IRI | ord-4.1.0 | ord-4.2.0
-| dct:issued |	2024-07-18	| 2024-07-23
+| dct:issued |	2024-07-18	| 2024-12-02
 |===
 
 === Added Object Properties
@@ -143,7 +149,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | owl:versionInfo |	4.1.0 |	4.2.0
 | owl:priorVersion |	epo-ful-4.0.2	| epo-ful-4.1.0
 | version:IRI | ful-4.1.0 | ful-4.2.0
-| dct:issued |	2024-07-18	| 2024-07-23
+| dct:issued |	2024-07-18	| 2024-12-02
 |===
 
 === Added Classes
@@ -172,7 +178,6 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 === Modified Object Properties
 |===
 |*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
-|epo-ful:refersToOrderLine|epo-ful:DespatchLine -> epo-ord:OrderLine [0..1]|epo-ful:DespatchLine -> epo-ord:OrderLine [1]
 |epo-ful:containsGoodsItem|epo-ful:Package -> epo-ful:GoodsItem [1..*]|epo-ful:Package -> epo-ful:GoodsItem [0..*]
 |===
 
@@ -185,7 +190,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | owl:versionInfo |	4.1.0 |	4.2.0
 | owl:priorVersion |	epo-con-4.0.2	| epo-con-4.1.0
 | version:IRI | con-4.1.0 | con-4.2.0
-| dct:issued |	2024-07-18	| 2024-07-23
+| dct:issued |	2024-07-18	| 2024-12-02
 |===
 
 == eNotice
@@ -197,7 +202,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | owl:versionInfo |	4.1.0 |	4.2.0
 | owl:priorVersion |	epo-not-4.0.2	| epo-not-4.1.0
 | version:IRI | not-4.1.0 | not-4.2.0
-| dct:issued |	2024-07-18	| 2024-07-23
+| dct:issued |	2024-07-18	| 2024-12-02
 |===
 
 === Added Classes
@@ -243,7 +248,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | owl:versionInfo |	4.1.0 |	4.2.0
 | owl:priorVersion |	epo-acc-4.0.2	| epo-acc-4.1.0
 | version:IRI | acc-4.1.0 | acc-4.2.0
-| dct:issued |	2024-07-18	| 2024-07-23
+| dct:issued |	2024-07-18	| 2024-12-02
 |===
 
 == eSubmission
@@ -255,13 +260,7 @@ The release v4.2.0 and its corresponding technical files can be found link:https
 | owl:versionInfo |	4.1.0 |	4.2.0
 | owl:priorVersion |	epo-sub-4.0.2	| epo-sub-4.1.0
 | version:IRI | sub-4.1.0 | sub-4.2.0
-| dct:issued |	2024-07-18	| 2024-07-23
-|===
-
-=== Added Object Properties
-|===
-|*property* | *Domain, Range and cardinality*
-|epo-sub:refersToOtherESPDResponse|epo-sub:ESPD -> epo-sub:ESPD [0..*]
+| dct:issued |	2024-07-18	| 2024-12-02
 |===
 
 
