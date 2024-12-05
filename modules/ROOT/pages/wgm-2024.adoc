@@ -5,6 +5,10 @@
 :docdate: July 2024
 
 
+include::notes/2024-11-28-wgm.adoc[]
+
+include::notes/2024-11-26-wgm.adoc[]
+
 include::notes/2024-11-21-wgm.adoc[]
 
 include::notes/2024-11-19-wgm.adoc[]
