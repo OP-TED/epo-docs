@@ -287,7 +287,7 @@ Provision of updated conceptual model and its specification
 Discussion on the conceptual model and its specifications
 
 |E2
-|First draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting and incorporating the results from the iscussions of the previous meeting
+|First draft of conceptual model and its specification corresponding to the use cases concerned for the next meeting and incorporating the results from the discussions of the previous meeting
 |Month 1 - October 2017
 | Prepared by editors based on discussions from the previous meeting and all corresponding input for the following meeting
 

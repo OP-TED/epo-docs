@@ -19,7 +19,7 @@ The eSubmission Ontology Requirements Specification Document (ORSD) covers the h
 
 * https://docs.ted.europa.eu/ESPD-EDM/latest/xml_technical_handbook.html[The ESPD Technical Handbook]
 
-* https://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.2[ESPDint - Interopable ESPD and VCD Services]
+* https://wiki.ds.unipi.gr/display/ESPDInt/BIS+41+-+ESPD+V2.0.2[ESPDint - Interoperable ESPD and VCD Services]
 
 === The ESPD response transaction
 
@@ -73,7 +73,7 @@ s|Use case|Description|Actors|Flow
 
 An *Exclusion Ground* is a Criterion that describes a legal requirement to be met by the Economic Operator to be a Candidate in the Procurement.
 
-A *Selection Criterion* is a Criterion that describes a capacity Requirement that the Economic Operator needs to fulfill to participate in the procurement.
+A *Selection Criterion* is a Criterion that describes a capacity Requirement that the Economic Operator needs to fulfil to participate in the procurement.
 
 Selection criteria may relate to:
 
@@ -215,7 +215,7 @@ If all the data concepts represented in the eSubmission module were instantiated
 
 |US-SUB-31
 |Buyer
-|As a Buyer, I want to see if any Tenderers/Candidates have entered into agreements with other Tenderers/Candidatess aimed at distorting competition, so I can evaluate which Tenderers/Candidates can take part in the Procurement Procedure.
+|As a Buyer, I want to see if any Tenderers/Candidates have entered into agreements with other Tenderers/Candidates aimed at distorting competition, so I can evaluate which Tenderers/Candidates can take part in the Procurement Procedure.
 
 |US-SUB-32
 |Buyer

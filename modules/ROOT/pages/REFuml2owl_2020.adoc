@@ -68,7 +68,7 @@ ones necessary to model the eProcurement conceptual model.
 
 === Graffoo visual notation
 
-This section provides the main Graffoo elements employed in this document. A detailed description can be consulted in the OWL standard specfications [15] and in the Graffoo user guide [9].
+This section provides the main Graffoo elements employed in this document. A detailed description can be consulted in the OWL standard specifications [15] and in the Graffoo user guide [9].
 
 //Links:
 //([15] B. Parsia, P. Patel-Schneider, and B. Motik. OWL 2 web ontology language
@@ -186,7 +186,7 @@ a|
 
 In UML, an abstract Class [5] cannot have any instances and only its subclasses can be instantiated. The abstract classes are declared just like the regular ones (Rule 1 and 2) and in addition a constraint validation rule is generated to ensure that no instance of this class is permitted.
 
-OWL follows the Open World Assumption [15], therefore, even if the ontology does not contain any instances for a specific class, it is unknown whether the class has any instances. We cannot conirm that the UML abstract class is correctly defined with respect to the OWL domain ontology, but we can detect if it is not using SHACL constraints.
+OWL follows the Open World Assumption [15], therefore, even if the ontology does not contain any instances for a specific class, it is unknown whether the class has any instances. We cannot confirm that the UML abstract class is correctly defined with respect to the OWL domain ontology, but we can detect if it is not using SHACL constraints.
 
 image::P11F7.png[Visual representation of an abstract class in UML (on the left) and OWL (on the right)]
 .Figure 5: Visual representation of an abstract class in UML (on the left) and OWL (on the right)
@@ -293,7 +293,7 @@ s|Listing 10: Domain specification in RDF/XML syntax
 
 === Attribute type
 
-*Rule 6* (Attribute type - in reasnoning layer). Specify data (or object) property range for attribute(s).
+*Rule 6* (Attribute type - in reasoning layer). Specify data (or object) property range for attribute(s).
 
 [cols="1,1"]
 |===
@@ -485,7 +485,7 @@ a|
 
 It should be noted that upper-bound of UML MultiplicityElement can be specified as unlimited: "*"". In OWL, cardinality expressions serve to restrict the number of individuals that are connected by an object property expression to a given number of instances of a specified class expression [15]. Therefore, UML unlimited upper-bound does not add any information to OWL ontology, hence it is not transformed.
 
-*Rule 9* (Attribute multiplicity - in reasnoning layer). For each attribute multi-plicity of the form ( min .. max ), where min and max are different than "*"" (any), specify a subclass axiom where the OWL class, corresponding to the UML class, specialises an anonymous restriction of properties formulated according to the following cases.
+*Rule 9* (Attribute multiplicity - in reasoning layer). For each attribute multi-plicity of the form ( min .. max ), where min and max are different than "*"" (any), specify a subclass axiom where the OWL class, corresponding to the UML class, specialises an anonymous restriction of properties formulated according to the following cases.
 
 A. exact cardinality, e.g. [2..2]
 B. minimum cardinality only, e.g. [1..*]
@@ -605,7 +605,7 @@ a|
 
 Attributes with multiplicity exactly one correspond to functional object or data properties in OWL. If we apply the previous rule specifying min and max cardinality will lead to inconsistent ontology. To avoid that it is important that min and max cardinality are not generated from [1..1] multiplicity but only functional property axiom.
 
-*Rule 10* (Attribute multiplicity "one" - in reasnoning layer). For each attribute that has multiplicity exactly one, i.e. [1.. ], specify functional property axiom.
+*Rule 10* (Attribute multiplicity "one" - in reasoning layer). For each attribute that has multiplicity exactly one, i.e. [1.. ], specify functional property axiom.
 
 [cols="1,1"]
 |===
@@ -631,7 +631,7 @@ In this section are specified transformation rules for UML association, generali
 
 === Unidirectional association
 
-A binary Association specifies a semantic relationship between two member ends represented by properties. Please note that in accordance with specification [5], the association end names are not obligatory. However, we adhere to the UML conventions [7], where specification of at one member ends, for unidirectional associ-ation, and two member ends, for bidirectional association, is mandatory. Moreover, provision of a connector (general) name is discouraged.
+A binary Association specifies a semantic relationship between two member ends represented by properties. Please note that in accordance with specification [5], the association end names are not obligatory. However, we adhere to the UML conventions [7], where specification of at one member ends, for unidirectional association, and two member ends, for bidirectional association, is mandatory. Moreover, provision of a connector (general) name is discouraged.
 
 .Transformation rules overview for UML connectors
 
@@ -843,7 +843,7 @@ a|
 |Listing 42: Min cardinality constraint in RDF/XML syntax
 |===
 
-*Rule 16* (Association multiplicity - in reasnoning layer). For the association target multiplicity, where min and max are different than "*"" (any) and multiplicity is not [1..1], specify a subclass axiom where the source class specialises an anonymous restriction of properties formulated according to cases provided by Rule 9.
+*Rule 16* (Association multiplicity - in reasoning layer). For the association target multiplicity, where min and max are different than "*"" (any) and multiplicity is not [1..1], specify a subclass axiom where the source class specialises an anonymous restriction of properties formulated according to cases provided by Rule 9.
 
 [cols="1,1"]
 |===
@@ -872,7 +872,7 @@ a|
 |Listing 44: Min cardinality restriction in RDF/XML syntax
 |===
 
-*Rule 17* (Association multiplicity "one" - in reasnoning layer). If the association multiplicity is exactly one, i.e. [1..1], specify functional property axiom like in Rule 10.
+*Rule 17* (Association multiplicity "one" - in reasoning layer). If the association multiplicity is exactly one, i.e. [1..1], specify functional property axiom like in Rule 10.
 
 [cols="1,1"]
 |===
@@ -1224,7 +1224,7 @@ The UML structured datatype [5] has attributes and is used to define complex dat
 *Rule 26* (Structured Datatype - in core ontology layer). Specify OWL class declaration axiom for UML structured datatype.
 
 === Enumeration
-//sort out image lables!
+//sort out image labels!
 UML Enumerations [5] are kinds of datatypes, whose values correspond to one of user-defined literals. They should be transformed into SKOS [13] concept schemes comprising the concepts corresponding to enumerated items.
 
 image::P32F17.png[Figure 17: Visual representation of an UML Enumeration]
@@ -1410,8 +1410,7 @@ In accordance with [5], every kind of UML Element may own Comments (see Figure
 OWL it is possible to define the annotation axiom for OWL Class, Datatype, Object-
 Property, DataProperty, AnnotationProperty and NamedIndividual. The textual
 explanation added to UML Class is identified as useful for conceptual modelling [3],
-therefore the Comments that are connected to UML Classes are taken into consid-
-eration in the transformation.
+therefore the Comments that are connected to UML Classes are taken into consideration in the transformation.
 As UML Comments add no semantics, they are not used in any method of semantic
 validation. In OWL the AnnotationAssertion [15] axiom does not add any semantics
 either, and it only improves readability.

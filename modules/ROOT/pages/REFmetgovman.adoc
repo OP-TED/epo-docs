@@ -581,7 +581,7 @@ In many cases, software systems will need to be rebuilt importing the new model 
 As part of the lifecycle, the change management process will lead to the creation of a set of versions of the structural metadata.
 
 While the latest version of a data model or reference data collection is clearly the most important resource to be re-used as this supports the functionality at that
-particular point in time, it is also necessary that  revious versions are still available for inspection. This makes it possible to determine what functionality was available in the past. In relation to that, it is also important that the documentation of previous versions as well as change logs are kept available.
+particular point in time, it is also necessary that previous versions are still available for inspection. This makes it possible to determine what functionality was available in the past. In relation to that, it is also important that the documentation of previous versions as well as change logs are kept available.
 
 Identification of versions of structural metadata can be done by time-stamping the versions, by assigning version numbers or by combining those two approaches.
 
