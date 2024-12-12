@@ -11,12 +11,12 @@ This part of the documentation website describes all the necessary steps of the 
 This part of the website is designed to guide you through the structured lifecycle of the eProcurement Ontology (ePO) workflow management. It serves as both a comprehensive reference and a step-by-step guide, capturing each stage of the workflow through the lens of Enterprise Architecture. Enterprise Architecture is a business function concerned with the structures and behaviours of a business, especially business roles and processes that create and use business data. By following the sections of this document, you will gain a complete understanding of the methodology, roles, artefacts, and systems that support the ePO lifecycle from planning through to release.
 
 ==== xref:workflow/legend.adoc[Legend for Abbreviations]
-This section explains all the Abbreviations used in This part of the website.
+This section explains all the Abbreviations used in the workflow.
 
 ==== xref:workflow/methodology/methodology.adoc[Methodology]
 This section explains the foundational approach and the rationale for using an Enterprise Architecture model. The Workflow Description as an Enterprise Architecture Model outlines the Enterprise Architecture perspective applied to the ePO lifecycle, while the Service-Driven Approach (SDA) to Workflow Management introduces the layered structure. Employed ArchiMate Elements describes the key components used in the diagrams to support a consistent visual framework.
  
-==== Business Process Workflow
+==== xref:workflow/Business Process workflow/businessProcessWorkflow.adoc[Business Process Workflow]
 
 This is the central section of the documentation workflow, where you’ll find a step-by-step breakdown of the ePO workflow. It starts with a list of Stakeholders involved in the ePO lifecycle, followed by an Overview of the business process. Each stage of the workflow is divided into two parts:
 
@@ -24,9 +24,9 @@ This is the central section of the documentation workflow, where you’ll find a
 * Application and Technology View: Provides details on the technical tools, systems, and artefacts that support each stage.
 The workflow is organised into stages including Requirements Gathering, Designing the Conceptual Model, Preparing the Semantic Data Specification (SDS) Version Release, Publishing the Candidate SDS Version, and Publishing the Stable SDS Version.
  
-==== SDS and Related Artefacts
+==== xref:workflow/SDS and related artefacts/SDSIndex.adoc[SDS and Related Artefacts]
 
 This section defines the artefacts generated throughout the ePO lifecycle, detailing their groups, purposes, and requirements. It includes an introduction to model2owl, the tool used for automating artefact generation and validation.
  
-==== GitHub Repositories
+==== xref:workflow/GitHub repositories/githubRepositories.adoc[GitHub Repositories]
 This section maps out the GitHub repositories used in the ePO workflow, explaining the roles and structures of each repository, versioning practices, and artefact management throughout the lifecycle. Diagrams illustrate the relationships between repositories across different workflow stages.
