@@ -1,0 +1,15 @@
+= Workflow description as Enterprise Architecture model
+
+Describing the ePO workflow as an EA model provides a clear, standardised perspective of complex lifecycle processes, supporting effective governance and alignment with project goals. The Enterprise Architecture framework helps encapsulate each layer's roles and responsibilities, clarifies interactions between stakeholders and systems, and enables a traceable versioning and artefact management process through GitHub repositories. By using ArchiMate’s structured and simplified views, the workflow can be easily understood and maintained across development cycles.
+
+
+The primary outcomes aimed at in this workflow documentation include:
+
+* a precise capture of the business processes involved in each workflow stage;
+* clear guidelines on versioning and managing artefacts across GitHub repositories;
+* defined artefact requirements for each phase;
+* clarity on how artefacts are generated, transformed, and reviewed throughout the lifecycle.
+
+The workflow documentation’s structure ensures that all necessary artefacts, their purposes, and generation methods are fully specified.
+
+The documented outcomes are intended to serve as a foundational guide for the ePO team, supporting consistent workflow execution and artefact management. The structure aims to facilitate compliance with EU standards, ensure reliable versioning, and enable transparent decision-making. This workflow documentation also serves as a reference for governance, ensuring that stakeholders can trace each release’s components and workflows.
