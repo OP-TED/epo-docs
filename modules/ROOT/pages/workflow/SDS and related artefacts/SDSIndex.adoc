@@ -1,2 +1,5 @@
 = SDS and related artefacts
 
+== SDS artefact groups and purposes
+
+== model2owl in a nutshell (and its functionalities)
