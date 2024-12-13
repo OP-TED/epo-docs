@@ -1,7 +1,7 @@
-name: epo-home
+name: epo-wf
 version: ~
 title: eProcurement Ontology
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc
-  - modules/workflow/nav.adoc
+

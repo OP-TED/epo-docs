@@ -1,91 +1,32 @@
-:doctitle: The eProcurement Ontology
-:doccode: epo-main-prod-001
-:author: PWC adapted by NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: June 2023
-
-== What is the eProcurement Ontology?
-https://github.com/OP-TED/ePO[The eProcurement Ontology (ePO)] is a vocabulary that models the concepts used in EU public procurement.
-It does not represent the eProcurement process itself, it defines the concepts used in the different parts of the public procurement lifecycle.
-
-The ePO conceptualises, formally encodes, and provides structured data about public procurement in both human and machine-readable formats. It is modelled in alignment with EU Directives and Regulations and is a formal standard.
-
-== Why do we need an eProcurement Ontology?
-The eProcurement Ontology ensures that every participant in the procurement process is speaking the same language i.e., that the concepts and definitions are the same and have the same meaning for all parties. 
-
-More detail and background can be found in the xref:epo-home::motivation.adoc[Motivation for the development of an ePO].
-
-== The Scope of the eProcurement Ontology
-ePO covers public Procurement from end to end i.e., from notification, through tendering, awarding, ordering, invoicing, and payment.
-
-image::charter1.png[]
+= EPO Workflow Documentation 
 
 
-== How the eProcurement Ontology is created and developed
-To build and maintain the ontology, The European Commission's Publications Office (OP) formed a Working Group (WG) of experts with the mission of building consensus on the analysis, results, and deliverables developed by the OP’s teams.
 
+== Introduction
 
-== New to the eProcurement Ontology?
+This part of the documentation website describes all the necessary steps of the procedure of creating an eProcurement Ontology (ePO) release. This includes defining an end-to-end procedure workflow with the help of http://www.hosiaisluoma.fi/ArchiMate-Cookbook.pdf[ArchiMate diagrams] for visualisation purposes. This workflow includes the different stages of an ePO release lifecycle as well as information on artefacts, criteria for transitions, the different parts and responsibilities of stakeholders involved with the procedure, and how to support the workflow using GitHub. Here we also describe automation points, release note contents, and release tagging conventions. Although the scope of this part of the documentation covers everything related to the ePO lifecycle, it does not cover the inner workings of related technologies such as https://docs.ted.europa.eu/M2O/latest/index.html[Model2Owl]. However, the inputs and outputs of these technologies are clearly documented.
 
-Start here for an introduction:
+=== Structure
 
-* Introductory info sessions on the ePO and Linked Open Data
-** xref:attachment$ePO/index.html[The ePO] +
-A short info session on the ePO
-** xref:attachment$LOD/index.html[Linked Open Data] +
-A short info session on Linked Open Data
-* https://github.com/OP-TED/ePO[Github page] +
-The ePO resources on GitHub
+This part of the website is designed to guide you through the structured lifecycle of the eProcurement Ontology (ePO) workflow management. It serves as both a comprehensive reference and a step-by-step guide, capturing each stage of the workflow through the lens of Enterprise Architecture. Enterprise Architecture is a business function concerned with the structures and behaviours of a business, especially business roles and processes that create and use business data. By following the sections of this document, you will gain a complete understanding of the methodology, roles, artefacts, and systems that support the ePO lifecycle from planning through to release.
 
-The following topics are included in this version of the eProcurement Ontology documentation:
+==== xref:workflow/legend.adoc[Legend for Abbreviations]
+This section explains all the Abbreviations used in the workflow.
 
+==== xref:workflow/methodology/methodology.adoc[Methodology]
+This section explains the foundational approach and the rationale for using an Enterprise Architecture model. The Workflow Description as an Enterprise Architecture Model outlines the Enterprise Architecture perspective applied to the ePO lifecycle, while the Service-Driven Approach (SDA) to Workflow Management introduces the layered structure. Employed ArchiMate Elements describes the key components used in the diagrams to support a consistent visual framework.
+ 
+==== xref:workflow/Business Process workflow/businessProcessWorkflowIndex.adoc[Business Process Workflow]
 
-== The eProcurement Ontology
-* Home (current page)
+This is the central section of the documentation workflow, where you’ll find a step-by-step breakdown of the ePO workflow. It starts with a list of Stakeholders involved in the ePO lifecycle, followed by an Overview of the business process. Each stage of the workflow is divided into two parts:
 
-== General Documentation
+* Business View: Outlines the roles, responsibilities, and key actions required at each stage.
+* Application and Technology View: Provides details on the technical tools, systems, and artefacts that support each stage.
+The workflow is organised into stages including Requirements Gathering, Designing the Conceptual Model, Preparing the Semantic Data Specification (SDS) Version Release, Publishing the Candidate SDS Version, and Publishing the Stable SDS Version.
+ 
+==== xref:workflow/SDS and related artefacts/SDSIndex.adoc[SDS and Related Artefacts]
 
-
-* xref:epo-home::guide.adoc[User Guides] +
-Guides for using the ePO and its features.
-
-* xref:EPO::conceptual.adoc[Conceptual Models] +
-The release specific conceptual Model(s) of the ontology.
-* xref:EPO::glossaries.adoc[Glossaries] +
-The release specific glossaries
-* xref:EPO::release-notes.adoc[Release Notes] +
-Release notes for the specific ePO version
-* xref:showcase/index.adoc[The ePO in other Projects] +
-How the ePO underpins other projects
-
-
-== Reference Documentation
-
-
-* xref:epo-home::methodology2024.adoc[Methodology] +
-How the ePO is developed and maintained
-
-* xref:epo-home::versioning.adoc[ePO Versioning Rules] +
-An overview of the versioning rules for releases
-
-* xref:epo-home::stories.adoc[User Stories and Natural Language Statements] +
-Ontology Requirements Specification Documents (ORSD), containing user stories and natural language statements used when developing new modules
-
-** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)] +
-ORSD for eAccess module
-** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)] +
-ORSD for eSubmission module
-
-* xref:epo-home::REFreferences.adoc[Other Reference Documents] +
-Useful reference documents in the development of the ePO
-
-* xref:epo-home::history.adoc[History and Planned Developments] +
-Milestones in the project and future development plans
-
-== Working Group Documents
-* xref:epo-wgm::wider.adoc[Quarterly Meetings] +
-Minutes, Presentations, etc from the quarterly Working Group Meetings
-* xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)] +
-All weekly meetings minutes collated into yearly documents
-* xref:epo-wgm::indiv.adoc[Individual Meeting Reports] +
-All weekly meeting minutes and documents saved individually
+This section defines the artefacts generated throughout the ePO lifecycle, detailing their groups, purposes, and requirements. It includes an introduction to model2owl, the tool used for automating artefact generation and validation.
+ 
+==== xref:workflow/GitHub repositories/githubRepositories.adoc[GitHub Repositories]
+This section maps out the GitHub repositories used in the ePO workflow, explaining the roles and structures of each repository, versioning practices, and artefact management throughout the lifecycle. Diagrams illustrate the relationships between repositories across different workflow stages.

@@ -1,33 +1,41 @@
 :doctitle: Navigation
 :doccode: epo-main-prod-004
-:author: NPJ
-:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: June 2023
+:author: AD
+:authoremail: achilles.dougalis@meaningfy.ws
+:docdate: december 2024
 
-* xref:epo-home::index.adoc[Home]
 
-* [.separated]#**General Documentation**#
-* xref:epo-home::guide.adoc[User Guides]
-* xref:EPO::conceptual.adoc[Conceptual Models]
-* xref:EPO::glossaries.adoc[Glossaries]
-* xref:EPO::release-notes.adoc[Release Notes]
-* xref:epo-home::showcase/index.adoc[The ePO in Other Projects]
+* xref:epo-home::index.adoc[ePO Home]
 
-* [.separated]#**Reference Documents**#
-* xref:epo-home::methodology2024.adoc[Methodology]
-* xref:workflow:index.adoc[Workflow]
-* xref:epo-home::versioning.adoc[ePO Versioning Rules]
-* xref:epo-home::stories.adoc[User Stories and Natural Language Statements]
-** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
-** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
-** xref:epo-home::stories_eInvoicing.adoc[eInvoicing]
-* xref:epo-home::REFreferences.adoc[Other Reference Documents]
-* xref:epo-home::history.adoc[History and Planned Developments]
+* xref:index.adoc[Introduction]
 
-* [.separated]#**Working Group Documents**#
-* xref:epo-wgm::wider.adoc[Quarterly Meetings]
-* xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)]
-* xref:epo-wgm::indiv.adoc[Individual Meeting Reports]
+** xref:legend.adoc[Legend]
+
+* xref:methodology/methodologyIndex.adoc[Methodology]
+** xref:methodology/workflowAsEA.adoc[Workflow description as Enterprise Architecture model]
+** xref:methodology/SDA.adoc[Service-Driven Approach (SDA) to workflow management]
+** xref:methodology/archimateElements.adoc[Employed ArchiMate elements]
+
+* xref:Business Process workflow/businessProcessWorkflowIndex.adoc[Business Process workflow]
+** xref:Business Process workflow/stakeholders.adoc[Stakeholders]
+** xref:Business Process workflow/businessProcessOverview.adoc[Business process overview]
+** xref:Business Process workflow/stage1/stage1.adoc[Stage 1: Requirements Gathering]
+** xref:Business Process workflow/stage2/stage2.adoc[Stage 2: Designing Conceptual Model]
+*** xref:Business Process workflow/stage2/stage2.adoc#CMCONV[Conceptual Model Conventions]
+*** xref:Business Process workflow/stage2/stage2.adoc#CMVM[Conceptual Model version management]
+
+** xref:Business Process workflow/stage3/stage3.adoc[Stage 3: Preparing Semantic Data Specification Version Release]
+*** xref:Business Process workflow/stage3/stage3.adoc#ASDS[Automated Semantic Data Specification generation and validation]
+
+** xref:Business Process workflow/stage4/stage4.adoc[Stage 4: Publishing Candidate Semantic Data Specification Version]
+** xref:Business Process workflow/stage5/stage5.adoc[Stage 5: Publishing Stable SDS Version]
+*** xref:Business Process workflow/stage5/stage5.adoc#Cellar[Publishing to Cellar]
+
+* xref:SDS and related artefacts/SDSIndex.adoc[SDS and related artefacts]
+** xref:SDS and related artefacts/SDSArtefacts.adoc[SDS artefact groups and purposes]
+** xref:SDS and related artefacts/model2owl.adoc[model2owl in a nutshell (and its functionalities)]
+
+*xref:GitHub repositories/githubRepositories.adoc[GitHub Repositories]
 
 
 
