@@ -65,7 +65,7 @@ _ SDS Version” stage_
 
 
 
-=== Publishing to Cellar[[Cellar]]
+=== Publishing to Cellar
 
 
 
