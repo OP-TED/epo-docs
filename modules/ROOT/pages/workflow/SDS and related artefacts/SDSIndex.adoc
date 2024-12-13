@@ -1,5 +1,0 @@
-= SDS and related artefacts
-
-== xref:workflow/SDS and related artefacts/SDSArtefacts.adoc[SDS artefact groups and purposes]
-
-== xref:workflow/SDS and related artefacts/model2owl.adoc[model2owl in a nutshell (and its functionalities)]

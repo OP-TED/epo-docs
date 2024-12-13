@@ -209,7 +209,7 @@ _The technology layer of the model2owl toolkit_
 
 
 
-== Automated Semantic Data Specification generation and validation
+== Automated Semantic Data Specification generation and validation[[ASDS]]
 
 
 Automated SDS development shall be adopted as the https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC style guide]  suggests: Using the UML Conceptual model as a https://semiceu.github.io/style-guide/1.0.0/gc-conceptual-model-conventions.html#sec:cmc-r1[Single Source of Truth] principle, and automatically generating the SDS from the UML. For the purposes of automatic generation, we use https://github.com/OP-TED/model2owl[model2owl] tool, described in section 4. Following the https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/application-profiles-what-are-they-and-how-model-and-reuse-them-properly-look-through-dcat-ap[SEMIC blog articles,]  it is clear that automation is needed for all points of the UML transformation to SDS artefacts, and manual transformations should be discouraged and avoided at all costs, as SDS artefacts that are generated manually will often display inconsistencies between them, and the Single Source of Truth.
