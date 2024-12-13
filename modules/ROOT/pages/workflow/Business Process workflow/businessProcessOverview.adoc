@@ -40,6 +40,6 @@ The whole Workflow including all stages and business processes can be seen as a 
 
 
 
-image::workflowImages/detailedBusinessProcess.bmp[]
+image::detailedBusinessProcess.bmp[]
 _The detailed business process workflow_
 

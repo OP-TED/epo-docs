@@ -4,3 +4,4 @@ title: eProcurement Ontology
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc
+  - modules/workflow/nav.adoc
