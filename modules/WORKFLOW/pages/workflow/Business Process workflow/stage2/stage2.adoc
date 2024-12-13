@@ -54,7 +54,7 @@ The “Conceptual Model (editable)” Business Object is translated into the “
 
 
 
-== Conceptual Model Conventions
+== Conceptual Model Conventions[[CMCONV]]
 
 
 The ePO Conceptual Model is designed according to the https://semiceu.github.io/style-guide/1.0.0/gc-conceptual-model-conventions.html[SEMIC style guide UML Conceptual model conventions] and follows https://github.com/OP-TED/model2owl?tab=readme-ov-file#documents[model2owl UML covnetions] so that model2owl can be used for SDS artefact generation.
@@ -110,7 +110,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAAEkCAYAAABwsMl0AACAAEl
 
 
 
-== Conceptual Model version management
+== Conceptual Model version management[[CMVM]]
 
 
 * Problem definition - the CM files QEAPX are binary and cannot be versioned properly in GitHub.

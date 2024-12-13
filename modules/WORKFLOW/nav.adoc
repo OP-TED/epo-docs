@@ -18,6 +18,9 @@
 ** xref:workflow/Business Process workflow/businessProcessOverview.adoc[Business process overview]
 ** xref:workflow/Business Process workflow/stage1/stage1.adoc[Stage 1: Requirements Gathering]
 ** xref:workflow/Business Process workflow/stage2/stage2.adoc[Stage 2: Designing Conceptual Model]
+*** xref:workflow/Business Process workflow/stage2/stage2.adoc#CMCONV[Conceptual Model Conventions]
+*** xref:workflow/Business Process workflow/stage2/stage2.adoc#CMVM[Conceptual Model version management]
+
 ** xref:workflow/Business Process workflow/stage3/stage3.adoc[Stage 3: Preparing Semantic Data Specification Version Release]
 ** xref:workflow/Business Process workflow/stage4/stage4.adoc[Stage 4: Publishing Candidate Semantic Data Specification Version]
 ** xref:workflow/Business Process workflow/stage5/stage5.adoc[Stage 5: Publishing Stable SDS Version]
