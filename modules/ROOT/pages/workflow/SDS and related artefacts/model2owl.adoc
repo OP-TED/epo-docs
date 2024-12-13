@@ -1,0 +1,27 @@
+=  model2owl in a nutshell (and its functionalities)
+
+
+https://github.com/OP-TED/model2owl[Model2Owl] is a set of tools for transforming a UML (v2.5) model from its XMI (v2.5.1) serialization into a formal OWL ontology, and a SHACL shape. This transforming approach is conformant to the https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC Style Guide] and with the  https://github.com/meaningfy-ws/model2owl/blob/master/docs/ontology-architecture/ontology-architecture.pdf[eProcurement Ontology Architecture specification]. +
+In this section we list the model2owl functionalities.
+
+* currently supported:
+** Generation of formal SDS artefacts
+*** OWL-core,
+*** OWL-restrictions,
+*** SHACL shapes
+** Generation of reference documentation
+*** Glossary - suited for documentation purpose, not suitable for dereferencing purpose)
+** Validation
+*** UML conventions checking,
+*** ITB conventions checking done in SEMIC
+* Not yet supported:
+** Generation of evolutive artefacts:
+*** OWL Diff reports (human readable, e.g. HTML, formal e.g. for automated upgrade recommendation in RML rules)
+*** SHACL Diff report
+*** Change notes (based on diffing). Currently, Change notes are added manually by the Development Team and are prone to errors.
+** Generation of formal SDS artefacts
+*** OWL-deprecated – for the purpose of maintaining concept persistence i.e. https://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://interoperable-europe.ec.europa.eu/sites/default/files/inline-files/Towards-a-common-approach-for-the-management-of-persistent-URIs-by-EU-institutions_v.0.53.pdf[EU-PURIs]), generated based on the diffing
+** Validation/
+*** SHACL based validation of OWL-core, OWL-restrictions, SHACL shapes
+** Generation of reference documentation
+*** SDS Reference document (not he same as Glossary), in ReSpec/Widoco/custom view in HTML format (not AsciiDoc) - for the purpose of HTML dereferencing
