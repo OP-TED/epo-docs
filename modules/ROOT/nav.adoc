@@ -15,8 +15,7 @@
 
 * [.separated]#**Reference Documents**#
 * xref:epo-home::methodology2024.adoc[Methodology]
-* xref:epo-home::WORKFLOW:index.adoc[Workflow]
-* xref:epo-home:WORKFLOW::index.adoc[Workflow]
+* xref:WORKFLOW:index.adoc[Workflow]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
 * xref:epo-home::stories.adoc[User Stories and Natural Language Statements]
 ** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
