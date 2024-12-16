@@ -13,16 +13,16 @@ The general approach/methodology that is used in order to develop SDS for the On
 ** External Vocabulary concepts are re-used__ __https://semiceu.github.io/style-guide/1.0.0/clarification-on-reuse.html#sec:reuse-of-a-class-as-is[_as is]_ according to the SEMIC style guide definition of re-use. Terminological adaptations are not allowed.
 ** ePO uses https://github.com/[GitHub] as distribution channel, version management, continuous integration and continuous delivery/continuous deployment.
 ** https://github.com/features/actions[GitHub Actions] are used for automation purposes, implementing and chaining many steps of the workflow. Specifically, the three GitHub actions that are used are:
-*** The SDS generation by model2owl described in xref:workflow/Business Process workflow/stage3/stage3.adoc[stage 3] of the workflow.
-***  The generation of the staging documentation website in xref:workflow/Business Process workflow/stage4/stage4.adoc[stage 4] of the workflow.
-*** The generation of the public documentation website also in xref:workflow/Business Process workflow/stage4/stage4.adoc[stage 4] of the workflow.
+*** The SDS generation by model2owl described in xref:Business Process workflow/stage3/stage3.adoc[stage 3] of the workflow.
+***  The generation of the staging documentation website in xref:Business Process workflow/stage4/stage4.adoc[stage 4] of the workflow.
+*** The generation of the public documentation website also in xref:Business Process workflow/stage4/stage4.adoc[stage 4] of the workflow.
 
 == Pages in this section
 
-=== xref:workflow/Business Process workflow/stakeholders.adoc[Stakeholders]
-=== xref:workflow/Business Process workflow/businessProcessOverview.adoc[Business process overview]
-=== xref:workflow/Business Process workflow/stage1/stage1.adoc[Stage 1: Requirements Gathering]
-=== xref:workflow/Business Process workflow/stage2/stage2.adoc[Stage 2: Designing Conceptual Model]
-=== xref:workflow/Business Process workflow/stage3/stage3.adoc[Stage 3: Preparing Semantic Data Specification Version Release]
-=== xref:workflow/Business Process workflow/stage4/stage4.adoc[Stage 4: Publishing Candidate Semantic Data Specification Version]
-=== xref:workflow/Business Process workflow/stage5/stage5.adoc[Stage 5: Publishing Stable SDS Version]
+=== xref:Business Process workflow/stakeholders.adoc[Stakeholders]
+=== xref:Business Process workflow/businessProcessOverview.adoc[Business process overview]
+=== xref:Business Process workflow/stage1/stage1.adoc[Stage 1: Requirements Gathering]
+=== xref:Business Process workflow/stage2/stage2.adoc[Stage 2: Designing Conceptual Model]
+=== xref:Business Process workflow/stage3/stage3.adoc[Stage 3: Preparing Semantic Data Specification Version Release]
+=== xref:Business Process workflow/stage4/stage4.adoc[Stage 4: Publishing Candidate Semantic Data Specification Version]
+=== xref:Business Process workflow/stage5/stage5.adoc[Stage 5: Publishing Stable SDS Version]

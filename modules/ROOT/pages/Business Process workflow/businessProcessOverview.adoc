@@ -10,23 +10,23 @@ _The high-level stages business workflow diagram_
 
 As seen in the diagram, the workflow The Business Process can be further divided into five discrete stages:
 
-== xref:workflow/Business Process workflow/stage1/stage1.adoc[The Requirements gathering stage]
+== xref:Business Process workflow/stage1/stage1.adoc[The Requirements gathering stage]
 
 In this stage, all preliminary work is done such as deciding the ePO version that will be released, what contents are foreseen for this release and the creation of the necessary GitHub branches. Also in this stage, the requirements for a new ePO module are collected in the Ontology Requirements Specification Document (ORSD) by the Working Group.
 
-== xref:workflow/Business Process workflow/stage2/stage2.adoc[The Designing Conceptual Model stage]
+== xref:Business Process workflow/stage2/stage2.adoc[The Designing Conceptual Model stage]
 
 In this stage, the Development Team works with the rest of the Working Group in order to design the Conceptual Model (CM) of the module to be released. The CM is represented as a collection of UML diagrams in an https://sparxsystems.com/[Enterprise Architect] file at the Github CM repository.
 
-== xref:workflow/Business Process workflow/stage3/stage3.adoc[Preparing SDS version release stage]
+== xref:Business Process workflow/stage3/stage3.adoc[Preparing SDS version release stage]
 
 In this stage, the SDS formal artefacts and some of the SDS documentation artefacts are automatically generated in the CM repository by the Model2owl tools using the CM file as input.
 
-== xref:workflow/Business Process workflow/stage4/stage4.adoc[Publishing candidate SDS version stage]
+== xref:Business Process workflow/stage4/stage4.adoc[Publishing candidate SDS version stage]
 
 In this stage, the SDS formal artefacts are moved to the ePO repository as a release candidate, the existing SDS documentation artefacts are moved to the ePO-docs repository were the rest of the SDS documentation artefacts are created, including the documentation website of the release candidate. At the end of this stage the Product Owner invites the Wider Public to review the release candidate and decides whether or not to incorporate feedback to this release candidate or a future release.
 
-== xref:workflow/Business Process workflow/stage5/stage5.adoc[Publishing stable SDS version stage]
+== xref:Business Process workflow/stage5/stage5.adoc[Publishing stable SDS version stage]
 
 In this stage, The Product Owner decides to publish the latest release candidate of a specific ePO version as a stable release. Consequently, the SDS and SDS documentation of the specific candidate are marked accordingly, and the new ePO stable release is announced.
 
@@ -40,6 +40,6 @@ The whole Workflow including all stages and business processes can be seen as a 
 
 
 
-image::workflowImages/detailedBusinessProcess.bmp[]
+image::detailedBusinessProcess.bmp[]
 _The detailed business process workflow_
 

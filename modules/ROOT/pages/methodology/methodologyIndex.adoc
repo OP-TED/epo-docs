@@ -11,8 +11,8 @@ This document does not include technical specifications of supporting tools, suc
 
 == Pages in this section
 
-=== xref:workflow/methodology/workflowAsEA.adoc[Workflow description as Enterprise Architecture model]
+=== xref:methodology/workflowAsEA.adoc[Workflow description as Enterprise Architecture model]
 
-=== xref:workflow/methodology/SDA.adoc[Service-Driven Approach (SDA) to workflow management]
+=== xref:methodology/SDA.adoc[Service-Driven Approach (SDA) to workflow management]
 
-=== xref:workflow/methodology/archimateElements.adoc[Employed ArchiMate elements]
+=== xref:methodology/archimateElements.adoc[Employed ArchiMate elements]
