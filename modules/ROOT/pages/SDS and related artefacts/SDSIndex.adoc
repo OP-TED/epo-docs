@@ -2,6 +2,6 @@
 
 This section defines the artefacts generated throughout the ePO lifecycle, detailing their groups, purposes, and requirements. It includes an introduction to model2owl, the tool used for automating artefact generation and validation.
 
-== xref:workflow/SDS and related artefacts/SDSArtefacts.adoc[SDS artefact groups and purposes]
+== xref:SDS and related artefacts/SDSArtefacts.adoc[SDS artefact groups and purposes]
 
-== xref:workflow/SDS and related artefacts/model2owl.adoc[model2owl in a nutshell (and its functionalities)]
+== xref:SDS and related artefacts/model2owl.adoc[model2owl in a nutshell (and its functionalities)]
