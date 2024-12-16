@@ -8,11 +8,3 @@ The document follows a structured EA view, using ArchiMate to provide a consiste
 * Providing clarity on required artefacts, their purposes, and generation methods.
 * Applying simplified views of Business, Application, and Technology layers, with realised connections and support dependencies across layers.
 This document does not include technical specifications of supporting tools, such as Model2Owl, Enterprise Architect UML Editor, GitHub Actions, Git clients, etc., or descriptions of procurement data models. Instead, the document focuses on the procedural framework, artefact requirements, and lifecycle stages suitable for ePO specific case, leaving the internal workings of associated technologies beyond its scope.
-
-== Pages in this section
-
-=== xref:methodology/workflowAsEA.adoc[Workflow description as Enterprise Architecture model]
-
-=== xref:methodology/SDA.adoc[Service-Driven Approach (SDA) to workflow management]
-
-=== xref:methodology/archimateElements.adoc[Employed ArchiMate elements]

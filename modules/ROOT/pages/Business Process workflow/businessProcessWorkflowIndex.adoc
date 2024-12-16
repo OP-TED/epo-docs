@@ -16,13 +16,3 @@ The general approach/methodology that is used in order to develop SDS for the On
 *** The SDS generation by model2owl described in xref:Business Process workflow/stage3/stage3.adoc[stage 3] of the workflow.
 ***  The generation of the staging documentation website in xref:Business Process workflow/stage4/stage4.adoc[stage 4] of the workflow.
 *** The generation of the public documentation website also in xref:Business Process workflow/stage4/stage4.adoc[stage 4] of the workflow.
-
-== Pages in this section
-
-=== xref:Business Process workflow/stakeholders.adoc[Stakeholders]
-=== xref:Business Process workflow/businessProcessOverview.adoc[Business process overview]
-=== xref:Business Process workflow/stage1/stage1.adoc[Stage 1: Requirements Gathering]
-=== xref:Business Process workflow/stage2/stage2.adoc[Stage 2: Designing Conceptual Model]
-=== xref:Business Process workflow/stage3/stage3.adoc[Stage 3: Preparing Semantic Data Specification Version Release]
-=== xref:Business Process workflow/stage4/stage4.adoc[Stage 4: Publishing Candidate Semantic Data Specification Version]
-=== xref:Business Process workflow/stage5/stage5.adoc[Stage 5: Publishing Stable SDS Version]

@@ -16,7 +16,7 @@ In this stage, all preliminary work is done such as deciding the ePO version tha
 
 == xref:Business Process workflow/stage2/stage2.adoc[The Designing Conceptual Model stage]
 
-In this stage, the Development Team works with the rest of the Working Group in order to design the Conceptual Model (CM) of the module to be released. The CM is represented as a collection of UML diagrams in an https://sparxsystems.com/[Enterprise Architect] file at the Github CM repository.
+In this stage, the Development Team works with the rest of the Working Group in order to design the Conceptual Model (CM) of the module to be released. The CM is represented as a collection of UML diagrams in a Sparx EnterpriseArchitecture file at the Github CM repository.
 
 == xref:Business Process workflow/stage3/stage3.adoc[Preparing SDS version release stage]
 
