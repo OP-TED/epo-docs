@@ -18,7 +18,7 @@
 ** xref:Business Process workflow/stage4/stage4.adoc[Stage 4: Publishing Candidate Semantic Data Specification Version]
 ** xref:Business Process workflow/stage5/stage5.adoc[Stage 5: Publishing Stable SDS Version]
 
-* xref:methodology/methodologyIndex.adoc[Methodology]
+* xref:methodology/methodologyIndex.adoc[Workflow Methodology]
 ** xref:methodology/workflowAsEA.adoc[Workflow description as Enterprise Architecture model]
 ** xref:methodology/SDA.adoc[Service-Driven Approach (SDA) to workflow management]
 ** xref:methodology/archimateElements.adoc[Employed ArchiMate elements]
