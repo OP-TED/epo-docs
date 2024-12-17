@@ -1,5 +1,5 @@
 
-= Legend for Abbreviations
+= Abbreviations used in the ePO workflow
 
 * CM: Conceptual Model
 * EA: Enterprise Architect 

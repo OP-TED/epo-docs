@@ -2,11 +2,11 @@
 
 
 
-== Introduction
+== Introduction to the ePO Workflow documentation
 
 This part of the documentation website describes all the necessary steps of the procedure of creating an eProcurement Ontology (ePO) release. This includes defining an end-to-end procedure workflow with the help of http://www.hosiaisluoma.fi/ArchiMate-Cookbook.pdf[ArchiMate diagrams] for visualisation purposes. This workflow includes the different stages of an ePO release lifecycle as well as information on artefacts, criteria for transitions, the different parts and responsibilities of stakeholders involved with the procedure, and how to support the workflow using GitHub. Here we also describe automation points, release note contents, and release tagging conventions. Although the scope of this part of the documentation covers everything related to the ePO lifecycle, it does not cover the inner workings of related technologies such as https://docs.ted.europa.eu/M2O/latest/index.html[Model2Owl]. However, the inputs and outputs of these technologies are clearly documented.
 
-=== Structure
+=== Structure of the documentation
 
 This part of the website is designed to guide you through the structured lifecycle of the eProcurement Ontology (ePO) workflow management. It serves as both a comprehensive reference and a step-by-step guide, capturing each stage of the workflow through the lens of Enterprise Architecture. Enterprise Architecture is a business function concerned with the structures and behaviours of a business, especially business roles and processes that create and use business data. By following the sections of this document on the left side of the website, you will gain a complete understanding of the methodology, roles, artefacts, and systems that support the ePO lifecycle from planning through to release.
 
