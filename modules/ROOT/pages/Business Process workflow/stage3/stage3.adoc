@@ -91,7 +91,7 @@ In the “Dev Team internal review” Business Process, The Development Team rev
 . The SDS reference documents (Glossaries).
 . The Conceptual Model visual documentation (HTML pages).
 
-The Development Team also makes sure that all GitHub Issues with a milestone of the upcoming release are implemented. If any errors or bugs are encountered, the Development Team fixes these errors by re-doing all the business processes of the Workflow from the “ORSD consolidation” Business Process, to the “Dev Team internal review” Business Process. Note that during this fixing of errors the “CM Working Group Meeting” Business Process is omitted since the changes to the Ontology are purely technical.
+The Development Team also makes sure that all GitHub Issues with a milestone of the upcoming release are implemented. If any errors or bugs are encountered, the Development Team fixes these errors by re-doing all the business processes of the Workflow from the “ORSD consolidation” Business Process, to the “Dev Team internal review” Business Process. Note that during this fixing of errors the “CM Working Group Meeting” Business Process is omitted since the changes to the Ontology are purely technical. However, if there is a problem in the conventions this might require the WG to confirm what was meant by the wrong convention to allow it to be corrected.
 
 In the “Product Owner internal review” Business Process, The Product Owner reviews all Objects generated in this stage for each module. Specifically:
 
