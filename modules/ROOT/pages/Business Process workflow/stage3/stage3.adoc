@@ -75,7 +75,7 @@ _The SDS Review substage_
 
 In the “Dev Team internal review” Business Process, The Development Team reviews all Objects generated in this stage for each module. Specifically:
 
-. The Quality assessment reports.
+. The Quality assessment reports (convention reports).
 . The Diffing reports.
 . The Formal artefacts (including metadata)
 . The SDS reference documents (Glossaries).
@@ -85,7 +85,7 @@ The Development Team also makes sure that all GitHub Issues with a milestone of 
 
 In the “Product Owner internal review” Business Process, The Product Owner reviews all Objects generated in this stage for each module. Specifically:
 
-. The Quality assessment reports.
+. The Quality assessment reports (convention reports).
 . The Diffing reports.
 . The Formal artefacts. (including metadata)
 
