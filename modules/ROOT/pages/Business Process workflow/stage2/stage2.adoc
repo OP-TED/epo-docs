@@ -107,7 +107,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAAEkCAYAAABwsMl0AACAAEl
 ** For each external concept, the ‘Notes’ section of the Conceptual Model contains a hyperlink to a human-readable website that provides the original definition of the concept. Note that the external concepts are not exported in the formal SDS artefacts (OWL and SHACL files), but can be seen in the generated xref:SDS and related artefacts/SDSmodel2owl.adoc#P2[Conceptual Model visual documentation” business object] (html pages of the conceptual model).
 
 * Code lists.
-** Even though the Conceptual model contains Code lists as enumerations, the values of the code lists are not exported to the SDS Artefacts since they are not parts of the Ontology and are only referenced from ePO as recomendations.
+** Even though code lists are visible in the Conceptual model as enumerations, they are not exported to the OWL files since they are only recommendations of the ePO. However, they can be included or not in the SHACL files for validation purposes.
 
 
 
