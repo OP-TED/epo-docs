@@ -113,6 +113,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAAEkCAYAAABwsMl0AACAAEl
 
 == Conceptual Model version management[[CMVM]]
 
+In this section, we describe the problem of managing the different versions of the binary EA Conceptual Model QEAX file and present the current solution. We also briefly mention two alternative ways of versioning the Conceptual Model.
 
 * Problem definition - the CM files QEAPX are binary and cannot be versioned properly in GitHub.
 * Current approach: pure Git – This method forces us to use Trunk based development, which requires:
