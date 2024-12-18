@@ -20,7 +20,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABsQAAATeCAIAAADxc9aRAACAAEl
 
 _The Preparing Semantic Data Specification Version Release with stakeholders business view diagram_
 
-=== SDS Generation substage
+=== SDS Generation substage[[SDSGen]]
 
 
 In the “Initiate SDS release” business process the Development Team enables a “light” code freeze on the develop branch in order to create the SDS artefacts and review them. This code freeze only allows modifications to the conceptual model in order to fix bugs discovered during the “Dev Team internal review” and “Product Owner internal review” business processes, and no new features should be implemented.
