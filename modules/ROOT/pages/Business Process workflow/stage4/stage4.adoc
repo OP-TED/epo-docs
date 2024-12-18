@@ -48,7 +48,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABi0AAARhCAIAAADRGFGKAACAAEl
 _Moving the SDS artefacts for Release and generating the rest of the SDS documentation substage Business view diagram_
 
 
-=== Documentation website generation and Wider Public Review
+=== Documentation website generation and Wider Public Review[[DWGWPR]]
 
 
 In the “Publish staging documentation website” Business Process, the Product Owner generates the static website from the tag in https://github.com/OP-TED/epo-docs[OP/ePO-docs] and publishes it in the staging environment which is not accessible to the public. The Product Owner then reviews the staging documentation website, and if changes are needed, changes the AsciiDocs pages to integrate the necessary website adjustments. This process repeats until the Product Owner finds no mistake in the documentation website, and the “Publish public documentation website” is triggered.
