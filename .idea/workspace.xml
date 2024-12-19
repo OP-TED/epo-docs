@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="Minor fixes">
+    <list default="true" id="d3415153-6bc6-4a9e-8542-721523f83fa9" name="Default Changelist" comment="fix for comment 13.ii.2 in the feedback document">
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/2024-12-19_11-38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/2024-12-19_11-49.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/2024-12-19_11-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/SDS Documentation artefacts.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/SDS formal artefacts.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/preparing SDS version release stage [detailed].bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/publishing candidate SDS version stage [concise].bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ROOT/images/publishing candidate SDS version stage [detailed].bmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/Workflow/github-workflow.qeax" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/Workflow/github-workflow.qeax" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/attachments/github-workflow.qeax" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/attachments/github-workflow.qeax" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/Business Process workflow/stage2/stage2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/Business Process workflow/stage3/stage3.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/Business Process workflow/stage3/stage3.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/Business Process workflow/stage4/stage4.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/Business Process workflow/stage4/stage4.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ROOT/pages/SDS and related artefacts/SDSmodel2owl.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ROOT/pages/SDS and related artefacts/SDSmodel2owl.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +40,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AchillesDougalis"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AchillesDougalis&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -63,6 +75,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;workflow-imp&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/achid/OneDrive/Documents/GitHub/epo-docs/modules/ROOT/pages/guides&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -339,55 +352,127 @@
       <option name="project" value="LOCAL" />
       <updated>1711377206505</updated>
     </task>
-    <task id="LOCAL-00035" summary="added class generalisation">
+    <task id="LOCAL-00044" summary="changes discussed in section 12.d.iii in the feedback document.">
       <option name="closed" value="true" />
-      <created>1718034042225</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+      <created>1734512406553</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
       <option name="project" value="LOCAL" />
-      <updated>1718034042226</updated>
+      <updated>1734512406553</updated>
     </task>
-    <task id="LOCAL-00036" summary="Started explaining the HTML conceptual models">
+    <task id="LOCAL-00045" summary="Added github link in the introduction">
       <option name="closed" value="true" />
-      <created>1718116105170</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+      <created>1734518378962</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
       <option name="project" value="LOCAL" />
-      <updated>1718116105170</updated>
+      <updated>1734518378962</updated>
     </task>
-    <task id="LOCAL-00037" summary="moved files from showcase">
+    <task id="LOCAL-00046" summary="added clarifications that the Quality assessment reports include the convention reports">
       <option name="closed" value="true" />
-      <created>1720516672526</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+      <created>1734518676899</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
       <option name="project" value="LOCAL" />
-      <updated>1720516672526</updated>
+      <updated>1734518676899</updated>
     </task>
-    <task id="LOCAL-00038" summary="Added the EA file, and a placeholder asciidoc file that will eventually contain the documentation">
+    <task id="LOCAL-00047" summary="added sharepoint links">
       <option name="closed" value="true" />
-      <created>1729508170936</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+      <created>1734520841341</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
       <option name="project" value="LOCAL" />
-      <updated>1729508170937</updated>
+      <updated>1734520841341</updated>
     </task>
-    <task id="LOCAL-00039" summary="Completed the concise diagrams for all 5 stages.">
+    <task id="LOCAL-00048" summary="sharepoint became OP's internal sharepoint">
       <option name="closed" value="true" />
-      <created>1729521262304</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+      <created>1734521030851</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
       <option name="project" value="LOCAL" />
-      <updated>1729521262304</updated>
+      <updated>1734521030851</updated>
     </task>
-    <task id="LOCAL-00040" summary="Minor fixes">
+    <task id="LOCAL-00049" summary="added link to model2owl for comment 11.i in the feedback document">
       <option name="closed" value="true" />
-      <created>1729584072189</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+      <created>1734521477531</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
       <option name="project" value="LOCAL" />
-      <updated>1729584072189</updated>
+      <updated>1734521477531</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00050" summary="fix for comment 12.b.ii in the feedback document">
+      <option name="closed" value="true" />
+      <created>1734521910193</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1734521910193</updated>
+    </task>
+    <task id="LOCAL-00051" summary="fix for comment 12.g.i in the feedback document">
+      <option name="closed" value="true" />
+      <created>1734523342461</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1734523342461</updated>
+    </task>
+    <task id="LOCAL-00052" summary="fix for comment 12.g.ii in the feedback document">
+      <option name="closed" value="true" />
+      <created>1734527277895</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1734527277895</updated>
+    </task>
+    <task id="LOCAL-00053" summary="fix for comment 12.h.i in the feedback document">
+      <option name="closed" value="true" />
+      <created>1734528465442</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1734528465442</updated>
+    </task>
+    <task id="LOCAL-00054" summary="fix for comment 12.h.ii in the feedback document">
+      <option name="closed" value="true" />
+      <created>1734528961476</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1734528961476</updated>
+    </task>
+    <task id="LOCAL-00055" summary="fix for comment 13.ii.1 in the feedback document">
+      <option name="closed" value="true" />
+      <created>1734529531771</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1734529531771</updated>
+    </task>
+    <task id="LOCAL-00056" summary="fix for comment 13 (access) in the feedback document">
+      <option name="closed" value="true" />
+      <created>1734529972620</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1734529972620</updated>
+    </task>
+    <task id="LOCAL-00057" summary="fix for comment 13.ii.2 in the feedback document">
+      <option name="closed" value="true" />
+      <created>1734530178911</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1734530178911</updated>
+    </task>
+    <task id="LOCAL-00058" summary="fix for comment 13.ii.2 in the feedback document">
+      <option name="closed" value="true" />
+      <created>1734537361234</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1734537361234</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,23 +507,6 @@
       <path value="$PROJECT_DIR$/scripts" />
       <path value="$PROJECT_DIR$/scripts/content" />
     </ignored-roots>
-    <MESSAGE value="Corrected formatting: specification.adoc" />
-    <MESSAGE value="Added missing image: specification.adoc" />
-    <MESSAGE value="Updated formatting: charter.adoc" />
-    <MESSAGE value="Updated formatting: specification.adoc" />
-    <MESSAGE value="Updated formatting: landscaping.adoc" />
-    <MESSAGE value="amended .gitignore" />
-    <MESSAGE value="Rearranged navigation" />
-    <MESSAGE value="corrected name" />
-    <MESSAGE value="changed path for 1.0.0" />
-    <MESSAGE value="workspace change" />
-    <MESSAGE value="deleted obsolete files" />
-    <MESSAGE value="added feedback partial" />
-    <MESSAGE value="excluded .idea" />
-    <MESSAGE value="updated nav xref links for 3.1.0 to include the version" />
-    <MESSAGE value="added asciidoctor config" />
-    <MESSAGE value="updated links" />
-    <MESSAGE value="updates user stories pages" />
     <MESSAGE value="updates user stories pages typo" />
     <MESSAGE value="corrected image colour" />
     <MESSAGE value="added class generalisation" />
@@ -447,6 +515,23 @@
     <MESSAGE value="Added the EA file, and a placeholder asciidoc file that will eventually contain the documentation" />
     <MESSAGE value="Completed the concise diagrams for all 5 stages." />
     <MESSAGE value="Minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor fixes" />
+    <MESSAGE value="changes discussed in feedback document." />
+    <MESSAGE value="changes discussed in 12.bi feedback document." />
+    <MESSAGE value="changes discussed in 12.c feedback document." />
+    <MESSAGE value="changes discussed in section 12.d.iii in the feedback document." />
+    <MESSAGE value="Added github link in the introduction" />
+    <MESSAGE value="added clarifications that the Quality assessment reports include the convention reports" />
+    <MESSAGE value="added sharepoint links" />
+    <MESSAGE value="sharepoint became OP's internal sharepoint" />
+    <MESSAGE value="added link to model2owl for comment 11.i in the feedback document" />
+    <MESSAGE value="fix for comment 12.b.ii in the feedback document" />
+    <MESSAGE value="fix for comment 12.g.i in the feedback document" />
+    <MESSAGE value="fix for comment 12.g.ii in the feedback document" />
+    <MESSAGE value="fix for comment 12.h.i in the feedback document" />
+    <MESSAGE value="fix for comment 12.h.ii in the feedback document" />
+    <MESSAGE value="fix for comment 13.ii.1 in the feedback document" />
+    <MESSAGE value="fix for comment 13 (access) in the feedback document" />
+    <MESSAGE value="fix for comment 13.ii.2 in the feedback document" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix for comment 13.ii.2 in the feedback document" />
   </component>
 </project>
