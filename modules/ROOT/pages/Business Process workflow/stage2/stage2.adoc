@@ -53,7 +53,7 @@ image::data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQ
 _Application and Technology Layers of the “Designing conceptual model” stage diagram_
 
 
-The “Conceptual Model (editable)” Business Object is translated into the “Enterprise Architect UML Model” Data Object that represents the UML model, which is in turn translated in the “Enterprise Architect Database in .qeax format” artefact located on the ”develop” or “release.X.Y.Z” branch of the https://github.com/OP-TED/epo-conceptual-model[GitHub OP-TED/epo-conceptual-model] repository. The .qeax file can be edited on Enterprise Architect 16 or 17. For simplicity, the owl generated artefacts used by the “Dev Team internal review” process are omitted from this diagram, as they are explained in the xref:../stage3/stage3.adoc[“Preparing Semantic Data Specification Version Release” Stage] in detail. +
+The “Conceptual Model (editable)” Business Object is translated into the “Enterprise Architect UML Model” Data Object that represents the UML model, which is in turn translated in the “Enterprise Architect Database in .qeax format” artefact located on the ”develop” or “release.X.Y.Z” branch of the https://github.com/OP-TED/epo-conceptual-model[GitHub OP-TED/epo-conceptual-model] repository. The .qeax file can be edited on Enterprise Architect 16 or 17. For simplicity, the owl generated artefacts used by the “Dev Team internal review” process are omitted from this diagram, as they are explained in the xref:../stage3/stage3.adoc[Preparing Semantic Data Specification Version Release Stage] in detail.
 
 
 
