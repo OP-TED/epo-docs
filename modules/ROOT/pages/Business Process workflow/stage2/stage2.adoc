@@ -36,11 +36,9 @@ In the ”*CM Working Group Meeting*” business process, that takes place durin
 Changes to the Conceptual Model may be needed as a result of a review from a later stage of the workflow such as the Product Owner reviewing the SDS, in the “Product Owner internal review” business process, or the Wider Public reviewing the new release candidate during the “Review the release candidate” business process.
 
 * If changes are needed after the “Product Owner internal review” business process, then the changes happen on the develop branch.
-<<<<<<< HEAD
-* If the changes happen during the “Review the release candidate” business process (by the Wider Public), then the “Fixing Model Bugs in the release version” business process is invoked. During this process, the Conceptual Model file is updated in the release branch of the GitHub OP-TED/epo-conceptual-model.
-=======
-* If the changes happen during the “Review the release candidate” business process by the Wider Public (read more about this business process  xref:Business Process workflow/stage4/stage4.adoc#DWGWPR[here]), then the “Fixing Model Bugs in the release version” business process is invoked. During this process, the Conceptual Model file is updated in the release branch of the OP/epo-conceptual-model.
->>>>>>> de79c6bae97441da0ed761ee579c417faeb97376
+
+* If the changes happen during the “Review the release candidate” business process by the Wider Public (read more about this business process  xref:Business Process workflow/stage4/stage4.adoc[here]), then the “Fixing Model Bugs in the release version” business process is invoked. During this process, the Conceptual Model file is updated in the release branch of the GitHub OP-TED/epo-conceptual-model.
+
 
 In the “*Porting the bug fixes into the trunk*” business process, the changes done in the previous “Fixing Model Bugs in the release version” business process are replicated in the develop branch of the GitHub OP-TED/epo-conceptual-model. This replication happens because there is no possibility to edit EA files in parallel and then have an organic easy merge. However, if no new trunk-based development has happened on the develop branch (e.g., no new modules have been developed), then this can be done as a simple branch merge.
 
@@ -54,11 +52,9 @@ image::data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQ
 
 _Application and Technology Layers of the “Designing conceptual model” stage diagram_
 
-<<<<<<< HEAD
+
 The “Conceptual Model (editable)” Business Object is translated into the “Enterprise Architect UML Model” Data Object that represents the UML model, which is in turn translated in the “Enterprise Architect Database in .qeax format” artefact located on the ”develop” or “release.X.Y.Z” branch of the https://github.com/OP-TED/epo-conceptual-model[GitHub OP-TED/epo-conceptual-model] repository. The .qeax file can be edited on Enterprise Architect 16 or 17. For simplicity, the owl generated artefacts used by the “Dev Team internal review” process are omitted from this diagram, as they are explained in the xref:workflow/Business Process workflow/stage3/stage3.adoc[“Preparing Semantic Data Specification Version Release” Stage] in detail. +
-=======
-The “Conceptual Model (editable)” Business Object is translated into the “Enterprise Architect UML Model” Data Object that represents the UML model, which is in turn translated in the “Enterprise Architect Database in .qeax format” artefact located on the ”develop” or “release.X.Y.Z” branch of the https://github.com/OP-TED/epo-conceptual-model[OP/epo-conceptual-model] repository. The .qeax file can be edited on Enterprise Architect 16 or 17. For simplicity, the owl generated artefacts used by the “Dev Team internal review” process are omitted from this diagram, as they are explained in the xref:/Business Process workflow/stage3/stage3.adoc[“Preparing Semantic Data Specification Version Release” Stage] in detail. +
->>>>>>> de79c6bae97441da0ed761ee579c417faeb97376
+
 
 
 
