@@ -69,29 +69,16 @@ _ SDS Version” stage_
 
 
 
-** In order to publish a release on https://op.europa.eu/en/web/cellar[Cellar], TED provides One self-sufficient SDS distribution package for each ePO module In Cellar (ideally in the same structure as the one on GitHub) to the EU Vocabularies team.
+In order to publish a release on https://op.europa.eu/en/web/cellar[Cellar], TED provides One self-sufficient SDS distribution package for each ePO module In Cellar (ideally in the same structure as the one on GitHub) to the EU Vocabularies team.
 ** That package should be in the form of the https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/METS_ZIP[METS specification] and should contain Core, SHACL, restrictions, single HTML page documentation, deprecated URIs and change notes/release notes.
-** The EU vocabularies team loads each module (including all the files) into Cellar as .OWL/.TTL/.HTML/.md files and does not activate ePO in Cellar (i.e. the Cellar CDM model is not affected by ePO).
+** The EU vocabularies team loads each module (including all the files) into Cellar as .OWL/.TTL/.HTML/.md files and does not activate ePO in Cellar (i.e. https://op.europa.eu/en/web/eu-vocabularies/cdm[the Cellar CDM model] is not affected by ePO).
 
-* The following points are not discussed/addressed yet:
-** Path 1: go Cellar way (fulfilling https://interoperable-europe.ec.europa.eu/collection/oeg-upm/news/fair-ontologies[FAIR publishing requirements] ) VS Path 2: Dedicate ePO dereferencing server (then full control and FAIR publishing is possible)
-** How do we dereference RDF  ePO URI calls? If we want to use Cellar for that, it might imply activation, and hence conflict with CDM, and hence not an option. Alternative solutions need to be searched.
-** How do we dereference HTML ePO URIs calls? If Cellar can provide a good dereferencing mechanism, this shall point to a single HTML page in the style of https://respec.org/docs/[ReSpec], https://github.com/dgarijo/Widoco[Widoco],or a custom reference documentation.
-*** Please bear in mind that Reference documentation for the purpose of URI HTML dereferencing, is not the same as Reference documentation for the purpose of including it into the TED Developer docs. The former must be a single page HTML document, the latter must be single or multi page [AsciiDoc].
-*** Maintenace of Persistent URIs, in accordance with https://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://interoperable-europe.ec.europa.eu/sites/default/files/inline-files/Towards-a-common-approach-for-the-management-of-persistent-URIs-by-EU-institutions_v.0.53.pdf[PURI conventions released by the European Commission in 2016] (see documents on EU https://www.w3.org/TR/cooluris/#semweb[Cool URI])
+* There is a pending question on how to handle Dereferencing. Dereferenceable URIs are the backbone of Linked Data. They can be looked up (dereferenced) by both humans and machines to provide useful information about the resource that the URI identifies (in HTML for humans and RDF for machines), which in turn refers to other URIs, and so on. Please bear in mind that Reference documentation for the purpose of URI HTML dereferencing, is not the same as Reference documentation for the purpose of including it into the TED Developer docs. The former must be a single page HTML document, the latter can be single or multi page [AsciiDoc].
 
 
-The following requirements Need to be fulfilled for a FAIR ontology publication
+Dereferencing as well Deprication mechanisms are needed in order for an RDF graph to fullfill https://interoperable-europe.ec.europa.eu/collection/oeg-upm/news/fair-ontologies[FAIR publishing requirements]. The question is who should implement this, the ePO team or the Cellar team?
 
-* https://interoperable-europe.ec.europa.eu/collection/oeg-upm/news/fair-ontologies[FAIR publishing requirements] -
-PURI – based on EU-PURI scheme
+In case Cellar implements Dereferencing then, it may need to activate the ontology in order to dereference RDF, which can cause conflict with the CDM. If that is the case then  alternative solutions should to be investigated. If a solution is found the Cellar also needs to provide a good HTML dereferencing mechanism, this shall point to a single HTML page in the style of https://respec.org/docs/[ReSpec], https://github.com/dgarijo/Widoco[Widoco],or a custom reference documentation.
 
-* Dereferencing mechanism
-** Human readable content – need single HTML page (reSpec)
-** RDF machine readable – TTL ePO Core (nothing else)
-** Deprecated concepts in RDF – to fulfill the URI persistence
-** Deprecated concepts in HTML– to fulfill the URI persistence
-* Ontology metadata
-** Available In core artefact – and METS format
-
+In case the ePO team  implements Dereferencing, this will require a dedicated dereferencing server for both RDF and HTML. Also in this case, the ePO team should maintain Persistent URIs, in accordance with https://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://interoperable-europe.ec.europa.eu/sites/default/files/inline-files/Towards-a-common-approach-for-the-management-of-persistent-URIs-by-EU-institutions_v.0.53.pdf[PURI conventions released by the European Commission in 2016] (see documents on EU https://www.w3.org/TR/cooluris/#semweb[Cool URI]), as well as maintain deprecated concepts for both RDF and HTML formats to fulfill persistence of the URIs.
 
