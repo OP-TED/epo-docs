@@ -31,7 +31,7 @@ _The SDS Generation substage_
 
 
 
-In the “Produce business view of the Conceptual Model” business process, the Development Team exports an HTML page for each folder in the Enterprise Architect (including the folder of the new ePO module) creating the “Conceptual Model visual documentation” business object on the develop branch of the https://github.com/OP-TED/epo-conceptual-model[GitHub OP-TED/epo-conceptual-model] repository. This is done automatically by the Enterprise Architect program. These webpages will be reviewed by the Development Team and the Product Owner in their respective business processes later in this stage. In the next stage, “publishing candidate SDS version” the website will be xref:../stage4/stage4.adoc[integrated] into https://github.com/OP-TED/epo-docs[GitHub OP-TED/epo-docs] repository and from there published in the TED developer documentation website.
+In the “Produce business view of the Conceptual Model” business process, the Development Team exports an HTML page for each folder in the Enterprise Architect (including the folder of the new ePO module) creating the “Conceptual Model visual documentation” business object on the develop branch of the https://github.com/OP-TED/epo-conceptual-model[GitHub OP-TED/epo-conceptual-model] repository. This is done automatically by the Enterprise Architect program. These HTML files will be reviewed by the Development Team and the Product Owner in their respective business processes later in this stage. In the next stage, “publishing candidate SDS version” the HTML pages will be xref:../stage4/stage4.adoc[integrated] into https://github.com/OP-TED/epo-docs[GitHub OP-TED/epo-docs] repository and from there published in the TED developer documentation website.
 
 
 
