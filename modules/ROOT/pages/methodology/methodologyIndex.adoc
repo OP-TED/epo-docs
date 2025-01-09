@@ -10,4 +10,4 @@ The document follows a structured EA view, using ArchiMate to provide a consiste
 
 This document does not include technical specifications of supporting tools, such as Model2Owl, Enterprise Architect UML Editor, GitHub Actions, Git clients, etc., or descriptions of procurement data models. Instead, the document focuses on the procedural framework, artefact requirements, and lifecycle stages suitable for the ePO specific case, leaving the internal workings of associated technologies beyond its scope.
 
-All the Archimate diagrams used for the workflow can be generated from the Enterprise Architect file found xref:github-workflow.qeax[here].
+All the Archimate diagrams used for the workflow can be generated from the Enterprise Architect file found link:{attachmentsdir}/github-workflow.qeax[here].
