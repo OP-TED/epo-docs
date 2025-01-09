@@ -7,4 +7,7 @@ The document follows a structured EA view, using ArchiMate to provide a consiste
 * Defining artefact versioning within GitHub and across repositories.
 * Providing clarity on required artefacts, their purposes, and generation methods.
 * Applying simplified views of Business, Application, and Technology layers, with realised connections and support dependencies across layers.
-This document does not include technical specifications of supporting tools, such as Model2Owl, Enterprise Architect UML Editor, GitHub Actions, Git clients, etc., or descriptions of procurement data models. Instead, the document focuses on the procedural framework, artefact requirements, and lifecycle stages suitable for ePO specific case, leaving the internal workings of associated technologies beyond its scope.
+
+This document does not include technical specifications of supporting tools, such as Model2Owl, Enterprise Architect UML Editor, GitHub Actions, Git clients, etc., or descriptions of procurement data models. Instead, the document focuses on the procedural framework, artefact requirements, and lifecycle stages suitable for the ePO specific case, leaving the internal workings of associated technologies beyond its scope.
+
+All the Archimate diagrams used for the workflow can be generated from the Enterprise Architect file found xref:github-workflow.qeax[here].
