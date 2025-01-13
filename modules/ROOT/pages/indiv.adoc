@@ -5,15 +5,7 @@
 :docdate: June 2023
 :sectanchors:
 
-//== Categories:
 
-//[cols="1,1,1,1"]
-//|===
-//|<<_general_meeting_minutes,General Meeting Minutes>>
-//|<<_eCatalogue_meeting_minutes,eCatalogue Meeting Minutes>>
-//|<<_eFulfillment_meeting_minutes,eFulfillment Meeting Minutes>>
-//|<<_eOrdering_meeting_minutes,eOrdering Meeting Minutes>>
-//|===
 
 == Meeting Minutes
 
@@ -21,16 +13,7 @@ Meeting Minutes are ordered by *year*. Most meetings are general, but if a meeti
 
 This does not mean necessarily that this was the only topic addressed in the meeting; it only indicates the original purpose of the meeting, not what was actually discussed in it.
 
-[cols="1,1,1,1,1"]
 
-|===
-|<<2024,2024>>
-|<<2023,2023>>
-|<<2022,2022>>
-|<<2021,2021>>
-|<<2020,2020>>
-|<<2019,2019>>
-|===
 
 [#2024]
 === 2024
