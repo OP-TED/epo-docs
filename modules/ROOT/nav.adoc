@@ -7,6 +7,10 @@
 
 * [.separated]#**General Documentation**#
 * xref:epo-home::guide.adoc[User Guides]
+* xref:epo-home::stories.adoc[Ontology Requirements Specifications Documents]
+** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
+** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
+** xref:epo-home::stories_eInvoicing.adoc[eInvoicing]
 * xref:EPO::conceptual.adoc[Conceptual Models]
 * xref:EPO::glossaries.adoc[Glossaries]
 * xref:EPO::release-notes.adoc[Release Notes]
@@ -15,15 +19,11 @@
 * [.separated]#**Reference Documentation**#
 * xref:epo-home::methodology2024.adoc[Methodology]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
-* xref:epo-home::stories.adoc[User Stories and Natural Language Statements]
-** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
-** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
-** xref:epo-home::stories_eInvoicing.adoc[eInvoicing]
 * xref:epo-home::REFreferences.adoc[Other Reference Documents]
 * xref:epo-home::history.adoc[History and Planned Developments]
 
 * [.separated]#**Working Group Documents**#
-* xref:epo-wgm::wider.adoc[Biannual Meetings]
+* xref:epo-wgm::wider.adoc[Wider Working Group Meetings]
 * xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)]
 * xref:epo-wgm::indiv.adoc[Individual Meeting Reports]
 
