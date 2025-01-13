@@ -49,11 +49,12 @@ image::UserStoriesExamplesTable.png[More examples of user stories]
 
 == *Timeline*
 
+=== 2024 - 2025
+image:2024-2025.png[]
+
 === 2017 - 2023
 image:2017-2023.png[]
 
-=== 2024 - 2025
-image:2024-2025.png[]
 
 [cols="1,2,2"]
 |===
@@ -79,9 +80,9 @@ image:2024-2025.png[]
 |ePO version 4.1.0
 |eAccess & eSubmission modules released in v4.1.0
 
-|August 2024
-|ePO version 4.2.0-rc.1
-|eInvoicing module released in 4.2.0-rc.1
+|December 2024
+|ePO version 4.2.0
+|eInvoicing module released in 4.2.0
 
 |===
 
