@@ -61,7 +61,11 @@ The “Conceptual Model (editable)” Business Object is translated into the “
 == Conceptual Model Conventions[[CMCONV]]
 
 
-The ePO Conceptual Model is designed according to the https://semiceu.github.io/style-guide/1.0.0/gc-conceptual-model-conventions.html[SEMIC style guide UML Conceptual model conventions] and follows ink: https://meaningfy-ws.github.io/ted-model2owl-docs/public-review/uml/conceptual-model-conventions.html[model2owl UML conventions] so that model2owl can be used for SDS artefact generation.
+The ePO Conceptual Model is designed according to https://github.com/OP-TED/model2owl/blob/master/docs/uml-conventions/uml-conventions.pdf[eProcurement UML conceptual model conventions].
+This document is further refined in the https://meaningfy-ws.github.io/ted-model2owl-docs/public-review/uml/conceptual-model-conventions.html[model2owl UML conventions] document.
+
+The set of guidelines from the above mentioned documents are aligned with the https://semiceu.github.io/style-guide/1.0.0/gc-conceptual-model-conventions.html[SEMIC style guide UML Conceptual model conventions], which constitutes an extension of it.
+
 
 === ePO concept life Cycle
 Regarding the ePO life cycle, conventions for controlling which concepts of the Conceptual Model can be published/released are introduced in the form of properties for these elements (status labels for each concept in the EA file as depicted in the image below). These conventions take the form of the following states:
