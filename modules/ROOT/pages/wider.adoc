@@ -1,4 +1,4 @@
-:doctitle: ePO Reports from the Wider Working Group Quarterly Meetings
+:doctitle: ePO Reports from the Wider Working Group Meetings
 :doccode: epo_wgm_prod_010
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
