@@ -41,7 +41,7 @@ RDF representation of the eAccess module can be downloaded link:https://github.c
 
 RDF representation of the eSubmission module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eSubmission[here].
 
-RDF representation of the eSubmission module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eInvoicing[here]
+RDF representation of the eInvoicing module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eInvoicing[here]
 
 RDF representation of the eNotice module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eNotice[here].
 
