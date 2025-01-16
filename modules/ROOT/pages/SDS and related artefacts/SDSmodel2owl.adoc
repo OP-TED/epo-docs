@@ -9,8 +9,7 @@ In this section we explain the purposes of the artefacts (i.e. define requiremen
 “What artefacts are part of the ePO Semantic Data Specification to be distributed as a package”?
 As seen in the figure below, these artefacts are:
 
-*** OWL-deprecated: The “Owl-deprecated” Data Object is both an SDS formal artefact and an Automated evolution artefact Data Object. It realises the “Deprecated ontology concepts (for URI persistence)” Business Object,and represents a MODULE_NAME_deprecated.OWL/.TTL file for each module. Each file contains the deprecated concepts of a specific module. Automatic generation of this artefact by model2owl has not been implemented at the time of writing this document.
-*** OWL-core: The “Owl-core” Data Object realises the “Lightweight Ontology (for interoperability)” business Object and represents the MODULE_NAME.OWL/.TTL ontology file. Each file contains the OWL Ontology Concepts of a specific module. The files are available in https://www.w3.org/TR/rdf-syntax-grammar/[XML/RDF] and https://www.w3.org/TR/turtle/[Turtle/RDF] formats.
+*** OWL-core: The “Owl-core” Data Object realises the “Lightweight Ontology (for interoperability)” business Object and represents the MODULE_NAME.OWL/.TTL ontology file. Each file contains the OWL Ontology Concepts of a specific module as well as deprecated concepts for that module. The files are available in https://www.w3.org/TR/rdf-syntax-grammar/[XML/RDF] and https://www.w3.org/TR/turtle/[Turtle/RDF] formats.
 *** Owl-restrictions: The “Owl-restrictions” Data Object realises the “Ontology Axiomatization (for inference)” business Object and represents the MODULE_NAME_restrictions.OWL/.TTL ontology restrictions file for each module. Each file contains the OWL Ontology restrictions such as cardinalities and range of properties for a specific module. The files are available in https://www.w3.org/TR/rdf-syntax-grammar/[XML/RDF] and https://www.w3.org/TR/turtle/[Turtle/RDF] formats.
 *** SHACL-shapes: The “SHACL-shapes” Data Object realises the “Application Profile (for interoperability)” business Object and represents the MODULE_NAME_shapes.OWL/.TTL shapes ontology file for each module. https://www.w3.org/TR/shacl/[SHACL ]( Shapes Constraint Language) is a W3C standard used for validating the contents of an RDF graph. Both files are available in https://www.w3.org/TR/rdf-syntax-grammar/[XML/RDF] and https://www.w3.org/TR/turtle/[Turtle/RDF] formats.
 *** Note that although the “XMI based reference document” Data Object representing the glossary artefact of a specific module should be part of the SDS and is indeed part of each release in the https://github.com/OP-TED/ePO/tree/master/glossary[OP-TED/ePO] repository, for the purposes of this document we treat it as part of the ePO SDS documentation as it essentially documents all the concepts of the Ontology.
@@ -66,7 +65,6 @@ _Quality assessment reports diagram_
 ==== Purpose 4:
 “What artefacts should be used for tracking evolution and changes?” As seen in the figure below, the “Automated evolution artefact” Data Object realises the “SDS evolution documentation” Business Object and is a generalization of the following artefacts:
 
-*** The “Owl-deprecated” Data Object, as described in Purpose 1 earlier in this section.
 *** The “Change Notes” Data Object, as described in Purpose 2 earlier in this section.
 *** The “OWL-core diff report” Data Object realises the “SDS diffing report” Business Object and contains the difference between the MODULE_NAME.OWL/.TTL files of the last release and this release for each module. It is automatically created by model2owl, and it is consulted by the Development Team when reviewing newly generated SDS artefacts.
 *** The “OWL-restriction diff report” Data Object realises the “SDS diffing report” Business Object and contains the difference between the MODULE_NAME_restrictions.OWL/.TTL files of the last release and this release for each module. It is automatically created by model2owl, and it is consulted by the Development Team when reviewing newly generated SDS artefacts.
@@ -100,7 +98,7 @@ In this section we list the model2owl functionalities.
 *** SHACL Diff report
 *** Change notes (based on diffing). Currently, Change notes are added manually by the Development Team and are prone to errors.
 ** Generation of formal SDS artefacts
-*** OWL-deprecated – for the purpose of maintaining concept persistence i.e. https://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://interoperable-europe.ec.europa.eu/sites/default/files/inline-files/Towards-a-common-approach-for-the-management-of-persistent-URIs-by-EU-institutions_v.0.53.pdf[EU-PURIs]), generated based on the diffing
+*** Inclusion ofdeprecated concepts in the OWL-core – for the purpose of maintaining concept persistence i.e. https://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://interoperable-europe.ec.europa.eu/sites/default/files/inline-files/Towards-a-common-approach-for-the-management-of-persistent-URIs-by-EU-institutions_v.0.53.pdf[EU-PURIs]), generated based on the diffing
 ** Validation/
 *** SHACL based validation of OWL-core, OWL-restrictions, SHACL shapes
 ** Generation of reference documentation
