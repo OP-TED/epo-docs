@@ -24,6 +24,7 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [cols="1,1,1,1,1"]
 
 |===
+|<<2025,2025>>
 |<<2024,2024>>
 |<<2023,2023>>
 |<<2022,2022>>
@@ -31,6 +32,15 @@ This does not mean necessarily that this was the only topic addressed in the mee
 |<<2020,2020>>
 |<<2019,2019>>
 |===
+
+
+[#2025]
+=== 2025
+
+xref:notes/2025-01-16-wgm.adoc[2025-01-16 (Github Issues related with ePO - eForms mappings)]
+
+xref:notes/2025-01-14-wgm.adoc[2025-01-14 (Github Issues related with ePO - eForms mappings)]
+
 
 [#2024]
 === 2024
