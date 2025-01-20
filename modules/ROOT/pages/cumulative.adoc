@@ -4,6 +4,8 @@
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
 :docdate: June 2023
 
+xref:wgm-2025.adoc[Cumulative content of Working Group Meetings: 2025]
+
 xref:wgm-2024.adoc[Cumulative content of Working Group Meetings: 2024]
 
 xref:wgm-2023.adoc[Cumulative content of Working Group Meetings: 2023]

@@ -13,7 +13,12 @@ Meeting Minutes are ordered by *year*. Most meetings are general, but if a meeti
 
 This does not mean necessarily that this was the only topic addressed in the meeting; it only indicates the original purpose of the meeting, not what was actually discussed in it.
 
+[#2025]
+=== 2025
 
+xref:notes/2025-01-16-wgm.adoc[2025-01-16]
+
+xref:notes/2025-01-14-wgm.adoc[2025-01-14 (Github Issues related with ePO - eForms mappings)]
 
 [#2024]
 === 2024
