@@ -1,6 +1,6 @@
-= Stage 4: Publishing Candidate Semantic Data Specification Version
+= Stage 4: Publishing Candidate Semantic Data Specification Version(on the ePO and epo-docs repositories)
 
-In this stage, the reviewed SDS formal artefacts are moved to the ePO repository as a release candidate and the existing SDS documentation artefacts are moved to the ePO-docs repository where the rest of the SDS documentation artefacts are generated and uploaded on the documentation website of the release candidate. The said website is also generated earlier at this stage. At the end of this stage the Product Owner invites the Wider Public to review the release candidate and decides whether or not to incorporate any feedback received to this release candidate or to a future release.
+In this stage, the reviewed SDS formal artefacts on the Conceptual Model repository are moved to the ePO repository //add link why we have different reps// to become a release candidate and the existing SDS documentation artefacts are moved to the ePO-docs repository where the rest of the SDS documentation artefacts are generated and uploaded on the documentation website of the release candidate. The said website is also generated earlier at this stage. At the end of this stage the Product Owner invites the Wider Public to review the release candidate and decides whether or not to incorporate any feedback received to this release candidate or to a future release.
 
 == Business view
 
@@ -43,6 +43,12 @@ In the subsequent “Produce release notes” business Process, The Development 
 In the next Business Process, “Mark the release candidate documentation” the Development Team creates a GitHub tag on the release branch of the https://github.com/OP-TED/epo-docs[GitHub OP-TED/epo-docs] repository similar to the one mentioned in “Mark the release candidate SDS” Business Process.
 
 After both “Mark the release candidate SDS” and “Mark the release candidate documentation” Business Processes are concluded, the “Create candidate release” Business Process is triggered. During this process the Product Owner creates a GitHub candidate release in the GitHub OP-TED/epo repository from the existent tag, using the release notes provided in the documentation repository.
+
+
+
+
+ADD Merge from release to develop Business Proccess here.
+The Product Owner makes sure that all The GitHub Issues are implemented for this release.
 
 === Documentation website generation and Wider Public Review substage[[DWGWPR]]
 
