@@ -5,7 +5,7 @@
 
 In this section we explain the purposes of the artefacts (i.e. define requirements, in line with SEMIC style guide)
 
-==== Purpose 1:
+==== Purpose 1: SDS formal artefacts[[P1]]
 “What artefacts are part of the ePO Semantic Data Specification to be distributed as a package”?
 As seen in the figure below, these artefacts are:
 
@@ -25,7 +25,7 @@ image::SDS Documentation artefacts.bmp[]
 _ePO SDS Documentation artefacts_
 
 
-==== Purpose 2:[[P2]]
+==== Purpose 2: SDS documentation artefacts[[P2]]
 “What artefacts are parts of the ePO Semantic Data Specification documentation?” As seen in the figure above, these artefacts are:
 
 
@@ -47,7 +47,7 @@ _The Release notes of a new ePO Release_
 *** The “Change Notes” Data Object realises the “Change Notes” Business Object and represents the change notes of the current release located in the release notes footnote:AsciiDoc[http://asciidoc.org
 ] Asciidoc file mentioned in the previous bullet point.  The change notes should be automatically created by model2owl by comparing the current release with the latest release. Automatic generation of this artefact by model2owl has not been implemented at the time of writing this document. It is currently written manually by the Development Team.
 
-==== Purpose 3:
+==== Purpose 3: Quality assesssment reports artefacts
 
 “What artefacts should be used for quality control while preparing the ePO Semantic Data Specification?” As seen in the figure below, these artefacts are:
 
@@ -62,7 +62,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAGfCAIAAACocTx9AAAqlEl
 _Quality assessment reports diagram_
 
 
-==== Purpose 4:
+==== Purpose 4: SDS evolution documentation
 “What artefacts should be used for tracking evolution and changes?” As seen in the figure below, the “Automated evolution artefact” Data Object realises the “SDS evolution documentation” Business Object and is a generalization of the following artefacts:
 
 *** The “Change Notes” Data Object, as described in Purpose 2 earlier in this section.
