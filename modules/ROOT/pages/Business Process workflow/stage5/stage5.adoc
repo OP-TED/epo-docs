@@ -28,7 +28,7 @@ In the “Decide to release” Business Process, the Product Owner decides to re
 
 In the “Update the documentation and publish the website” Business Process, the Product Owner removes the “rc” mark from the asciidoc pages of the documentation on the release/x.y.z branch of the https://github.com/OP-TED/epo-docs[OP-TED/epo-docs] repository. Consequently, the Documentation Website must be generated again to reflect this change.
 
-On the https://github.com/OP-TED/ePO[OP-TED/ePO] repository, a release tag is created on the same commit as the latest release candidate tag in the “Mark the release version” business Process. Then, in the
+On the https://github.com/OP-TED/ePO[OP-TED/ePO] repository, a release tag is created on the same commit as the latest release candidate tag in the “Tag the release version” business Process. Then, in the
 “The latest candidate release is marked as stable version” Business Process, The GitHub pre-release flag is unchecked, making the release stable as seen in the figure below.
 
 
@@ -36,12 +36,12 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABmgAAASJCAIAAABTnASBAACAAEl
 
 _The v4.2.0-rc1 tag is currently set as a pre-release tag. To change it, just click at the checkbox “Set as the latest release” at the bottom of the screen._
 
-After the GitHub pre-release flag is unchecked, the release can be merged into the Develop and Master branches of the https://github.com/OP-TED/ePO[OP-TED/ePO] repository.
+After the GitHub pre-release flag is unchecked, the release can be merged into the Master branch of the https://github.com/OP-TED/ePO[OP-TED/ePO] repository.
 
 During the “Final Business Review” Business Process, the Product Owner makes sure that everything is as it should be regarding the new Release. The Product Owner does the following checks:
 
 . There should be a Release tag on the same commit as the latest release candidate tag in the https://github.com/OP-TED/ePO[OP-TED/ePO] repository.
-. The develop and master branches should contain the correct versions of the release. (not the rc version or any other version).
+. The master branch should contain the correct versions of the release. (not the rc version or any other version).
 . The GitHub pre-release flag should be unchecked.
 . The README files of the Release should be correct, and all links should be working.
 . The public documentation website (including all relevant files) should also contain the correct versions of the release (not the rc version or any other version).
