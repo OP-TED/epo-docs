@@ -82,7 +82,7 @@ The concept is under Working Group discussion or has not been discussed yet. In 
 The concept has a Working Group approval tag and should be moved to its respective module subfolder.
 
 *Implemented* +
-The concept has been published in the current stable ePO release or is ready for publication in the upcoming release.
+The concept has been published in the previous stable ePO release or is ready for publication in the upcoming release.
 
 Note that due to limitations on EA,  Proposed,  Approved and  Implemented ((pre-)release stages) are only possible for Classes.
 
@@ -121,26 +121,26 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAAEkCAYAAABwsMl0AACAAEl
 
 == Conceptual Model version management[[CMVM]]
 
-In this section, we describe the problem of managing the different versions of the binary EA Conceptual Model QEAX file and present the current solution. We also briefly mention two alternative ways of versioning the Conceptual Model.
+In this section, we describe the problem of managing the different versions of the binary EA Conceptual Model .qeax file and present the current solution. We also briefly mention two alternative ways of versioning the Conceptual Model.
 
 Enterprise Architect (EA) binary files, such as .eap or .qeax project files, cannot be properly versioned in traditional version control systems (e.g., Git) for several reasons related to their nature and how version control systems (VCS) handle files:
 
-1. Binary Nature and Lack of Transparency
+1. *Binary Nature*:
 EA .qeax files are stored in a binary format, making their content opaque and incompatible with systems optimized for text files. Changes cannot be tracked at a granular level, so even minor updates (e.g., modifying a diagram) result in the entire file being marked as changed. This prevents meaningful insights into what was modified.
 
-2. Inefficient Storage and Versioning
+2. *Inefficient Storage and Versioning*:
 Version control systems store differences between file versions (deltas) for text files. For binary files like .qeax, the entire file must be stored for every change, leading to significant storage inefficiencies, especially for large EA projects.
 
-3. No Conflict Resolution
+3. *No Conflict Resolution*:
 When multiple users edit the same .qeax file, version control systems cannot resolve conflicts because binary files lack a structured format for merging. One user's changes will overwrite another's, risking data loss.
 
-4. Limited Collaboration
-EA .qeax files are monolithic, meaning the entire project is stored in a single file. This prevents team members from working on different parts of the project in parallel, creating bottlenecks and reducing productivity.
+4. *Limited Collaboration*:
+EA .qeax files are monolithic, meaning the entire project is stored in a single file. This prevents team members from working on different parts of the project in parallel, creating bottlenecks and compromising productivity.
 
-5. Lack of Diffing and Comparison Tools
+5. *Lack of Diffing and Comparison Tools*:
 Version control tools rely on text-based content to visualize changes and show differences between versions. Since .qeax files are binary, these tools cannot provide a meaningful diff, making it impossible to review or audit changes over time.
 
-6. Scalability Challenges
+6. *Scalability Challenges*:
 As the size of a .qeax file grows, these issues compound, making it increasingly difficult to manage projects effectively using a version control system.
 
 
@@ -150,7 +150,7 @@ The approach in the ePO project until now was to use pure Git. This method force
 * Maintaining different EA files in different branches
 * Requires re-implementation of the work done in parallel during the code-freeze.  To mitigate this, good documentation practices are followed such as GitHub issues updates, and keep meeting minutes, so that it is easy to re-implement any release changes in the trunk after the lift of the code freeze. For more information on the current GitHub approach, consult section 5.
 
-There are other approaches to CM versioning listed below. Both of these approaches seem problematic when compared to the current approach. It would be a good idea to further investigate these approaches or any others as future work.
+There are other approaches to CM versioning listed below. Both of these approaches seem problematic when compared to the current approach. Further investigation needs to be considered on these approaches or any others such as:
 
 ** The creators of the Enterprise Architect software have their own cloud-based infrastructure, which allows having servers as repositories of EA files with version control. However, such solutions are expensive, and experimental.
 

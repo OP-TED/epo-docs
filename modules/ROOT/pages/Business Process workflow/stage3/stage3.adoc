@@ -85,7 +85,7 @@ _Publish HTML versions in EA_
 
 In the "Dev Team Conceptual Model visual representation review" Business Process, the Development team reviews  the "Conceptual Model visual representation" business Object.  If any errors or bugs are encountered, the Development Team fixes these errors by re-doing all the business processes of the Workflow from the “ORSD consolidation” Business Process, to the “Dev Team internal review” Business Process. Note that during this fixing of errors the “CM Working Group Meeting” Business Process is omitted since the changes to the Ontology are purely technical. However, if there is a problem in the conventions this might require the WG to confirm what was meant by the wrong convention to allow it to be corrected.
 
-In the "Dev Team pull request to Release branch" Business Process, the Development team does a pull request in order to merge the develop branch of the https://github.com/OP-TED/epo-conceptual-model[GitHub OP-TED/epo-conceptual-model] to the specific release branch  “release/X.Y.Z” of the same repository. (for more on the creation of the“release/X.Y.Z” branch see xref:Business Process workflow/stage1/stage1.adoc[])
+In the "Dev Team pull request to Release branch" Business Process, the Development team does a pull request in order to merge the develop branch of the https://github.com/OP-TED/epo-conceptual-model[GitHub OP-TED/epo-conceptual-model] to the specific release branch  “release/X.Y.Z” of th(for more information on the e same repository. creation of the“release/X.Y.Z” branch see xref:Business Process workflow/stage1/stage1.adoc[])
 
 In the “Product Owner internal review (CM repository)” Business Process, In the context of the pull request mentioned in the "Dev Team pull request to Release branch" Business Process above, The Product Owner reviews all Objects generated in this stage for each module. Specifically:
 
@@ -100,17 +100,16 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACNgAAANbCAYAAACaL7BDAACAAEl
 
 _Metadata in  the latest https://github.com/OP-TED/ePO/blob/master/implementation/ePO_core/owl_ontology/ePO_core.ttl[_ePO_core.ttl] file._ 
 
-The reviewer should check that the following properties have the correct values:
+***This should not be here,. Expand and put it underneath the list of things to check. The reviewer should check that the following properties have the correct values:
 
 [start=4]
 . The SDS reference documents (Glossaries).
 . The Conceptual Model visual documentation (HTML pages).
 
 
-If any errors or bugs are encountered, the Product Owner informs the Development Team, and the whole Workflow from the “ORSD consolidation” Business Process, to the current Business Process is repeated.
+If any errors or bugs are encountered, the Product Owner informs the Development Team, and the Development Team fixes these errors by re-doing all the business processes of the Workflow from the “ORSD consolidation” Business Process, to the “Dev Team internal review” Business Process. Note that during this fixing of errors the “CM Working Group Meeting” Business Process is omitted since the changes to the Ontology are purely technical. However, if there is a problem in the conventions this might require the WG to confirm what was meant by the wrong convention to allow it to be corrected.
 
-If no errors are found during the “Product Owner internal review (CM repository)” Business Process, then the  +
-“Product Owner accepts pull request to release branch in the CM repository and creates a tag.” Business Process takes place. During this Process, the Product Owner communicates to the Development Team that no changes are needed in the current version of the SDS. The  Product Owner also creates a tag from the release branch of the CM repository
+If no errors are found during the “Product Owner internal review (CM repository)” Business Process, then the “Product Owner accepts pull request to release branch in the CM repository and creates a tag.” Business Process takes place. During this Process, the Product Owner accepts the pull request, and creates a tag on the release branch of the CM repository.
 
 
 

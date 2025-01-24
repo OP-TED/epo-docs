@@ -6,27 +6,27 @@
 
 
 * xref:epo-home::index.adoc[ePO Home]
+* ePO Workflow Documentation
+** xref:index.adoc[Introduction]
 
-* xref:index.adoc[Introduction to the ePO workflow documentation]
+** xref:Business Process workflow/businessProcessWorkflowIndex.adoc[ePO Workflow]
+*** xref:Business Process workflow/stakeholders.adoc[Stakeholders]
+*** xref:Business Process workflow/businessProcessOverview.adoc[Business process overview]
+*** xref:Business Process workflow/stage1/stage1.adoc[Stage 1: Requirements Gathering]
+*** xref:Business Process workflow/stage2/stage2.adoc[Stage 2: Designing Conceptual Model]
+*** xref:Business Process workflow/stage3/stage3.adoc[Stage 3: Preparing Semantic Data Specification Version Release]
+*** xref:Business Process workflow/stage4/stage4.adoc[Stage 4: Publishing Candidate Semantic Data Specification Version]
+*** xref:Business Process workflow/stage5/stage5.adoc[Stage 5: Publishing Stable SDS Version]
 
-* xref:Business Process workflow/businessProcessWorkflowIndex.adoc[Business Process workflow]
-** xref:Business Process workflow/stakeholders.adoc[Stakeholders]
-** xref:Business Process workflow/businessProcessOverview.adoc[Business process overview]
-** xref:Business Process workflow/stage1/stage1.adoc[Stage 1: Requirements Gathering]
-** xref:Business Process workflow/stage2/stage2.adoc[Stage 2: Designing Conceptual Model]
-** xref:Business Process workflow/stage3/stage3.adoc[Stage 3: Preparing Semantic Data Specification Version Release]
-** xref:Business Process workflow/stage4/stage4.adoc[Stage 4: Publishing Candidate Semantic Data Specification Version]
-** xref:Business Process workflow/stage5/stage5.adoc[Stage 5: Publishing Stable SDS Version]
+** xref:SDS and related artefacts/SDSmodel2owl.adoc[ePO artefacts]
+** xref:GitHub repositories/githubRepositories.adoc[GitHub Repositories]
 
-* xref:methodology/methodologyIndex.adoc[Workflow Methodology]
-** xref:methodology/workflowAsEA.adoc[Workflow description as Enterprise Architecture model]
-** xref:methodology/SDA.adoc[Service-Driven Approach (SDA) to workflow management]
-** xref:methodology/archimateElements.adoc[Employed ArchiMate elements]
+** xref:methodology/methodologyIndex.adoc[Workflow Documentation Methodology]
+*** xref:methodology/workflowAsEA.adoc[Workflow Documentation description as Enterprise Architecture model]
+*** xref:methodology/SDA.adoc[Service-Driven Approach (SDA) to Workflow Documentation management]
+*** xref:methodology/archimateElements.adoc[Employed ArchiMate elements]
 
-* xref:SDS and related artefacts/SDSmodel2owl.adoc[SDS and related artefacts]
-* xref:GitHub repositories/githubRepositories.adoc[GitHub Repositories]
-
-* xref:legend.adoc[List of Abbreviations]
+** xref:legend.adoc[List of Abbreviations]
 
 
 

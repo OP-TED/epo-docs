@@ -1,41 +1,40 @@
-= SDS artefact groups and purposes
+= ePO artefacts
 
+In this section we explain the purposes and requirements of the artefacts which are in line with the SEMIC style guide.
 
-
-
-In this section we explain the purposes of the artefacts (i.e. define requirements, in line with SEMIC style guide)
-
-==== Purpose 1: SDS formal artefacts[[P1]]
-“What artefacts are part of the ePO Semantic Data Specification to be distributed as a package”?
-As seen in the figure below, these artefacts are:
-
-*** OWL-core: The “Owl-core” Data Object realises the “Lightweight Ontology (for interoperability)” business Object and represents the MODULE_NAME.OWL/.TTL ontology file. Each file contains the OWL Ontology Concepts of a specific module as well as deprecated concepts for that module. The files are available in https://www.w3.org/TR/rdf-syntax-grammar/[XML/RDF] and https://www.w3.org/TR/turtle/[Turtle/RDF] formats.
-*** Owl-restrictions: The “Owl-restrictions” Data Object realises the “Ontology Axiomatization (for inference)” business Object and represents the MODULE_NAME_restrictions.OWL/.TTL ontology restrictions file for each module. Each file contains the OWL Ontology restrictions such as cardinalities and range of properties for a specific module. The files are available in https://www.w3.org/TR/rdf-syntax-grammar/[XML/RDF] and https://www.w3.org/TR/turtle/[Turtle/RDF] formats.
-*** SHACL-shapes: The “SHACL-shapes” Data Object realises the “Application Profile (for interoperability)” business Object and represents the MODULE_NAME_shapes.OWL/.TTL shapes ontology file for each module. https://www.w3.org/TR/shacl/[SHACL ]( Shapes Constraint Language) is a W3C standard used for validating the contents of an RDF graph. Both files are available in https://www.w3.org/TR/rdf-syntax-grammar/[XML/RDF] and https://www.w3.org/TR/turtle/[Turtle/RDF] formats.
-*** Note that although the “XMI based reference document” Data Object representing the glossary artefact of a specific module should be part of the SDS and is indeed part of each release in the https://github.com/OP-TED/ePO/tree/master/glossary[OP-TED/ePO] repository, for the purposes of this document we treat it as part of the ePO SDS documentation as it essentially documents all the concepts of the Ontology.
-
-
+==== SDS formal artefacts[[P1]]
+The ePO Semantic Data Specification formal artefacts are depicted in the diagram below.
 
 image::SDS formal artefacts.bmp[]
 _ePO SDS formal artefacts_
 
+The Semantic Data Specification (SDS) Data Object is composed of the following:
 
+*** OWL-core: The “Owl-core” Data Object realises the “Lightweight Ontology (for interoperability)” Business Object and represents the MODULE_NAME.rdf/.ttl ontology file. Each file contains the OWL Ontology concept definitions of a given module (both with Implemented or Deprecated statuses). The files are available in https://www.w3.org/TR/rdf-syntax-grammar/[XML/RDF] and https://www.w3.org/TR/turtle/[Turtle/RDF] formats.
+*** OWL-restrictions: The “OWL-restrictions” Data Object realises the “Ontology Axiomatization (for inference)” business Object and represents the MODULE_NAME_restrictions.rdf/.ttl ontology restrictions file for each module. Each file contains the domain, range and cardinality of concepts for a given module (both with Implemented or Deprecated statuses). The files are available in https://www.w3.org/TR/rdf-syntax-grammar/[XML/RDF] and https://www.w3.org/TR/turtle/[Turtle/RDF] formats.
+*** SHACL-shapes: The “SHACL-shapes” Data Object realises the “Application Profile (for interoperability)” business Object and represents the MODULE_NAME_shapes.owl/.ttl shapes ontology file for a given module. https://www.w3.org/TR/shacl/[SHACL ]( Shapes Constraint Language) is a W3C standard used for validating the contents of an RDF graph. Both files are available in https://www.w3.org/TR/rdf-syntax-grammar/[XML/RDF] and https://www.w3.org/TR/turtle/[Turtle/RDF] formats.
+*** Note that although the “XMI based reference document” Data Object representing the glossary artefact of a given module should be part of the SDS and is indeed part of each release in the https://github.com/OP-TED/ePO/tree/master/glossary[OP-TED/ePO] repository, for the purpose of this document we treat it as part of the ePO SDS documentation as it essentially documents all the concepts of the Ontology.
+
+
+
+==== SDS documentation artefacts[[P2]]
+
+The ePO Semantic Data Specification documentation artefacts are depicted in the diagram below.
 
 image::SDS Documentation artefacts.bmp[]
 _ePO SDS Documentation artefacts_
 
+The "SDS Documentation" Data Object is composed of the following:
 
-==== Purpose 2: SDS documentation artefacts[[P2]]
-“What artefacts are parts of the ePO Semantic Data Specification documentation?” As seen in the figure above, these artefacts are:
+*** Glossaries: The “XMI based reference document” Data Object realises the “SDS reference document” Business Object and represents the glossary artefact of a given module. It is automatically generated by model2owl.
 
+*** ORSD: The "Print optimised ORSD document" and "Web optimised ORSD document" Data Objects realise the "Ontology Requirements Specification Document (ORSD)" Business Object in  footnote:AsciiDoc[https://asciidoc.org
+] Asciidoc and printable (Word) formats, generated manualy by the Development Team.
 
-*** Glossaries: The “XMI based reference document” Data Object realises the “SDS reference document” Business Object and represents the glossary artefact of a specific module. It is automatically generated by model2owl.
-*** ORSD: The Ontology Requirements Specification Document in web footnote:AsciiDoc[https://asciidoc.org
-] Asciidoc and printable (Word) format, generated manualy by the Development Team.
+*** The “Static website with CM diagrams” Data Object realises the “Conceptual Model visual representation” Business Object and represents an HTML page containing all the Conceptual model diagrams, concepts and their definitions for a given ePO module. The HTML page is automatically generated by Enterprise Architect.
 
-*** The “Static website with CM diagrams” Data Object realises the “Conceptual Model visual documentation” Business Object and represents a website containing all the Conceptual model diagrams concepts and their definitions of a specific ePO module. The website is automatically generated by Enterprise Architect.
 *** The “Release notes” Data Object realises the “Release Notes” Business Object and represents an footnote:AsciiDoc[http://asciidoc.org
-] Asciidoc file. At the start of the file there is a short description of what is included in the new release as seen in the figure below. The rest of the file contains the change notes, described in the next bullet point.
+] Asciidoc file. At the start of the file there is a short description of what is included in the new release as depicted in the figure below. The rest of the file contains the change notes, (see below the figure).
 
 
 
@@ -44,62 +43,71 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABHgAAANeCAYAAABpoLnmAACAAEl
 _The Release notes of a new ePO Release_
 
 
-*** The “Change Notes” Data Object realises the “Change Notes” Business Object and represents the change notes of the current release located in the release notes footnote:AsciiDoc[http://asciidoc.org
-] Asciidoc file mentioned in the previous bullet point.  The change notes should be automatically created by model2owl by comparing the current release with the latest release. Automatic generation of this artefact by model2owl has not been implemented at the time of writing this document. It is currently written manually by the Development Team.
+*** The “Change Notes” Data Object realises the “Change Notes” Business Object and represents the change notes section of the current release located in the release notes footnote:AsciiDoc[http://asciidoc.org
+] Asciidoc file mentioned in the previous bullet point.  The change notes should be automatically generated by model2owl by comparing the current release with the previous release. Automatic generation of this artefact by model2owl has not been implemented as of now. It is currently written manually by the Development Team.
 
-==== Purpose 3: Quality assesssment reports artefacts
+==== Quality assessment reports artefacts
 
-“What artefacts should be used for quality control while preparing the ePO Semantic Data Specification?” As seen in the figure below, these artefacts are:
-
-*** SHACL conformance report: The “SHACL conformance report” Data Object realises part of the “Quality assessment reports” Business Object and presents the results of the validation of a specific module using SHACL shapes.
-*** UML conformance report: The “UML checkers conformance report” Data Object realises part of the “Quality assessment reports” Business Object and presents the results of the validation of a specific module by using UML conversion checkers. It is an automatically generated conventions report in the form of an HTML page that lists all the ontology concepts in the XMI input file that violate the UML conventions of the SEMIC Style Guide listed https://semiceu.github.io/style-guide/1.0.0/gc-conceptual-model-conventions.html[here].
-*** Both of the above reports are automatically generated by model2owl during the SDS artefact generation process. They are consulted by the Development Team during the “internal review” Business Process. An SDS artefact will only pass the internal review if no red flags are shown in both of these reports for the specified module.
-
-
+The ePO Quality assessment reports artefacts are depicted in the diagram below.
 
 image::data:image/png;base64,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[]
 
 _Quality assessment reports diagram_
 
+The "Quality assessment reports" Data Object is composed of the following:
 
-==== Purpose 4: SDS evolution documentation
-“What artefacts should be used for tracking evolution and changes?” As seen in the figure below, the “Automated evolution artefact” Data Object realises the “SDS evolution documentation” Business Object and is a generalization of the following artefacts:
+*** SHACL conformance report: The “SHACL conformance report” Data Object realises part of the “Quality assessment reports” Business Object and presents the results of the validation of a given module using SHACL shapes.
 
-*** The “Change Notes” Data Object, as described in Purpose 2 earlier in this section.
-*** The “OWL-core diff report” Data Object realises the “SDS diffing report” Business Object and contains the difference between the MODULE_NAME.OWL/.TTL files of the last release and this release for each module. It is automatically created by model2owl, and it is consulted by the Development Team when reviewing newly generated SDS artefacts.
-*** The “OWL-restriction diff report” Data Object realises the “SDS diffing report” Business Object and contains the difference between the MODULE_NAME_restrictions.OWL/.TTL files of the last release and this release for each module. It is automatically created by model2owl, and it is consulted by the Development Team when reviewing newly generated SDS artefacts.
-*** The “SHACL diff report” Data Object realises the “SDS diffing report” Business Object and contains the difference between the MODULE_NAME_shapes.OWL/.TTL files of the last release and this release for each module. It is automatically created by model2owl, and it is consulted by the Development Team when reviewing newly generated SDS artefacts.
+*** UML conformance report: The “UML checkers conformance report” Data Object completes the “Quality assessment reports” Business Object and presents the results of the validation of a given module by using UML convention checkers. It is an automatically generated conventions report in the form of an HTML page that lists all the ontology concepts in the XMI input file that violate the UML conventions of the SEMIC Style Guide listed https://semiceu.github.io/style-guide/1.0.0/gc-conceptual-model-conventions.html[here].
+
+Both of the above reports are automatically generated by model2owl during the "Generate diffing artefacts" Business Process. They are consulted by the Development Team during the “internal review” Business Process, and the Product Owner during the "Product Owner internal review (CM repository)" Business Process. An SDS artefact will only pass the internal review if no red flags are shown in any of these reports for the specified module.
 
 
+
+
+
+
+==== SDS evolution documentation
+
+The ePO automated evolution artefacts are depicted in the diagram below.
 
 image::Evolution artefacts.bmp[]
 _Automated evolution artefacts diagram_
 
+The “Automated evolution artefact” Data Object realises the “SDS evolution documentation” Business Object and it comprises the following artefacts:
+
+*** The “Change Notes” Data Object, as described in xref:#P2["SDS documentation artefacts"] above.
+
+*** The “OWL-core diff report” Data Object that realises part of the “SDS diffing report” Business Object and contains the difference between the MODULE_NAME.owl/.ttl files of the previous release and this release for a given module. It is automatically generated by model2owl, and it is consulted by the Development Team during the “internal review” Business Process.
+
+*** The “OWL-restriction diff report” Data Object realises part of the “SDS diffing report” Business Object and contains the difference between the MODULE_NAME_restrictions.owl/.ttl files of the previous release and this release for a given module. It is automatically generated by model2owl, and it is consulted by the Development Team during the “internal review” Business Process.
+
+*** The “SHACL diff report” Data Object completes the “SDS diffing report” Business Object and contains the difference between the MODULE_NAME_shapes.owl/.ttl files of the previous release and this release for a given module. It is automatically generated by model2owl, and it is consulted by the Development Team during the “internal review” Business Process.
+
+
 ==  model2owl in a nutshell (and its functionalities)
 
+https://github.com/OP-TED/model2owl[Model2Owl] is a set of tools for transforming a UML (v2.5) model from its XMI (v2.5.1) serialization into a formal OWL ontology, and a SHACL shape. This approach is conformant to the https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC Style Guide] and with the  https://github.com/meaningfy-ws/model2owl/blob/master/docs/ontology-architecture/ontology-architecture.pdf[eProcurement Ontology Architecture specification].
 
-https://github.com/OP-TED/model2owl[Model2Owl] is a set of tools for transforming a UML (v2.5) model from its XMI (v2.5.1) serialization into a formal OWL ontology, and a SHACL shape. This transforming approach is conformant to the https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC Style Guide] and with the  https://github.com/meaningfy-ws/model2owl/blob/master/docs/ontology-architecture/ontology-architecture.pdf[eProcurement Ontology Architecture specification]. +
-In this section we list the model2owl functionalities.
+In this section we list the model2owl functionalities:
 
 * currently supported:
 ** Generation of formal SDS artefacts
-*** OWL-core,
-*** OWL-restrictions,
+*** OWL-core
+*** OWL-restrictions
 *** SHACL shapes
 ** Generation of reference documentation
-*** Glossary - suited for documentation purpose, not suitable for dereferencing purpose)
+*** Glossary - suited for documentation purpose
 ** Validation
-*** UML conventions checking,
-*** ITB conventions checking done in SEMIC
+*** UML conventions checking
 * Not yet supported:
 ** Generation of evolutive artefacts:
 *** OWL Diff reports (human readable, e.g. HTML, formal e.g. for automated upgrade recommendation in RML rules)
 *** SHACL Diff report
-*** Change notes (based on diffing). Currently, Change notes are added manually by the Development Team and are prone to errors.
+*** Change notes (based on diffing). Currently, Change notes are added manually by the Development Team.
 ** Generation of formal SDS artefacts
-*** Inclusion ofdeprecated concepts in the OWL-core – for the purpose of maintaining concept persistence i.e. https://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://interoperable-europe.ec.europa.eu/sites/default/files/inline-files/Towards-a-common-approach-for-the-management-of-persistent-URIs-by-EU-institutions_v.0.53.pdf[EU-PURIs]), generated based on the diffing
-** Validation/
-*** SHACL based validation of OWL-core, OWL-restrictions, SHACL shapes
-** Generation of reference documentation
-*** SDS Reference document (not he same as Glossary), in ReSpec/Widoco/custom view in HTML format (not AsciiDoc) - for the purpose of HTML dereferencing
+*** Inclusion of deprecated concepts in the OWL-core
+** Validation
+*** SHACL based validation of OWL-core
+
 

@@ -1,4 +1,4 @@
-= Methodology
+= Workflow Documentation Methodology
 
 The workflow documentation was approached as an Enterprise Architecture (EA) project, applying a structured framework to capture and organise the workflow for managing the eProcurement Ontology (ePO) lifecycle. The ArchiMate modeling language was used to visually represent the various stages, dependencies, and artefacts within a simplified, layered architecture. This approach allows for clear documentation of roles, processes, and artefacts across the Business, Application, and Technology layers. +
 The document follows a structured EA view, using ArchiMate to provide a consistent template across layers. Key goals include:
