@@ -22,7 +22,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOEAAANJCAIAAADFr7+xAACAAEl
 _Requirements Gathering business view with stakeholders diagram_
 
 
-In the “Decide work goal & scope and release version” Business Process, The Product Owner decides which ePO module will be developed, if any, and into which version the module will be released. The versioning follows a “X.Y.Z” format, where X is the major version number, Y the minor version number, and Z the patch version number. For more information on ePO versioning rules, consult https://docs.ted.europa.eu/epo-home/versioning.html[this page]. Finally, in this business process, the Product Owner points out to the Development Team the GitHub Issues that will be implemented in the upcoming version. These GitHub Issues are assigned the milestone related to the X.Y.Z release.
+In the “*Decide work goal & scope and release version*” Business Process, The Product Owner decides which ePO module will be developed, if any, and into which version the module will be released. The versioning follows a “X.Y.Z” format, where X is the major version number, Y the minor version number, and Z the patch version number. For more information on ePO versioning rules, consult https://docs.ted.europa.eu/epo-home/versioning.html[this page]. Finally, in this business process, the Product Owner points out to the Development Team the GitHub Issues that will be implemented in the upcoming version. These GitHub Issues are assigned the milestone related to the X.Y.Z release.
 
 In the "*Prepare the publication space for the work*" Business Process, The Product Owner creates the GitHub release branches marked as “release/X.Y.Z” of the specific ePO version in the following GitHub repositories:
 

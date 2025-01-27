@@ -112,28 +112,6 @@ If any errors or bugs are encountered, the Product Owner informs the Development
 If no errors are found during the “Product Owner internal review (CM repository)” Business Process, then the “Product Owner accepts pull request to release branch in the CM repository and creates a tag.” Business Process takes place. During this Process, the Product Owner accepts the pull request, and creates a tag on the release branch of the CM repository.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 == Application and Technology view
 
 
