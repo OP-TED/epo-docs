@@ -14,14 +14,14 @@ In this stage, the following steps take place:
 
 The detailed business workflow for the Publishing Candidate Semantic Data Specification Version Stage is depicted in the diagram below.
 
-image::publishing candidate SDS version stage [detailed].bmp[]
+image::publishing candidate SDS version [detailed].bmp[]
 _The Publishing Candidate Semantic Data Specification Version Business view diagram_
 
 The business workflow with Stakeholders for the Preparing Semantic Data Specification Version Release Stage is depicted in the diagram below:
 
 
 
-image::publishing candidate SDS version stage [stakeholders] .bmp[]
+image::publishing candidate SDS version [stakeholders] .bmp[]
 _The Publishing Candidate Semantic Data Specification Version with stakeholders business view diagram._
 
 
@@ -54,7 +54,7 @@ In the “*Announce the start of the public review period*” Business Process, 
 
 The diagram below describes all the artefacts involved in this stage using business (yellow), application (blue) and technology (green) layers. The GitHub Repositories branches that are used for this stage are also depicted as orange rectangles for reference purposes. Note that here we do not explain purposes of Artefacts, but we describe what is produced and how. The actual description of the produced Artefacts is provided xref:SDS and related artefacts/SDSmodel2owl.adoc[here].
 
-image::publishing candidate SDS version stage [concise].bmp[]
+image::publishing candidate SDS version [concise].bmp[]
 _Application and Technology Layers diagram of the “Publishing Candidate Semantic Data Specification Version” stage_
 
 On the right side of the figure, the “SDS formal artefact” Data Object, described in the previous stage, is moved into the release branch [release/x.y.z] of the https://github.com/OP-TED/ePO[OP-TED/ePO] GitHub Server using a Git client.
