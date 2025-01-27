@@ -2,9 +2,9 @@
 
 In this stage, the following steps take place:
 
-1. the reviewed SDS formal artefacts on the release branch of the https://github.com/OP-TED/epo-conceptual-model[GitHub OP-TED/epo-conceptual-model repository] are moved to the corresponding release branch of the https://github.com/OP-TED/epo[GitHub OP-TED/epo repository]  in order to become a release candidate (for justification on why we use both a conceptual and an ePO repository see xref:GitHub repositories//githubRepositories.adoc[the GitHub repositories section]).
+1. the reviewed SDS formal artefacts on the release branch of the https://github.com/OP-TED/epo-conceptual-model[ OP-TED/epo-conceptual-model repository] are moved to the corresponding release branch of the https://github.com/OP-TED/epo[OP-TED/epo repository]  in order to become a release candidate (for justification on why we use both a conceptual and an ePO repository see xref:GitHub repositories//githubRepositories.adoc[the GitHub repositories section]).
 
-2. A review from the Product Owner takes place, the SDS formal artefacts are moved to the develop branch of the https://github.com/OP-TED/epo[GitHub OP-TED/epo repository].
+2. A review from the Product Owner takes place, the SDS formal artefacts are moved to the develop branch of the https://github.com/OP-TED/epo[OP-TED/epo repository].
 
 2.The existing SDS documentation artefacts are moved from the release branch of the https://github.com/OP-TED/epo-conceptual-model[GitHub OP-TED/epo-conceptual-model repository] to the corresponding release branch of the https://github.com/OP-TED/epo-docs[GitHub OP-TED/epo-docs] repository, where the rest of the SDS documentation artefacts are generated.
 
