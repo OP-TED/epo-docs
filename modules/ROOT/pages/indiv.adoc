@@ -16,6 +16,10 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2025]
 === 2025
 
+xref:notes/2025-01-23-wgm.adoc[2025-01-23 (Github Issues related with ePO - eForms mappings)]
+
+xref:notes/2025-01-21-wgm.adoc[2025-01-21 (Github Issues related with ePO - eForms mappings)]
+
 xref:notes/2025-01-16-wgm.adoc[2025-01-16 (Github Issues related with ePO - eForms mappings)]
 
 xref:notes/2025-01-14-wgm.adoc[2025-01-14 (Github Issues related with ePO - eForms mappings)]
