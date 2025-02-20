@@ -16,6 +16,10 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2025]
 === 2025
 
+xref:notes/2025-02-13-wgm.adoc[2025-02-13 (eFulfilment and ESPD )]
+
+xref:notes/2025-02-11-wgm.adoc[2025-02-11 (eAwarding and ESPD )]
+
 xref:notes/2025-01-30-wgm.adoc[2025-01-30 (eFulfilment )]
 
 xref:notes/2025-01-28-wgm.adoc[2025-01-28 (Github Issues related with ePO - eForms mappings)]
