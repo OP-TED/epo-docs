@@ -1,0 +1,61 @@
+= WG meeting
+
+
+*Date*: 18/02/2025  +
+*Participants:* Natalie Muric, Giovanni-Paolo Sellito   +
+*Model editor:* Andreea Pasăre  +
+*Note editor:* Achilles Dougalis
+
+
+= Agenda
+
+* eAwarding discussions
+
+= Discussions
+
+The eAwarding Ontology Requirements Specification Document (ORSD) was further developed. Specifically:
+
+The following Roles are involved in eAwarding:
+
+* Unique Responsible of the Procurement – played by a Person; it is part of the Buyer’s Organization (the head of the Organisation; the person that has the final decision)
+* Buyer
+* Tenderer
+* Winner
+* Candidate
+
+The Award Decision is based on the Evaluation report. The Unique Responsible for the Procurement either accepts the findings of the Evaluation Report, or takes another decision (in case the winner does not fulfill all the criteria for the award of the contract).
+
+The Activity description section was written as follows:
+
+. The Award Decision is *written* by the Unique Responsible of the Procurement.
+. The Unique Responsible of the Procurement *ensures *the evidences for the Participation Conditions and the Qualification Criteria are fulfilled by Tenderers proposed for an Award.
+.. If the evidences are good, the Award Decision is *signed* by the Unique Responsible of the Procurement.
+.. If the evidences are not good the Buyer can ask for clarifications from the non-compliant Tenderer:
+... If the clarification confirms that the evidence is good, the Award Decision is *signed* by the Unique Responsible of the Procurement.
+... If the clarification confirms that the evidence is not good, the evidences of another Tenderer(s) are checked until we reach the required number of Winners
+. The Tenderers are *notified* about the result through one of the following:
+.. Award Decision is* published* on the Buyer’s website
+.. Award Notification is *sent *to the Tenderers
+. A standstill period (while the contract cannot be signed) of one month starts from the notification to allow other Tenderers to request Review.
+. At the end of the standstill period the Contract can be signed.
+. No later than 30 days after the conclusion of a Contract, a Result Notice must be published.
+
+
+The following Use cases were added:
+
+|===
+|*Use case* |*Description* |*Actors* |*Flow*
+
+|The Award Decision is written |The Award Decision is* written *by the Unique Responsible of the Procurement. |Unique Responsible of the Procurement |The Unique Responsible of the Procurement writes the Award Decision based on the Evaluation Report.
+|Participation Conditions and the Qualification Criteria are checked |The Participation Conditions and the Qualification Criteria are assessed. |Unique Responsible of the Procurement |The Unique Responsible of the Procurement ensures the Participation Conditions and the Qualification Criteria are fulfilled by checking the evidences referenced/written in the ESPD.
+|Clarifications from the non-compliant Tenderer are required |If the evidences are not good the Buyer can ask for clarifications from the non-compliant Tenderer. |Unique Responsible of the Procurement, |If the clarification confirms that the evidence is good, the Award Decision is signed by the Unique Responsible of the Procurement.
+|The Award Decision is signed |The Award Decision is* signed* by the Unique Responsible of the Procurement. | |The Unique Responsible of the Procurement signs the Award Decision.
+|The Tenderers are notified about the result of the procurement. |The Award Decision is published on the Buyer’s website OR an Award Notification is sent to the Tenderers. |Buyer, Tenderer |The Tenderers are notified about the result through one of the following:
+|===
+
+
+
+It was noted that the Qualification Response should be in another module.
+
+
+
