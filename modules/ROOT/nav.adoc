@@ -8,6 +8,7 @@
 
 * [.separated]#**General Documentation**#
 * xref:EPO::business.adoc[Business Overview]
+* xref:epo-home::guide.adoc[User Guides]
 * xref:epo-home::stories.adoc[Ontology Requirements Specifications Documents]
 ** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
 ** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
@@ -15,6 +16,7 @@
 * xref:EPO::conceptual.adoc[Conceptual Models]
 * xref:EPO::glossaries.adoc[Glossaries]
 * xref:EPO::release-notes.adoc[Release Notes]
+* xref:epo-home::showcase/index.adoc[The ePO in Other Projects]
 
 * [.separated]#**Reference Documentation**#
 * xref:epo-home::references.adoc[Reference Documents]
@@ -26,3 +28,4 @@
 * xref:epo-wgm::wider.adoc[Wider Working Group Meetings]
 * xref:epo-wgm::cumulative.adoc[Cumulative Reports (by year)]
 * xref:epo-wgm::indiv.adoc[Individual Meeting Reports]
+
