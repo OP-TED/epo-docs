@@ -7,7 +7,7 @@
 * xref:epo-home::index.adoc[Home]
 
 * [.separated]#**General Documentation**#
-* xref:epo-home::business.adoc[Business Overview]
+* xref:EPO::business.adoc[Business Overview]
 * xref:epo-home::guide.adoc[User Guides]
 * xref:epo-home::stories.adoc[Ontology Requirements Specifications Documents]
 ** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
