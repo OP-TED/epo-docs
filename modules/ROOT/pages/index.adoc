@@ -9,12 +9,12 @@ or
 
 The ePO Workflow documentation describes what needs to be done, and who does it, when creating a new eProcurement Ontology (ePO) release. 
 
-Firstly it defines an end-to-end procedure. These are illustrated using diagrams created in an third party software tool specifically chosen for this purpose. This makes it easier for you to visualise the workflows. 
+Firstly it defines an end-to-end procedure. This is illustrated using diagrams created in a third party software tool specifically chosen for making visualisation of the workflows easier. 
 //called http://www.hosiaisluoma.fi/ArchiMate-Cookbook.pdf[ArchiMate]. 
 
-Then, the workflow stages are described listing the artefacts produced along the way; The criteria for transitions are defined as are the the different roles and responsibilities of stakeholders involved in the process, and which supporting tools are employed e.g., xref:GitHub repositories/githubRepositories.adoc[GitHub]. 
+Then, the workflow stages are described listing the artefacts produced along the way; The criteria for transitions are defined, as are the the different roles and responsibilities of stakeholders involved in the process, as well as which supporting tools are employed e.g., xref:GitHub repositories/githubRepositories.adoc[GitHub]. 
 
-The automation points, release note contents, and release tagging conventions are also described. Although the the documentation covers everything related to the ePO lifecycle, it doesn't cover how to use the tools and technologies used in the process such as https://docs.ted.europa.eu/M2O/latest/index.html[Model2Owl]. It is assumed that you already know how to use them. However, all the inputs and outputs of these technologies in the process are clearly documented.
+The automation points, release note contents, and release tagging conventions are also described. Although the documentation covers everything related to the ePO lifecycle, it doesn't cover how to use the tools and technologies used in the process such as https://docs.ted.europa.eu/M2O/latest/index.html[Model2Owl]. It is assumed that you already know how to use them. However, all the inputs and outputs of these technologies in the process are clearly documented.
 
 This documentation contains a comprehensive reference and also a step-by-step guide, capturing the stages of the workflow from the perspective of Enterprise Architecture. 
 
