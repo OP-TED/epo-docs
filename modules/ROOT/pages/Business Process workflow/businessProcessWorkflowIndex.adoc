@@ -3,13 +3,13 @@
 
 The stages of an ePO release life cycle are organised in a business process workflow as from ePO version 5.0.0. The workflow includes all the artefacts related to the creation of an ePO release and how they change during each stage of the workflow. It does not include maintenance work that happens alongside the development of a new ePO release such as alignment with other procurement data models, or alignment with the ESPD or eForms standards.
 
-The stages of the workflow
+The stages of the workflow are
 
-. Requirements Gathering
+. Requirements gathering
 . Designing the conceptual model
-. Preparing the Semantic Data Specification Version Release
-. Publishing the Candidate Semantic Data Specification Version
-. Publishing the Stable SDS Version
+. Preparing the semantic data specification version release
+. Publishing the candidate semantic data specification Version
+. Publishing the stable semantic data specification version
 
 
 The most critical part of the ePO release life cycle is the generation of the different Ontology files, collectively referred to as the Semantic Data Specification (SDS) of the Ontology. https://docs.ted.europa.eu/epo-home/methodology2024.html[SEMIC], an initiative of the EU that promotes co-creation and sharing best practices, describes a semantic data specification as a "union of machine and human-readable artefacts addressing clearly defined concerns, interoperability, scope, and use-cases". It includes at least an ontology and a data shape (either or both) accompanied by a human-readable data specification.
