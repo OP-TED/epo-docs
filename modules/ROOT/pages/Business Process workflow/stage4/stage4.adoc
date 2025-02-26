@@ -1,6 +1,6 @@
-= Stage 4: Publishing Candidate Semantic Data Specification Version (on the ePO and epo-docs repositories)
+= Publishing Candidate Semantic Data Specification Version (on the ePO and epo-docs repositories)
 
-In this stage, the following steps take place:
+In the fourth stage, the following steps take place:
 
 1. the reviewed SDS formal artefacts on the release branch of the https://github.com/OP-TED/epo-conceptual-model[ OP-TED/epo-conceptual-model repository] are moved to the corresponding release branch of the https://github.com/OP-TED/epo[OP-TED/epo repository]  in order to become a release candidate (for justification on why we use both a conceptual and an ePO repository see xref:GitHub repositories//githubRepositories.adoc[the GitHub repositories section]). A review from the Product Owner takes place and the SDS formal artefacts are moved to the develop branch of the https://github.com/OP-TED/epo[OP-TED/epo repository].
 

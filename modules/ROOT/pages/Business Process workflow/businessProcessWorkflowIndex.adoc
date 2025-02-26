@@ -1,19 +1,26 @@
 = ePO Workflow
 
 
+The stages of an ePO release life cycle are organised in a business process workflow as from ePO version 5.0.0. The workflow includes all the artefacts related to the creation of an ePO release and how they change during each stage of the workflow. It does not include maintenance work that happens alongside the development of a new ePO release such as alignment with other procurement data models, or alignment with the ESPD or eForms standards.
 
-This section describes all the stages of an ePO release life cycle as a business process workflow as from ePO version 5.0.0. This workflow includes all the artefacts related to the creation of an ePO release and how they change during each stage of the workflow. This workflow does not include maintenance work that happens simultaneously with the development of the new ePO release such as alignment with other procurement data models, or alignment with the ESPD or eForms standards.
+The stages of the workflow
+
+. Requirements Gathering
+. Designing the conceptual model
+. Preparing the Semantic Data Specification Version Release
+. Publishing the Candidate Semantic Data Specification Version
+. Publishing the Stable SDS Version
 
 
-Arguably, the most critical part of the ePO release life cycle is the generation of the different Ontology files, referred here as the Semantic Data Specification (SDS) of the Ontology. To quote https://docs.ted.europa.eu/epo-home/methodology2024.html[SEMIC], “a semantic data specification, often called simply data specification, is a union of machine and human-readable artefacts addressing clearly defined concerns, interoperability scope and use-cases. A semantic data specification comprises at least an ontology and a data shape (or either of them individually) accompanied by a human-readable data specification”.
+The most critical part of the ePO release life cycle is the generation of the different Ontology files, collectively referred to as the Semantic Data Specification (SDS) of the Ontology. https://docs.ted.europa.eu/epo-home/methodology2024.html[SEMIC], an initiative of the EU that promotes co-creation and sharing best practices, describes a semantic data specification as a "union of machine and human-readable artefacts addressing clearly defined concerns, interoperability, scope, and use-cases". It includes at least an ontology and a data shape (either or both) accompanied by a human-readable data specification.
 
-The general approach/methodology that is used in order to develop SDS for the Ontology is the following:
+The general approach/methodology in developing the ontology SDS is the following:
 
-** The https://www.sciencedirect.com/science/article/pii/S0952197622000525[LOT methodology] for SDS development is followed for ePO as described https://docs.ted.europa.eu/epo-home/methodology2024.html[here].
-** The UML Conceptual model as a https://semiceu.github.io/style-guide/1.0.0/gc-conceptual-model-conventions.html#sec:cmc-r1[Single Source of Truth] principle is followed for ePO (as defined in https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC style guide]). The Single Source of Truth principle implies that SDS artefacts should be automatically generated in order to avoid human error. For the purposes of this automatic generation, the https://github.com/OP-TED/model2owl?tab=readme-ov-file#model2owl[model2owl] toolkit is currently utilised.
+** The https://www.sciencedirect.com/science/article/pii/S0952197622000525[LOT methodology] for SDS development is followed for the ePO as described https://docs.ted.europa.eu/epo-home/methodology2024.html[here].
+** The UML Conceptual model as a https://semiceu.github.io/style-guide/1.0.0/gc-conceptual-model-conventions.html#sec:cmc-r1["Single Source of Truth"] principle is followed for ePO (as defined in the https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC style guide]). The Single Source of Truth principle implies that SDS artefacts should be generated automatically to avoid human error. To achieve automatic generation, the https://github.com/OP-TED/model2owl?tab=readme-ov-file#model2owl[model2owl] toolkit is currently utilised.
 ** External Vocabulary concepts are re-used__ __https://semiceu.github.io/style-guide/1.0.0/clarification-on-reuse.html#sec:reuse-of-a-class-as-is[_as is]_ according to the SEMIC style guide definition of re-use. Terminological adaptations are not allowed.
-** ePO uses https://github.com/[GitHub] as distribution channel, version management, continuous integration and continuous delivery/continuous deployment.
-** https://github.com/features/actions[GitHub Actions] are used for automation purposes, implementing and chaining many steps of the workflow. Specifically, the three GitHub actions that are used are:
-*** The SDS generation by model2owl described in xref:Business Process workflow/stage3/stage3.adoc[stage 3] of the workflow.
-***  The generation of the staging documentation website in xref:Business Process workflow/stage4/stage4.adoc[stage 4] of the workflow.
+** The ePO uses https://github.com/[GitHub] as distribution channel, for version management, for continuous integration, and for continuous delivery/continuous deployment.
+** https://github.com/features/actions[GitHub Actions] are used for automation purposes, and implementing and chaining many steps of the workflow. Specifically, the three GitHub actions that are used are:
+*** The SDS generation by the model2owl tool described in xref:Business Process workflow/stage3/stage3.adoc[stage 3] of the workflow.
+***  The generation of the acceptance/ review documentation website in xref:Business Process workflow/stage4/stage4.adoc[stage 4] of the workflow.
 *** The generation of the public documentation website also in xref:Business Process workflow/stage4/stage4.adoc[stage 4] of the workflow.
