@@ -1,4 +1,4 @@
-= WG meeting
+= Working Group Meeting
 
 
 *Date*: 18/02/2025  +
@@ -7,11 +7,11 @@
 *Note editor:* Achilles Dougalis
 
 
-= Agenda
+== Agenda
 
 * eAwarding discussions
 
-= Discussions
+== Discussions
 
 The eAwarding Ontology Requirements Specification Document (ORSD) was further developed. Specifically:
 

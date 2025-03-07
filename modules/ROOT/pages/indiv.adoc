@@ -16,9 +16,17 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2025]
 === 2025
 
-xref:notes/2025-02-13-wgm.adoc[2025-02-13 (Github Issues related with ePO - eForms mappings)]
+xref:notes/2025-03-06-wgm.adoc[2025-03-06 (Github Issues related with ePO - eForms mappings)]
 
-xref:notes/2025-02-11-wgm.adoc[2025-02-11 (eAwarding)]
+xref:notes/2025-03-04-wgm.adoc[2025-03-04 (eAwarding, eRequest, Pre-award Catalogue)]
+
+xref:notes/2025-02-27-wgm.adoc[2025-02-27 (eAwarding, eRequest, Github Issues related with ePO - eForms mappings)]
+
+xref:notes/2025-02-25-wgm.adoc[2025-02-25 (eAwarding, eRequest)]
+
+xref:notes/2025-02-20-wgm.adoc[2025-02-20 (ESPD, eRequest, Map the new BTs described on Regulation 2023/2884 to ePO concepts  )]
+
+xref:notes/2025-02-18-wgm.adoc[2025-02-18 (eAwarding)]
 
 xref:notes/2025-02-13-wgm.adoc[2025-02-13 (eFulfilment and ESPD )]
 

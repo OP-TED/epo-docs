@@ -1,4 +1,4 @@
-= WG meeting
+= Working Group Meeting
 
 *Date*: 20/02/2025  +
 *Participants:* Victorio Bentivogli, Natalie Muric, Dragos Stoica.
@@ -67,7 +67,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAKaCAIAAAAvUrzLAACAAEl
 
 
 
-Action Points
+== Action Points
 
 * Create github issue for TED mappings repository informing for the changes done in this WGM regarding the review concepts.
 
