@@ -14,7 +14,7 @@
 
 * The ePO core Conceptual Module: link:{attachmentsdir}/html_reports/ePO/index.html[HTML].
 * The eCatalogue Conceptual Module: link:{attachmentsdir}/html_reports/eCatalogue/index.html[HTML].
-* The eOrdering Conceptual Module: link:{attachmentsdir}/html_reports/eOrdering/index.html[HTML].
+* The eOrdering Conceptual Module: link:{attachmentsdir}/html_reports/eOrdering/index.htm[HTML].
 * The eFulfilment Conceptual Module: link:{attachmentsdir}/html_reports/eFulfilment/index.html[HTML].
 * The eContract Conceptual Module: link:{attachmentsdir}/html_reports/eContract/index.html[HTML].
 * The eAccess Conceptual Module: link:{attachmentsdir}/html_reports/eAccess/index.html[HTML].
