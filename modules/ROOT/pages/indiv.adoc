@@ -15,6 +15,11 @@ This does not mean necessarily that this was the only topic addressed in the mee
 
 [#2025]
 === 2025
+
+xref:notes/2025-03-27-wgm.adoc[2025-03-27 (eOrdering)]
+
+xref:notes/2025-03-25-wgm.adoc[2025-03-25 (Github Issues related with ePO - eForms mappings)]
+
 xref:notes/2025-03-20-wgm.adoc[2025-03-20 (Github Issues related with ePO - eForms mappings)]
 
 xref:notes/2025-03-18-wgm.adoc[2025-03-18 (Github Issues related with ePO - eForms mappings)]
