@@ -16,6 +16,8 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2025]
 === 2025
 
+xref:notes/2025-04-08-wgm.adoc[2025-04-08 (eOrdering)]
+
 xref:notes/2025-04-03-wgm.adoc[2025-04-03 (eOrdering)]
 
 xref:notes/2025-03-27-wgm.adoc[2025-03-27 (eOrdering)]
