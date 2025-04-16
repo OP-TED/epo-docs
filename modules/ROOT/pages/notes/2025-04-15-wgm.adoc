@@ -1,0 +1,90 @@
+= Working Group Meeting
+
+*Date*: 15/04/2025    +
+*Participants:* Natalie Muric, Pietro Palermo  +
+*Model editor:* Andreea Pasăre  +
+*Note editor:* Achilles Dougalis
+
+== Agenda
+
+* eForms Requirements:
+**  Review related issues:
+*** https://github.com/OP-TED/ePO/issues/777[How is the relationship between epo:ReviewDecision and epo:ReviewRequest represented in eForms? #777]
+*** https://github.com/OP-TED/eForms-SDK/issues/1187[SDK example notice seems incorrect regarding BT-795-Review , BT-796-Review, BT-797-Review, BT-798-Review #1187]
+** https://github.com/OP-TED/ePO/issues/587[epo:indefiniteDuration to be deprecated #587]
+** https://github.com/OP-TED/ePO/issues/726[Unmappable eForms fields in PIN, CEI and T02 notice subtypes #726]
+** https://github.com/OP-TED/ePO/discussions/781[Annonunces vs. RefersTo #781 discussion.]
+* Discuss eOrdering requirements.
+** https://github.com/OP-TED/ePO/issues/773[Implement Item property code for ePO #773]
+** To address dct:issued and any other date/time concepts.
+** Present diagrams for OrderChange, OrderCancellation, OrderResponse, and OrderAgreement.
+* Discuss eFulfilment requirements
+** https://github.com/OP-TED/ePO/issues/660[Model Fuel Consumption business group from the Despatch Advice data model #660]
+*
+
+== Discussion
+
+
+* The eOrdering requirements were discussed:
+** All the new diagrams were reviewed.
+** OrderCancellation CM diagram: To delete generalizations to OrderCancellation so it is harmonized with the OrderChange CM diagram.
+** dct:Issued attribute representing both date and time was discussed. Thw WG concluded that It is ok to just use dct:Issued in the Ontology to represent both date and time.
+** It was decided that the https://github.com/OP-TED/ePO/issues/773[Implement Item property code for ePO #773] ticket can be moved to ePO 5.1.0.
+
+---
+*  eFulfilment requirements:
+** https://github.com/OP-TED/ePO/issues/660[Model Fuel Consumption business group from the Despatch Advice data model #660]:
+*** It was decided that this ticket will be moved to ePO 5.1.
+*** To investigate whether this is related to the EED concept from the eForms Annex.
+
+---
+
+* The following github issues for ePO 6.0.0 were discussed.
+** https://github.com/OP-TED/ePO/issues/699[epo-sub:ESPD should be a specialization of epo:QualificationResponse #699]
+*** It seems that there is a problem between PEPPOL pre-award data model terms and UBL. Perhaps the problem is that they are using an older UBL specification.
+*** It was mentioned that qualification response is the UBL equivalent to the ESPD and not its specialization.
+** https://github.com/OP-TED/ePO/issues/700[epo-acc:ESPDRequest should be a specialization of epo:TendererQualificationSubmission #700 ]
+*** It was mentioned that UBL's  https://docs.oasis-open.org/ubl/os-UBL-2.4/UBL-2.4.html#S-PRE-AWARD:~:text=2.3.3.1.8%20Qualification%20Application[Qualification Application Request] is the UBL equivalent to the ESPDRequest.
+** https://github.com/OP-TED/ePO/issues/701[Remove Predicate epo-sub:relatesToESPDRequest #701]
+*** The https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0007[https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0007] regulation  was discussed. After consulting the regulation the WG concluded that an ESPD does not necessarily require an ESPD Request. This is due to the fact that in many cases someone creating an ESPD will often use premade ESPD templates and will not need to create an ESPD Request.
+** https://github.com/OP-TED/ePO/issues/587[epo:indefiniteDuration to be deprecated #587] was discussed.
+*** it was agreed to remove epo:IndefiniteDuration while aligning with Time Ontology for ePO 5.0.0.
+***  It was decided that there is a need to represent indefinite durations for standard forms for epo 5.2.0. Thus, a relevant ticket will be created.
+
+---
+* Review related issues:
+** https://github.com/OP-TED/ePO/issues/777[How is the relationship between epo:ReviewDecision and epo:ReviewRequest represented in eForms? #777]
+*** From a business point of view, the review decision should answer a review request and that's why we are keeping the cardinality 1 for this release, and redescuss this in the context of alignment with eForms in a future release.
+*** The ticket was moved to ePO 5.1.0.
+
+---
+
+* It was decided that the following issues will be moved to 5.1.0:
+** https://github.com/OP-TED/ePO/issues/669[Should Legal basis range extended? #669]
+** https://github.com/OP-TED/ePO/issues/640[epo maps the number of complainants etc (review summary) the eforms maps through the Lot Result #640]
+** https://github.com/OP-TED/ePO/issues/711[eforms BT-133 It might be a good idea to look into whether there are two options full address and url #711]
+** https://github.com/OP-TED/ePO/issues/706[Remodelling of class epo:MiniCompetitionAwardOutcome #706]
+
+---
+* It was decided that https://github.com/OP-TED/ePO/issues/683[Problem with associations from Tender to Lot and LotGroup #683 ] will be moved to 6.0.0 as further discussions are needed as to whether a change is required in the Ontology.
+
+---
+
+* https://github.com/OP-TED/ePO/issues/726[Unmappable eForms fields in PIN, CEI and T02 notice subtypes #726] : Although all the changes to the Ontology needed to accommodate the unmappable fields were implemented, they need to be reviewed.
+
+---
+* https://github.com/OP-TED/ePO/discussions/781[Announces vs. RefersTo #781] discussion: The WG decided to create a spreadsheet that indicates what predicate should be used for each Notice – Entity pair.
+
+== Action Points
+
+
+* Update the Mappings to the eOrdering data models.
+** Update OrderCancellationConfirmation and OrderCancellationChange mappings.
+** Update the concepts related to the Time Ontology.
+* Create a Github Issue: The ESPD should become independent of the ESPD request.  link it to #701 Remove Predicate epo-sub:relatesToESPDRequest
+* To follow up with the open Github issues on eCatalogue.
+* create a Github Issue: We need a way to represent indefinite durations for standard forms for 5.2.0.
+* Create a spreadsheet for https://github.com/OP-TED/ePO/discussions/781[Announces vs. RefersTo #781]
+* Create a Github issue to model E1 (premarket consultation) notice.
+* To review https://github.com/OP-TED/ePO/issues/726[Unmappable eForms fields in PIN, CEI and T02 notice subtypes #726.]
+
