@@ -16,6 +16,7 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2025]
 === 2025
 
+xref:notes/2025-04-22-wgm.adoc[2025-04-22 (eAwarding, eQualification)]
 
 xref:notes/2025-04-15-wgm.adoc[2025-04-15 (eOrdering, Github Issues related with ePO-eForms mappings)]
 
