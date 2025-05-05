@@ -12,7 +12,7 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 == Release notes
 *May 2025*
 
-*  The following new modules were released:
+*  The following new modules were developed:
 ** eEvaluation
 ** eAwarding
 ** eQualification
@@ -31,6 +31,113 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 
 == eOrdering
 
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eOrdering.xml on 2024-11-12| This version is automatically generated from eOrdering.xml on 2025-05-02
+| owl:versionInfo |	4.2.0 |	5.0.0
+| owl:priorVersion |	epo-ord-4.1.1 | epo-ord-4.2.0
+| version:IRI | ord-4.2.0 | ord-5.0.0
+| dct:issued |	2024-11-12		| 2025-05-02
+|===
+
+=== Added Classes
+|===
+|*Class*
+|epo-ord:OrderAgreement
+|epo-ord:OrderCancellation
+|epo-ord:OrderCancellationConfirmation
+|epo-ord:OrderCancellationRejection
+|epo-ord:OrderChange
+|epo-ord:OrderChangeConfirmation
+|epo-ord:OrderChangeLine
+|===
+
+=== Added Object Properties
+|===
+|*property* | *Domain, Range and cardinality*
+|epo-ord:hasRequestedDeliveryPeriod|epo-ord:DeliveryInformation -> time:Interval [0..1]
+|epo-ord:isSpecificToRequestForOfferLine|epo-ord:DeliveryInformation -> epo-req:RequestForOfferLine [0..*]
+|epo-ord:specifiesDeliveryAgreement|epo-ord:DeliveryInformation -> epo-ord:DeliveryAgreement [0..1]
+|epo-cat:refersToCatalogue|epo-ord:Order -> epo-cat:PostAwardCatalogue [0..*]
+|epo-ful:specifiesDespatcher|epo-ord:Order -> epo-ful:Despatcher [0..1]
+|epo:specifiesInvoicee|epo-ord:Order -> epo-ord:Invoicee [0..1]
+|epo:specifiesSeller|epo-ord:Order -> epo-ord:Seller [1] +
+epo-ord:OrderCancellation -> epo-ord:Seller [1] +
+epo-ord:OrderCancellationConfirmation -> epo-ord:Seller [1] +
+epo-ord:OrderCancellationRejection -> epo-ord:Seller [1] +
+epo-ord:OrderChangeConfirmation -> epo-ord:Seller [1]
+|epo-ord:comprisesOrderAgreementLine|epo-ord:OrderAgreement -> epo-ord:OrderAgreementLine [0..*]
+|epo-ord:isSubmittedForOrder|epo-ord:OrderCancellation -> epo-ord:Order [1] +
+epo-ord:OrderChange -> epo-ord:Order [1]
+|epo:specifiesBuyer |epo-ord:OrderCancellation -> epo:Buyer [1] +
+epo-ord:OrderCancellationConfirmation -> epo:Buyer [1] +
+epo-ord:OrderCancellationRejection -> epo:Buyer [1] +
+epo-ord:OrderChangeConfirmation -> epo:Buyer [1]
+|epo-ord:respondsToOrderCancellation|epo-ord:OrderCancellationConfirmation -> epo-ord:OrderCancellation [0..1] +
+epo-ord:OrderCancellationRejection -> epo-ord:OrderCancellation [0..1]
+|epo-ord:comprisesOrderChangeLine |epo-ord:OrderChange -> epo-ord:OrderChangeLine [0..*]
+|epo-ord:respondsToOrderChange|epo-ord:OrderChangeConfirmation-> epo-ord:OrderChange [1]
+|epo-ord:hasStatus|epo-ord:OrderChangeLine -> at-voc-new:ResponseStatus [0..1]
+|epo-ord:isSubmittedForOrderLine| epo-ord:OrderChangeLine -> epo-ord:OrderLine [1]
+
+
+|===
+
+=== Deleted Object Properties
+|===
+|*property* | *Domain, Range and cardinality* |*replaced by*|*Domain, Range and cardinality*
+|epo-ord:specifiesGeneralDeliveryAgreement |epo-ord:DeliveryInformation -> epo-ord:DeliveryAgreement [0..1]|epo-ord:specifiesDeliveryAgreement|epo-ord:DeliveryInformation -> epo-ord:DeliveryAgreement [0..1]
+|epo-ord:specifiesSpecificDeliveryAgreement |epo-ord:DeliveryInformation -> epo-ord:DeliveryAgreement [0..1]|epo-ord:specifiesDeliveryAgreement|epo-ord:DeliveryInformation -> epo-ord:DeliveryAgreement [0..1]
+|epo-ord:refersToCatalogue | epo-ord:Order -> epo-cat:Catalogue [0..*]|epo-cat:refersToCatalogue|epo-ord:Order -> epo-cat:PostAwardCatalogue [0..*]
+|epo:specifiesDespatcher | epo-ord:Order ->epo-ful:Despatcher [0..1]| epo-ful:specifiesDespatcher |epo-ord:Order -> epo-ful:Despatcher [0..1]
+
+||
+|===
+
+=== Modified Object Properties
+|===
+|*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
+|epo-cat:hasAmount|epo-ord:AllowanceChargeInformation -> epo:MonetaryValue [1]|epo-ord:AllowanceChargeInformation -> epo:MonetaryValue [0..1]
+|epo-ord:hasDeliveryPeriod|epo-ord:DeliveryInformation -> epo:Period [0..1]|epo-ord:DeliveryInformation -> time:Interval [0..1]
+|epo-ord:comprisesOrderLine|epo-ord:Order -> epo-ord:OrderLine [1..*]|epo-ord:comprisesOrderLine|epo-ord:OrderLine [0..*]
+|epo-ord:specifiesDeliveryInformation|epo-ord:Order -> epo-ord:DeliveryInformation [1..*]|epo-ord:Order -> epo-ord:DeliveryInformation [0..*]
+|epo:hasValidityPeriod|epo-ord:Order -> epo:Period [0..1]|epo-ord:Order -> time:Interval [0..1]
+|
+
+|===
+
+=== Added Datatype Properties
+|===
+|*Property* | *Class* | *datatype/cardinality*
+|epo-ord:hasVATExemptionReason|epo-ord:AllowanceChargeInformation|rdf:PlainLiteral [0..1]
+|epo-ord:hasVATExemptionReasonDescription |epo-ord:AllowanceChargeInformation|rdf:PlainLiteral [0..1]
+|epo-ord:hasGeneralDeliveryTerm|epo-ord:DeliveryAgreement|rdf:PlainLiteral [0..1]
+|epo-ord:hasRequestedShippingPriority|epo-ord:DeliveryAgreement|rdf:PlainLiteral [0..1]
+|epo-ord:isPartialDeliveryAllowed|epo-ord:DeliveryAgreement|xsd:boolean [0..1]
+|epo-ord:hasDeliveryEmail|epo-ord:DeliveryInformation|rdf:PlainLiteral [0..1]
+|epo-ord:hasDownloadURL|epo-ord:DeliveryInformation|xsd:anyURI [0..*]
+|epo:hasAccessURL|epo-ord:DeliveryInformation|xsd:anyURI [0..*]
+|===
+
+=== Deleted Datatype Properties
+|===
+|*Property* | *Class* | *datatype/cardinality*
+|epo-ord:hasCustomerReference|epo-ord:Order|xsd:boolean [0..1]
+|===
+
+
+=== Modified Data Properties
+|===
+|*Property* | *Class* | *old datatype/cardinality*|*new datatype/cardinality*
+|dct:description|epo-ord:DeliveryAgreement|rdf:PlainLiteral [0..*]|rdf:PlainLiteral [0..1]
+|epo-inv:hasActualDeliveryDate|epo-ord:DeliveryInformation|xsd:date [0..1]|xsd:dateTime [0..1]
+
+
+
+|===
+
+
+
 == eFulfilment
 
 == eContract
@@ -38,6 +145,16 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 == eNotice
 
 == eAccess
+
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eAccess.xml on 2024-11-12| This version is automatically generated from eAccess.xml on 2025-05-02
+| owl:versionInfo |	4.2.0 |	5.0.0
+| owl:priorVersion |	epo-acc-4.1.1 | epo-acc-4.2.0
+| version:IRI | acc-4.2.0 | acc-5.0.0
+| dct:issued |	2024-11-12		| 2025-05-02
+|===
 
 == eSubmission
 
