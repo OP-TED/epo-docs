@@ -26,11 +26,202 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 
 
 == ePO core
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from ePO_core.xml on 2024-11-12| This version is automatically generated from ePO_core.xml on 2025-05-02
+| owl:versionInfo |	4.2.0 |	5.0.0
+| owl:priorVersion |	epo:core-4.1.1 | epo:core-4.2.0
+| version:IRI | core-4.2.0 | core-5.0.0
+| dct:issued |	2024-11-12		| 2025-05-02
+|===
+
+=== Added Classes
+|===
+|*Class*
+|epo:CleanVehicleDirectiveInformation
+|epo:Documentation
+|epo:EmploymentDocumentation
+|epo:EnergyEfficiencyInformation
+|epo:EnvironmentalDocumentation
+|epo:InternationalProcurementInstrumentMeasuresInformation
+|epo:MaskableObject
+|epo:ReliedUponEntity
+|epo:ReviewInformation
+|epo:TaxDocumentation
+|epo:UniqueResponsibleOfTheProcurement
+|===
+
+=== Added subClassOf
+|===
+| *instance* | *property* |	 *value*
+|epo:AwardCriterion|rdfs:subClassOf|epo:MaskableObject
+|epo:AwardEvaluationTerm|rdfs:subClassOf|epo:MaskableObject
+|epo:ConcessionEstimate|rdfs:subClassOf|epo:MaskableObject
+|epo:DirectAwardTerm|rdfs:subClassOf|epo:MaskableObject
+|epo:LotAwardOutcome|rdfs:subClassOf|epo:MaskableObject
+|epo:MonetaryValue|rdfs:subClassOf|epo:MaskableObject
+|epo:ProcurementObject|rdfs:subClassOf|epo:MaskableObject
+|epo:ProcedureTerm|rdfs:subClassOf|epo:MaskableObject
+|epo:ReviewIrregularitySummary|rdfs:subClassOf|epo:MaskableObject
+|epo:ReviewRequestSummary|rdfs:subClassOf|epo:MaskableObject
+|epo:SubcontractingEstimate|rdfs:subClassOf|epo:MaskableObject
+|epo:SubmissionStatisticalInformation|rdfs:subClassOf|epo:MaskableObject
+|epo:TenderAwardOutcome|rdfs:subClassOf|epo:MaskableObject
+|epo:Tender|rdfs:subClassOf|epo:MaskableObject
+|epo:EmploymentDocumentation|rdfs:subClassOf|epo:Documentation
+|epo:EnvironmentalDocumentation|rdfs:subClassOf|epo:Documentation
+|epo:TaxDocumentation|rdfs:subClassOf|epo:Documentation
+|epo:InternationalProcurementInstrumentMeasuresInformation|rdfs:subClassOf|epo:ContextDescription
+|epo:EnergyEfficiencyInformation|rdfs:subClassOf|epo:ContextDescription
+|epo:CleanVehicleDirectiveInformation|rdfs:subClassOf|epo:ContextDescription
+|epo:ReliedUponEntity|rdfs:subClassOf|epo:OfferingParty
+|epo:UniqueResponsibleOfTheProcurement|rdfs:subClassOf|epo:AcquiringParty
+|===
+
+=== Deleted Classes
+|===
+|*Class* | *replaced by*
+|epo:ContractSpecificTerm|
+|epo:Duration| time:Duration
+|epo:IndefiniteDuration|
+|epo:LotSpecificTerm|
+|epo:OtherEntity | epo:ReliedUponEntity
+|epo:Period| time:Interval
+|epo:ProcedureSpecificTerm|
+|epo:ReviewObject|
+|epo:SpecificDuration|
+|epo:VehicleInformation	| epo:CleanVehicleDirectiveInformation
+|===
+
+=== Deleted subClassOf properties
+|===
+| *instance* | *property* |	 *value*
+|epo:ReviewDecision|rdfs:subClassOf|epo:ReviewObject
+|epo:ReviewRequest|rdfs:subClassOf|epo:ReviewObject
+|===
+
+=== Added Object Properties
+|===
+|*property* | *Domain, Range and cardinality*
+|epo:providesProcurementDocumentsInOfficialLanguage |epo:AccessTerm -> at-voc:language [0..*]
+|epo:providesProcurementDocumentsInUnofficialLanguage |epo:AccessTerm -> at-voc:language [0..*]
+|epo:providesDocumentation|epo:AuxiliaryParty -> epo:Documentation [0..*]
+|epo:concernsGreenProcurement|epo:CleanVehicleDirectiveInformation -> epo:GreenProcurement [0..1] +
+epo:EnergyEfficiencyInformation -> epo:GreenProcurement [0..1]
+|epo:specifiesCleanVehicleDirectiveContractType|epo:CleanVehicleDirectiveInformation -> at-voc:cvd-contract-type [0..1]
+|epo:specifiesCleanVehicleDirectiveVehicleCategory|epo:CleanVehicleDirectiveInformation -> at-voc:vehicle-category [0..1]
+|epo:resultsFromLotAwardOutcome|epo:ConcessionContract -> epo:LotAwardOutcome [0..*]
+|epo:isSubjectToTerm|epo:Contract -> epo:Term [0..*] +
+epo:LotGroup -> epo:Term [0..*] +
+epo:ProcurementElement -> epo:Term [0..*]
+|epo:concernsLot|epo:ContractLotCompletionInformation -> epo:Lot [0..1]
+|epo:concernsLotGroup|epo:ContractLotCompletionInformation -> epo:LotGroup [0..1]
+|epo:definesEstimatedContractDuration|epo:ContractTerm -> time:Duration [0..1]
+|epo:hasPerformingStaffQualificationInformation|epo:ContractTerm -> at-voc:requirement-stage [0..*]
+|epo:hasDocumentType|epo:Document -> at-voc-new:document-type [0..1]
+|epo:hasEstimatedDuration|epo:DynamicPurchaseSystemTechnique -> time:Duration [0..1]
+|epo:concernsEnergyEfficiencyItemCategory | epo:EnergyEfficiencyInformation -> at-voc:energy-efficiency-item [0..1]
+|epo:hasCalculationBasedOn| epo:EnergyEfficiencyInformation -> at-voc:energy-efficiency-basis [0..1]
+|epo:hasEnergyEfficiencyLabel|epo:EnergyEfficiencyInformation -> at-voc:energy-efficiency-label [0..1]
+|epo:hasItemConsumption|epo:EnergyEfficiencyInformation -> epo:Quantity [0..1]
+|epo:hasItemConsumptionSavings|epo:EnergyEfficiencyInformation -> epo:Quantity [0..1]
+|epo:hasExclusionGroundType|epo:ExclusionGround -> at-voc:exclusion-ground [0..1]
+|epo:concernsInternationalProcurementInstrumentMeasure|epo:InternationalProcurementInstrumentMeasuresInformation -> at-voc:international-procurement-instrument-measure [0..1]
+|epo:concernsLotAwardOutcome|epo:InternationalProcurementInstrumentMeasuresInformation -> epo:LotAwardOutcome [0..*]
+|epo:hasInternationalProcurementInstrumentExceptionInformation|epo:InternationalProcurementInstrumentMeasuresInformation -> at-voc:international-procurement-instrument-application [0..1]
+|epo:concernsMaskedObject|epo:NonPublishedInformation -> epo:MaskableObject [1]
+|epo:providesEvidence|epo:Offer -> cccev:Evidence [1]
+|epo:doesNotRequireSelectionCriterionType|epo:ProcurementElement -> at-voc:selection-criterion [0..*]
+|epo:foreseesTerm|epo:ProcurementElement -> epo:Term [0..*]
+|epo:hasPurpose|epo:ProcurementElement -> epo:Purpose [0..1]
+|epo:hasUnknownUsageOfSelectionCriterionType|epo:ProcurementElement -> at-voc:selection-criterion [0..*]
+|epo:specifiesProcurementCriterion|epo:ProcurementElement -> epo:ProcurementCriterion [0..*]
+|===
+
+=== Deleted Object Properties
+|===
+|*property* | *Domain, Range and cardinality* |*replaced by*|*Domain, Range and cardinality*
+|epo:exposesInvoiceeChannel| epo:Buyer -> cv:Channel [0..*]||
+|epo:indicatesInvoiceeContactPoint| epo:Buyer -> cpov:ContactPoint [0..*]||
+|epo:signsAwardDecision| epo:Buyer -> epo:AwardDecision [0..*]||
+|epo:hasEstimatedDuration|epo:Contract -> epo:Duration [0..1]||
+|epo:isSubjectToContractSpecificTerm|epo:Contract -> epo:ContractSpecificTerm [0..*]|epo:isSubjectToTerm|epo:Contract -> epo:Term [0..*]
+|epo:describesLotCompletion|epo:ContractLotCompletionInformation -> epo:Lot [1]|epo:concernsLot|epo:ContractLotCompletionInformation -> epo:Lot [0..1]
+|epo:isSubjectToLotSpecificTerm|epo:Lot -> epo:LotSpecificTerm [0..*]||
+|epo:isSubjectToLotSpecificTerm|epo:LotGroup -> epo:LotSpecificTerm [0..*]|epo:isSubjectToTerm|epo:LotGroup->epo:Term [0..*]
+|epo:specifiesProcurementCriterion|epo:Lot -> epo:ProcurementCriterion [0..*]||
+|epo:relatesToEFormSectionIdentifier|epo:NonPublishedInformation -> adms:Identifier [1..*]||
+|epo:definesOpeningPlace|epo:OpeningTerm -> locn:Address [0..1]||
+|epo:isSubjectToProcedureSpecificTerm|epo:Procedure -> epo:ProcedureSpecificTerm [1..*]||
+|epo:hasPerformingStaffQualificationInformation| epo:ProcurementCriterion -> at-voc:requirement-stage [0..*]||
+|epo:foreseesContractSpecificTerm|epo:ProcurementObject -> epo:ContractSpecificTerm [0..*]||
+|epo:hasPurpose|epo:ProcurementObject -> epo:Purpose [0..1]||
+|epo:isSubjectToTerm|epo:ProcurementObject -> epo:Term [0..*]||
+|===
+
+=== Modified Object Properties
+|===
+|*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
+|epo:contextualisedBy |epo:AgentInRole -> epo:ProcurementObject [0..*] | epo:AgentInRole -> epo:ProcurementElement [0..*]
+|epo:definesContractDuration|epo:ContractTerm -> epo:Duration [0..1] | epo:ContractTerm -> time:Duration [0..1]
+|epo:definesContractPeriod|epo:ContractTerm -> epo:Period [0..1] | epo:ContractTerm -> time:Interval [0..1]
+|epo:hasCurrency|epo:MonetaryValue -> at-voc:currency [0..1]|epo:MonetaryValue -> at-voc:currency [1]
+|epo:hasQualificationSystemDuration|epo:MultipleStageProcedureTerm -> epo:Duration [0..1]|epo:MultipleStageProcedureTerm -> time:Duration [0..1]
+|epo:refersToLot|epo:Notice -> epo:Lot [1..*]|epo:Notice -> epo:Lot [0..*]
+|epo:refersToProcedure|epo:Notice -> epo:Procedure [1]|epo:Notice -> epo:Procedure [0..1]
+|epo:hasPlannedDuration|epo:PlannedProcurementPart -> epo:Duration [0..1]|epo:PlannedProcurementPart -> time:Duration [0..1]
+|epo:hasPlannedPeriod|epo:PlannedProcurementPart -> epo:Period [0..1]|epo:PlannedProcurementPart -> time:Interval [0..1]
+|epo:hasProcedureType|epo:Procedure -> at-voc:procurement-procedure-type [1]| epo:Procedure -> at-voc:procurement-procedure-type [0..1]
+|epo:hasUnitCode|epo:Quantity -> at-voc:measurement-unit [1] |epo:Quantity -> at-voc:measurement-unit [0..1]
+|===
+
+=== Added Datatype Properties
+|===
+|*Property* | *Class* | *datatype/cardinality*
+|epo:hasAwardJustification|epo:AwardOutcome|rdf:PlainLiteral [0..1]
+|epo:hasCleanVehicles |epo:CleanVehicleDirectiveInformation|xsd:integer [0..1]
+|epo:hasTotalVehicles |epo:CleanVehicleDirectiveInformation|xsd:integer [0..1]
+|epo:hasZeroEmissionVehicles |epo:CleanVehicleDirectiveInformation|xsd:integer [0..1]
+|epo:hasAdditionalInformation|epo:Document|rdf:PlainLiteral [0..*]
+|epo:hasAdditionalInformation|epo:ProcurementElement|rdf:PlainLiteral [0..*]
+|epo:hasAddressURL|epo:Documentation|xsd:anyURI [0..1]
+|epo:concernsTotalItems|epo:EnergyEfficiencyInformation|xsd:decimal [0..1]
+|epo:hasNumberOfTendersConcerned|epo:InternationalProcurementInstrumentMeasuresInformation|xsd:integer [0..1]
+|epo:hasPublicInterestExceptionJustification|epo:InternationalProcurementInstrumentMeasuresInformation|rdf:PlainLiteral [0..1]
+|epo:hasMaskableProperty|epo:NonPublishedInformation|xsd:anyURI [1..1]
+|epo:hasOpeningPlace|epo:OpeningTerm|rdf:PlainLiteral [0..1]
+|epo:appliesForeignSubsidiesRegulation|epo:ProcurementElement|xsd:boolean [0..1]
+|epo:isCoveredByGPA|epo:ProcurementElement|xsd:boolean [0..1]
+|epo:isSMESuitable|epo:ProcurementElement|xsd:boolean [0..1]
+|epo:hasQualificationCriteriaStatedInESPDRequest|epo:QualificationCriterion|xsd:boolean [0..1]
+|epo:hasQualificationCriteriaStatedInNotice|epo:QualificationCriterion|xsd:boolean [0..1]
+|epo:hasQualificationCriteriaStatedInProcurementDocuments|epo:QualificationCriterion|xsd:boolean [0..1]
+|===
+
+=== Deleted Datatype Properties
+|===
+|*Property* | *Class* | *datatype/cardinality*
+|epo:hasAdditionalNonAwardJustification|epo:AwardDecision|rdf:PlainLiteral [0..1]
+|epo:hasAdditionalInformation|epo:Notice|rdf:PlainLiteral [0..1]
+|epo:hasAdditionalInformation|epo:ProcurementObject|rdf:PlainLiteral [0..*]
+|epo:hasEFormsSubtype|epo:Notice|xsd:integer [0..1]
+|epo:hasOJSType|epo:Notice|rdf:PlainLiteral [0..1]
+|epo:isCoveredByGPA|epo:ProcurementObject|xsd:boolean [0..1]
+|epo:isSMESuitable|epo:ProcurementObject|xsd:boolean [0..1]
+|===
+
+=== Modified Data Properties
+|===
+|*Property* | *Class* | *old datatype/cardinality*|*new datatype/cardinality*
+|epo:hasAwardCriteriaStatedInProcurementDocuments|epo:AwardCriterion|xsd:boolean [1..1]|xsd:boolean [0..1]
+|epo:hasOJSIssueNumber|epo:Notice|xsd:integer [0..1]|rdf:PlainLiteral [0..1]
+|===
 
 == eCatalogue
 
 == eOrdering
-
+=== Metadata
 |===
 |*Property*|*Old Value*|*New Value*
 | rdfs:comment |	This version is automatically generated from eOrdering.xml on 2024-11-12| This version is automatically generated from eOrdering.xml on 2025-05-02
@@ -43,7 +234,9 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 === Added Classes
 |===
 |*Class*
+|epo-ord:Invoicee
 |epo-ord:OrderAgreement
+|epo-ord:OrderAgreementLine
 |epo-ord:OrderCancellation
 |epo-ord:OrderCancellationConfirmation
 |epo-ord:OrderCancellationRejection
@@ -57,25 +250,23 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 |===
 | *instance* | *property* |	 *value*
 |epo-ord:Invoicee|rdfs:subClassOf|epo:AcquiringParty
+|epo-ord:OrderAgreement|rdfs:subClassOf|epo-ord:Order
+|epo-ord:OrderAgreementLine|rdfs:subClassOf|epo-ord:OrderLine
 |epo-ord:OrderCancellation|rdfs:subClassOf|epo-cat:PostAwardDocument
 |epo-ord:OrderCancellationConfirmation|rdfs:subClassOf|epo-cat:PostAwardDocument
 |epo-ord:OrderCancellationRejection|rdfs:subClassOf|epo-cat:PostAwardDocument
+|epo-ord:OrderChange|rdfs:subClassOf|epo-cat:epo-ord:Order
 |epo-ord:OrderChangeConfirmation|rdfs:subClassOf|epo-cat:PostAwardDocument
 |epo-ord:OrderChangeRejection|rdfs:subClassOf|epo-cat:PostAwardDocument
-|epo-ord:OrderAgreement|rdfs:subClassOf|epo-cat:epo-ord:Order
-|epo-ord:OrderChange|rdfs:subClassOf|epo-cat:epo-ord:Order
-|epo-ord:OrderResponse|rdfs:subClassOf|epo-cat:epo-ord:Order
-|epo-ord:OrderAgreementLine|rdfs:subClassOf|epo-ord:OrderLine
 |epo-ord:OrderChangeLine|rdfs:subClassOf|epo-ord:OrderLine
-
+|epo-ord:OrderResponse|rdfs:subClassOf|epo-ord:Order
 |===
 
-=== Deleted subClassOf
+=== Deleted subClassOf properties
 |===
 | *instance* | *property* |	 *value*
 |epo-ord:OrderResponse|rdfs:subClassOf|epo-cat:PostAwardDocument
 |===
-
 
 === Added Object Properties
 |===
@@ -123,8 +314,6 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |epo-ord:specifiesSeller|epo-ord:OrderResponse -> epo-ord:Seller [0..1]||
 |epo-ord:hasAcceptanceStatus|epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]|epo-ord:hasStatus|epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |epo-ord:hasDeliveryPeriod|epo-ord:OrderResponseInformation -> epo:Period [0..1]||
-
-
 |===
 
 === Modified Object Properties
@@ -137,8 +326,6 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |epo:hasValidityPeriod|epo-ord:Order -> epo:Period [0..1]|epo-ord:Order -> time:Interval [0..1]
 |epo-ord:isSubmittedForOrderLine|epo-ord:OrderResponseLine -> epo-ord:OrderLine [1..*]| epo-ord:OrderResponseLine -> epo-ord:OrderLine [1]
 |epo-cat:hasTaxScheme|epo-ord:TaxInformation -> at-voc-new:tax-scheme [0..1]|epo-ord:TaxInformation -> at-voc-new:tax-scheme [0..1]
-
-
 |===
 
 === Added Datatype Properties
@@ -161,15 +348,12 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |epo-ord:hasCustomerReference|epo-ord:Order|xsd:boolean [0..1]
 |===
 
-
 === Modified Data Properties
 |===
 |*Property* | *Class* | *old datatype/cardinality*|*new datatype/cardinality*
 |dct:description|epo-ord:DeliveryAgreement|rdf:PlainLiteral [0..*]|rdf:PlainLiteral [0..1]
 |epo-inv:hasActualDeliveryDate|epo-ord:DeliveryInformation|xsd:date [0..1]|xsd:dateTime [0..1]
 |===
-
-
 
 == eFulfilment
 
@@ -178,7 +362,6 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 == eNotice
 
 == eAccess
-
 === Metadata
 |===
 |*Property*|*Old Value*|*New Value*
