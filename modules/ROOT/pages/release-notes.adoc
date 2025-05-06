@@ -50,7 +50,32 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 |epo-ord:OrderChange
 |epo-ord:OrderChangeConfirmation
 |epo-ord:OrderChangeLine
+|epo-ord:OrderChangeRejection
 |===
+
+=== Added subClassOf
+|===
+| *instance* | *property* |	 *value*
+|epo-ord:Invoicee|rdfs:subClassOf|epo:AcquiringParty
+|epo-ord:OrderCancellation|rdfs:subClassOf|epo-cat:PostAwardDocument
+|epo-ord:OrderCancellationConfirmation|rdfs:subClassOf|epo-cat:PostAwardDocument
+|epo-ord:OrderCancellationRejection|rdfs:subClassOf|epo-cat:PostAwardDocument
+|epo-ord:OrderChangeConfirmation|rdfs:subClassOf|epo-cat:PostAwardDocument
+|epo-ord:OrderChangeRejection|rdfs:subClassOf|epo-cat:PostAwardDocument
+|epo-ord:OrderAgreement|rdfs:subClassOf|epo-cat:epo-ord:Order
+|epo-ord:OrderChange|rdfs:subClassOf|epo-cat:epo-ord:Order
+|epo-ord:OrderResponse|rdfs:subClassOf|epo-cat:epo-ord:Order
+|epo-ord:OrderAgreementLine|rdfs:subClassOf|epo-ord:OrderLine
+|epo-ord:OrderChangeLine|rdfs:subClassOf|epo-ord:OrderLine
+
+|===
+
+=== Deleted subClassOf
+|===
+| *instance* | *property* |	 *value*
+|epo-ord:OrderResponse|rdfs:subClassOf|epo-cat:PostAwardDocument
+|===
+
 
 === Added Object Properties
 |===
@@ -63,6 +88,7 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 |epo:specifiesInvoicee|epo-ord:Order -> epo-ord:Invoicee [0..1]
 |epo:specifiesSeller|epo-ord:Order -> epo-ord:Seller [1] +
 epo-ord:OrderCancellation -> epo-ord:Seller [1] +
+epo-ord:OrderChangeRejection -> epo-ord:Seller [1] +
 epo-ord:OrderCancellationConfirmation -> epo-ord:Seller [1] +
 epo-ord:OrderCancellationRejection -> epo-ord:Seller [1] +
 epo-ord:OrderChangeConfirmation -> epo-ord:Seller [1]
@@ -72,15 +98,17 @@ epo-ord:OrderChange -> epo-ord:Order [1]
 |epo:specifiesBuyer |epo-ord:OrderCancellation -> epo:Buyer [1] +
 epo-ord:OrderCancellationConfirmation -> epo:Buyer [1] +
 epo-ord:OrderCancellationRejection -> epo:Buyer [1] +
-epo-ord:OrderChangeConfirmation -> epo:Buyer [1]
+epo-ord:OrderChangeConfirmation -> epo:Buyer [1] +
+epo-ord:OrderChangeRejection -> epo:Buyer [1] +
 |epo-ord:respondsToOrderCancellation|epo-ord:OrderCancellationConfirmation -> epo-ord:OrderCancellation [0..1] +
 epo-ord:OrderCancellationRejection -> epo-ord:OrderCancellation [0..1]
 |epo-ord:comprisesOrderChangeLine |epo-ord:OrderChange -> epo-ord:OrderChangeLine [0..*]
-|epo-ord:respondsToOrderChange|epo-ord:OrderChangeConfirmation-> epo-ord:OrderChange [1]
-|epo-ord:hasStatus|epo-ord:OrderChangeLine -> at-voc-new:ResponseStatus [0..1]
+|epo-ord:respondsToOrderChange|epo-ord:OrderChangeConfirmation -> epo-ord:OrderChange [1] +
+epo-ord:OrderChangeRejection -> epo-ord:OrderChange [1]
+|epo-ord:hasStatus|epo-ord:OrderChangeLine -> at-voc-new:ResponseStatus [0..1] +
+epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |epo-ord:isSubmittedForOrderLine| epo-ord:OrderChangeLine -> epo-ord:OrderLine [1]
-
-
+|epo-ord:hasBackorderQuantity| epo-ord:OrderResponseLine -> epo:Quantity [0..1]
 |===
 
 === Deleted Object Properties
@@ -89,9 +117,14 @@ epo-ord:OrderCancellationRejection -> epo-ord:OrderCancellation [0..1]
 |epo-ord:specifiesGeneralDeliveryAgreement |epo-ord:DeliveryInformation -> epo-ord:DeliveryAgreement [0..1]|epo-ord:specifiesDeliveryAgreement|epo-ord:DeliveryInformation -> epo-ord:DeliveryAgreement [0..1]
 |epo-ord:specifiesSpecificDeliveryAgreement |epo-ord:DeliveryInformation -> epo-ord:DeliveryAgreement [0..1]|epo-ord:specifiesDeliveryAgreement|epo-ord:DeliveryInformation -> epo-ord:DeliveryAgreement [0..1]
 |epo-ord:refersToCatalogue | epo-ord:Order -> epo-cat:Catalogue [0..*]|epo-cat:refersToCatalogue|epo-ord:Order -> epo-cat:PostAwardCatalogue [0..*]
-|epo:specifiesDespatcher | epo-ord:Order ->epo-ful:Despatcher [0..1]| epo-ful:specifiesDespatcher |epo-ord:Order -> epo-ful:Despatcher [0..1]
+|epo:specifiesDespatcher | epo-ord:Order -> epo-ful:Despatcher [0..1]| epo-ful:specifiesDespatcher |epo-ord:Order -> epo-ful:Despatcher [0..1]
+|epo-ord:implementsContract|epo-ord:OrderResponse -> epo:Contract [0..1]||
+|epo-ord:specifiesBuyer|epo-ord:OrderResponse -> epo:Buyer [0..1]||
+|epo-ord:specifiesSeller|epo-ord:OrderResponse -> epo-ord:Seller [0..1]||
+|epo-ord:hasAcceptanceStatus|epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]|epo-ord:hasStatus|epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
+|epo-ord:hasDeliveryPeriod|epo-ord:OrderResponseInformation -> epo:Period [0..1]||
 
-||
+
 |===
 
 === Modified Object Properties
@@ -99,10 +132,12 @@ epo-ord:OrderCancellationRejection -> epo-ord:OrderCancellation [0..1]
 |*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
 |epo-cat:hasAmount|epo-ord:AllowanceChargeInformation -> epo:MonetaryValue [1]|epo-ord:AllowanceChargeInformation -> epo:MonetaryValue [0..1]
 |epo-ord:hasDeliveryPeriod|epo-ord:DeliveryInformation -> epo:Period [0..1]|epo-ord:DeliveryInformation -> time:Interval [0..1]
-|epo-ord:comprisesOrderLine|epo-ord:Order -> epo-ord:OrderLine [1..*]|epo-ord:comprisesOrderLine|epo-ord:OrderLine [0..*]
+|epo-ord:comprisesOrderLine|epo-ord:Order -> epo-ord:OrderLine [1..*]|epo-ord:comprisesOrderLine -> epo-ord:OrderLine [0..*]
 |epo-ord:specifiesDeliveryInformation|epo-ord:Order -> epo-ord:DeliveryInformation [1..*]|epo-ord:Order -> epo-ord:DeliveryInformation [0..*]
 |epo:hasValidityPeriod|epo-ord:Order -> epo:Period [0..1]|epo-ord:Order -> time:Interval [0..1]
-|
+|epo-ord:isSubmittedForOrderLine|epo-ord:OrderResponseLine -> epo-ord:OrderLine [1..*]| epo-ord:OrderResponseLine -> epo-ord:OrderLine [1]
+|epo-cat:hasTaxScheme|epo-ord:TaxInformation -> at-voc-new:tax-scheme [0..1]|epo-ord:TaxInformation -> at-voc-new:tax-scheme [0..1]
+
 
 |===
 
@@ -117,6 +152,7 @@ epo-ord:OrderCancellationRejection -> epo-ord:OrderCancellation [0..1]
 |epo-ord:hasDeliveryEmail|epo-ord:DeliveryInformation|rdf:PlainLiteral [0..1]
 |epo-ord:hasDownloadURL|epo-ord:DeliveryInformation|xsd:anyURI [0..*]
 |epo:hasAccessURL|epo-ord:DeliveryInformation|xsd:anyURI [0..*]
+|epo-ord:hasAccountingCost|epo-ord:OrderLine|rdf:PlainLiteral [0..1]
 |===
 
 === Deleted Datatype Properties
@@ -131,9 +167,6 @@ epo-ord:OrderCancellationRejection -> epo-ord:OrderCancellation [0..1]
 |*Property* | *Class* | *old datatype/cardinality*|*new datatype/cardinality*
 |dct:description|epo-ord:DeliveryAgreement|rdf:PlainLiteral [0..*]|rdf:PlainLiteral [0..1]
 |epo-inv:hasActualDeliveryDate|epo-ord:DeliveryInformation|xsd:date [0..1]|xsd:dateTime [0..1]
-
-
-
 |===
 
 
