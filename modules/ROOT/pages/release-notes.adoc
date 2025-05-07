@@ -19,8 +19,17 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 ** eRequest
 
 *  Updates for the following modules were made (under Change notes):
+** ePO core
+** eNotice
+** eCatalogue
+** eOrdering
+** eFulfilment
+** eContract
+** eSubmission
+** eInvoicing
 
 * The (closed) github issues justifying these updates can be found https://github.com/OP-TED/ePO/milestone/14[here]
+* Alignment with https://www.w3.org/TR/owl-time/[Time Ontology]
 
 == Change notes
 
@@ -264,7 +273,7 @@ epo:ReviewRequest -> epo:ReviewRequester [0..1]
 |epo:hasNonAccessibilityCriterionJustification|epo:StrategicProcurement|rdf:PlainLiteral [0..*]
 |===
 
-=== Modified Data Properties
+=== Modified Datatype Properties
 |===
 |*Property* | *Class* | *old datatype/cardinality*|*new datatype/cardinality*
 |epo:hasAwardCriteriaStatedInProcurementDocuments|epo:AwardCriterion|xsd:boolean [1..1]|xsd:boolean [0..1]
@@ -477,7 +486,7 @@ epo-cat:EnvironmentalEmissionInformation -> epo-ful:TransportMeans [0..1]
 |epo-cat:hasImportanceCode|epo-cat:ItemProperty|xsd:integer [0..1]
 |===
 
-=== Modified Data Properties
+=== Modified Datatype Properties
 |===
 |*Property* | *Class* | *old datatype/cardinality*|*new datatype/cardinality*
 |epo-cat:hasLiteralValue|epo-cat:ItemProperty|rdf:PlainLiteral [0..1]|rdf:PlainLiteral [0..*]
@@ -611,7 +620,7 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |epo-ord:hasCustomerReference|epo-ord:Order|xsd:boolean [0..1]
 |===
 
-=== Modified Data Properties
+=== Modified Datatype Properties
 |===
 |*Property* | *Class* | *old datatype/cardinality*|*new datatype/cardinality*
 |dct:description|epo-ord:DeliveryAgreement|rdf:PlainLiteral [0..*]|rdf:PlainLiteral [0..1]
@@ -627,6 +636,94 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 | owl:priorVersion |	epo-ful-4.1.1 | epo-ful-4.2.0
 | version:IRI | ful-4.2.0 | ful-5.0.0
 | dct:issued |	2024-11-12		| 2025-05-02
+|===
+
+=== Added Classes
+|===
+|*Class*
+|epo-ful:ReceiptAdviceInformation
+|===
+
+=== Added subClassOf Properties
+|===
+| *instance* | *property* |	 *value*
+|epo-ful:ReceiptAdviceInformation|rdfs:subClassOf|epo-cat:InformationHub
+|===
+
+=== Deleted Classes
+|===
+|*Class* | *replaced by*
+|epo-ful:Notifier
+|===
+
+=== Added Object properties
+|===
+|*property* | *Domain, Range and cardinality*
+|epo-ord:hasAcceptanceStatus|epo-ful:AbstractContainer -> at-voc-new:ResponseStatus [0..1]
+|epo-ful:hasCarriageShipmentStage|epo-ful:Consignment -> epo-ful:ShipmentStage [0..1]
+|epo-ful:hasPackagingStatus|epo-ful:Package -> at-voc-new:packaging-status [0..1]
+|epo-ful:specifiesReceiptAdviceInformation|epo-ful:ReceiptAdvice -> epo-ful:ReceiptAdviceInformation [0..*]
+|epo-ful:hasRejectAction|epo-ful:ReceiptAdviceInformation -> at-voc-new:action-code [0..1]
+|epo-ful:hasRejectReason|epo-ful:ReceiptAdviceInformation -> at-voc-new:reject-reason [0..1]
+|epo-ful:hasShortageAction|epo-ful:ReceiptAdviceInformation -> at-voc-new:action-code [0..1]
+|epo-ful:isSpecificToReceiptAdviceLine|epo-ful:ReceiptAdviceInformation -> epo-ful:ReceiptAdviceLine [0..*]
+|epo-ord:hasAcceptanceStatus [0..*]|epo-ful:ReceiptAdviceInformation -> at-voc-new:ResponseStatus [0..1]
+|===
+
+=== Deleted Object Properties
+|===
+|*property* | *Domain, Range and cardinality* |*replaced by*|*Domain, Range and cardinality*
+|epo-ful:hasCarrierConsignmentID|epo-ful:Consignment -> adms:Identifier [0..1]||
+|epo-ful:hasChargeableWeight|epo-ful:Consignment -> epo:Quantity [0..1]||
+|epo-ful:hasConsignmentDeclaredStatisticsValue|epo-ful:Consignment -> epo:MonetaryValue [0..1]||
+|epo-ful:hasConsignmentFreeOnBoardValue|epo-ful:Consignment -> epo:MonetaryValue [0..1]||
+|epo-ful:hasConsignmentInvoiceValue|epo-ful:Consignment -> epo:MonetaryValue [0..1]||
+|epo-ful:hasFreightAllowanceCharge|epo-ful:Consignment ->  epo-cat:ChargeInformation [0..*]||
+|epo-ful:hasFreightForwarderConsignmentID|epo-ful:Consignment -> adms:Identifier [0..1]||
+|epo-ful:hasLoadingLength|epo-ful:Consignment -> epo:Quantity [0..1]||
+|epo-ful:hasMainCarriageShipmentStage|epo-ful:Consignment -> epo-ful:ShipmentStage [0..1]|epo-ful:hasCarriageShipmentStage|epo-ful:Consignment -> epo-ful:ShipmentStage [0..1]
+|epo-ful:hasOnCarriageShipmentStage|epo-ful:Consignment -> epo-ful:ShipmentStage [0..*]|epo-ful:hasCarriageShipmentStage|epo-ful:Consignment -> epo-ful:ShipmentStage [0..1]
+|epo-ful:hasPreCarriageShipmentStage|epo-ful:Consignment -> epo-ful:ShipmentStage [0..*]|epo-ful:hasCarriageShipmentStage|epo-ful:Consignment -> epo-ful:ShipmentStage [0..1]
+|epo-ful:hasAssociatedDocument|epo-ful:DespatchAdvice -> epo:Document [0..1]||
+|epo-ful:hasAssociatedDocument|epo-ful:DespatchLine -> epo:Document [0..1]||
+|epo-ful:hasAssociatedDocument|epo-ful:ReceiptAdvice -> epo:Document [0..1]||
+|epo-ful:specifiesShipment|epo-ful:DespatchAdvice -> epo-ful:ShipmentInformation [0..1]||
+|epo-ful:specifiesTransportHandlingUnits|epo-ful:DespatchAdvice -> epo-ful:TransportHandlingUnit [0..*]||
+|epo-ful:hasRejectReason|epo-ful:ReceiptAdviceLine -> at-voc-new:reject-reason [0..1]||
+|epo-ful:hasShortageAction|epo-ful:ReceiptAdviceLine -> at-voc-new:action-code [0..1]||
+|epo-ful:RejectionAction|epo-ful:ReceiptAdviceLine -> at-voc-new:action-code [0..1]||
+|epo-ful:transportsItemFrom|epo-ful:TransportHandlingUnit -> epo-ful:DespatchLine [1..*]||
+|===
+
+=== Modified Object Properties
+|===
+|*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
+|epo-ful:refersToOrderLine|epo-ful:DespatchLine -> epo-ord:OrderLine [0..1]|epo-ful:DespatchLine -> epo-ord:OrderLine [1]
+|epo-ful:hasDespatchPeriod|epo-ful:ShipmentInformation -> epo:Period [0..1]|epo-ful:ShipmentInformation -> time:Interval [0..1]
+|epo-ful:hasEstimatedDeliveryPeriod|epo-ful:ShipmentInformation -> epo:Period [0..1]|epo-ful:ShipmentInformation -> time:Interval [0..1]
+|===
+
+=== Added Datatype Properties
+|===
+|*Property* | *Class* | *datatype/cardinality*
+|epo-ful:hasPackingMaterialDescription|epo-ful:AbstractContainer|rdf:PlainLiteral [0..1]
+|epo-ful:hasPackagingStatusDescription|epo-ful:Package|rdf:PlainLiteral [0..1]
+|epo-ful:hasRejectReasonDescription|epo-ful:ReceiptAdviceInformation|rdf:PlainLiteral [0..1]
+|epo-ful:hasDespatchDate|epo-ful:ShipmentInformation|xsd:dateTime [0..1]
+|epo-ord:hasShippingMark|epo-ful:TransportHandlingUnit|rdf:PlainLiteral [0..*]
+|===
+
+=== Deleted Datatype Properties
+|===
+|*Property* | *Class* | *datatype/cardinality*
+|epo-ful:hasCarrierServiceInstruction|epo-ful:Consignment|rdf:PlainLiteral [0..*]
+|epo-ful:hasDeliveryInstruction|epo-ful:Consignment|rdf:PlainLiteral [0..*]
+|epo-ful:hasSpecialInstruction|epo-ful:Consignment|rdf:PlainLiteral [0..*]
+|epo-ful:hasVehicleDescription|epo-ful:Consignment|rdf:PlainLiteral [0..1]
+|epo-ful:despatchDate |epo-ful:ShipmentInformation|xsd:dateTime [0..1]
+|epo-ful:isHazardousRisk|epo-ful:ShipmentStage|xsd:boolean [0..1]
+|epo-ful:isReturnable|epo-ful:TransportEquipment|xsd:boolean [0..1]
+|epo-ful:hasShippingMark|epo-ful:TransportHandlingUnit|rdf:PlainLiteral [0..*]
 |===
 
 == eContract
@@ -746,7 +843,6 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
 |epo-inv:hasInvoicingPeriod|epo-inv:Invoice -> epo:Period [0..1]|epo-inv:Invoice -> time:Interval [0..1]
 |epo-inv:hasInvoiceLinePeriod|epo-inv:InvoiceLine -> epo:Period [0..1]|epo-inv:InvoiceLine -> time:Interval [0..1]
-
 |===
 
 === Deleted Datatype Properties
@@ -754,6 +850,5 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |*Property* | *Class* | *datatype/cardinality*
 |epo-ord:hasCustomerReference|epo-inv:Invoice|rdf:PlainLiteral [0..1]
 |===
-
 
 include::partial$feedback.adoc[]
