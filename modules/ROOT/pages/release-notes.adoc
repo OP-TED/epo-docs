@@ -77,6 +77,21 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 |epo:CleanVehicleDirectiveInformation|rdfs:subClassOf|epo:ContextDescription
 |epo:ReliedUponEntity|rdfs:subClassOf|epo:OfferingParty
 |epo:UniqueResponsibleOfTheProcurement|rdfs:subClassOf|epo:AcquiringParty
+|epo:AccessTerm|rdfs:subClassOf|epo:Term
+|epo:ContractTerm|rdfs:subClassOf|epo:Term
+|epo:DesignContestRegimeTerm|rdfs:subClassOf|epo:Term
+|epo:DirectAwardTerm|rdfs:subClassOf|epo:Term
+|epo:EvaluationTerm|rdfs:subClassOf|epo:Term
+|epo:FrameworkAgreementTerm|rdfs:subClassOf|epo:Term
+|epo:MultipleStageProcedureTerm|rdfs:subClassOf|epo:Term
+|epo:NonDisclosureAgreementTerm|rdfs:subClassOf|epo:Term
+|epo:OpeningTerm|rdfs:subClassOf|epo:Term
+|epo:ParticipationRequestTerm|rdfs:subClassOf|epo:Term
+|epo:ProcedureTerm|rdfs:subClassOf|epo:Term
+|epo:ReviewTerm|rdfs:subClassOf|epo:Term
+|epo:SecurityClearanceTerm|rdfs:subClassOf|epo:Term
+|epo:SubcontractTerm|rdfs:subClassOf|epo:Term
+|epo:SubmissionTerm|rdfs:subClassOf|epo:Term
 |===
 
 === Deleted Classes
@@ -137,6 +152,18 @@ epo:ProcurementElement -> epo:Term [0..*]
 |epo:hasPurpose|epo:ProcurementElement -> epo:Purpose [0..1]
 |epo:hasUnknownUsageOfSelectionCriterionType|epo:ProcurementElement -> at-voc:selection-criterion [0..*]
 |epo:specifiesProcurementCriterion|epo:ProcurementElement -> epo:ProcurementCriterion [0..*]
+|epo:answersReviewRequest|epo:ReviewDecision -> epo:ReviewRequest [1]
+|epo:specifiesReviewer|epo:ReviewDecision -> epo:Reviewer [0..1]
+|epo:specifiesReviewRequester|epo:ReviewDecision -> epo:ReviewRequester [0..1] +
+epo:ReviewRequest -> epo:ReviewRequester [0..1]
+|epo:concernsReviewDecision|epo:ReviewInformation -> epo:ReviewDecision [0..1]
+|epo:concernsReviewRequest|epo:ReviewInformation -> epo:ReviewRequest [0..1]
+|epo:relatesToEFormSectionIdentifier|epo:ReviewInformation -> adms:Identifier [0..1]
+|epo:includesAccessibilityCriterion|epo:SocialProcurement -> at-voc:accessibility [0..*]
+|epo:hasEstimatedValidityPeriod|epo:Technique -> time:Interval [0..1]
+|epo:specifiesForeignSubsidiesMeasureConclusion|epo:TenderAwardOutcome -> at-voc:foreign-subsidy-measure-conclusion [0..1]
+|epo:playedBy|epo:UniqueResponsibleOfTheProcurement -> person:Person [0..1]
+|epo:signsAwardDecision|epo:UniqueResponsibleOfTheProcurement -> epo:AwardDecision [0..*]
 |===
 
 === Deleted Object Properties
@@ -149,7 +176,7 @@ epo:ProcurementElement -> epo:Term [0..*]
 |epo:isSubjectToContractSpecificTerm|epo:Contract -> epo:ContractSpecificTerm [0..*]|epo:isSubjectToTerm|epo:Contract -> epo:Term [0..*]
 |epo:describesLotCompletion|epo:ContractLotCompletionInformation -> epo:Lot [1]|epo:concernsLot|epo:ContractLotCompletionInformation -> epo:Lot [0..1]
 |epo:isSubjectToLotSpecificTerm|epo:Lot -> epo:LotSpecificTerm [0..*]||
-|epo:isSubjectToLotSpecificTerm|epo:LotGroup -> epo:LotSpecificTerm [0..*]|epo:isSubjectToTerm|epo:LotGroup->epo:Term [0..*]
+|epo:isSubjectToLotSpecificTerm|epo:LotGroup -> epo:LotSpecificTerm [0..*]|epo:isSubjectToTerm|epo:LotGroup -> epo:Term [0..*]
 |epo:specifiesProcurementCriterion|epo:Lot -> epo:ProcurementCriterion [0..*]||
 |epo:relatesToEFormSectionIdentifier|epo:NonPublishedInformation -> adms:Identifier [1..*]||
 |epo:definesOpeningPlace|epo:OpeningTerm -> locn:Address [0..1]||
@@ -158,6 +185,15 @@ epo:ProcurementElement -> epo:Term [0..*]
 |epo:foreseesContractSpecificTerm|epo:ProcurementObject -> epo:ContractSpecificTerm [0..*]||
 |epo:hasPurpose|epo:ProcurementObject -> epo:Purpose [0..1]||
 |epo:isSubjectToTerm|epo:ProcurementObject -> epo:Term [0..*]||
+|epo:resolvesReviewRequest|epo:ReviewDecision -> epo:ReviewRequest [1]|epo:answersReviewRequest|epo:ReviewDecision -> epo:ReviewRequest [1]
+|epo:hasSelectionCriteriaUsage|epo:SelectionCriterion -> at-voc:usage [0..1]||
+|epo:includesAccessibilityCriterion|epo:StrategicProcurement -> at-voc:accessibility [0..*]||
+|epo:hasReceivedSubmissionType|epo:SubmissionStatisticalInformation -> at-voc:received-submission-type [0..1]||
+|epo:hasUsage|epo:Technique -> at-voc:usage [0..1]||
+|epo:foreseesSubcontractor|epo:Tender -> epo:Subcontractor [0..*]||
+|epo:isSubmitedBy|epo:Tender -> epo:Tenderer [0..1]|epo:isSubmittedBy|epo:Tender -> epo:Tenderer [0..1]
+|epo:specifiesSubcontractors|epo:Tender -> epo:Subcontractor [0..*]||
+
 |===
 
 === Modified Object Properties
@@ -174,6 +210,11 @@ epo:ProcurementElement -> epo:Term [0..*]
 |epo:hasPlannedPeriod|epo:PlannedProcurementPart -> epo:Period [0..1]|epo:PlannedProcurementPart -> time:Interval [0..1]
 |epo:hasProcedureType|epo:Procedure -> at-voc:procurement-procedure-type [1]| epo:Procedure -> at-voc:procurement-procedure-type [0..1]
 |epo:hasUnitCode|epo:Quantity -> at-voc:measurement-unit [1] |epo:Quantity -> at-voc:measurement-unit [0..1]
+|epo:hasStartDate|epo:SelectedCandidateList -> epo:Period [0..1]|epo:SelectedCandidateList -> time:Interval [0..1]
+|epo:hasTenderValidityDuration|epo:SubmissionTerm -> epo:Duration [0..1]|epo:SubmissionTerm -> time:Duration [0..1]
+|epo:hasTenderValidityPeriod|epo:SubmissionTerm -> epo:Period [0..1]|epo:SubmissionTerm -> time:Interval [0..1]
+|epo:hasValidityPeriod|epo:Technique -> epo:Period [0..1]|epo:Technique -> time:Interval [0..1]
+|epo:isSupportedBy|epo:Tender -> epo-sub:ESPD [1]|epo:Tender -> epo:Offer [0..1]
 |===
 
 === Added Datatype Properties
@@ -197,6 +238,13 @@ epo:ProcurementElement -> epo:Term [0..*]
 |epo:hasQualificationCriteriaStatedInESPDRequest|epo:QualificationCriterion|xsd:boolean [0..1]
 |epo:hasQualificationCriteriaStatedInNotice|epo:QualificationCriterion|xsd:boolean [0..1]
 |epo:hasQualificationCriteriaStatedInProcurementDocuments|epo:QualificationCriterion|xsd:boolean [0..1]
+|epo:hasWithdrawalDate |epo:ReviewDecision|xsd:date [0..1]
+|epo:hasWithdrawalReason|epo:ReviewDecision|rdf:PlainLiteral [0..1]
+|epo:isWithdrawn|epo:ReviewDecision|xsd:boolean [0..1]
+|epo:hasElementReference|epo:ReviewInformation|xsd:anyURI [0..*]
+|epo:hasNumberOfReviewRequests|epo:ReviewRequestSummary|xsd:integer [1..1]
+|epo:hasNonAccessibilityCriterionJustification|epo:SocialProcurement|rdf:PlainLiteral [0..*]
+
 |===
 
 === Deleted Datatype Properties
@@ -209,6 +257,13 @@ epo:ProcurementElement -> epo:Term [0..*]
 |epo:hasOJSType|epo:Notice|rdf:PlainLiteral [0..1]
 |epo:isCoveredByGPA|epo:ProcurementObject|xsd:boolean [0..1]
 |epo:isSMESuitable|epo:ProcurementObject|xsd:boolean [0..1]
+|epo:hasDecisionDate|epo:ReviewDecision|xsd:date [0..1]
+|epo:hasNumberOfReviewRequests|epo:ReviewRequest|xsd:integer [1..1]
+|epo:hasRequestDate|epo:ReviewRequest|xsd:date [0..1]
+|epo:hasWithdrawalDate|epo:ReviewRequest|xsd:date [0..1]
+|epo:hasWithdrawalReason|epo:ReviewRequest|rdf:PlainLiteral [0..1]
+|epo:isWithdrawn|epo:ReviewRequest|xsd:boolean [0..1]
+|epo:hasNonAccessibilityCriterionJustification|epo:StrategicProcurement|rdf:PlainLiteral [0..*]
 |===
 
 === Modified Data Properties
