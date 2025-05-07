@@ -193,7 +193,6 @@ epo:ReviewRequest -> epo:ReviewRequester [0..1]
 |epo:foreseesSubcontractor|epo:Tender -> epo:Subcontractor [0..*]||
 |epo:isSubmitedBy|epo:Tender -> epo:Tenderer [0..1]|epo:isSubmittedBy|epo:Tender -> epo:Tenderer [0..1]
 |epo:specifiesSubcontractors|epo:Tender -> epo:Subcontractor [0..*]||
-
 |===
 
 === Modified Object Properties
@@ -244,7 +243,6 @@ epo:ReviewRequest -> epo:ReviewRequester [0..1]
 |epo:hasElementReference|epo:ReviewInformation|xsd:anyURI [0..*]
 |epo:hasNumberOfReviewRequests|epo:ReviewRequestSummary|xsd:integer [1..1]
 |epo:hasNonAccessibilityCriterionJustification|epo:SocialProcurement|rdf:PlainLiteral [0..*]
-
 |===
 
 === Deleted Datatype Properties
@@ -271,6 +269,86 @@ epo:ReviewRequest -> epo:ReviewRequester [0..1]
 |*Property* | *Class* | *old datatype/cardinality*|*new datatype/cardinality*
 |epo:hasAwardCriteriaStatedInProcurementDocuments|epo:AwardCriterion|xsd:boolean [1..1]|xsd:boolean [0..1]
 |epo:hasOJSIssueNumber|epo:Notice|xsd:integer [0..1]|rdf:PlainLiteral [0..1]
+|===
+
+== eNotice
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eNotice.xml on 2024-11-12| This version is automatically generated from eNotice.xml on 2025-05-02
+| owl:versionInfo |	4.2.0 |	5.0.0
+| owl:priorVersion |	epo-not-4.1.1 | epo-not-4.2.0
+| version:IRI | not-4.2.0 | not-5.0.0
+| dct:issued |	2024-11-12		| 2025-05-02
+|===
+
+=== Added Classes
+|===
+|*Class*
+|epo-not:CallForExpressionOfInterest
+|===
+
+=== Added subClassOf Properties
+|===
+| *instance* | *property* |	 *value*
+|epo-not:NoticeT01|rdfs:subClassOf|epo-not:PINTransportationNotice
+|epo-not:NoticeT02|rdfs:subClassOf|epo-not:CANTransportationNotice
+|epo-not:NoticeCEI|rdfs:subClassOf|epo-not:CallForExpressionOfInterest
+|epo-not:CallForExpressionOfInterest|rdfs:subClassOf|epo-not:CompetitionNotice
+|epo-not:NoticeE6|rdfs:subClassOf|epo-not:ContractModificationNotice
+|epo-not:NoticeE6|rdfs:subClassOf|epo-not:eFormsNotice
+|epo-not:PINTransportationNotice|rdfs:subClassOf|epo-not:PlanningNotice
+|epo-not:CANTransportationNotice|rdfs:subClassOf|epo-not:ResultNotice
+|===
+
+=== Deleted subClassOf Properties
+|===
+| *instance* | *property* |	 *value*
+|epo-not:NoticeT01|rdfs:subClassOf|epo-not:PINTimeLimitNotice
+|epo-not:NoticeT02|rdfs:subClassOf|epo-not:CANSocialNotice
+|epo-not:NoticeCEI|rdfs:subClassOf|epo-not:PIN_CFCStandardNotice
+|===
+
+=== Added Object Properties
+|===
+|*property* | *Domain, Range and cardinality*
+|epo:hasNoticeType|epo-not:CallForExpressionOfInterest -> pin-cfc-standard [1]
+|epo:concernsLot|epo-not:CompletionNotice -> epo:Lot [1..*] +
+epo-not:ContractModificationNotice -> epo:Lot [1..*] +
+epo-not:ResultNotice -> epo:Lot [1..*]
+|epo:concernsLotGroup|epo-not:CompletionNotice -> epo:LotGroup [0..*] +
+epo-not:ContractModificationNotice -> epo:LotGroup [0..*] +
+epo-not:ResultNotice -> epo:LotGroup [0..*]
+|epo:concernsProcedure|epo-not:CompletionNotice -> epo:Procedure [1] +
+epo-not:ContractModificationNotice -> epo:Procedure [1] +
+epo-not:ResultNotice -> epo:Procedure [1]
+|epo:refersToReviewRequest|epo-not:CompletionNotice -> epo:ReviewRequest [0..*]
+|epo:refersToRole|epo-not:ContractModificationNotice -> epo:AgentInRole [0..*] +
+epo-not:ResultNotice -> epo:AgentInRole [1..*]
+epo-not:PreMarketConsultationNotice -> epo:AgentInRole [0..*]
+|epo:announcesLot|epo-not:PlanningNotice -> epo:Lot [0..*]
+|epo:announcesLotGroup|epo-not:PlanningNotice -> epo:LotGroup [0..*]
+|epo:announcesProcedure|epo-not:PlanningNotice -> epo:Procedure [0..1]
+|epo:preparesForPotentialProcurementObject|epo-not:PreMarketConsultationNotice -> epo:ProcurementObject [0..*]
+|epo:announcesReviewRequest|epo-not:ResultNotice -> epo:ReviewRequest [0..*]
+|epo:announcesRole|epo-not:ResultNotice -> epo:AgentInRole [0..*]
+|===
+
+=== Deleted Object Properties
+|===
+|*property* | *Domain, Range and cardinality* |*replaced by*|*Domain, Range and cardinality*
+|epo:refersToLot|epo-not:CompletionNotice -> epo:Lot [1..*]|epo:concernsLot|epo-not:CompletionNotice -> epo:Lot [1..*]
+|epo:refersToLot|epo-not:ContractModificationNotice -> epo:Lot [1..*]|epo:concernsLot|epo-not:ContractModificationNotice -> epo:Lot [1..*]
+|epo:refersToLot|epo-not:ResultNotice -> epo:Lot [1..*]|epo:concernsLot|epo-not:ResultNotice -> epo:Lot [1..*]
+|epo:refersToLotGroup|epo-not:CompletionNotice -> epo:LotGroup [0..*]|epo:concernsLotGroup|epo-not:CompletionNotice -> epo:LotGroup [0..*]
+|epo:refersToLotGroup|epo-not:ContractModificationNotice -> epo:LotGroup [0..*]|epo:concernsLotGroup|epo-not:ContractModificationNotice -> epo:LotGroup [0..*]
+|epo:refersToLotGroup|epo-not:ResultNotice -> epo:LotGroup [0..*]|epo:concernsLotGroup|epo-not:ResultNotice -> epo:LotGroup [0..*]
+|epo:refersToProcedure|epo-not:CompletionNotice -> epo:Procedure [1]|epo:concernsProcedure|epo-not:CompletionNotice -> epo:Procedure [1]
+|epo:refersToProcedure|epo-not:ContractModificationNotice -> epo:Procedure [1]|epo:concernsProcedure|epo-not:ContractModificationNotice -> epo:Procedure [1]
+|epo:refersToProcedure|epo-not:ResultNotice -> epo:Procedure [1]|epo:concernsProcedure|epo-not:ResultNotice -> epo:Procedure [1]
+|epo:announcesRole|epo-not:ContractModificationNotice -> epo:AgentInRole [0..*]|epo:refersToRole|epo-not:ContractModificationNotice -> epo:AgentInRole [0..*]
+|epo-not:refersToRole|epo-not:ResultNotice -> epo:AgentInRole [1..*]|epo:refersToRole|epo-not:ResultNotice -> epo:AgentInRole [1..*]
+|epo-not:announcesRole|epo-not:ResultNotice -> epo:AgentInRole [0..*]|epo:announcesRole|epo-not:ResultNotice -> epo:AgentInRole [0..*]
 |===
 
 == eCatalogue
@@ -413,8 +491,6 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 == eFulfilment
 
 == eContract
-
-== eNotice
 
 == eAccess
 === Metadata
