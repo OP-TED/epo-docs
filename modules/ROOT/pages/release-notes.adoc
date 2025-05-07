@@ -28,7 +28,7 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 ** eSubmission
 ** eInvoicing
 
-* The (closed) github issues justifying these updates can be found https://github.com/OP-TED/ePO/milestone/14[here]
+* The GitHub issues justifying these updates can be found https://github.com/OP-TED/ePO/milestone/14[here]
 * Alignment with https://www.w3.org/TR/owl-time/[Time Ontology]
 
 == Change notes
