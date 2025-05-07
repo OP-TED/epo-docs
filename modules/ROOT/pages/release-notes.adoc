@@ -352,6 +352,136 @@ epo-not:PreMarketConsultationNotice -> epo:AgentInRole [0..*]
 |===
 
 == eCatalogue
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eCatalogue.xml on 2024-11-12| This version is automatically generated from eCatalogue.xml on 2025-05-02
+| owl:versionInfo |	4.2.0 |	5.0.0
+| owl:priorVersion |	epo-cat-4.1.1 | epo-cat-4.2.0
+| version:IRI | cat-4.2.0 | cat-5.0.0
+| dct:issued |	2024-11-12		| 2025-05-02
+|===
+
+=== Added Classes
+|===
+|*Class*
+epo-cat:AbstractItem
+epo-cat:DimensionInformation
+epo-cat:EnvironmentalEmissionInformation
+epo-cat:PostAwardCatalogue
+|===
+
+=== Added subClassOf Properties
+|===
+| *instance* | *property* |	 *value*
+|epo-cat:Catalogue|rdfs:subClassOf|epo:Document
+|epo-cat:ProductSpecification|rdfs:subClassOf|epo:Document
+|epo-cat:AbstractItem|rdfs:subClassOf|epo-cat:Item
+|epo-cat:PostAwardCatalogue|rdfs:subClassOf|epo-cat:Catalogue
+|epo-cat:CatalogueResponseLine|rdfs:subClassOf|epo-cat:Line
+|===
+
+=== Deleted subClassOf Properties
+|===
+| *instance* | *property* |	 *value*
+|epo-cat:Catalogue|rdfs:subClassOf|epo-cat:PostAwardDocument
+|epo-cat:ProductSpecification|rdfs:subClassOf|epo-cat:PostAwardDocument
+|===
+
+=== Added Object Properties
+|===
+|*property* | *Domain, Range and cardinality*
+|dct:hasPart|epo-cat:AbstractItem -> epo-cat:AbstractItem [0..*]
+|dct:isReplacedBy|epo-cat:AbstractItem -> epo-cat:AbstractItem [0..*]
+|dct:requires|epo-cat:AbstractItem -> epo-cat:AbstractItem [0..*]
+|epo-cat:hasAccessoryItem|epo-cat:AbstractItem -> epo-cat:AbstractItem [0..*]
+|epo-cat:hasBrand|epo-cat:AbstractItem -> epo-cat:Brand [0..1]
+|epo-cat:hasComplementaryItem|epo-cat:AbstractItem -> epo-cat:AbstractItem [0..*]
+|epo-cat:hasCountryOfOrigin|epo-cat:AbstractItem -> at-voc:country [0..1]
+|epo-cat:hasDeliveryClassification|epo-cat:AbstractItem -> at-voc-new:delivery-item-type [0..1]
+|epo-cat:hasHazardousClassID|epo-cat:AbstractItem -> adms:Identifier [0..*]
+|epo-cat:hasHazardousItemUNDGCode|epo-cat:AbstractItem -> at-voc-new:dangerous-goods-list [0..*]
+|epo-cat:hasItemClassification|epo-cat:AbstractItem -> at-voc-new:item-classification [0..*]
+|epo-cat:hasManufacturer|epo-cat:AbstractItem -> epo-cat:Manufacturer [0..1]
+|epo-cat:hasModel|epo-cat:AbstractItem -> epo-cat:ItemModel [0..1]
+|epo-cat:hasNetQuantity|epo-cat:AbstractItem -> epo:Quantity [0..1]
+|epo-cat:hasQualifiedItemRelation|epo-cat:AbstractItem -> epo-cat:ItemRelation [0..*]
+|epo-cat:hasSpecification|epo-cat:AbstractItem -> epo-cat:ProductSpecification [0..*]
+|epo-inv:hasItemClassificationIdentifier|epo-cat:AbstractItem -> adms:Identifier [0..*]
+|epo-ord:hasTaxInformation|epo-cat:AbstractItem -> epo-ord:TaxInformation [0..*]
+|epo:hasBuyerItemID|epo-cat:AbstractItem -> adms:Identifier [0..1]
+|epo:hasCertification|epo-cat:AbstractItem -> epo:Certificate [0..*]
+|epo:hasItemStandardID|epo-cat:AbstractItem -> adms:Identifier [0..*]
+|epo:hasManufacturerItemID|epo-cat:AbstractItem -> adms:Identifier [0..1]
+|epo:hasSellerItemID|epo-cat:AbstractItem -> adms:Identifier [0..1]
+|epo:hasSerialID|epo-cat:AbstractItem -> adms:Identifier [0..1]
+|epo-ord:hasResponseStatus|epo-cat:CatalogueResponseInformation -> at-voc-new:ResponseStatus [1]
+|epo-cat:concernsItem|epo-cat:DimensionInformation -> epo-cat:AbstractItem [0..1] +
+epo-cat:EnvironmentalEmissionInformation -> epo-cat:AbstractItem [0..1]
+|epo-cat:hasMaximumMeasure|epo-cat:DimensionInformation -> epo:Quantity [0..1]
+|epo-cat:hasMeasure|epo-cat:DimensionInformation -> epo:Quantity [0..1] +
+epo-cat:EnvironmentalEmissionInformation -> epo:Quantity [1]
+|epo-cat:hasMeasuredAttributeCode|epo-cat:DimensionInformation -> at-voc-new:measured-attribute-code [1]
+|epo-cat:hasMinimumMeasure|epo-cat:DimensionInformation -> epo:Quantity [0..1]
+|epo-ful:concernsGoodsItem|epo-cat:DimensionInformation -> epo-ful:GoodsItem [0..1]
+|epo-ful:concernsPackage|epo-cat:DimensionInformation -> epo-ful:Package [0..1]
+|epo-ful:concernsTransportEquipment|epo-cat:DimensionInformation -> epo-ful:TransportEquipment [0..1]
+|epo-ful:concernsTransportMeans|epo-cat:DimensionInformation -> epo-ful:TransportMeans [0..1] +
+epo-cat:EnvironmentalEmissionInformation -> epo-ful:TransportMeans [0..1]
+|epo-cat:hasEnvironmentalEmissionCode|epo-cat:EnvironmentalEmissionInformation -> at-voc-new:environmental-emission-code [1]
+|adms:identifier|epo-cat:ItemProperty -> adms:Identifier [0..1]
+|epo-cat:hasMaximumValue|epo-cat:ItemProperty -> epo:Quantity [0..1]
+|epo-cat:hasMinimumValue|epo-cat:ItemProperty -> epo:Quantity [0..1]
+|epo-ful:hasAssociatedDocument|epo-cat:Line -> epo:Document [0..1]
+|epo-cat:isSubordinatedToContract|epo-cat:PostAwardCatalogue -> epo:Contract [0..1]
+|epo-ord:hasCustomerReference|epo-cat:PostAwardDocument -> adms:Identifier [0..1]
+|===
+
+=== Deleted Object Properties
+|===
+|*property* | *Domain, Range and cardinality* |*replaced by*|*Domain, Range and cardinality*
+|epo-cat:isSubordinatedToContract|epo-cat:Catalogue -> epo:Contract [0..1]||
+|epo-ord:hasAcceptanceStatus|epo-cat:CatalogueResponseInformation -> at-voc-new:ResponseStatus [1]|epo-ord:hasResponseStatus|epo-cat:CatalogueResponseInformation -> at-voc-new:ResponseStatus [1]
+|epo-cat:hasDocumentType|epo-cat:PostAwardDocument -> at-voc-new:document-type [0..1]||
+|===
+
+=== Modified Object Properties
+|===
+|*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
+|epo-cat:isProductionOf|epo-cat:Batch -> epo-cat:Item [1]|epo-cat:Batch -> epo-cat:AbstractItem [1]
+|epo:hasValidityPeriod|epo-cat:Catalogue -> epo:Period [0..1]|epo-cat:Catalogue -> time:Interval [0..1]
+|epo-cat:hasCatalogueLineValidity|epo-cat:CatalogueLine -> epo:Period [0..1]|epo-cat:CatalogueLine -> time:Interval [0..1]
+|epo-cat:hasPrice|epo-cat:CatalogueLine -> epo-cat:Price [1..*]|epo-cat:CatalogueLine -> epo-cat:Price [0..*]
+|epo-cat:refersToCatalogue|epo-cat:CatalogueResponse -> epo-cat:Catalogue [1]|epo-cat:CatalogueResponse -> epo-cat:PostAwardCatalogue [1]
+|epo-cat:describesItem|epo-cat:ItemProperty -> epo-cat:Item [1]|epo-cat:ItemProperty -> epo-cat:AbstractItem [1]
+|epo-cat:isRelatedToItem|epo-cat:ItemRelation -> epo-cat:Item [1]|epo-cat:ItemRelation -> epo-cat:AbstractItem [1]
+|epo-cat:specifiesItem|epo-cat:Line -> epo-cat:Item [1]|epo-cat:Line -> epo-cat:AbstractItem [1]
+|epo-cat:hasDeliveryLocation|epo-cat:Price -> dct:Location [0..1]|epo-cat:Price ->  dct:Location [0..*]
+|epo-cat:hasExpectedDeliveryTime|epo-cat:Price -> epo:Duration [0..1]|epo-cat:Price -> time:Duration [0..1]
+|epo-cat:hasPriceValidity|epo-cat:Price -> epo:Period [1]|epo-cat:Price -> time:Interval [1]
+|===
+
+=== Added Datatype Properties
+|===
+|*Property* | *Class* | *datatype/cardinality*
+|dct:description|epo-cat:AbstractItem|rdf:PlainLiteral [0..1]
+|dct:title|epo-cat:AbstractItem|rdf:PlainLiteral [1..1]
+|dct:title|epo-cat:EnvironmentalEmissionInformation|rdf:PlainLiteral [0..1]
+|epo-cat:hasKeyword|epo-cat:AbstractItem|rdf:PlainLiteral [0..*]
+|epo-cat:isInStock|epo-cat:AbstractItem|xsd:boolean [0..1]
+|epo-ord:hasResponseDescription|epo-cat:CatalogueResponse|rdf:PlainLiteral [0..1]
+|epo-ord:hasResponseDescription|epo-cat:CatalogueResponseLine|rdf:PlainLiteral [0..1]
+|epo-cat:hasDimensionDescription|epo-cat:DimensionInformation|rdf:PlainLiteral [0..1]
+|epo:hasCalculationMethod|epo-cat:EnvironmentalEmissionInformation|rdf:PlainLiteral [0..1]
+|epo-cat:hasClassificationCode|epo-cat:ItemProperty|rdf:PlainLiteral [0..1]
+|epo-cat:hasImportanceCode|epo-cat:ItemProperty|xsd:integer [0..1]
+|===
+
+=== Modified Data Properties
+|===
+|*Property* | *Class* | *old datatype/cardinality*|*new datatype/cardinality*
+|epo-cat:hasLiteralValue|epo-cat:ItemProperty|rdf:PlainLiteral [0..1]|rdf:PlainLiteral [0..*]
+|===
 
 == eOrdering
 === Metadata
@@ -489,6 +619,15 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |===
 
 == eFulfilment
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eFulfilment.xml on 2024-11-12| This version is automatically generated from eFulfilment.xml on 2025-05-02
+| owl:versionInfo |	4.2.0 |	5.0.0
+| owl:priorVersion |	epo-ful-4.1.1 | epo-ful-4.2.0
+| version:IRI | ful-4.2.0 | ful-5.0.0
+| dct:issued |	2024-11-12		| 2025-05-02
+|===
 
 == eContract
 === Metadata
@@ -518,8 +657,6 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
 |epo:relatesToEFormSectionIdentifier|epo-con:ContractModificationInformation -> adms:Identifier [0..1]|epo-con:ContractModificationInformation -> adms:Identifier [0..*]
 |===
-
-
 
 == eAccess
 === Metadata
