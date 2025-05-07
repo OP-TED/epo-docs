@@ -52,7 +52,7 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 |epo:UniqueResponsibleOfTheProcurement
 |===
 
-=== Added subClassOf
+=== Added subClassOf Properties
 |===
 | *instance* | *property* |	 *value*
 |epo:AwardCriterion|rdfs:subClassOf|epo:MaskableObject
@@ -94,7 +94,7 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 |epo:VehicleInformation	| epo:CleanVehicleDirectiveInformation
 |===
 
-=== Deleted subClassOf properties
+=== Deleted subClassOf Properties
 |===
 | *instance* | *property* |	 *value*
 |epo:ReviewDecision|rdfs:subClassOf|epo:ReviewObject
@@ -246,7 +246,7 @@ epo:ProcurementElement -> epo:Term [0..*]
 |epo-ord:OrderChangeRejection
 |===
 
-=== Added subClassOf
+=== Added subClassOf Properties
 |===
 | *instance* | *property* |	 *value*
 |epo-ord:Invoicee|rdfs:subClassOf|epo:AcquiringParty
@@ -262,7 +262,7 @@ epo:ProcurementElement -> epo:Term [0..*]
 |epo-ord:OrderResponse|rdfs:subClassOf|epo-ord:Order
 |===
 
-=== Deleted subClassOf properties
+=== Deleted subClassOf Properties
 |===
 | *instance* | *property* |	 *value*
 |epo-ord:OrderResponse|rdfs:subClassOf|epo-cat:PostAwardDocument
@@ -392,7 +392,7 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |epo-sub:OrganisationInformationSummary
 |===
 
-=== Added subClassOf
+=== Added subClassOf Properties
 |===
 | *instance* | *property* |	 *value*
 |epo-sub:DocumentaryEvidence |rdfs:subClassOf|cccev:Evidence
@@ -407,7 +407,7 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |epo-sub:NationalPreQualificationData | epo-sub:OrganisationInformationSummary
 |===
 
-=== Added Object Properties
+=== Added Object properties
 |===
 |*property* | *Domain, Range and cardinality*
 |epo-sub:summarisesInformationAboutEvidence|epo-sub:EvidenceInformation -> cccev:Evidence [1]
