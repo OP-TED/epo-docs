@@ -491,6 +491,35 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 == eFulfilment
 
 == eContract
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eContract.xml on 2024-11-12| This version is automatically generated from eContract.xml on 2025-05-02
+| owl:versionInfo |	4.2.0 |	5.0.0
+| owl:priorVersion |	epo-con-4.1.1 | epo-con-4.2.0
+| version:IRI | con-4.2.0 | con-5.0.0
+| dct:issued |	2024-11-12		| 2025-05-02
+|===
+
+=== Added subClassOf Properties
+|===
+| *instance* | *property* |	 *value*
+|epo-con:Deliverable|rdfs:subClassOf|epo-cat:AbstractItem
+|===
+
+=== Deleted subClassOf Properties
+|===
+| *instance* | *property* |	 *value*
+|epo-con:Deliverable|rdfs:subClassOf|epo-cat:Item
+|===
+
+=== Modified Object Properties
+|===
+|*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
+|epo:relatesToEFormSectionIdentifier|epo-con:ContractModificationInformation -> adms:Identifier [0..1]|epo-con:ContractModificationInformation -> adms:Identifier [0..*]
+|===
+
+
 
 == eAccess
 === Metadata
@@ -562,6 +591,31 @@ epo-ord:OrderResponseInformation -> at-voc-new:ResponseStatus [1]
 |===
 |*Property* | *Class* | *datatype/cardinality*
 |epo-sub:hasBusinessClassificationDescription|epo-sub:OrganisationInformationSummary|rdf:PlainLiteral [0..*]
+|===
+
+== eInvoicing
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment |	This version is automatically generated from eInvoicing.xml on 2024-11-12| This version is automatically generated from eInvoicing.xml on 2025-05-02
+| owl:versionInfo |	4.2.0 |	5.0.0
+| owl:priorVersion |	epo-inv-4.1.1 | epo-inv-4.2.0
+| version:IRI | inv-4.2.0 | inv-5.0.0
+| dct:issued |	2024-11-12		| 2025-05-02
+|===
+
+=== Modified Object Properties
+|===
+|*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
+|epo-inv:hasInvoicingPeriod|epo-inv:Invoice -> epo:Period [0..1]|epo-inv:Invoice -> time:Interval [0..1]
+|epo-inv:hasInvoiceLinePeriod|epo-inv:InvoiceLine -> epo:Period [0..1]|epo-inv:InvoiceLine -> time:Interval [0..1]
+
+|===
+
+=== Deleted Datatype Properties
+|===
+|*Property* | *Class* | *datatype/cardinality*
+|epo-ord:hasCustomerReference|epo-inv:Invoice|rdf:PlainLiteral [0..1]
 |===
 
 
