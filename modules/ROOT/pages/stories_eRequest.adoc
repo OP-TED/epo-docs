@@ -1,0 +1,112 @@
+:doctitle: eRequest Ontology Requirements Specification Document (ORSD)
+:page-code: epo-v5.0.0-rc.1-prod-007
+:page-name: ORSD - eRequest
+:docdate: May 2025
+
+
+== Resources
+
+* https://docs.oasis-open.org/ubl/os-UBL-2.4/UBL-2.4.html#S-QUOTATION:~:text=2.3.3.3%20Quotation,the%20following%20diagram[Request for Quotation]
+
+== eRequest
+
+In the procurement domain, eRequest represents a document created by the Buyer to request an offer for goods and services from a Contractor within a Framework Agreement and direct awards for procurements below threshold (small scale procurement).  +
+
+==Roles involved
+
+* Buyer
+* Contractor
+* Offer Issuer
+
+== Activity description
+
+. The Buyer *sends* a Request for Offer to the Contractor.
+. The Contractor *receives* the Request for Offer and analyses it.
+. The Offer Issuer *issues and sends* the Offer to the Buyer.
+. The Buyer *receives* the Offer and analyses it.
+. If the Offer is accepted, the Buyer writes the Contract/Order based on the Offer.
+. If the Offer is not accepted, the Buyer will modify the Request for Offer accordingly and re-start the process.
+
+
+== Use cases
+|===
+|*Use case* |*Description* |*Actors* |*Flow*
+
+|A Request for Offer is sent |The Buyer sends a Request for Offer to the Contractor. |Buyer, Contractor  |The Buyer sends a Request for Offer to the Contractor.
+|An Offer is sent |The Offer Issuer issues and sends the Offer to the Buyer. |Offer Issuer, Buyer |The Offer Issuer issues and sends the Offer to the Buyer.
+|The Offer is accepted |The Buyer receives the offer and analyses it. the Buyer writes the Contract/Order based on the Offer. |Buyer |The Buyer receives the offer and analyses it. the Buyer writes the Contract/Order based on the Offer.
+|The Offer is not accepted |The Buyer receives the offer and analyses it. The Buyer may ask for modifications of the Request for Offer. |Buyer |The Buyer receives the offer and analyses it. The Buyer may ask for modifications of the Request for Offer.
+|===
+
+
+
+== User stories
+|===
+|*Code* |*Role*  |*User Story*
+
+|REQ-1 |Buyer |As a Buyer, I want to send a request for offer
+|REQ-2 |Buyer |As a Buyer I want to have access to the Offer
+|REQ-3 |Buyer |As a Buyer I want to be able to analyse the Offer
+|REQ-4 |Buyer |As a Buyer I want to be able to send an Order/Contract to the Contractor
+|REQ-5 |Contractor |As a Contractor
+|REQ-6 |Contractor |As a Contractor
+|REQ-7 |Offer Issuer |As an Offer Issuer I want to be able to send the Offer to the Buyer.
+|REQ-8 |Buyer |As the Buyer I need to be able to see the issue date of the Offer
+|REQ-9 |Buyer |As the Buyer I need to be able to view the total amount of the Offer
+|REQ-10 |Buyer |As the Buyer I need to be able to view information about the line(s) in the Offer.
+|===
+
+== Natural Language Statements
+. The Buyer may ask for modifications of the Request for Offer?
+. The Buyer sends the Request for Offer.
+. The Buyer analyses the offer.
+. The Buyer either accepts or rejects the Offer.
+. The Contractor analyses the Request for Offer.
+. The Offer Issuer issues the Offer.
+. The Offer Issuer sends the Offer to the Buyer.
+. The Request for Offer is a document.
+. The Request for Offer *may have* a Sender Identifier.
+. The Request for Offer *may have* a UUID Identifier.
+. The Request for Offer *must have *an Issue Date
+. The Request for Offer *may have* an Issue Time
+. The Request for Offer *may have* a due date for submission
+. The Request for Offer *may have* a currency that the Seller will use to price the Offer.
+. The Request for Offer *must have* a number of Request for Offer Lines in this document
+. The Request for Offer *mentions* the Contractor
+. The Request for Offer *may have* a validity period.
+. The Request for Offer *may have* a reference to a Catalogue on which it is based.
+. The Request for Offer *may have* an additional document reference
+. The Request for Offer *may have* a signature.
+. The Request for Offer *may mention* a delivery or many deliveries.
+. The Request for Offer *may have* a set of delivery terms associated with this document.
+. The Request for Offer *may have* a country of destination of potential orders (for customs purposes).
+. The Request for Offer *may be associated* with a contract.
+. The Request for Offer *must specify* a line specifying a kind of item of sale.
+. The Offer *is* a document.
+. The Offer *may have* a Sender Identifier.
+. The Offer *may have* a UUID Identifier.
+. The Offer *must have* an Issue Date
+. The Offer *may have* an Issue Time
+. The Offer *may have* a period for which the Offer is valid.
+. The Offer *may have* a reference to the Request for Offer associated with this Offer.
+. The Offer *may have* a contract associated with it.
+. The Offer *may have* a signature.
+. The Offer *mentions* the Contractor
+. The Offer *may specify* a delivery or many deliveries.
+. The Offer *may have* a set of delivery terms associated with this document.
+. The Offer *may specify* Expected means of payment.
+. The Offer *may include* a specification of purchasing, sales, or payment conditions applying to Orders related to this Offer.
+. The Offer *may specify* an Allowance Charge.
+. The Offer *may specify* a country of destination of potential orders (for customs purposes).
+. The Offer *may specify* the total amount of a specific type of tax.
+. The Offer *must include* a total monetary amount.
+. The Offer *must include at least one* line quoting a cost for one kind of item.
+
+
+
+
+
+
+
+
+

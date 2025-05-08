@@ -1,0 +1,99 @@
+:doctitle: eAwarding Ontology Requirements Specification Document (ORSD)
+:page-code: epo-v5.0.0-rc.1-prod-007
+:page-name: ORSD - eAwarding
+:docdate: May 2025
+
+*eAwarding – Ontology Requirements Specification Document (ORSD)*
+
+*Resources*
+
+* Award Decision
+* https://docs.peppol.eu/pracc/syntax/AwardingNotification/tree/[Awarding Notification]
+
+*eAwarding*  +
+In the procurement domain, eAwarding refers to:
+
+* The Award Decision in the digital format created and signed by the Unique Responsible of the Procurement
+* The notification to all Tenderers as to the result of the Procurement
+The Award Decision is based on the Evaluation report. The Unique Responsible of the Procurement either accepts the findings of the Evaluation report or takes another decision (if the Winner does not fulfill all the criteria for the award of the contract).
+
+*Roles involved*
+
+* Unique Responsible of the Procurement – played by a Person; it is part of the Buyer’s Organization (the head of the Organisation; the person that has the final decision)
+* Buyer
+* Tenderer
+* Winner
+
+== Activity description
+_Award Notification_
+
+. The Award Decision is *written* by the Unique Responsible of the Procurement.
+. eQualification for open procedures happens:
+. The unique Responsible of the Procurement requests that the Tenderers proposed for awards provide their evidences concerning Exclusion Grounds and Selection Criteria.
+. Each Tenderer  proposed for an Award *submits *the Evidence.
+. The Unique Responsible of the Procurement *ensures *the evidences for the Participation Conditions and the Qualification Criteria are fulfilled by Tenderers proposed for an Award.
+See here for a full description of eQualification.
+
+. The Tenderers are *notified* about the result through one of the following:
+. Award Notification is sent to the Tenderers (most frequent case).
+. Award Decision is* published* on the Buyer’s website (less frequent case).
+. A standstill period (while the contract cannot be signed) of one month starts from the notification to allow other Tenderers to request Review.
+. At the end of the standstill period the Contract can be signed.
+. No later than 30 days after the conclusion of a Contract, a Result Notice must be published.
+
+
+== Use cases
+|===
+|*Use case* |*Description* |*Actors* |*Flow*
+
+|The Award Decision is written |The Award Decision is* written *by the Unique Responsible of the Procurement. |Unique Responsible of the Procurement |The Unique Responsible of the Procurement writes the Award Decision based on the Evaluation Report.
+|The Award Decision is signed |The Award Decision is* signed* by the Unique Responsible of the Procurement. | |The Unique Responsible of the Procurement signs the Award Decision.
+|The Tenderers are notified about the result of the procurement. |The Award Decision is published on the Buyer’s website OR an Award Notification is sent to the Tenderers. |Buyer, Tenderer |The Tenderers are notified about the result through one of the following:
+|===
+
+
+
+
+== User stories
+|===
+|*Code* |*Role*  |*User Story*
+
+|AW-1 |Unique Responsible of the Procurement |As the Unique Responsible of the Procurement, I want to have access to the evaluation report.
+|AW-2 |Unique Responsible of the Procurement |As the Unique Responsible of the Procurement, I want to be able to sign the Award Decision.
+|AW-3 |Buyer |As the Buyer, I want to publish the award decision
+|AW-4 |Buyer |As the Buyer, I want to send an Award Notification to each of the Tenderers.
+|AW-5 |Buyer |As the Buyer, I want to know the start of the standstill period for signing the Contract
+|AW-6 |Buyer |As the Buyer, I want to know the end of the standstill period for signing the Contract
+|AW-7 |Buyer |As the Buyer, I want to know the deadline for publishing the Result Notice.
+|AW-8 |Tenderer |As a Tenderer, I want to be able to see the award decision (on the Buyer’s website).
+|AW-9 |Tenderer |As a Tenderer, I want to be able to receive the Award Notification.
+|AW-10 |Tenderer |As a Tenderer, I want to know the start of the standstill period for signing the Contract.
+|AW-11 |Tenderer |As a Tenderer, I want to know the end of the standstill period for signing the Contract.
+|AW-12 |Tenderer |As a Tenderer, I want to be able to request a review.
+|===
+
+
+== Natural Language Statements
+. The Unique Responsible of the Procurement is played by a Person.
+. The Unique Responsible of the Procurement is the head of the Buyer’s Organization.
+. The Unique Responsible of the Procurement signs the Award Decision After he may or may not accept the findings of an Evaluation report.
+. The Unique Responsible of the Procurement ensures that the evidences for the Participation Conditions and the Qualification Criteria are fulfilled by Tenderers proposed for an Award.
+. The Buyer is played by an Organization.
+. The Buyer can ask for clarifications from a Tenderer.
+. The Buyer publishes the award decision on the Buyer’s website.
+. The Buyer sends Award Notifications to Tenderers.
+. The Tenderer is played by an Organization.
+. The Tenderer may give clarifications to the Buyer regarding an evidence.
+. The Tenderer receives an Award Notification.
+. The Tenderer may be able to view the Award Decision on the Buyer’s website.
+.  The Tenderer can request a Review during the standstill period.
+. The Award Decision is based on the Evaluation Report.
+. Award Decision may be linked to several Award Outcomes.
+.  The Award Decision lists the winning Tenders and whom they were submitted by.
+.  The Award Decision has an Identifier.
+. The Award Decision has an issue date.
+. The Award Notification has an issue date.
+. The Standstill period starts the same date as the issue date of the Award Notification.
+. The Standstill period lasts for 1 month.
+. The Contract can be signed after the standstill period ends.
+
