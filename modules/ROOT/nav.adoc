@@ -1,7 +1,7 @@
 :doctitle: Navigation
-:doccode: epo-v4.2.0-rc.1-prod-004
+:doccode: epo-v5.0.0-rc.1-prod-001
 :page-name: nav
-:docdate: July 2024
+:docdate: May 2025
 
 * xref:epo-home::index.adoc[Home]
 
@@ -12,9 +12,13 @@
 ** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
 ** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
 ** xref:epo-home::stories_eInvoicing.adoc[eInvoicing]
-* xref:4.2@EPO::conceptual.adoc[Conceptual Models]
-* xref:4.2@EPO::glossaries.adoc[Glossaries]
-* xref:4.2@EPO::release-notes.adoc[Release Notes]
+** xref:5.0.0@EPO::stories_eEvaluation.adoc[eEvaluation]
+** xref:5.0.0@EPO::stories_eAwarding.adoc[eAwarding]
+** xref:5.0.0@EPO::stories_eQualification.adoc[eQualification]
+** xref:5.0.0@EPO::stories_eRequest.adoc[eRequest]
+* xref:5.0.0@EPO::conceptual.adoc[Conceptual Models]
+* xref:5.0.0@EPO::glossaries.adoc[Glossaries]
+* xref:5.0.0@EPO::release-notes.adoc[Release Notes]
 * xref:epo-home::showcase/index.adoc[The ePO in Other Projects]
 
 * [.separated]#**Reference Documentation**#

@@ -1,7 +1,7 @@
 :doctitle: eProcurement Ontology Documentation
-:page-code: epo-v4.2.0-rc.1-prod-001
+:page-code: epo-v5.0.0-rc.1-prod-001
 :page-name: index
-:docdate: March 2024
+:docdate: May 2025
 
 //ifeval::[{epo_latest_version} == {page-component-version}]
 //:page-aliases: 4.2.0@index.adoc, 4.2@index.adoc
@@ -14,13 +14,13 @@ The following topics are included in this version of the eProcurement Ontology d
 
 == General Documentation
 
-* xref:4.2@EPO::business.adoc[Business Overview] +
+* xref:5.0.0@EPO::business.adoc[Business Overview] +
 Business Overview of this release
-* xref:4.2@EPO::conceptual.adoc[Conceptual Models] +
+* xref:5.0.0@EPO::conceptual.adoc[Conceptual Models] +
 The release specific conceptual Model(s)
-* xref:4.2@EPO::glossaries.adoc[Glossaries] +
+* xref:5.0.0@EPO::glossaries.adoc[Glossaries] +
 The release specific glossaries
-* xref:4.2@EPO::release-notes.adoc[Release Notes] +
+* xref:5.0.0@EPO::release-notes.adoc[Release Notes] +
 The release notes as on GitHub
 
 

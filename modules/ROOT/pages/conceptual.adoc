@@ -1,7 +1,7 @@
 :doctitle: Ontology
-:page-code: epo-v4.2.0-rc.1-prod-005
+:page-code: epo-v5.0.0-rc.1-prod-001
 :page-name: conceptual
-:docdate: July 2024
+:docdate: May 2025
 
 //ifeval::[{epo_latest_version} == {page-component-version}]
 //:page-aliases: 4.2.0@conceptual.adoc,4.2@conceptual.adoc
@@ -12,39 +12,21 @@
 
 *The Conceptual Models can be viewed via the following links*
 
-* The ePO core Conceptual Module: link:{attachmentsdir}/html_reports/ePO/index.html[HTML].
-* The eCatalogue Conceptual Module: link:{attachmentsdir}/html_reports/eCatalogue/index.html[HTML].
+* The ePO core Conceptual Module: link:{attachmentsdir}/html_reports/ePO/index.htm[HTML].
+* The eCatalogue Conceptual Module: link:{attachmentsdir}/html_reports/eCatalogue/index.htm[HTML].
 * The eOrdering Conceptual Module: link:{attachmentsdir}/html_reports/eOrdering/index.htm[HTML].
-* The eFulfilment Conceptual Module: link:{attachmentsdir}/html_reports/eFulfilment/index.html[HTML].
-* The eContract Conceptual Module: link:{attachmentsdir}/html_reports/eContract/index.html[HTML].
-* The eAccess Conceptual Module: link:{attachmentsdir}/html_reports/eAccess/index.html[HTML].
-* The eSubmission Conceptual Module: link:{attachmentsdir}/html_reports/eSubmission/index.html[HTML].
-* The eInvoicing Conceptual Module: link:{attachmentsdir}/html_reports/eInvoicing/index.html[HTML].
-* The eNotice Conceptual Module: link:{attachmentsdir}/html_reports/eNotice/index.html[HTML].
+* The eFulfilment Conceptual Module: link:{attachmentsdir}/html_reports/eFulfilment/index.htm[HTML].
+* The eContract Conceptual Module: link:{attachmentsdir}/html_reports/eContract/index.htm[HTML].
+* The eAccess Conceptual Module: link:{attachmentsdir}/html_reports/eAccess/index.htm[HTML].
+* The eSubmission Conceptual Module: link:{attachmentsdir}/html_reports/eSubmission/index.htm[HTML].
+* The eInvoicing Conceptual Module: link:{attachmentsdir}/html_reports/eInvoicing/index.htm[HTML].
+* The eNotice Conceptual Module: link:{attachmentsdir}/html_reports/eNotice/index.htm[HTML].
+* The eEvaluation Conceptual Module: link:{attachmentsdir}/html_reports/eEvaluation/index.htm[HTML].
+* The eAwarding Conceptual Module: link:{attachmentsdir}/html_reports/eAwarding/index.htm[HTML].
+* The eQualification Conceptual Module: link:{attachmentsdir}/html_reports/eQualification/index.htm[HTML].
+* The eRequest Conceptual Module: link:{attachmentsdir}/html_reports/eRequest/index.htm[HTML].
 
-
-Alternatively, all the conceptual modules can be viewed in .eap (Enterprise Architect format) https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/analysis_and_design/conceptual_model/ePO_CM.eap[here].
-
-'''
-=== *RDF Representations*
-RDF representation of the eProcurement ontology can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/ePO_core[here].
-
-RDF representation of the eCatalogue module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eCatalogue[here].
-
-RDF representation of the eOrdering module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eOrdering[here].
-
-RDF representation of the eFulfilment module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eFulfilment[here].
-
-RDF representation of the eContract module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eContract[here].
-
-RDF representation of the eAccess module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eAccess[here].
-
-RDF representation of the eSubmission module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eSubmission[here].
-
-RDF representation of the eInvoicing module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eInvoicing[here]
-
-RDF representation of the eNotice module can be downloaded link:https://github.com/OP-TED/ePO/tree/v4.2.0-rc.1/implementation/eNotice[here].
-
+Alternatively, all the conceptual modules can be viewed in .qea (Enterprise Architect format) https://github.com/OP-TED/ePO/blob/release/5.0.0/analysis_and_design/conceptual_model/ePO_CM.qea[here].
 
 
 include::partial$feedback.adoc[]

@@ -1,7 +1,7 @@
 :doctitle: Ontology
-:page-code: epo-v4.2.0-rc.1-prod-006
+:page-code: epo-v5.0.0-rc.1-prod-001
 :page-name: glossaries
-:docdate: July 2024
+:docdate: May 2025
 
 ////
 ifeval::[{epo_latest_version} == {page-component-version}]
@@ -21,6 +21,10 @@ endif::[]
 * link:{attachmentsdir}/html_reports/glossary/eAccess_glossary.html[The eAccess Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eAccess_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[The eNotice Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eNotice_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/eInvoicing_glossary.html[The eInvoicing Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eInvoicing_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eEvaluation_glossary.html[The eEvaluation Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eEvaluation_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eAwarding_glossary.html[The eAwarding Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eAwarding_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eQualification_glossary.html[The eQualification Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eQualification_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eRequest_glossary.html[The eRequest Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eRequest_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/ePO_combined_glossary.html[The ePO combined Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO_combined_glossary.html[here]
 
 

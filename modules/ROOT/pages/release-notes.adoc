@@ -1,5 +1,5 @@
-:doctitle: eProcurement Ontology v5.0.0
-:page-code: epo-v5.0.0
+:doctitle: eProcurement Ontology v5.0.0-rc.1
+:page-code: epo-v5.0.0-rc.1-prod-001
 :page-name: release-notes
 :docdate: May 2025
 
@@ -13,10 +13,10 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 *May 2025*
 
 *  The following new modules were developed:
-** eEvaluation
-** eAwarding
-** eQualification
-** eRequest
+** xref:5.0.0@EPO::stories_eEvaluation.adoc[eEvaluation]
+** xref:5.0.0@EPO::stories_eAwarding.adoc[eAwarding]
+** xref:5.0.0@EPO::stories_eQualification.adoc[eQualification]
+** xref:5.0.0@EPO::stories_eRequest.adoc[eRequest]
 
 *  Updates for the following modules were made (under Change notes):
 ** ePO core
