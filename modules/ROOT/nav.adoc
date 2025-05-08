@@ -13,9 +13,13 @@
 ** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
 ** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
 ** xref:epo-home::stories_eInvoicing.adoc[eInvoicing]
-* xref:EPO::conceptual.adoc[Conceptual Models]
-* xref:EPO::glossaries.adoc[Glossaries]
-* xref:EPO::release-notes.adoc[Release Notes]
+** xref:5.0@EPO::stories_eEvaluation.adoc[eEvaluation]
+** xref:5.0@EPO::stories_eAwarding.adoc[eAwarding]
+** xref:5.0@EPO::stories_eQualification.adoc[eQualification]
+** xref:5.0@EPO::stories_eRequest.adoc[eRequest]
+* xref:conceptual.adoc[Conceptual Models]
+* xref:glossaries.adoc[Glossaries]
+* xref:release-notes.adoc[Release Notes]
 * xref:epo-home::showcase/index.adoc[The ePO in Other Projects]
 
 * [.separated]#**Reference Documentation**#
