@@ -13,10 +13,10 @@ The release v5.0.0 and its corresponding technical files can be found link:https
 *May 2025*
 
 *  The following new modules were developed:
-** xref:5.0.0@EPO::stories_eEvaluation.adoc[eEvaluation]
-** xref:5.0.0@EPO::stories_eAwarding.adoc[eAwarding]
-** xref:5.0.0@EPO::stories_eQualification.adoc[eQualification]
-** xref:5.0.0@EPO::stories_eRequest.adoc[eRequest]
+** xref:stories_eEvaluation.adoc[eEvaluation]
+** xref:stories_eAwarding.adoc[eAwarding]
+** xref:stories_eQualification.adoc[eQualification]
+** xref:stories_eRequest.adoc[eRequest]
 
 *  Updates for the following modules were made (under Change notes):
 ** ePO core
