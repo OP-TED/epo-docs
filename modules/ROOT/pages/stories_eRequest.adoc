@@ -12,7 +12,7 @@
 
 In the procurement domain, eRequest represents a document created by the Buyer to request an offer for goods and services from a Contractor within a Framework Agreement and direct awards for procurements below threshold (small scale procurement).  +
 
-==Roles involved
+== Roles involved
 
 * Buyer
 * Contractor
