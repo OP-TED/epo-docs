@@ -374,10 +374,10 @@ epo-not:PreMarketConsultationNotice -> epo:AgentInRole [0..*]
 === Added Classes
 |===
 |*Class*
-epo-cat:AbstractItem
-epo-cat:DimensionInformation
-epo-cat:EnvironmentalEmissionInformation
-epo-cat:PostAwardCatalogue
+|epo-cat:AbstractItem
+|epo-cat:DimensionInformation
+|epo-cat:EnvironmentalEmissionInformation
+|epo-cat:PostAwardCatalogue
 |===
 
 === Added subClassOf Properties
