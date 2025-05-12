@@ -36,7 +36,7 @@ The ORSDs can be accessed here:
 
 === Introduced in v5.0.0
 
-* xref:estories_eEvaluation.adoc[The eEvaluation Module]
+* xref:stories_eEvaluation.adoc[The eEvaluation Module]
 
 * xref:stories_eAwarding.adoc[The eAwarding Module]
 
