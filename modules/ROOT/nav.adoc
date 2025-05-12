@@ -8,18 +8,19 @@
 * xref:epo-home::index.adoc[Home]
 
 * [.separated]#**General Documentation**#
-* xref:epo-home::guide.adoc[User Guides]
-* xref:epo-home::stories.adoc[Ontology Requirements Specifications Documents]
 * xref:3.1@EPO::conceptual.adoc[Conceptual Models]
 * xref:3.1@EPO::glossaries.adoc[Glossaries]
 * xref:3.1@EPO::release-notes.adoc[Release Notes]
-* xref:epo-home::showcase/index.adoc[The ePO in Other Projects]
 
 * [.separated]#**Reference Documentation**#
+* xref:epo-home::stories.adoc[Ontology Requirements Specifications Documents]
+* xref:EPO::business.adoc[Business Overview]
+* xref:epo-home::guide.adoc[User Guides]
+* xref:epo-home::showcase/index.adoc[The ePO in Other Projects]
+* xref:epo-home::REFreferences.adoc[Reference Documents]
+* xref:epo-home::history.adoc[History and Planned Developments]
 * xref:epo-home::methodology2024.adoc[Methodology]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
-* xref:epo-home::REFreferences.adoc[Other Reference Documents]
-* xref:epo-home::history.adoc[History and Planned Developments]
 
 * [.separated]#**Working Group Documents**#
 * xref:epo-wgm::wider.adoc[Wider Working Group Meetings]
