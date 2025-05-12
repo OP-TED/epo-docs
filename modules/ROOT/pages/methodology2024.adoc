@@ -52,7 +52,7 @@ The specification of a use case consists of the narration of a scenario, in whic
 
 == Ontology Implementation
 
-The ontology is implemented as a https://www.uml.org/[UML conceptual model], which is automatically transformed into formal representations, namely https://www.w3.org/TR/owl2-overview/[OWL2] and https://www.w3.org/TR/shacl/[SHACL]. The rationale for this is explained in the xref:ePO_Arch_Design.adoc[eProcurement ontology architecture and formalisation specifications] and in the https://semiceu.github.io/style-guide/1.0.0/arhitectural-clarifications.html[SEMIC style guide].
+The ontology is implemented as a https://www.uml.org/[UML conceptual model], which is automatically transformed into formal representations, namely https://www.w3.org/TR/owl2-overview/[OWL2] and https://www.w3.org/TR/shacl/[SHACL]. The rationale for this is explained in the xref:REFePO_Arch_Design.adoc[eProcurement ontology architecture and formalisation specifications] and in the https://semiceu.github.io/style-guide/1.0.0/arhitectural-clarifications.html[SEMIC style guide].
 
 The workflow of this stage, depicted below, is different from the one provided in the LOT.
 
