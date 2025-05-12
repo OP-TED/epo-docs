@@ -22,12 +22,24 @@ In the LOT methodology, the first step in developing an ontology is to collect t
 
 The outcome is an Ontology Requirements Specification Document (ORSD) which is made up of Use Cases, User Stories, and Natural Language Statements
 
-The ORSDs for the following modules can be accessed here:
+The ORSDs can be accessed here:
+
+=== Introduced in v4.1.0
 
 * xref:stories_eAccess.adoc[The eAccess Module that covers the ESPD Request]
 
 * xref:stories_eSubmission.adoc[The eSubmission Module that covers the ESPD Response]
 
+=== Introduced in v4.2.0
+
 * xref:stories_eInvoicing.adoc[The eInvoicing Module]
 
-Further modules will be added as they become available.
+=== Introduced in v5.0.0
+
+* xref:epo-home:stories_eEvaluation.adoc[The eEvaluation Module]]
+
+* xref:epo-home::stories_eAwarding.adoc[The eAwarding Module]]
+
+* xref:epo-home::stories_eQualification.adoc[The eQualification Module]]
+
+* xref:epo-home::stories_eRequest.adoc[The eRequest Module]]
