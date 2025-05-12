@@ -24,7 +24,6 @@ The outcome is an Ontology Requirements Specification Document (ORSD) which is m
 
 
 == OSRDs
-The ORSDs can be accessed here:
 
 === Introduced in v4.1.0
 
