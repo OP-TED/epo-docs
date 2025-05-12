@@ -10,9 +10,6 @@
 * [.separated]#**General Documentation**#
 * xref:epo-home::guide.adoc[User Guides]
 * xref:epo-home::stories.adoc[Ontology Requirements Specifications Documents]
-** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
-** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
-** xref:epo-home::stories_eInvoicing.adoc[eInvoicing]
 * xref:3.1@EPO::conceptual.adoc[Conceptual Models]
 * xref:3.1@EPO::glossaries.adoc[Glossaries]
 * xref:3.1@EPO::release-notes.adoc[Release Notes]
