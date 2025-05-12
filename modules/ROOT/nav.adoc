@@ -5,10 +5,7 @@
 
 * xref:epo-home::index.adoc[Home]
 
-* xref:epo-home::index.adoc[Home]
-
 * [.separated]#**General Documentation**#
-
 * xref:4.1@EPO::conceptual.adoc[Conceptual Models]
 * xref:4.1@EPO::glossaries.adoc[Glossaries]
 * xref:4.1@EPO::release-notes.adoc[Release Notes]
