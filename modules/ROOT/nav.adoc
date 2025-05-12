@@ -18,9 +18,6 @@
 * xref:epo-wf::index.adoc[The ePO Workflow Documentation]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
 * xref:epo-home::stories.adoc[User Stories and Natural Language Statements]
-** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
-** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
-** xref:epo-home::stories_eInvoicing.adoc[eInvoicing]
 * xref:epo-home::REFreferences.adoc[Other Reference Documents]
 * xref:epo-home::history.adoc[History and Planned Developments]
 
