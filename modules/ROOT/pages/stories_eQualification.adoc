@@ -1,0 +1,112 @@
+:doctitle: eQualification Ontology Requirements Specification Document (ORSD)
+:page-code: epo-v5.0.0-rc.1-prod-007
+:page-name: ORSD - eQualification
+:docdate: May 2025
+
+
+== Resources
+
+* Evidence Request
+* Evidence Receipt (only indication that it was received)
+* Evidence Submission
+* Qualification Response
+
+== eQualification
+eQualification is checking whether a Tenderer or Candidate respects the exclusion Grounds and/or Selection Criteria.   +
+eQualification may be used in :
+
+. The qualification of Tenderers in particular for an open Procedure, where it would be inserted in points 2 - 4, of eAwarding ORSD.
+. The prequalification of economic operators in particular for Dynamic Purchase System (DPS) and Prequalification systems, specifically for works.
+
+== Roles involved
+
+* Unique Responsible of the Procurement – played by a Person; it is part of the Buyer’s Organization (the head of the Organisation; the person that has the final decision)
+* Buyer
+* Candidate or Tenderer
+
+
+== Activity description
+
+. The Unique Responsible of the Procurement requests the evidences for the Participation Conditions and the Qualification Criteria (exclusion grounds and selection criteria) from:
+. Tenderers proposed for Qualification in an Open Procedure.
+. Candidates in a DPS or prequalification
+
+
+. Each Tenderer or Candidate submits the required evidences.
+
+
+. The Unique Responsible of the Procurement checks the evidences.
+. If the evidence is good:
+. In the case of an Open Procedure, the Award Decision is signed by the Unique Responsible of the Procurement.
+
+
+. In the case of a DPS or prequalification, the Qualification Response is sent by the Unique Responsible of the Procurement to the Candidate mentioning he is accepted on the Candidate List.
+. If the evidence is not good:
+. In the case of an Open Procedure, the Buyer can ask for clarifications from the non-compliant Tenderer:
+. If the clarification confirms that the evidence is good, the Award Decision is signed by the Unique Responsible of the Procurement.
+. If the clarification confirms that the evidence is not good, the evidences of the Tenderer who submitted the Tender next in rank are requested and checked until the required number of winning Tenders is reached.
+
+
+. In the case of a DPS or prequalification, the Qualification Response is sent by the Unique Responsible of the Procurement to the Candidate mentioning he is not accepted on the Candidate List.
+
+== Use cases
+|===
+|Use case |Description |Actors |Flow
+
+|A Request to Participate along with an ESPD (if necessary) and/or evidence is sent |An economic operator sends a Request to Participate along with. if necessary. an ESPD and/or evidence, to the Buyer.  |The economic operator (The Candidate), Buyer |The economic operator sends a Request to Participate to the Buyer.
+|A receipt is sent |The Buyer sends a receipt to the Candidate for the Request to Participate |Buyer, Candidate  |The Buyer sends a receipt to the Candidate for the Request to Participate
+|Evidence for the Participation Conditions and the Qualification Criteria are checked |The Unique Responsible of the Procurement ensures the evidence for the Participation Conditions and the Qualification Criteria are fulfilled by Candidates proposed for Qualification.   |Unique Responsible of the Procurement |The Unique Responsible of the Procurement checks that the Participation Conditions and the Qualification Criteria provided by each Candidate / Tenderer are fulfilled.
+|Evidence for the Participation Conditions and the Qualification Criteria is good  |the Qualification Response is sent by the Unique Responsible of the Procurement to the Candidate mentioning he is accepted on the Candidate List. |Unique Responsible of the Procurement |If the Evidence for the Participation Conditions and the Qualification Criteria is good, the Unique Responsible of the Procurement informs the Candidate that he is accepted on the Candidate List via the Qualification Response document.
+|Evidence for the Participation Conditions and the Qualification Criteria is not good |the Qualification Response is sent by the Unique Responsible of the Procurement to the Candidate mentioning he is not accepted on the Candidate List. |Unique Responsible of the Procurement |If the Evidence for the Participation Conditions and the Qualification Criteria are not good, the Unique Responsible of the Procurement informs the Candidate that he is not accepted on the Candidate List via the Qualification Response document.
+|Clarifications from the non-compliant Tenderer are required |If the evidences are not good the Buyer can ask for clarifications from the non-compliant Tenderer. |Unique Responsible of the Procurement, |If the clarification confirms that the evidence is good, the Award Decision is signed by the Unique Responsible of the Procurement.
+|===
+
+
+
+
+== User stories
+|===
+|Code |Role  |User Story
+
+|QUA-1 |Buyer |As the Buyer, I want to be able to create a Call For Competition.
+|QUA-2 |Candidate |As the Candidate, I want to be able to reference a Call For Competition.
+|QUA-3 |Candidate |As the Candidate, I want to be able to send a Request to Participate to the Buyer
+|QUA-4 |Candidate |As the Candidate, I want to be able to send an ESPD Request
+|QUA-5 |Buyer |As the Buyer, I want to have access to all the Requests to Participate for a specific Call For Competition.
+|QUA-6 |Buyer |As the Buyer, I want to send a receipt to a Candidate for a specific Request to Participate
+|QUA-7 |Unique Responsible of the Procurement |As the Unique Responsible of the Procurement, I want to know the evidence for the Participation Conditions and the Qualification Criteria of the Candidates proposed for Qualification.
+|QUA-8 |Unique Responsible of the Procurement |As the Unique Responsible of the Procurement, I want to be able to check and verify the evidence for the Participation Conditions and the Qualification Criteria of the Candidates proposed for Qualification.
+|QUA-9 |Buyer |As the Buyer, I want to be able to know if an evidence or Participation Conditions criterion is incomplete or wrong.
+|QUA-10 |Buyer |As the Buyer, I want to ask clarifications from a Tender whose evidences or Participation Conditions criteria are incomplete or wrong.
+|QUA-11 |Buyer |As the Buyer, I want to receive clarifications from a Tender.
+|QUA-12 |Unique Responsible of the Procurement |As the Unique Responsible of the Procurement, I want to be able to add a candidate to the Candidate List.
+|QUA-13 |Unique Responsible of the Procurement |As the Unique Responsible of the Procurement, I want to send the qualification Response to the candidates.
+|QUA-14 |Candidate |As a Candidate I want to have access to the Qualification Response
+|QUA-15 |Tenderer |As a Tenderer, I want to be able to give clarifications to the Buyer about an Participation Conditions and/or Qualification Criteria
+|===
+
+== Natural Language Statements
+. The Unique Responsible of the Procurement is played by a Person.
+. The Unique Responsible of the Procurement is the head of the Buyer’s Organization.
+. The Buyer is played by an Organization.
+. The Buyer creates a Call For Competition.
+. The Unique Responsible of the Procurement checks the evidence for the Participation Conditions and the Qualification Criteria provided by a Candidate.
+. The Unique Responsible of the Procurement decides whether the evidence provided by a Candidate is good.
+. The Unique Responsible of the Procurement sends the Qualification Response to each Candidate.
+. The Unique Responsible of the Procurement can add a Candidate in the Candidate List.
+. The Candidate is an economic Operator.
+. The Candidate sends a Request to Participate to the Buyer.
+. A request to Participate may include an ESP Request.
+. The Buyer sends a Request to Participate Receipt to the Candidate.
+. A Request to Participate Receipt refers to a Request to Participate.
+. A Buyer uses the Candidate List for a Call for Tenders.
+
+
+
+
+
+
+
+
+
+
