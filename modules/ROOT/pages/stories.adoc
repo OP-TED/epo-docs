@@ -36,10 +36,10 @@ The ORSDs can be accessed here:
 
 === Introduced in v5.0.0
 
-* xref:epo-home:stories_eEvaluation.adoc[The eEvaluation Module]
+* xref:estories_eEvaluation.adoc[The eEvaluation Module]
 
-* xref:epo-home::stories_eAwarding.adoc[The eAwarding Module]
+* xref:stories_eAwarding.adoc[The eAwarding Module]
 
-* xref:epo-home::stories_eQualification.adoc[The eQualification Module]
+* xref:stories_eQualification.adoc[The eQualification Module]
 
-* xref:epo-home::stories_eRequest.adoc[The eRequest Module]
+* xref:stories_eRequest.adoc[The eRequest Module]
