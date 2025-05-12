@@ -9,7 +9,6 @@
 * xref:EPO::business.adoc[Business Overview]
 * xref:epo-home::guide.adoc[User Guides]
 * xref:epo-home::stories.adoc[Ontology Requirements Specifications Documents]
-** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
 * xref:conceptual.adoc[Conceptual Models]
 * xref:glossaries.adoc[Glossaries]
 * xref:release-notes.adoc[Release Notes]
