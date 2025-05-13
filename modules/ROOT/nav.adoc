@@ -7,9 +7,10 @@
 * xref:epo-home::index.adoc[Home]
 
 * [.separated]#**General Documentation**#
-* xref:conceptual.adoc[Conceptual Models]
-* xref:glossaries.adoc[Glossaries]
-* xref:release-notes.adoc[Release Notes]
+* xref:5.0@EPO::conceptual.adoc[Conceptual Models]
+* xref:5.0@EPO::glossaries.adoc[Glossaries]
+* xref:5.0@EPO::release-notes.adoc[Release Notes]
+
 
 * [.separated]#**Reference Documentation**#
 * xref:epo-home::stories.adoc[Ontology Requirements Specifications Documents]
