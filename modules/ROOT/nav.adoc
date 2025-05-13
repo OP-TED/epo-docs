@@ -7,9 +7,9 @@
 * xref:epo-home::index.adoc[Home]
 
 * [.separated]#**General Documentation**#
-* xref:EPO::conceptual.adoc[Conceptual Models]
-* xref:EPO::glossaries.adoc[Glossaries]
-* xref:EPO::release-notes.adoc[Release Notes]
+* xref:5.0@EPO::conceptual.adoc[Conceptual Models]
+* xref:5.0@EPO::glossaries.adoc[Glossaries]
+* xref:5.0@EPO::release-notes.adoc[Release Notes]
 
 
 * [.separated]#**Reference Documentation**#
