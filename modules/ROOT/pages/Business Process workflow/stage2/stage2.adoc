@@ -1,7 +1,7 @@
-= Stage 2: Designing Conceptual Model
+= Designing the conceptual model 
 
 
-In this stage, the Development Team works with the rest of the Working Group in order to iteratively design the Conceptual Model (CM) of the module to be released. The CM is represented as a collection of UML diagrams in an Enterprise Architect file in the https://github.com/OP-TED/epo-conceptual-model[ OP-TED/ePO-conceptual-model] repository.
+In the second stage, the Development Team works with the rest of the Working Group  designing the Conceptual Model (CM) iteratively of the module to be released. The CM is represented as a collection of UML diagrams in an Enterprise Architect file in the https://github.com/OP-TED/epo-conceptual-model[ OP-TED/ePO-conceptual-model] repository. You can view the https://docs.ted.europa.eu/EPO/latest/conceptual.html[conceptual model] here.
 
 == Business view
 

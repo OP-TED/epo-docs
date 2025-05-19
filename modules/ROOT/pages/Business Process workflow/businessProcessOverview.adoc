@@ -1,19 +1,19 @@
 = Business process overview
 
-In this section, we describe the ePO Workflow at the highest level of abstraction. The Business Process Overview diagram that describes the higher stages of the ePO workflow is depicted in the diagram below.
+The business process overview describes the ePO Workflow at the highest level of abstraction. The higher level diagram describing the step or stages of the ePO workflow can be seen below.
 
 
 image::high level stages.bmp[]
 _The high-level stages business workflow diagram_
 
 
-As seen in the diagram, the workflow can be further divided into five discrete stages:
+The workflow can be divided into five discrete stages:
 
-== xref:Business Process workflow/stage1/stage1.adoc[The Requirements gathering stage]
+== xref:Business Process workflow/stage1/stage1.adoc[Requirements Gathering]
 
-In this stage, all preliminary work is done such as deciding the ePO version that will be released, what contents are foreseen for this release and the creation of the necessary GitHub branches. Also in this stage, the requirements for a new ePO module are collected in the Ontology Requirements Specification Document (ORSD) by the Working Group.
+All preliminary decisions are taken, and preparation work is performed, such as deciding the ePO version to be released, what contents are foreseen for this release, and the creation of the necessary GitHub branches. Also in this stage, the requirements for a new ePO module are collected in the Ontology Requirements Specification Document (ORSD) by the Working Group.
 
-== xref:Business Process workflow/stage2/stage2.adoc[The Designing Conceptual Model stage]
+== xref:Business Process workflow/stage2/stage2.adoc[Conceptual Model Design]
 
 In this stage, the Development Team works with the rest of the Working Group in order to design the Conceptual Model (CM) of the module to be released. The CM is represented as a collection of UML diagrams in a Sparx EnterpriseArchitecture file at the Github CM repository.
 
@@ -23,11 +23,11 @@ In this stage, the SDS formal artefacts and some of the SDS documentation artefa
 
 == xref:Business Process workflow/stage4/stage4.adoc[Publishing candidate SDS version stage]
 
-In this stage, the SDS formal artefacts are moved to the ePO repository, the existing SDS documentation artefacts are moved to the ePO-docs repository were the rest of the SDS documentation artefacts are generated, including the documentation website of the release candidate. At the end of this stage the Product Owner publishes the release candidate, invites the Wider Public to review the release candidate and decides whether or not to incorporate feedback to this ePO version (resulting to another release candidate) or to incorporate said feedback to a future release.
+In this stage, the SDS formal artefacts are moved to the ePO repository, the existing SDS documentation artefacts are moved to the ePO-docs repository where the rest of the SDS documentation artefacts are generated, including the documentation website of the release candidate. At the end of this stage the Product Owner publishes the release candidate, invites the Wider Public to review the release candidate and discusses with the working group whether to incorporate feedback into the ontology or not and if so as part of the ongoing release or a future release.
 
 == xref:Business Process workflow/stage5/stage5.adoc[Publishing stable SDS version stage]
 
-In this stage, The Product Owner decides to publish the latest release candidate of a specific ePO version as a stable release. Consequently, the SDS and SDS documentation of the specific candidate are marked accordingly, and the new ePO stable release is announced.
+In this stage, The Product Owner decides to publish the latest release candidate of a specific ePO version as a stable release. Consequently, the SDS and SDS documentation of the specific candidate are marked accordingly (the xyz-rcx becomes xyz), and the new ePO stable release is announced.
 
 
 == The big picture

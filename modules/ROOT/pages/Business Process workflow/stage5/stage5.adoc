@@ -1,6 +1,6 @@
-= Stage 5: Publishing Stable SDS Version
+= Publishing Stable SDS Version
 
-In this stage, The Product Owner decides to publish the latest release candidate of a specific ePO version as a stable release. Consequently, the SDS and SDS documentation of the specific candidate are marked accordingly, and the new ePO stable release is announced.
+In the fifth and final stage, The Product Owner confirms the finalisation of the latest release candidate of a specific ePO version as a stable release. Consequently, the SDS and SDS documentation of the specific candidate are marked accordingly, and the new ePO stable release is announced.
 
 == Business view
 

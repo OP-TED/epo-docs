@@ -2,16 +2,26 @@
 
 
 
-== Introduction
+== Introduction and content of the documentation
+or
 
-This part of the documentation website describes all the necessary steps of the procedure of creating an eProcurement Ontology (ePO) release. This includes defining an end-to-end procedure workflow with the help of http://www.hosiaisluoma.fi/ArchiMate-Cookbook.pdf[ArchiMate diagrams] for visualisation purposes. This workflow includes the different stages of an ePO release lifecycle as well as information on artefacts, criteria for transitions, the different parts and responsibilities of stakeholders involved with the procedure, and xref:GitHub repositories/githubRepositories.adoc[how to support the workflow using GitHub]. Here we also describe automation points, release note contents, and release tagging conventions. Although the scope of this part of the documentation covers everything related to the ePO lifecycle, it does not cover the inner workings of related technologies such as https://docs.ted.europa.eu/M2O/latest/index.html[Model2Owl]. However, the inputs and outputs of these technologies are clearly documented.
+== How to create a new eProcurement Ontology release: processes, tasks, tools, and players
 
+The ePO Workflow documentation describes what needs to be done, and who does it, when creating a new eProcurement Ontology (ePO) release. 
 
+Firstly it defines an end-to-end procedure. This is illustrated using diagrams created in a third party software tool specifically chosen for making visualisation of the workflows easier. 
+//called http://www.hosiaisluoma.fi/ArchiMate-Cookbook.pdf[ArchiMate]. 
 
-=== Structure of the documentation
+Then, the workflow stages are described listing the artefacts produced along the way; The criteria for transitions are defined, as are the the different roles and responsibilities of stakeholders involved in the process, as well as which supporting tools are employed e.g., xref:GitHub repositories/githubRepositories.adoc[GitHub]. 
 
-This part of the website is designed to guide you through the structured lifecycle of the eProcurement Ontology (ePO) workflow management. It serves as both a comprehensive reference and a step-by-step guide, capturing each stage of the workflow through the lens of Enterprise Architecture. Enterprise Architecture is a business function concerned with the structures and behaviours of a business, especially business roles and processes that create and use business data. By following the sections of this document on the left side of the website, you will gain a complete understanding of the methodology, roles, artefacts, and systems that support the ePO lifecycle from planning through to release.
+The automation points, release note contents, and release tagging conventions are also described. Although the documentation covers everything related to the ePO lifecycle, it doesn't cover how to use the tools and technologies used in the process such as https://docs.ted.europa.eu/M2O/latest/index.html[Model2Owl]. It is assumed that you already know how to use them. However, all the inputs and outputs of these technologies in the process are clearly documented.
 
-The methodology used and how to read the ePO Workflow Documentation can be found  xref:methodology/methodologyIndex.adoc[here].
+This documentation contains a comprehensive reference and also a step-by-step guide, capturing the stages of the workflow from the perspective of Enterprise Architecture. 
+
+NOTE: Enterprise Architecture is a business function concerned with the structures and behaviours of a business, especially business roles and processes that create and use business data. 
+
+You therefore have a process to follow, and a reference guide that you can use to look up anything that you need clarification on. By going through the documentation systematically via the left-hand menu, you will gain a complete understanding of the methodology, roles, artefacts, and systems that form the ePO lifecycle from planning through to release.
+
+The methodology used, and some tips on how to read the ePO Workflow Documentation can be found xref:methodology/methodologyIndex.adoc[here].
 
 
