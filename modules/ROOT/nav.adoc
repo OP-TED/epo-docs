@@ -16,6 +16,7 @@
 * xref:epo-home::stories.adoc[Ontology Requirements Specifications Documents]
 * xref:EPO::business.adoc[Business Overview]
 * xref:epo-home::guide.adoc[User Guides]
+* xref:epo-wf:index.adoc[The ePO Workflow Documentation]
 * xref:epo-home::showcase/index.adoc[The ePO in Other Projects]
 * xref:epo-home::REFreferences.adoc[Reference Documents]
 * xref:epo-home::history.adoc[History and Planned Developments]
