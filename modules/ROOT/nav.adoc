@@ -7,19 +7,17 @@
 * xref:epo-home::index.adoc[Home]
 
 * [.separated]#**General Documentation**#
-* xref:EPO::business.adoc[Business Overview]
-* xref:epo-home::guide.adoc[User Guides]
-* xref:epo-home::stories.adoc[Ontology Requirements Specifications Documents]
-** xref:epo-home::stories_eAccess.adoc[eAccess (ESPD Request)]
-** xref:epo-home::stories_eSubmission.adoc[eSubmission (ESPD Response)]
-** xref:epo-home::stories_eInvoicing.adoc[eInvoicing]
 * xref:EPO::conceptual.adoc[Conceptual Models]
 * xref:EPO::glossaries.adoc[Glossaries]
 * xref:EPO::release-notes.adoc[Release Notes]
-* xref:epo-home::showcase/index.adoc[The ePO in Other Projects]
+
 
 * [.separated]#**Reference Documentation**#
-* xref:epo-home::references.adoc[Reference Documents]
+* xref:epo-home::stories.adoc[Ontology Requirements Specifications Documents]
+* xref:EPO::business.adoc[Business Overview]
+* xref:epo-home::guide.adoc[User Guides]
+* xref:epo-home::showcase/index.adoc[The ePO in Other Projects]
+* xref:epo-home::REFreferences.adoc[Reference Documents]
 * xref:epo-home::history.adoc[History and Planned Developments]
 * xref:epo-home::methodology2024.adoc[Methodology]
 * xref:epo-home::versioning.adoc[ePO Versioning Rules]
