@@ -16,7 +16,7 @@
 ** The Payee  is the supplier.
 *** It was noted that Payee was already modeled for ePO in the eInvoicing module.
 
-** PayerReference *- An internal reference to the payer's order for payment. It was decided that this can be represented as a datatype property at the level of Class epo-pay:RemittanceAdvice:
+** PayerReference: An internal reference to the payer's order for payment. It was decided that this can be represented as a datatype property at the level of Class epo-pay:RemittanceAdvice:
 *** epo-pay:hasPayerReference rdf:Plainliteral [0..1] was added.
 ** PaymentOrderReference - An internal reference to the order for payment from the payer to the payer's bank. It was decided that this can be represented as a datatype property at the level of Class epo-pay:RemittanceAdvice:
 ***  epo-pay:hasPaymentOrderReference rdf:Plainliteral was added.
@@ -29,7 +29,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAewAAACOCAIAAAB8A6zSAACAAEl
 
 
 
-* Billing Reference: *A billing document is similar to an invoice.
+* Billing Reference: A billing document is similar to an invoice.
 We can use the epo:hasAccountingCost datatype property (on the level of the epo-pay:RemittanceAdvice) for this.
 
 * It was mentioned that the RemittanceAdvice is a specialization of epo-cat:PostAwardDocument.

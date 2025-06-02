@@ -16,6 +16,7 @@ This does not mean necessarily that this was the only topic addressed in the mee
 [#2025]
 === 2025
 
+xref:notes/2025-05-27-wgm.adoc[2025-05-27 (Github Issues related to ePO 5.1.0)]
 
 xref:notes/2025-05-22-wgm.adoc[2025-05-22 (ePayment)]
 
