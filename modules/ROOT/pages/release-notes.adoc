@@ -1,4 +1,4 @@
-:doctitle: eProcurement Ontology v5.0.0-rc.1
+:doctitle: eProcurement Ontology v5.0.0
 :page-code: epo-v5.0.0-rc.1-prod-001
 :page-name: release-notes
 :docdate: May 2025
