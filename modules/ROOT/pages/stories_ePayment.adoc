@@ -1,0 +1,88 @@
+:doctitle: ePayment Ontology Requirements Specification Document (ORSD)
+:page-code: epo-v5.1.0-rc.1-prod-007
+:page-name: ORSD - ePayment
+:docdate: June 2025
+
+
+== Resources
+
+* https://docs.oasis-open.org/ubl/os-UBL-2.4/mod/summary/reports/UBL-RemittanceAdvice-2.4.html[Remittance Advice]
+
+== ePayment
+
+In the procurement domain, refers to the payment data. ePayment data is checked against the invoice data in a Contract registry.  +
+
+== Roles involved
+
+* Buyer
+* Seller
+* Payee (most often the accounting department of the Seller)
+
+== Activity description
+
+. The Buyer authorises the Payment.
+
+. The Buyer notifies the Seller and the Payee about the Payment through a Remittance Advice document.
+
+. The Seller receives the Remittance Advice document.
+
+. The Seller notifies the Payee about the Payment through a Remittance Advice document.
+
+
+== Use cases
+|===
+|*Use case* |*Description* |*Actors* |*Flow*
+
+|The Payment is authorised |The Buyer authorises the Payment. |Buyer |The Buyer authorises the Payment.
+|The Remittance Advice document is written and sent. |The Buyer notifies the Seller or the Payee (if that role exists about the Payment through a Remittance Advice document. |Buyer, Payee, Seller |The Buyer writes the Remittance Advice document. The Buyer sends the remittance Advice document to the Seller, and the Payee (if such a role exists).
+|The Remittance Advice is received by the Seller and/or the Payee. |The Seller may notify the Payee about the Payment through a Remittance Advice document. |Payee, Seller |The Seller sends a Remittance Advice document to the Payee.
+|===
+
+
+
+== User stories
+|===
+|*Code* |*Role*  |*User Story*
+
+|PAY-1 |Seller or Payee |As the Seller or Payee, I want to know the date of the Payment.
+|PAY-2 |Seller or Payee |As the Seller or Payee, I want to know how the means the Payment was or is expected to be done.
+|PAY-3 |Seller or Payee |As the Seller or Payee, I want to know the total amount of the Payment.
+|PAY-4 |Seller or Payee |As the Seller or Payee, I want to know the total debit amounts of the Payment.
+|PAY-5 |Seller or Payee |As the Seller or Payee, I want to know the total credit amounts of the Payment.
+|PAY-6 |Seller or Payee |As the Seller or Payee, I want to have access to all the invoices related to the Remittance Advice.
+|PAY-7 |Seller or Payee |As the Seller or Payee, I want to know the Bank account where the payment was made.
+|PAY-8 |Seller or Payee |As the Seller or Payee, I want to know the Bank account from which the payment was made.
+|PAY-9 |Seller or Payee |As the Seller or Payee, I want to know for which Billing document this Remittance Advice is for.
+|PAY-10 |Seller or Payee |As the Seller or Payee, I want to have access to the Order for Payment.
+|PAY-11 |Buyer | As the Buyer, I want to know the Payee’s or the Seller’s bank account number where the payment will be made.
+|PAY-12 |Seller or Payee | As the Seller or Payee, I want to know who is the Payer.
+|PAY-13 |Buyer | As the Buyer, I want to know the Contact Point of the Remittance Advice Receiver
+|===
+
+== Natural Language Statements
+. The Remittance Advice document must specify the Buyer.
+
+. The Remittance Advice document must specify the Seller.
+
+. The Remittance Advice document may specify the Payee.
+
+. The Remittance Advice document may specify the Order.
+
+. The Remittance Advice document contains one or more Remittance Advice Lines.
+
+. A Remittance Advice Line may refer to an Invoice.
+
+. The Remittance Advice document may specify Payment means.
+
+. A Remittance Advice Line specifies the Payee’s financial account.
+
+. A Remittance Advice Line may specify the Payer’s financial account.
+
+
+
+
+
+
+
+
+
