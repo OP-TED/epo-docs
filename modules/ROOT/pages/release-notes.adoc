@@ -1,7 +1,7 @@
 :doctitle: eProcurement Ontology v5.1.0
 :page-code: epo-v5.0.0-rc.1-prod-001
 :page-name: release-notes
-:docdate: May 2025
+:docdate: June 2025
 
 //ifeval::[{epo_latest_version} == {page-component-version}]
 //:page-aliases: 4.2.0@release-notes.adoc,4.2@release-notes.adoc
@@ -34,7 +34,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |	epo:core-4.2.0 | epo:core-5.0.0
 | version:IRI | core-5.0.0 | core-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 === Added Classes
@@ -54,13 +54,13 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 === Added Object Properties
 |===
 |*property* | *Domain, Range and cardinality*
-|epo:hasSourceSpecificationCustomisation |epo:Document -> epo:SpecificationInformation [0..1]
-|epo:hasSourceVersionSpecification |epo:Document -> epo:SpecificationInformation [0..1]
-|epo:isUsedInProfile |epo:Document -> epo:SpecificationInformation [0..1]
+|epo:hasSpecificationInformation |epo:Document -> epo:SpecificationInformation [0..*]
+|epo:hasSourceSpecificationCustomisation |epo:SpecificationInformation -> adms:Identifier [0..1]
+|epo:hasSourceVersionSpecification |epo:SpecificationInformation -> adms:Identifier [0..1]
+|epo:isUsedInProfile |epo:SpecificationInformation -> adms:Identifier [0..1]
 |epo:concernsProcurementElement |epo:LocalLegalBasisInformation -> epo:ProcurementElement [1]
 |epo:hasLegalBasis |epo:LocalLegalBasisInformation -> at-voc:legal-basis [0..1]
 |epo:hasLegalBasis |epo:ProcurementElement -> at-voc:legal-basis [0..1]
-|adms:identifier|epo:SpecificationInformation -> adms:Identifier [1]
 |===
 
 === Deleted Object Properties
@@ -113,7 +113,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |	epo-cat-4.2.0 | epo-cat-5.0.0
 | version:IRI | cat-5.0.0 | cat-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 == eOrdering
@@ -124,7 +124,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |	epo-ord-4.2.0 | epo-ord-5.0.0
 | version:IRI | ord-5.0.0 | ord-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 == eFulfilment
@@ -135,7 +135,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |	epo-ful-4.2.0 | epo-ful-5.0.0
 | version:IRI | ful-5.0.0 | ful-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 === Added Object properties
@@ -160,7 +160,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |	epo-con-4.2.0 | epo-con-5.0.0
 | version:IRI | con-5.0.0 | con-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 == eAccess
@@ -171,7 +171,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |	epo-acc-4.2.0 | epo-acc-5.0.0
 | version:IRI | acc-5.0.0 | acc-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 == eSubmission
@@ -183,7 +183,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |	epo-sub-4.2.0 | epo-sub-5.0.0
 | version:IRI | sub-5.0.0 | sub-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 === Added Object properties
@@ -200,7 +200,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |	epo-inv-4.2.0 | epo-inv-5.0.0
 | version:IRI | inv-5.0.0 | inv-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 === Modified Object Properties
@@ -217,7 +217,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |-| epo-eva-5.0.0
 | version:IRI | eva-5.0.0 | eva-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 == eAwarding
@@ -228,7 +228,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |-| epo-awa-5.0.0
 | version:IRI | awa-5.0.0 | awa-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 == eQualification
@@ -239,7 +239,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |-| epo-qua-5.0.0
 | version:IRI | qua-5.0.0 | qua-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 == eRequest
@@ -250,7 +250,7 @@ The release v5.1.0 and its corresponding technical files can be found [here].
 | owl:versionInfo |	5.0.0 |	5.1.0
 | owl:priorVersion |-| epo-req-5.0.0
 | version:IRI | req-5.0.0 | req-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
+| dct:issued |	2025-05-02		| 2025-06-04
 |===
 
 include::partial$feedback.adoc[]
