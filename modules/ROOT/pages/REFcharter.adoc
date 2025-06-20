@@ -196,6 +196,7 @@ A number of risks have been identified. Table 3 lists these risks with an indica
 [cols="2,1,1,2"]
 |===
 s||Risk|Impact|Likelihood|Mitigation strategy
+
 |No consensus can be reached
 |High
 |Medium
@@ -220,7 +221,9 @@ s||Risk|Impact|Likelihood|Mitigation strategy
 |Medium
 |Low
 |Define and implement good communication approach, e.g. through frequent news on Joinup, exposure at events, Twitter, LinkedIn
+
 |===
+
 == COST, TIMING AND RESOURCES
 
 === Cost
@@ -281,7 +284,8 @@ Table 6 includes the proposed activities to be carried out by the Working Group.
 
 |E1
 |First WG meeting
-|Month 0 - September |2017 (M1)
+|Month 0 - September 
+|2017 (M1)
 Prioritisation of use cases Grouping them to be treated in consecutive meetings
 Provision of updated conceptual model and its specification
 Discussion on the conceptual model and its specifications
@@ -374,6 +378,8 @@ Discussion on the conceptual model and its specifications
 |E19
 |Publication of Ontology
 |Month 12 - September
+|
+
 |===
 
 In Table 6, one of the activities for the first meeting is to set priorities for the use cases that were decided in the inception phase. A list of the use cases is included in Annex I.

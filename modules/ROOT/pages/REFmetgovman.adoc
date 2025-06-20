@@ -38,7 +38,7 @@ Brecht Wyns – PwC EU Services
 |Pieter Breyne – PwC EU Services
 
 |Approved by
-Vassilios Peristeras – European Commission, DG Informatics
+|Vassilios Peristeras – European Commission, DG Informatics
 
 Athanasios Karalopoulos - European Commission, DG Informatics
 |===

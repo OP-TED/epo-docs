@@ -1931,7 +1931,7 @@ instances of a mass-produced commodity (gr:SomeItems), or a model / prototype sp
 
 |Activity
 |Loted 2 Ontology has a class to describe activities carried out by organizations or individuals.
-http://loted.eu/ontology
+|http://loted.eu/ontology
 
 |Has Activity
 |Loted2 Ontology has a relation to describe The activity carried out by a person or an organisation.
