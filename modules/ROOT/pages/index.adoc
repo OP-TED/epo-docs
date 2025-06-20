@@ -55,8 +55,8 @@ The release specific conceptual Model(s) of the ontology.
 The release specific glossaries
 * xref:EPO::release-notes.adoc[Release Notes] +
 Release notes for the specific ePO version
-* xref:showcase/index.adoc[The ePO in other Projects] +
-How the ePO underpins other projects
+//* xref:showcase/index.adoc[The ePO in other Projects] +
+//How the ePO underpins other projects
 
 
 == Reference Documentation

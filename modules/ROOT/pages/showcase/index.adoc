@@ -14,9 +14,10 @@ The Open Data Service is a service that continuously converts TED notice data, i
 === Defining the ESPD 
 Defining the classes and relationships used in the https://docs.ted.europa.eu/ESPD-EDM/latest/index.html[ESPD]. Read more about the xref:/showcase/sc_espd.adoc[The ePO's role in the ESPD].
 
+////
 ===== Querying RDF Data
 Querying eProcurement data in RDF format using the SPARQL query language. Click xref:/showcase/sc_queries.adoc[here] to read more.
-
+////
 
 ////
 === xref:/showcase/sc_ppds.adoc[The Public Procurement Data Space]
