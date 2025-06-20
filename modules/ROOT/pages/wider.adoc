@@ -2,10 +2,16 @@
 :doccode: epo_wgm_prod_010
 :author: NPJ
 :authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
-:docdate: July 2024
+:docdate: June 2025
 
 
 
+'''
+xref:ePO_June_2025_WGM_report.adoc[Report from the June 2025 Working Group General Meeting: 03 June 2025]
+
+link:{attachmentsdir}/work_group_meetings_reports/2025_WGM_June/eProcurementOntology-June2025.pptx[2025 June WGM presentation]
+
+'''
 
 '''
 xref:ePO_July_2024_WGM_report.adoc[Report from the July 2024 Working Group General Meeting: 10 July 2024]

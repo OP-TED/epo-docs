@@ -1,0 +1,184 @@
+:doctitle: REPORT ON THE 2025 WIDE WORKING GROUP MEETING OF THE EPROCUREMENT ONTOLOGY
+:doccode: epo_wgm_june_2025
+:author: AD
+:authoremail: nicole-anne.paterson-jones@ext.ec.europa.eu
+:docdate: June 2025
+
+**Online meeting: 03/06/2025**
+*Presenter:* Andreea Pasare (Meaningfy/Infeurope), +
+*Note editor:* Achilles Dougalis (Meaningfy/Infeurope)
+
+== Meeting Agenda
+
+* Welcome
+* Review of work: July 2024 – June 2025
+* ePO v5.0.0-rc.1 (published)
+* Updated workflow and model2owl evolution
+* ePO v5.1.0-rc.1 (in progress)
+* Future work
+* Closing
+
+== Welcome:
+
+Natalie Muric explained the aim of the meeting is to present the work carried out since the last meeting in july 2024 and to present the  plan for the second half of 2025.  Stakeholders’ attention was drawn to the release of eQualification, eEvaluation, eAwarding, eRequest as well as the publication of first release candidate of ePO 5.0.0 and the first candidate of ePO 5.1.0
+
+The following sections provide a summary of what was presented by Andrea Pasare  and discussed by the Working Group.
+
+
+== Publication of ePO v5.0.0-rc1
+
+The release candidate v5.0.0-rc1 was presented.
+This release and its corresponding technical files can be found at https://github.com/OP-TED/ePO/tree/release/5.0.0 .
+ePO 5.0.0  includes the new modules of eQualification, eEvaluation, eAwarding and eRequest as well as updates to the other modules. For more information on what has changed, please consult the https://docs.ted.europa.eu/EPO/latest/release-notes.html[corresponding release notes].
+
+=== eQualification module
+
+It was mentioned that eQualification may be used in :
+
+- The qualification of Tenderers, in particular for an open Procedure.
+- The prequalification of economic operators, in particular for Dynamic Purchase System (DPS) and Prequalification systems (specifically for works).
+
+It was discussed that the Following Documents are included in the eQualification module
+
+ - Evidence Request
+
+ - Evidence Receipt
+
+ - Evidence Submission
+
+The https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eQualification/index.htm[eQualification conceptual model diagrams] were presented.
+
+=== eEvaluation module
+
+eEvaluation refers to the evaluation report in digital format that evaluates the tenders submitted by tenderers or candidates (in the case of multistage procedures) depending on the procedure that is adopted, to provide input for the award decision.
+
+It was discussed that the Following Documents are included in the eEvaluation module
+
+ - Evaluation Report
+
+ - Tender Clarification Request
+
+ - Tender Clarification
+
+The https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eEvaluation/index.htm[eEvaluation conceptual model diagrams] were presented.
+
+
+=== eAwarding  module
+
+It was mentioned that eAwarding may refer to :
+
+ - The Award Decision in the digital format created and signed by the Unique Responsible of the Procurement.
+ - The notification to all Tenderers as to the result of the Procurement The Award Decision is based on the Evaluation Report. The Unique Responsible of the Procurement either accepts the findings of the Evaluation Report or takes another decision (if the Winner does not fulfill all the criteria for the award of the contract).
+
+It was discussed that the Award Decision Notification is included in the eAwarding module
+
+The https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eAwarding/index.htm[eAwarding conceptual model diagrams] were presented.
+
+=== eRequest module
+
+eRequest represents a document created by the Buyer to request an offer for goods and services from a Contractor within a Framework Agreement and direct awards for procurements below threshold (small scale procurement).
+
+It was discussed that the Request for Offer document is included in the eRequest module
+
+The https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eRequest/index.htm[eRequest conceptual model diagrams] were presented.
+
+=== eForms mapping requirements
+
+A selection of eForms mapping requirements Github Issues on the ePO Github repository which were implemented for ePO 5.0.0
+was presented. Specifically the following tickets and their solutions were presented:
+
+- https://github.com/OP-TED/ePO/issues/785[Model E1 (premarket consultation) notice #785]
+- https://github.com/OP-TED/ePO/issues/712[how to deal with Unpublished fields #712]
+- https://github.com/OP-TED/ePO/issues/754[Alignment between eForms and ePO representation of contract modifications #754]
+- https://github.com/OP-TED/ePO/issues/756[Mapping of eForms field BT-786-Review (Review Notice Section Identifier) #756]
+- https://github.com/OP-TED/ePO/issues/529[Potential problem with modelling of epo:Period #529]
+- https://github.com/OP-TED/ePO/issues/764[Remodel epo:PlannedProcurementPart #764]
+- https://github.com/OP-TED/ePO/issues/762[epo:SubmissionTerm inheritance is wrong #762]
+
+=== eOrdering updates
+
+The new https://docs.ted.europa.eu/EPO/latest/_attachments/html_reports/eOrdering/index.htm[eOrdering diagrams] depicting Order Change, Order Cancellation and Order Agreement transactions were presented.
+
+=== eCatalogue updates
+
+A selection of Github Issues on the ePO Github repository related with the eCatalogue module which were implemented for ePO 5.0.0
+was presented. Specifically the following tickets and their solutions were presented:
+
+- https://github.com/OP-TED/ePO/issues/746[Electronic delivery of an item #746]
+- https://github.com/OP-TED/ePO/issues/722[Inconsistencies with concepts related to taxes, allowances and charges #722]
+- https://github.com/OP-TED/ePO/issues/750[Add additional properties on class epo-cat:ItemProperty or epo-cat:AbstractItem related to Range Dimension #750]
+- https://github.com/OP-TED/ePO/issues/654[Remove predicate epo-cat:hasExternalSpecification #654]
+- https://github.com/OP-TED/ePO/issues/731[Relax the cardinality of predicate epo-cat:hasAmount to [0..1] #731]
+- https://github.com/OP-TED/ePO/issues/744[Environmental-related information in the catalogue #744]
+
+=== eFulfilment updates
+
+A selection of Github Issues on the ePO Github repository related with the eFulfilment module which were implemented for ePO 5.0.0 was presented. Specifically the following tickets and their solutions were presented:
+
+- https://github.com/OP-TED/ePO/issues/620[Remove epo-ful:Notifier #620]
+- https://github.com/OP-TED/ePO/issues/575[Remove excess links from epo-ful:Consignment to epo-ful:ShipmentStage #575]
+- https://github.com/OP-TED/ePO/issues/621[Remove attribute epo-ful:isHazardousRisk from Class epo-ful:ShipmentStage #621]
+- https://github.com/OP-TED/ePO/issues/622[Remove attributes from class epo-ful:Consignment #622]
+- https://github.com/OP-TED/ePO/issues/661[Model Measurement Dimension business group from the Despatch Advice data model #661]
+- https://github.com/OP-TED/ePO/issues/57[Environmental Emission should be included in eFulfilment  #57]
+
+== Updated workflow and model2owl evolution
+It was mentioned that the model2owl configuration files  was transferred from https://github.com/OP-TED/ePO[the ePO repository] to https://github.com/OP-TED/epo-conceptual-model[the epo-conceptual-model repository].
+
+An update on the Enterprise Architect file modifications was given, specifically that:
+
+- The WG approval date was moved to the skos:historyNote tags.
+
+- The eForms terms (BT/BG) references were moved to skos:editorialNote tags.
+
+- Links to the original definitions were added for all external terms used by the Ontology.
+
+- epo:status tags with the values 'proposed', 'approved' and 'implemented' were added to all ePO terms.
+
+== Work in progress
+
+=== ePO ePO v5.1.0-rc.1
+
+The upcoming release candidate 5.1.0-rc.1 was Presented. This  version contains the ePayment  module. Andreea Pasare presented the  module, including the Conceptual Model diagrams (found on the link:{attachmentsdir}/work_group_meetings_reports/2025_WGM_June/eProcurementOntology-June2025.pptx[2025 June WGM presentation].
+
+The ePayment module concerns payment data. ePayment data is checked against the invoice data in a Contract registry. It was mentioned that the ePayment module includes the Remittance Advice document.
+
+==== Evolution of the ePO
+
+A selection of Github issues currently in progress was presented:
+
+- https://github.com/OP-TED/ePO/issues/793[Representation of Procedure-related information in planning notices #793]
+- https://github.com/OP-TED/ePO/issues/708[Should the Ontology Include an eforms SDK version concept #708]
+- https://github.com/OP-TED/ePO/issues/777[How is the relationship between epo:ReviewDecision and epo:ReviewRequest represented in eForms? #777]
+
+== Future Work
+
+Future work for 2025 includes:
+
+- Publish final release of ePO v5.0.0.
+- Publish ePO v5.1.0-rc.1.
+- Publish final release of ePO v5.1.0.
+- ePO v5.2.0-rc1 that includes
+** Publish pre-award documents models​
+** Minor updates for post-award modules​
+- Finalise definition for all ePO concepts​
+- Create simplified views of ePO
+
+== Closing:
+
+Natalie Muric of the Publications Office presented the schedule for ePO Working Group meetings:
+
+      - every Tuesday from 14:30 to 16:30 (EET)
+                 - https://teams.microsoft.com/l/meetup-join/19%3aDMvE-SiUhrvRHl0n1XSaOl_adGlaZyf1TKNnDtSvMbg1%40thread.tacv2/1714637816259?context=%7b%22Tid%22%3a%22b24c8b06-522c-46fe-9080-70926f8dddb1%22%2c%22Oid%22%3a%222ef4eadd-c92c-43ac-9729-2cbd2f911346%22%7d[meeting link]
+
+      - every Thursday from 14:30 to 16:30 (EET)
+                 - https://teams.microsoft.com/l/meetup-join/19%3aDMvE-SiUhrvRHl0n1XSaOl_adGlaZyf1TKNnDtSvMbg1%40thread.tacv2/1714637816259?context=%7b%22Tid%22%3a%22b24c8b06-522c-46fe-9080-70926f8dddb1%22%2c%22Oid%22%3a%222ef4eadd-c92c-43ac-9729-2cbd2f911346%22%7d[meeting link]
+
+In addition, all addresses to contact the ePO team were provided:
+
+* GitHub discussions: https://github.com/OP-TED/ePO/discussions
+* GitHub issues: https://github.com/OP-TED/ePO/issues
+* Email: OP-EPROCUREMENT-ONTOLOGY@publications.europa.eu
+* Email: natalie.muric@publications.europa.eu
+
+include::partial$feedback.adoc[]
