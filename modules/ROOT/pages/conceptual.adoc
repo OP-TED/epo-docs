@@ -25,6 +25,7 @@
 * The eAwarding Conceptual Module: link:{attachmentsdir}/html_reports/eAwarding/index.htm[HTML].
 * The eQualification Conceptual Module: link:{attachmentsdir}/html_reports/eQualification/index.htm[HTML].
 * The eRequest Conceptual Module: link:{attachmentsdir}/html_reports/eRequest/index.htm[HTML].
+* The ePayment Conceptual Module: link:{attachmentsdir}/html_reports/ePayment/index.htm[HTML].
 
 Alternatively, all the conceptual modules can be viewed in .qea (Enterprise Architect format) https://github.com/OP-TED/ePO/blob/release/5.0.0/analysis_and_design/conceptual_model/ePO_CM.qea[here].
 

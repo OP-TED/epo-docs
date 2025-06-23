@@ -25,6 +25,7 @@ endif::[]
 * link:{attachmentsdir}/html_reports/glossary/eAwarding_glossary.html[The eAwarding Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eAwarding_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/eQualification_glossary.html[The eQualification Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eQualification_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/eRequest_glossary.html[The eRequest Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/eRequest_glossary.html[here]
+* link:{attachmentsdir}/html_reports/glossary/eRequest_glossary.html[The ePayment Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePayment_glossary.html[here]
 * link:{attachmentsdir}/html_reports/glossary/ePO_combined_glossary.html[The ePO combined Glossary] can be viewed link:{attachmentsdir}/html_reports/glossary/ePO_combined_glossary.html[here]
 
 
