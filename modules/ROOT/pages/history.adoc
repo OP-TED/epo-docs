@@ -82,7 +82,16 @@ image:2017-2023.png[]
 
 |December 2024
 |ePO version 4.2.0
-|eInvoicing module released in 4.2.0
+|eInvoicing module released in v4.2.0
+
+
+|June 2025
+|ePO version 5.0.0
+|eEvaluation, eAwarding, eQualification, and eRequest released in v5.0.0
+
+|June 2025
+|ePO version 5.1.0
+|ePayment released in v5.1.0
 
 |===
 
