@@ -1,0 +1,81 @@
+== Working Group Meeting
+
+*Date*: 16/09/2025  +
+*Participants:* Natalie Muric, Sellitto Giovanni Paolo  +
+*Model editor:* Andreea Pasare  +
+*Note editor:* Andreea Pasare
+
+== Agenda
+
+* Discuss proposed definitions for the concepts that do not have a definition in ePO 5.1.0 
+
+== Discussion
+
+The following definitions were approved and a *skos:historyNote* tag with value "WG approval 16/09/2025" will be added for each concept in ePO conceptual model:
+
+
+|===
+|epo-eva:EvaluationReport|Summary of the Evaluation.
+|epo-eva:Evaluator|A Role of an Agent that asses the Tender submitted for a Lot.
+|epo-eva:ExcludedCandidateList|Record of Candidates prevented from participating in a Procurement because one or more Exclusion Grounds apply.
+|epo-eva:TenderClarification|A Document sent by the Tenderer to the Buyer in response to the Tender Clarification Request.
+|epo-ful:ReceiptAdvice|A formal reply from the Buyer to the Seller acknowledging the physical or electronic receipt of goods or services delivered.
+|epo-ful:ReceiptAdviceInformation|Information about the Receipt Advice.
+|epo-ful:ReceiptAdviceLine|Details concerning the fulfilment of an Despatch Line.
+|epo-inv:CreditNote|A Document sent by the Seller to the Buyer to reduce or cancel all or part of the amount previously invoiced.
+|epo-inv:CreditNoteLine|Details concerning a given unit of goods, services or works mentioned in the Credit Note.
+|epo-not:Notice1|Notice of the publication of a prior information notice on a buyer profile - general directive
+|epo-not:Notice10|Prior information notice used as a call for competition - general directive, standard regime
+|epo-not:Notice11|Periodic indicative notice used as a call for competition - sectoral directive, standard regime
+|epo-not:Notice12|Prior information notice used as a call for competition - general directive, light regime
+|epo-not:Notice13|Periodic indicative notice used as a call for competition - sectoral directive, light regime
+|epo-not:Notice14|Prior information notice used as a call for competition - concessions directive, light regime
+|epo-not:Notice15|Notice on the existence of a qualification system - sectoral directive
+|epo-not:Notice16|Contract notice - general directive, standard regime
+|epo-not:Notice17|Contract notice - sectoral directive, standard regime
+|epo-not:Notice18|Contract notice - defence directive, standard regime
+|epo-not:Notice19|Concession notice - concessions directive, standard regime
+|epo-not:Notice2|Notice of the publication of a periodic indicative notice on a buyer profile - sectoral directive
+|epo-not:Notice20|Contract notice - general directive, light regime
+|epo-not:Notice21|Contract notice - sectoral directive, light regime
+|epo-not:Notice22|Subcontract notice - defence directive
+|epo-not:Notice23|Design contest notice - general directive, design
+|epo-not:Notice24|Design contest notice - sectoral directive, design
+|epo-not:Notice25|Voluntary ex-ante transparency notice - general directive
+|epo-not:Notice26|Voluntary ex-ante transparency notice - sectoral directive
+|epo-not:Notice27|Voluntary ex-ante transparency notice - defence directive
+|epo-not:Notice28|Voluntary ex-ante transparency notice - concession directive
+|epo-not:Notice29|Contract award notice - general directive, standard regime
+|epo-not:Notice3|Notice of the publication of a prior information notice on a buyer profile - defence directive
+|epo-not:Notice30|Contract award notice - sectoral directive, standard regime
+|epo-not:Notice31|Contract award notice - defence directive, standard regime
+|epo-not:Notice32|Concession award notice - concession directive, standard regime
+|epo-not:Notice33|Contract award notice - general directive, light regime
+|epo-not:Notice34|Contract award notice - sectoral directive, light regime
+|epo-not:Notice35|Concession award notice - concessions directive, light regime
+|epo-not:Notice36|Design contest result notice - general directive, design
+|epo-not:Notice37|Design contest result notice - sectoral directive, design
+|epo-not:Notice38|Contract modification notice - general directive
+|epo-not:Notice39|Contract modification notice - sectoral directive
+|epo-not:Notice4|Prior information notice used only for information - general directive
+|epo-not:Notice40|Contract modification notice - concessions directive
+|epo-not:Notice5|Periodic indicative notice used only for information - sectoral directive
+|epo-not:Notice6|Prior information notice used only for information - defence directive
+|epo-not:Notice7|Prior information notice used to shorten time limits for receipt of tenders - general directive
+|epo-not:Notice8|Periodic indicative notice used to shorten time limits for receipt of tenders - sectoral directive
+|epo-not:Notice9|Prior information notice used to shorten time limits for receipt of tenders - defence directive
+|epo-not:PIN-CFCSocial-D25|Prior information notice used as a Call For Competition using the light regime under Directive 25.
+|epo-not:PIN-CFCSocialNotice|Prior information notice used as a Call For Competition using the light regime.
+|epo-not:PIN-CFCStandard-D24|Prior information notice used as a Call For Competition using the standard regime under Directive 24.
+|epo-not:PIN-CFCStandardNotice|Prior information notice used as a Call For Competition using the standard regime.
+|epo-pay:PaymentInformation|Information about a remittance.
+|epo-pay:RemittanceAdvice|Document sent by the Buyer to the Seller, informing about the payment made.
+|epo-pay:RemittanceAdviceLine|Details concerning a given Invoice from the Remittance Advice.
+|epo-qua:EvidenceOutcome|Result concerning the submitted Evidence.
+|epo-qua:EvidenceReceipt|A Document sent by the Buyer to the Economic Operator confirming the receipt of an Evidence Submission.
+|epo-qua:EvidenceRequest|A Document sent by the Buyer to the Economic Operator asking for the submission of an Evidence.
+|epo-qua:EvidenceSubmission|A Document sent by the Economic Operator to the Buyer which contains an Evidence.
+|epo-qua:QualificationDecisionInformation|Information about the aggregated result of the Evidence Outcomes.
+|epo-qua:QualificationReponse|A formal reply from the Buyer to the Economic Operator informing the Economic Operator that it may participate in a procurement.
+|===
+

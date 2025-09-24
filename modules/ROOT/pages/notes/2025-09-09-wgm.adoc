@@ -1,0 +1,38 @@
+== Working Group Meeting
+
+*Date*: 09/09/2025  +
+*Participants:* Paloma Arillo, Victorio Bentivogli, Natalie Muric, Dragos Stoica  +
+*Model editor:* Andreea Pasare  +
+*Note editor:* Andreea Pasare
+
+== Agenda
+
+* Discuss proposed definitions for the concepts that do not have a definition in ePO 5.1.0 
+
+== Discussion
+
+The following definitions were approved and a *skos:historyNote* tag with value "WG approval 09/09/2025" will be added for each concept in ePO conceptual model:
+
+
+|===
+|epo-qua:EvidenceOutcome|epo-qua:fulfillsRequirement|Indicates whether the Requirement is realised.|xsd:boolean [0..1]
+|epo-qua:QualificationDecisionInformation|epo:hasQualificationDecisionDate|The official date of the Qualification Decision.|xsd:dateTime [1..1]
+|epo-qua:QualificationDecisionInformation|epo:hasRejectionDescription|Explanatory text about the rejection reason.|rdf:PlainLiteral [0..1]
+|epo-qua:QualificationDecisionInformation|epo:isQualified|Indicates whether the economic operator is eligible.|xsd:boolean [0..1]
+|epo-req:RequestForOffer|epo-req:hasSubmissionDueDate|Final date until the Submission is allowed.|xsd:dateTime [0..1]
+|epo-req:RequestForOfferLine|epo-req:isOptional|Indicates whether the instance of the concept is not required.|xsd:boolean [0..1]
+|epo-sub:OrganisationInformationSummary|epo-sub:hasBusinessClassificationDescription|Explanatory text about the size of the Business.|rdf:PlainLiteral [0..*]
+|epo:AwardCriterion|epo:hasFixedValue|Constant number.|xsd:decimal [0..1]
+|epo:EnergyEfficiencyInformation|epo:concernsTotalItems|Number of total Items the instance of the concept relates to.|xsd:decimal [0..1]
+|epo:InternationalProcurementInstrumentMeasuresInformation|epo:hasNumberOfTendersConcerned|Number of Tenders the instance of the concept relates to.|xsd:integer [0..1]
+|epo:NonPublishedInformation|epo:hasMaskableProperty|Resource that has a hidden value.|xsd:anyURI [1..1]
+|epo:ProcurementElement|epo:appliesForeignSubsidiesRegulation|Indicates whether the Foreign Subsidies Regulation is implemented.|xsd:boolean [0..1]
+|epo:QualificationCriterion|epo:hasQualificationCriteriaStatedInESPDRequest|The Qualification Criteria is specified in the ESPD Request.|xsd:boolean [0..1]
+|epo:QualificationCriterion|epo:hasQualificationCriteriaStatedInNotice|The Qualification Criteria is specified in the Notice.|xsd:boolean [0..1]
+|epo:QualificationCriterion|epo:hasQualificationCriteriaStatedInProcurementDocuments|The Qualification Criteria is specified in the Procurement Documents.|xsd:boolean [0..1]
+|epo:SubcontractingEstimate|epo:isSubcontractingPercentageKnown|Indicates whether the ratio of the Subcontracting Estimate is defined.|xsd:boolean [0..1]
+|epo:SubcontractingEstimate|epo:isSubcontractingValueKnown|Indicates whether the amount of the Subcontracting Estimate is defined.|xsd:boolean [0..1]
+|epo:SubmissionStatisticalInformation|epo:hasSMEReceivedTendersExcludingSubcontractors|The amount of Tenders received from economic operators that are SMEs without taking into account Subcontractors.|xsd:integer [0..1]
+|epo:SubmissionTerm|epo:hasSubmissionURL|The identifier of a resource used for Submission.|xsd:anyURI [0..*]
+|===
+

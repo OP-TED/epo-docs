@@ -1,0 +1,51 @@
+== Working Group Meeting
+
+*Date*: 11/09/2025  +
+*Participants:* Natalie Muric, Sellitto Giovanni Paolo  +
+*Model editor:* Andreea Pasare  +
+*Note editor:* Andreea Pasare
+
+== Agenda
+
+* Discuss proposed definitions for the concepts that do not have a definition in ePO 5.1.0 
+
+== Discussion
+
+The following definitions were approved and a *skos:historyNote* tag with value "WG approval 11/09/2025" will be added for each concept in ePO conceptual model:
+
+
+|===
+|epo:Documentation|A structured collection of records, reports, or supporting materials that provide context or explanation regarding a process, requirement, or decision within a procurement activity.
+|epo:EmploymentDocumentation|Documentation concerning the general regulatory framework for employment protection and working conditions.
+|epo:EnergyEfficiencyInformation|Information about the energy performance, consumption, or sustainability characteristics of a product, service, building, or process relevant to the execution or evaluation of a procurement procedure.
+|epo:EnvironmentalDocumentation|Documentation concerning the general regulatory framework for Environmental Protection.
+|epo:InternationalProcurementInstrumentMeasuresInformation|Information about the legislative framework adopted by the European Union to promote reciprocity in international public procurement markets.
+|epo:LocalLegalBasisInformation|Information about the legal basis at the level of the Member State.
+|epo:MaskableObject|Entity within the procurement data model whose visibility, accessibility, or disclosure may be conditionally restricted due to legal, confidentiality, or security requirements.
+|epo:PlannedProcurement|A high-level description of a procurement activity foreseen by a Buyer.
+|epo:ReviewInformation|Information about the Review Decision or the Review Request.
+|epo:SpecificationInformation|Information about the characteristics and standards used in a technical implementation.
+|epo:TaxDocumentation|Documentation concerning the general regulatory framework for taxes.
+|epo:UniqueResponsibleOfTheProcurement|A Role of an Agent that holds sole responsibility for initiating, managing, and executing a procurement procedure.
+|epo-awa:AwardDecisionNotification|A formal communication sent by the Buyer to inform Tenderers of the Award Decision.
+|epo-cat:CatalogueResponseInformation|Information about a Catalogue Response.
+|epo-cat:DimensionInformation|Information about the physical or measurable attributes of the instance of the concept described.
+|epo-cat:EnvironmentalEmissionInformation|Information about the emissions related to a product, work or service that are released into the environment.
+|epo-cat:Line|Component of a document providing specific information.
+|epo-cat:PostAwardDocument|Document created after the award of a Contract during a Procurement Procedure.
+|epo-con:ContractModificationInformation|Information about a Contract Amendment.
+|epo-con:Deliverable|Item that the supplier is obligated to provide under a contract.
+|===
+
+Some definitions were modified:
+
+- Updated definitions for *epo:TaxInformationProvider*, *epo:EmploymentInformationProvider*, *epo:EnvironmentalProtectionInformationProvider* to fully align with the definitions from the organisation-role codelist.
+- Added additional information to *epo:PlannedProcurementPart*: 
+"A Lot or a Procedure can also cover one or more parts of the Planned Procurement."
+- Removed "Additional Information:
+This Procurement Criterion can be only Exclusion Ground, Selection Criterion or Award Criterion. Each of these Criteria can contain subcriteria (Criterion class)."" from epo:ProcurementCriterion definition.
+
+== Action Points
+* Create GitHub issues for:
+** Make and *epo-ord:Order* a type of *epo:Contract*.
+** Rename *epo-eva:EvaluationCriterion* concept.
