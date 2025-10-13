@@ -7,7 +7,7 @@
 
 == Agenda
 
-* Discuss GitHub issue https://github.com/OP-TED/ePO/issues/793[788]: Unmappable eForms fields regarding transportation in T02 notice subtypes 
+* Discuss GitHub issue https://github.com/OP-TED/ePO/issues/788[788]: Unmappable eForms fields regarding transportation in T02 notice subtypes 
 
 == Discussion
 
