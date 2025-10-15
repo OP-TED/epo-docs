@@ -1,7 +1,7 @@
 :doctitle: eProcurement Ontology Documentation
-:page-code: epo-v5.0.0-rc.1-prod-001
+:page-code: epo-v5.2.0-prod-001
 :page-name: index
-:docdate: May 2025
+:docdate: October 2025
 
 //ifeval::[{epo_latest_version} == {page-component-version}]
 //:page-aliases: 4.2.0@index.adoc, 4.2@index.adoc

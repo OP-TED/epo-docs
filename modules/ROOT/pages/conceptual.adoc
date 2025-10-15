@@ -1,7 +1,7 @@
 :doctitle: Ontology
-:page-code: epo-v5.0.0-rc.1-prod-001
+:page-code: epo-v5.2.0-prod-001
 :page-name: conceptual
-:docdate: May 2025
+:docdate: October 2025
 
 //ifeval::[{epo_latest_version} == {page-component-version}]
 //:page-aliases: 4.2.0@conceptual.adoc,4.2@conceptual.adoc
@@ -27,7 +27,7 @@
 * The eRequest Conceptual Module: link:{attachmentsdir}/html_reports/eRequest/index.html[HTML].
 * The ePayment Conceptual Module: link:{attachmentsdir}/html_reports/ePayment/index.html[HTML].
 
-Alternatively, all the conceptual modules can be viewed in .qea (Enterprise Architect format) https://github.com/OP-TED/ePO/blob/release/5.0.0/analysis_and_design/conceptual_model/ePO_CM.qea[here].
+Alternatively, all the conceptual modules can be viewed in .qea (Enterprise Architect format) [here].
 
 
 include::partial$feedback.adoc[]

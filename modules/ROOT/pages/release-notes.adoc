@@ -1,256 +1,224 @@
-:doctitle: eProcurement Ontology v5.1.0
-:page-code: epo-v5.0.0-rc.1-prod-001
+:doctitle: eProcurement Ontology v5.2.0
+:page-code: epo-v5.2.0-prod-001
 :page-name: release-notes
-:docdate: June 2025
+:docdate: October 2025
 
 //ifeval::[{epo_latest_version} == {page-component-version}]
 //:page-aliases: 4.2.0@release-notes.adoc,4.2@release-notes.adoc
 //endif::[]
 
-The release v5.1.0 and its corresponding technical files can be found [here].
+The release v5.2.0 and its corresponding technical files can be found [here].
 
 == Release notes
-*June 2025*
+*October 2025*
 
-*  The following new modules were developed:
-** xref:stories_ePayment.adoc[ePayment]
+*  Added missing definitions to concepts
 
 *  Updates for the following modules were made (under Change notes):
 ** ePO core
 ** eNotice
-** eFulfilment
-** eSubmission
-** eInvoicing
 
-* The GitHub issues justifying these updates can be found https://github.com/OP-TED/ePO/milestone/16[here]
+* The GitHub issues justifying these updates can be found https://github.com/OP-TED/ePO/milestone/18[here].
 
 == Change notes
 
 == ePO core
 === Metadata
 |===
-|*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from ePO_core.xml on 2025-05-02| This version is automatically generated from ePO_core.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |	epo:core-4.2.0 | epo:core-5.0.0
-| version:IRI | core-5.0.0 | core-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
+|*Property* |*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from ePO_core.xml on 2025-06-04| This version is automatically generated from ePO_core.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#core-5.0.0 | http://data.europa.eu/a4g/ontology#core-5.1.0
+| owl:versionIRI | epo:core-5.1.0 | epo:core-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 === Added Classes
 |===
 |*Class*
-|epo:LocalLegalBasisInformation
-|epo:SpecificationInformation
-|epo:PlannedProcurement
+|epo:Asset
+|epo:QualityTargetInformation
 |===
 
 === Added subClassOf Properties
 |===
-| *instance* | *property* |	 *value*
-|epo:PlannedProcurement|rdfs:subClassOf|epo:ProcurementElement
+|*Instance* | *Property* | *Value*
+|epo:QualityTargetInformation | rdfs:subClassOf | epo:ContextDescription
 |===
 
 === Added Object Properties
 |===
-|*property* | *Domain, Range and cardinality*
-|epo:hasSpecificationInformation |epo:Document -> epo:SpecificationInformation [0..*]
-|epo:hasSourceSpecificationCustomisation |epo:SpecificationInformation -> adms:Identifier [0..1]
-|epo:hasSourceVersionSpecification |epo:SpecificationInformation -> adms:Identifier [0..1]
-|epo:isUsedInProfile |epo:SpecificationInformation -> adms:Identifier [0..1]
-|epo:concernsProcurementElement |epo:LocalLegalBasisInformation -> epo:ProcurementElement [1]
-|epo:hasLegalBasis |epo:LocalLegalBasisInformation -> at-voc:legal-basis [0..1]
-|epo:hasLegalBasis |epo:ProcurementElement -> at-voc:legal-basis [0..1]
-|===
-
-=== Deleted Object Properties
-|===
-|*property* | *Domain, Range and cardinality* |*replaced by*|*Domain, Range and cardinality*
-|epo:hasLegalBasis| epo:ProcurementObject -> at-voc:legal-basis [0..*]||
-|===
-
-=== Modified Object Properties
-|===
-|*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
-|epo:answersReviewRequest |epo:ReviewDecision -> epo:ReviewRequest [1] | epo:ReviewDecision -> epo:ReviewRequest [0..*]
+|*Property* | *Domain, Range and cardinality*
+|epo:definesPublicTransportationKilometers | epo:ContractTerm -> epo:Quantity [0..1]
+|epo:describesAsset | epo:ContractTerm -> epo:Asset [0..*]
+|epo:hasTransportServiceType | epo:ContractTerm -> at-voc:transport-service [0..*]
+|epo:concernsContractTerm | epo:QualityTargetInformation -> epo:ContractTerm [1]
+|epo:hasQualityTargetCode | epo:QualityTargetInformation -> at-voc:customer-service [1]
 |===
 
 === Added Datatype Properties
 |===
-|*Property* | *Class* | *datatype/cardinality*
-|dct:description|epo:LocalLegalBasisInformation|rdf:PlainLiteral [0..1]
-|epo:hasLegalBasisDescription|epo:ProcurementElement|rdf:PlainLiteral [0..1]
-|===
-
-=== Deleted Datatype Properties
-|===
-|*Property* | *Class* | *datatype/cardinality*
-|epo:hasLegalBasisDescription|epo:ProcurementObject|rdf:PlainLiteral [0..*]
+|*Property* | *Class* | *Datatype/cardinality*
+|dct:description | epo:Asset | rdf:PlainLiteral [0..1]
+|epo:hasPredominance | epo:Asset | rdf:PlainLiteral [0..1]
+|epo:hasSignificance | epo:Asset | rdf:PlainLiteral [0..1]
+|epo:hasQualityTargetDescription | epo:QualityTargetInformation | rdf:PlainLiteral [0..1]
+|epo:hasUnknownDuration | epo:DynamicPurchaseSystemTechnique | xsd:boolean [0..1]
+|epo:hasUnlimitedDuration | epo:DynamicPurchaseSystemTechnique | xsd:boolean [0..1]
+|epo:hasUnknownDuration | epo:ContractTerm | xsd:boolean [0..1]
+|epo:hasUnlimitedDuration | epo:ContractTerm | xsd:boolean [0..1]
+|epo:hasSocialStandardsDescription | epo:ContractTerm | rdf:PlainLiteral [0..1]
+|epo:hasReservedExecutionJustification | epo:ContractTerm | rdf:PlainLiteral [0..1]
+|epo:hasPublicServiceObligationsDescription | epo:ContractTerm | rdf:PlainLiteral [0..1]
+|epo:hasPenaltiesAndRewardsDescription | epo:ContractTerm | rdf:PlainLiteral [0..1]
+|epo:hasParticularConditionsDescription | epo:ContractTerm | rdf:PlainLiteral [0..1]
+|epo:hasGrantedExclusiveRightsDescription | epo:ContractTerm | rdf:PlainLiteral [0..1]
+|epo:hasCompensationCostParametersDescription | epo:ContractTerm | rdf:PlainLiteral [0..1]
+|epo:hasDurationAdditionalInformation | epo:ContractTerm | rdf:PlainLiteral [0..1]
+|epo:hasTicketsSalesRevenueAllocation | epo:ContractTerm | xsd:decimal [0..1]
 |===
 
 == eNotice
 === Metadata
 |===
-|*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eNotice.xml on 2025-05-02| This version is automatically generated from eNotice.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |	epo-not-4.2.0 | epo-not-5.0.0
-| version:IRI | not-5.0.0 | not-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-02
-|===
-
-=== Added Object Properties
-|===
-|*property* | *Domain, Range and cardinality*
-|epo:announcesPlannedProcurement|epo-not:PlanningNotice -> epo:PlannedProcurement [0..1]
+|*Property* |*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from eNotice.xml on 2025-06-04| This version is automatically generated from eNotice.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#not-5.0.0 | http://data.europa.eu/a4g/ontology#not-5.1.0
+| owl:versionIRI | epo:not-5.1.0 | epo:not-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 == eCatalogue
 === Metadata
 |===
-|*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eCatalogue.xml on 2025-05-02| This version is automatically generated from eCatalogue.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |	epo-cat-4.2.0 | epo-cat-5.0.0
-| version:IRI | cat-5.0.0 | cat-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
+|*Property* |*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from eCatalogue.xml on 2025-06-04| This version is automatically generated from eCatalogue.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#cat-5.0.0 | http://data.europa.eu/a4g/ontology#cat-5.1.0
+| owl:versionIRI | epo:cat-5.1.0 | epo:cat-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 == eOrdering
 === Metadata
 |===
-|*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eOrdering.xml on 2025-05-02| This version is automatically generated from eOrdering.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |	epo-ord-4.2.0 | epo-ord-5.0.0
-| version:IRI | ord-5.0.0 | ord-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
+|*Property* |*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from eOrdering.xml on 2025-06-04| This version is automatically generated from eOrdering.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#ord-5.0.0 | http://data.europa.eu/a4g/ontology#ord-5.1.0
+| owl:versionIRI | epo:ord-5.1.0 | epo:ord-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 == eFulfilment
 === Metadata
 |===
-|*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eFulfilment.xml on 2025-05-02| This version is automatically generated from eFulfilment.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |	epo-ful-4.2.0 | epo-ful-5.0.0
-| version:IRI | ful-5.0.0 | ful-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
-|===
-
-=== Added Object properties
-|===
-|*property* | *Domain, Range and cardinality*
-|epo:specifiesBuyer|epo-ful:Consignment -> epo:Buyer [0..1]
-|epo:specifiesSeller|epo-ful:Consignment -> epo-ord:Seller [0..1]
-|===
-
-=== Deleted Object Properties
-|===
-|*property* | *Domain, Range and cardinality* |*replaced by*|*Domain, Range and cardinality*
-|epo-ful:specifiesBuyer|epo-ful:Consignment -> epo:Buyer [0..1]|epo:specifiesBuyer|epo-ful:Consignment -> epo:Buyer [0..1]
-|epo-ful:specifiesSeller|epo-ful:Consignment -> epo-ord:Seller [0..1]|epo:specifiesSeller|epo-ful:Consignment -> epo-ord:Seller [0..1]
+|*Property* |*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from eFulfilment.xml on 2025-06-04| This version is automatically generated from eFulfilment.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#ful-5.0.0 | http://data.europa.eu/a4g/ontology#ful-5.1.0
+| owl:versionIRI | epo:ful-5.1.0 | epo:ful-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 == eContract
 === Metadata
 |===
-|*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eContract.xml on 2025-05-02| This version is automatically generated from eContract.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |	epo-con-4.2.0 | epo-con-5.0.0
-| version:IRI | con-5.0.0 | con-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
+|*Property* |*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from eContract.xml on 2025-06-04| This version is automatically generated from eContract.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#con-5.0.0 | http://data.europa.eu/a4g/ontology#con-5.1.0
+| owl:versionIRI | epo:con-5.1.0 | epo:con-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 == eAccess
 === Metadata
 |===
-|*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eAccess.xml on 2025-05-02| This version is automatically generated from eAccess.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |	epo-acc-4.2.0 | epo-acc-5.0.0
-| version:IRI | acc-5.0.0 | acc-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
+|*Property* |*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from eAccess.xml on 2025-06-04| This version is automatically generated from eAccess.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#acc-5.0.0 | http://data.europa.eu/a4g/ontology#acc-5.1.0
+| owl:versionIRI | epo:acc-5.1.0 | epo:acc-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 == eSubmission
-
 === Metadata
 |===
-|*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eSubmission.xml on 2025-05-02| This version is automatically generated from eSubmission.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |	epo-sub-4.2.0 | epo-sub-5.0.0
-| version:IRI | sub-5.0.0 | sub-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
-|===
-
-=== Added Object properties
-|===
-|*property* | *Domain, Range and cardinality*
-|epo-sub:isContainedInTender|epo-sub:ESPD -> epo:Tender [0..*]
+|*Property* |*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from eSubmission.xml on 2025-06-04| This version is automatically generated from eSubmission.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#sub-5.0.0 | http://data.europa.eu/a4g/ontology#sub-5.1.0
+| owl:versionIRI | epo:sub-5.1.0 | epo:sub-5.2.0
+| dct:issued |	2025-06-04	  2025-10-10
 |===
 
 == eInvoicing
 === Metadata
 |===
-|*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eInvoicing.xml on 2025-05-02| This version is automatically generated from eInvoicing.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |	epo-inv-4.2.0 | epo-inv-5.0.0
-| version:IRI | inv-5.0.0 | inv-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
-|===
-
-=== Modified Object Properties
-|===
-|*property* | *old Domain, Range and cardinality* |*New Domain, Range and cardinality*
-|epo-inv:hasPaymentInstructionsInformation|epo-inv:Invoice -> epo-inv:PaymentInstructionsInformation [0..1]|epo-inv:Invoice -> epo-inv:PaymentInstructionsInformation [0..*]
+|*Property* |*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from eInvoicing.xml on 2025-06-04| This version is automatically generated from eInvoicing.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#inv-5.0.0 | http://data.europa.eu/a4g/ontology#inv-5.1.0
+| owl:versionIRI | epo:inv-5.1.0 | epo:inv-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 == eEvaluation
 === Metadata
 |===
-|*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eEvaluation.xml on 2025-05-02| This version is automatically generated from eEvaluation.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |-| epo-eva-5.0.0
-| version:IRI | eva-5.0.0 | eva-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
+|*Property* |*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from eEvaluation.xml on 2025-06-04| This version is automatically generated from eEvaluation.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#eva-5.0.0 | http://data.europa.eu/a4g/ontology#eva-5.1.0
+| owl:versionIRI | epo:eva-5.1.0 | epo:eva-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 == eAwarding
 === Metadata
 |===
-|*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eAwarding.xml on 2025-05-02| This version is automatically generated from eAwarding.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |-| epo-awa-5.0.0
-| version:IRI | awa-5.0.0 | awa-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
+|*Property* |*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from eAwarding.xml on 2025-06-04| This version is automatically generated from eAwarding.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#awa-5.0.0 | http://data.europa.eu/a4g/ontology#awa-5.1.0
+| owl:versionIRI | epo:awa-5.1.0 | epo:awa-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 == eQualification
 === Metadata
 |===
 |*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eQualification.xml on 2025-05-02| This version is automatically generated from eQualification.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |-| epo-qua-5.0.0
-| version:IRI | qua-5.0.0 | qua-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
+| rdfs:comment | This version is automatically generated from eQualification.xml on 2025-06-04| This version is automatically generated from eQualification.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#qua-5.0.0 | http://data.europa.eu/a4g/ontology#qua-5.1.0
+| owl:versionIRI | epo:qua-5.1.0 | epo:qua-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 == eRequest
 === Metadata
 |===
 |*Property*|*Old Value*|*New Value*
-| rdfs:comment |	This version is automatically generated from eRequest.xml on 2025-05-02| This version is automatically generated from eRequest.xml on 2025-06-02
-| owl:versionInfo |	5.0.0 |	5.1.0
-| owl:priorVersion |-| epo-req-5.0.0
-| version:IRI | req-5.0.0 | req-5.1.0
-| dct:issued |	2025-05-02		| 2025-06-04
+| rdfs:comment |	This version is automatically generated from eRequest.xml on 2025-06-04| This version is automatically generated from eRequest.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#req-5.0.0 | http://data.europa.eu/a4g/ontology#req-5.1.0
+| owl:versionIRI | epo:req-5.1.0 | epo:req-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
+|===
+
+== ePayment
+=== Metadata
+|===
+|*Property*|*Old Value*|*New Value*
+| rdfs:comment | This version is automatically generated from ePayment.xml on 2025-06-04| This version is automatically generated from ePayment.xml on 2025-10-10
+| owl:versionInfo |	5.1.0 |	5.2.0
+| owl:priorVersion | http://data.europa.eu/a4g/ontology#pay-5.0.0 | http://data.europa.eu/a4g/ontology#pay-5.1.0
+| owl:versionIRI | epo:pay-5.1.0 | epo:pay-5.2.0
+| dct:issued |	2025-06-04 | 2025-10-10
 |===
 
 include::partial$feedback.adoc[]

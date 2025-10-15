@@ -1,13 +1,11 @@
 :doctitle: Ontology
-:page-code: epo-v5.0.0-rc.1-prod-001
+:page-code: epo-v5.2.0-prod-001
 :page-name: glossaries
-:docdate: May 2025
+:docdate: October 2025
 
-////
-ifeval::[{epo_latest_version} == {page-component-version}]
-:page-aliases: 4.0.0@glossaries.adoc,4.0@glossaries.adoc
-endif::[]
-////
+//ifeval::[{epo_latest_version} == {page-component-version}]
+//:page-aliases: 4.0.0@glossaries.adoc,4.0@glossaries.adoc
+//endif::[]
 
 === Glossaries
 *The Glossaries for the following entities can be downloaded via the following links:*
