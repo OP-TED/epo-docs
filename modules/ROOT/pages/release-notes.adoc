@@ -7,7 +7,7 @@
 //:page-aliases: 4.2.0@release-notes.adoc,4.2@release-notes.adoc
 //endif::[]
 
-The release v5.2.0 and its corresponding technical files can be found [here].
+The release v5.2.0 and its corresponding technical files can be found https://github.com/OP-TED/ePO/tree/v5.2.0[here].
 
 == Release notes
 *October 2025*
