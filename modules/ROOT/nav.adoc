@@ -1,5 +1,5 @@
 :doctitle: Navigation
-:doccode: epo-v5.1.0-rc.1-prod-001
+:doccode: epo-v5.2.0-prod-001
 :page-name: nav
 :docdate: October 2025
 
